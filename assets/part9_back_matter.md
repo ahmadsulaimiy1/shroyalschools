@@ -1,5 +1,39 @@
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="8600" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="500" w:type="dxa"/><w:left w:w="900" w:type="dxa"/><w:bottom w:w="500" w:type="dxa"/><w:right w:w="900" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="260"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
+      </w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="320"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Every ambition in this Blueprint is priced against a revenue line AMIU has actually adopted — never a revenue line we wished it had.</w:t></w:r>
+      </w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>FOREWORD · THE SUPREME STRATEGIC PLANNING COUNCIL</w:t></w:r>
+      </w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 # Appendices {.unnumbered}

@@ -1,30 +1,55 @@
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part I — Governance & Institutional Foundations (Sections 1–5)
-
-
-::: {custom-style="PartKicker"}
-PART ONE OF EIGHT · Sections 1–5
-:::
-
-::: {custom-style="PartThesis"}
-The bicameral architecture — Board of Trustees and University Senate — that lets AMIU govern honestly at $224,747 in Year-1 revenue and still govern honestly at $93.9M in Year 20.
-:::
-
-**Contents of this Part**
-
-- Section 1 — Institutional Vision 2028–2050
-- Section 2 — Mission, Values, and Identity
-- Section 3 — Governance Framework
-- Section 4 — Senate Structure
-- Section 5 — Board Structure
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART ONE OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>I</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Governance &amp; Institutional Foundations</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 1–5</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The bicameral architecture — Board of Trustees and University Senate — that lets AMIU govern honestly at $224,747 in Year-1 revenue and still govern honestly at $93.9M in Year 20.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>01&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Institutional Vision 2028–2050</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>02&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Mission, Values, and Identity</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>03&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Governance Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>04&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Senate Structure</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>05&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Board Structure</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART I · SECTION 01
+:::
 
 ## Section 1: Institutional Vision 2028–2050
 
@@ -85,6 +110,10 @@ The Board of Trustees holds ultimate authority over Institutional Strategy (per 
 
 By 2037: Vision 2037 targets met as adopted (financial independence achieved, multi-jurisdiction accreditation pursuit underway, $0 cumulative deficit). By 2047: secular schools operating in at least Texas with recognition progress in at least one Gulf jurisdiction. By 2050: Nigeria Mega-University holding its own independent accreditation status (or a clearly documented reason for delay), and Waqf & Stakeholder Reserve cumulative balance demonstrably funding Islamic schools, widows/orphans, scholarships, and emergency relief at a scale proportionate to realized (not merely projected) revenue.
 
+::: {custom-style="SectionKicker"}
+PART I · SECTION 02
+:::
+
 ## Section 2: Mission, Values, and Identity
 
 **Rationale**
@@ -138,6 +167,10 @@ Senate (academic authority) owns Illumination, Sanad, Inquiry through curriculum
 **Measurable Success Indicators**
 
 By Year 5: documented mission-audit with no unresolved Sharī'ah-compliance exceptions. By Year 10: Tier-4/sponsored enrolment share sustained without breaching the $0-deficit rule. By 2038: secular-program revenue observably funding the same 5% Da'wah and 20% Waqf ratios as religious-program revenue, evidencing the mission survived diversification.
+
+::: {custom-style="SectionKicker"}
+PART I · SECTION 03
+:::
 
 ## Section 3: Governance Framework
 
@@ -194,6 +227,10 @@ The Delegation of Authority Matrix already fixes Approving Authority/Executing O
 **Measurable Success Indicators**
 
 By Year 3: all four committees operating on documented charters with succession plans filed for founder-held seats. By Year 5: zero unresolved Audit & Risk findings older than 12 months. By Year 10: governance structure has survived a full decade including at least one founder-succession event without disruption to Senate quorum or Board fiduciary continuity.
+
+::: {custom-style="SectionKicker"}
+PART I · SECTION 04
+:::
 
 ## Section 4: Senate Structure
 
@@ -258,6 +295,10 @@ The Senate holds supreme academic authority: curriculum, standards, degree confe
 **Measurable Success Indicators**
 
 By Year 3: succession plans filed and independent elections held without contested-result disputes. By Year 5: zero quorum failures recorded. By Year 10: at least one full staggered-term rotation cycle completed for all four independent seats with documented continuity of institutional knowledge.
+
+::: {custom-style="SectionKicker"}
+PART I · SECTION 05
+:::
 
 ## Section 5: Board Structure
 
@@ -324,31 +365,56 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part II — Organizational & Academic Structure (Sections 6–10)
-
-
-::: {custom-style="PartKicker"}
-PART TWO OF EIGHT · Sections 6–10
-:::
-
-::: {custom-style="PartThesis"}
-How six founding colleges, six departments, and an honoraria-based faculty scale from a lone Head of Department in 2028 to a fully staffed secular-school network by the 2040s — without ever redesigning the org chart.
-:::
-
-**Contents of this Part**
-
-- Section 6 — Organizational Chart
-- Section 7 — Academic Master Plan
-- Section 8 — College Structure
-- Section 9 — Faculty Structure
-- Section 10 — Department Structure
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART TWO OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>II</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Organizational &amp; Academic Structure</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 6–10</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;How six founding colleges, six departments, and an honoraria-based faculty scale from a lone Head of Department in 2028 to a fully staffed secular-school network by the 2040s — without ever redesigning the org chart.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>06&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Organizational Chart</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>07&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Academic Master Plan</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>08&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>College Structure</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>09&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Faculty Structure</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>10&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Department Structure</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART II · SECTION 06
+:::
 
 ## Section 6: Organizational Chart
 
@@ -445,6 +511,10 @@ Year 1 org stands up at incorporation (Dec 2027)/launch (Jan 2028); Year 5 staff
 
 No Senate seat added outside charter amendment through 2050; Core Admin spend stays ≤18% of Payroll in every audited year; Registrar conferral backlog <30 days by Year 10.
 
+::: {custom-style="SectionKicker"}
+PART II · SECTION 07
+:::
+
 ## Section 7: Academic Master Plan
 
 
@@ -513,6 +583,10 @@ Program approval/change: Senate (full body). Implementation: DVC Academic Affair
 
 2028 Phase 1 → 2029 Phase 2 → 2030 Phase 3 → 2033 Phase 4 → 2038 Phase 5 → 2039–2047 Phase 6 → 2048–2050 Phase 7.
 
+::: {custom-style="SectionKicker"}
+PART II · SECTION 08
+:::
+
 ## Section 8: College Structure
 
 **Rationale**
@@ -578,6 +652,10 @@ Each college's Dean sits in Senate Group II; each School Head (Yr11+) reports ad
 
 2028: 6 colleges operational. 2038: 7 Schools operational with shared gen-ed live. 2042: all colleges/schools carry dedicated Associate Dean/Head tier. Success: 100% secular-student gen-ed core completion; shared Arabic core cost-per-student declining year over year as enrolment scales.
 
+::: {custom-style="SectionKicker"}
+PART II · SECTION 09
+:::
+
 ## Section 9: Faculty Structure
 
 **Rationale**
@@ -640,6 +718,10 @@ Faculty Affairs Committee (subset of Senate) approves appointments/promotions th
 **Measurable Success Indicators**
 
 100% of religious faculty with documented isnād/ijāza on file by Yr2; Faculty Honoraria per-CH rate rising year-over-year through Yr10; secular faculty terminal-degree verification rate 100% at each School's launch.
+
+::: {custom-style="SectionKicker"}
+PART II · SECTION 10
+:::
 
 ## Section 10: Department Structure
 
@@ -704,31 +786,56 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part III — Curriculum & Student Journey (Sections 11–15)
-
-
-::: {custom-style="PartKicker"}
-PART THREE OF EIGHT · Sections 11–15
-:::
-
-::: {custom-style="PartThesis"}
-The seventy-one-program portfolio, its credit-hour architecture, and the digital-first student journey that lets a Tier-4 applicant enroll, learn, and graduate without ever needing a campus.
-:::
-
-**Contents of this Part**
-
-- Section 11 — Programme Portfolio
-- Section 12 — Curriculum Architecture
-- Section 13 — Student Journey Map
-- Section 14 — Admission Policies
-- Section 15 — Faculty Recruitment Strategy
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART THREE OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>III</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="68"/></w:rPr><w:t>Curriculum &amp; Student Journey</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 11–15</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The seventy-one-program portfolio, its credit-hour architecture, and the digital-first student journey that lets a Tier-4 applicant enroll, learn, and graduate without ever needing a campus.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>11&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Programme Portfolio</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>12&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Curriculum Architecture</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>13&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Student Journey Map</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>14&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Admission Policies</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>15&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Faculty Recruitment Strategy</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART III · SECTION 11
+:::
 
 ## Section 11: Programme Portfolio
 
@@ -798,6 +905,10 @@ Portfolio administration is an institutional-effectiveness function funded from 
 **Measurable Success Indicators**
 
 By 2037: 71 programs fully stabilized, ≥90% passing triennial review without corrective action. By 2041: 28 secular programs onboarded with balanced enrollment across all 13 colleges/schools. By 2050: portfolio-wide sunset/launch cadence operating on autopilot with <5% Senate-escalation rate.
+
+::: {custom-style="SectionKicker"}
+PART III · SECTION 12
+:::
 
 ## Section 12: Curriculum Architecture
 
@@ -875,6 +986,10 @@ Faculty curriculum-mapping and Sanad-audit work is compensated through the Facul
 
 By 2030: all 71 programs fully mapped with Sanad Audit complete. By 2037: external-review-ready documentation for accreditation. By 2040: secular curriculum architecture published without disturbing existing tier CH totals.
 
+::: {custom-style="SectionKicker"}
+PART III · SECTION 13
+:::
+
 ## Section 13: Student Journey Map
 
 
@@ -948,6 +1063,10 @@ Inquiry-to-enrollment conversion rate; application-processing SLA (<10 business 
 
 By 2032: >80% of routine journey volume handled without human intervention. By 2037: documented conversion and retention metrics matching Master Plan enrollment curve (3,493 students by Year 5, 11,021 by Year 10). By 2041: parallel journeys operating cleanly for both religious and secular portfolios.
 
+::: {custom-style="SectionKicker"}
+PART III · SECTION 14
+:::
+
 ## Section 14: Admission Policies
 
 **Rationale**
@@ -1015,6 +1134,10 @@ Same OpEx-funded operational base as Section 13 ($11,237 / $64,539 / $191,527 in
 **Measurable Success Indicators**
 
 By 2030: appeals process fully operational with documented SLA adherence. By 2037: transfer-articulation table covering major partner-region qualifications. By 2041: secular-school admission standards live without diluting religious-tier rigor.
+
+::: {custom-style="SectionKicker"}
+PART III · SECTION 15
+:::
 
 ## Section 15: Faculty Recruitment Strategy
 
@@ -1094,31 +1217,56 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part IV — Research, Publishing, Partnerships & Accreditation (Sections 16–20)
-
-
-::: {custom-style="PartKicker"}
-PART FOUR OF EIGHT · Sections 16–20
-:::
-
-::: {custom-style="PartThesis"}
-Mentored research and open-access publishing built on existing faculty honoraria, and the exact, dated accreditation sequence — CPD, ISO 21001, NAQAA, NUC, secular US accreditation, Gulf recognition — that never gets reordered for convenience.
-:::
-
-**Contents of this Part**
-
-- Section 16 — Research Strategy
-- Section 17 — Publishing Strategy
-- Section 18 — Global Partnerships Strategy
-- Section 19 — Accreditation Roadmap
-- Section 20 — ISO 21001 Roadmap
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FOUR OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>IV</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Research, Publishing, Partnerships &amp; Accreditation</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 16–20</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Mentored research and open-access publishing built on existing faculty honoraria, and the exact, dated accreditation sequence that never gets reordered for convenience.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>16&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Research Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>17&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Publishing Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>18&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Global Partnerships Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>19&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Accreditation Roadmap</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>20&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>ISO 21001 Roadmap</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART IV · SECTION 16
+:::
 
 ## Section 16: Research Strategy
 
@@ -1170,6 +1318,10 @@ Yr1–2: volunteer Senate committee, no new hire. Yr3–5: supervision absorbed 
 
 **Measurable Success Indicators**: first Ph.D. cohort producing isnād-certified dissertations by Year 5; first Post-Doc fellowship outputs by Year 8; research function fully self-funded within existing allocations through Year 10 with no deficit attributable to research activity.
 
+::: {custom-style="SectionKicker"}
+PART IV · SECTION 17
+:::
+
 ## Section 17: Publishing Strategy
 
 **Rationale**
@@ -1218,6 +1370,10 @@ Publishing converts mentored research into public, citable scholarship at near-z
 **Governance Responsibilities** — Senate: owns editorial policy, journal charters, and formal publishing series approval (academic authority). Sharī'ah Advisory Board: certifies isnād/authenticity of every religious-discipline publication. Board of Trustees: approves any budget beyond existing lines. Waqf & Endowment Board: fiduciary oversight of Scholarship Block-funded incentive stipends.
 
 **Measurable Success Indicators**: three functioning peer-reviewed e-journals by Year 5; first DOAJ listing by Year 8; publication-linked Merit Scholarship incentives active and self-funded within Waqf sub-lines with zero deficit impact.
+
+::: {custom-style="SectionKicker"}
+PART IV · SECTION 18
+:::
 
 ## Section 18: Global Partnerships Strategy
 
@@ -1269,6 +1425,10 @@ AMIU's scholarship pipeline, international expansion (Gambia, Nigeria, Gulf), an
 
 **Measurable Success Indicators**: 10+ active mosque/school MOUs by Year 3; first articulation agreement with a peer Islamic university by Year 8; documented diaspora Sadaqah Jāriyah channel operating within Waqf Board fiduciary limits with zero deficit impact.
 
+::: {custom-style="SectionKicker"}
+PART IV · SECTION 19
+:::
+
 ## Section 19: Accreditation Roadmap
 
 
@@ -1306,6 +1466,10 @@ AMIU's accreditation sequence is deliberately staged, not accelerated: religious
 **Governance Responsibilities** — Board of Trustees: approves all accreditation-cost budgets and exclusive authority over which accreditation to pursue and when (strategy/finance/legal/accreditation-cost authority). Senate: supplies academic/curriculum documentation for every accreditation gate. Waqf & Endowment Board: fiduciary oversight of the Nigeria Reserve sub-line. Sharī'ah Advisory Board: not a direct accreditation gatekeeper but consulted where accreditation reviewers assess religious program integrity.
 
 **Measurable Success Indicators**: full CPD/ISO 21001/Gambia NAQAA sequence complete by Year 4; Nigeria charter application filed on schedule Year 10; US secular accreditation candidacy opened Year 11–12 with ten consecutive audited zero-deficit years on record; first Gulf ministry agreement by Year 13.
+
+::: {custom-style="SectionKicker"}
+PART IV · SECTION 20
+:::
 
 ## Section 20: ISO 21001 Roadmap
 
@@ -1359,31 +1523,65 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part V — Digital Infrastructure, AI & Waqf Development (Sections 21–25)
-
-
-::: {custom-style="PartKicker"}
-PART FIVE OF EIGHT · Sections 21–25
-:::
-
-::: {custom-style="PartThesis"}
-The Moodle-based LMS ecosystem, a Sharī'ah-gated AI strategy, and the Waqf & Stakeholder Reserve's evolution from a $44,951 founding-year fund into a diversified, perpetual Islamic endowment.
-:::
-
-**Contents of this Part**
-
-- Section 21 — LMS Ecosystem
-- Section 22 — AI Strategy
-- Section 23 — Digital Transformation Strategy
-- Section 24 — Library Strategy
-- Section 25 — Waqf Development Strategy
-
-```{=openxml}
+<w:p><w:pPr><w:spacing w:before="3800" w:after="0"/><w:pBdr><w:top w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="360"/><w:ind w:left="1000" w:right="1000"/></w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="122A4E"/><w:sz w:val="30"/></w:rPr><w:t>A plan for the Tuesday after the promise is made.</w:t></w:r>
+</w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>THE SUPREME STRATEGIC PLANNING COUNCIL · FOREWORD</w:t></w:r>
+</w:p>
+<w:p><w:pPr><w:spacing w:before="360" w:after="0"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FIVE OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>V</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Digital Infrastructure, AI &amp; Waqf Development</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 21–25</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Moodle-based LMS ecosystem, a Sharī’ah-gated AI strategy, and the Waqf &amp; Stakeholder Reserve’s evolution into a diversified, perpetual Islamic endowment.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>21&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>LMS Ecosystem</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>22&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>AI Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>23&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Digital Transformation Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>24&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Library Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>25&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Waqf Development Strategy</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART V · SECTION 21
+:::
 
 ## Section 21: LMS Ecosystem
 
@@ -1441,6 +1639,10 @@ Formal Senate authority sits with **Group IV — Institutional & Digital Strateg
 **Measurable Success Indicators**
 
 By Year 5: mobile-first platform live, ≥90% payment success rate, catalog ≥50% authored. By Year 10: 71+28 catalog fully live, 99% uptime, LMS&Tech spend on track at $191,527/yr, zero unmitigated gateway-disruption incidents.
+
+::: {custom-style="SectionKicker"}
+PART V · SECTION 22
+:::
 
 ## Section 22: AI Strategy
 
@@ -1503,6 +1705,10 @@ Theological error/hallucination in religious-content tools (HIGH impact) — mit
 
 By Year 5: two AI tools live (chatbot + Tajweed), zero Sharī'ah findings. By Year 10: three to four AI use cases operational, measurable staffing-efficiency gain (e.g., admissions turnaround cut by a defined %), 100% of religious-content AI tools re-certified on schedule.
 
+::: {custom-style="SectionKicker"}
+PART V · SECTION 23
+:::
+
 ## Section 23: Digital Transformation Strategy
 
 **Rationale**
@@ -1550,6 +1756,10 @@ Cybersecurity breach exposing global student PII/payment data — mitigated by e
 **Measurable Success Indicators**
 
 By Year 5: dedicated SIS live, formal data-governance policy adopted, zero breach incidents to date. By Year 10: full LMS-SIS-payments integration, annual security audits passing, Digital Operations unit fully staffed within Payroll budget, stack proven at 11,021-student scale ahead of secular-expansion phase.
+
+::: {custom-style="SectionKicker"}
+PART V · SECTION 24
+:::
 
 ## Section 24: Library Strategy
 
@@ -1605,6 +1815,10 @@ The **University Librarian** (Group II independent Senate seat) holds formal Sen
 **Measurable Success Indicators**
 
 By Year 5: digital catalog operational and LMS-integrated, part-time Digital Librarian in place. By Year 10: institutional repository active, library sub-budget tracking at ~$19,150/yr, Nigeria central-library plan initiated in step with charter (not before).
+
+::: {custom-style="SectionKicker"}
+PART V · SECTION 25
+:::
 
 ## Section 25: Waqf Development Strategy
 
@@ -1675,31 +1889,56 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part VI — Financial Growth, Marketing & Branding (Sections 26–30)
-
-
-::: {custom-style="PartKicker"}
-PART SIX OF EIGHT · Sections 26–30
-:::
-
-::: {custom-style="PartThesis"}
-Scholarships as designed policy rather than promise, grassroots near-zero-CAC marketing, and a branded-house architecture that lets Gambia, Nigeria, and the Gulf extend — never dilute — the AMIU name.
-:::
-
-**Contents of this Part**
-
-- Section 26 — Scholarship Strategy
-- Section 27 — Revenue Diversification Strategy
-- Section 28 — Marketing Strategy
-- Section 29 — Branding Strategy
-- Section 30 — International Expansion Strategy
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SIX OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VI</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Financial Growth, Marketing &amp; Branding</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 26–30</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Scholarships as designed policy rather than promise, grassroots near-zero-CAC marketing, and a branded-house architecture that lets expansion extend — never dilute — the AMIU name.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>26&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Scholarship Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>27&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Revenue Diversification Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>28&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Marketing Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>29&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Branding Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>30&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>International Expansion Strategy</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART VI · SECTION 26
+:::
 
 ## Section 26: Scholarship Strategy
 
@@ -1750,6 +1989,10 @@ Year 1: $44,949 · Year 5: $258,157 · Year 10: $766,110 (10-year cumulative $3,
 
 **Measurable Success Indicators:** By Year 5, ≥5 active named scholarships and Tier-4 enrollment tracking the Growth Scenario's tier mix; by Year 10, a dedicated Scholarship Officer in place, Waqf Scholarship Block fully formalized, and aided-student retention at or above institutional average.
 
+::: {custom-style="SectionKicker"}
+PART VI · SECTION 27
+:::
+
 ## Section 27: Revenue Diversification Strategy
 
 **Rationale**
@@ -1797,6 +2040,10 @@ CPD content development and LMS hosting draw from LMS & Technology Infrastructur
 **Governance:** Board of Trustees retains exclusive tuition/fee-setting authority governing volume-growth pricing decisions; Waqf & Endowment Board governs all philanthropic inflows; DVC Admin & Finance owns CPD P&L and LMS/Operating budget execution; the Commercial Engine remains entirely outside AMIU governance, reinforcing the firewall boundary.
 
 **Measurable Success Indicators:** By Year 5, an active CPD catalog and first named Sadaqah Jāriyah funds; by Year 10, diversified inflows measurably reducing single-year tuition-shock exposure while tuition remains >95% of gross revenue.
+
+::: {custom-style="SectionKicker"}
+PART VI · SECTION 28
+:::
 
 ## Section 28: Marketing Strategy
 
@@ -1848,6 +2095,10 @@ Coordinator/liaison salaries are deliberately funded from Payroll (Core Admin, 1
 
 **Measurable Success Indicators:** By Year 5, referral/ambassador channels driving the majority of new enrollments at CAC well under $40/student; by Year 10, tier-segmented campaigns operating within $383,055 while sustaining enrollment growth toward 11,021 students.
 
+::: {custom-style="SectionKicker"}
+PART VI · SECTION 29
+:::
+
 ## Section 29: Branding Strategy
 
 **Rationale**
@@ -1896,6 +2147,10 @@ Branding is not a standalone allocation category. Trademark maintenance and bran
 **Governance:** Board of Trustees owns the brand as a strategic/legal asset (trademark, name, tagline changes require Board approval); DVC Admin & Finance manages day-to-day brand enforcement; Waqf & Endowment Board governs donor-recognition branding (named scholarships must conform to the style guide); Senate advises on academic-identity elements (credential-ladder naming, seven-tier presentation).
 
 **Measurable Success Indicators:** By Year 5, a published style guide governing all regional materials; by Year 10, full sub-brand compliance across Gambia and Nigeria with trademark protection extended into at least one additional jurisdiction.
+
+::: {custom-style="SectionKicker"}
+PART VI · SECTION 30
+:::
 
 ## Section 30: International Expansion Strategy
 
@@ -1949,31 +2204,56 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part VII — Regional Campuses & Student Lifecycle (Sections 31–35)
-
-
-::: {custom-style="PartKicker"}
-PART SEVEN OF EIGHT · Sections 31–35
-:::
-
-::: {custom-style="PartThesis"}
-The Nigeria Mega-University and Gulf cooperation strategies, framed honestly as funding targets rather than guarantees, alongside the student-support, alumni, and career frameworks that a lean Core Admin Staff line can actually carry.
-:::
-
-**Contents of this Part**
-
-- Section 31 — Nigeria Campus Strategy
-- Section 32 — Gulf Cooperation Strategy
-- Section 33 — Student Support Framework
-- Section 34 — Alumni Framework
-- Section 35 — Career Development Framework
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SEVEN OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VII</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Regional Campuses &amp; Student Lifecycle</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 31–35</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Nigeria Mega-University and Gulf cooperation strategies, framed honestly as funding targets rather than guarantees, alongside the student-support, alumni, and career frameworks a lean budget can actually carry.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>31&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Nigeria Campus Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>32&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Gulf Cooperation Strategy</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>33&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Student Support Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>34&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Alumni Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>35&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Career Development Framework</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART VII · SECTION 31
+:::
 
 ## Section 31: Nigeria Campus Strategy
 
@@ -2025,6 +2305,10 @@ Per the adopted risk register: "Nigeria Mega-University delay or non-approval �
 
 Charter application submitted on schedule (Year 10); zero Reserve overdraw; feasibility and statutory milestones met without diverting funds from Texas operations; Reserve fully funded to $333,383 cumulative by 2037 regardless of political outcome.
 
+::: {custom-style="SectionKicker"}
+PART VII · SECTION 32
+:::
+
 ## Section 32: Gulf Cooperation Strategy
 
 **Rationale**
@@ -2075,6 +2359,10 @@ Geopolitical/travel disruption in any single Gulf state — mitigated by targeti
 
 Sustained or growing Tier 1 revenue share funding Tier 2–4 scholarships; first ministry recognition agreement by 2040; Gulf donor pipeline demonstrably additive to (not substituting for) the fixed Waqf allocation.
 
+::: {custom-style="SectionKicker"}
+PART VII · SECTION 33
+:::
+
 ## Section 33: Student Support Framework
 
 **Rationale**
@@ -2123,6 +2411,10 @@ Understaffing/burnout on volunteer chaplaincy faculty — mitigated by rotation 
 **Measurable Success Indicators**
 
 100% of hardship escalations resolved within the 14-day standard; advising-portal adoption trending upward year-over-year; no Admin sub-line overrun; Year 10+ Board decision point reached with clear data to justify (or defer) dedicated staffing.
+
+::: {custom-style="SectionKicker"}
+PART VII · SECTION 34
+:::
 
 ## Section 34: Alumni Framework
 
@@ -2173,6 +2465,10 @@ Early-cohort disengagement (small numbers, no track record) — mitigated by aut
 **Measurable Success Indicators**
 
 Alumni community established from Cohort 1 (2028–2029) onward; measurable referral and mosque-nomination flow attributable to alumni by Year 5; first paid coordinator role justified by Year 10 engagement data, not assumption.
+
+::: {custom-style="SectionKicker"}
+PART VII · SECTION 35
+:::
 
 ## Section 35: Career Development Framework
 
@@ -2228,31 +2524,56 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-# Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap (Sections 36–40)
-
-
-::: {custom-style="PartKicker"}
-PART EIGHT OF EIGHT · Sections 36–40
-:::
-
-::: {custom-style="PartThesis"}
-The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, the capital firewall restated for hard assets, and the single consolidated milestone table that ties 2028 to 2050.
-:::
-
-**Contents of this Part**
-
-- Section 36 — Risk Management Framework
-- Section 37 — Compliance Framework
-- Section 38 — Financial Sustainability Framework
-- Section 39 — Capital Development Framework
-- Section 40 — Twenty-Year Strategic Roadmap
-
-```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="620" w:type="dxa"/><w:left w:w="620" w:type="dxa"/><w:bottom w:w="620" w:type="dxa"/><w:right w:w="620" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+<w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART EIGHT OF EIGHT</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VIII</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 36–40</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, and the single consolidated milestone table that ties 2028 to 2050.&#8221;</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>36&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Risk Management Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>37&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Compliance Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>38&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Financial Sustainability Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>39&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Capital Development Framework</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>40&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Twenty-Year Strategic Roadmap</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+::: {custom-style="SectionKicker"}
+PART VIII · SECTION 36
+:::
 
 ## Section 36: Risk Management Framework
 
@@ -2336,6 +2657,10 @@ Covered exhaustively in the table above; the meta-risk is register atrophy (the 
 
 Ten consecutive years (2028–2037) of zero-deficit operation with a fully current risk register; zero firewall breaches; zero uncorrected IRS commingling findings; successor plans on file for all founder-linked Senate seats by 2030.
 
+::: {custom-style="SectionKicker"}
+PART VIII · SECTION 37
+:::
+
 ## Section 37: Compliance Framework
 
 **Rationale**
@@ -2411,6 +2736,10 @@ Directly overlaps Risk 8 (nonprofit/for-profit commingling scrutiny — mitigate
 **Measurable Success Indicators**
 
 Unbroken federal/state compliance record 2028–2037; both target certifications (CPD, ISO 21001) achieved in their canon target years; Gambia campus operating under valid NAQAA registration by end of Stage 3 (2031); zero IRS commingling findings across the founding decade.
+
+::: {custom-style="SectionKicker"}
+PART VIII · SECTION 38
+:::
 
 ## Section 38: Financial Sustainability Framework
 
@@ -2494,6 +2823,10 @@ Primarily Risk 6 (Nigeria delay — doesn't affect solvency, only pace), Risk 9 
 
 Zero deficit years 2028–2037 (audited); Year-10 combined retained position at or above $5,582,369; all three scenario bands remain within adopted ranges through the decade; Downside Review mechanism never triggered — or, if triggered, resolved without a deficit event.
 
+::: {custom-style="SectionKicker"}
+PART VIII · SECTION 39
+:::
+
 ## Section 39: Capital Development Framework
 
 
@@ -2568,6 +2901,10 @@ Directly governed by Risk 6 (Nigeria delay/non-approval — doesn't affect solve
 **Measurable Success Indicators**
 
 Gambia campus delivered within ceiling and accredited by NAQAA independently of the Texas parent (by 2031); Nigeria Reserve on its 2%-of-revenue accrual track through 2037; zero instances of cross-entity capital funding across the entire 2028–2050 horizon.
+
+::: {custom-style="SectionKicker"}
+PART VIII · SECTION 40
+:::
 
 ## Section 40: Twenty-Year Strategic Roadmap
 

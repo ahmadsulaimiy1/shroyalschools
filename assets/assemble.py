@@ -21,6 +21,7 @@ TOC_ENTRIES = [
     ("Chairman's Message", "Chairman’s Message", 1),
     ("President's Message", "President’s Message", 1),
     ("Executive Summary", "Executive Summary", 1),
+    ("AMIU at a Glance", "AMIU at a Glance", 1),
     ("List of Figures", "List of Figures", 1),
     ("List of Charts", "List of Charts", 1),
     ("List of Diagrams", "List of Diagrams", 1),
@@ -61,11 +62,16 @@ PART_TITLES = [
       (39, "Capital Development Framework"), (40, "Twenty-Year Strategic Roadmap")]),
 ]
 
+ROMAN_TO_WORD = {"I": "ONE", "II": "TWO", "III": "THREE", "IV": "FOUR", "V": "FIVE",
+                  "VI": "SIX", "VII": "SEVEN", "VIII": "EIGHT"}
+
 for roman, title, secrange, sections in PART_TITLES:
-    # Search text intentionally omits the "(Sections N-N)" suffix: long Part
-    # titles wrap across 3-4 lines in the rendered PDF, and pdftotext can
-    # insert a wrap-induced space inside "16-20)" that breaks an exact match.
-    TOC_ENTRIES.append((f"Part {roman} — {title}", f"Part {roman} — {title}", 1))
+    # Search text targets the hero-spread's small-caps kicker line
+    # ("PART FOUR OF EIGHT"), which is short, wrap-proof, and appears
+    # exactly once in the whole document (only on that Part's divider page) —
+    # this sidesteps both the long-title page-wrap bug and the TOC's-own-row
+    # duplicate-occurrence ambiguity that affect the full title string.
+    TOC_ENTRIES.append((f"Part {roman} — {title}", f"PART {ROMAN_TO_WORD[roman]} OF EIGHT", 1))
     for num, sec_title in sections:
         TOC_ENTRIES.append((f"Section {num}: {sec_title}", f"Section {num}: {sec_title}", 2))
 
@@ -122,6 +128,62 @@ def assemble(toc_markdown, outpath):
 def run_pandoc(md_path, docx_path):
     subprocess.run(["pandoc", md_path, "-o", docx_path, f"--reference-doc={REFDOC}"], check=True)
     _prevent_row_splitting(docx_path)
+    _style_subheading_labels(docx_path)
+
+def _style_subheading_labels(docx_path):
+    """Restyle the bold sub-dimension labels ('**KPIs**', '**Risks & Mitigation**',
+    etc.) that open each Section's ten dimensions into a small-caps gold
+    editorial eyebrow, instead of leaving them as plain black bold text —
+    matching the caption/eyebrow treatment used everywhere else in the design
+    system. Detected structurally (first run in its paragraph, bold, short)
+    rather than via a fixed label whitelist, since section authors phrased
+    the labels slightly differently across the document."""
+    import docx as _docx
+    from docx.shared import Pt as _Pt, RGBColor as _RGBColor
+    from docx.oxml.ns import qn as _qn
+    from docx.oxml import OxmlElement as _El
+
+    GOLD = _RGBColor(0xB0, 0x86, 0x25)
+    d = _docx.Document(docx_path)
+
+    def style_run(run):
+        run.font.bold = True
+        run.font.color.rgb = GOLD
+        run.font.size = _Pt(10)
+        rpr = run._r.get_or_add_rPr()
+        caps = rpr.find(_qn('w:caps'))
+        if caps is None:
+            caps = _El('w:caps')
+            rpr.append(caps)
+        spc = rpr.find(_qn('w:spacing'))
+        if spc is None:
+            spc = _El('w:spacing')
+            rpr.append(spc)
+        spc.set(_qn('w:val'), '14')
+
+    def process_paragraphs(paragraphs):
+        for p in paragraphs:
+            if p.style.name not in ('Normal', 'Compact', 'Body Text', 'First Paragraph'):
+                continue
+            if not p.runs:
+                continue
+            first = p.runs[0]
+            text = first.text.strip()
+            if not first.font.bold:
+                continue
+            if not (2 <= len(text) <= 58):
+                continue
+            if text.endswith('.') or text.endswith(','):
+                continue
+            style_run(first)
+
+    process_paragraphs(d.paragraphs)
+    for table in d.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                process_paragraphs(cell.paragraphs)
+
+    d.save(docx_path)
 
 def _prevent_row_splitting(docx_path):
     """Set cantSplit on every table row so a row never breaks across a page
@@ -151,7 +213,8 @@ def run_soffice(docx_path, profile):
 # lists all entries too, so each search string appears twice in the document —
 # we must pick the earlier occurrence for "before-TOC" entries and the later
 # (last) occurrence for everything else, or we'd match the TOC's own row.
-BEFORE_TOC = {"Foreword", "Founder’s Message", "Chairman’s Message", "President’s Message", "Executive Summary"}
+BEFORE_TOC = {"Foreword", "Founder’s Message", "Chairman’s Message", "President’s Message", "Executive Summary",
+              "AMIU at a Glance"}
 
 def extract_page_map(pdf_path, txt_path):
     subprocess.run(["pdftotext", "-layout", pdf_path, txt_path], check=True)

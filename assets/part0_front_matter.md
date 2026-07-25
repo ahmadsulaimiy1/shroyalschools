@@ -220,3 +220,179 @@ This Blueprint (AMIU-SB-002) does not amend that architecture. It operationalize
 **Illustrative twenty-year trajectory (Years 11–20, explicitly contingent, not adopted):** revenue growing from $8.36M in Year 11 (2038) to $93.9M in Year 20 (2047), within a directional $90M–$150M twenty-year institutional-economy target — figures that this Blueprint repeatedly labels as planning estimates subject to re-forecast, not as commitments comparable to the audited Founding Decade figures above.
 
 This document is organized in eight parts — Governance & Institutional Foundations; Organizational & Academic Structure; Curriculum & Student Journey; Research, Publishing, Partnerships & Accreditation; Digital Infrastructure, AI & Waqf Development; Financial Growth, Marketing & Branding; Regional Campuses & Student Lifecycle; and Risk, Compliance, Sustainability & the 20-Year Roadmap — each addressing, section by section, rationale, global best practice, implementation phasing, staffing, budget, KPIs, risk, timeline, governance responsibility, and measurable success indicators. It closes with a consolidated year-by-year milestone table spanning 2028 to 2050, cross-referenced to every section that contributes to it.
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## AMIU at a Glance {.unnumbered}
+
+*The founding-decade record, audited against the adopted Growth Scenario (AMIU-MP-001).*
+
+```{=openxml}
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblLayout w:type="fixed"/>
+    <w:tblBorders>
+      <w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+      <w:left w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+      <w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+      <w:right w:val="none" w:sz="0" w:space="0" w:color="auto"/>
+    </w:tblBorders>
+    <w:tblCellSpacing w:w="60" w:type="dxa"/>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="4675"/><w:gridCol w:w="4675"/></w:tblGrid>
+  <w:tr>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>11,021</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>ACTIVE STUDENTS BY YEAR 10 (2037)</w:t></w:r></w:p>
+    </w:tc>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$16.7M</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR CUMULATIVE GROSS REVENUE</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+  <w:tr>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$0</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DEFICIT IN ANY YEAR, ANY SCENARIO</w:t></w:r></w:p>
+    </w:tc>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>71</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>NAMED FOUNDING-DECADE PROGRAMS</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+  <w:tr>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$5.8M</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR LIQUIDITY RESERVE</w:t></w:r></w:p>
+    </w:tc>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$3.3M</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR WAQF &amp; STAKEHOLDER RESERVE</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
+```
+
+*Figures reflect the adopted Growth Scenario. Years 11–20 are explicitly directional planning estimates — see Section 1 and Section 40.*
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:tbl>
+  <w:tblPr>
+    <w:tblW w:w="9350" w:type="dxa"/>
+    <w:tblBorders>
+      <w:top w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+      <w:bottom w:val="single" w:sz="10" w:space="0" w:color="B08625"/>
+    </w:tblBorders>
+  </w:tblPr>
+  <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
+  <w:tr>
+    <w:trPr><w:trHeight w:val="8600" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:tc>
+      <w:tcPr>
+        <w:tcW w:w="9350" w:type="dxa"/>
+        <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
+        <w:tcMar><w:top w:w="500" w:type="dxa"/><w:left w:w="900" w:type="dxa"/><w:bottom w:w="500" w:type="dxa"/><w:right w:w="900" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="260"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
+      </w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="320"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Financial capacity shall never be a barrier to knowledge.</w:t></w:r>
+      </w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>AMIU MISSION PRINCIPLE · AMIU-MP-001 § 3</w:t></w:r>
+      </w:p>
+    </w:tc>
+  </w:tr>
+</w:tbl>
+```
+

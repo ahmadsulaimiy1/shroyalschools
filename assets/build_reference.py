@@ -103,9 +103,21 @@ set_font(h1, HEAD_FONT, 27, NAVY, bold=True)
 set_para_fmt(h1, 4, 16, 1.05, keep_next=True, border_bottom=18, border_color='B08625')
 
 # ---------------- Heading 2 (Sections) ----------------
+# NOTE: space-before is intentionally small — the new SectionKicker paragraph
+# immediately above every Section heading now owns the larger "before" gap,
+# so the kicker and its heading read as one tightly-coupled unit.
 h2 = get_style(doc, 'Heading 2')
 set_font(h2, HEAD_FONT, 15.5, NAVY, bold=True)
-set_para_fmt(h2, 20, 8, 1.08, keep_next=True, border_bottom=6, border_color='D8DCE5')
+set_para_fmt(h2, 2, 8, 1.08, keep_next=True, border_bottom=6, border_color='D8DCE5')
+
+# ---------------- Custom style: Section kicker badge (Part · Section N) ----------------
+if not has_style(doc, 'SectionKicker'):
+    sec_kicker = doc.styles.add_style('SectionKicker', WD_STYLE_TYPE.PARAGRAPH)
+    sec_kicker.base_style = get_style(doc, 'Normal')
+else:
+    sec_kicker = get_style(doc, 'SectionKicker')
+set_font(sec_kicker, BODY_FONT, 9.5, GOLD, bold=True, all_caps=True, spacing=22)
+set_para_fmt(sec_kicker, 22, 2, 1.1, keep_next=True)
 
 # ---------------- Custom style: Part-divider kicker label ----------------
 if not has_style(doc, 'PartKicker'):
