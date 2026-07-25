@@ -43,7 +43,7 @@ PART_TITLES = [
      [(6, "Organizational Chart"), (7, "Academic Master Plan"), (8, "College Structure"),
       (9, "Faculty Structure"), (10, "Department Structure")]),
     ("III", "Curriculum & Student Journey", "Sections 11–15",
-     [(11, "Programme Portfolio"), (12, "Curriculum Architecture"), (13, "Student Journey Map"),
+     [(11, "Program Portfolio"), (12, "Curriculum Architecture"), (13, "Student Journey Map"),
       (14, "Admission Policies"), (15, "Faculty Recruitment Strategy")]),
     ("IV", "Research, Publishing, Partnerships & Accreditation", "Sections 16–20",
      [(16, "Research Strategy"), (17, "Publishing Strategy"), (18, "Global Partnerships Strategy"),
@@ -82,7 +82,7 @@ TOC_ENTRIES += [
     ("Appendix B — Master Plan Exhibit Checklist", "Appendix B — Master Plan Exhibit Checklist", 1),
     ("Appendix C — Fixed Revenue Allocation Framework: Quick Reference",
      "Appendix C — Fixed Revenue Allocation Framework: Quick Reference", 1),
-    ("Appendix D — Programme Catalog Reference", "Appendix D — Programme Catalog Reference", 1),
+    ("Appendix D — Program Catalog Reference", "Appendix D — Program Catalog Reference", 1),
     ("References", "References", 1),
     ("Index", "Index", 1),
 ]

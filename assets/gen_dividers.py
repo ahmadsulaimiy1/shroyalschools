@@ -16,7 +16,7 @@ PARTS = [
       (9, "Faculty Structure"), (10, "Department Structure")]),
     ("III", "THREE", "Curriculum & Student Journey", "Sections 11–15", 11,
      "The seventy-one-program portfolio, its credit-hour architecture, and the digital-first student journey that lets a Tier-4 applicant enroll, learn, and graduate without ever needing a campus.",
-     [(11, "Programme Portfolio"), (12, "Curriculum Architecture"), (13, "Student Journey Map"),
+     [(11, "Program Portfolio"), (12, "Curriculum Architecture"), (13, "Student Journey Map"),
       (14, "Admission Policies"), (15, "Faculty Recruitment Strategy")]),
     ("IV", "FOUR", "Research, Publishing, Partnerships & Accreditation", "Sections 16–20", 16,
      "Mentored research and open-access publishing built on existing faculty honoraria, and the exact, dated accreditation sequence that never gets reordered for convenience.",

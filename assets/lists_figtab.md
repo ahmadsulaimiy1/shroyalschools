@@ -4,7 +4,7 @@
 |---|---|---|
 | Figure 1 | Ten-Year Enrollment Growth, Founding Decade (Adopted Growth Scenario) | Section 1 |
 | Figure 2 | Ten-Year Gross Revenue Trajectory, Founding Decade (2028–2037) | Section 1 |
-| Figure 3 | AMIU Governance & Organisational Structure | Section 6 |
+| Figure 3 | AMIU Governance & Organizational Structure | Section 6 |
 | Figure 4 | The Seven-Tier Stackable Academic Ladder | Section 7 |
 | Figure 5 | Student Journey Map: Inquiry to Alumni | Section 13 |
 | Figure 6 | Accreditation & International Expansion Roadmap, 2028–2047 | Section 19 |
@@ -33,7 +33,7 @@
 
 | Figure | Title | Section |
 |---|---|---|
-| Figure 3 | AMIU Governance & Organisational Structure | Section 6 |
+| Figure 3 | AMIU Governance & Organizational Structure | Section 6 |
 | Figure 4 | The Seven-Tier Stackable Academic Ladder | Section 7 |
 | Figure 9 | Capital Architecture: The Tuition Firewall | Section 39 |
 
@@ -50,7 +50,7 @@
 
 ## List of Tables {.unnumbered}
 
-This Blueprint contains 89 tables across its forty-one sections. The thirty tables below carry distinctive institutional content — structures, registers, and named schedules — and are indexed individually. Recurring structural tables that appear once per section under a standard heading (*Implementation Phases*, *Staffing Requirements*, *Annual Budget*, *Risks & Mitigation*, *Governance Responsibilities*) are not indexed separately here for readability; they follow the same ten-dimension structure in every section and are reachable directly from the Table of Contents.
+This Blueprint contains 101 tables across its forty-one sections. The thirty tables below carry distinctive institutional content — structures, registers, and named schedules — and are indexed individually. Recurring structural tables that appear once per section under a standard heading (*Implementation Phases*, *Staffing Requirements*, *Annual Budget*, *Risks & Mitigation*, *Governance Responsibilities*) are not indexed separately here for readability; they follow the same ten-dimension structure in every section and are reachable directly from the Table of Contents.
 
 | Table | Title | Section |
 |---|---|---|

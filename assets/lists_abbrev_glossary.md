@@ -53,7 +53,7 @@
 | Ph.D. | Doctor of Philosophy |
 | PGD | Postgraduate Diploma |
 | PLO | Program Learning Outcome |
-| PPC | Programme Portfolio Committee |
+| PPC | Program Portfolio Committee |
 | PWA | Progressive Web Application |
 | RAG | Retrieval-Augmented Generation (AI architecture) |
 | SACSCOC | Southern Association of Colleges and Schools Commission on Colleges (illustrative US regional accreditor reference) |

@@ -50,7 +50,7 @@ This Blueprint (AMIU-SB-002) is a companion volume, not a replacement, for the a
 | **Part IV** (Research, Publishing, Partnerships & Accreditation) | §9.4 (ISO 21001 & CPD), §9.3 (Gambia), §16 (Twenty-Year Horizon) | Operationalizes the accreditation pipeline within its adopted sequencing and cost figures |
 | **Part V** (Digital Infrastructure, AI & Waqf Development) | §5.4 (LMS & Tech allocation), §6 (Waqf & Endowment) | Operationalizes digital infrastructure and Waqf development within fixed allocation lines |
 | **Part VI** (Financial Growth, Marketing & Branding) | §2–3 (Tuition & Fees, Scholarships), §5.4 (Marketing allocation) | Operationalizes scholarship, marketing, and branding execution within fixed tuition and allocation architecture |
-| **Part VII** (Regional Campuses & Student Lifecycle) | §6.2.1 (Nigeria Mega-University), §9.3 (Gambia Branch) | Operationalizes regional expansion within Waqf Reserve sub-lines and Board-approved ceilings |
+| **Part VII** (Regional Campuses & Student Lifecycle) | §6.2.1 (Nigeria Mega-University), §9.3 (Gambia Branch) | Operationalizes regional expansion within Waqf & Stakeholder Reserve sub-lines and Board-approved ceilings |
 | **Part VIII** (Risk, Compliance, Sustainability, the 20-Year Roadmap & the Founding Access Philosophy) | §14 (Risk Register), §5 (Financial Audit), §16 (Twenty-Year Horizon), §3 & §6.3 (Scholarship & External Waqf Donor Contributions) | Extends the 14-risk register and financial model into a full risk/compliance operating system and 2050 roadmap, closing with a founding-access strategy modeled entirely from the adopted Waqf allocation |
 
 ## Appendix B — Master Plan Exhibit Checklist (AMIU-MP-001 §17) {.unnumbered}
@@ -81,15 +81,15 @@ The following exhibits are constitutional and legal instruments referenced throu
 | Liquidity Reserve | 35% | Board of Trustees |
 | Payroll (Faculty Honoraria 40% · Founders 24% · Senate 18% · Core Admin 18%) | 20% | Board (budget) / Senate (stipends, 4-independent-seat compensation check) |
 | Waqf & Stakeholder Reserve | 20% | Waqf & Endowment Board (fiduciary) |
-| Marketing & Student Acquisition | 10% | DVC Administration & Finance |
-| Operating Expenses | 5% | DVC Administration & Finance |
+| Marketing & Student Acquisition | 10% | DVC Admin & Finance |
+| Operating Expenses | 5% | DVC Admin & Finance |
 | LMS & Technology Infrastructure | 5% | Senate Group IV |
-| Da'wah & Community Outreach | 5% | DVC Administration & Finance |
+| Da'wah & Community Outreach | 5% | DVC Admin & Finance |
 | **Total** | **100%, zero unallocated residual** | — |
 
-## Appendix D — Programme Catalog Reference {.unnumbered}
+## Appendix D — Program Catalog Reference {.unnumbered}
 
-The complete 71-program founding-decade catalog (Programs 1–71, Undergraduate Diploma through Post-Doctoral Research Fellowship) and the 28-program secular catalog (Programs 72–99, Year 11+) are codified in AMIU-MP-001 §1 and §16.3 respectively, and are not reprinted in full in this Blueprint. Section 11 (Programme Portfolio) of this Blueprint governs the lifecycle management — review cycle, sunset policy, balance guardrails — under which that catalog operates, and Section 7 (Academic Master Plan) governs its rollout sequencing.
+The complete 71-program founding-decade catalog (Programs 1–71, Undergraduate Diploma through Post-Doctoral Research Fellowship) and the 28-program secular catalog (Programs 72–99, Year 11+) are codified in AMIU-MP-001 §1 and §16.3 respectively, and are not reprinted in full in this Blueprint. Section 11 (Program Portfolio) of this Blueprint governs the lifecycle management — review cycle, sunset policy, balance guardrails — under which that catalog operates, and Section 7 (Academic Master Plan) governs its rollout sequencing.
 
 ---
 
@@ -153,7 +153,7 @@ Gambia Branch Campus, Sections 18–19, 30, 39 · Global Partnerships Strategy, 
 Head of Department (HoD) structure, Section 10 · Honoraria (Faculty), Sections 9, 15
 
 **I**
-Independent Sharī'ah Advisory Board, Sections 2–3, 16–17, 22, 25 · International Expansion Strategy, Section 30 · ISO 21001 Roadmap, Section 20 · ISLAMIC values framework, Section 2
+Independent Sharī'ah Advisory Board, Sections 2–3, 16–17, 22, 25 · International Expansion Strategy, Section 30 · Islamic Values Framework, Section 2 · ISO 21001 Roadmap, Section 20
 
 **K**
 KPIs (see individual section headers — every section, Sections 1–41)
@@ -171,10 +171,10 @@ Nigeria Mega-University Initiative, Sections 18–19, 25, 31, 39 · Nigeria NUC 
 Organizational Chart, Section 6
 
 **P**
-Payroll allocation (sub-splits), Sections 5, 9, 15 · Post-Doctoral Research Fellowship (Tier VII), Sections 7, 16 · Programme Portfolio, Section 11 · Publishing Strategy, Section 17
+Payroll allocation (sub-splits), Sections 5, 9, 15 · Post-Doctoral Research Fellowship (Tier VII), Sections 7, 16 · Program Portfolio, Section 11 · Publishing Strategy, Section 17
 
 **R**
-Research Strategy, Section 16 · Revenue Allocation Framework, Appendix C; Figure 8 · Revenue Diversification Strategy, Section 27 · Risk Management Framework & 14-risk register, Section 36 · Risk register (Years 11+ additions), Section 36 · Risk Phase Classification (Years 1–10, RAG), Section 41
+Research Strategy, Section 16 · Revenue Allocation Framework, Appendix C; Figure 8 · Revenue Diversification Strategy, Section 27 · Risk Management Framework & 14-risk register, Section 36 · Risk Phase Classification (Years 1–10, RAG), Section 41 · Risk register (Years 11+ additions), Section 36
 
 **S**
 Sadaqah Jāriyah, Sections 18, 26–28, 34; Glossary · Scholarship Strategy, Section 26 · Senate Structure (18 seats), Section 4 · Seven-Tier Academic Ladder, Section 7; Figure 4 · Sharī'ah Advisory Board (see Independent Sharī'ah Advisory Board) · Student Journey Map, Section 13; Figure 5 · Student Support Framework, Section 33 · Succession policy (Senate), Section 4
@@ -193,7 +193,7 @@ Waqf & Stakeholder Reserve, Sections 2, 25–26, 31, 38–39; Figure 7 · Waqf D
 
 # Closing Statement {.unnumbered}
 
-This Blueprint (AMIU-SB-002) does not supersede the Ten-Year Master Plan & Strategic Charter (AMIU-MP-001); it operationalizes it. Every dollar figure, program count, governance seat, and accreditation date cited across its forty-one sections traces back to a canon figure already adopted in the Master Plan, or to an explicitly-labelled illustrative extension of it. Where this Blueprint identifies a gap the current fixed allocation framework does not yet fund — a dedicated Research line, a standalone Student Support office, a Capital Development Officer — it says so plainly and names the governance pathway required to close that gap, rather than quietly assuming resources the model does not yet generate.
+This Blueprint (AMIU-SB-002) does not supersede the Ten-Year Master Plan & Strategic Charter (AMIU-MP-001); it operationalizes it. Every dollar figure, program count, governance seat, and accreditation date cited across its forty-one sections traces back to a canon figure already adopted in the Master Plan, or to an explicitly labeled illustrative extension of it. Where this Blueprint identifies a gap the current fixed allocation framework does not yet fund — a dedicated Research line, a standalone Student Support office, a Capital Development Officer — it says so plainly and names the governance pathway required to close that gap, rather than quietly assuming resources the model does not yet generate.
 
 Presented for review by the Board of Trustees, the University Senate, and the Supreme Strategic Planning Council in accordance with the constitutional provisions of the AMIU Constitution.
 
