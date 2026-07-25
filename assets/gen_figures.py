@@ -41,6 +41,37 @@ def save(fig, name, w=None, h=None):
     plt.close(fig)
     print("saved", name)
 
+# ---------------------------------------------------------------------------
+# Signature exhibit-plate frame — the one recurring device applied to every
+# figure so an AMIU exhibit is recognisable independent of chart type.
+# Titles live in the document's own caption typography, not inside the image;
+# the frame carries only a small brand kicker, corner marks and a micro-footer.
+# ---------------------------------------------------------------------------
+ROMAN10 = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+
+def _corner(fig, x, y, hsign, vsign, length=0.022, color=GOLD, lw=1.5):
+    fig.add_artist(plt.Line2D([x, x + hsign * length], [y, y], transform=fig.transFigure,
+                               color=color, linewidth=lw, solid_capstyle="butt", zorder=10))
+    fig.add_artist(plt.Line2D([x, x], [y, y + vsign * length], transform=fig.transFigure,
+                               color=color, linewidth=lw, solid_capstyle="butt", zorder=10))
+
+def signature_frame(fig, exhibit_no):
+    numeral = ROMAN10[exhibit_no - 1]
+    fig.add_artist(plt.Line2D([0.04, 0.96], [0.975, 0.975], transform=fig.transFigure,
+                               color=GOLD, linewidth=1.4, solid_capstyle="butt", zorder=10))
+    fig.text(0.04, 0.983, f"AMIU EXHIBIT {numeral}", transform=fig.transFigure,
+             fontsize=8.5, color=GOLD, fontweight="bold", ha="left", va="bottom")
+    fig.text(0.96, 0.983, "STRATEGIC IMPLEMENTATION BLUEPRINT", transform=fig.transFigure,
+             fontsize=7.5, color=GREY, ha="right", va="bottom")
+    fig.add_artist(plt.Line2D([0.04, 0.96], [0.028, 0.028], transform=fig.transFigure,
+                               color=NAVY, linewidth=0.8, zorder=10))
+    fig.text(0.04, 0.018, "AL-MULK INTERNATIONAL UNIVERSITY", transform=fig.transFigure,
+             fontsize=7, color=GREY, ha="left", va="top")
+    fig.text(0.96, 0.018, f"EXHIBIT {numeral} OF 10", transform=fig.transFigure,
+             fontsize=7, color=GREY, ha="right", va="top")
+    _corner(fig, 0.025, 0.945, +1, -1)
+    _corner(fig, 0.975, 0.058, -1, +1)
+
 # =====================================================================
 # FIGURE 1 — Revenue Allocation Framework (donut)
 # =====================================================================
@@ -53,8 +84,6 @@ colors = [NAVY, NAVY_MD, GOLD, "#345385", "#8C97AB", "#4C6489", "#D9B36A"]
 fig, ax = plt.subplots(figsize=(9, 7.2))
 wedges, _ = ax.pie(sizes, colors=colors, startangle=90, counterclock=False,
                     wedgeprops=dict(width=0.42, edgecolor="white", linewidth=2.5))
-ax.set_title("Figure — Revenue Allocation Framework\nFixed Annual Percentage of Gross Revenue",
-             fontsize=15, fontweight="bold", color=NAVY, pad=18)
 ax.text(0, 0.06, "100%", ha="center", va="center", fontsize=22, fontweight="bold", color=NAVY)
 ax.text(0, -0.14, "Zero Unallocated\nResidual", ha="center", va="center", fontsize=10, color=GREY)
 
@@ -66,6 +95,7 @@ legend_labels = [f"{n} — {s}%" for n, s in zip(legend_names, sizes)]
 ax.legend(wedges, legend_labels, loc="center left", bbox_to_anchor=(1.02, 0.5),
           frameon=False, fontsize=11, labelspacing=1.3, handlelength=1.4, handleheight=1.4)
 ax.set(aspect="equal")
+signature_frame(fig, 8)
 save(fig, "fig01_revenue_allocation.png")
 
 # =====================================================================
@@ -84,12 +114,11 @@ for x, y in zip(years, enrol):
 ax.set_xticks(years)
 ax.set_xticklabels([f"Yr {y}\n{c}" for y, c in zip(years, cal_years)], fontsize=9)
 ax.set_ylabel("Total Active Students", fontsize=11)
-ax.set_title("Figure — Ten-Year Enrollment Growth, Founding Decade (Adopted Growth Scenario)",
-             fontsize=14, fontweight="bold", color=NAVY, pad=14)
 ax.spines[["top", "right", "left"]].set_visible(False)
 ax.yaxis.grid(True, color="#E5E8EF", zorder=0)
 ax.set_ylim(0, 12500)
 ax.tick_params(left=False)
+signature_frame(fig, 1)
 save(fig, "fig02_enrollment_growth.png")
 
 # =====================================================================
@@ -119,11 +148,10 @@ ax2.text(9.55, cumulative[-1]/1e6 + 0.9, f"${cumulative[-1]/1e6:.1f}M cumulative
 ax1.text(9.55, revenue[-1]/1e6 + 0.28, f"${revenue[-1]/1e6:.2f}M annual",
           ha="right", fontsize=9.5, color=NAVY, fontweight="bold")
 
-fig.suptitle("Figure — Ten-Year Gross Revenue Trajectory, Founding Decade (2028–2037)",
-             fontsize=14, fontweight="bold", color=NAVY, y=1.01)
 lines1, labels1 = ax1.get_legend_handles_labels()
 lines2, labels2 = ax2.get_legend_handles_labels()
 ax1.legend(lines1 + lines2, labels1 + labels2, loc="upper left", frameon=False, fontsize=10)
+signature_frame(fig, 2)
 save(fig, "fig03_revenue_growth.png")
 
 # =====================================================================
@@ -147,14 +175,12 @@ ax.text(15.5, max(rev20_m)*0.94, "ERA II\nSecular Expansion\n2038–2047", ha="c
 ax.set_xticks(yrs20[::2])
 ax.set_xticklabels([f"{c}" for c in cal20[::2]], fontsize=9, rotation=0)
 ax.set_ylabel("Illustrative Gross Revenue (US$ millions)", fontsize=10.5)
-ax.set_title("Figure — Twenty-Year Illustrative Revenue Trajectory, 2028–2047\n"
-             "Years 11–20 are directional planning estimates, contingent on the adopted accreditation sequencing",
-             fontsize=13.5, fontweight="bold", color=NAVY, pad=14)
 ax.spines[["top", "right"]].set_visible(False)
 ax.annotate(f"${rev20_m[-1]:.1f}M", xy=(20, rev20_m[-1]), xytext=(18.3, rev20_m[-1]-6),
             fontsize=10, color=NAVY, fontweight="bold",
             arrowprops=dict(arrowstyle="-", color=GREY, lw=0.8))
 ax.set_xlim(0.4, 20.6)
+signature_frame(fig, 10)
 save(fig, "fig04_twenty_year_trajectory.png")
 
 # =====================================================================
@@ -175,18 +201,17 @@ ax.set_yticklabels(cats, fontsize=10.5)
 ax.invert_yaxis()
 ax.set_xlim(0, 42)
 ax.set_xlabel("Share of the Distributed Half of the Waqf & Stakeholder Reserve (20% of Gross Revenue)", fontsize=9.5)
-ax.set_title("Figure — Waqf & Stakeholder Reserve: Distributed-Fund Allocation",
-             fontsize=14, fontweight="bold", color=NAVY, pad=14)
 ax.spines[["top", "right", "left"]].set_visible(False)
 ax.xaxis.grid(True, color="#E5E8EF", zorder=0)
 ax.tick_params(left=False)
+signature_frame(fig, 7)
 save(fig, "fig05_waqf_distribution.png")
 
 # =====================================================================
 # FIGURE 6 — Governance Organisational Chart (diagram)
 # =====================================================================
 fig, ax = plt.subplots(figsize=(11.5, 9.0))
-ax.set_xlim(0, 100); ax.set_ylim(0, 110); ax.axis("off")
+ax.set_xlim(0, 100); ax.set_ylim(0, 99); ax.axis("off")
 
 def box(x, y, w, h, text, fc=NAVY, tc="white", fs=9.5, bold=True, ec="none", lw=0):
     b = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.35,rounding_size=1.6",
@@ -231,10 +256,7 @@ link(62, 50, 62, 41); link(85, 50, 89, 41); link(85, 61, 33, 41)
 box(35, 12, 42, 11, "Faculty — Adjunct → Assistant → Associate → Full Professor\n(Honoraria-Based, 40% of Payroll)", fc=BG_TINT, tc=NAVY, fs=8.6, ec=NAVY, lw=1.1)
 link(33, 30, 56, 23); link(62, 30, 56, 23)
 
-ax.text(50, 106, "Figure — AMIU Governance & Organisational Structure", ha="center", fontsize=14.5,
-        fontweight="bold", color=NAVY)
-ax.text(50, 101.5, "Bicameral Authority: Board of Trustees and University Senate, Founding-Decade Configuration",
-        ha="center", fontsize=10, color=GREY)
+signature_frame(fig, 3)
 save(fig, "fig06_governance_orgchart.png")
 
 # =====================================================================
@@ -250,7 +272,7 @@ tiers = [
     ("I", "Undergraduate Diploma", "45 CH · Launch Yr 1 (2028)", 18),
 ]
 fig, ax = plt.subplots(figsize=(11, 8.6))
-ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
+ax.set_xlim(0, 100); ax.set_ylim(0, 95); ax.axis("off")
 n = len(tiers)
 top, bottom, gap = 92, 6, 1.6
 h = (top - bottom - gap*(n-1)) / n
@@ -266,17 +288,14 @@ for i, (roman, name, meta, progs) in enumerate(tiers):
             fontweight="bold", color=(NAVY_DK if i >= 5 else "white"))
     ax.text(x0 + width/2 + 3, y + h/2 - h*0.32, f"{meta} · {progs} named programs", ha="center", va="center",
             fontsize=8.6, color=(NAVY_DK if i >= 5 else "#DCE3F0"))
-ax.text(50, 99, "Figure — The Seven-Tier Stackable Academic Ladder", ha="center", fontsize=14.5,
-        fontweight="bold", color=NAVY)
-ax.text(50, 96, "71 Named Programs, Founding Decade · Every credential stacks into the next with zero credit loss",
-        ha="center", fontsize=10, color=GREY)
+signature_frame(fig, 4)
 save(fig, "fig07_seven_tier_ladder.png")
 
 # =====================================================================
 # FIGURE 8 — Capital Firewall Structure
 # =====================================================================
 fig, ax = plt.subplots(figsize=(11, 7.2))
-ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
+ax.set_xlim(0, 100); ax.set_ylim(0, 80); ax.axis("off")
 box(4, 24, 42, 50, "", fc=BG_TINT, ec=NAVY, lw=1.6, fs=1)
 box(54, 24, 42, 50, "", fc="#FBF3E1", ec=GOLD, lw=1.6, fs=1)
 ax.text(25, 68, "AL-MULK INTERNATIONAL\nUNIVERSITY", ha="center", va="center", fontsize=12, fontweight="bold", color=NAVY)
@@ -305,10 +324,7 @@ ax.annotate("", xy=(48, 40), xytext=(52, 40),
             arrowprops=dict(arrowstyle="-|>", color="#B23B3B", lw=2.4, mutation_scale=18))
 ax.text(50, 44, "NO\nFLOW", ha="center", va="center", fontsize=9, fontweight="bold", color="#B23B3B")
 
-ax.text(50, 95, "Figure — Capital Architecture: The Tuition Firewall", ha="center", fontsize=14.5,
-        fontweight="bold", color=NAVY)
-ax.text(50, 90.5, "Permanent Structural Separation Between Academic Revenue and Commercial Capital",
-        ha="center", fontsize=10, color=GREY)
+signature_frame(fig, 9)
 save(fig, "fig08_capital_firewall.png")
 
 # =====================================================================
@@ -317,7 +333,7 @@ save(fig, "fig08_capital_firewall.png")
 stages = ["Inquiry", "Application", "Tier\nPlacement", "Admission\nDecision",
           "Enrollment &\nOrientation", "Ladder\nProgression", "Graduation", "Alumni /\nRe-Stacking"]
 fig, ax = plt.subplots(figsize=(12.5, 4.6))
-ax.set_xlim(0, 100); ax.set_ylim(0, 30); ax.axis("off")
+ax.set_xlim(0, 100); ax.set_ylim(0, 27); ax.axis("off")
 n = len(stages)
 w = 10.6; gap = (100 - n*w) / (n+1)
 xs = [gap + i*(w+gap) for i in range(n)]
@@ -327,9 +343,9 @@ for i, (x, s) in enumerate(zip(xs, stages)):
     if i < n - 1:
         ax.annotate("", xy=(x + w + gap - 0.6, 18), xytext=(x + w + 0.6, 18),
                     arrowprops=dict(arrowstyle="-|>", color="#9AA5B8", lw=1.6, mutation_scale=14))
-ax.text(50, 27.5, "Figure — Student Journey Map: Inquiry to Alumni", ha="center", fontsize=14, fontweight="bold", color=NAVY)
 ax.text(50, 3, "Digital self-service by design — human touch reserved for tier disputes, Fast-Track review, and Waqf adjudication",
         ha="center", fontsize=9, color=GREY)
+signature_frame(fig, 5)
 save(fig, "fig09_student_journey.png")
 
 # =====================================================================
@@ -352,7 +368,7 @@ events = [
 n_ev = len(events)
 xpos = list(range(n_ev))
 fig, ax = plt.subplots(figsize=(15, 6.6))
-ax.set_xlim(-0.6, n_ev - 0.4); ax.set_ylim(-4.6, 4.6); ax.axis("off")
+ax.set_xlim(-0.6, n_ev - 0.4); ax.set_ylim(-3.0, 3.0); ax.axis("off")
 ax.plot([xpos[0] - 0.35, xpos[-1] + 0.35], [0, 0], color=NAVY, lw=2.6, zorder=2, solid_capstyle="round")
 for x, (yr, label, side) in zip(xpos, events):
     ax.plot([x], [0], marker="o", markersize=11, color=GOLD, zorder=4,
@@ -364,8 +380,7 @@ for x, (yr, label, side) in zip(xpos, events):
             fontweight="bold")
     ax.text(x, ytxt + (0.75 if side == 1 else -0.75), label, ha="center", va=va, fontsize=9,
             color=NAVY, fontweight="bold", linespacing=1.35)
-ax.text((xpos[0] + xpos[-1]) / 2, 4.2, "Figure — Accreditation & International Expansion Roadmap, 2028–2047",
-        ha="center", fontsize=15, fontweight="bold", color=NAVY)
+signature_frame(fig, 6)
 save(fig, "fig10_accreditation_roadmap.png")
 
 print("ALL FIGURES GENERATED")
