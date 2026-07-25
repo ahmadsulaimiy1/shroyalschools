@@ -21,6 +21,9 @@ GREY = RGBColor(0x5B, 0x63, 0x72)
 HEAD_FONT = "Bitstream Charter"
 BODY_FONT = "Liberation Sans"
 SERIF_FONT = "Liberation Serif"
+MONUMENTAL_FONT = "Cinzel"                       # Level 1 — chapter numbers, monumental openers
+DISPLAY_FONT = "Cormorant Garamond"               # Level 2 — chapter titles, founding statements
+DISPLAY_SEMIBOLD = "Cormorant Garamond SemiBold"  # Level 3 — section headings
 
 doc = Document(SRC)
 
@@ -35,13 +38,23 @@ def has_style(document, name):
     return any(s.name == name for s in document.styles)
 
 def set_font(style, name=BODY_FONT, size=11, color=TEXT, bold=False, italic=False,
-             all_caps=False, spacing=None):
+             all_caps=False, small_caps=False, spacing=None):
     style.font.name = name
     rpr = style.element.get_or_add_rPr()
     rFonts = rpr.find(qn('w:rFonts'))
     if rFonts is None:
         rFonts = OxmlElement('w:rFonts')
         rpr.append(rFonts)
+    # Pandoc's default reference template points Heading/Title styles at
+    # theme fonts (asciiTheme="majorHAnsi", etc). When both a theme
+    # reference and an explicit font coexist on the same rFonts element,
+    # LibreOffice's headless docx->pdf conversion resolves the theme font
+    # instead of honoring the explicit override — so the theme attributes
+    # must be removed, not just shadowed, whenever an explicit font is set.
+    for theme_attr in ('w:asciiTheme', 'w:hAnsiTheme', 'w:eastAsiaTheme', 'w:cstheme'):
+        qattr = qn(theme_attr)
+        if rFonts.get(qattr) is not None:
+            del rFonts.attrib[qattr]
     rFonts.set(qn('w:ascii'), name)
     rFonts.set(qn('w:hAnsi'), name)
     rFonts.set(qn('w:eastAsia'), name)
@@ -51,6 +64,7 @@ def set_font(style, name=BODY_FONT, size=11, color=TEXT, bold=False, italic=Fals
     style.font.bold = bold
     style.font.italic = italic
     style.font.all_caps = all_caps
+    style.font.small_caps = small_caps
     if spacing is not None:
         rpr2 = style.element.get_or_add_rPr()
         spc = OxmlElement('w:spacing')
@@ -78,18 +92,24 @@ def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=Fals
         pPr.append(pBdr)
 
 # ---------------- Normal / body ----------------
+# Body text moves from a sans body to a scholarly serif (Bitstream Charter,
+# already installed and designed expressly for sustained readability) —
+# a full serif document (Cinzel display + Cormorant Garamond headings +
+# Charter body) reads as a bound scholarly volume; a sans body next to
+# serif display faces is closer to the "corporate report" look this
+# directive explicitly wants to avoid.
 normal = get_style(doc, 'Normal')
-set_font(normal, BODY_FONT, 10.5, TEXT)
+set_font(normal, HEAD_FONT, 10.5, TEXT)
 set_para_fmt(normal, 0, 8, 1.18)
 
 # ---------------- Title (used for the doc's H1-level "Title" para if any) ----------------
 title = get_style(doc, 'Title')
-set_font(title, HEAD_FONT, 30, NAVY, bold=True)
+set_font(title, DISPLAY_FONT, 34, NAVY, bold=True, spacing=6)
 set_para_fmt(title, 0, 6, 1.05, align=WD_ALIGN_PARAGRAPH.LEFT)
 
 if has_style(doc, 'Subtitle'):
     subtitle = get_style(doc, 'Subtitle')
-    set_font(subtitle, BODY_FONT, 15, GOLD, italic=True)
+    set_font(subtitle, DISPLAY_FONT, 17, GOLD, italic=True)
     set_para_fmt(subtitle, 0, 20, 1.15)
 
 # ---------------- Heading 1 ----------------
@@ -99,7 +119,7 @@ if has_style(doc, 'Subtitle'):
 # different page-break needs, and stacking a style-level break under an
 # already-explicit break produced stray blank pages during QA.
 h1 = get_style(doc, 'Heading 1')
-set_font(h1, HEAD_FONT, 27, NAVY, bold=True)
+set_font(h1, DISPLAY_FONT, 32, NAVY, bold=True, spacing=4)
 set_para_fmt(h1, 4, 16, 1.05, keep_next=True, border_bottom=18, border_color='B08625')
 
 # ---------------- Heading 2 (Sections) ----------------
@@ -107,7 +127,7 @@ set_para_fmt(h1, 4, 16, 1.05, keep_next=True, border_bottom=18, border_color='B0
 # immediately above every Section heading now owns the larger "before" gap,
 # so the kicker and its heading read as one tightly-coupled unit.
 h2 = get_style(doc, 'Heading 2')
-set_font(h2, HEAD_FONT, 15.5, NAVY, bold=True)
+set_font(h2, DISPLAY_SEMIBOLD, 19, NAVY, bold=True)
 set_para_fmt(h2, 2, 8, 1.08, keep_next=True, border_bottom=6, border_color='D8DCE5')
 
 # ---------------- Custom style: Section kicker badge (Part · Section N) ----------------
@@ -116,7 +136,7 @@ if not has_style(doc, 'SectionKicker'):
     sec_kicker.base_style = get_style(doc, 'Normal')
 else:
     sec_kicker = get_style(doc, 'SectionKicker')
-set_font(sec_kicker, BODY_FONT, 9.5, GOLD, bold=True, all_caps=True, spacing=22)
+set_font(sec_kicker, MONUMENTAL_FONT, 9.5, GOLD, bold=True, all_caps=True, spacing=22)
 set_para_fmt(sec_kicker, 22, 2, 1.1, keep_next=True)
 
 # ---------------- Custom style: Part-divider kicker label ----------------
@@ -125,7 +145,7 @@ if not has_style(doc, 'PartKicker'):
     kicker.base_style = get_style(doc, 'Normal')
 else:
     kicker = get_style(doc, 'PartKicker')
-set_font(kicker, BODY_FONT, 11, GOLD, bold=True, all_caps=True, spacing=30)
+set_font(kicker, MONUMENTAL_FONT, 11, GOLD, bold=True, all_caps=True, spacing=30)
 set_para_fmt(kicker, 0, 2, 1.1)
 
 # ---------------- Custom style: Part-divider thesis line ----------------
@@ -134,7 +154,7 @@ if not has_style(doc, 'PartThesis'):
     thesis.base_style = get_style(doc, 'Normal')
 else:
     thesis = get_style(doc, 'PartThesis')
-set_font(thesis, SERIF_FONT, 13.5, NAVY, italic=True)
+set_font(thesis, DISPLAY_FONT, 16.5, NAVY, italic=True)
 set_para_fmt(thesis, 4, 18, 1.35)
 
 # ---------------- Heading 3 ----------------
@@ -152,7 +172,7 @@ if has_style(doc, 'Heading 4'):
 for nm in ['TOC Heading']:
     if has_style(doc, nm):
         tocH = get_style(doc, nm)
-        set_font(tocH, HEAD_FONT, 22, NAVY, bold=True)
+        set_font(tocH, DISPLAY_FONT, 26, NAVY, bold=True, spacing=3)
         set_para_fmt(tocH, 0, 14, 1.1)
 
 for lvl, sz in zip(['TOC 1', 'TOC 2', 'TOC 3'], [12, 10.8, 10]):
@@ -164,17 +184,17 @@ for lvl, sz in zip(['TOC 1', 'TOC 2', 'TOC 3'], [12, 10.8, 10]):
 # ---------------- Block quote (pull quotes) ----------------
 if has_style(doc, 'Block Text'):
     bq = get_style(doc, 'Block Text')
-    set_font(bq, SERIF_FONT, 13, NAVY, italic=True)
+    set_font(bq, DISPLAY_FONT, 16, NAVY, italic=True)
     set_para_fmt(bq, 10, 10, 1.3)
 if has_style(doc, 'Quote'):
     bq = get_style(doc, 'Quote')
-    set_font(bq, SERIF_FONT, 13, NAVY, italic=True)
+    set_font(bq, DISPLAY_FONT, 16, NAVY, italic=True)
     set_para_fmt(bq, 10, 10, 1.3)
 
 # ---------------- Caption ----------------
 if has_style(doc, 'Caption'):
     cap = get_style(doc, 'Caption')
-    set_font(cap, BODY_FONT, 9.5, GOLD, bold=True, italic=False)
+    set_font(cap, BODY_FONT, 10, GOLD, bold=True, italic=False, small_caps=True, spacing=6)
     set_para_fmt(cap, 6, 16, 1.15)
 
 # ---------------- Table styles ----------------
@@ -189,7 +209,7 @@ if has_style(doc, 'Table Grid'):
 for nm in ['Compact', 'Body Text', 'First Paragraph']:
     if has_style(doc, nm):
         st = get_style(doc, nm)
-        set_font(st, BODY_FONT, 10.5, TEXT)
+        set_font(st, HEAD_FONT, 10.5, TEXT)
         set_para_fmt(st, 0, 6, 1.18)
 
 # ==================================================================
@@ -234,22 +254,29 @@ hp = header.paragraphs[0]
 hp.text = ""
 hp.paragraph_format.tab_stops.add_tab_stop(Inches(6.3), WD_TAB_ALIGNMENT.RIGHT)
 hp.paragraph_format.space_after = Pt(0)
-r1 = hp.add_run("AL-MULK INTERNATIONAL UNIVERSITY")
-r1.font.name = BODY_FONT; r1.font.size = Pt(8); r1.font.color.rgb = NAVY; r1.font.bold = True
+r1 = hp.add_run("Al-Mulk International University")
+r1.font.name = MONUMENTAL_FONT; r1.font.size = Pt(8.5); r1.font.color.rgb = NAVY; r1.font.bold = False
 r1.font.all_caps = True
+r1.font.small_caps = True
+rpr1 = r1._r.get_or_add_rPr()
+spc1 = OxmlElement('w:spacing'); spc1.set(qn('w:val'), '14'); rpr1.append(spc1)
 r2 = hp.add_run("\t")
 r3 = hp.add_run("Strategic Implementation Blueprint 2028–2050")
-r3.font.name = BODY_FONT; r3.font.size = Pt(8); r3.font.color.rgb = GREY; r3.font.italic = True
-# rule under header
+r3.font.name = DISPLAY_FONT; r3.font.size = Pt(9.5); r3.font.color.rgb = GREY; r3.font.italic = True
+# rule under header — a hairline in muted grey, not gold: gold is reserved
+# for true chapter-opening moments, not a mark repeated on every page.
 pPr = hp._p.get_or_add_pPr()
 pBdr = OxmlElement('w:pBdr')
 bottom = OxmlElement('w:bottom')
-bottom.set(qn('w:val'), 'single'); bottom.set(qn('w:sz'), '6')
-bottom.set(qn('w:space'), '4'); bottom.set(qn('w:color'), 'B08625')
+bottom.set(qn('w:val'), 'single'); bottom.set(qn('w:sz'), '4')
+bottom.set(qn('w:space'), '4'); bottom.set(qn('w:color'), 'D8DCE5')
 pBdr.append(bottom)
 pPr.append(pBdr)
 
 # --- Default footer (all pages after first) ---
+# Deliberately minimal: page number and volume identifier only, no
+# decorative clutter. The confidentiality/status notice lives once, on the
+# Copyright & Publication Notice page, rather than repeated on every footer.
 footer = section.footer
 footer.is_linked_to_previous = False
 fp = footer.paragraphs[0]
@@ -262,8 +289,6 @@ add_field(fp, 'PAGE', color=NAVY, bold=True)
 r5 = fp.add_run("  of  ")
 r5.font.name = BODY_FONT; r5.font.size = Pt(8); r5.font.color.rgb = GREY
 add_field(fp, 'NUMPAGES', color=NAVY, bold=True)
-r6 = fp.add_run("  ·  Confidential — Institutional Planning Document")
-r6.font.name = BODY_FONT; r6.font.size = Pt(8); r6.font.color.rgb = GREY
 
 # --- First-page header/footer: blank (cover page has no running head) ---
 fph = section.first_page_header
@@ -346,7 +371,7 @@ if table_style is not None:
     # "Compact" paragraph style pandoc applies to every cell, so header
     # legibility is achieved via a light tint + bold rather than reversed text.
     table_style.append(make_tblStylePr('firstRow', fill='DCE3F0',
-                                        bold=True, border_bottom='B08625'))
+                                        bold=True, border_bottom='122A4E'))
     table_style.append(make_tblStylePr('band1Horz', fill='F6F7FA'))
 
 doc.save(OUT)

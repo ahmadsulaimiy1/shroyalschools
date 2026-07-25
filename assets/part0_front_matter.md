@@ -27,13 +27,13 @@
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="22"/><w:spacing w:val="30"/></w:rPr><w:t>STRATEGIC IMPLEMENTATION BLUEPRINT · 2028–2050</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>AL-MULK</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>AL-MULK</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="500"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="48"/></w:rPr><w:t>INTERNATIONAL UNIVERSITY</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="48"/></w:rPr><w:t>INTERNATIONAL UNIVERSITY</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="300" w:after="100"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="26"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="26"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="900" w:after="80"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="18"/></w:rPr><w:t>A COMPANION IMPLEMENTATION VOLUME TO</w:t></w:r>
@@ -97,9 +97,9 @@ All financial figures, enrollment projections, and revenue trajectories beyond t
 
 The Al-Mulk International University name, wordmark, tagline "Spreading Islamic Education Worldwide, at Every Pace," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
 
-**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system (Bitstream Charter display serif, Liberation Sans body, navy/gold institutional palette).
+**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system (Cinzel monumental display, Cormorant Garamond editorial headings, Bitstream Charter body serif, navy/gold institutional palette).
 
-**Document control:** AMIU-SB-002 · Version 1.0 · Founding-Decade Edition
+**Document control:** AMIU-SB-002 · Version 1.0 · Founding-Decade Edition · Confidential — Institutional Planning Document
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -145,7 +145,16 @@ This Blueprint is presented for formal review, endorsement, and approval by Al-M
 
 *By the Supreme Strategic Planning Council*
 
-A university's first document is usually a mission statement. Its second is usually a budget. Al-Mulk International University is unusual only in how seriously it has tried to make those two documents agree with each other — and this Blueprint exists because agreeing with each other once, at incorporation, is not the same as agreeing with each other for twenty-three years.
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
+    <w:spacing w:before="0" w:after="0"/>
+  </w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>A</w:t></w:r>
+</w:p>
+```
+university's first document is usually a mission statement. Its second is usually a budget. Al-Mulk International University is unusual only in how seriously it has tried to make those two documents agree with each other — and this Blueprint exists because agreeing with each other once, at incorporation, is not the same as agreeing with each other for twenty-three years.
 
 AMIU-MP-001, the founding Ten-Year Master Plan, did the hard arithmetic: a four-tier tuition structure that prices a degree in Lagos differently from a degree in Doha without pricing either student out of a serious education; a seven-category revenue allocation framework that reconciles to the dollar in every year of every modeled scenario; a Waqf reserve that turns twenty percent of gross revenue into scholarships, mosque support, and a still-unbuilt university in Nigeria. What that Master Plan could not do — because no ten-year plan can — was specify how a bicameral Senate with eighteen fixed seats actually runs a faculty-recruitment cycle, or how an admissions office with an eleven-thousand-dollar annual budget actually processes a disputed country-tier claim, or what happens to twenty-eight new secular programs the day after they launch in 2038.
 
@@ -161,7 +170,16 @@ We commend this Blueprint to the Board of Trustees, the University Senate, and e
 
 ## Founder's Message {.unnumbered}
 
-When we incorporated Al-Mulk International University on 6 December 2027, the entire institution consisted of a mission statement, a Texas filing fee of twenty-five dollars, and a conviction that had outlived every reason to abandon it: that a Muslim student's distance from a mosque, a border, or a bank account should never be the reason they never study Qur'ānic sciences, Sharī'ah, or Islamic finance at a serious, credentialed level.
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
+    <w:spacing w:before="0" w:after="0"/>
+  </w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>W</w:t></w:r>
+</w:p>
+```
+hen we incorporated Al-Mulk International University on 6 December 2027, the entire institution consisted of a mission statement, a Texas filing fee of twenty-five dollars, and a conviction that had outlived every reason to abandon it: that a Muslim student's distance from a mosque, a border, or a bank account should never be the reason they never study Qur'ānic sciences, Sharī'ah, or Islamic finance at a serious, credentialed level.
 
 I did not want to build a university that made that promise and then quietly broke it in the fine print — a scholarship program that ran out of money in year three, an accreditation timeline that slipped without explanation, a Board that paid itself first and the mission second. So the Master Plan we adopted fixed the arithmetic before we fixed anything else: twenty percent of every dollar of revenue to the Waqf, permanently; founder compensation that cannot be approved without the unanimous vote of four Senate seats no founder controls; a tuition-to-Commercial-Engine firewall that no future Board can quietly dissolve.
 
@@ -177,7 +195,16 @@ This Blueprint is the next layer of that same discipline, extended from ten year
 
 *From the Chairman, Board of Trustees*
 
-The Board of Trustees holds a narrow but consequential mandate under AMIU's constitution: strategy, finance, legal compliance, tuition, and the permanent firewall between this University's tuition revenue and any commercial capital raised in its name. Reading this Blueprint as Chairman, I looked for one thing above all others — whether every page respected the boundary of that mandate, or quietly wandered into territory that belongs to the Senate, to the Waqf & Endowment Board, or to no one at all until a vote creates it.
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
+    <w:spacing w:before="0" w:after="0"/>
+  </w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>T</w:t></w:r>
+</w:p>
+```
+he Board of Trustees holds a narrow but consequential mandate under AMIU's constitution: strategy, finance, legal compliance, tuition, and the permanent firewall between this University's tuition revenue and any commercial capital raised in its name. Reading this Blueprint as Chairman, I looked for one thing above all others — whether every page respected the boundary of that mandate, or quietly wandered into territory that belongs to the Senate, to the Waqf & Endowment Board, or to no one at all until a vote creates it.
 
 It does. Forty sections, ten dimensions each, and not once does a budget figure appear that was not first traced to a percentage the Board itself adopted in AMIU-MP-001's Revenue Allocation Framework. Not once does a staffing table assume a Chief Officer role this institution's actual payroll could not fund in the year cited. That discipline is what makes this document usable by the Board rather than merely readable by it — we can hand it to an external auditor, a Gulf ministry official, or a prospective donor and stand behind every number in it, because every number already had to survive a governance vote before it reached this page.
 
@@ -193,7 +220,16 @@ The Board's endorsement of this Blueprint, recorded on the signature page preced
 
 *From the President & Vice-Chancellor*
 
-A President reads a document like this one differently than a Board or a founder does — I read it looking for the Tuesday-morning version of every ambition. Section 15 does not just say AMIU will recruit isnād-verified religious scholars from a global diaspora; it says who verifies the chain of transmission, which committee signs off, and what happens when a promising scholar cannot be reached except by WhatsApp across nine time zones. Section 33 does not just promise student support "without condition"; it admits, honestly, that our entire non-academic administrative budget in the founding decade is smaller than a single mid-sized university's parking-services line item, and designs a digital-first support model around that constraint rather than around a fantasy of it.
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
+    <w:spacing w:before="0" w:after="0"/>
+  </w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>A</w:t></w:r>
+</w:p>
+```
+President reads a document like this one differently than a Board or a founder does — I read it looking for the Tuesday-morning version of every ambition. Section 15 does not just say AMIU will recruit isnād-verified religious scholars from a global diaspora; it says who verifies the chain of transmission, which committee signs off, and what happens when a promising scholar cannot be reached except by WhatsApp across nine time zones. Section 33 does not just promise student support "without condition"; it admits, honestly, that our entire non-academic administrative budget in the founding decade is smaller than a single mid-sized university's parking-services line item, and designs a digital-first support model around that constraint rather than around a fantasy of it.
 
 That honesty is, I think, this Blueprint's real contribution. Ambitious plans are common; ambitious plans that tell you exactly which of their promises are already funded and which ones are still waiting on a Board vote are not. As the officer who will answer for the gap between this document and what actually happens between 2028 and 2050, I would rather defend a plan that admits its own limits than one that hides them until an accreditor finds them for us.
 
@@ -258,7 +294,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>11,021</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>11,021</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>ACTIVE STUDENTS BY YEAR 10 (2037)</w:t></w:r></w:p>
     </w:tc>
@@ -276,7 +312,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$16.7M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$16.7M</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR CUMULATIVE GROSS REVENUE</w:t></w:r></w:p>
     </w:tc>
@@ -296,7 +332,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$0</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$0</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DEFICIT IN ANY YEAR, ANY SCENARIO</w:t></w:r></w:p>
     </w:tc>
@@ -314,7 +350,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>71</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>71</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>NAMED FOUNDING-DECADE PROGRAMS</w:t></w:r></w:p>
     </w:tc>
@@ -334,7 +370,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$5.8M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$5.8M</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR LIQUIDITY RESERVE</w:t></w:r></w:p>
     </w:tc>
@@ -352,7 +388,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$3.3M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$3.3M</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR WAQF &amp; STAKEHOLDER RESERVE</w:t></w:r></w:p>
     </w:tc>
@@ -383,10 +419,10 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="260"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="320"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Financial capacity shall never be a barrier to knowledge.</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Financial capacity shall never be a barrier to knowledge.</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>AMIU MISSION PRINCIPLE · AMIU-MP-001 § 3</w:t></w:r>
