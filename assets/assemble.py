@@ -82,6 +82,8 @@ TOC_ENTRIES += [
     ("Appendix C — Fixed Revenue Allocation Framework: Quick Reference",
      "Appendix C — Fixed Revenue Allocation Framework: Quick Reference", 1),
     ("Appendix D — Programme Catalog Reference", "Appendix D — Programme Catalog Reference", 1),
+    ("Appendix E — Founding-Decade Risk Phases & the Pre-Incorporation Waqf-First Outreach Model",
+     "Appendix E — Founding-Decade Risk Phases & the Pre-Incorporation Waqf-First Outreach Model", 1),
     ("References", "References", 1),
     ("Index", "Index", 1),
 ]
