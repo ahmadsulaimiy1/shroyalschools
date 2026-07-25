@@ -20,32 +20,26 @@
         <w:shd w:val="clear" w:color="auto" w:fill="122A4E"/>
         <w:vAlign w:val="center"/>
       </w:tcPr>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="120"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="18"/></w:rPr><w:t>SUPREME STRATEGIC PLANNING COUNCIL · FOUNDING-DECADE EDITION</w:t></w:r>
-      </w:p>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="22"/><w:spacing w:val="30"/></w:rPr><w:t>STRATEGIC IMPLEMENTATION BLUEPRINT · 2028–2050</w:t></w:r>
-      </w:p>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>AL-MULK</w:t></w:r>
-      </w:p>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="500"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="48"/></w:rPr><w:t>INTERNATIONAL UNIVERSITY</w:t></w:r>
-      </w:p>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="300" w:after="100"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="26"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
-      </w:p>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="900" w:after="80"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="18"/></w:rPr><w:t>A COMPANION IMPLEMENTATION VOLUME TO</w:t></w:r>
-      </w:p>
-      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="700"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="DCE3F0"/><w:sz w:val="19"/></w:rPr><w:t>the Ten-Year Master Plan &amp; Strategic Charter (AMIU-MP-001, 2028–2037)</w:t></w:r>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/><w:spacing w:val="30"/></w:rPr><w:t>SUPREME STRATEGIC PLANNING COUNCIL · FOUNDING-DECADE EDITION</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="17"/></w:rPr><w:t>DOCUMENT REFERENCE  AMIU-SB-002</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:b/><w:color w:val="B08625"/><w:sz w:val="24"/><w:spacing w:val="20"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r>
+      </w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="DCE3F0"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>STRATEGIC IMPLEMENTATION</w:t></w:r></w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="200"/><w:pBdr><w:top w:val="single" w:sz="4" w:space="20" w:color="B08625"/><w:bottom w:val="single" w:sz="4" w:space="20" w:color="B08625"/></w:pBdr></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="FFFFFF"/><w:sz w:val="76"/></w:rPr><w:t>BLUEPRINT</w:t></w:r></w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="60"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="27"/></w:rPr><w:t>2028&#8211;2050</w:t></w:r></w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="19"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+      </w:p>
+      <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">DOCUMENT REFERENCE  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:b/><w:color w:val="B08625"/><w:sz w:val="16"/></w:rPr><w:t>AMIU-SB-002</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t>edu.amiu.com  ·  Texas-Domiciled, Religiously Exempt  ·  Incorporated 6 December 2027</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>edu.amiu.com  ·  Texas-Domiciled, Religiously Exempt  ·  Incorporated 6 December 2027</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>
@@ -97,7 +91,7 @@ All financial figures, enrollment projections, and revenue trajectories beyond t
 
 The Al-Mulk International University name, wordmark, tagline "Spreading Islamic Education Worldwide, at Every Pace," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
 
-**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system — a single Garamond-family type system throughout (Cinzel monumental numerals, Cormorant Garamond editorial headings, EB Garamond body serif), navy/gold institutional palette.
+**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system — a three-role editorial type system (Fraunces display, Source Serif 4 reading, Archivo structural), navy/gold institutional palette.
 
 **Document control:** AMIU-SB-002 · Version 1.0 · Founding-Decade Edition · Confidential — Institutional Planning Document
 
@@ -172,7 +166,7 @@ By the Supreme Strategic Planning Council
     <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
     <w:spacing w:before="0" w:after="0"/>
   </w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>A</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>A</w:t></w:r>
 </w:p>
 ```
 university's first document is usually a mission statement. Its second is usually a budget. Al-Mulk International University is unusual only in how seriously it has tried to make those two documents agree with each other — and this Blueprint exists because agreeing with each other once, at incorporation, is not the same as agreeing with each other for twenty-three years.
@@ -197,7 +191,7 @@ We commend this Blueprint to the Board of Trustees, the University Senate, and e
     <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
     <w:spacing w:before="0" w:after="0"/>
   </w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>W</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>W</w:t></w:r>
 </w:p>
 ```
 hen we incorporated Al-Mulk International University on 6 December 2027, the entire institution consisted of a mission statement, a Texas filing fee of twenty-five dollars, and a conviction that had outlived every reason to abandon it: that a Muslim student's distance from a mosque, a border, or a bank account should never be the reason they never study Qur'ānic sciences, Sharī'ah, or Islamic finance at a serious, credentialed level.
@@ -226,7 +220,7 @@ From the Chairman, Board of Trustees
     <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
     <w:spacing w:before="0" w:after="0"/>
   </w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>T</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>T</w:t></w:r>
 </w:p>
 ```
 he Board of Trustees holds a narrow but consequential mandate under the AMIU Constitution: strategy, finance, legal compliance, tuition, and the permanent firewall between this University's tuition revenue and any commercial capital raised in its name. Reading this Blueprint as Chairman, I looked for one thing above all others — whether every page respected the boundary of that mandate, or quietly wandered into territory that belongs to the Senate, to the Waqf & Endowment Board, or to no one at all until a vote creates it.
@@ -255,7 +249,7 @@ From the President & Vice-Chancellor
     <w:framePr w:dropCap="drop" w:lines="3" w:wrap="around" w:vAnchor="text" w:hAnchor="text"/>
     <w:spacing w:before="0" w:after="0"/>
   </w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>A</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:b/><w:color w:val="B08625"/><w:sz w:val="88"/></w:rPr><w:t>A</w:t></w:r>
 </w:p>
 ```
 President reads a document like this one differently than a Board or a founder does — I read it looking for the Tuesday-morning version of every ambition. Section 15 does not just say AMIU will recruit isnād-verified religious scholars from a global diaspora; it says who verifies the chain of transmission, which committee signs off, and what happens when a promising scholar cannot be reached except by WhatsApp across nine time zones. Section 33 does not just promise student support "without condition"; it admits, honestly, that our entire non-academic administrative budget in the founding decade is smaller than a single mid-sized university's parking-services line item, and designs a digital-first support model around that constraint rather than around a fantasy of it.
@@ -325,9 +319,9 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>11,021</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>11,021</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>ACTIVE STUDENTS BY YEAR 10 (2037)</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>ACTIVE STUDENTS BY YEAR 10 (2037)</w:t></w:r></w:p>
     </w:tc>
 <w:tc>
       <w:tcPr>
@@ -343,47 +337,9 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$16.7M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$16.7M</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR CUMULATIVE GROSS REVENUE</w:t></w:r></w:p>
-    </w:tc>
-  </w:tr>
-  <w:tr>
-<w:tc>
-      <w:tcPr>
-        <w:tcW w:w="4675" w:type="dxa"/>
-        <w:tcBorders>
-          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
-          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
-          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
-          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
-        </w:tcBorders>
-        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
-        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
-        <w:vAlign w:val="center"/>
-      </w:tcPr>
-      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$0</w:t></w:r></w:p>
-      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DEFICIT IN ANY YEAR, ANY SCENARIO</w:t></w:r></w:p>
-    </w:tc>
-<w:tc>
-      <w:tcPr>
-        <w:tcW w:w="4675" w:type="dxa"/>
-        <w:tcBorders>
-          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
-          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
-          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
-          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
-        </w:tcBorders>
-        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
-        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
-        <w:vAlign w:val="center"/>
-      </w:tcPr>
-      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>71</w:t></w:r></w:p>
-      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>NAMED FOUNDING-DECADE PROGRAMS</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR CUMULATIVE GROSS REVENUE</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
   <w:tr>
@@ -401,9 +357,9 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$5.8M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$0</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR LIQUIDITY RESERVE</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DEFICIT IN ANY YEAR, ANY SCENARIO</w:t></w:r></w:p>
     </w:tc>
 <w:tc>
       <w:tcPr>
@@ -419,9 +375,9 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$3.3M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>71</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR WAQF &amp; STAKEHOLDER RESERVE</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>NAMED FOUNDING-DECADE PROGRAMS</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
   <w:tr>
@@ -439,9 +395,9 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>18</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$5.8M</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>FIXED SENATE SEATS, UNALTERED SINCE INCORPORATION</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR LIQUIDITY RESERVE</w:t></w:r></w:p>
     </w:tc>
 <w:tc>
       <w:tcPr>
@@ -457,9 +413,47 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$90&#8211;150M</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$3.3M</w:t></w:r></w:p>
       <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DIRECTIONAL TWENTY-YEAR REVENUE TARGET (2047)</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR WAQF &amp; STAKEHOLDER RESERVE</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
+  <w:tr>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>18</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>FIXED SENATE SEATS, UNALTERED SINCE INCORPORATION</w:t></w:r></w:p>
+    </w:tc>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$90&#8211;150M</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DIRECTIONAL TWENTY-YEAR REVENUE TARGET (2047)</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -488,13 +482,13 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="260"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="320"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Financial capacity shall never be a barrier to knowledge.</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Financial capacity shall never be a barrier to knowledge.</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>AMIU MISSION PRINCIPLE · AMIU-MP-001 § 3</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>AMIU MISSION PRINCIPLE · AMIU-MP-001 § 3</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>
@@ -513,74 +507,74 @@ This document is organized in eight parts — Governance & Institutional Foundat
 
 | | |
 |---|---:|
-| **Foreword** | **9** |
-| **Founder's Message** | **11** |
-| **Chairman's Message** | **12** |
-| **President's Message** | **13** |
-| **Executive Summary** | **14** |
-| **AMIU at a Glance** | **16** |
-| **List of Figures** | **23** |
-| **List of Charts** | **24** |
-| **List of Diagrams** | **24** |
-| **List of Flowcharts** | **25** |
-| **List of Tables** | **25** |
-| **List of Abbreviations** | **29** |
-| **Glossary** | **33** |
-| **Part I — Governance & Institutional Foundations** | **38** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 39 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 43 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 46 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 49 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 53 |
-| **Part II — Organizational & Academic Structure** | **58** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 59 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 63 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 67 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 70 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 73 |
-| **Part III — Curriculum & Student Journey** | **77** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 78 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 81 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 85 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 89 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 92 |
-| **Part IV — Research, Publishing, Partnerships & Accreditation** | **97** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 98 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 101 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 104 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 107 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 110 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **116** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 117 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 120 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 123 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 126 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 129 |
-| **Part VI — Financial Growth, Marketing & Branding** | **135** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 136 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 139 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 142 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 144 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 147 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **151** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 152 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 155 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 158 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 161 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 164 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **167** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 168 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 174 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 179 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 184 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 190 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 196 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **207** |
-| **Appendix B — Master Plan Exhibit Checklist** | **208** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **210** |
-| **Appendix D — Program Catalog Reference** | **211** |
-| **References** | **212** |
-| **Index** | **214** |
+| **Foreword** | **10** |
+| **Founder's Message** | **12** |
+| **Chairman's Message** | **13** |
+| **President's Message** | **14** |
+| **Executive Summary** | **15** |
+| **AMIU at a Glance** | **17** |
+| **List of Figures** | **24** |
+| **List of Charts** | **25** |
+| **List of Diagrams** | **25** |
+| **List of Flowcharts** | **26** |
+| **List of Tables** | **26** |
+| **List of Abbreviations** | **30** |
+| **Glossary** | **34** |
+| **Part I — Governance & Institutional Foundations** | **39** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 40 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 44 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 47 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 50 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 54 |
+| **Part II — Organizational & Academic Structure** | **59** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 60 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 64 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 68 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 71 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 74 |
+| **Part III — Curriculum & Student Journey** | **78** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 79 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 82 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 86 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 90 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 94 |
+| **Part IV — Research, Publishing, Partnerships & Accreditation** | **98** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 99 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 102 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 105 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 108 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 111 |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **117** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 118 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 121 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 124 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 127 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 130 |
+| **Part VI — Financial Growth, Marketing & Branding** | **136** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 137 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 140 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 143 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 146 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 148 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **153** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 154 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 157 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 160 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 163 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 166 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **170** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 171 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 177 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 182 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 187 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 193 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 200 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **212** |
+| **Appendix B — Master Plan Exhibit Checklist** | **213** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **215** |
+| **Appendix D — Program Catalog Reference** | **216** |
+| **References** | **217** |
+| **Index** | **219** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -816,27 +810,27 @@ This Blueprint contains 101 tables across its forty-one sections. The thirty tab
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART ONE OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART ONE OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>I</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>I</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Governance &amp; Institutional Foundations</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Governance &amp; Institutional Foundations</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 1–5</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 1–5</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The bicameral architecture — Board of Trustees and University Senate — that lets AMIU govern honestly at $224,747 in Year-1 revenue and still govern honestly at $93.9M in Year 20.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The bicameral architecture — Board of Trustees and University Senate — that lets AMIU govern honestly at $224,747 in Year-1 revenue and still govern honestly at $93.9M in Year 20.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>01&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Institutional Vision 2028–2050</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>01&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Institutional Vision 2028–2050</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>02&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Mission, Values, and Identity</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>02&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Mission, Values, and Identity</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>03&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Governance Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>03&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Governance Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>04&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Senate Structure</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>04&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Senate Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>05&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Board Structure</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>05&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Board Structure</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -1181,27 +1175,27 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART TWO OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART TWO OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>II</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>II</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Organizational &amp; Academic Structure</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Organizational &amp; Academic Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 6–10</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 6–10</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;How six founding colleges, six departments, and an honoraria-based faculty scale from a lone Head of Department in 2028 to a fully staffed secular-school network by the 2040s — without ever redesigning the org chart.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;How six founding colleges, six departments, and an honoraria-based faculty scale from a lone Head of Department in 2028 to a fully staffed secular-school network by the 2040s — without ever redesigning the org chart.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>06&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Organizational Chart</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>06&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Organizational Chart</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>07&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Academic Master Plan</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>07&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Academic Master Plan</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>08&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>College Structure</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>08&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>College Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>09&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Faculty Structure</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>09&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Faculty Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>10&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Department Structure</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>10&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Department Structure</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -1602,27 +1596,27 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART THREE OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART THREE OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>III</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>III</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="68"/></w:rPr><w:t>Curriculum &amp; Student Journey</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="68"/></w:rPr><w:t>Curriculum &amp; Student Journey</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 11–15</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 11–15</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The seventy-one-program portfolio, its credit-hour architecture, and the digital-first student journey that lets a Tier-4 applicant enroll, learn, and graduate without ever needing a campus.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The seventy-one-program portfolio, its credit-hour architecture, and the digital-first student journey that lets a Tier-4 applicant enroll, learn, and graduate without ever needing a campus.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>11&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Program Portfolio</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>11&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Program Portfolio</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>12&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Curriculum Architecture</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>12&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Curriculum Architecture</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>13&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Student Journey Map</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>13&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Student Journey Map</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>14&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Admission Policies</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>14&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Admission Policies</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>15&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Faculty Recruitment Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>15&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Faculty Recruitment Strategy</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -2033,27 +2027,27 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FOUR OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FOUR OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>IV</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>IV</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Research, Publishing, Partnerships &amp; Accreditation</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Research, Publishing, Partnerships &amp; Accreditation</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 16–20</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 16–20</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Mentored research and open-access publishing built on existing faculty honoraria, and the exact, dated accreditation sequence that never gets reordered for convenience.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Mentored research and open-access publishing built on existing faculty honoraria, and the exact, dated accreditation sequence that never gets reordered for convenience.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>16&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Research Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>16&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Research Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>17&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Publishing Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>17&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Publishing Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>18&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Global Partnerships Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>18&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Global Partnerships Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>19&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Accreditation Roadmap</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>19&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Accreditation Roadmap</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>20&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>ISO 21001 Roadmap</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>20&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>ISO 21001 Roadmap</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -2322,10 +2316,10 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="3800" w:after="0"/><w:pBdr><w:top w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="360"/><w:ind w:left="1000" w:right="1000"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="122A4E"/><w:sz w:val="30"/></w:rPr><w:t>A plan for the Tuesday after the promise is made.</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="122A4E"/><w:sz w:val="30"/></w:rPr><w:t>A plan for the Tuesday after the promise is made.</w:t></w:r>
 </w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>THE SUPREME STRATEGIC PLANNING COUNCIL · FOREWORD</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>THE SUPREME STRATEGIC PLANNING COUNCIL · FOREWORD</w:t></w:r>
 </w:p>
 <w:p><w:pPr><w:spacing w:before="360" w:after="0"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2348,27 +2342,27 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FIVE OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FIVE OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>V</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>V</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Digital Infrastructure, AI &amp; Waqf Development</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Digital Infrastructure, AI &amp; Waqf Development</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 21–25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 21–25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Moodle-based LMS ecosystem, a Sharī’ah-gated AI strategy, and the Waqf &amp; Stakeholder Reserve’s evolution into a diversified, perpetual Islamic endowment.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Moodle-based LMS ecosystem, a Sharī’ah-gated AI strategy, and the Waqf &amp; Stakeholder Reserve’s evolution into a diversified, perpetual Islamic endowment.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>21&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>LMS Ecosystem</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>21&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>LMS Ecosystem</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>22&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>AI Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>22&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>AI Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>23&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Digital Transformation Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>23&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Digital Transformation Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>24&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Library Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>24&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Library Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>25&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Waqf Development Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>25&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Waqf Development Strategy</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -2705,27 +2699,27 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SIX OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SIX OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VI</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VI</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Financial Growth, Marketing &amp; Branding</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Financial Growth, Marketing &amp; Branding</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 26–30</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 26–30</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Scholarships as designed policy rather than promise, grassroots near-zero-CAC marketing, and a branded-house architecture that lets expansion extend — never dilute — the AMIU name.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Scholarships as designed policy rather than promise, grassroots near-zero-CAC marketing, and a branded-house architecture that lets expansion extend — never dilute — the AMIU name.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>26&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Scholarship Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>26&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Scholarship Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>27&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Revenue Diversification Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>27&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Revenue Diversification Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>28&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Marketing Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>28&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Marketing Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>29&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Branding Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>29&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Branding Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>30&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>International Expansion Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>30&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>International Expansion Strategy</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -3020,27 +3014,27 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SEVEN OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SEVEN OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VII</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Regional Campuses &amp; Student Lifecycle</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Regional Campuses &amp; Student Lifecycle</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 31–35</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 31–35</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Nigeria Mega-University and Gulf cooperation strategies, framed honestly as funding targets rather than guarantees, alongside the student-support, alumni, and career frameworks a lean budget can actually carry.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Nigeria Mega-University and Gulf cooperation strategies, framed honestly as funding targets rather than guarantees, alongside the student-support, alumni, and career frameworks a lean budget can actually carry.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>31&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Nigeria Campus Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>31&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Nigeria Campus Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>32&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Gulf Cooperation Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>32&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Gulf Cooperation Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>33&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Student Support Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>33&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Student Support Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>34&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Alumni Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>34&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Alumni Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>35&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Career Development Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>35&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Career Development Framework</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -3341,29 +3335,29 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART EIGHT OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART EIGHT OF EIGHT</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VIII</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VIII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 36–41</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 36–41</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, the single consolidated milestone table that ties 2028 to 2050 &#8212; and the founding promise all of it exists to keep.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, the single consolidated milestone table that ties 2028 to 2050 &#8212; and the founding promise all of it exists to keep.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>36&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Risk Management Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>36&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Risk Management Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>37&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Compliance Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>37&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Compliance Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>38&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Financial Sustainability Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>38&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Financial Sustainability Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>39&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Capital Development Framework</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>39&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Capital Development Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>40&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Twenty-Year Strategic Roadmap</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>40&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Twenty-Year Strategic Roadmap</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>41&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Founding Access &amp; Waqf-First Strategy</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>41&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Founding Access &amp; Waqf-First Strategy</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -3904,13 +3898,13 @@ A documented Founding Registration pipeline ahead of 1 January 2028; the Waqf Sc
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="260"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="B08625"/><w:sz w:val="64"/></w:rPr><w:t>&#8220;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="320"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Every ambition in this Blueprint is priced against a revenue line AMIU has actually adopted — never a revenue line we wished it had.</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Every ambition in this Blueprint is priced against a revenue line AMIU has actually adopted — never a revenue line we wished it had.</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>FOREWORD · THE SUPREME STRATEGIC PLANNING COUNCIL</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>FOREWORD · THE SUPREME STRATEGIC PLANNING COUNCIL</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>
@@ -4101,22 +4095,22 @@ Presented for review by the Board of Trustees, the University Senate, and the Su
     <w:tc>
       <w:tcPr><w:tcW w:w="9350" w:type="dxa"/><w:shd w:val="clear" w:color="auto" w:fill="122A4E"/><w:vAlign w:val="center"/></w:tcPr>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="300"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="34"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="34"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="500"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:sz w:val="18"/></w:rPr><w:t>Strategic Implementation Blueprint · 2028–2050 · AMIU-SB-002</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:sz w:val="18"/></w:rPr><w:t>Strategic Implementation Blueprint · 2028–2050 · AMIU-SB-002</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t>edu.amiu.com  ·  info@edu.amiu.com  ·  Texas-Domiciled, Religiously Exempt  ·  Incorporated 6 December 2027</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t>edu.amiu.com  ·  info@edu.amiu.com  ·  Texas-Domiciled, Religiously Exempt  ·  Incorporated 6 December 2027</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="240" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>This document is a strategic planning model prepared for Board, Senate, and accreditation-body decision-making.</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>This document is a strategic planning model prepared for Board, Senate, and accreditation-body decision-making.</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>It does not constitute a certified financial audit or an offer of investment.</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>It does not constitute a certified financial audit or an offer of investment.</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>

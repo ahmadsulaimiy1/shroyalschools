@@ -25,7 +25,7 @@ TEXT      = "#152238"
 PALETTE7  = ["#122A4E", "#1F3A66", "#345385", "#C69A3A", "#8C97AB", "#4C6489", "#D9B36A"]
 
 plt.rcParams.update({
-    "font.family": "Liberation Sans",
+    "font.family": "Archivo",
     "text.color": TEXT,
     "axes.edgecolor": "#D8DCE5",
     "axes.labelcolor": TEXT,

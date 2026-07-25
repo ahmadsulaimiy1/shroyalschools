@@ -24,7 +24,7 @@ GREY      = "#6B7280"
 TEXT      = "#152238"
 
 plt.rcParams.update({
-    "font.family": "Liberation Sans",
+    "font.family": "Archivo",
     "text.color": TEXT,
     "figure.facecolor": PAPER,
     "axes.facecolor": PAPER,

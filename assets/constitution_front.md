@@ -22,21 +22,19 @@
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="16"/><w:spacing w:val="30"/></w:rPr><w:t>SUPREME STRATEGIC PLANNING COUNCIL &#183; FLAGSHIP GOVERNANCE EDITION</w:t></w:r></w:p>
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:sz w:val="40"/><w:spacing w:val="24"/></w:rPr><w:t>AL-MULK</w:t></w:r></w:p>
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="500"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:sz w:val="40"/><w:spacing w:val="24"/></w:rPr><w:t>INTERNATIONAL UNIVERSITY</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/><w:spacing w:val="30"/></w:rPr><w:t>SUPREME STRATEGIC PLANNING COUNCIL &#183; FLAGSHIP GOVERNANCE EDITION</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
+  <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:b/><w:color w:val="B08625"/><w:sz w:val="24"/><w:spacing w:val="20"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r></w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="200"/><w:pBdr><w:top w:val="single" w:sz="4" w:space="20" w:color="B08625"/><w:bottom w:val="single" w:sz="4" w:space="20" w:color="B08625"/></w:pBdr></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="FFFFFF"/><w:sz w:val="76"/><w:spacing w:val="18"/></w:rPr><w:t>CONSTITUTION</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="FFFFFF"/><w:sz w:val="76"/><w:spacing w:val="18"/></w:rPr><w:t>CONSTITUTION</w:t></w:r></w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="60"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="27"/></w:rPr><w:t>Flagship Governance Edition</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="27"/></w:rPr><w:t>Flagship Governance Edition</w:t></w:r></w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="8C97AB"/><w:sz w:val="20"/><w:spacing w:val="18"/></w:rPr><w:t>2028</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="20"/><w:spacing w:val="18"/></w:rPr><w:t>2028</w:t></w:r></w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">DOCUMENT REFERENCE  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/></w:rPr><w:t>AMIU-CON-001</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">DOCUMENT REFERENCE  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/></w:rPr><w:t>AMIU-CON-001</w:t></w:r></w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>edu.amiu.com &#183; Texas-Domiciled, Religiously Exempt &#183; Incorporated 6 December 2027</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>edu.amiu.com &#183; Texas-Domiciled, Religiously Exempt &#183; Incorporated 6 December 2027</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -56,7 +54,7 @@
 
 *This Constitution is the supreme legal document of Al-Mulk International University. All policies, regulations, and procedures adopted by the University shall be consistent with its provisions; any policy inconsistent with this Constitution is void.*
 
-*Typesetting and Publication Design: this Constitution is set in the same three-family editorial system as the University's Strategic Implementation Blueprint &#8212; Cinzel monumental display, Cormorant Garamond editorial headings, EB Garamond body serif &#8212; so that every AMIU governing and planning publication reads as one institutional family, produced under one publication standard.*
+*Typesetting and Publication Design: this Constitution is set in the same three-role editorial system as the University's Strategic Implementation Blueprint &#8212; Fraunces display, Source Serif 4 reading, Archivo structural &#8212; so that every AMIU governing and planning publication reads as one institutional family, produced under one publication standard.*
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -86,7 +84,7 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="360"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Cormorant Garamond" w:hAnsi="Cormorant Garamond"/><w:i/><w:color w:val="122A4E"/><w:sz w:val="30"/></w:rPr><w:t>In the Name of Allah, the Most Gracious, the Most Merciful.</w:t></w:r></w:p>
+  <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="122A4E"/><w:sz w:val="30"/></w:rPr><w:t>In the Name of Allah, the Most Gracious, the Most Merciful.</w:t></w:r></w:p>
 ```
 
 We, the Founders, Board of Trustees, and Academic Community of Al-Mulk International University, do hereby establish this Constitution to define the governance, academic, and administrative framework of the University.

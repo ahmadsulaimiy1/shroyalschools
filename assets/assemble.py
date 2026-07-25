@@ -86,7 +86,7 @@ for roman, title, secrange, sections in PART_TITLES:
 
 TOC_ENTRIES += [
     ("Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)",
-     "Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)", 1),
+     "Appendix A — Cross-Reference", 1),
     ("Appendix B — Master Plan Exhibit Checklist", "Appendix B — Master Plan Exhibit Checklist", 1),
     ("Appendix C — Fixed Revenue Allocation Framework: Quick Reference",
      "Appendix C — Fixed Revenue Allocation Framework: Quick Reference", 1),
@@ -326,8 +326,23 @@ def _style_subheading_labels(docx_path):
                 continue
             style_run(first)
 
+    def is_ceremonial_navy_table(table):
+        # Covers, closing panels, and Part/Article hero-spread dividers are
+        # navy full-bleed tables whose text is deliberately hand-styled run
+        # by run. Their titles are often short, bold runs (e.g. "BLUEPRINT")
+        # that otherwise satisfy this function's eyebrow-label heuristic —
+        # skip them structurally rather than trying to out-clever the
+        # heuristic, matching the same navy-fill detection already used by
+        # _isolate_closing_panel_header_footer.
+        for shd in table._tbl.iter(_qn('w:shd')):
+            if shd.get(_qn('w:fill')) == '122A4E':
+                return True
+        return False
+
     process_paragraphs(d.paragraphs)
     for table in d.tables:
+        if is_ceremonial_navy_table(table):
+            continue
         for row in table.rows:
             for cell in row.cells:
                 process_paragraphs(cell.paragraphs)
