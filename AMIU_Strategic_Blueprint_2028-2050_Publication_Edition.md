@@ -469,49 +469,49 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 57 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 60 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 62 |
-| **Part III — Curriculum & Student Journey** | **66** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Programme Portfolio | 67 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 70 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 73 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 76 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 79 |
-| **Part IV — Research, Publishing, Partnerships & Accreditation** | **83** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 84 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 86 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 89 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 92 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 94 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **99** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 100 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 102 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 105 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 107 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 110 |
-| **Part VI — Financial Growth, Marketing & Branding** | **115** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 116 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 118 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 121 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 123 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 126 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **129** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 130 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 132 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 135 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 137 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 139 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **143** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 144 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 149 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 153 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 158 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 163 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 168 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **179** |
-| **Appendix B — Master Plan Exhibit Checklist** | **180** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **181** |
-| **Appendix D — Programme Catalog Reference** | **182** |
-| **References** | **183** |
-| **Index** | **185** |
+| **Part III — Curriculum & Student Journey** | **65** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Programme Portfolio | 66 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 68 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 72 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 75 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 78 |
+| **Part IV — Research, Publishing, Partnerships & Accreditation** | **82** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 83 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 85 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 88 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 91 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 93 |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **98** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 99 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 101 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 104 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 106 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 109 |
+| **Part VI — Financial Growth, Marketing & Branding** | **114** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 115 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 117 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 119 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 122 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 124 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **128** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 129 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 131 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 134 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 136 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 138 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **142** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 143 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 148 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 152 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 157 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 162 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 167 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **178** |
+| **Appendix B — Master Plan Exhibit Checklist** | **179** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **180** |
+| **Appendix D — Programme Catalog Reference** | **181** |
+| **References** | **182** |
+| **Index** | **184** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

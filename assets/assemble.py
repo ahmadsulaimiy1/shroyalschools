@@ -131,6 +131,52 @@ def run_pandoc(md_path, docx_path):
     _prevent_row_splitting(docx_path)
     _style_subheading_labels(docx_path)
     _apply_callout_boxes(docx_path)
+    _justify_body_text(docx_path)
+    _enable_hyphenation(docx_path)
+
+# Paragraph styles that carry running narrative prose. Deliberately excludes
+# Caption, Block Text/Quote (pull quotes stay centered, never justified),
+# PartKicker/PartThesis/SectionKicker, and every Heading/Title style.
+BODY_PROSE_STYLES = {'Normal', 'Compact', 'Body Text', 'First Paragraph'}
+
+def _justify_body_text(docx_path):
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+    """Full justification for narrative body text — never for table cells.
+    Table cells use the same 'Compact' style as ordinary paragraphs (pandoc's
+    default), so the style name alone can't distinguish them; the reliable
+    signal is structural: python-docx's Document.paragraphs returns only
+    top-level body paragraphs, excluding every paragraph that lives inside a
+    table cell. Justifying at that structural level, rather than by editing
+    the shared style, is what keeps tables left-aligned automatically."""
+    import docx as _docx
+    d = _docx.Document(docx_path)
+    for p in d.paragraphs:
+        if p.style.name in BODY_PROSE_STYLES:
+            p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    d.save(docx_path)
+
+def _enable_hyphenation(docx_path):
+    """Turn on automatic hyphenation document-wide. Justification without
+    hyphenation on a column this width produces exactly the 'rivers of
+    white space' / oversized word gaps that read as amateur; the hunspell
+    hyph_en_US dictionary (assets/fonts or apt hyphen-en-us) must be
+    installed for LibreOffice to actually hyphenate rather than silently
+    no-op. consecutiveHyphenLimit caps hyphenated-line runs at 2, matching
+    the directive's own warning against excessive hyphenation."""
+    import docx as _docx
+    from docx.oxml.ns import qn as _qn
+    from docx.oxml import OxmlElement as _El
+    d = _docx.Document(docx_path)
+    settings = d.settings.element
+    if settings.find(_qn('w:autoHyphenation')) is None:
+        settings.append(_El('w:autoHyphenation'))
+    zone = _El('w:hyphenationZone')
+    zone.set(_qn('w:val'), '360')
+    settings.append(zone)
+    limit = _El('w:consecutiveHyphenLimit')
+    limit.set(_qn('w:val'), '2')
+    settings.append(limit)
+    d.save(docx_path)
 
 def _style_subheading_labels(docx_path):
     """Restyle the bold sub-dimension labels ('**KPIs**', '**Risks & Mitigation**',

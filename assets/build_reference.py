@@ -65,6 +65,14 @@ def set_font(style, name=BODY_FONT, size=11, color=TEXT, bold=False, italic=Fals
     style.font.italic = italic
     style.font.all_caps = all_caps
     style.font.small_caps = small_caps
+    # Explicit language tag so LibreOffice's hyphenation engine resolves the
+    # correct dictionary (hyph_en_US.dic) rather than silently skipping
+    # hyphenation for lack of a language association.
+    lang = rpr.find(qn('w:lang'))
+    if lang is None:
+        lang = OxmlElement('w:lang')
+        rpr.append(lang)
+    lang.set(qn('w:val'), 'en-US')
     if spacing is not None:
         rpr2 = style.element.get_or_add_rPr()
         spc = OxmlElement('w:spacing')
@@ -72,7 +80,7 @@ def set_font(style, name=BODY_FONT, size=11, color=TEXT, bold=False, italic=Fals
         rpr2.append(spc)
 
 def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=False,
-                  align=None, border_bottom=None, border_color=None):
+                  align=None, border_bottom=None, border_color=None, widow_control=None):
     pf = style.paragraph_format
     pf.space_before = Pt(space_before)
     pf.space_after = Pt(space_after)
@@ -80,6 +88,8 @@ def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=Fals
     pf.keep_with_next = keep_next
     if align is not None:
         pf.alignment = align
+    if widow_control is not None:
+        pf.widow_control = widow_control
     if border_bottom:
         pPr = style.element.get_or_add_pPr()
         pBdr = OxmlElement('w:pBdr')
@@ -100,7 +110,7 @@ def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=Fals
 # directive explicitly wants to avoid.
 normal = get_style(doc, 'Normal')
 set_font(normal, HEAD_FONT, 10.5, TEXT)
-set_para_fmt(normal, 0, 8, 1.18)
+set_para_fmt(normal, 0, 8, 1.18, widow_control=True)
 
 # ---------------- Title (used for the doc's H1-level "Title" para if any) ----------------
 title = get_style(doc, 'Title')
@@ -210,7 +220,7 @@ for nm in ['Compact', 'Body Text', 'First Paragraph']:
     if has_style(doc, nm):
         st = get_style(doc, nm)
         set_font(st, HEAD_FONT, 10.5, TEXT)
-        set_para_fmt(st, 0, 6, 1.18)
+        set_para_fmt(st, 0, 6, 1.18, widow_control=True)
 
 # ==================================================================
 # Page setup: US Letter, generous but efficient margins, section props
@@ -263,32 +273,37 @@ spc1 = OxmlElement('w:spacing'); spc1.set(qn('w:val'), '14'); rpr1.append(spc1)
 r2 = hp.add_run("\t")
 r3 = hp.add_run("Strategic Implementation Blueprint 2028–2050")
 r3.font.name = DISPLAY_FONT; r3.font.size = Pt(9.5); r3.font.color.rgb = GREY; r3.font.italic = True
-# rule under header — a hairline in muted grey, not gold: gold is reserved
-# for true chapter-opening moments, not a mark repeated on every page.
+# rule under header — a true hairline in restrained gold (0.375pt): thin
+# enough not to compete with the content, and a genuine hairline reads as
+# restraint rather than the "gold overuse" a thicker rule on every page
+# would be.
 pPr = hp._p.get_or_add_pPr()
 pBdr = OxmlElement('w:pBdr')
 bottom = OxmlElement('w:bottom')
-bottom.set(qn('w:val'), 'single'); bottom.set(qn('w:sz'), '4')
-bottom.set(qn('w:space'), '4'); bottom.set(qn('w:color'), 'D8DCE5')
+bottom.set(qn('w:val'), 'single'); bottom.set(qn('w:sz'), '3')
+bottom.set(qn('w:space'), '6'); bottom.set(qn('w:color'), 'B08625')
 pBdr.append(bottom)
 pPr.append(pBdr)
 
 # --- Default footer (all pages after first) ---
-# Deliberately minimal: page number and volume identifier only, no
-# decorative clutter. The confidentiality/status notice lives once, on the
-# Copyright & Publication Notice page, rather than repeated on every footer.
+# Minimalist three-part layout: volume identifier at left, nothing at
+# center, page number alone at right (no "of NNN" — a running total reads
+# as a progress bar, not a page number). The confidentiality/status
+# notice lives once, on the Copyright & Publication Notice page.
 footer = section.footer
 footer.is_linked_to_previous = False
 fp = footer.paragraphs[0]
 fp.text = ""
-fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-fp.paragraph_format.space_before = Pt(4)
-r4 = fp.add_run("AMIU-SB-002  ·  ")
-r4.font.name = BODY_FONT; r4.font.size = Pt(8); r4.font.color.rgb = GREY
-add_field(fp, 'PAGE', color=NAVY, bold=True)
-r5 = fp.add_run("  of  ")
-r5.font.name = BODY_FONT; r5.font.size = Pt(8); r5.font.color.rgb = GREY
-add_field(fp, 'NUMPAGES', color=NAVY, bold=True)
+fp.paragraph_format.tab_stops.add_tab_stop(Inches(3.15), WD_TAB_ALIGNMENT.CENTER)
+fp.paragraph_format.tab_stops.add_tab_stop(Inches(6.3), WD_TAB_ALIGNMENT.RIGHT)
+fp.paragraph_format.space_before = Pt(6)
+r4 = fp.add_run("AMIU-SB-002")
+r4.font.name = MONUMENTAL_FONT; r4.font.size = Pt(7.5); r4.font.color.rgb = GREY
+r4.font.small_caps = True
+rpr4 = r4._r.get_or_add_rPr()
+spc4 = OxmlElement('w:spacing'); spc4.set(qn('w:val'), '10'); rpr4.append(spc4)
+fp.add_run("\t\t")
+add_field(fp, 'PAGE', font=HEAD_FONT, size=10, color=NAVY, bold=False)
 
 # --- First-page header/footer: blank (cover page has no running head) ---
 fph = section.first_page_header
