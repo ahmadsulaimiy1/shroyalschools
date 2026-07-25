@@ -517,68 +517,68 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | **President's Message** | **14** |
 | **Executive Summary** | **15** |
 | **AMIU at a Glance** | **17** |
-| **List of Figures** | **24** |
-| **List of Charts** | **25** |
-| **List of Diagrams** | **25** |
-| **List of Flowcharts** | **26** |
-| **List of Tables** | **26** |
-| **List of Abbreviations** | **30** |
-| **Glossary** | **34** |
-| **Part I — Governance & Institutional Foundations** | **39** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 40 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 44 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 47 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 50 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 54 |
-| **Part II — Organizational & Academic Structure** | **59** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 60 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 64 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 68 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 71 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 74 |
-| **Part III — Curriculum & Student Journey** | **78** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 79 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 82 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 86 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 90 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 94 |
-| **Part IV — Research, Publishing, Partnerships & Accreditation** | **98** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 99 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 102 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 105 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 108 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 111 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **117** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 118 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 121 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 124 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 127 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 130 |
-| **Part VI — Financial Growth, Marketing & Branding** | **136** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 137 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 140 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 143 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 146 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 148 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **153** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 154 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 157 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 160 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 163 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 166 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **170** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 171 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 177 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 182 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 187 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 193 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 200 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **212** |
-| **Appendix B — Master Plan Exhibit Checklist** | **213** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **215** |
-| **Appendix D — Program Catalog Reference** | **216** |
-| **References** | **217** |
-| **Index** | **219** |
+| **List of Figures** | **25** |
+| **List of Charts** | **26** |
+| **List of Diagrams** | **27** |
+| **List of Flowcharts** | **27** |
+| **List of Tables** | **28** |
+| **List of Abbreviations** | **32** |
+| **Glossary** | **36** |
+| **Part I — Governance & Institutional Foundations** | **43** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 44 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 48 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 51 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 55 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 59 |
+| **Part II — Organizational & Academic Structure** | **64** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 65 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 69 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 73 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 76 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 80 |
+| **Part III — Curriculum & Student Journey** | **84** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 85 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 88 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 93 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 97 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 101 |
+| **Part IV — Research, Publishing, Partnerships & Accreditation** | **106** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 107 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 110 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 113 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 117 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 120 |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **126** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 127 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 130 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 133 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 136 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 139 |
+| **Part VI — Financial Growth, Marketing & Branding** | **145** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 146 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 149 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 152 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 155 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 158 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **162** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 163 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 166 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 169 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 172 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 175 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **179** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 180 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 185 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 191 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 196 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 202 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 209 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **220** |
+| **Appendix B — Master Plan Exhibit Checklist** | **222** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **223** |
+| **Appendix D — Program Catalog Reference** | **224** |
+| **References** | **226** |
+| **Index** | **228** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

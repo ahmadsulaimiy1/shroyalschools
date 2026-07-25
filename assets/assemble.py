@@ -218,6 +218,8 @@ def run_pandoc(md_path, docx_path):
     _prevent_row_splitting(docx_path)
     _style_subheading_labels(docx_path)
     _apply_callout_boxes(docx_path)
+    _style_premium_tables(docx_path)
+    _balance_column_widths(docx_path)
     _justify_body_text(docx_path)
     _enable_hyphenation(docx_path)
     _suppress_table_hyphenation(docx_path)
@@ -270,19 +272,32 @@ def _enable_hyphenation(docx_path):
 
 def _suppress_table_hyphenation(docx_path):
     """Document-wide autoHyphenation (see _enable_hyphenation) is a body-prose
-    feature: it belongs in justified narrative paragraphs, not in table cells,
-    which are narrower and set ragged-left rather than justified. Left
-    unsuppressed, a bold Table-of-Contents row like 'Governance &
-    Institutional Foundations' can hyphenate mid-word ('IN-STITUTIONAL') —
-    exactly the kind of broken-looking break a flagship publication cannot
-    ship with. Every table cell paragraph gets w:suppressAutoHyphens; body
-    prose outside tables is untouched and keeps hyphenating normally."""
+    feature: it belongs in justified narrative paragraphs, not in narrow
+    two-column list/TOC-style tables, where a bold row like 'Governance &
+    Institutional Foundations' hyphenating mid-word ('IN-STITUTIONAL') looks
+    like stray typography in what's meant to read as a clean navigational
+    list, not a paragraph.
+
+    Wide, many-column data tables (document registries, cross-reference
+    matrices, responsibility assignments — the same >= 4-column tables
+    _balance_column_widths targets) are deliberately EXCLUDED from this
+    suppression: a genuinely long single word ('Implementation',
+    'Administration') in a narrow column has to break somewhere, and a real
+    hyphen ('Implementa-tion') is the correct, professional way to do that —
+    suppressing hyphenation there just traded a clean hyphenated break for
+    an uglier bare character-orphan break ('Implementatio' / 'n') with no
+    hyphen mark at all, which is a worse-looking defect, not a better one."""
     import docx as _docx
     from docx.oxml.ns import qn as _qn
     from docx.oxml import OxmlElement as _El
+    MIN_COLS_TO_ALLOW_HYPHENATION = 4
     d = _docx.Document(docx_path)
     for table in d.tables:
-        for row in table.rows:
+        rows = table.rows
+        ncols = len(rows[0].cells) if rows else 0
+        if ncols >= MIN_COLS_TO_ALLOW_HYPHENATION:
+            continue
+        for row in rows:
             for cell in row.cells:
                 for p in cell.paragraphs:
                     pPr = p._p.get_or_add_pPr()
@@ -386,6 +401,319 @@ def _isolate_closing_panel_header_footer(docx_path):
             "build rather than silently shipping blank running heads."
         )
 
+def _is_ceremonial_navy_table(table):
+    """Covers, closing panels, and Part/Article/Section hero-spread dividers
+    are single-row, navy full-bleed tables whose text is deliberately
+    hand-styled run by run — they must never be touched by generic table
+    post-processing (the premium data-table styling below, the column-width
+    balancer, or the eyebrow-label heuristic in _style_subheading_labels).
+
+    Detected structurally by BOTH the navy fill ('122A4E') every ceremonial
+    panel shares AND a single row: navy fill alone is no longer sufficient
+    once _style_premium_tables runs earlier in the same pipeline, since it
+    deliberately navy-fills the HEADER ROW of ordinary multi-row data tables
+    too — a fill-only check would then misidentify every already-styled data
+    table as ceremonial and skip it in every later pass. A ceremonial panel
+    is always exactly one row (one big cell holding the whole stack of
+    hand-placed paragraphs); a data table with a navy header always has a
+    header row plus at least one body row."""
+    from docx.oxml.ns import qn as _qn
+    if len(table.rows) != 1:
+        return False
+    for shd in table._tbl.iter(_qn('w:shd')):
+        if shd.get(_qn('w:fill')) == '122A4E':
+            return True
+    return False
+
+NAVY_HEX = '122A4E'
+GOLD_HEX = 'B08625'
+BAND_TINT_HEX = 'E9EDF6'
+
+def _style_premium_tables(docx_path):
+    """Upgrade every ordinary data table (Board/Senate composition, document
+    registries, growth projections, and the like) from a plain office-grid
+    look to a designed blue-and-gold editorial exhibit: a solid navy header
+    row in reversed (white) small-caps text, a gold hairline underscoring
+    that header as a hierarchy indicator, and a pale alternating band down
+    the body rows for reading comfort — the same navy/gold vocabulary the
+    covers, dividers, and closing panels already use, extended to data
+    tables instead of leaving them at the reference doc's generic style.
+
+    Ceremonial navy tables (covers/dividers/closing panels) are skipped via
+    _is_ceremonial_navy_table. Tables whose first row is entirely blank (the
+    two-column Table of Contents, which has its own hierarchy via indentation
+    and bold/plain weight) are also left alone rather than given a solid navy
+    blank bar across the top.
+
+    Header text is whitened by setting run-level color directly, not by
+    editing the shared Word table style: build_reference.py already found
+    (see its 'Executive table style' comment) that pandoc's per-run color
+    from the Compact paragraph style overrides a table style's rPr color, so
+    a style-only approach silently fails to actually turn the header text
+    white. Setting run.font.color.rgb here bypasses that precedence entirely."""
+    import docx as _docx
+    from docx.shared import RGBColor as _RGBColor, Pt as _Pt
+    from docx.enum.text import WD_ALIGN_PARAGRAPH as _ALIGN
+    from docx.oxml.ns import qn as _qn
+    from docx.oxml import OxmlElement as _El
+
+    WHITE = _RGBColor(0xFF, 0xFF, 0xFF)
+
+    def _set_cell_fill(cell, hex_color):
+        tcPr = cell._tc.get_or_add_tcPr()
+        shd = tcPr.find(_qn('w:shd'))
+        if shd is None:
+            shd = _El('w:shd')
+            tcPr.append(shd)
+        shd.set(_qn('w:val'), 'clear')
+        shd.set(_qn('w:color'), 'auto')
+        shd.set(_qn('w:fill'), hex_color)
+
+    def _set_cell_margins(cell, top, bottom, left=150, right=150):
+        tcPr = cell._tc.get_or_add_tcPr()
+        tcMar = tcPr.find(_qn('w:tcMar'))
+        if tcMar is None:
+            tcMar = _El('w:tcMar')
+            tcPr.append(tcMar)
+        for side, val in [('top', top), ('bottom', bottom), ('left', left), ('right', right)]:
+            m = tcMar.find(_qn(f'w:{side}'))
+            if m is None:
+                m = _El(f'w:{side}')
+                tcMar.append(m)
+            m.set(_qn('w:w'), str(val))
+            m.set(_qn('w:type'), 'dxa')
+
+    def _set_header_bottom_rule(cell, color, sz=16):
+        tcPr = cell._tc.get_or_add_tcPr()
+        tcBorders = tcPr.find(_qn('w:tcBorders'))
+        if tcBorders is None:
+            tcBorders = _El('w:tcBorders')
+            tcPr.append(tcBorders)
+        bottom = tcBorders.find(_qn('w:bottom'))
+        if bottom is None:
+            bottom = _El('w:bottom')
+            tcBorders.append(bottom)
+        bottom.set(_qn('w:val'), 'single')
+        bottom.set(_qn('w:sz'), str(sz))
+        bottom.set(_qn('w:space'), '0')
+        bottom.set(_qn('w:color'), color)
+
+    def _vcenter(cell):
+        tcPr = cell._tc.get_or_add_tcPr()
+        vAlign = tcPr.find(_qn('w:vAlign'))
+        if vAlign is None:
+            vAlign = _El('w:vAlign')
+            tcPr.append(vAlign)
+        vAlign.set(_qn('w:val'), 'center')
+
+    def _style_header_run(run):
+        run.font.bold = True
+        run.font.color.rgb = WHITE
+        rpr = run._r.get_or_add_rPr()
+        caps = rpr.find(_qn('w:caps'))
+        if caps is None:
+            rpr.append(_El('w:caps'))
+        spc = rpr.find(_qn('w:spacing'))
+        if spc is None:
+            spc = _El('w:spacing')
+            rpr.append(spc)
+        spc.set(_qn('w:val'), '4')
+
+    d = _docx.Document(docx_path)
+    n_styled = 0
+    for table in d.tables:
+        if _is_ceremonial_navy_table(table):
+            continue
+        rows = table.rows
+        if not rows:
+            continue
+        header_cells = rows[0].cells
+        # A table only gets header treatment if pandoc itself marked row 0 as
+        # a real header (w:tblHeader in its trPr). Checking cell text instead
+        # ("is row 0 non-blank?") is unreliable: pandoc treats a markdown
+        # table whose header cells are BOTH blank (e.g. the two-column
+        # "| | |" Table of Contents) as headerless and collapses it away
+        # entirely, so row 0 becomes the first real data row (e.g. "Document
+        # Control | 3") — non-blank text, but not a header, and it must not
+        # be painted as one.
+        trPr = rows[0]._tr.find(_qn('w:trPr'))
+        header_is_real = trPr is not None and trPr.find(_qn('w:tblHeader')) is not None
+
+        if header_is_real:
+            for cell in header_cells:
+                _set_cell_fill(cell, NAVY_HEX)
+                _set_cell_margins(cell, 130, 130)
+                _set_header_bottom_rule(cell, GOLD_HEX, sz=16)
+                _vcenter(cell)
+                for p in cell.paragraphs:
+                    for run in p.runs:
+                        _style_header_run(run)
+            body_rows = rows[1:]
+        else:
+            body_rows = rows
+
+        for i, row in enumerate(body_rows):
+            for cell in row.cells:
+                _set_cell_margins(cell, 100, 100)
+                _vcenter(cell)
+                if i % 2 == 0:
+                    _set_cell_fill(cell, BAND_TINT_HEX)
+        n_styled += 1
+
+    d.save(docx_path)
+    print(f"  styled {n_styled} premium data tables")
+
+def _balance_column_widths(docx_path):
+    """Give wide, many-column data tables (document registries, cross-
+    reference matrices, responsibility assignments) explicit, content-aware
+    column widths instead of pandoc's even-split default.
+
+    An even split across 6-7 columns starves whichever columns hold real
+    prose ('Document', 'Policy Steward') down to just a few characters of
+    width, forcing header labels and body text to wrap mid-word with no
+    hyphen ('DOCUM' / 'ENT', 'Presiden' / 't') — found on the Section 17
+    registry page during a visual spot-check after the premium table
+    restyling made it easy to notice a table's proportions for the first
+    time.
+
+    Two-tier allocation, not a single relative-weight split: a first pass
+    (an earlier version of this function) set each column's width purely
+    proportional to a content-length score, which still let a short-word
+    column (e.g. 'Important'/'Complete' in a Priority column) get crowded
+    out by neighboring prose columns and wrap mid-word anyway. Instead:
+    (1) every column first gets a hard FLOOR wide enough for its own longest
+    single word — computed in dxa from an estimated per-character glyph
+    width, with headers (bold, small-caps, letter-spaced by
+    _style_premium_tables) given a size allowance for that — so a column can
+    structurally never be narrower than a word it must display on one line;
+    (2) only the leftover width beyond all the floors is then handed out
+    proportionally to columns with genuinely long-form content (prose gets
+    the extra room; short-code columns stay at their floor). Word/
+    LibreOffice only honor explicit widths under a fixed table layout, so
+    w:tblLayout is forced to 'fixed' wherever widths are set."""
+    import docx as _docx, math as _math, re as _re
+    from docx.oxml.ns import qn as _qn
+    from docx.oxml import OxmlElement as _El
+
+    # Split on whitespace AND slashes: a slash-joined compound like
+    # "Synchronous/Asynchronous" (24 characters with no space) can still
+    # wrap cleanly right after the slash, so it must not be treated as one
+    # 24-character unbreakable token — that single outlier word was enough
+    # to inflate its whole column's floor far past what real wrapping needs.
+    _WORD_SPLIT_RE = _re.compile(r'[\s/]+')
+
+    MIN_COLS = 4       # narrower tables don't exhibit this problem
+    CHAR_DXA = 150      # rough average glyph width at this body size, in twips
+    HEADER_INFLATE = 1.3  # bold + all-caps + letter-spacing render wider
+    CELL_PAD_DXA = 280  # combined left+right cell margin already in use
+    PAGE_TEXT_WIDTH_DXA = 9072  # 8.5in page, 1.1in margins each side (build_reference.py)
+
+    d = _docx.Document(docx_path)
+    n_balanced = 0
+    for table in d.tables:
+        if _is_ceremonial_navy_table(table):
+            continue
+        rows = table.rows
+        if not rows:
+            continue
+        ncols = len(rows[0].cells)
+        if ncols < MIN_COLS:
+            continue
+        if any(len(row.cells) != ncols for row in rows):
+            continue  # merged/irregular rows — skip rather than risk corruption
+
+        trPr0 = rows[0]._tr.find(_qn('w:trPr'))
+        row0_is_header = trPr0 is not None and trPr0.find(_qn('w:tblHeader')) is not None
+
+        col_word_max = [0] * ncols       # longest single word, any row
+        col_header_word_max = [0] * ncols
+        col_text_total = [0] * ncols     # for the "how much prose" growth score
+        for ri, row in enumerate(rows):
+            is_header_row = row0_is_header and ri == 0
+            for ci, cell in enumerate(row.cells):
+                text = cell.text.strip()
+                words = [w for w in _WORD_SPLIT_RE.split(text) if w]
+                wmax = max((len(w) for w in words), default=0)
+                if is_header_row:
+                    col_header_word_max[ci] = max(col_header_word_max[ci], wmax)
+                else:
+                    col_word_max[ci] = max(col_word_max[ci], wmax)
+                    col_text_total[ci] += len(text)
+
+        n_body_rows = max(len(rows) - (1 if row0_is_header else 0), 1)
+
+        tblGrid = table._tbl.find(_qn('w:tblGrid'))
+        existing_total = 0
+        if tblGrid is not None:
+            for gc in tblGrid.findall(_qn('w:gridCol')):
+                wval = gc.get(_qn('w:w'))
+                if wval:
+                    existing_total += int(wval)
+        # Pandoc's own default grid-table width is often narrower than the
+        # full text column (e.g. 7917 dxa on a 9072 dxa column for a 6-column
+        # table) — using it as the target would inherit that wasted margin
+        # instead of fixing the crowding. Always target the full usable page
+        # width instead, which is what actually gives long-word columns
+        # (all-caps headers, "DVC, Administration & Finance") the room to
+        # avoid a mid-word wrap.
+        target_total = PAGE_TEXT_WIDTH_DXA
+
+        floors = []
+        growth_weights = []
+        for ci in range(ncols):
+            body_floor = col_word_max[ci] * CHAR_DXA + CELL_PAD_DXA
+            header_floor = col_header_word_max[ci] * CHAR_DXA * HEADER_INFLATE + CELL_PAD_DXA + 220
+            floors.append(max(body_floor, header_floor, 500))
+            avg_len = col_text_total[ci] / n_body_rows
+            growth_weights.append(_math.sqrt(avg_len))
+        floor_total = sum(floors)
+
+        if floor_total >= target_total:
+            # Even the minimums don't fit — scale every floor down
+            # proportionally rather than starving one column completely.
+            scale = target_total / floor_total
+            col_widths = [max(400, round(f * scale)) for f in floors]
+        else:
+            leftover = target_total - floor_total
+            weight_total = sum(growth_weights) or 1.0
+            col_widths = [round(f + leftover * (g / weight_total))
+                          for f, g in zip(floors, growth_weights)]
+        col_widths[-1] += target_total - sum(col_widths)  # absorb rounding drift
+
+        tblPr = table._tbl.find(_qn('w:tblPr'))
+        if tblPr is None:
+            tblPr = _El('w:tblPr')
+            table._tbl.insert(0, tblPr)
+        layout = tblPr.find(_qn('w:tblLayout'))
+        if layout is None:
+            layout = _El('w:tblLayout')
+            tblPr.append(layout)
+        layout.set(_qn('w:type'), 'fixed')
+
+        if tblGrid is None:
+            tblGrid = _El('w:tblGrid')
+            tblPr.addnext(tblGrid)
+        for gc in list(tblGrid.findall(_qn('w:gridCol'))):
+            tblGrid.remove(gc)
+        for w in col_widths:
+            gc = _El('w:gridCol')
+            gc.set(_qn('w:w'), str(w))
+            tblGrid.append(gc)
+
+        for row in rows:
+            for ci, cell in enumerate(row.cells):
+                tcPr = cell._tc.get_or_add_tcPr()
+                tcW = tcPr.find(_qn('w:tcW'))
+                if tcW is None:
+                    tcW = _El('w:tcW')
+                    tcPr.append(tcW)
+                tcW.set(_qn('w:w'), str(col_widths[ci]))
+                tcW.set(_qn('w:type'), 'dxa')
+        n_balanced += 1
+
+    d.save(docx_path)
+    print(f"  balanced column widths on {n_balanced} wide tables")
+
 def _style_subheading_labels(docx_path):
     """Restyle the bold sub-dimension labels ('**KPIs**', '**Risks & Mitigation**',
     etc.) that open each Section's ten dimensions into a small-caps gold
@@ -439,22 +767,9 @@ def _style_subheading_labels(docx_path):
                 continue
             style_run(first)
 
-    def is_ceremonial_navy_table(table):
-        # Covers, closing panels, and Part/Article hero-spread dividers are
-        # navy full-bleed tables whose text is deliberately hand-styled run
-        # by run. Their titles are often short, bold runs (e.g. "BLUEPRINT")
-        # that otherwise satisfy this function's eyebrow-label heuristic —
-        # skip them structurally rather than trying to out-clever the
-        # heuristic, matching the same navy-fill detection already used by
-        # _isolate_closing_panel_header_footer.
-        for shd in table._tbl.iter(_qn('w:shd')):
-            if shd.get(_qn('w:fill')) == '122A4E':
-                return True
-        return False
-
     process_paragraphs(d.paragraphs)
     for table in d.tables:
-        if is_ceremonial_navy_table(table):
+        if _is_ceremonial_navy_table(table):
             continue
         for row in table.rows:
             for cell in row.cells:

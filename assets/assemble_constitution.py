@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.join(ROOT, "assets"))
 from assemble import (
     _justify_body_text, _enable_hyphenation, _suppress_table_hyphenation,
     _isolate_closing_panel_header_footer, _prevent_row_splitting, _insert_cover_seal,
-    _retitle_header_footer,
+    _retitle_header_footer, _style_premium_tables, _balance_column_widths,
 )
 
 FRONT = "assets/constitution_front.md"
@@ -124,6 +124,8 @@ def _style_provision_numbers(docx_path):
 def run_pandoc(md_path, docx_path):
     subprocess.run(["pandoc", md_path, "-o", docx_path, f"--reference-doc={REFDOC}"], check=True)
     _prevent_row_splitting(docx_path)
+    _style_premium_tables(docx_path)
+    _balance_column_widths(docx_path)
     _justify_body_text(docx_path)
     _enable_hyphenation(docx_path)
     _suppress_table_hyphenation(docx_path)

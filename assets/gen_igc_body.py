@@ -338,15 +338,11 @@ CONTENT[2] = f'''
 
 AMIU offers a fully stacked seven-tier academic ladder, with every credential stacking directly into the next:
 
-| Level | Credit Hours |
-|---|---|
-| Undergraduate Diploma | 45 CH |
-| Associate Degree (A.A.) | 60 CH |
-| Bachelor of Arts (B.A.) | 120 CH |
-| Postgraduate Diploma (PGD) | 30 CH |
-| Master of Arts (M.A.) | 45 CH |
-| Doctor of Philosophy (Ph.D.) | 60 CH |
-| Post-Doctoral Fellowship | Non-credit |
+![The Seven-Tier Stackable Academic Ladder](assets/figures/igc_fig4_ladder.png)
+
+**Exhibit G4. The Academic Ladder**
+
+*Every credential stacks directly into the next tier with no credit lost in the climb — from the Undergraduate Diploma at the entry point to the Post-Doctoral Fellowship at its summit. This is the same ladder governed in full by Article X of the Constitution (AMIU-CON-001).*
 
 {kicker(2,"2.7")}
 ## 2.7 The Six Colleges
@@ -370,15 +366,11 @@ The University is guided by the ISLAMIC framework — a foundation upon which al
 {kicker(3,"3.2")}
 ## 3.2 The ISLAMIC Framework
 
-| Letter | Word | Meaning |
-|---|---|---|
-| I | Illumination | The pursuit of knowledge is an act of worship that illuminates the heart and draws the seeker closer to Allah. |
-| S | Sanad | The University is bound to the Prophetic tradition by an unbroken golden chain of transmission, ensuring authentic and trustworthy scholarship. |
-| L | Love | The University exists to serve the Ummah with love and dedication, particularly those who are marginalized or deprived of access to Islamic education. |
-| A | Access | Guided by compassion and justice, the University ensures that financial capacity shall never be a barrier to knowledge. |
-| M | Morality | The University cultivates noble character — honesty, humility, patience, generosity, and compassion — following the Prophetic example. |
-| I | Inquiry | The University encourages intellectual rigor, critical inquiry, and the pursuit of truth through ijtihād and taḥqīq. |
-| C | Calling | The University is committed to da'wah — calling to Allah with wisdom, beauty, and mercy. |
+![The ISLAMIC Values Framework](assets/figures/igc_fig5_islamic.png)
+
+**Exhibit G5. The ISLAMIC Framework**
+
+*Illumination, Sanad, Love, Access, Morality, Inquiry, Calling — the same seven values Article III of the Constitution (AMIU-CON-001) makes binding on every person acting in the University's name. Section 3.3 below sets out each in full.*
 
 {kicker(3,"3.3")}
 ## 3.3 The ISLAMIC Framework — Detailed

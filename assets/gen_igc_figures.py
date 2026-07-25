@@ -37,7 +37,8 @@ def save(fig, name):
     plt.close(fig)
     print("saved", name)
 
-ROMANG = ["G1", "G2", "G3"]
+ROMANG = ["G1", "G2", "G3", "G4", "G5"]
+N_EXHIBITS = len(ROMANG)
 
 def _corner(fig, x, y, hsign, vsign, length=0.022, color=GOLD, lw=1.5):
     fig.add_artist(plt.Line2D([x, x + hsign * length], [y, y], transform=fig.transFigure,
@@ -57,7 +58,7 @@ def signature_frame(fig, exhibit_no):
                                color=NAVY, linewidth=0.8, zorder=10))
     fig.text(0.04, 0.018, "AL-MULK INTERNATIONAL UNIVERSITY", transform=fig.transFigure,
              fontsize=7, color=GREY, ha="left", va="top")
-    fig.text(0.96, 0.018, f"EXHIBIT {numeral} OF 3", transform=fig.transFigure,
+    fig.text(0.96, 0.018, f"EXHIBIT {numeral} OF {N_EXHIBITS}", transform=fig.transFigure,
              fontsize=7, color=GREY, ha="right", va="top")
     _corner(fig, 0.025, 0.945, +1, -1)
     _corner(fig, 0.975, 0.058, -1, +1)
@@ -162,3 +163,73 @@ fig.suptitle("Complete Document Inventory: Priority Breakdown (Sections 17–19)
              fontweight="bold", color=NAVY_DK, y=0.965)
 signature_frame(fig, 3)
 save(fig, "igc_fig3_inventory.png")
+
+# =====================================================================
+# FIGURE G4 — The Academic Ladder (ascending: foundation at the base).
+# Per the Table Design Directive's special requirement, this replaces the
+# Section 2.6 plain table with a full exhibit — the same visual device
+# already used for the Constitution's Figure C2, redrawn here under the
+# Compendium's own exhibit numbering so the in-image label matches its
+# caption rather than reading "AMIU EXHIBIT C2" inside this publication.
+# =====================================================================
+GOLD_LT2 = "#E4C878"
+tiers = [
+    ("VII", "Post-Doctoral Fellowship", "Non-credit"),
+    ("VI", "Doctor of Philosophy", "60 Credit Hours"),
+    ("V", "Master of Arts", "45 Credit Hours"),
+    ("IV", "Postgraduate Diploma", "30 Credit Hours"),
+    ("III", "Bachelor of Arts", "120 Credit Hours"),
+    ("II", "Associate Degree", "60 Credit Hours"),
+    ("I", "Undergraduate Diploma", "45 Credit Hours"),
+]
+fig, ax = plt.subplots(figsize=(11, 8.6))
+ax.set_xlim(0, 100); ax.set_ylim(0, 95); ax.axis("off")
+n = len(tiers)
+top, bottom, gap = 92, 6, 1.6
+h = (top - bottom - gap*(n-1)) / n
+colors_t = [NAVY_DK, NAVY, NAVY_MD, "#345385", "#4C6489", GOLD, GOLD_LT2]
+for i, (roman, name, meta) in enumerate(tiers):
+    y = top - (i+1)*h - i*gap
+    width = 92 - i*8.6
+    x0 = 50 - width/2
+    box(ax, x0, y, width, h, "", fc=colors_t[i], fs=1)
+    ax.text(x0 + 6, y + h/2, roman, ha="center", va="center", fontsize=13, fontweight="bold",
+            color=(NAVY_DK if i >= 5 else "white"))
+    ax.text(x0 + width/2 + 3, y + h/2 + h*0.16, name, ha="center", va="center", fontsize=10.6,
+            fontweight="bold", color=(NAVY_DK if i >= 5 else "white"))
+    ax.text(x0 + width/2 + 3, y + h/2 - h*0.32, meta, ha="center", va="center",
+            fontsize=8.6, color=(NAVY_DK if i >= 5 else "#DCE3F0"))
+signature_frame(fig, 4)
+save(fig, "igc_fig4_ladder.png")
+
+# =====================================================================
+# FIGURE G5 — The ISLAMIC Framework (full-page infographic), replacing
+# the Section 3.2 summary table for the same reason as Figure G4.
+# =====================================================================
+rows = [
+    ("I", "Illumination", "The pursuit of knowledge is an act of worship that illuminates the heart."),
+    ("S", "Sanad", "Bound to the Prophetic tradition by an unbroken chain of transmission."),
+    ("L", "Love", "The University serves the Ummah with love, particularly the marginalized."),
+    ("A", "Access", "Financial capacity shall never be a barrier to knowledge."),
+    ("M", "Morality", "Honesty, humility, patience, generosity — the Prophetic example."),
+    ("I", "Inquiry", "Intellectual rigor and the pursuit of truth through ijtihād and taḥqīq."),
+    ("C", "Calling", "Commitment to da'wah — calling to Allah with wisdom, beauty, and mercy."),
+]
+fig, ax = plt.subplots(figsize=(11, 9.2))
+ax.set_xlim(0, 100); ax.set_ylim(0, 96); ax.axis("off")
+n = len(rows)
+top, bottom, gap = 92, 4, 1.4
+h = (top - bottom - gap*(n-1)) / n
+for i, (letter, word, meaning) in enumerate(rows):
+    y = top - (i+1)*h - i*gap
+    fc = NAVY_DK if i % 2 == 0 else NAVY
+    box(ax, 2, y, 12, h, letter, fc=GOLD, tc=NAVY_DK, fs=22)
+    b = FancyBboxPatch((16, y), 82, h, boxstyle="round,pad=0.25,rounding_size=1.2",
+                        fc=fc, ec="none", zorder=3)
+    ax.add_patch(b)
+    ax.text(19, y + h/2 + h*0.20, word, ha="left", va="center", fontsize=13,
+            fontweight="bold", color=GOLD_LT2, zorder=4)
+    ax.text(19, y + h/2 - h*0.28, meaning, ha="left", va="center", fontsize=9.3,
+            color="#DCE3F0", zorder=4, linespacing=1.3)
+signature_frame(fig, 5)
+save(fig, "igc_fig5_islamic.png")

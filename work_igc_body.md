@@ -267,15 +267,11 @@ SECTION 2 &#183; 2.6
 
 AMIU offers a fully stacked seven-tier academic ladder, with every credential stacking directly into the next:
 
-| Level | Credit Hours |
-|---|---|
-| Undergraduate Diploma | 45 CH |
-| Associate Degree (A.A.) | 60 CH |
-| Bachelor of Arts (B.A.) | 120 CH |
-| Postgraduate Diploma (PGD) | 30 CH |
-| Master of Arts (M.A.) | 45 CH |
-| Doctor of Philosophy (Ph.D.) | 60 CH |
-| Post-Doctoral Fellowship | Non-credit |
+![The Seven-Tier Stackable Academic Ladder](assets/figures/igc_fig4_ladder.png)
+
+**Exhibit G4. The Academic Ladder**
+
+*Every credential stacks directly into the next tier with no credit lost in the climb — from the Undergraduate Diploma at the entry point to the Post-Doctoral Fellowship at its summit. This is the same ladder governed in full by Article X of the Constitution (AMIU-CON-001).*
 
 ::: {custom-style="SectionKicker"}
 SECTION 2 &#183; 2.7
@@ -358,15 +354,11 @@ SECTION 3 &#183; 3.2
 
 ## 3.2 The ISLAMIC Framework
 
-| Letter | Word | Meaning |
-|---|---|---|
-| I | Illumination | The pursuit of knowledge is an act of worship that illuminates the heart and draws the seeker closer to Allah. |
-| S | Sanad | The University is bound to the Prophetic tradition by an unbroken golden chain of transmission, ensuring authentic and trustworthy scholarship. |
-| L | Love | The University exists to serve the Ummah with love and dedication, particularly those who are marginalized or deprived of access to Islamic education. |
-| A | Access | Guided by compassion and justice, the University ensures that financial capacity shall never be a barrier to knowledge. |
-| M | Morality | The University cultivates noble character — honesty, humility, patience, generosity, and compassion — following the Prophetic example. |
-| I | Inquiry | The University encourages intellectual rigor, critical inquiry, and the pursuit of truth through ijtihād and taḥqīq. |
-| C | Calling | The University is committed to da'wah — calling to Allah with wisdom, beauty, and mercy. |
+![The ISLAMIC Values Framework](assets/figures/igc_fig5_islamic.png)
+
+**Exhibit G5. The ISLAMIC Framework**
+
+*Illumination, Sanad, Love, Access, Morality, Inquiry, Calling — the same seven values Article III of the Constitution (AMIU-CON-001) makes binding on every person acting in the University's name. Section 3.3 below sets out each in full.*
 
 ::: {custom-style="SectionKicker"}
 SECTION 3 &#183; 3.3
@@ -2062,115 +2054,115 @@ SECTION 17 &#183; 17.1
 
 *The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-107 reference number used throughout this Compendium — the two schemes were not previously shown side by side, which was the source of a cross-reference inconsistency corrected in Section 21.2 and disclosed in the Publication Certification Statement.*
 
-| # | Doc Code | Document | Category | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|---|
-| 1 | GOV-001 | Strategic Plan | GOV | Complete | Done | President & Vice-Chancellor |
-| 2 | GOV-002 | Strategic Plan Implementation Roadmap | GOV | Critical | To Develop | DVC, Administration & Finance |
-| 3 | GOV-003 | Bylaws | GOV | Critical | To Develop | Secretary to the Board |
-| 4 | GOV-004 | Certificate of Formation | GOV | Complete | Done | Office of Legal Counsel |
-| 5 | GOV-005 | Board of Trustees Charter | GOV | Critical | To Develop | Chair, Board of Trustees |
-| 6 | GOV-006 | Annual Report Template | GOV | Important | To Develop | President & Vice-Chancellor |
-| 7 | GOV-007 | Senate Standing Rules | GOV | Critical | To Develop | Secretary to the Senate |
-| 8 | GOV-008 | Succession Planning Policy | GOV | Important | To Develop | DVC, Administration & Finance |
-| 9 | GOV-009 | Committee Charters | GOV | Critical | To Develop | Secretary to the Senate |
-| 10 | GOV-010 | Conflict of Interest Policy | GOV | Critical | To Develop | Office of Legal Counsel |
-| 11 | GOV-011 | Whistleblower Policy | GOV | Important | To Develop | Chair, Audit & Risk Committee |
-| 12 | ACA-001 | Academic Catalog | ACA | Complete | Done | DVC, Academic Affairs |
-| 13 | ACA-002 | Curriculum Development Process | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 14 | ACA-003 | Program Assessment & Review Policy | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 15 | ACA-004 | Course Syllabi Template | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 16 | ACA-005 | Faculty Evaluation System | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 17 | ACA-006 | Course Evaluation System | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 18 | ACA-007 | Academic Standards Committee Charter | ACA | Critical | To Develop | Chair, Academic Standards Committee |
-| 19 | ACA-008 | Accreditation Preparation Plan | ACA | Important | To Develop | DVC, Academic Affairs |
-| 20 | ACA-009 | Transfer Credit Policy | ACA | Important | To Develop | University Registrar |
-| 21 | ACA-010 | Credit-Hour Definition Policy | ACA | Important | To Develop | University Registrar |
-| 22 | ACA-011 | Academic Calendar Policy | ACA | Important | To Develop | University Registrar |
-| 23 | ACA-012 | Graduation Requirements Policy | ACA | Important | To Develop | University Registrar |
-| 24 | ACA-013 | Academic Integrity Policy | ACA | Important | To Develop | DVC, Academic Affairs |
-| 25 | ACA-014 | Program Learning Outcomes Assessment Policy | ACA | Important | To Develop | DVC, Academic Affairs |
-| 26 | ACA-015 | Online Attendance Policy | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 27 | ACA-016 | Remote Proctoring & Online Examinations Policy | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 28 | ACA-017 | Technology Requirements Policy | ACA | Critical | To Develop | Director, IT |
-| 29 | ACA-018 | Synchronous/Asynchronous Learning Policy | ACA | Critical | To Develop | DVC, Academic Affairs |
-| 30 | ACA-019 | Virtual Faculty & Student Support Policy | ACA | Important | To Develop | DVC, Academic Affairs |
-| 31 | STU-001 | Student Code of Conduct | STU | Critical | To Develop | Dean of Students |
-| 32 | STU-002 | Student Grievance Policy | STU | Critical | To Develop | Dean of Students |
-| 33 | STU-003 | Student Recruitment Plan | STU | Important | To Develop | DVC, Academic Affairs |
-| 34 | STU-004 | Student Orientation Program | STU | Important | To Develop | Dean of Students |
-| 35 | STU-005 | Student Retention Strategy | STU | Important | To Develop | Dean of Students |
-| 36 | STU-006 | Attendance Policy | STU | Critical | To Develop | Dean of Students |
-| 37 | STU-007 | Academic Probation & Dismissal Policy | STU | Critical | To Develop | Dean of Students |
-| 38 | STU-008 | Grade Appeal Policy | STU | Critical | To Develop | Dean of Students |
-| 39 | STU-009 | Mental Health Support Policy | STU | Important | To Develop | Dean of Students |
-| 40 | STU-010 | Career Services Policy | STU | Important | To Develop | Dean of Students |
-| 41 | STU-011 | Disability Services Policy | STU | Important | To Develop | Dean of Students |
-| 42 | STU-012 | Student Activities Policy | STU | Important | To Develop | Dean of Students |
-| 43 | STU-013 | International Student Support Policy | STU | Important | To Develop | Dean of Students |
-| 44 | STU-014 | Digital Citizenship & Online Conduct Policy | STU | Critical | To Develop | Dean of Students |
-| 45 | STU-015 | Islamic Dress Code Policy for Online Learning | STU | Critical | To Develop | Dean of Students |
-| 46 | STU-016 | Online Classroom Etiquette & Noise Policy | STU | Critical | To Develop | Dean of Students |
-| 47 | STU-017 | International Time Zone Policy | STU | Important | To Develop | Dean of Students |
-| 48 | STU-018 | Virtual Campus Life Policy | STU | Important | To Develop | Dean of Students |
-| 49 | STU-019 | Digital Accessibility Policy | STU | Important | To Develop | Dean of Students |
-| 50 | STU-020 | Student ID Card Policy | STU | Important | To Develop | University Registrar |
-| 51 | STU-021 | Virtual Graduation Policy | STU | Important | To Develop | University Registrar |
-| 52 | STU-022 | Faculty-Student Relationship Policy | STU | Critical | To Develop | DVC, Academic Affairs |
-| 53 | STU-023 | Comprehensive Disciplinary & Negative Reinforcement Policy | STU | Critical | To Develop | Dean of Students |
-| 54 | OPS-001 | Financial Model | OPS | Complete | Done | DVC, Administration & Finance |
-| 55 | OPS-002 | Financial Operations Manual | OPS | Critical | To Develop | DVC, Administration & Finance |
-| 56 | OPS-003 | Budgeting Policy | OPS | Important | To Develop | DVC, Administration & Finance |
-| 57 | OPS-004 | Procurement Policy | OPS | Important | To Develop | DVC, Administration & Finance |
-| 58 | OPS-005 | Tuition Collection & Refund Policy | OPS | Critical | To Develop | DVC, Administration & Finance |
-| 59 | OPS-006 | Payroll Policy | OPS | Critical | To Develop | DVC, Administration & Finance |
-| 60 | OPS-007 | HR Policies & Procedures Manual | OPS | Critical | To Develop | DVC, Administration & Finance |
-| 61 | OPS-008 | Recruitment & Hiring Policy | OPS | Critical | To Develop | Director, Human Resources |
-| 62 | OPS-009 | Employee Contract Template | OPS | Important | To Develop | Director, Human Resources |
-| 63 | OPS-010 | Compensation Policy | OPS | Important | To Develop | Director, Human Resources |
-| 64 | OPS-011 | Leave Policy | OPS | Important | To Develop | Director, Human Resources |
-| 65 | OPS-012 | Performance Review Policy | OPS | Important | To Develop | Director, Human Resources |
-| 66 | OPS-013 | Termination Policy | OPS | Important | To Develop | Director, Human Resources |
-| 67 | OPS-014 | IT Infrastructure Plan | OPS | Important | To Develop | Director, Information Technology |
-| 68 | OPS-015 | LMS Technical Specifications | OPS | Important | To Develop | Director, Information Technology |
-| 69 | OPS-016 | Data Privacy & Security Policy | OPS | Critical | To Develop | Director, Information Technology |
-| 70 | OPS-017 | Backup & Disaster Recovery Plan | OPS | Important | To Develop | Director, Information Technology |
-| 71 | OPS-018 | IT Support Policy | OPS | Important | To Develop | Director, Information Technology |
-| 72 | OPS-019 | Acceptable Use Policy | OPS | Important | To Develop | Director, Information Technology |
-| 73 | OPS-020 | Facilities Management Policy | OPS | Important | To Develop | Director, Facilities |
-| 74 | OPS-021 | Health & Safety Policy | OPS | Important | To Develop | Director, Facilities |
-| 75 | OPS-022 | Emergency Response Plan | OPS | Important | To Develop | Director, Facilities |
-| 76 | OPS-023 | Learning Management System (LMS) Policy | OPS | Critical | To Develop | Director, Information Technology |
-| 77 | OPS-024 | Online Pedagogy Training Policy | OPS | Critical | To Develop | DVC, Academic Affairs |
-| 78 | OPS-025 | Virtual Office Hours Policy | OPS | Important | To Develop | DVC, Academic Affairs |
-| 79 | OPS-026 | Digital Resources & Library Policy | OPS | Important | To Develop | University Librarian |
-| 80 | OPS-027 | Social Media & Student Communication Policy | OPS | Important | To Develop | Director, Communications |
-| 81 | LEG-001 | FERPA Compliance Policy | LEG | Critical | To Develop | University Registrar |
-| 82 | LEG-002 | GDPR Compliance Policy | LEG | Critical | To Develop | Director, Information Technology |
-| 83 | LEG-003 | Texas State Regulatory Filings Policy | LEG | Critical | To Develop | Office of Legal Counsel |
-| 84 | LEG-004 | Intellectual Property Policy | LEG | Critical | To Develop | Office of Legal Counsel |
-| 85 | LEG-005 | Non-Discrimination & Title IX Policy | LEG | Important | To Develop | DVC, Administration & Finance |
-| 86 | LEG-006 | Gambia Branch Operational Plan | LEG | Critical | To Develop | DVC, Administration & Finance |
-| 87 | LEG-007 | Nigeria Campus Development Plan | LEG | Critical | To Develop | DVC, Administration & Finance |
-| 88 | LEG-008 | Country-Specific Regulatory Compliance | LEG | Critical | To Develop | Office of Legal Counsel |
-| 89 | LEG-009 | Cross-Border Payment Systems Policy | LEG | Critical | To Develop | DVC, Administration & Finance |
-| 90 | LEG-010 | International Faculty Recruitment Policy | LEG | Important | To Develop | Director, Human Resources |
-| 91 | LEG-011 | International Student Support Policy | LEG | Important | To Develop | Dean of Students |
-| 92 | MKT-001 | Brand Style Guide | MKT | Critical | To Develop | Director, Communications |
-| 93 | MKT-002 | Website Content Plan | MKT | Critical | To Develop | Director, Communications |
-| 94 | MKT-003 | Content Creation Policy | MKT | Important | To Develop | Director, Communications |
-| 95 | MKT-004 | Social Media Policy | MKT | Important | To Develop | Director, Communications |
-| 96 | MKT-005 | Media Relations Policy | MKT | Important | To Develop | Director, Communications |
-| 97 | MKT-006 | Crisis Communications Plan | MKT | Important | To Develop | Director, Communications |
-| 98 | MKT-007 | Marketing Plan | MKT | Critical | To Develop | Director, Communications |
-| 99 | WAQ-001 | Waqf & Endowment Board Charter | WAQ | Critical | To Develop | Chair, Waqf & Endowment Board |
-| 100 | WAQ-002 | Donor Stewardship Plan | WAQ | Critical | To Develop | Chair, Waqf & Endowment Board |
-| 101 | WAQ-003 | Fundraising Campaign Plan | WAQ | Critical | To Develop | Chair, Waqf & Endowment Board |
-| 102 | WAQ-004 | Research Policy | WAQ | Important | To Develop | DVC, Academic Affairs |
-| 103 | WAQ-005 | Publication & Conference Policy | WAQ | Important | To Develop | DVC, Academic Affairs |
-| 104 | WAQ-006 | Research Ethics Policy | WAQ | Important | To Develop | DVC, Academic Affairs |
-| 105 | WAQ-007 | Risk Register | WAQ | Complete | Done | Chair, Audit & Risk Committee |
-| 106 | WAQ-008 | Crisis Management Policy | WAQ | Critical | To Develop | Chair, Audit & Risk Committee |
-| 107 | WAQ-009 | Business Continuity & Insurance Policy | WAQ | Important | To Develop | DVC, Administration & Finance |
+| # | Doc Code | Document | Category | Priority | Policy Steward |
+|---:|---|---|---|---|---|
+| 1 | GOV-001 | Strategic Plan | GOV | Complete | President & Vice-Chancellor |
+| 2 | GOV-002 | Strategic Plan Implementation Roadmap | GOV | Critical | DVC, Administration & Finance |
+| 3 | GOV-003 | Bylaws | GOV | Critical | Secretary to the Board |
+| 4 | GOV-004 | Certificate of Formation | GOV | Complete | Office of Legal Counsel |
+| 5 | GOV-005 | Board of Trustees Charter | GOV | Critical | Chair, Board of Trustees |
+| 6 | GOV-006 | Annual Report Template | GOV | Important | President & Vice-Chancellor |
+| 7 | GOV-007 | Senate Standing Rules | GOV | Critical | Secretary to the Senate |
+| 8 | GOV-008 | Succession Planning Policy | GOV | Important | DVC, Administration & Finance |
+| 9 | GOV-009 | Committee Charters | GOV | Critical | Secretary to the Senate |
+| 10 | GOV-010 | Conflict of Interest Policy | GOV | Critical | Office of Legal Counsel |
+| 11 | GOV-011 | Whistleblower Policy | GOV | Important | Chair, Audit & Risk Committee |
+| 12 | ACA-001 | Academic Catalog | ACA | Complete | DVC, Academic Affairs |
+| 13 | ACA-002 | Curriculum Development Process | ACA | Critical | DVC, Academic Affairs |
+| 14 | ACA-003 | Program Assessment & Review Policy | ACA | Critical | DVC, Academic Affairs |
+| 15 | ACA-004 | Course Syllabi Template | ACA | Critical | DVC, Academic Affairs |
+| 16 | ACA-005 | Faculty Evaluation System | ACA | Critical | DVC, Academic Affairs |
+| 17 | ACA-006 | Course Evaluation System | ACA | Critical | DVC, Academic Affairs |
+| 18 | ACA-007 | Academic Standards Committee Charter | ACA | Critical | Chair, Academic Standards Committee |
+| 19 | ACA-008 | Accreditation Preparation Plan | ACA | Important | DVC, Academic Affairs |
+| 20 | ACA-009 | Transfer Credit Policy | ACA | Important | University Registrar |
+| 21 | ACA-010 | Credit-Hour Definition Policy | ACA | Important | University Registrar |
+| 22 | ACA-011 | Academic Calendar Policy | ACA | Important | University Registrar |
+| 23 | ACA-012 | Graduation Requirements Policy | ACA | Important | University Registrar |
+| 24 | ACA-013 | Academic Integrity Policy | ACA | Important | DVC, Academic Affairs |
+| 25 | ACA-014 | Program Learning Outcomes Assessment Policy | ACA | Important | DVC, Academic Affairs |
+| 26 | ACA-015 | Online Attendance Policy | ACA | Critical | DVC, Academic Affairs |
+| 27 | ACA-016 | Remote Proctoring & Online Examinations Policy | ACA | Critical | DVC, Academic Affairs |
+| 28 | ACA-017 | Technology Requirements Policy | ACA | Critical | Director, IT |
+| 29 | ACA-018 | Synchronous/Asynchronous Learning Policy | ACA | Critical | DVC, Academic Affairs |
+| 30 | ACA-019 | Virtual Faculty & Student Support Policy | ACA | Important | DVC, Academic Affairs |
+| 31 | STU-001 | Student Code of Conduct | STU | Critical | Dean of Students |
+| 32 | STU-002 | Student Grievance Policy | STU | Critical | Dean of Students |
+| 33 | STU-003 | Student Recruitment Plan | STU | Important | DVC, Academic Affairs |
+| 34 | STU-004 | Student Orientation Program | STU | Important | Dean of Students |
+| 35 | STU-005 | Student Retention Strategy | STU | Important | Dean of Students |
+| 36 | STU-006 | Attendance Policy | STU | Critical | Dean of Students |
+| 37 | STU-007 | Academic Probation & Dismissal Policy | STU | Critical | Dean of Students |
+| 38 | STU-008 | Grade Appeal Policy | STU | Critical | Dean of Students |
+| 39 | STU-009 | Mental Health Support Policy | STU | Important | Dean of Students |
+| 40 | STU-010 | Career Services Policy | STU | Important | Dean of Students |
+| 41 | STU-011 | Disability Services Policy | STU | Important | Dean of Students |
+| 42 | STU-012 | Student Activities Policy | STU | Important | Dean of Students |
+| 43 | STU-013 | International Student Support Policy | STU | Important | Dean of Students |
+| 44 | STU-014 | Digital Citizenship & Online Conduct Policy | STU | Critical | Dean of Students |
+| 45 | STU-015 | Islamic Dress Code Policy for Online Learning | STU | Critical | Dean of Students |
+| 46 | STU-016 | Online Classroom Etiquette & Noise Policy | STU | Critical | Dean of Students |
+| 47 | STU-017 | International Time Zone Policy | STU | Important | Dean of Students |
+| 48 | STU-018 | Virtual Campus Life Policy | STU | Important | Dean of Students |
+| 49 | STU-019 | Digital Accessibility Policy | STU | Important | Dean of Students |
+| 50 | STU-020 | Student ID Card Policy | STU | Important | University Registrar |
+| 51 | STU-021 | Virtual Graduation Policy | STU | Important | University Registrar |
+| 52 | STU-022 | Faculty-Student Relationship Policy | STU | Critical | DVC, Academic Affairs |
+| 53 | STU-023 | Comprehensive Disciplinary & Negative Reinforcement Policy | STU | Critical | Dean of Students |
+| 54 | OPS-001 | Financial Model | OPS | Complete | DVC, Administration & Finance |
+| 55 | OPS-002 | Financial Operations Manual | OPS | Critical | DVC, Administration & Finance |
+| 56 | OPS-003 | Budgeting Policy | OPS | Important | DVC, Administration & Finance |
+| 57 | OPS-004 | Procurement Policy | OPS | Important | DVC, Administration & Finance |
+| 58 | OPS-005 | Tuition Collection & Refund Policy | OPS | Critical | DVC, Administration & Finance |
+| 59 | OPS-006 | Payroll Policy | OPS | Critical | DVC, Administration & Finance |
+| 60 | OPS-007 | HR Policies & Procedures Manual | OPS | Critical | DVC, Administration & Finance |
+| 61 | OPS-008 | Recruitment & Hiring Policy | OPS | Critical | Director, Human Resources |
+| 62 | OPS-009 | Employee Contract Template | OPS | Important | Director, Human Resources |
+| 63 | OPS-010 | Compensation Policy | OPS | Important | Director, Human Resources |
+| 64 | OPS-011 | Leave Policy | OPS | Important | Director, Human Resources |
+| 65 | OPS-012 | Performance Review Policy | OPS | Important | Director, Human Resources |
+| 66 | OPS-013 | Termination Policy | OPS | Important | Director, Human Resources |
+| 67 | OPS-014 | IT Infrastructure Plan | OPS | Important | Director, Information Technology |
+| 68 | OPS-015 | LMS Technical Specifications | OPS | Important | Director, Information Technology |
+| 69 | OPS-016 | Data Privacy & Security Policy | OPS | Critical | Director, Information Technology |
+| 70 | OPS-017 | Backup & Disaster Recovery Plan | OPS | Important | Director, Information Technology |
+| 71 | OPS-018 | IT Support Policy | OPS | Important | Director, Information Technology |
+| 72 | OPS-019 | Acceptable Use Policy | OPS | Important | Director, Information Technology |
+| 73 | OPS-020 | Facilities Management Policy | OPS | Important | Director, Facilities |
+| 74 | OPS-021 | Health & Safety Policy | OPS | Important | Director, Facilities |
+| 75 | OPS-022 | Emergency Response Plan | OPS | Important | Director, Facilities |
+| 76 | OPS-023 | Learning Management System (LMS) Policy | OPS | Critical | Director, Information Technology |
+| 77 | OPS-024 | Online Pedagogy Training Policy | OPS | Critical | DVC, Academic Affairs |
+| 78 | OPS-025 | Virtual Office Hours Policy | OPS | Important | DVC, Academic Affairs |
+| 79 | OPS-026 | Digital Resources & Library Policy | OPS | Important | University Librarian |
+| 80 | OPS-027 | Social Media & Student Communication Policy | OPS | Important | Director, Communications |
+| 81 | LEG-001 | FERPA Compliance Policy | LEG | Critical | University Registrar |
+| 82 | LEG-002 | GDPR Compliance Policy | LEG | Critical | Director, Information Technology |
+| 83 | LEG-003 | Texas State Regulatory Filings Policy | LEG | Critical | Office of Legal Counsel |
+| 84 | LEG-004 | Intellectual Property Policy | LEG | Critical | Office of Legal Counsel |
+| 85 | LEG-005 | Non-Discrimination & Title IX Policy | LEG | Important | DVC, Administration & Finance |
+| 86 | LEG-006 | Gambia Branch Operational Plan | LEG | Critical | DVC, Administration & Finance |
+| 87 | LEG-007 | Nigeria Campus Development Plan | LEG | Critical | DVC, Administration & Finance |
+| 88 | LEG-008 | Country-Specific Regulatory Compliance | LEG | Critical | Office of Legal Counsel |
+| 89 | LEG-009 | Cross-Border Payment Systems Policy | LEG | Critical | DVC, Administration & Finance |
+| 90 | LEG-010 | International Faculty Recruitment Policy | LEG | Important | Director, Human Resources |
+| 91 | LEG-011 | International Student Support Policy | LEG | Important | Dean of Students |
+| 92 | MKT-001 | Brand Style Guide | MKT | Critical | Director, Communications |
+| 93 | MKT-002 | Website Content Plan | MKT | Critical | Director, Communications |
+| 94 | MKT-003 | Content Creation Policy | MKT | Important | Director, Communications |
+| 95 | MKT-004 | Social Media Policy | MKT | Important | Director, Communications |
+| 96 | MKT-005 | Media Relations Policy | MKT | Important | Director, Communications |
+| 97 | MKT-006 | Crisis Communications Plan | MKT | Important | Director, Communications |
+| 98 | MKT-007 | Marketing Plan | MKT | Critical | Director, Communications |
+| 99 | WAQ-001 | Waqf & Endowment Board Charter | WAQ | Critical | Chair, Waqf & Endowment Board |
+| 100 | WAQ-002 | Donor Stewardship Plan | WAQ | Critical | Chair, Waqf & Endowment Board |
+| 101 | WAQ-003 | Fundraising Campaign Plan | WAQ | Critical | Chair, Waqf & Endowment Board |
+| 102 | WAQ-004 | Research Policy | WAQ | Important | DVC, Academic Affairs |
+| 103 | WAQ-005 | Publication & Conference Policy | WAQ | Important | DVC, Academic Affairs |
+| 104 | WAQ-006 | Research Ethics Policy | WAQ | Important | DVC, Academic Affairs |
+| 105 | WAQ-007 | Risk Register | WAQ | Complete | Chair, Audit & Risk Committee |
+| 106 | WAQ-008 | Crisis Management Policy | WAQ | Critical | Chair, Audit & Risk Committee |
+| 107 | WAQ-009 | Business Continuity & Insurance Policy | WAQ | Important | DVC, Administration & Finance |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2235,19 +2227,19 @@ SECTION 18 &#183; 18.1
 
 ## 18.1 Governance Handbook (11 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 1 | GOV-001 | Strategic Plan | Complete | Done | President & Vice-Chancellor |
-| 2 | GOV-002 | Strategic Plan Implementation Roadmap | Critical | To Develop | DVC, Administration & Finance |
-| 3 | GOV-003 | Bylaws | Critical | To Develop | Secretary to the Board |
-| 4 | GOV-004 | Certificate of Formation | Complete | Done | Office of Legal Counsel |
-| 5 | GOV-005 | Board of Trustees Charter | Critical | To Develop | Chair, Board of Trustees |
-| 6 | GOV-006 | Annual Report Template | Important | To Develop | President & Vice-Chancellor |
-| 7 | GOV-007 | Senate Standing Rules | Critical | To Develop | Secretary to the Senate |
-| 8 | GOV-008 | Succession Planning Policy | Important | To Develop | DVC, Administration & Finance |
-| 9 | GOV-009 | Committee Charters | Critical | To Develop | Secretary to the Senate |
-| 10 | GOV-010 | Conflict of Interest Policy | Critical | To Develop | Office of Legal Counsel |
-| 11 | GOV-011 | Whistleblower Policy | Important | To Develop | Chair, Audit & Risk Committee |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 1 | GOV-001 | Strategic Plan | Complete | President & Vice-Chancellor |
+| 2 | GOV-002 | Strategic Plan Implementation Roadmap | Critical | DVC, Administration & Finance |
+| 3 | GOV-003 | Bylaws | Critical | Secretary to the Board |
+| 4 | GOV-004 | Certificate of Formation | Complete | Office of Legal Counsel |
+| 5 | GOV-005 | Board of Trustees Charter | Critical | Chair, Board of Trustees |
+| 6 | GOV-006 | Annual Report Template | Important | President & Vice-Chancellor |
+| 7 | GOV-007 | Senate Standing Rules | Critical | Secretary to the Senate |
+| 8 | GOV-008 | Succession Planning Policy | Important | DVC, Administration & Finance |
+| 9 | GOV-009 | Committee Charters | Critical | Secretary to the Senate |
+| 10 | GOV-010 | Conflict of Interest Policy | Critical | Office of Legal Counsel |
+| 11 | GOV-011 | Whistleblower Policy | Important | Chair, Audit & Risk Committee |
 
 ::: {custom-style="SectionKicker"}
 SECTION 18 &#183; 18.2
@@ -2255,27 +2247,27 @@ SECTION 18 &#183; 18.2
 
 ## 18.2 Academic Handbook (19 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 12 | ACA-001 | Academic Catalog | Complete | Done | DVC, Academic Affairs |
-| 13 | ACA-002 | Curriculum Development Process | Critical | To Develop | DVC, Academic Affairs |
-| 14 | ACA-003 | Program Assessment & Review Policy | Critical | To Develop | DVC, Academic Affairs |
-| 15 | ACA-004 | Course Syllabi Template | Critical | To Develop | DVC, Academic Affairs |
-| 16 | ACA-005 | Faculty Evaluation System | Critical | To Develop | DVC, Academic Affairs |
-| 17 | ACA-006 | Course Evaluation System | Critical | To Develop | DVC, Academic Affairs |
-| 18 | ACA-007 | Academic Standards Committee Charter | Critical | To Develop | Chair, Academic Standards Committee |
-| 19 | ACA-008 | Accreditation Preparation Plan | Important | To Develop | DVC, Academic Affairs |
-| 20 | ACA-009 | Transfer Credit Policy | Important | To Develop | University Registrar |
-| 21 | ACA-010 | Credit-Hour Definition Policy | Important | To Develop | University Registrar |
-| 22 | ACA-011 | Academic Calendar Policy | Important | To Develop | University Registrar |
-| 23 | ACA-012 | Graduation Requirements Policy | Important | To Develop | University Registrar |
-| 24 | ACA-013 | Academic Integrity Policy | Important | To Develop | DVC, Academic Affairs |
-| 25 | ACA-014 | Program Learning Outcomes Assessment Policy | Important | To Develop | DVC, Academic Affairs |
-| 26 | ACA-015 | Online Attendance Policy | Critical | To Develop | DVC, Academic Affairs |
-| 27 | ACA-016 | Remote Proctoring & Online Examinations Policy | Critical | To Develop | DVC, Academic Affairs |
-| 28 | ACA-017 | Technology Requirements Policy | Critical | To Develop | Director, IT |
-| 29 | ACA-018 | Synchronous/Asynchronous Learning Policy | Critical | To Develop | DVC, Academic Affairs |
-| 30 | ACA-019 | Virtual Faculty & Student Support Policy | Important | To Develop | DVC, Academic Affairs |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 12 | ACA-001 | Academic Catalog | Complete | DVC, Academic Affairs |
+| 13 | ACA-002 | Curriculum Development Process | Critical | DVC, Academic Affairs |
+| 14 | ACA-003 | Program Assessment & Review Policy | Critical | DVC, Academic Affairs |
+| 15 | ACA-004 | Course Syllabi Template | Critical | DVC, Academic Affairs |
+| 16 | ACA-005 | Faculty Evaluation System | Critical | DVC, Academic Affairs |
+| 17 | ACA-006 | Course Evaluation System | Critical | DVC, Academic Affairs |
+| 18 | ACA-007 | Academic Standards Committee Charter | Critical | Chair, Academic Standards Committee |
+| 19 | ACA-008 | Accreditation Preparation Plan | Important | DVC, Academic Affairs |
+| 20 | ACA-009 | Transfer Credit Policy | Important | University Registrar |
+| 21 | ACA-010 | Credit-Hour Definition Policy | Important | University Registrar |
+| 22 | ACA-011 | Academic Calendar Policy | Important | University Registrar |
+| 23 | ACA-012 | Graduation Requirements Policy | Important | University Registrar |
+| 24 | ACA-013 | Academic Integrity Policy | Important | DVC, Academic Affairs |
+| 25 | ACA-014 | Program Learning Outcomes Assessment Policy | Important | DVC, Academic Affairs |
+| 26 | ACA-015 | Online Attendance Policy | Critical | DVC, Academic Affairs |
+| 27 | ACA-016 | Remote Proctoring & Online Examinations Policy | Critical | DVC, Academic Affairs |
+| 28 | ACA-017 | Technology Requirements Policy | Critical | Director, IT |
+| 29 | ACA-018 | Synchronous/Asynchronous Learning Policy | Critical | DVC, Academic Affairs |
+| 30 | ACA-019 | Virtual Faculty & Student Support Policy | Important | DVC, Academic Affairs |
 
 ::: {custom-style="SectionKicker"}
 SECTION 18 &#183; 18.3
@@ -2283,31 +2275,31 @@ SECTION 18 &#183; 18.3
 
 ## 18.3 Student Handbook (23 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 31 | STU-001 | Student Code of Conduct | Critical | To Develop | Dean of Students |
-| 32 | STU-002 | Student Grievance Policy | Critical | To Develop | Dean of Students |
-| 33 | STU-003 | Student Recruitment Plan | Important | To Develop | DVC, Academic Affairs |
-| 34 | STU-004 | Student Orientation Program | Important | To Develop | Dean of Students |
-| 35 | STU-005 | Student Retention Strategy | Important | To Develop | Dean of Students |
-| 36 | STU-006 | Attendance Policy | Critical | To Develop | Dean of Students |
-| 37 | STU-007 | Academic Probation & Dismissal Policy | Critical | To Develop | Dean of Students |
-| 38 | STU-008 | Grade Appeal Policy | Critical | To Develop | Dean of Students |
-| 39 | STU-009 | Mental Health Support Policy | Important | To Develop | Dean of Students |
-| 40 | STU-010 | Career Services Policy | Important | To Develop | Dean of Students |
-| 41 | STU-011 | Disability Services Policy | Important | To Develop | Dean of Students |
-| 42 | STU-012 | Student Activities Policy | Important | To Develop | Dean of Students |
-| 43 | STU-013 | International Student Support Policy | Important | To Develop | Dean of Students |
-| 44 | STU-014 | Digital Citizenship & Online Conduct Policy | Critical | To Develop | Dean of Students |
-| 45 | STU-015 | Islamic Dress Code Policy for Online Learning | Critical | To Develop | Dean of Students |
-| 46 | STU-016 | Online Classroom Etiquette & Noise Policy | Critical | To Develop | Dean of Students |
-| 47 | STU-017 | International Time Zone Policy | Important | To Develop | Dean of Students |
-| 48 | STU-018 | Virtual Campus Life Policy | Important | To Develop | Dean of Students |
-| 49 | STU-019 | Digital Accessibility Policy | Important | To Develop | Dean of Students |
-| 50 | STU-020 | Student ID Card Policy | Important | To Develop | University Registrar |
-| 51 | STU-021 | Virtual Graduation Policy | Important | To Develop | University Registrar |
-| 52 | STU-022 | Faculty-Student Relationship Policy | Critical | To Develop | DVC, Academic Affairs |
-| 53 | STU-023 | Comprehensive Disciplinary & Negative Reinforcement Policy | Critical | To Develop | Dean of Students |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 31 | STU-001 | Student Code of Conduct | Critical | Dean of Students |
+| 32 | STU-002 | Student Grievance Policy | Critical | Dean of Students |
+| 33 | STU-003 | Student Recruitment Plan | Important | DVC, Academic Affairs |
+| 34 | STU-004 | Student Orientation Program | Important | Dean of Students |
+| 35 | STU-005 | Student Retention Strategy | Important | Dean of Students |
+| 36 | STU-006 | Attendance Policy | Critical | Dean of Students |
+| 37 | STU-007 | Academic Probation & Dismissal Policy | Critical | Dean of Students |
+| 38 | STU-008 | Grade Appeal Policy | Critical | Dean of Students |
+| 39 | STU-009 | Mental Health Support Policy | Important | Dean of Students |
+| 40 | STU-010 | Career Services Policy | Important | Dean of Students |
+| 41 | STU-011 | Disability Services Policy | Important | Dean of Students |
+| 42 | STU-012 | Student Activities Policy | Important | Dean of Students |
+| 43 | STU-013 | International Student Support Policy | Important | Dean of Students |
+| 44 | STU-014 | Digital Citizenship & Online Conduct Policy | Critical | Dean of Students |
+| 45 | STU-015 | Islamic Dress Code Policy for Online Learning | Critical | Dean of Students |
+| 46 | STU-016 | Online Classroom Etiquette & Noise Policy | Critical | Dean of Students |
+| 47 | STU-017 | International Time Zone Policy | Important | Dean of Students |
+| 48 | STU-018 | Virtual Campus Life Policy | Important | Dean of Students |
+| 49 | STU-019 | Digital Accessibility Policy | Important | Dean of Students |
+| 50 | STU-020 | Student ID Card Policy | Important | University Registrar |
+| 51 | STU-021 | Virtual Graduation Policy | Important | University Registrar |
+| 52 | STU-022 | Faculty-Student Relationship Policy | Critical | DVC, Academic Affairs |
+| 53 | STU-023 | Comprehensive Disciplinary & Negative Reinforcement Policy | Critical | Dean of Students |
 
 ::: {custom-style="SectionKicker"}
 SECTION 18 &#183; 18.4
@@ -2315,35 +2307,35 @@ SECTION 18 &#183; 18.4
 
 ## 18.4 Operations Handbook (27 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 54 | OPS-001 | Financial Model | Complete | Done | DVC, Administration & Finance |
-| 55 | OPS-002 | Financial Operations Manual | Critical | To Develop | DVC, Administration & Finance |
-| 56 | OPS-003 | Budgeting Policy | Important | To Develop | DVC, Administration & Finance |
-| 57 | OPS-004 | Procurement Policy | Important | To Develop | DVC, Administration & Finance |
-| 58 | OPS-005 | Tuition Collection & Refund Policy | Critical | To Develop | DVC, Administration & Finance |
-| 59 | OPS-006 | Payroll Policy | Critical | To Develop | DVC, Administration & Finance |
-| 60 | OPS-007 | HR Policies & Procedures Manual | Critical | To Develop | DVC, Administration & Finance |
-| 61 | OPS-008 | Recruitment & Hiring Policy | Critical | To Develop | Director, Human Resources |
-| 62 | OPS-009 | Employee Contract Template | Important | To Develop | Director, Human Resources |
-| 63 | OPS-010 | Compensation Policy | Important | To Develop | Director, Human Resources |
-| 64 | OPS-011 | Leave Policy | Important | To Develop | Director, Human Resources |
-| 65 | OPS-012 | Performance Review Policy | Important | To Develop | Director, Human Resources |
-| 66 | OPS-013 | Termination Policy | Important | To Develop | Director, Human Resources |
-| 67 | OPS-014 | IT Infrastructure Plan | Important | To Develop | Director, Information Technology |
-| 68 | OPS-015 | LMS Technical Specifications | Important | To Develop | Director, Information Technology |
-| 69 | OPS-016 | Data Privacy & Security Policy | Critical | To Develop | Director, Information Technology |
-| 70 | OPS-017 | Backup & Disaster Recovery Plan | Important | To Develop | Director, Information Technology |
-| 71 | OPS-018 | IT Support Policy | Important | To Develop | Director, Information Technology |
-| 72 | OPS-019 | Acceptable Use Policy | Important | To Develop | Director, Information Technology |
-| 73 | OPS-020 | Facilities Management Policy | Important | To Develop | Director, Facilities |
-| 74 | OPS-021 | Health & Safety Policy | Important | To Develop | Director, Facilities |
-| 75 | OPS-022 | Emergency Response Plan | Important | To Develop | Director, Facilities |
-| 76 | OPS-023 | Learning Management System (LMS) Policy | Critical | To Develop | Director, Information Technology |
-| 77 | OPS-024 | Online Pedagogy Training Policy | Critical | To Develop | DVC, Academic Affairs |
-| 78 | OPS-025 | Virtual Office Hours Policy | Important | To Develop | DVC, Academic Affairs |
-| 79 | OPS-026 | Digital Resources & Library Policy | Important | To Develop | University Librarian |
-| 80 | OPS-027 | Social Media & Student Communication Policy | Important | To Develop | Director, Communications |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 54 | OPS-001 | Financial Model | Complete | DVC, Administration & Finance |
+| 55 | OPS-002 | Financial Operations Manual | Critical | DVC, Administration & Finance |
+| 56 | OPS-003 | Budgeting Policy | Important | DVC, Administration & Finance |
+| 57 | OPS-004 | Procurement Policy | Important | DVC, Administration & Finance |
+| 58 | OPS-005 | Tuition Collection & Refund Policy | Critical | DVC, Administration & Finance |
+| 59 | OPS-006 | Payroll Policy | Critical | DVC, Administration & Finance |
+| 60 | OPS-007 | HR Policies & Procedures Manual | Critical | DVC, Administration & Finance |
+| 61 | OPS-008 | Recruitment & Hiring Policy | Critical | Director, Human Resources |
+| 62 | OPS-009 | Employee Contract Template | Important | Director, Human Resources |
+| 63 | OPS-010 | Compensation Policy | Important | Director, Human Resources |
+| 64 | OPS-011 | Leave Policy | Important | Director, Human Resources |
+| 65 | OPS-012 | Performance Review Policy | Important | Director, Human Resources |
+| 66 | OPS-013 | Termination Policy | Important | Director, Human Resources |
+| 67 | OPS-014 | IT Infrastructure Plan | Important | Director, Information Technology |
+| 68 | OPS-015 | LMS Technical Specifications | Important | Director, Information Technology |
+| 69 | OPS-016 | Data Privacy & Security Policy | Critical | Director, Information Technology |
+| 70 | OPS-017 | Backup & Disaster Recovery Plan | Important | Director, Information Technology |
+| 71 | OPS-018 | IT Support Policy | Important | Director, Information Technology |
+| 72 | OPS-019 | Acceptable Use Policy | Important | Director, Information Technology |
+| 73 | OPS-020 | Facilities Management Policy | Important | Director, Facilities |
+| 74 | OPS-021 | Health & Safety Policy | Important | Director, Facilities |
+| 75 | OPS-022 | Emergency Response Plan | Important | Director, Facilities |
+| 76 | OPS-023 | Learning Management System (LMS) Policy | Critical | Director, Information Technology |
+| 77 | OPS-024 | Online Pedagogy Training Policy | Critical | DVC, Academic Affairs |
+| 78 | OPS-025 | Virtual Office Hours Policy | Important | DVC, Academic Affairs |
+| 79 | OPS-026 | Digital Resources & Library Policy | Important | University Librarian |
+| 80 | OPS-027 | Social Media & Student Communication Policy | Important | Director, Communications |
 
 ::: {custom-style="SectionKicker"}
 SECTION 18 &#183; 18.5
@@ -2351,19 +2343,19 @@ SECTION 18 &#183; 18.5
 
 ## 18.5 Legal & Compliance Handbook (11 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 81 | LEG-001 | FERPA Compliance Policy | Critical | To Develop | University Registrar |
-| 82 | LEG-002 | GDPR Compliance Policy | Critical | To Develop | Director, Information Technology |
-| 83 | LEG-003 | Texas State Regulatory Filings Policy | Critical | To Develop | Office of Legal Counsel |
-| 84 | LEG-004 | Intellectual Property Policy | Critical | To Develop | Office of Legal Counsel |
-| 85 | LEG-005 | Non-Discrimination & Title IX Policy | Important | To Develop | DVC, Administration & Finance |
-| 86 | LEG-006 | Gambia Branch Operational Plan | Critical | To Develop | DVC, Administration & Finance |
-| 87 | LEG-007 | Nigeria Campus Development Plan | Critical | To Develop | DVC, Administration & Finance |
-| 88 | LEG-008 | Country-Specific Regulatory Compliance | Critical | To Develop | Office of Legal Counsel |
-| 89 | LEG-009 | Cross-Border Payment Systems Policy | Critical | To Develop | DVC, Administration & Finance |
-| 90 | LEG-010 | International Faculty Recruitment Policy | Important | To Develop | Director, Human Resources |
-| 91 | LEG-011 | International Student Support Policy | Important | To Develop | Dean of Students |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 81 | LEG-001 | FERPA Compliance Policy | Critical | University Registrar |
+| 82 | LEG-002 | GDPR Compliance Policy | Critical | Director, Information Technology |
+| 83 | LEG-003 | Texas State Regulatory Filings Policy | Critical | Office of Legal Counsel |
+| 84 | LEG-004 | Intellectual Property Policy | Critical | Office of Legal Counsel |
+| 85 | LEG-005 | Non-Discrimination & Title IX Policy | Important | DVC, Administration & Finance |
+| 86 | LEG-006 | Gambia Branch Operational Plan | Critical | DVC, Administration & Finance |
+| 87 | LEG-007 | Nigeria Campus Development Plan | Critical | DVC, Administration & Finance |
+| 88 | LEG-008 | Country-Specific Regulatory Compliance | Critical | Office of Legal Counsel |
+| 89 | LEG-009 | Cross-Border Payment Systems Policy | Critical | DVC, Administration & Finance |
+| 90 | LEG-010 | International Faculty Recruitment Policy | Important | Director, Human Resources |
+| 91 | LEG-011 | International Student Support Policy | Important | Dean of Students |
 
 ::: {custom-style="SectionKicker"}
 SECTION 18 &#183; 18.6
@@ -2371,15 +2363,15 @@ SECTION 18 &#183; 18.6
 
 ## 18.6 Marketing & Communications Handbook (7 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 92 | MKT-001 | Brand Style Guide | Critical | To Develop | Director, Communications |
-| 93 | MKT-002 | Website Content Plan | Critical | To Develop | Director, Communications |
-| 94 | MKT-003 | Content Creation Policy | Important | To Develop | Director, Communications |
-| 95 | MKT-004 | Social Media Policy | Important | To Develop | Director, Communications |
-| 96 | MKT-005 | Media Relations Policy | Important | To Develop | Director, Communications |
-| 97 | MKT-006 | Crisis Communications Plan | Important | To Develop | Director, Communications |
-| 98 | MKT-007 | Marketing Plan | Critical | To Develop | Director, Communications |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 92 | MKT-001 | Brand Style Guide | Critical | Director, Communications |
+| 93 | MKT-002 | Website Content Plan | Critical | Director, Communications |
+| 94 | MKT-003 | Content Creation Policy | Important | Director, Communications |
+| 95 | MKT-004 | Social Media Policy | Important | Director, Communications |
+| 96 | MKT-005 | Media Relations Policy | Important | Director, Communications |
+| 97 | MKT-006 | Crisis Communications Plan | Important | Director, Communications |
+| 98 | MKT-007 | Marketing Plan | Critical | Director, Communications |
 
 ::: {custom-style="SectionKicker"}
 SECTION 18 &#183; 18.7
@@ -2387,17 +2379,17 @@ SECTION 18 &#183; 18.7
 
 ## 18.7 Waqf & Research Handbook (9 Documents)
 
-| # | Doc Code | Document | Priority | Status | Policy Steward |
-|---:|---|---|---|---|---|
-| 99 | WAQ-001 | Waqf & Endowment Board Charter | Critical | To Develop | Chair, Waqf & Endowment Board |
-| 100 | WAQ-002 | Donor Stewardship Plan | Critical | To Develop | Chair, Waqf & Endowment Board |
-| 101 | WAQ-003 | Fundraising Campaign Plan | Critical | To Develop | Chair, Waqf & Endowment Board |
-| 102 | WAQ-004 | Research Policy | Important | To Develop | DVC, Academic Affairs |
-| 103 | WAQ-005 | Publication & Conference Policy | Important | To Develop | DVC, Academic Affairs |
-| 104 | WAQ-006 | Research Ethics Policy | Important | To Develop | DVC, Academic Affairs |
-| 105 | WAQ-007 | Risk Register | Complete | Done | Chair, Audit & Risk Committee |
-| 106 | WAQ-008 | Crisis Management Policy | Critical | To Develop | Chair, Audit & Risk Committee |
-| 107 | WAQ-009 | Business Continuity & Insurance Policy | Important | To Develop | DVC, Administration & Finance |
+| # | Doc Code | Document | Priority | Policy Steward |
+|---:|---|---|---|---|
+| 99 | WAQ-001 | Waqf & Endowment Board Charter | Critical | Chair, Waqf & Endowment Board |
+| 100 | WAQ-002 | Donor Stewardship Plan | Critical | Chair, Waqf & Endowment Board |
+| 101 | WAQ-003 | Fundraising Campaign Plan | Critical | Chair, Waqf & Endowment Board |
+| 102 | WAQ-004 | Research Policy | Important | DVC, Academic Affairs |
+| 103 | WAQ-005 | Publication & Conference Policy | Important | DVC, Academic Affairs |
+| 104 | WAQ-006 | Research Ethics Policy | Important | DVC, Academic Affairs |
+| 105 | WAQ-007 | Risk Register | Complete | Chair, Audit & Risk Committee |
+| 106 | WAQ-008 | Crisis Management Policy | Critical | Chair, Audit & Risk Committee |
+| 107 | WAQ-009 | Business Continuity & Insurance Policy | Important | DVC, Administration & Finance |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

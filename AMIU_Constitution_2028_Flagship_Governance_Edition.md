@@ -156,31 +156,31 @@ This Constitution is the supreme legal document of the University. All policies,
 | **Governance Architecture** | **6** |
 | **Academic Framework** | **7** |
 | **The ISLAMIC Framework** | **8** |
-| **Article I — Definitions** | **12** |
-| **Article II — Legal Identity** | **17** |
-| **Article III — Mission, Vision and Values** | **22** |
-| **Article IV — Interpretation** | **26** |
-| **Article V — Governance Structure** | **29** |
-| **Article VI — Board of Trustees** | **33** |
-| **Article VII — President & Vice-Chancellor** | **41** |
-| **Article VIII — University Senate** | **45** |
-| **Article IX — Administration** | **51** |
-| **Article X — Academic Program** | **54** |
-| **Article XI — Waqf and Endowment** | **57** |
-| **Article XII — Students' Rights and Responsibilities** | **59** |
-| **Article XIII — Faculty Rights and Responsibilities** | **62** |
-| **Article XIV — Financial Sustainability** | **64** |
-| **Article XV — Transparency and Accountability** | **66** |
-| **Article XVI — Independent Officers** | **69** |
-| **Article XVII — Records and Archives** | **71** |
-| **Article XVIII — Amendment** | **73** |
-| **Article XIX — Transitional Provisions** | **75** |
-| **Article XX — Dissolution** | **77** |
-| **Article XXI — Non-Political and Non-Profit Provisions** | **79** |
-| **Article XXII — Indemnification** | **81** |
-| **Article XXIII — Final Provisions** | **83** |
-| **Adoption** | **84** |
-| **Publication Certification Statement** | **85** |
+| **Article I — Definitions** | **13** |
+| **Article II — Legal Identity** | **18** |
+| **Article III — Mission, Vision and Values** | **23** |
+| **Article IV — Interpretation** | **28** |
+| **Article V — Governance Structure** | **31** |
+| **Article VI — Board of Trustees** | **35** |
+| **Article VII — President & Vice-Chancellor** | **43** |
+| **Article VIII — University Senate** | **47** |
+| **Article IX — Administration** | **54** |
+| **Article X — Academic Program** | **57** |
+| **Article XI — Waqf and Endowment** | **60** |
+| **Article XII — Students' Rights and Responsibilities** | **62** |
+| **Article XIII — Faculty Rights and Responsibilities** | **65** |
+| **Article XIV — Financial Sustainability** | **67** |
+| **Article XV — Transparency and Accountability** | **69** |
+| **Article XVI — Independent Officers** | **72** |
+| **Article XVII — Records and Archives** | **74** |
+| **Article XVIII — Amendment** | **76** |
+| **Article XIX — Transitional Provisions** | **78** |
+| **Article XX — Dissolution** | **80** |
+| **Article XXI — Non-Political and Non-Profit Provisions** | **82** |
+| **Article XXII — Indemnification** | **84** |
+| **Article XXIII — Final Provisions** | **86** |
+| **Adoption** | **87** |
+| **Publication Certification Statement** | **88** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

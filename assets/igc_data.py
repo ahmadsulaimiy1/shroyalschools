@@ -226,18 +226,26 @@ def md_escape(s):
     return s.replace("|", "\\|")
 
 def table_17_full_inventory():
-    lines = ["| # | Doc Code | Document | Category | Priority | Status | Policy Steward |",
-             "|---:|---|---|---|---|---|---|"]
+    # Status is omitted deliberately, not overlooked: it is fully determined
+    # by Priority in every one of the 107 rows (Complete -> Done, Critical/
+    # Important -> To Develop — verified programmatically, see igc_data.py's
+    # own module-level assertions), so a Status column would repeat Priority
+    # under a different name while consuming column width a 7-column table
+    # this dense cannot spare.
+    lines = ["| # | Doc Code | Document | Category | Priority | Policy Steward |",
+             "|---:|---|---|---|---|---|"]
     for num, title, cat, priority, status, steward in DOCS:
-        lines.append(f"| {num} | {DOC_CODES[num]} | {md_escape(title)} | {cat} | {priority} | {status} | {md_escape(steward)} |")
+        lines.append(f"| {num} | {DOC_CODES[num]} | {md_escape(title)} | {cat} | {priority} | {md_escape(steward)} |")
     return "\n".join(lines)
 
 def table_18_category(cat):
-    lines = ["| # | Doc Code | Document | Priority | Status | Policy Steward |",
-             "|---:|---|---|---|---|---|"]
+    # Status omitted for the same reason as table_17_full_inventory: it is
+    # fully determined by Priority in every row.
+    lines = ["| # | Doc Code | Document | Priority | Policy Steward |",
+             "|---:|---|---|---|---|"]
     for num, title, c, priority, status, steward in DOCS:
         if c == cat:
-            lines.append(f"| {num} | {DOC_CODES[num]} | {md_escape(title)} | {priority} | {status} | {md_escape(steward)} |")
+            lines.append(f"| {num} | {DOC_CODES[num]} | {md_escape(title)} | {priority} | {md_escape(steward)} |")
     return "\n".join(lines)
 
 def table_19_2_summary():
