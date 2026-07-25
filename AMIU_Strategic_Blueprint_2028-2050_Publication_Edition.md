@@ -424,7 +424,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | **Part I — Governance & Institutional Foundations** | **32** |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision 2028–2050 | 33 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 36 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 39 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 38 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 41 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 44 |
 | **Part II — Organizational & Academic Structure** | **48** |

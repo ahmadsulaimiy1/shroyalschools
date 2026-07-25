@@ -130,6 +130,7 @@ def run_pandoc(md_path, docx_path):
     subprocess.run(["pandoc", md_path, "-o", docx_path, f"--reference-doc={REFDOC}"], check=True)
     _prevent_row_splitting(docx_path)
     _style_subheading_labels(docx_path)
+    _apply_callout_boxes(docx_path)
 
 def _style_subheading_labels(docx_path):
     """Restyle the bold sub-dimension labels ('**KPIs**', '**Risks & Mitigation**',
@@ -183,6 +184,117 @@ def _style_subheading_labels(docx_path):
         for row in table.rows:
             for cell in row.cells:
                 process_paragraphs(cell.paragraphs)
+
+    d.save(docx_path)
+
+def _apply_callout_boxes(docx_path):
+    """Wrap the KPI and Risks & Mitigation paragraphs of every section in a
+    shaded callout band with a gold accent bar — the 'signature callout
+    framework' — instead of leaving them as plain gold-eyebrow paragraphs.
+    Detection is structural (an already gold-styled eyebrow, run by
+    _style_subheading_labels, whose text contains KPI or RISK) so it needs
+    no label whitelist. Any instance immediately followed by a table before
+    the next eyebrow/heading is skipped entirely rather than guessed at —
+    shading across a table cleanly is not worth the risk to a working
+    176-page pipeline for a handful of edge cases."""
+    import docx as _docx
+    from docx.shared import RGBColor as _RGBColor
+    from docx.oxml.ns import qn as _qn
+    from docx.oxml import OxmlElement as _El
+
+    GOLD = _RGBColor(0xB0, 0x86, 0x25)
+    TINT = "F7F3E8"
+    BORDER = "B08625"
+
+    d = _docx.Document(docx_path)
+    para_by_elem = {p._p: p for p in d.paragraphs}
+
+    def is_eyebrow(p):
+        if not p.runs:
+            return False
+        r = p.runs[0]
+        try:
+            return bool(r.font.bold) and r.font.color and r.font.color.rgb == GOLD
+        except Exception:
+            return False
+
+    def is_heading(p):
+        return p.style.name.startswith("Heading") or p.style.name in ("Title", "Subtitle")
+
+    def is_target(p):
+        t = p.text.strip().upper()
+        return ("KPI" in t) or ("RISK" in t)
+
+    def set_spacing(p, before=None, after=None):
+        pPr = p._p.get_or_add_pPr()
+        spacing = pPr.find(_qn('w:spacing'))
+        if spacing is None:
+            spacing = _El('w:spacing')
+            pPr.append(spacing)
+        if before is not None:
+            spacing.set(_qn('w:before'), str(before))
+        if after is not None:
+            spacing.set(_qn('w:after'), str(after))
+
+    def box_paragraph(p):
+        pPr = p._p.get_or_add_pPr()
+        shd = pPr.find(_qn('w:shd'))
+        if shd is None:
+            shd = _El('w:shd')
+            pPr.append(shd)
+        shd.set(_qn('w:val'), 'clear')
+        shd.set(_qn('w:color'), 'auto')
+        shd.set(_qn('w:fill'), TINT)
+        pBdr = pPr.find(_qn('w:pBdr'))
+        if pBdr is None:
+            pBdr = _El('w:pBdr')
+            pPr.append(pBdr)
+        left = pBdr.find(_qn('w:left'))
+        if left is None:
+            left = _El('w:left')
+            pBdr.append(left)
+        left.set(_qn('w:val'), 'single')
+        left.set(_qn('w:sz'), '24')
+        left.set(_qn('w:space'), '10')
+        left.set(_qn('w:color'), BORDER)
+        ind = pPr.find(_qn('w:ind'))
+        if ind is None:
+            ind = _El('w:ind')
+            pPr.append(ind)
+        ind.set(_qn('w:left'), '300')
+
+    body = d.element.body
+    children = list(body)
+    n = len(children)
+    i = 0
+    while i < n:
+        el = children[i]
+        if el.tag == _qn('w:p') and el in para_by_elem:
+            p = para_by_elem[el]
+            if is_eyebrow(p) and is_target(p):
+                j = i + 1
+                box_elems = [el]
+                aborted = False
+                while j < n:
+                    ce = children[j]
+                    if ce.tag != _qn('w:p') or ce not in para_by_elem:
+                        aborted = True
+                        break
+                    cp = para_by_elem[ce]
+                    if is_eyebrow(cp) or is_heading(cp):
+                        break
+                    box_elems.append(ce)
+                    j += 1
+                if not aborted and len(box_elems) >= 1:
+                    box_paras = [para_by_elem[e] for e in box_elems]
+                    for bp in box_paras:
+                        box_paragraph(bp)
+                    for k, bp in enumerate(box_paras):
+                        set_spacing(bp, before=(None if k == 0 else 0),
+                                    after=(None if k == len(box_paras) - 1 else 0))
+                    i = j
+                    continue
+        i += 1
 
     d.save(docx_path)
 
