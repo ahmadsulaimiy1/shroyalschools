@@ -195,9 +195,15 @@ def _style_subheading_labels(docx_path):
     d = _docx.Document(docx_path)
 
     def style_run(run):
+        # Deliberately NOT bumped to a heading-scale size: these labels recur
+        # up to 10 times per section across 41 sections (400+ instances), so
+        # they work as wayfinding through color/caps/tracking, not through
+        # size competing with the section heading above them — sizing them
+        # like true subsection headings would read as visual noise at that
+        # repetition density, not authority.
         run.font.bold = True
         run.font.color.rgb = GOLD
-        run.font.size = _Pt(10)
+        run.font.size = _Pt(11)
         rpr = run._r.get_or_add_rPr()
         caps = rpr.find(_qn('w:caps'))
         if caps is None:
@@ -207,7 +213,7 @@ def _style_subheading_labels(docx_path):
         if spc is None:
             spc = _El('w:spacing')
             rpr.append(spc)
-        spc.set(_qn('w:val'), '14')
+        spc.set(_qn('w:val'), '18')
 
     def process_paragraphs(paragraphs):
         for p in paragraphs:

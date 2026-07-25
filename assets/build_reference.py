@@ -82,7 +82,8 @@ def set_font(style, name=BODY_FONT, size=11, color=TEXT, bold=False, italic=Fals
         rpr2.append(spc)
 
 def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=False,
-                  align=None, border_bottom=None, border_color=None, widow_control=None):
+                  align=None, border_bottom=None, border_color=None, widow_control=None,
+                  no_hyphens=False):
     pf = style.paragraph_format
     pf.space_before = Pt(space_before)
     pf.space_after = Pt(space_after)
@@ -92,6 +93,15 @@ def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=Fals
         pf.alignment = align
     if widow_control is not None:
         pf.widow_control = widow_control
+    if no_hyphens:
+        # Headings/display lines should never hyphenate — a mid-word break
+        # in a title reads as an error, not elegance. Document-wide
+        # autoHyphenation is on for body prose; this opts individual
+        # styles back out.
+        pPr = style.element.get_or_add_pPr()
+        supp = OxmlElement('w:suppressAutoHyphens')
+        supp.set(qn('w:val'), 'true')
+        pPr.append(supp)
     if border_bottom:
         pPr = style.element.get_or_add_pPr()
         pBdr = OxmlElement('w:pBdr')
@@ -115,12 +125,12 @@ set_para_fmt(normal, 0, 9, 1.35, widow_control=True)
 # ---------------- Title (used for the doc's H1-level "Title" para if any) ----------------
 title = get_style(doc, 'Title')
 set_font(title, DISPLAY_FONT, 34, NAVY, bold=True, spacing=6)
-set_para_fmt(title, 0, 6, 1.05, align=WD_ALIGN_PARAGRAPH.LEFT)
+set_para_fmt(title, 0, 6, 1.05, align=WD_ALIGN_PARAGRAPH.LEFT, no_hyphens=True)
 
 if has_style(doc, 'Subtitle'):
     subtitle = get_style(doc, 'Subtitle')
     set_font(subtitle, DISPLAY_FONT, 17, GOLD, italic=True)
-    set_para_fmt(subtitle, 0, 20, 1.15)
+    set_para_fmt(subtitle, 0, 20, 1.15, no_hyphens=True)
 
 # ---------------- Heading 1 ----------------
 # NOTE: page breaks before H1 headings are handled by EXPLICIT raw-openxml
@@ -130,15 +140,29 @@ if has_style(doc, 'Subtitle'):
 # already-explicit break produced stray blank pages during QA.
 h1 = get_style(doc, 'Heading 1')
 set_font(h1, DISPLAY_FONT, 32, NAVY, bold=True, spacing=4)
-set_para_fmt(h1, 4, 16, 1.05, keep_next=True, border_bottom=18, border_color='B08625')
+set_para_fmt(h1, 4, 16, 1.05, keep_next=True, border_bottom=18, border_color='B08625', no_hyphens=True)
 
 # ---------------- Heading 2 (Sections) ----------------
 # NOTE: space-before is intentionally small — the new SectionKicker paragraph
 # immediately above every Section heading now owns the larger "before" gap,
 # so the kicker and its heading read as one tightly-coupled unit.
 h2 = get_style(doc, 'Heading 2')
-set_font(h2, DISPLAY_SEMIBOLD, 19, NAVY, bold=True)
-set_para_fmt(h2, 2, 8, 1.08, keep_next=True, border_bottom=6, border_color='D8DCE5')
+set_font(h2, DISPLAY_SEMIBOLD, 22, NAVY, bold=True, spacing=2)
+set_para_fmt(h2, 2, 8, 1.08, keep_next=True, border_bottom=6, border_color='D8DCE5', no_hyphens=True)
+
+# ---------------- Custom style: ceremonial message byline ----------------
+# Elevates the "From the Chairman, Board of Trustees" / "By the Supreme
+# Strategic Planning Council" speaker lines on the Foreword and the three
+# Message pages above ordinary italic body text — paired with the drop
+# cap, this gives those four ceremonial pages a distinct opening register
+# instead of running straight from the H1 title into body-sized prose.
+if not has_style(doc, 'MessageByline'):
+    byline = doc.styles.add_style('MessageByline', WD_STYLE_TYPE.PARAGRAPH)
+    byline.base_style = get_style(doc, 'Normal')
+else:
+    byline = get_style(doc, 'MessageByline')
+set_font(byline, DISPLAY_FONT, 15, GOLD, italic=True, spacing=4)
+set_para_fmt(byline, 6, 18, 1.2, no_hyphens=True)
 
 # ---------------- Custom style: Section kicker badge (Part · Section N) ----------------
 if not has_style(doc, 'SectionKicker'):
@@ -147,7 +171,7 @@ if not has_style(doc, 'SectionKicker'):
 else:
     sec_kicker = get_style(doc, 'SectionKicker')
 set_font(sec_kicker, MONUMENTAL_FONT, 9.5, GOLD, bold=True, all_caps=True, spacing=22)
-set_para_fmt(sec_kicker, 22, 2, 1.1, keep_next=True)
+set_para_fmt(sec_kicker, 22, 2, 1.1, keep_next=True, no_hyphens=True)
 
 # ---------------- Custom style: Part-divider kicker label ----------------
 if not has_style(doc, 'PartKicker'):
@@ -156,7 +180,7 @@ if not has_style(doc, 'PartKicker'):
 else:
     kicker = get_style(doc, 'PartKicker')
 set_font(kicker, MONUMENTAL_FONT, 11, GOLD, bold=True, all_caps=True, spacing=30)
-set_para_fmt(kicker, 0, 2, 1.1)
+set_para_fmt(kicker, 0, 2, 1.1, no_hyphens=True)
 
 # ---------------- Custom style: Part-divider thesis line ----------------
 if not has_style(doc, 'PartThesis'):
@@ -165,25 +189,25 @@ if not has_style(doc, 'PartThesis'):
 else:
     thesis = get_style(doc, 'PartThesis')
 set_font(thesis, DISPLAY_FONT, 16.5, NAVY, italic=True)
-set_para_fmt(thesis, 4, 18, 1.35)
+set_para_fmt(thesis, 4, 18, 1.35, no_hyphens=True)
 
 # ---------------- Heading 3 ----------------
 h3 = get_style(doc, 'Heading 3')
 set_font(h3, BODY_FONT, 12, GOLD, bold=True, all_caps=False)
-set_para_fmt(h3, 14, 6, 1.1, keep_next=True)
+set_para_fmt(h3, 14, 6, 1.1, keep_next=True, no_hyphens=True)
 
 # ---------------- Heading 4 ----------------
 if has_style(doc, 'Heading 4'):
     h4 = get_style(doc, 'Heading 4')
     set_font(h4, BODY_FONT, 10.5, NAVY, bold=True, italic=True)
-    set_para_fmt(h4, 10, 4, 1.1, keep_next=True)
+    set_para_fmt(h4, 10, 4, 1.1, keep_next=True, no_hyphens=True)
 
 # ---------------- TOC / Contents heading ----------------
 for nm in ['TOC Heading']:
     if has_style(doc, nm):
         tocH = get_style(doc, nm)
         set_font(tocH, DISPLAY_FONT, 26, NAVY, bold=True, spacing=3)
-        set_para_fmt(tocH, 0, 14, 1.1)
+        set_para_fmt(tocH, 0, 14, 1.1, no_hyphens=True)
 
 for lvl, sz in zip(['TOC 1', 'TOC 2', 'TOC 3'], [12, 10.8, 10]):
     if has_style(doc, lvl):
@@ -205,7 +229,7 @@ if has_style(doc, 'Quote'):
 if has_style(doc, 'Caption'):
     cap = get_style(doc, 'Caption')
     set_font(cap, BODY_FONT, 10, GOLD, bold=True, italic=False, small_caps=True, spacing=6)
-    set_para_fmt(cap, 6, 16, 1.15)
+    set_para_fmt(cap, 6, 16, 1.15, no_hyphens=True)
 
 # ---------------- Table styles ----------------
 if has_style(doc, 'Table Grid'):

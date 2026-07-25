@@ -143,7 +143,9 @@ This Blueprint is presented for formal review, endorsement, and approval by Al-M
 
 ## Foreword {.unnumbered}
 
-*By the Supreme Strategic Planning Council*
+::: {custom-style="MessageByline"}
+By the Supreme Strategic Planning Council
+:::
 
 ```{=openxml}
 <w:p>
@@ -185,7 +187,9 @@ I did not want to build a university that made that promise and then quietly bro
 
 This Blueprint is the next layer of that same discipline, extended from ten years to twenty-three. It is not a rebrand of the Master Plan and not a wish list bolted onto it — it is the operating detail underneath the numbers we already committed to in public. I am proud that when this document needed a research strategy for a university with an eighteen-thousand-dollar founding-year faculty budget, it did not invent a research office we could not afford; it said, plainly, that mentored research rides inside existing Ph.D. honoraria until the day our own revenue says otherwise. That is the standard I want held against every page that follows, including the ones I have not yet written.
 
-*Founder & Vision Architect, Al-Mulk International University*
+::: {custom-style="MessageByline"}
+Founder & Vision Architect, Al-Mulk International University
+:::
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -193,7 +197,9 @@ This Blueprint is the next layer of that same discipline, extended from ten year
 
 ## Chairman's Message {.unnumbered}
 
-*From the Chairman, Board of Trustees*
+::: {custom-style="MessageByline"}
+From the Chairman, Board of Trustees
+:::
 
 ```{=openxml}
 <w:p>
@@ -210,7 +216,9 @@ It does. Forty sections, ten dimensions each, and not once does a budget figure 
 
 The Board's endorsement of this Blueprint, recorded on the signature page preceding this message, is not a rubber stamp. It is a statement that the Trustees have reviewed the financial architecture extending our founding decade into a twenty-three-year horizon and found it consistent with the fiduciary obligations we accepted at incorporation.
 
-*Chairman, Board of Trustees*
+::: {custom-style="MessageByline"}
+Chairman, Board of Trustees
+:::
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -218,7 +226,9 @@ The Board's endorsement of this Blueprint, recorded on the signature page preced
 
 ## President's Message {.unnumbered}
 
-*From the President & Vice-Chancellor*
+::: {custom-style="MessageByline"}
+From the President & Vice-Chancellor
+:::
 
 ```{=openxml}
 <w:p>
@@ -235,7 +245,9 @@ That honesty is, I think, this Blueprint's real contribution. Ambitious plans ar
 
 I commend every Dean, Head of Department, and future colleague who will work inside these pages to read them not as instructions handed down, but as the record of what we have already promised each other — a promise this Blueprint intends to help us keep.
 
-*President & Vice-Chancellor, Al-Mulk International University*
+::: {custom-style="MessageByline"}
+President & Vice-Chancellor, Al-Mulk International University
+:::
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -462,13 +474,13 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 41 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 44 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 47 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 50 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 51 |
 | **Part II — Organizational & Academic Structure** | **55** |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 56 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 60 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 63 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 66 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 69 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 67 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 70 |
 | **Part III — Curriculum & Student Journey** | **73** |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Programme Portfolio | 74 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 77 |
@@ -481,37 +493,37 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 100 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 103 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 106 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **111** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 112 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 115 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 118 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 120 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 123 |
-| **Part VI — Financial Growth, Marketing & Branding** | **128** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 129 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 132 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 134 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 137 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 140 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **144** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 145 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 148 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 151 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 154 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 156 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **160** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 161 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 166 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 172 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 177 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 182 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 188 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **199** |
-| **Appendix B — Master Plan Exhibit Checklist** | **200** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **202** |
-| **Appendix D — Programme Catalog Reference** | **203** |
-| **References** | **204** |
-| **Index** | **206** |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **112** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 113 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 116 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 119 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 121 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 125 |
+| **Part VI — Financial Growth, Marketing & Branding** | **131** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 132 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 135 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 138 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 140 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 143 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **147** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 148 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 151 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 154 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 157 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 159 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **163** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 164 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 169 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 175 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 180 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 185 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 192 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **203** |
+| **Appendix B — Master Plan Exhibit Checklist** | **204** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **206** |
+| **Appendix D — Programme Catalog Reference** | **207** |
+| **References** | **208** |
+| **Index** | **210** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

@@ -143,7 +143,9 @@ This Blueprint is presented for formal review, endorsement, and approval by Al-M
 
 ## Foreword {.unnumbered}
 
-*By the Supreme Strategic Planning Council*
+::: {custom-style="MessageByline"}
+By the Supreme Strategic Planning Council
+:::
 
 ```{=openxml}
 <w:p>
@@ -185,7 +187,9 @@ I did not want to build a university that made that promise and then quietly bro
 
 This Blueprint is the next layer of that same discipline, extended from ten years to twenty-three. It is not a rebrand of the Master Plan and not a wish list bolted onto it — it is the operating detail underneath the numbers we already committed to in public. I am proud that when this document needed a research strategy for a university with an eighteen-thousand-dollar founding-year faculty budget, it did not invent a research office we could not afford; it said, plainly, that mentored research rides inside existing Ph.D. honoraria until the day our own revenue says otherwise. That is the standard I want held against every page that follows, including the ones I have not yet written.
 
-*Founder & Vision Architect, Al-Mulk International University*
+::: {custom-style="MessageByline"}
+Founder & Vision Architect, Al-Mulk International University
+:::
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -193,7 +197,9 @@ This Blueprint is the next layer of that same discipline, extended from ten year
 
 ## Chairman's Message {.unnumbered}
 
-*From the Chairman, Board of Trustees*
+::: {custom-style="MessageByline"}
+From the Chairman, Board of Trustees
+:::
 
 ```{=openxml}
 <w:p>
@@ -210,7 +216,9 @@ It does. Forty sections, ten dimensions each, and not once does a budget figure 
 
 The Board's endorsement of this Blueprint, recorded on the signature page preceding this message, is not a rubber stamp. It is a statement that the Trustees have reviewed the financial architecture extending our founding decade into a twenty-three-year horizon and found it consistent with the fiduciary obligations we accepted at incorporation.
 
-*Chairman, Board of Trustees*
+::: {custom-style="MessageByline"}
+Chairman, Board of Trustees
+:::
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -218,7 +226,9 @@ The Board's endorsement of this Blueprint, recorded on the signature page preced
 
 ## President's Message {.unnumbered}
 
-*From the President & Vice-Chancellor*
+::: {custom-style="MessageByline"}
+From the President & Vice-Chancellor
+:::
 
 ```{=openxml}
 <w:p>
@@ -235,7 +245,9 @@ That honesty is, I think, this Blueprint's real contribution. Ambitious plans ar
 
 I commend every Dean, Head of Department, and future colleague who will work inside these pages to read them not as instructions handed down, but as the record of what we have already promised each other — a promise this Blueprint intends to help us keep.
 
-*President & Vice-Chancellor, Al-Mulk International University*
+::: {custom-style="MessageByline"}
+President & Vice-Chancellor, Al-Mulk International University
+:::
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
