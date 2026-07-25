@@ -66,6 +66,13 @@ PART_TITLES = [
 ROMAN_TO_WORD = {"I": "ONE", "II": "TWO", "III": "THREE", "IV": "FOUR", "V": "FIVE",
                   "VI": "SIX", "VII": "SEVEN", "VIII": "EIGHT"}
 
+# TOC-display-only shortenings: the search text (used for page lookup) must
+# stay the exact full heading text, but the narrow TOC column can wrap a
+# trailing year range ("2028–2050") onto its own line — no other Section
+# entry carries one, so trimming it here (not in the body heading itself)
+# keeps the row visually consistent with every other Section row.
+TOC_TITLE_OVERRIDE = {1: "Institutional Vision"}
+
 for roman, title, secrange, sections in PART_TITLES:
     # Search text targets the hero-spread's small-caps kicker line
     # ("PART FOUR OF EIGHT"), which is short, wrap-proof, and appears
@@ -74,7 +81,8 @@ for roman, title, secrange, sections in PART_TITLES:
     # duplicate-occurrence ambiguity that affect the full title string.
     TOC_ENTRIES.append((f"Part {roman} — {title}", f"PART {ROMAN_TO_WORD[roman]} OF EIGHT", 1))
     for num, sec_title in sections:
-        TOC_ENTRIES.append((f"Section {num}: {sec_title}", f"Section {num}: {sec_title}", 2))
+        toc_title = TOC_TITLE_OVERRIDE.get(num, sec_title)
+        TOC_ENTRIES.append((f"Section {num}: {toc_title}", f"Section {num}: {sec_title}", 2))
 
 TOC_ENTRIES += [
     ("Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)",
@@ -133,6 +141,8 @@ def run_pandoc(md_path, docx_path):
     _apply_callout_boxes(docx_path)
     _justify_body_text(docx_path)
     _enable_hyphenation(docx_path)
+    _suppress_table_hyphenation(docx_path)
+    _isolate_closing_panel_header_footer(docx_path)
 
 # Paragraph styles that carry running narrative prose. Deliberately excludes
 # Caption, Block Text/Quote (pull quotes stay centered, never justified),
@@ -176,6 +186,91 @@ def _enable_hyphenation(docx_path):
     limit = _El('w:consecutiveHyphenLimit')
     limit.set(_qn('w:val'), '2')
     settings.append(limit)
+    d.save(docx_path)
+
+def _suppress_table_hyphenation(docx_path):
+    """Document-wide autoHyphenation (see _enable_hyphenation) is a body-prose
+    feature: it belongs in justified narrative paragraphs, not in table cells,
+    which are narrower and set ragged-left rather than justified. Left
+    unsuppressed, a bold Table-of-Contents row like 'Governance &
+    Institutional Foundations' can hyphenate mid-word ('IN-STITUTIONAL') —
+    exactly the kind of broken-looking break a flagship publication cannot
+    ship with. Every table cell paragraph gets w:suppressAutoHyphens; body
+    prose outside tables is untouched and keeps hyphenating normally."""
+    import docx as _docx
+    from docx.oxml.ns import qn as _qn
+    from docx.oxml import OxmlElement as _El
+    d = _docx.Document(docx_path)
+    for table in d.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                for p in cell.paragraphs:
+                    pPr = p._p.get_or_add_pPr()
+                    if pPr.find(_qn('w:suppressAutoHyphens')) is None:
+                        pPr.append(_El('w:suppressAutoHyphens'))
+    d.save(docx_path)
+
+def _isolate_closing_panel_header_footer(docx_path):
+    """Give the closing navy panel (the document's final page, its de facto
+    back cover) its own section with a blank header/footer — mirroring the
+    front cover, which already gets a blank first-page header/footer via
+    build_reference.py. Without this the front and back covers don't match:
+    the front is clean and the back still carries the running administrative
+    header/footer. Detected structurally (the last navy-fill, w:dropCap-free
+    full-bleed table in the document, per the same fill color the hero-spread
+    Part dividers and this closing panel share) and isolated by inserting a
+    real section break — validated empirically in isolation beforehand that
+    LibreOffice's headless conversion honors per-section header/footer
+    boundaries correctly (unlike STYLEREF fields, which do not re-evaluate
+    under this pipeline)."""
+    import copy
+    import docx as _docx
+    from docx.oxml.ns import qn as _qn
+
+    d = _docx.Document(docx_path)
+    navy_tables = []
+    for t in d.tables:
+        for shd in t._tbl.iter(_qn('w:shd')):
+            if shd.get(_qn('w:fill')) == '122A4E':
+                navy_tables.append(t)
+                break
+    if not navy_tables:
+        return
+    closing_tbl = navy_tables[-1]._tbl
+
+    body = d.element.body
+    children = list(body)
+    try:
+        idx = children.index(closing_tbl)
+    except ValueError:
+        return
+    if idx < 1:
+        return
+    pagebreak_para = children[idx - 1]
+    if pagebreak_para.tag != _qn('w:p'):
+        return  # structure isn't what we expect; skip rather than risk corruption
+
+    old_body_sectPr = body.find(_qn('w:sectPr'))
+    if old_body_sectPr is None:
+        return
+    new_sectPr = copy.deepcopy(old_body_sectPr)
+    pPr = pagebreak_para.find(_qn('w:pPr'))
+    if pPr is None:
+        pPr = _docx.oxml.OxmlElement('w:pPr')
+        pagebreak_para.insert(0, pPr)
+    pPr.append(new_sectPr)
+    d.save(docx_path)
+
+    # Re-open so python-docx re-reads the now-two-section structure, then
+    # blank the final (closing-panel) section's header and footer.
+    d = _docx.Document(docx_path)
+    closing_section = d.sections[-1]
+    closing_section.header.is_linked_to_previous = False
+    closing_section.footer.is_linked_to_previous = False
+    for p in closing_section.header.paragraphs:
+        p.text = ""
+    for p in closing_section.footer.paragraphs:
+        p.text = ""
     d.save(docx_path)
 
 def _style_subheading_labels(docx_path):

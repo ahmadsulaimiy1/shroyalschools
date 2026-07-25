@@ -131,7 +131,7 @@ This Blueprint is presented for formal review, endorsement, and approval by Al-M
 | Chairman, Board of Trustees | Approves institutional strategy and this Blueprint's financial and governance framework | _________________________ |
 | President & Vice-Chancellor | Approves this Blueprint as the University's operative implementation instrument | _________________________ |
 | Deputy Vice-Chancellor, Academic Affairs — Dr. Muhammad Al-Qumash | Endorses academic, curricular, and accreditation content | _________________________ |
-| Deputy Vice-Chancellor, Administration & Finance — Dr. Abdullah Turki | Endorses financial, staffing, and budgetary content | _________________________ |
+| Deputy Vice-Chancellor, Admin & Finance — Dr. Abdullah Turki | Endorses financial, staffing, and budgetary content | _________________________ |
 | Secretary, University Senate | Certifies Senate review of all academic-authority provisions | _________________________ |
 | Chair, Waqf & Endowment Board | Endorses all Waqf allocation, scholarship, and endowment content | _________________________ |
 
@@ -143,16 +143,16 @@ This Blueprint is presented for formal review, endorsement, and approval by Al-M
 
 ## Publication Certification Statement {.unnumbered}
 
-Prior to publication, this Blueprint underwent a structured, multi-stage quality assurance review by the AMIU Office of Institutional Planning, with oversight from the Board Audit & Risk Committee (Section 36) and the University Senate:
+Prior to publication, this Blueprint underwent two structured, independent quality assurance reviews by the AMIU Office of Institutional Planning, with oversight from the Board Audit & Risk Committee (Section 36) and the University Senate. The second review was conducted as a fresh, adversarial re-read — auditors were not shown the first review's findings and were instructed to verify the document as though encountering it for the first time, rather than to confirm that earlier corrections held:
 
-- **Structural integrity** — every Section-to-Part assignment, Section kicker label, figure and table numbering sequence, Table of Contents entry, and Index cross-reference was checked programmatically against the document's own numbering system across all forty-one sections.
-- **Financial consistency** — every dollar figure, percentage, and enrollment number cited in this Blueprint was checked against the canonical figures adopted in AMIU-MP-001 and against every other citation of the same figure elsewhere in this Blueprint.
-- **Editorial review** — prose across the front matter, all forty-one sections, and the back matter was read in full for grammar, spelling, punctuation, capitalization consistency of institutional terms, and cross-reference accuracy.
-- **Design consistency** — typography, running headers and footers, and table styling are applied through a single shared style system rather than formatted page by page, so consistency is structural by construction; representative pages across every Part were visually inspected to confirm this held in the rendered output.
+- **Structural integrity** — every Section-to-Part assignment, Section kicker label, figure and table numbering sequence, Table of Contents entry, and Index cross-reference was checked programmatically against the document's own numbering system across all forty-one sections, in both review rounds.
+- **Financial consistency** — every dollar figure, percentage, and enrollment number cited in this Blueprint was checked against the canonical figures adopted in AMIU-MP-001, against every other citation of the same figure elsewhere in this Blueprint, and — in the second round — against the arithmetic each figure is supposed to satisfy (component breakdowns summing to their stated total, reconciliation statements checked by calculation rather than by reading).
+- **Editorial review** — prose across the front matter, all forty-one sections, and the back matter was read in full, independently, in both rounds, for grammar, spelling, punctuation, capitalization consistency of institutional terms, and cross-reference accuracy.
+- **Design consistency** — typography, running headers and footers, table styling, and page-level hierarchy are applied through a single shared style system rather than formatted page by page, so consistency is structural by construction; the second round specifically re-examined the front and back covers independently of the interior, and every page class (chapter openers, section openers, tables, captions, the Table of Contents) for hierarchy and layout defects the first round's narrower sampling could plausibly have missed.
 
-This review identified and corrected a number of issues prior to publication: several stale references to the document's section count following a later structural addition, dollar-figure rounding inconsistencies between sections discussing the same reserve line at different points, two internal cross-references that pointed to the wrong section, and a small number of spelling-convention and capitalization inconsistencies (British/American spelling variants, inconsistent capitalization of defined institutional terms).
+The first review identified and corrected: several stale references to the document's section count following a later structural addition, dollar-figure rounding inconsistencies between sections discussing the same reserve line at different points, two internal cross-references that pointed to the wrong section, and a number of spelling-convention and capitalization inconsistencies. The second, independent review — deliberately re-examining decisions the first round had already made, rather than assuming them settled — found and corrected a further set of issues the first round had missed: a Table of Contents entry that hyphenated mid-word, an inconsistent header/footer treatment between the front and back covers, an arithmetic reconciliation in the Waqf & Stakeholder Reserve narrative that did not sum correctly, a certification-cost line item whose components did not add to its stated ceiling, three misordered Index entries, a governance-responsibility line that misattributed a University-funded activity to the Commercial Engine, one internally contradictory college-pairing assignment, one cross-reference to a faculty title that did not exist elsewhere in the document, and a further round of spelling-convention, terminology, and cross-reference corrections of the same kinds the first review addressed.
 
-This statement certifies that the review described above was performed and that every issue it identified was corrected before publication. It does not certify — and no review of a document this length can reasonably certify — the complete absence of any error whatsoever. A reader who identifies a further issue is asked to report it to info@edu.amiu.com for correction in the next revision.
+This statement certifies that both reviews described above were performed as described and that every issue either one identified was corrected before publication. It does not certify — and no review of a document this length can reasonably certify — the complete absence of any error whatsoever; a second independent pass finding issues the first missed is itself evidence that a third pass would likely do the same. A reader who identifies a further issue is asked to report it to info@edu.amiu.com for correction in the next revision.
 
 **Certified for Executive Release** — AMIU Office of Institutional Planning, Founding-Decade Edition.
 
@@ -280,7 +280,7 @@ This Blueprint (AMIU-SB-002) does not amend that architecture. It operationalize
 
 **The founding-decade numbers, unchanged from AMIU-MP-001:** 347 active students and $224,747 in Gross Revenue in Year 1 (2028), growing to 11,021 students and $3,830,549 in Year 10 (2037); $16,669,190 cumulative ten-year revenue under the adopted Growth Scenario; a $5,834,215 ten-year cumulative Liquidity Reserve and a $3,333,838 ten-year cumulative Waqf & Stakeholder Reserve; zero deficit in any year, of any of the three modeled scenarios (Conservative, Expected, Growth).
 
-**What this Blueprint adds is operating detail, not new commitments.** Where the Master Plan fixes *that* twenty percent of Payroll funds Senate Stipends, this Blueprint specifies *how* Senate elections, terms, and succession actually run (Section 4). Where the Master Plan fixes *that* the Waqf Reserve funds a Nigeria Mega-University Reserve sub-line, this Blueprint specifies the feasibility-study-to-charter-application sequence that sub-line is meant to fund (Section 31). Every budget figure in every one of the forty-one sections traces to one of the seven fixed allocation percentages, a named Waqf sub-line, or an already-adopted certification-cost figure (ISO 21001, CPD, Gambia NAQAA) — never to an invented category.
+**What this Blueprint adds is operating detail, not new commitments.** Where the Master Plan fixes *that* eighteen percent of Payroll funds Senate Stipends, this Blueprint specifies *how* Senate elections, terms, and succession actually run (Section 4). Where the Master Plan fixes *that* the Waqf Reserve funds a Nigeria Mega-University Reserve sub-line, this Blueprint specifies the feasibility-study-to-charter-application sequence that sub-line is meant to fund (Section 31). Every budget figure in every one of the forty-one sections traces to one of the seven fixed allocation percentages, a named Waqf sub-line, or an already-adopted certification-cost figure (ISO 21001, CPD, Gambia NAQAA) — never to an invented category.
 
 **Four disciplines recur across all forty-one sections.** First, *proportionate staffing*: no section proposes a dedicated office, coordinator, or C-suite role earlier than the fiscal year in which the relevant allocation line could actually afford it — most dedicated non-honoraria functions do not appear before Year 6–10. Second, *sequencing discipline*: the accreditation roadmap (CPD Year 2, ISO 21001 Year 3, Gambia NAQAA Years 2–4, Nigeria NUC charter application Year 10, Texas secular accreditation Years 11–12, first Gulf ministry recognition Year 13) is never accelerated for narrative convenience. Third, *the capital firewall*: no section proposes any transaction in which University tuition revenue funds, guarantees, or de-risks the separately-capitalized Commercial Engine (AMIU Global Services LLC), or vice versa. Fourth, *honest contingency*: initiatives dependent on sovereign or third-party action outside AMIU's control — the Nigeria Mega-University charter, Gulf ministry recognition — are explicitly framed as funding targets, never guarantees, with delay scenarios that do not threaten institutional solvency.
 
@@ -489,60 +489,60 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | **List of Abbreviations** | **29** |
 | **Glossary** | **33** |
 | **Part I — Governance & Institutional Foundations** | **38** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision 2028–2050 | 39 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 39 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 43 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 46 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 49 |
 | &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 53 |
-| **Part II — Organizational & Academic Structure** | **57** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 58 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 62 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 65 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 69 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 72 |
-| **Part III — Curriculum & Student Journey** | **75** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 76 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 79 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 83 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 87 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 90 |
-| **Part IV — Research, Publishing, Partnerships & Accreditation** | **95** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 96 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 99 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 102 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 105 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 108 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **114** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 115 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 118 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 121 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 123 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 127 |
-| **Part VI — Financial Growth, Marketing & Branding** | **133** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 134 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 137 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 140 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 142 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 145 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **149** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 150 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 153 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 156 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 159 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 161 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **165** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 166 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 171 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 177 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 182 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 187 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 194 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **205** |
-| **Appendix B — Master Plan Exhibit Checklist** | **206** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **208** |
-| **Appendix D — Program Catalog Reference** | **209** |
-| **References** | **210** |
-| **Index** | **212** |
+| **Part II — Organizational & Academic Structure** | **58** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 59 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 63 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 67 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 70 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 73 |
+| **Part III — Curriculum & Student Journey** | **77** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 78 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 81 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 85 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 89 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 92 |
+| **Part IV — Research, Publishing, Partnerships & Accreditation** | **97** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 98 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 101 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 104 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 107 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 110 |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **116** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 117 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 120 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 123 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 126 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 129 |
+| **Part VI — Financial Growth, Marketing & Branding** | **135** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 136 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 139 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 142 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 144 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 147 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **151** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 152 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 155 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 158 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 161 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 164 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **167** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 168 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 174 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 179 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 184 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 190 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 196 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **207** |
+| **Appendix B — Master Plan Exhibit Checklist** | **208** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **210** |
+| **Appendix D — Program Catalog Reference** | **211** |
+| **References** | **212** |
+| **Index** | **214** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -567,7 +567,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
 
 ## List of Charts {.unnumbered}
 
-*Data visualisations presenting quantitative institutional figures.*
+*Data visualizations presenting quantitative institutional figures.*
 
 | Figure | Title | Section |
 |---|---|---|
@@ -824,11 +824,11 @@ PART I · SECTION 01
 
 **Rationale**
 
-The adopted Master Plan (AMIU-MP-001) commits AMIU to Vision 2037 — financial independence, jurisdiction-by-jurisdiction accreditation, and near-zero-cost access for the world's poorest students. A blueprint that stops at 2037 leaves the institution without a bridge into the secular-expansion decade already scheduled in Section 16 of the Master Plan (Programs 72-99, Year 11/2038) or a horizon beyond it. This section extends the Vision into three honest horizons rather than one aspirational leap: a Founding Decade that proves the model works at small scale, a Secular Expansion decade that diversifies revenue and accreditation footprint, and a 2048-2050 Maturity window that consolidates rather than reinvents. Every figure beyond Year 10 (2037) is explicitly labelled illustrative and contingent, consistent with the Master Plan's own framing of its 20-year trajectory.
+The adopted Master Plan (AMIU-MP-001) commits AMIU to Vision 2037 — financial independence, jurisdiction-by-jurisdiction accreditation, and near-zero-cost access for the world's poorest students. A blueprint that stops at 2037 leaves the institution without a bridge into the secular-expansion decade already scheduled in Section 16 of the Master Plan (Programs 72-99, Year 11/2038) or a horizon beyond it. This section extends the Vision into three honest horizons rather than one aspirational leap: a Founding Decade that proves the model works at small scale, a Secular Expansion decade that diversifies revenue and accreditation footprint, and a 2048-2050 Maturity window that consolidates rather than reinvents. Every figure beyond Year 10 (2037) is explicitly labeled illustrative and contingent, consistent with the Master Plan's own framing of its 20-year trajectory.
 
 **Global Best Practices**
 
-Comparable religious and mission-driven universities that scaled sustainably (e.g., faith-affiliated liberal-arts colleges that later added secular schools, and waqf-funded institutions in the Gulf and Southeast Asia) share three disciplines AMIU adopts: (1) sequencing — do not chase secular accreditation before the religious core has an audited multi-year track record; (2) firewalling — keep commercial/investment capital structurally separate from tuition and religious-exemption status; (3) staged internationalisation — one branch campus proven before a second is attempted. AMIU's Gambia-first, Nigeria-later pipeline mirrors this.
+Comparable religious and mission-driven universities that scaled sustainably (e.g., faith-affiliated liberal-arts colleges that later added secular schools, and waqf-funded institutions in the Gulf and Southeast Asia) share three disciplines AMIU adopts: (1) sequencing — do not chase secular accreditation before the religious core has an audited multi-year track record; (2) firewalling — keep commercial/investment capital structurally separate from tuition and religious-exemption status; (3) staged internationalization — one branch campus proven before a second is attempted. AMIU's Gambia-first, Nigeria-later pipeline mirrors this.
 
 **Implementation Phases (Target Years)**
 
@@ -855,7 +855,7 @@ No new allocation category is created for "Vision" work — it is funded across 
 
 **Risks & Mitigation**
 
-Premature secular pivot risking the Texas religious exemption is mitigated by the fixed Year-11 sequencing already in the Master Plan (Risk Register items on IRS commingling scrutiny and accreditation candidacy delay). Over-promising Phase III figures is mitigated by explicitly labelling 2048-2050 numbers as non-binding extrapolations, reviewed and re-forecast no later than Year 15 (2042) against actual results. Nigeria approval risk (sovereign process, outside AMIU's control) means Phase III "Nigeria fully operational" language is conditioned on NUC/National Assembly action, not guaranteed by this blueprint.
+Premature secular pivot risking the Texas religious exemption is mitigated by the fixed Year-11 sequencing already in the Master Plan (Risk Register items on IRS commingling scrutiny and accreditation candidacy delay). Over-promising Phase III figures is mitigated by explicitly labeling 2048-2050 numbers as non-binding extrapolations, reviewed and re-forecast no later than Year 15 (2042) against actual results. Nigeria approval risk (sovereign process, outside AMIU's control) means Phase III "Nigeria fully operational" language is conditioned on NUC/National Assembly action, not guaranteed by this blueprint.
 
 **Timeline**
 
@@ -1029,7 +1029,7 @@ Ex officio seats (Groups I-III, Seat 15 Director) run concurrent with the underl
 
 **Implementation Phases (Target Years)**
 
-Year 1 (2028): full 18-seat Senate seated at launch, all Group I-III positions filled given the university cannot operate academically without them. Year 2-3 (2029-2030): first independent-seat elections held once faculty body reaches sufficient size to hold a genuine election (not a formality); succession plans filed for Seats 2-4 (the founder-linked executive seats) per Risk Register key-person mitigation. Year 5 (2032): first staggered-term rotation of independent seats. Year 10 (2037): Senate structure reviewed for adequacy ahead of Programs 72-99, though the 18-seat cap itself is canon and not proposed for change here — any expansion would require a future Master Plan amendment, not this blueprint.
+Year 1 (2028): full 18-seat Senate seated at launch — all Group I-III positions filled given the university cannot operate academically without them, and the four independent seats (8, 16-18) filled by founding interim appointment so no seat sits vacant at launch. Year 2-3 (2029-2030): the interim independent seat-holders stand for the first genuine, contested independent-seat elections once the faculty body reaches sufficient size to hold one (not a formality); succession plans filed for Seats 2-4 (the founder-linked executive seats) per Risk Register key-person mitigation. Year 5 (2032): first staggered-term rotation of independent seats. Year 10 (2037): Senate structure reviewed for adequacy ahead of Programs 72-99, though the 18-seat cap itself is canon and not proposed for change here — any expansion would require a future Master Plan amendment, not this blueprint.
 
 **Staffing Requirements**
 
@@ -1223,7 +1223,7 @@ The 18 Senate seat-holders **are** the org chart; Deans and HoDs are teaching sc
 
 **Year 5 (2032) — Snapshot: 3,493 students, Total Payroll $258,157**
 
-Senate structure unchanged (governance is fixed by charter). Growth occurs below it: adjunct/visiting pool grows to ~30–35 scholars now spanning MA (Yr2) and early PhD (Yr3) cohorts; Registrar's Office adds 1–2 Assistant Registrars; Admin/Ops grows to 3–4 part-time-leaning staff; the longest-serving honoraria faculty receive internal "Senior Instructor" pay differentiation as a precursor to formal ranks (see Section 9).
+Senate structure unchanged (governance is fixed by charter). Growth occurs below it: adjunct/visiting pool grows to ~30–35 scholars now spanning MA (Yr2) and early PhD (Yr3) cohorts; Registrar's Office adds 1–2 Assistant Registrars; Admin/Ops grows to 3–4 part-time-leaning staff; the longest-serving honoraria faculty begin the credential-verification and service-tenure track toward the first formal Assistant Professor promotions (see Section 9).
 
 **Year 15 (2042) — Snapshot: post-secular-launch (2038), illustrative revenue ≈$43.1M**
 
@@ -1360,7 +1360,7 @@ Shared "service departments" (a central language institute serving every faculty
 
 | College | Dean (Senate seat) | Programs | Core spine |
 |---|---|---|---|
-| I. Qur'ānic & Hadith Sciences | paired Dean (with III) | Tafsīr, Qirā'āt, Hadith | shares HoDs w/ Group III |
+| I. Qur'ānic & Hadith Sciences | paired Dean (with II) | Tafsīr, Qirā'āt, Hadith | shares HoDs w/ Group II |
 | II. Sharī'ah & Islamic Law | paired Dean (with I) | Fiqh, Uṣūl al-Fiqh | |
 | III. Islamic Theology & Philosophy | paired Dean (with V) | Aqeedah | |
 | V. Da'wah, Communication & Chaplaincy | paired Dean (with III) | Chaplaincy, Communication | |
@@ -2206,7 +2206,7 @@ AMIU's accreditation sequence is deliberately staged, not accelerated: religious
 | Year | Milestone | Cost | Funding Source | Independence |
 |---|---|---|---|---|
 | Yr2 (2029) | CPD Accreditation target | $4,000 initial + $1,200/yr | OpEx (5%) | N/A |
-| Yr2–4 (2029–31) | Gambia NAQAA accreditation (Stage 3) | $50,000 ceiling ($10k trust/endowment capitalization, $30k application/review/site-visits, $5k local legal counsel) | Board-approved Gambia ceiling | Independent of Texas parent |
+| Yr2–4 (2029–31) | Gambia NAQAA accreditation (Stage 3) | $50,000 ceiling ($10k trust/endowment capitalization, $35k application/review/site-visits, $5k local legal counsel) | Board-approved Gambia ceiling | Independent of Texas parent |
 | Yr3 (2030) | ISO 21001 (EOMS) target | $12,000 initial + $3,500/yr | OpEx (5%) | N/A |
 | Yr10 (2037) | Nigeria Mega-University: formal charter presentation to National Assembly/NUC | Variable, sovereign-controlled | Waqf Nigeria Mega-University Reserve (20% of Waqf 20%) | Independent of Texas parent; sovereign process outside AMIU control |
 | Yr11–12 (2038–39) | Texas/US secular (regional/national) accreditation process begins | TBD, funded from retained reserve | OpEx / Liquidity Reserve draw, Board-approved | Not a survival dependency |
@@ -2407,7 +2407,7 @@ PART V · SECTION 22
 
 **Rationale**
 
-AMIU's founding-decade staffing is deliberately thin; AI tools are a force-multiplier to cover admissions, advising, and tutoring gaps without inflating Payroll. But AI must never be mistaken for religious authority — every tool touching Qur'ānic, Tajweed, or fiqh-adjacent content is assistive only and subject to a hard Sharī'ah-appropriateness review gate before deployment, mirroring the existing Commercial Engine Sharī'ah-compliance risk mitigation (Independent Sharī'ah Advisory Board review/certification, bi-annual re-certification).
+AMIU's founding-decade staffing is deliberately thin; AI tools are a force-multiplier to cover admissions, advising, and tutoring gaps without inflating Payroll. But AI must never be mistaken for religious authority — every tool touching Qur'ānic, Tajweed, or fiqh-adjacent content is assistive only and subject to a hard Sharī'ah-appropriateness review gate before deployment, mirroring the existing Commercial Engine Sharī'ah-compliance risk mitigation (Independent Sharī'ah Advisory Board review/certification, biennial re-certification).
 
 **Global Best Practices**
 
@@ -2417,7 +2417,7 @@ Peer institutions use low-cost, off-the-shelf AI rather than custom research lab
 
 | Use Case | Nature | Sharī'ah Review Required? |
 |---|---|---|
-| Arabic/Qur'ānic-text-aware tutoring support | RAG assistant over faculty-curated corpus, human-supervised | Yes — mandatory pre-deployment + bi-annual re-cert |
+| Arabic/Qur'ānic-text-aware tutoring support | RAG assistant over faculty-curated corpus, human-supervised | Yes — mandatory pre-deployment + biennial re-cert |
 | Automated Tajweed/recitation feedback | Licensed third-party speech-analysis API | Yes |
 | Admissions document verification | OCR + fraud-flagging for tier eligibility | No (administrative, non-religious) |
 | Faculty content-authoring assistance | LLM-drafted quiz banks/translations, faculty-reviewed | Yes if religious-studies content |
@@ -2604,7 +2604,7 @@ The Waqf & Stakeholder Reserve is both a mission instrument ("covering the needy
 
 **Global Best Practices**
 
-Classical waqf principle: preserve corpus, spend only designated returns/distributions. Modern Islamic endowment governance diversifies into Sharī'ah-compliant instruments — sukuk, Islamic equity funds, ijāra-based real assets — never interest-bearing debt or conventional insurance, consistent with AMIU's existing Sharī'ah-compliance risk mitigation for the Commercial Engine. Leading waqf-linked universities publish annual impact reporting and use an independent Sharī'ah Advisory Board to certify investment instruments, mirroring AMIU's existing bi-annual re-certification practice.
+Classical waqf principle: preserve corpus, spend only designated returns/distributions. Modern Islamic endowment governance diversifies into Sharī'ah-compliant instruments — sukuk, Islamic equity funds, ijāra-based real assets — never interest-bearing debt or conventional insurance, consistent with AMIU's existing Sharī'ah-compliance risk mitigation for the Commercial Engine. Leading waqf-linked universities publish annual impact reporting and use an independent Sharī'ah Advisory Board to certify investment instruments, mirroring AMIU's existing biennial re-certification practice.
 
 **Implementation Phases (2028–2050)**
 
@@ -2622,7 +2622,7 @@ Years 1–5: no dedicated Waqf staff; the Board is a volunteer fiduciary body, s
 
 **Annual Budget**
 
-The Waqf line is 20% of Gross Revenue: $44,951 in Year 1 (2028), $258,158 in Year 5, $766,111 in Year 10 — consistent with the Master Plan's ten-year cumulative Waqf flow of roughly $3.33M (20% of $16,669,190), reconciling with the stated distributed sub-line total (~$1.67M) plus the reported $1,240,527 Strategic Business Reserve cumulative balance. Administrative cost of running the Waqf & Endowment Board itself is funded from the Payroll/OpEx lines, never from the Waqf corpus, preserving the full 20% for mission distribution and investment and avoiding the commingling concerns already flagged in the risk register.
+The Waqf line is 20% of Gross Revenue: $44,951 in Year 1 (2028), $258,158 in Year 5, $766,111 in Year 10 — consistent with the Master Plan's ten-year cumulative Waqf flow of roughly $3.33M (20% of $16,669,190), split evenly at inflow into the distributed half (~$1.67M cumulative, fully disbursed across the five sub-lines below) and the retained half (~$1.67M cumulative inflow into the Strategic Business Reserve, net of the Reserve's own Sharī'ah-compliant deployment activity across the decade to a reported $1,240,527 Year-10 balance, per Sections 38–39). Administrative cost of running the Waqf & Endowment Board itself is funded from the Payroll/OpEx lines, never from the Waqf corpus, preserving the full 20% for mission distribution and investment and avoiding the commingling concerns already flagged in the risk register.
 
 **KPIs**
 
@@ -2630,7 +2630,7 @@ Beneficiaries served (schools/mosques, widows/orphans, scholarship recipients); 
 
 **Risks & Mitigation**
 
-Sharī'ah-compliance risk in retained-reserve investment (existing register pattern, LOW likelihood/HIGH impact) — mitigated by Independent Sharī'ah Advisory Board bi-annual re-certification of all instruments. Concentration risk while the reserve is small — mitigated by conservative, low-risk Islamic instruments until scale supports diversification. Ad hoc/undisciplined deployment — mitigated by the fixed $250,000 two-thirds/two-independent-seat vote threshold. Nigeria Mega-University Reserve dependent on sovereign Nigerian accreditation processes outside AMIU's control (existing register risk) — mitigated by ring-fencing the sub-line regardless of charter timing, with Senate-vote redeployment to scholarship/emergency lines possible if the Nigeria timeline slips. Nonprofit/for-profit commingling scrutiny (existing register risk) — mitigated by strict account segregation from any Commercial Engine activity and arm's-length documentation for any shared services.
+Sharī'ah-compliance risk in retained-reserve investment (existing register pattern, LOW likelihood/HIGH impact) — mitigated by Independent Sharī'ah Advisory Board biennial re-certification of all instruments. Concentration risk while the reserve is small — mitigated by conservative, low-risk Islamic instruments until scale supports diversification. Ad hoc/undisciplined deployment — mitigated by the fixed $250,000 two-thirds/two-independent-seat vote threshold. Nigeria Mega-University Reserve dependent on sovereign Nigerian accreditation processes outside AMIU's control (existing register risk) — mitigated by ring-fencing the sub-line regardless of charter timing, with Senate-vote redeployment to scholarship/emergency lines possible if the Nigeria timeline slips. Nonprofit/for-profit commingling scrutiny (existing register risk) — mitigated by strict account segregation from any Commercial Engine activity and arm's-length documentation for any shared services.
 
 **Timeline**
 
@@ -3110,7 +3110,8 @@ Geopolitical/travel disruption in any single Gulf state — mitigated by targeti
 
 **Governance Responsibilities**
 
-- **Board of Trustees**: exclusive tuition-setting authority (sets/maintains Tier 1 premium pricing), Commercial Engine oversight of Gulf marketing spend, approves any future Gulf Relations staffing.
+- **Board of Trustees**: exclusive tuition-setting authority (sets/maintains Tier 1 premium pricing), general Commercial Engine oversight per the standing firewall, approves any future Gulf Relations staffing.
+- **DVC Admin & Finance**: owns Gulf marketing budget execution, drawn from the fixed 10% Marketing allocation.
 - **Waqf & Endowment Board**: fiduciary authority over Gulf-origin Waqf/Sadaqah Jāriyah gifts; 2/3 Senate vote with ≥2 independent seats required once any single deployment exceeds $250,000/yr.
 - **University Senate**: reviews academic-partnership implications of any Gulf ministry recognition agreement before adoption.
 
@@ -3179,7 +3180,7 @@ PART VII · SECTION 34
 
 **Rationale**
 
-Because Diploma and Associate credentials are single-cycle, AMIU produces its first graduating cohorts within Year 1–2 (2028–2029) — an unusually early opportunity to build alumni identity. Alumni matter structurally: they feed the Marketing referral funnel, the mosque-nomination pipeline for Community & Institutional Scholarships (up to 3 fully-sponsored seats/year per partner), and long-run Waqf/Sadaqah Jāriyah giving — all without requiring dedicated staff in the founding decade.
+Because Diploma and Associate credentials are single-cycle, AMIU produces its first graduating cohorts within Year 1–2 (2028–2029) — an unusually early opportunity to build alumni identity. Alumni matter structurally: they feed the Marketing referral funnel, the mosque-nomination pipeline for Community & Institutional Scholarships (1–2 fully-sponsored seats/year per partner), and long-run Waqf/Sadaqah Jāriyah giving — all without requiring dedicated staff in the founding decade.
 
 **Global Best Practices**
 
@@ -3372,7 +3373,7 @@ Risk management draws from two existing lines, never a new one: the 5% Operating
 |---|---|---|---|
 | 1 | Commercial Engine project underperforms/fails Gate clearance | Moderate/Low | Gate A/B/C due-diligence clearance required before capital deployment |
 | 2 | Credibility risk in a future CE offering | Moderate/Medium | Offering documents, disclosure discipline, arm's-length firewall |
-| 3 | Sharī'ah-compliance risk in the CE | Low/High | Independent Sharī'ah Advisory Board bi-annual re-certification |
+| 3 | Sharī'ah-compliance risk in the CE | Low/High | Independent Sharī'ah Advisory Board biennial re-certification |
 | 4 | Waqf Strategic Business Reserve deployment governance | Low/Medium | 2/3 Senate vote + 2 independent seats above $250,000/yr |
 | 5 | Founder/Senate self-compensation governance | Low/Medium | All 4 independent Senate seats' affirmative approval, published annually |
 | 6 | Nigeria Mega-University delay/non-approval | Moderate/Medium | Framed as funding target, not guarantee; doesn't affect solvency |
@@ -3412,7 +3413,7 @@ Covered exhaustively in the table above; the meta-risk is register atrophy (the 
 | Audit & Risk Committee | Operational register owner; quarterly review; independent of Administration |
 | University Senate | Escalates academic/program risk; 4 independent seats safeguard compensation-risk items |
 | Waqf & Endowment Board | Owns Risks 4 and 6 (Waqf deployment, Nigeria Reserve) |
-| Sharī'ah Advisory Board | Owns Risk 3; bi-annual re-certification authority |
+| Sharī'ah Advisory Board | Owns Risk 3; biennial re-certification authority |
 
 **Measurable Success Indicators**
 
@@ -3426,7 +3427,7 @@ PART VIII · SECTION 37
 
 **Rationale**
 
-AMIU operates — or will operate — under an unusually layered compliance stack for an institution its size: US federal tax-exempt law, Texas nonprofit corporate law, a state religious-education exemption, an emerging West African accreditation regime, a future Nigerian regulator, a future US secular accreditor, an international quality-management standard, a professional-development accreditation, a faith-based investment-structure certifier, and data-protection expectations from a genuinely global online student body spanning four pricing tiers. None of these obligations are optional, and several (IRS 501c3 status, TWC Chapter 132) are the legal foundation the entire Mission depends on. Section 37 sets the compliance operating model, jurisdiction by jurisdiction, and the recurring calendar that keeps AMIU current without over-resourcing a function the founding decade cannot yet justify staffing heavily.
+AMIU operates — or will operate — under an unusually layered compliance stack for an institution its size: US federal tax-exempt law, Texas nonprofit corporate law, a state religious-education exemption, an emerging West African accreditation regime, a future Nigerian regulator, a future US secular accreditor, an international quality-management standard, a professional-development accreditation, a faith-based investment-structure certifier, and data-protection expectations from a genuinely global online student body spanning four pricing tiers. None of these obligations are optional, and several (IRS 501(c)(3) status, TWC Chapter 132) are the legal foundation the entire Mission depends on. Section 37 sets the compliance operating model, jurisdiction by jurisdiction, and the recurring calendar that keeps AMIU current without over-resourcing a function the founding decade cannot yet justify staffing heavily.
 
 **Global Best Practices**
 
@@ -3468,13 +3469,13 @@ Combined certification budget ($16,000 initial + $4,700/yr) fits comfortably ins
 |---|---|
 | Q1 | IRS Form 990 preparation; TX registered-agent renewal confirmation |
 | Q2 | ISO 21001 surveillance audit window (post-Yr 3); CPD renewal filing |
-| Q3 | Sharī'ah Advisory Board bi-annual re-certification (odd-numbered cycles) of Commercial Engine structures |
+| Q3 | Sharī'ah Advisory Board biennial re-certification (odd-numbered cycles) of Commercial Engine structures |
 | Q4 | Board Audit & Risk Committee annual compliance-posture review; Gambia NAQAA annual reporting (post Stage 3); data-protection policy refresh |
 | Ongoing | TWC Ch.132 status monitored for any change in scope of instruction; trademark renewal tracked (10-yr USPTO cycle) |
 
 **KPIs**
 
-100% on-time regulatory filings across all active jurisdictions; zero lapses in 501c3 or TWC Ch.132 status; ISO 21001 and CPD certifications maintained without gap from their target years onward; zero data-protection incidents involving student records.
+100% on-time regulatory filings across all active jurisdictions; zero lapses in 501(c)(3) or TWC Ch.132 status; ISO 21001 and CPD certifications maintained without gap from their target years onward; zero data-protection incidents involving student records.
 
 **Risks & Mitigation**
 
@@ -3545,7 +3546,7 @@ No dedicated CFO-level hire is warranted purely for sustainability modeling in t
 
 **Annual Budget**
 
-Sustainability monitoring itself is a governance activity, not a budget line — its cost is the marginal time of the Audit & Risk Committee and the annual audit fee already counted under OpEx (Section 36/37). The substantive "budget" this section governs is the allocation framework itself: $16,669,190 ten-year cumulative gross revenue under the adopted Growth scenario, distributed across the eight fixed categories with zero residual.
+Sustainability monitoring itself is a governance activity, not a budget line — its cost is the marginal time of the Audit & Risk Committee and the annual audit fee already counted under OpEx (Section 36/37). The substantive "budget" this section governs is the allocation framework itself: $16,669,190 ten-year cumulative gross revenue under the adopted Growth scenario, distributed across the seven fixed categories with zero residual.
 
 **KPIs**
 
@@ -3597,7 +3598,7 @@ PART VIII · SECTION 39
 
 **Rationale**
 
-AMIU will need real, physical capital over its twenty-year arc: a Gambia branch campus, eventually residential colleges and a library for a Nigeria Mega-University, and possibly future facilities in Tier-1 regions. The Capital Firewall adopted in AMIU-MP-001 is described as "absolute, permanent, non-negotiable" precisely because hard capital is where a nonprofit/commercial hybrid is most tempted to blur lines — construction financing, land acquisition, and building operations look like normal commercial real estate activity even when one side of the ledger is 501c3 tuition money that can never fund an investor return. Section 39 specifies, capital project by capital project, exactly which entity and which allocation line pays for what, with no ambiguity.
+AMIU will need real, physical capital over its twenty-year arc: a Gambia branch campus, eventually residential colleges and a library for a Nigeria Mega-University, and possibly future facilities in Tier-1 regions. The Capital Firewall adopted in AMIU-MP-001 is described as "absolute, permanent, non-negotiable" precisely because hard capital is where a nonprofit/commercial hybrid is most tempted to blur lines — construction financing, land acquisition, and building operations look like normal commercial real estate activity even when one side of the ledger is 501(c)(3) tuition money that can never fund an investor return. Section 39 specifies, capital project by capital project, exactly which entity and which allocation line pays for what, with no ambiguity.
 
 **Global Best Practices**
 
@@ -3686,7 +3687,7 @@ Twenty-year institutional roadmaps in higher education typically sequence in dec
 
 | Year | Milestone | Sections |
 |---|---|---|
-| 2027 (Dec 6) | Incorporation, Texas Nonprofit Corp, 501c3 religious-exempt | 3–5; 37 |
+| 2027 (Dec 6) | Incorporation, Texas Nonprofit Corp, 501(c)(3) religious-exempt | 3–5; 37 |
 | 2028 (Yr 1) | Academic operations commence (Jan 1); 347 students / $224,747 revenue; full US legal/formation stack complete (~$1,015); all five governance bodies constituted (Board, Senate, Audit & Risk Committee, Waqf & Endowment Board, Sharī'ah Advisory Board) | 1–5; 36–38 |
 | 2029 (Yr 2) | CPD accreditation achieved ($4,000 initial); Gambia Branch Campus Stage 3 begins ($50,000 ceiling) | 19–20; 30; 37; 39 |
 | 2030 (Yr 3) | ISO 21001 achieved ($12,000 initial); PhD tier launches; Senate succession plans documented for founder-linked seats 2–4 (Risk 12 closes) | 7; 16; 19–20; 36–37 |
@@ -3755,7 +3756,7 @@ Classical waqf-funded madrasah education — free tuition financed by endowment 
 | Year | Calendar | Phase | Status | What This Means |
 |---|---|---|---|---|
 | 1 | 2028 | Foundation & Struggle | RED | The smallest cohort (347) and lowest revenue ($224,747) of the entire ten-year plan, absorbing the heaviest proportional share of one-time formation cost. Not a shortfall against a plan — this *is* the plan's floor. |
-| 2 | 2029 | Stabilisation & Survival | RED | Revenue nearly doubles ($451,397) while the institution is still pre-track-record: first accreditation candidacy (CPD), Gambia registration begins, risk-governance bodies newly seated (Sections 36–37). |
+| 2 | 2029 | Stabilization & Survival | RED | Revenue nearly doubles ($451,397) while the institution is still pre-track-record: first accreditation candidacy (CPD), Gambia registration begins, risk-governance bodies newly seated (Sections 36–37). |
 | 3 | 2030 | Controlled Growth | AMBER | Formation stack complete; still zero tuition increase assumed (AMIU-MP-001 §5.8 — no fee review before Year 4). |
 | 4–5 | 2031–2032 | Institutional Consolidation | AMBER→GREEN | First governance-approved fee review; Liquidity Reserve crosses $1.29M cumulative. |
 | 6–10 | 2033–2037 | Expansion | GREEN | Reserves compound to $5.83M (Liquidity) and $3.33M (Waqf) by Year 10; founding decade closes with a ten-year audited zero-deficit record (Section 38). |
@@ -3950,7 +3951,7 @@ This Blueprint draws on the following publicly recognized frameworks, standards,
 - Association of Governing Boards of Universities and Colleges (AGB). *Board governance standards for nonprofit higher education institutions* — trustee recruitment, term limits, and conflict-of-interest practice (Sections 3, 5).
 - BoardSource. *Nonprofit board governance practice standards* — committee structure and fiduciary oversight (Section 3).
 - Committee of Sponsoring Organizations of the Treadway Commission (COSO). *Enterprise Risk Management — Integrating with Strategy and Performance* — risk register methodology and likelihood/impact scoring (Section 36).
-- International Network for Quality Assurance Agencies in Higher Education (INQAAHE). *Guidelines of Good Practice* — quality-assurance cycle design (Section 7).
+- International Network for Quality Assurance Agencies in Higher Education (INQAAHE). *Guidelines of Good Practice* — quality-assurance cycle design (Section 19).
 - International Organization for Standardization. *ISO 21001:2018 — Educational Organizations Management Systems* (Section 20).
 - International Accreditation Forum (IAF). *Accreditation body recognition standards* — certification-body selection criteria (Section 20).
 - Directory of Open Access Journals (DOAJ). *Journal indexing criteria* (Section 17).
@@ -3978,10 +3979,10 @@ This Blueprint draws on the following publicly recognized frameworks, standards,
 Abbreviations, List of · Admission Policies, Section 14 · Admissions cycles, Section 14 · AI Strategy, Section 22 · Alumni Framework, Section 34 · Appeals Panel (country-tier), Section 14 · Arabic Language & Linguistics (College IV), Sections 8–9 · Audit & Risk Committee, Sections 3, 36–39
 
 **B**
-Board of Trustees, Sections 3, 5 · Board composition & term limits, Section 5 · Branding Strategy, Section 29
+Board composition & term limits, Section 5 · Board of Trustees, Sections 3, 5 · Branding Strategy, Section 29
 
 **C**
-Capital Development Framework, Section 39 · Capital Firewall, Sections 5, 27, 39; Figure 9 · Career Development Framework, Section 35 · College Structure, Section 8 · Commercial Engine (AMIU Global Services LLC), Sections 5, 27, 39 · Compliance Framework, Section 37 · Compliance calendar, Section 37 · CPD Accreditation, Sections 19–20 · Curriculum Architecture, Section 12
+Capital Development Framework, Section 39 · Capital Firewall, Sections 5, 27, 39; Figure 9 · Career Development Framework, Section 35 · College Structure, Section 8 · Commercial Engine (AMIU Global Services LLC), Sections 5, 27, 39 · Compliance calendar, Section 37 · Compliance Framework, Section 37 · CPD Accreditation, Sections 19–20 · Curriculum Architecture, Section 12
 
 **D**
 Da'wah & Community Outreach allocation, Sections 2, 18, 25 · Delegation of Authority Matrix, Sections 3, 5 · Department Structure, Section 10 · Digital Transformation Strategy, Section 23
@@ -4029,7 +4030,7 @@ Sadaqah Jāriyah, Sections 18, 26–28, 34; Glossary · Scholarship Strategy, Se
 Tables, List of · Tier system (tuition), Sections 14, 28; Glossary · Twenty-Year Strategic Roadmap, Section 40; Figure 10
 
 **W**
-Waqf & Stakeholder Reserve, Sections 2, 25–26, 31, 38–39; Figure 7 · Waqf Development Strategy, Section 25 · Waqf Scholarship Block, Sections 25–26
+Waqf Development Strategy, Section 25 · Waqf Scholarship Block, Sections 25–26 · Waqf & Stakeholder Reserve, Sections 2, 25–26, 31, 38–39; Figure 7
 
 ---
 

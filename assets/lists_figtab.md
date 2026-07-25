@@ -16,7 +16,7 @@
 
 ## List of Charts {.unnumbered}
 
-*Data visualisations presenting quantitative institutional figures.*
+*Data visualizations presenting quantitative institutional figures.*
 
 | Figure | Title | Section |
 |---|---|---|

@@ -104,7 +104,7 @@ This Blueprint draws on the following publicly recognized frameworks, standards,
 - Association of Governing Boards of Universities and Colleges (AGB). *Board governance standards for nonprofit higher education institutions* — trustee recruitment, term limits, and conflict-of-interest practice (Sections 3, 5).
 - BoardSource. *Nonprofit board governance practice standards* — committee structure and fiduciary oversight (Section 3).
 - Committee of Sponsoring Organizations of the Treadway Commission (COSO). *Enterprise Risk Management — Integrating with Strategy and Performance* — risk register methodology and likelihood/impact scoring (Section 36).
-- International Network for Quality Assurance Agencies in Higher Education (INQAAHE). *Guidelines of Good Practice* — quality-assurance cycle design (Section 7).
+- International Network for Quality Assurance Agencies in Higher Education (INQAAHE). *Guidelines of Good Practice* — quality-assurance cycle design (Section 19).
 - International Organization for Standardization. *ISO 21001:2018 — Educational Organizations Management Systems* (Section 20).
 - International Accreditation Forum (IAF). *Accreditation body recognition standards* — certification-body selection criteria (Section 20).
 - Directory of Open Access Journals (DOAJ). *Journal indexing criteria* (Section 17).
@@ -132,10 +132,10 @@ This Blueprint draws on the following publicly recognized frameworks, standards,
 Abbreviations, List of · Admission Policies, Section 14 · Admissions cycles, Section 14 · AI Strategy, Section 22 · Alumni Framework, Section 34 · Appeals Panel (country-tier), Section 14 · Arabic Language & Linguistics (College IV), Sections 8–9 · Audit & Risk Committee, Sections 3, 36–39
 
 **B**
-Board of Trustees, Sections 3, 5 · Board composition & term limits, Section 5 · Branding Strategy, Section 29
+Board composition & term limits, Section 5 · Board of Trustees, Sections 3, 5 · Branding Strategy, Section 29
 
 **C**
-Capital Development Framework, Section 39 · Capital Firewall, Sections 5, 27, 39; Figure 9 · Career Development Framework, Section 35 · College Structure, Section 8 · Commercial Engine (AMIU Global Services LLC), Sections 5, 27, 39 · Compliance Framework, Section 37 · Compliance calendar, Section 37 · CPD Accreditation, Sections 19–20 · Curriculum Architecture, Section 12
+Capital Development Framework, Section 39 · Capital Firewall, Sections 5, 27, 39; Figure 9 · Career Development Framework, Section 35 · College Structure, Section 8 · Commercial Engine (AMIU Global Services LLC), Sections 5, 27, 39 · Compliance calendar, Section 37 · Compliance Framework, Section 37 · CPD Accreditation, Sections 19–20 · Curriculum Architecture, Section 12
 
 **D**
 Da'wah & Community Outreach allocation, Sections 2, 18, 25 · Delegation of Authority Matrix, Sections 3, 5 · Department Structure, Section 10 · Digital Transformation Strategy, Section 23
@@ -183,7 +183,7 @@ Sadaqah Jāriyah, Sections 18, 26–28, 34; Glossary · Scholarship Strategy, Se
 Tables, List of · Tier system (tuition), Sections 14, 28; Glossary · Twenty-Year Strategic Roadmap, Section 40; Figure 10
 
 **W**
-Waqf & Stakeholder Reserve, Sections 2, 25–26, 31, 38–39; Figure 7 · Waqf Development Strategy, Section 25 · Waqf Scholarship Block, Sections 25–26
+Waqf Development Strategy, Section 25 · Waqf Scholarship Block, Sections 25–26 · Waqf & Stakeholder Reserve, Sections 2, 25–26, 31, 38–39; Figure 7
 
 ---
 
