@@ -57,9 +57,10 @@ PART_TITLES = [
     ("VII", "Regional Campuses & Student Lifecycle", "Sections 31–35",
      [(31, "Nigeria Campus Strategy"), (32, "Gulf Cooperation Strategy"), (33, "Student Support Framework"),
       (34, "Alumni Framework"), (35, "Career Development Framework")]),
-    ("VIII", "Risk, Compliance, Sustainability & the 20-Year Roadmap", "Sections 36–40",
+    ("VIII", "Risk, Compliance, Sustainability & the 20-Year Roadmap", "Sections 36–41",
      [(36, "Risk Management Framework"), (37, "Compliance Framework"), (38, "Financial Sustainability Framework"),
-      (39, "Capital Development Framework"), (40, "Twenty-Year Strategic Roadmap")]),
+      (39, "Capital Development Framework"), (40, "Twenty-Year Strategic Roadmap"),
+      (41, "Founding Access & Waqf-First Strategy")]),
 ]
 
 ROMAN_TO_WORD = {"I": "ONE", "II": "TWO", "III": "THREE", "IV": "FOUR", "V": "FIVE",
@@ -82,8 +83,6 @@ TOC_ENTRIES += [
     ("Appendix C — Fixed Revenue Allocation Framework: Quick Reference",
      "Appendix C — Fixed Revenue Allocation Framework: Quick Reference", 1),
     ("Appendix D — Programme Catalog Reference", "Appendix D — Programme Catalog Reference", 1),
-    ("Appendix E — Founding-Decade Risk Phases & the Pre-Incorporation Waqf-First Outreach Model",
-     "Appendix E — Founding-Decade Risk Phases & the Pre-Incorporation Waqf-First Outreach Model", 1),
     ("References", "References", 1),
     ("Index", "Index", 1),
 ]

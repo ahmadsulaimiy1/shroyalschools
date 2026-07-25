@@ -2549,9 +2549,9 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 36–40</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 36–41</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, and the single consolidated milestone table that ties 2028 to 2050.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Liberation Serif" w:hAnsi="Liberation Serif"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, the single consolidated milestone table that ties 2028 to 2050 &#8212; and the founding promise all of it exists to keep.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -2564,6 +2564,8 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
       <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>39&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Capital Development Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>40&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Twenty-Year Strategic Roadmap</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Bitstream Charter" w:hAnsi="Bitstream Charter"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>41&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Founding Access &amp; Waqf-First Strategy</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -2974,5 +2976,110 @@ All five governance bodies (Board, Senate, Audit & Risk Committee, Waqf & Endowm
 **Measurable Success Indicators**
 
 Twenty consecutive audited zero-deficit years (2028–2047); founding-decade retained position of $5,582,369 achieved on schedule; Year-20 revenue landing within the adopted $90–150M institutional-economy target; unbroken Capital Firewall across the entire 2028–2050 horizon, with zero instances of tuition revenue funding an investor return at any point in the twenty-three-year arc.
+
+::: {custom-style="SectionKicker"}
+PART VIII · SECTION 41
+:::
+
+## Section 41: Founding Access & Waqf-First Strategy
+
+**Rationale**
+
+Forty sections of this Blueprint operationalize discipline — fixed allocation percentages, a 14-risk register, a zero-deficit doctrine tested against three scenarios. This closing section returns, deliberately, to the reason that discipline exists. AMIU's own Mission Statement commits it to "spread Islamic education all over the world at the minimum possible cost, covering the needy without condition"; its ISLAMIC values framework names Access as a standing value: "financial capacity shall never be a barrier to knowledge" (AMIU-MP-001, Mission; Section 2 of this Blueprint). A Founding Council review challenged this Blueprint to treat that commitment as more than an operational footnote — as an admissions philosophy, a brand position, and a donor and community-engagement strategy in its own right. Section 41 is positioned last, not as an afterthought, but as the section every preceding one exists to make possible: forty sections of financial and governance discipline are what make it *safe* for AMIU to open its doors before it has a track record, a brand, or a single dollar of external validation.
+
+**Global Best Practices**
+
+Classical waqf-funded madrasah education — free tuition financed by endowment income committed in advance, never by hoped-for future giving — is the direct historical model for what follows. Modern cash-waqf certificate programs (Malaysia, Turkey, Indonesia) show the same principle at institutional scale: small, perpetual endowment contributions fund guaranteed seats, not promotional discounts. Mission-driven founding institutions generally build enrollment and community trust before they build brand recognition or revenue scale — "access precedes revenue" is a sequencing observation about how such institutions actually grow, not a departure from financial discipline; the two are compatible only when access is paid for out of committed, already-adopted funds, which is the standard this section holds itself to throughout.
+
+**The Founding Years, Read Honestly: Investment, Not Failure**
+
+| Year | Calendar | Phase | Status | What This Means |
+|---|---|---|---|---|
+| 1 | 2028 | Foundation & Struggle | RED | The smallest cohort (347) and lowest revenue ($224,747) of the entire ten-year plan, absorbing the heaviest proportional share of one-time formation cost. Not a shortfall against a plan — this *is* the plan's floor. |
+| 2 | 2029 | Stabilisation & Survival | RED | Revenue nearly doubles ($451,397) while the institution is still pre-track-record: first accreditation candidacy (CPD), Gambia registration begins, risk-governance bodies newly seated (Sections 36–37). |
+| 3 | 2030 | Controlled Growth | AMBER | Formation stack complete; still zero tuition increase assumed (AMIU-MP-001 §5.8 — no fee review before Year 4). |
+| 4–5 | 2031–2032 | Institutional Consolidation | AMBER→GREEN | First governance-approved fee review; Liquidity Reserve crosses $1.29M cumulative. |
+| 6–10 | 2033–2037 | Expansion | GREEN | Reserves compound to $5.83M (Liquidity) and $3.33M (Waqf) by Year 10; founding decade closes with a ten-year audited zero-deficit record (Section 38). |
+
+These are investment years, described in language a Board, a donor, and an accreditation reviewer can all trust: every dollar spent in Years 1–2 is spent against a plan that already assumed those years would be the leanest, not against a plan that failed to anticipate them.
+
+**Implementation Phases — The Founding Registration Sequence**
+
+*Grounding note.* AMIU-MP-001 fixes incorporation at 6 December 2027 and academic operations commencing 1 January 2028. A campaign beginning January 2027 would run for most of a year before the University exists as a legal entity able to accept binding applications, hold funds, or issue admissions decisions. The sequence below is compressed into what is actually available before incorporation and modeled explicitly as **Founding Committee** activity — not University action — until 6 December 2027.
+
+| Window | Designation | Acting Party | Cost to Registrant | Purpose |
+|---|---|---|---|---|
+| ~Mid-2027 – 6 Dec 2027 | Founding Registration & Outreach | Founding Committee (pre-incorporation; trustees-designate, in a founding rather than institutional capacity) | Free — registration of interest only; no admission decision issued | Build a qualified applicant pipeline, mailing list, and ambassador network ahead of Day 1; success measured in qualified registrants and geographic reach, not revenue |
+| 6 Dec 2027 – 31 Dec 2027 | Incorporation-to-Launch Bridge | AMIU (newly incorporated) | Illustrative $20–$140 application-processing fee, tiered by region (mirroring §2.1's four-tier logic) — **not yet adopted in AMIU-MP-001**, subject to Board ratification (§11.3) | Convert the registration pipeline into verified, fee-eligible applications; fund admissions-office setup ahead of Day 1 |
+| 1 Jan 2028 → | Founding Academic Year | AMIU | Full Section 2 tuition architecture; Section 15 Founding Cohort incentive stack (15% upfront discount, 10%→15% affiliate commission in the first 90 days) | Formal matriculation begins |
+
+The Founding Registration phase carries no revenue and no cost by design — a genuinely free, RED-status, pre-revenue window. Its true cost is not zero in an accounting sense but close to it: a landing page, a mailing list, and Founding Committee volunteer time, well within what the eventual Year-1 Marketing allocation (10% of revenue, Section 28) would in any case need to spend on pre-launch brand-building. It requires no new dollar figure and no change to any adopted percentage. The bridge-phase fee is illustrative only, offered for Board consideration in the same spirit as the External Waqf Donor Contributions in §6.3, and would need to be reconciled into the Section 5 revenue waterfall — not treated as a founding-decade side fund — if ever adopted.
+
+**The No-Investment Baseline**
+
+The Founding Council asked what happens if no investor, donor, grant, or government intervention arrives. AMIU-MP-001 already models exactly this as its default, not as a downside case: the Capital Firewall (Section 39) means University operations carry zero dependency on Commercial Engine investor capital; External Waqf Donor Contributions (§6.3) are illustrative, additive, and assumed at $0 in Years 1–3; and because every cost category in Section 38's Financial Sustainability Framework is a percentage of *actual received* revenue rather than a fixed obligation, the model cannot run a deficit under slower-than-planned growth. The Conservative scenario ($14.25M ten-year cumulative, versus $16.67M adopted) already models a materially slower path with zero deficit in any year. No revision to any adopted figure is required to answer this question.
+
+**Maximum Sustainable Generosity**
+
+The Founding Scholarship Reweighting Model below is the evidence the Founding Council asked for — not a refusal, and not an invented percentage, but a model built entirely from dollars AMIU-MP-001 has already adopted.
+
+The Waqf Reserve's Distributed Half divides across five categories (§6.2): Physical Schools & Mosque Support 25%, Widows & Orphans Sponsorship 25%, Waqf Scholarship Block 20%, Nigeria Mega-University Reserve 20%, Emergency Relief & Contingency 10%. Two of these five have no near-term funding need in Years 1–2: the Nigeria Reserve's target milestone is Year 10 (§6.2.1), and the Emergency Relief sub-line's Year 1–2 balance is trivial in absolute terms ($2,248–$4,514) either way, while the University-side Liquidity Reserve — 35% of gross revenue, $78,661 in Year 1 alone — already exists as the institution's primary resilience buffer (Section 38). Temporarily folding both sub-lines' shares (20% + 10% = 30%) into the Waqf Scholarship Block for Years 1–2 only, then reverting to the standard split from Year 3 onward, is a governance-level reweighting within the Waqf & Endowment Board's ordinary fiduciary discretion (§6.1) — it is well under the $250,000/yr threshold that would require a two-thirds Senate supermajority (§6, §14.2 Risk 4), and it changes no adopted percentage of gross revenue.
+
+| | Standard Split (20% of Distributed Half) | Reweighted for Yrs 1–2 (50% of Distributed Half) |
+|---|---|---|
+| Year 1 Scholarship Block ($22,475 distributed) | $4,495 | $11,238 |
+| Year 2 Scholarship Block ($45,139 distributed) | $9,028 | $22,570 |
+| Two-Year Total | $13,523 | $33,808 |
+
+Applied to representative Year-1/2 entry-tier pricing — the Diploma and Associate tiers a needy, first-generation, or refugee applicant is most likely to enter (Sections 2.4, 3.1) — Tier 3/4 Grand Totals range from $80 (Tier 4 Diploma) to $340 (Tier 3 Associate, full price). At a blended $150–$200 estimated cost per sponsored seat:
+
+| | Low Estimate (Tier 3 Associate, $340/seat) | Blended Estimate ($175/seat) | High Estimate (Tier 4 Diploma, $80/seat) |
+|---|---|---|---|
+| Year 1 (~33 to ~140 seats) | 33 | 64 | 140 |
+| Year 2 (~66 to ~282 seats) | 66 | 129 | 282 |
+
+**Recommendation:** the reweighted model sustainably supports approximately **60–70 fully-sponsored Founding Scholarship seats in Year 1** and **125–135 in Year 2**, funded entirely from the already-adopted 20%-of-revenue Waqf allocation, requiring no change to any percentage in Sections 2, 3, 5, or 6, and no assumption of external giving. This is the Founding Council's question answered with evidence rather than aspiration: not "can we afford generosity," but a specific, board-actionable number for what generosity the adopted model can already sustain.
+
+**Where This Section Declines the Directive**
+
+On scholarship bands: the Founding Council's originally proposed bands (Founding 100%; Merit, Need-Based, Community Leadership, Qur'an Excellence, and Imam Development scholarships each 50–100%) remain more generous than the architecture funded in AMIU-MP-001 §3 and operationalized in Section 26: a flat 50% Merit discount for the top 5% of any graduating cohort, and a lifetime 25% Hifz discount. Raising those bands into a 50–100% range would change the Waqf Reserve draw-down rate modeled in Sections 6 and 38 in a way the reweighting model above does not — it would require raising the percentage itself, not reallocating within it, and is exactly the kind of proposal the Financial Sustainability Framework's Downside Review trigger (Section 38) exists to test *before* adoption. This section does not adopt the higher bands. It names the reweighting model above as the sustainable lever available today, and leaves the broader question — whether Section 26's architecture itself should change — as a standing agenda item for the Waqf & Endowment Board and Board of Trustees, to be modeled against multi-year Waqf Reserve capacity, not decided by how inspiring a number sounds.
+
+**Staffing**
+
+No dedicated staff role is created for the Founding Registration phase — it runs on Founding Committee volunteer capacity, the same trustees-designate who staff every other pre-incorporation formation activity (Section 9). From 1 January 2028, Founding Scholarship administration is absorbed into the existing Registrar/Admissions function (Section 14) and the Waqf & Endowment Board's existing Scholarship Block adjudication process (Section 26, 14-day SLA), consistent with this Blueprint's staffing discipline of never creating a role ahead of the revenue year that funds it.
+
+**Annual Budget**
+
+No new budget line. The Founding Registration phase costs approximately $0 in direct outlay. The Founding Scholarship reweighting draws exclusively from the already-adopted 20%-of-revenue Waqf & Stakeholder Reserve (Section 6, Appendix C); the illustrative bridge-phase application fee, if adopted by the Board, would be sized at Board discretion and reconciled into the Section 5 revenue waterfall rather than budgeted here.
+
+**KPIs**
+
+Qualified Founding Registration pipeline size and geographic reach (pre-incorporation, not revenue-measured); Founding Scholarship seats funded vs. the 60–70 (Yr 1) / 125–135 (Yr 2) modeled range; conversion rate from Founding Registration to formal Year-1 application; Waqf Scholarship Block reweighting reverted to the standard 20% split on schedule from Year 3.
+
+**Risks & Mitigation**
+
+| Risk | Mitigation |
+|---|---|
+| Emergency Relief sub-line deferred in Years 1–2 leaves a mission-specific buffer thin | Absolute Year 1–2 balances are trivial either way ($2,248–$4,514); the University-side Liquidity Reserve ($78,661 in Year 1 alone) is already the institution's primary resilience buffer (Section 38) |
+| Nigeria Reserve deferred in Years 1–2 | No effect on the funding target, which is Year 10 (§6.2.1) — eight years of runway remain to rebuild the sub-line from Year 3 |
+| Founding Registration pipeline overperforms, creating expectations the Founding Scholarship pool cannot meet at launch | Registration explicitly issues no admission decision and is marketed as interest-registration only, consistent with the "no automatic waiver" principle already governing every tier (§2.5) |
+| Bridge-phase fee, if adopted, perceived as contradicting "free registration" messaging | Fee applies only after incorporation, is illustrative and Board-ratified, and funds admissions-office setup, not a revenue target — communicated as distinct from the free pre-incorporation phase |
+
+**Timeline**
+
+~Mid-2027: Founding Registration opens. 6 Dec 2027: incorporation; Incorporation-to-Launch Bridge opens if Board-ratified. 1 Jan 2028: Founding Academic Year begins; Waqf Scholarship Block reweighting takes effect. 2029 (Yr 2): reweighting continues at 50% of Distributed Half. 2030 (Yr 3): reweighting reverts to the standard 20%/20%/10% split; Nigeria and Emergency sub-lines resume standard accrual.
+
+**Governance Responsibilities**
+
+| Body | Role |
+|---|---|
+| Board of Trustees | Ratifies (or declines) the illustrative bridge-phase fee; retains exclusive tuition-setting authority (§11.3) |
+| Waqf & Endowment Board | Approves the Years 1–2 Scholarship Block reweighting, within its ordinary fiduciary discretion (under the $250,000/yr supermajority threshold) |
+| Registrar / Admissions (Section 14) | Administers Founding Registration and the transition to formal admissions |
+| University Senate | No pricing authority; may advise on the academic-quality implications of the Founding Cohort, consistent with §11.4 |
+
+**Measurable Success Indicators**
+
+A documented Founding Registration pipeline ahead of 1 January 2028; the Waqf Scholarship Block reweighting formally approved by the Waqf & Endowment Board before Year 1 begins; Founding Scholarship seats funded within the modeled 60–140 seat range across Years 1–2; standard Waqf sub-line allocation resumed on schedule at Year 3; zero change to any adopted percentage in Sections 2, 3, 5, or 6.
 
 ---

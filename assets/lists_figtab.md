@@ -50,7 +50,7 @@
 
 ## List of Tables {.unnumbered}
 
-This Blueprint contains 83 tables across its forty sections. The thirty tables below carry distinctive institutional content — structures, registers, and named schedules — and are indexed individually. Recurring structural tables that appear once per section under a standard heading (*Implementation Phases*, *Staffing Requirements*, *Annual Budget*, *Risks & Mitigation*, *Governance Responsibilities*) are not indexed separately here for readability; they follow the same ten-dimension structure in every section and are reachable directly from the Table of Contents.
+This Blueprint contains 89 tables across its forty-one sections. The thirty tables below carry distinctive institutional content — structures, registers, and named schedules — and are indexed individually. Recurring structural tables that appear once per section under a standard heading (*Implementation Phases*, *Staffing Requirements*, *Annual Budget*, *Risks & Mitigation*, *Governance Responsibilities*) are not indexed separately here for readability; they follow the same ten-dimension structure in every section and are reachable directly from the Table of Contents.
 
 | Table | Title | Section |
 |---|---|---|
