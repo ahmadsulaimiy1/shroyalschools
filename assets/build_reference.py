@@ -18,7 +18,9 @@ GOLD = RGBColor(0xB0, 0x86, 0x25)
 TEXT = RGBColor(0x1A, 0x1F, 0x2B)
 GREY = RGBColor(0x5B, 0x63, 0x72)
 
-HEAD_FONT = "Bitstream Charter"
+HEAD_FONT = "EB Garamond"  # body serif — free OFL equivalent of Adobe Garamond Pro,
+                           # paired with Cormorant Garamond headings as one Garamond-
+                           # family system rather than two unrelated serif designs.
 BODY_FONT = "Liberation Sans"
 SERIF_FONT = "Liberation Serif"
 MONUMENTAL_FONT = "Cinzel"                       # Level 1 — chapter numbers, monumental openers
@@ -102,15 +104,13 @@ def set_para_fmt(style, space_before=0, space_after=8, line=1.15, keep_next=Fals
         pPr.append(pBdr)
 
 # ---------------- Normal / body ----------------
-# Body text moves from a sans body to a scholarly serif (Bitstream Charter,
-# already installed and designed expressly for sustained readability) —
-# a full serif document (Cinzel display + Cormorant Garamond headings +
-# Charter body) reads as a bound scholarly volume; a sans body next to
-# serif display faces is closer to the "corporate report" look this
-# directive explicitly wants to avoid.
+# Body text is EB Garamond at 11.5pt / ~15.5pt leading (ratio 1.35) — a
+# full Garamond-family document (Cinzel monumental + Cormorant Garamond
+# headings + EB Garamond body) reads as typeset by one hand, rather than
+# pairing an unrelated serif body against a Garamond display system.
 normal = get_style(doc, 'Normal')
-set_font(normal, HEAD_FONT, 10.5, TEXT)
-set_para_fmt(normal, 0, 8, 1.18, widow_control=True)
+set_font(normal, HEAD_FONT, 11.5, TEXT)
+set_para_fmt(normal, 0, 9, 1.35, widow_control=True)
 
 # ---------------- Title (used for the doc's H1-level "Title" para if any) ----------------
 title = get_style(doc, 'Title')
@@ -219,8 +219,8 @@ if has_style(doc, 'Table Grid'):
 for nm in ['Compact', 'Body Text', 'First Paragraph']:
     if has_style(doc, nm):
         st = get_style(doc, nm)
-        set_font(st, HEAD_FONT, 10.5, TEXT)
-        set_para_fmt(st, 0, 6, 1.18, widow_control=True)
+        set_font(st, HEAD_FONT, 11.5, TEXT)
+        set_para_fmt(st, 0, 7, 1.32, widow_control=True)
 
 # ==================================================================
 # Page setup: US Letter, generous but efficient margins, section props

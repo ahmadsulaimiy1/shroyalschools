@@ -97,7 +97,7 @@ All financial figures, enrollment projections, and revenue trajectories beyond t
 
 The Al-Mulk International University name, wordmark, tagline "Spreading Islamic Education Worldwide, at Every Pace," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
 
-**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system (Cinzel monumental display, Cormorant Garamond editorial headings, Bitstream Charter body serif, navy/gold institutional palette).
+**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system — a single Garamond-family type system throughout (Cinzel monumental numerals, Cormorant Garamond editorial headings, EB Garamond body serif), navy/gold institutional palette.
 
 **Document control:** AMIU-SB-002 · Version 1.0 · Founding-Decade Edition · Confidential — Institutional Planning Document
 
@@ -445,73 +445,73 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | | |
 |---|---:|
 | **Foreword** | **7** |
-| **Founder's Message** | **8** |
-| **Chairman's Message** | **9** |
-| **President's Message** | **10** |
-| **Executive Summary** | **11** |
-| **AMIU at a Glance** | **13** |
-| **List of Figures** | **19** |
-| **List of Charts** | **19** |
-| **List of Diagrams** | **20** |
-| **List of Flowcharts** | **20** |
-| **List of Tables** | **21** |
-| **List of Abbreviations** | **24** |
-| **Glossary** | **27** |
-| **Part I — Governance & Institutional Foundations** | **32** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision 2028–2050 | 33 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 37 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 39 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 42 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 45 |
-| **Part II — Organizational & Academic Structure** | **49** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 50 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 54 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 57 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 60 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 62 |
-| **Part III — Curriculum & Student Journey** | **65** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Programme Portfolio | 66 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 68 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 72 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 75 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 78 |
-| **Part IV — Research, Publishing, Partnerships & Accreditation** | **82** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 83 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 85 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 88 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 91 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 93 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **98** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 99 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 101 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 104 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 106 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 109 |
-| **Part VI — Financial Growth, Marketing & Branding** | **114** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 115 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 117 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 119 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 122 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 124 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **128** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 129 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 131 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 134 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 136 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 138 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **142** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 143 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 148 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 152 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 157 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 162 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 167 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **178** |
-| **Appendix B — Master Plan Exhibit Checklist** | **179** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **180** |
-| **Appendix D — Programme Catalog Reference** | **181** |
-| **References** | **182** |
-| **Index** | **184** |
+| **Founder's Message** | **9** |
+| **Chairman's Message** | **10** |
+| **President's Message** | **11** |
+| **Executive Summary** | **12** |
+| **AMIU at a Glance** | **14** |
+| **List of Figures** | **21** |
+| **List of Charts** | **22** |
+| **List of Diagrams** | **22** |
+| **List of Flowcharts** | **23** |
+| **List of Tables** | **23** |
+| **List of Abbreviations** | **27** |
+| **Glossary** | **31** |
+| **Part I — Governance & Institutional Foundations** | **36** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision 2028–2050 | 37 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 41 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 44 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 47 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 50 |
+| **Part II — Organizational & Academic Structure** | **55** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 56 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 60 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 63 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 66 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 69 |
+| **Part III — Curriculum & Student Journey** | **73** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Programme Portfolio | 74 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 77 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 81 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 85 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 88 |
+| **Part IV — Research, Publishing, Partnerships & Accreditation** | **93** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 94 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 97 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 100 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 103 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 106 |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **111** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 112 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 115 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 118 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 120 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 123 |
+| **Part VI — Financial Growth, Marketing & Branding** | **128** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 129 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 132 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 134 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 137 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 140 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **144** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 145 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 148 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 151 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 154 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 156 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **160** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 161 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 166 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 172 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 177 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 182 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 188 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **199** |
+| **Appendix B — Master Plan Exhibit Checklist** | **200** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **202** |
+| **Appendix D — Programme Catalog Reference** | **203** |
+| **References** | **204** |
+| **Index** | **206** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

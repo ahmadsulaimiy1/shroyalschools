@@ -97,7 +97,7 @@ All financial figures, enrollment projections, and revenue trajectories beyond t
 
 The Al-Mulk International University name, wordmark, tagline "Spreading Islamic Education Worldwide, at Every Pace," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
 
-**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system (Cinzel monumental display, Cormorant Garamond editorial headings, Bitstream Charter body serif, navy/gold institutional palette).
+**Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system — a single Garamond-family type system throughout (Cinzel monumental numerals, Cormorant Garamond editorial headings, EB Garamond body serif), navy/gold institutional palette.
 
 **Document control:** AMIU-SB-002 · Version 1.0 · Founding-Decade Edition · Confidential — Institutional Planning Document
 
