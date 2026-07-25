@@ -424,6 +424,44 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>TEN-YEAR WAQF &amp; STAKEHOLDER RESERVE</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
+  <w:tr>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>18</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>FIXED SENATE SEATS, UNALTERED SINCE INCORPORATION</w:t></w:r></w:p>
+    </w:tc>
+<w:tc>
+      <w:tcPr>
+        <w:tcW w:w="4675" w:type="dxa"/>
+        <w:tcBorders>
+          <w:top w:val="single" w:sz="16" w:space="0" w:color="B08625"/>
+          <w:left w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:bottom w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+          <w:right w:val="single" w:sz="2" w:space="0" w:color="D8DCE5"/>
+        </w:tcBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="F6F7FA"/>
+        <w:tcMar><w:top w:w="380" w:type="dxa"/><w:left w:w="380" w:type="dxa"/><w:bottom w:w="380" w:type="dxa"/><w:right w:w="380" w:type="dxa"/></w:tcMar>
+        <w:vAlign w:val="center"/>
+      </w:tcPr>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="90"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Cinzel" w:hAnsi="Cinzel"/><w:b/><w:color w:val="122A4E"/><w:sz w:val="52"/></w:rPr><w:t>$90&#8211;150M</w:t></w:r></w:p>
+      <w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>
+        <w:r><w:rPr><w:rFonts w:ascii="Liberation Sans" w:hAnsi="Liberation Sans"/><w:color w:val="5B6372"/><w:sz w:val="15"/><w:spacing w:val="8"/></w:rPr><w:t>DIRECTIONAL TWENTY-YEAR REVENUE TARGET (2047)</w:t></w:r></w:p>
+    </w:tc>
+  </w:tr>
 </w:tbl>
 ```
 
@@ -769,7 +807,7 @@ This Blueprint contains 101 tables across its forty-one sections. The thirty tab
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -1134,7 +1172,7 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -1555,7 +1593,7 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -1986,7 +2024,7 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -2301,7 +2339,7 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -2658,7 +2696,7 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -2973,7 +3011,7 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -3294,7 +3332,7 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>

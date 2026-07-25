@@ -10,7 +10,7 @@
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -375,7 +375,7 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -796,7 +796,7 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -1227,7 +1227,7 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -1542,7 +1542,7 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -1899,7 +1899,7 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -2214,7 +2214,7 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -2535,7 +2535,7 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="11100" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
