@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(ROOT, "assets"))
 from assemble import (
     _justify_body_text, _enable_hyphenation, _suppress_table_hyphenation,
     _isolate_closing_panel_header_footer, _prevent_row_splitting, _insert_cover_seal,
+    _retitle_header_footer,
 )
 
 FRONT = "assets/constitution_front.md"
@@ -128,6 +129,7 @@ def run_pandoc(md_path, docx_path):
     _suppress_table_hyphenation(docx_path)
     _style_provision_numbers(docx_path)
     _isolate_closing_panel_header_footer(docx_path)
+    _retitle_header_footer(docx_path, "Constitution · Flagship Governance Edition", "AMIU-CON-001")
     _insert_cover_seal(docx_path)
 
 def run_soffice(docx_path, profile):

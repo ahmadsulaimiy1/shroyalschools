@@ -201,6 +201,10 @@ I did not want to build a university that made that promise and then quietly bro
 This Blueprint is the next layer of that same discipline, extended from ten years to twenty-three. It is not a rebrand of the Master Plan and not a wish list bolted onto it — it is the operating detail underneath the numbers we already committed to in public. I am proud that when this document needed a research strategy for a university with an eighteen-thousand-dollar founding-year faculty budget, it did not invent a research office we could not afford; it said, plainly, that mentored research rides inside existing Ph.D. honoraria until the day our own revenue says otherwise. That is the standard I want held against every page that follows, including the ones I have not yet written.
 
 ::: {custom-style="MessageByline"}
+Ahmad Sulaimiy
+:::
+
+::: {custom-style="MessageByline"}
 Founder & Vision Architect, Al-Mulk International University
 :::
 

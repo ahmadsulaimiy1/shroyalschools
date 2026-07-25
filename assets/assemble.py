@@ -134,6 +134,34 @@ def assemble(toc_markdown, outpath):
         f.write(full)
     return outpath
 
+def _retitle_header_footer(docx_path, title_text, doc_ref):
+    """Both flagship publications share one amiu-reference.docx, whose
+    default header/footer text is hardcoded to the Blueprint's own title
+    ('Strategic Implementation Blueprint 2028-2050') and document code
+    ('AMIU-SB-002') -- correct for the Blueprint, wrong for anything else
+    built from the same reference doc. Retexts the title run in the main
+    section's header and the document-reference run in its footer after
+    pandoc conversion. No-op (returns quietly) if the expected runs aren't
+    found, rather than silently leaving stale text in place undetected."""
+    import docx as _docx
+    d = _docx.Document(docx_path)
+    section = d.sections[0]
+    retitled_header = retitled_footer = False
+    for p in section.header.paragraphs:
+        for r in p.runs:
+            if 'Strategic Implementation Blueprint' in r.text:
+                r.text = title_text
+                retitled_header = True
+    for p in section.footer.paragraphs:
+        for r in p.runs:
+            if r.text.strip() == 'AMIU-SB-002':
+                r.text = doc_ref
+                retitled_footer = True
+    d.save(docx_path)
+    if not (retitled_header and retitled_footer):
+        print(f"  [WARN] _retitle_header_footer: header={retitled_header} footer={retitled_footer} "
+              f"— expected run(s) not found, header/footer text may still read 'Blueprint'/AMIU-SB-002")
+
 SEAL_PATH = "assets/brand/amiu_seal_medallion.png"
 
 def _insert_cover_seal(docx_path, seal_path=SEAL_PATH):
@@ -311,6 +339,25 @@ def _isolate_closing_panel_header_footer(docx_path):
         pPr = _docx.oxml.OxmlElement('w:pPr')
         pagebreak_para.insert(0, pPr)
     pPr.append(new_sectPr)
+
+    # CRITICAL: old_body_sectPr (now the closing panel's own sectPr, since
+    # new_sectPr above is a deep COPY that keeps section 0's content-bearing
+    # header/footer) still carries the ORIGINAL headerReference/
+    # footerReference elements — i.e. it points at the exact same relationship
+    # IDs, the exact same underlying header/footer parts, as section 0. If
+    # left in place, setting is_linked_to_previous=False below is a no-op
+    # (a reference already exists) and clearing "the closing section's"
+    # paragraph text actually clears the SHARED part section 0 also uses,
+    # silently blanking the header/footer on every other page in the
+    # document. Stripping these references here makes the closing section
+    # genuinely link-then-detach: python-docx sees no reference (inherits
+    # section 0's content), then is_linked_to_previous=False below creates
+    # a real, separate part copied from that inherited content, which is
+    # then safe to clear without touching section 0's part.
+    for ref_tag in ('w:headerReference', 'w:footerReference'):
+        for ref in list(old_body_sectPr.findall(_qn(ref_tag))):
+            old_body_sectPr.remove(ref)
+
     d.save(docx_path)
 
     # Re-open so python-docx re-reads the now-two-section structure, then
@@ -324,6 +371,20 @@ def _isolate_closing_panel_header_footer(docx_path):
     for p in closing_section.footer.paragraphs:
         p.text = ""
     d.save(docx_path)
+
+    # Verify the fix actually held: section 0's header/footer must still
+    # carry real text after the closing section was blanked, or this
+    # function just reintroduced the exact bug it exists to prevent.
+    d = _docx.Document(docx_path)
+    main_header_text = "".join(p.text for p in d.sections[0].header.paragraphs)
+    main_footer_text = "".join(p.text for p in d.sections[0].footer.paragraphs)
+    if not main_header_text.strip() and not main_footer_text.strip():
+        raise RuntimeError(
+            "_isolate_closing_panel_header_footer: main section's header/footer "
+            "came back empty after isolating the closing panel — the two "
+            "sections are still sharing a header/footer part. Aborting the "
+            "build rather than silently shipping blank running heads."
+        )
 
 def _style_subheading_labels(docx_path):
     """Restyle the bold sub-dimension labels ('**KPIs**', '**Risks & Mitigation**',
