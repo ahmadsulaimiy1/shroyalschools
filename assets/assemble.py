@@ -134,6 +134,57 @@ def assemble(toc_markdown, outpath):
         f.write(full)
     return outpath
 
+SEAL_PATH = "assets/brand/amiu_seal_medallion.png"
+
+def _insert_cover_seal(docx_path, seal_path=SEAL_PATH):
+    """Place the official AMIU seal at the top of the cover — the first
+    navy-fill table in the document. The seal's source artwork sits on a
+    plain white background with anti-aliased edges; rather than chroma-key
+    it directly onto navy (tested, and it leaves a visible light halo
+    around the globe/crown linework), it's presented on its own cream
+    medallion disc with a thin gold ring — the standard real-world
+    convention for a dark-background institutional seal, and it sidesteps
+    the halo entirely since the medallion's own background is a clean
+    flat fill, not a matted edge."""
+    import os
+    if not os.path.exists(seal_path):
+        return
+    import docx as _docx
+    from docx.shared import Inches as _Inches
+    from docx.enum.text import WD_ALIGN_PARAGRAPH as _ALIGN
+    from docx.oxml.ns import qn as _qn
+    import copy as _copy
+
+    d = _docx.Document(docx_path)
+    target = None
+    for t in d.tables:
+        for shd in t._tbl.iter(_qn('w:shd')):
+            if shd.get(_qn('w:fill')) == '122A4E':
+                target = t
+                break
+        if target is not None:
+            break
+    if target is None:
+        return
+
+    cell = target.rows[0].cells[0]
+    first_p = cell.paragraphs[0]
+    new_p_elem = _copy.deepcopy(first_p._p)
+    # Strip any existing runs from the clone; it becomes the image paragraph
+    for child in list(new_p_elem):
+        if child.tag == _qn('w:r'):
+            new_p_elem.remove(child)
+    first_p._p.addprevious(new_p_elem)
+    from docx.text.paragraph import Paragraph as _Paragraph
+    seal_p = _Paragraph(new_p_elem, cell)
+    seal_p.alignment = _ALIGN.CENTER
+    seal_p.paragraph_format.space_before = _docx.shared.Pt(0)
+    seal_p.paragraph_format.space_after = _docx.shared.Pt(14)
+    run = seal_p.add_run()
+    run.add_picture(seal_path, width=_Inches(1.15))
+
+    d.save(docx_path)
+
 def run_pandoc(md_path, docx_path):
     subprocess.run(["pandoc", md_path, "-o", docx_path, f"--reference-doc={REFDOC}"], check=True)
     _prevent_row_splitting(docx_path)
@@ -143,6 +194,7 @@ def run_pandoc(md_path, docx_path):
     _enable_hyphenation(docx_path)
     _suppress_table_hyphenation(docx_path)
     _isolate_closing_panel_header_footer(docx_path)
+    _insert_cover_seal(docx_path)
 
 # Paragraph styles that carry running narrative prose. Deliberately excludes
 # Caption, Block Text/Quote (pull quotes stay centered, never justified),
