@@ -44,7 +44,7 @@ TOC_ENTRIES = [
     ("The ISLAMIC Framework", "The ISLAMIC Framework", 1),
 ]
 for n, (roman, title) in enumerate(zip(ROMANS, ARTICLE_TITLES), start=1):
-    TOC_ENTRIES.append((f"Article {roman} — {title}", f"ARTICLE {n} OF 23", 1))
+    TOC_ENTRIES.append((f"Article {roman} — {title}", f"Article {n} of 23", 1))
 TOC_ENTRIES += [
     ("Adoption", "Adoption", 1),
     ("Publication Certification Statement", "Publication Certification Statement", 1),
@@ -145,10 +145,17 @@ def extract_page_map(pdf_path, txt_path):
     with open(txt_path, encoding="utf-8") as f:
         content = f.read()
     pages = content.split("\x0c")
-    norm_pages = [re.sub(r"\s+", " ", p) for p in pages]
+    # Despaced (not just whitespace-collapsed): LibreOffice's synthetic
+    # small-caps rendering inserts a spurious space-like gap after a run's
+    # initial full-height capital before the shrunk small-caps letters
+    # (e.g. "Al-Mulk" extracts as "A L -M ULK"), fragmenting pdftotext's
+    # word boundaries on every small-caps heading/kicker/running-head. This
+    # is a rendering-layer artifact, not real content, so matching must
+    # ignore all whitespace rather than merely collapsing runs of it.
+    norm_pages = [re.sub(r"\s+", "", p).lower() for p in pages]
     lookup = {}
     for display, search, level in TOC_ENTRIES:
-        norm_search = re.sub(r"\s+", " ", search).strip()
+        norm_search = re.sub(r"\s+", "", search).strip().lower()
         found = None
         page_range = range(1, len(norm_pages) + 1)
         if search not in BEFORE_TOC:

@@ -19,17 +19,17 @@
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 1 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 1 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>01</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="88"/></w:rPr><w:t>Introduction &amp; Purpose</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 1.1–1.5</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 1.1–1.5</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;One authoritative reference for every institutional governance and policy matter the University will face.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>1.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Preamble</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -49,7 +49,7 @@
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 1 &#183; 1.1
+Section 1 &#183; 1.1
 :::
 
 ## 1.1 Preamble
@@ -66,7 +66,7 @@ The University operates primarily as an online and distance learning institution
 This Institutional Governance Compendium constitutes the definitive governance and policy framework for the University. It establishes the institutional structure, articulates the core values, defines the roles and responsibilities of all governing bodies, and provides a comprehensive inventory of all policies, procedures, and governance instruments required for the operation of the University.
 
 ::: {custom-style="SectionKicker"}
-SECTION 1 &#183; 1.2
+Section 1 &#183; 1.2
 :::
 
 ## 1.2 Purpose of This Compendium
@@ -90,7 +90,7 @@ This Compendium serves as the authoritative reference for all institutional gove
 **1.2.8** Establishes governance provisions for online and distance learning.
 
 ::: {custom-style="SectionKicker"}
-SECTION 1 &#183; 1.3
+Section 1 &#183; 1.3
 :::
 
 ## 1.3 Scope of This Compendium
@@ -104,7 +104,7 @@ SECTION 1 &#183; 1.3
 **1.3.4** This Compendium is the authoritative source for institutional governance, policy status, and responsibility assignment.
 
 ::: {custom-style="SectionKicker"}
-SECTION 1 &#183; 1.4
+Section 1 &#183; 1.4
 :::
 
 ## 1.4 Governance Principles
@@ -124,7 +124,7 @@ This Compendium is founded upon the following governance principles:
 | Knowledge Without Barriers | The University is committed to removing all barriers to Islamic education. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 1 &#183; 1.5
+Section 1 &#183; 1.5
 :::
 
 ## 1.5 Document Numbering System
@@ -177,17 +177,17 @@ Each document is assigned a unique identifier following this convention:
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 2 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 2 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>02</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="88"/></w:rPr><w:t>Institutional Identity</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 2.1–2.7</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 2.1–2.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A Texas-domiciled religious university built on a seven-tier academic ladder and six founding colleges.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>2.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Legal Identity</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -211,7 +211,7 @@ Each document is assigned a unique identifier following this convention:
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.1
+Section 2 &#183; 2.1
 :::
 
 ## 2.1 Legal Identity
@@ -228,7 +228,7 @@ SECTION 2 &#183; 2.1
 | Primary Mode of Delivery | Online and Distance Learning |
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.2
+Section 2 &#183; 2.2
 :::
 
 ## 2.2 Mission
@@ -236,7 +236,7 @@ SECTION 2 &#183; 2.2
 *"To spread Islamic education all over the world at the minimum possible cost, covering the needy without condition, through a rigorous, stackable, seven-tier credential ladder that never sacrifices academic seriousness for accessibility, and never sacrifices financial self-sufficiency for good intentions."*
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.3
+Section 2 &#183; 2.3
 :::
 
 ## 2.3 Vision (2037)
@@ -244,7 +244,7 @@ SECTION 2 &#183; 2.3
 *"For Al-Mulk International University to be internationally recognized as a leading English-medium Islamic university — financially independent, fully accredited in every jurisdiction in which it operates, and proof that a religious university can serve the poorest students in the world at near-zero cost while remaining permanently self-sustaining."*
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.4
+Section 2 &#183; 2.4
 :::
 
 ## 2.4 Tagline
@@ -252,7 +252,7 @@ SECTION 2 &#183; 2.4
 *"Knowledge Without Barriers"*
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.5
+Section 2 &#183; 2.5
 :::
 
 ## 2.5 The AMIU Commitment
@@ -260,7 +260,7 @@ SECTION 2 &#183; 2.5
 *"AMIU is not a commercial institution. Its aim is not money. It is a vehicle for spreading Islamic education worldwide without barriers. Those who serve AMIU do so as a contribution to the Ummah — a form of Jihad through knowledge. Compensation is provided as a means of sustaining service, not as a market-driven wage. The University grows with its mission, and its people grow with it."*
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.6
+Section 2 &#183; 2.6
 :::
 
 ## 2.6 The Academic Ladder
@@ -274,7 +274,7 @@ AMIU offers a fully stacked seven-tier academic ladder, with every credential st
 *Every credential stacks directly into the next tier with no credit lost in the climb — from the Undergraduate Diploma at the entry point to the Post-Doctoral Fellowship at its summit. This is the same ladder governed in full by Article X of the Constitution (AMIU-CON-001).*
 
 ::: {custom-style="SectionKicker"}
-SECTION 2 &#183; 2.7
+Section 2 &#183; 2.7
 :::
 
 ## 2.7 The Six Colleges
@@ -313,17 +313,17 @@ SECTION 2 &#183; 2.7
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 3 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 3 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>03</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>The ISLAMIC Framework — Core Values</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 3.1–3.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 3.1–3.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Illumination, Sanad, Love, Access, Morality, Inquiry, Calling — seven values, one binding pledge.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>3.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Introduction</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -341,7 +341,7 @@ SECTION 2 &#183; 2.7
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 3 &#183; 3.1
+Section 3 &#183; 3.1
 :::
 
 ## 3.1 Introduction
@@ -349,7 +349,7 @@ SECTION 3 &#183; 3.1
 The University is guided by the ISLAMIC framework — a foundation upon which all institutional decisions, policies, and practices are built.
 
 ::: {custom-style="SectionKicker"}
-SECTION 3 &#183; 3.2
+Section 3 &#183; 3.2
 :::
 
 ## 3.2 The ISLAMIC Framework
@@ -361,7 +361,7 @@ SECTION 3 &#183; 3.2
 *Illumination, Sanad, Love, Access, Morality, Inquiry, Calling — the same seven values Article III of the Constitution (AMIU-CON-001) makes binding on every person acting in the University's name. Section 3.3 below sets out each in full.*
 
 ::: {custom-style="SectionKicker"}
-SECTION 3 &#183; 3.3
+Section 3 &#183; 3.3
 :::
 
 ## 3.3 The ISLAMIC Framework — Detailed
@@ -381,7 +381,7 @@ SECTION 3 &#183; 3.3
 **C — Calling.** AMIU is committed to the noble mission of da'wah — calling to Allah with wisdom, beauty, and mercy. Through its graduates, publications, and outreach programs, the University spreads the message of Islam with compassion, excellence, and profound respect for all humanity.
 
 ::: {custom-style="SectionKicker"}
-SECTION 3 &#183; 3.4
+Section 3 &#183; 3.4
 :::
 
 ## 3.4 The ISLAMIC Pledge
@@ -423,17 +423,17 @@ SECTION 3 &#183; 3.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 4 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 4 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>04</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Governance Hierarchy &amp; Roles</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 4.1–4.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 4.1–4.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Senate teaches and the Administration executes — parallel authorities, not a chain of command.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>4.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>The Governance Hierarchy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -451,7 +451,7 @@ SECTION 3 &#183; 3.4
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 4 &#183; 4.1
+Section 4 &#183; 4.1
 :::
 
 ## 4.1 The Governance Hierarchy
@@ -468,7 +468,7 @@ The University operates under a clear governance hierarchy, reflecting the stand
 *Note: the Senate and the Administration are placed at the same Tier 3 deliberately. Both report through the President as Tier 2, but neither is subordinate to the other — Section 4.2's non-interference principle and Exhibit G1's diagram both establish them as parallel, co-equal bodies, not a fourth link in a single chain.*
 
 ::: {custom-style="SectionKicker"}
-SECTION 4 &#183; 4.2
+Section 4 &#183; 4.2
 :::
 
 ## 4.2 The Board-Senate Relationship
@@ -483,7 +483,7 @@ The Board and Senate maintain a relationship of mutual respect and separation of
 | The President as Link | The President ensures the Board's vision and the Senate's standards are executed efficiently. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 4 &#183; 4.3
+Section 4 &#183; 4.3
 :::
 
 ## 4.3 Senate Authority — Defined
@@ -501,7 +501,7 @@ SECTION 4 &#183; 4.3
 | Non-Academic Budget | No authority — this is the Board's and Administration's responsibility. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 4 &#183; 4.4
+Section 4 &#183; 4.4
 :::
 
 ## 4.4 Governance Structure — Exhibit G1
@@ -533,17 +533,17 @@ The University's governance structure is presented in full in **Exhibit G1** (Go
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 5 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 5 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>05</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="48"/></w:rPr><w:t>Board of Trustees — Composition, Roles &amp; Requirements</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 5.1–5.6</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 5.1–5.6</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Five to nine Trustees, three-year terms, and fiduciary responsibility for the institution's long-term health.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>5.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role &amp; Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -565,7 +565,7 @@ The University's governance structure is presented in full in **Exhibit G1** (Go
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 5 &#183; 5.1
+Section 5 &#183; 5.1
 :::
 
 ## 5.1 Role & Authority
@@ -573,7 +573,7 @@ SECTION 5 &#183; 5.1
 The Board of Trustees is the supreme governing authority of Al-Mulk International University. It holds fiduciary responsibility for the institution's long-term health, strategic direction, and legal compliance.
 
 ::: {custom-style="SectionKicker"}
-SECTION 5 &#183; 5.2
+Section 5 &#183; 5.2
 :::
 
 ## 5.2 Composition
@@ -585,7 +585,7 @@ SECTION 5 &#183; 5.2
 | **Total** | **7-11** | |
 
 ::: {custom-style="SectionKicker"}
-SECTION 5 &#183; 5.3
+Section 5 &#183; 5.3
 :::
 
 ## 5.3 Chairperson of the Board
@@ -599,7 +599,7 @@ SECTION 5 &#183; 5.3
 | Succession | Vice-Chairperson assumes role in case of vacancy until election. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 5 &#183; 5.4
+Section 5 &#183; 5.4
 :::
 
 ## 5.4 Trustee Requirements
@@ -615,7 +615,7 @@ SECTION 5 &#183; 5.4
 | Attendance | Must attend at least 75% of Board meetings annually. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 5 &#183; 5.5
+Section 5 &#183; 5.5
 :::
 
 ## 5.5 Board of Trustees Key Responsibilities
@@ -631,7 +631,7 @@ SECTION 5 &#183; 5.5
 | Audit | Ensures proper financial audit and internal controls |
 
 ::: {custom-style="SectionKicker"}
-SECTION 5 &#183; 5.6
+Section 5 &#183; 5.6
 :::
 
 ## 5.6 Board of Trustees — Summary
@@ -669,17 +669,17 @@ SECTION 5 &#183; 5.6
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 6 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 6 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>06</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="56"/></w:rPr><w:t>President &amp; Vice-Chancellor — Role &amp; Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 6.1–6.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 6.1–6.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The single operational link between the Board's strategy and the Senate's standards.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>6.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role &amp; Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -695,7 +695,7 @@ SECTION 5 &#183; 5.6
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 6 &#183; 6.1
+Section 6 &#183; 6.1
 :::
 
 ## 6.1 Role & Authority
@@ -703,7 +703,7 @@ SECTION 6 &#183; 6.1
 The President & Vice-Chancellor is the chief executive officer of the University, responsible for the overall leadership, administration, and execution of the Board's strategic vision.
 
 ::: {custom-style="SectionKicker"}
-SECTION 6 &#183; 6.2
+Section 6 &#183; 6.2
 :::
 
 ## 6.2 President Requirements
@@ -719,7 +719,7 @@ SECTION 6 &#183; 6.2
 | Accountability | Reports to the Board of Trustees. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 6 &#183; 6.3
+Section 6 &#183; 6.3
 :::
 
 ## 6.3 President Key Responsibilities
@@ -757,17 +757,17 @@ SECTION 6 &#183; 6.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 7 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 7 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>07</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="56"/></w:rPr><w:t>University Senate — Composition, Rules &amp; Procedures</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 7.1–7.9</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 7.1–7.9</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Eighteen voting seats across four groups, meeting monthly, deciding by simple majority.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>7.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role &amp; Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -795,7 +795,7 @@ SECTION 6 &#183; 6.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.1
+Section 7 &#183; 7.1
 :::
 
 ## 7.1 Role & Authority
@@ -803,7 +803,7 @@ SECTION 7 &#183; 7.1
 The University Senate is the supreme academic authority of the University, responsible for all matters relating to curriculum, instruction, examinations, and the ratification of all degree programs.
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.2
+Section 7 &#183; 7.2
 :::
 
 ## 7.2 Senate Composition (18 Voting Seats)
@@ -847,7 +847,7 @@ SECTION 7 &#183; 7.2
 | 18 | Elected Faculty Representative | Elected by Faculty |
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.3
+Section 7 &#183; 7.3
 :::
 
 ## 7.3 Senate Member Requirements
@@ -862,7 +862,7 @@ SECTION 7 &#183; 7.3
 | Disqualification | Members who fail to meet attendance requirements may be removed by Senate resolution. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.4
+Section 7 &#183; 7.4
 :::
 
 ## 7.4 Senate Officers
@@ -874,7 +874,7 @@ SECTION 7 &#183; 7.4
 | Secretary | Deputy Vice-Chancellor, Administration & Finance | Appointed by President |
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.5
+Section 7 &#183; 7.5
 :::
 
 ## 7.5 Senate Key Responsibilities
@@ -888,7 +888,7 @@ SECTION 7 &#183; 7.5
 | Advice | Advises the President on academic matters |
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.6
+Section 7 &#183; 7.6
 :::
 
 ## 7.6 Senate Ex-Officio Members (Non-Voting)
@@ -900,7 +900,7 @@ SECTION 7 &#183; 7.6
 | Staff Representative | Appointed by Staff Council |
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.7
+Section 7 &#183; 7.7
 :::
 
 ## 7.7 Senate Meetings
@@ -916,7 +916,7 @@ SECTION 7 &#183; 7.7
 **7.7.5** Minutes of all meetings shall be maintained by the Secretary to the Senate.
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.8
+Section 7 &#183; 7.8
 :::
 
 ## 7.8 Quorum
@@ -926,7 +926,7 @@ SECTION 7 &#183; 7.8
 **7.8.2** Ex-officio and observer members do not count toward the quorum requirement.
 
 ::: {custom-style="SectionKicker"}
-SECTION 7 &#183; 7.9
+Section 7 &#183; 7.9
 :::
 
 ## 7.9 Voting Procedures
@@ -966,17 +966,17 @@ SECTION 7 &#183; 7.9
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 8 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 8 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>08</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Advisory &amp; Proposing Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 8.1–8.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 8.1–8.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Every stakeholder, from Trustee to student, has a defined channel to advise and to propose.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>8.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Purpose</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -992,7 +992,7 @@ SECTION 7 &#183; 7.9
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 8 &#183; 8.1
+Section 8 &#183; 8.1
 :::
 
 ## 8.1 Purpose
@@ -1000,7 +1000,7 @@ SECTION 8 &#183; 8.1
 The University operates on the principle that informed decisions require input from all stakeholders. This section establishes the advisory and proposing framework through which expertise is channeled to decision-making bodies.
 
 ::: {custom-style="SectionKicker"}
-SECTION 8 &#183; 8.2
+Section 8 &#183; 8.2
 :::
 
 ## 8.2 Advisory and Proposing Framework
@@ -1017,7 +1017,7 @@ SECTION 8 &#183; 8.2
 | Staff | Yes | Yes | To the Administration |
 
 ::: {custom-style="SectionKicker"}
-SECTION 8 &#183; 8.3
+Section 8 &#183; 8.3
 :::
 
 ## 8.3 The Governance Principle
@@ -1049,17 +1049,17 @@ SECTION 8 &#183; 8.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 9 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 9 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>09</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="48"/></w:rPr><w:t>Administration — Deputy Vice-Chancellors, Deans &amp; Directors</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 9.1–9.7</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 9.1–9.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Two Deputy Vice-Chancellors, six College Deans, and ten functional Directors execute the University's daily operations.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>9.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>DVC, Academic Affairs</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1083,7 +1083,7 @@ SECTION 8 &#183; 8.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.1
+Section 9 &#183; 9.1
 :::
 
 ## 9.1 Deputy Vice-Chancellor, Academic Affairs
@@ -1098,7 +1098,7 @@ SECTION 9 &#183; 9.1
 | Reports To | President & Vice-Chancellor |
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.2
+Section 9 &#183; 9.2
 :::
 
 ## 9.2 Deputy Vice-Chancellor, Administration & Finance
@@ -1113,7 +1113,7 @@ SECTION 9 &#183; 9.2
 | Reports To | President & Vice-Chancellor |
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.3
+Section 9 &#183; 9.3
 :::
 
 ## 9.3 College Deans
@@ -1141,7 +1141,7 @@ SECTION 9 &#183; 9.3
 | 6 | College of Islamic Finance, Economics & Waqf Administration | To be appointed |
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.4
+Section 9 &#183; 9.4
 :::
 
 ## 9.4 University Registrar
@@ -1156,7 +1156,7 @@ SECTION 9 &#183; 9.4
 | Reports To | Deputy Vice-Chancellor, Academic Affairs |
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.5
+Section 9 &#183; 9.5
 :::
 
 ## 9.5 Dean of Students
@@ -1171,7 +1171,7 @@ SECTION 9 &#183; 9.5
 | Reports To | Deputy Vice-Chancellor, Academic Affairs |
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.6
+Section 9 &#183; 9.6
 :::
 
 ## 9.6 Directors (Functional Areas)
@@ -1190,7 +1190,7 @@ SECTION 9 &#183; 9.6
 | 10 | Director of Internal Audit & Risk | Board of Trustees, functionally |
 
 ::: {custom-style="SectionKicker"}
-SECTION 9 &#183; 9.7
+Section 9 &#183; 9.7
 :::
 
 ## 9.7 Summary Table — All Key Roles
@@ -1232,17 +1232,17 @@ SECTION 9 &#183; 9.7
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 10 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 10 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>10</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Online &amp; Distance Learning Governance</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 10.1–10.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 10.1–10.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The University's primary mode of delivery, governed as a first-class discipline, not an afterthought.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>10.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Purpose</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1260,7 +1260,7 @@ SECTION 9 &#183; 9.7
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 10 &#183; 10.1
+Section 10 &#183; 10.1
 :::
 
 ## 10.1 Purpose
@@ -1268,7 +1268,7 @@ SECTION 10 &#183; 10.1
 This section establishes the governance framework for the University's primary mode of delivery: online and distance learning.
 
 ::: {custom-style="SectionKicker"}
-SECTION 10 &#183; 10.2
+Section 10 &#183; 10.2
 :::
 
 ## 10.2 Technology Governance
@@ -1282,7 +1282,7 @@ SECTION 10 &#183; 10.2
 **10.2.4** The University shall provide technology support to students and faculty.
 
 ::: {custom-style="SectionKicker"}
-SECTION 10 &#183; 10.3
+Section 10 &#183; 10.3
 :::
 
 ## 10.3 Virtual Governance Provisions
@@ -1300,7 +1300,7 @@ SECTION 10 &#183; 10.3
 **10.3.6** All participants in virtual meetings must have their cameras on unless excused for exceptional circumstances.
 
 ::: {custom-style="SectionKicker"}
-SECTION 10 &#183; 10.4
+Section 10 &#183; 10.4
 :::
 
 ## 10.4 Global Accessibility
@@ -1338,17 +1338,17 @@ SECTION 10 &#183; 10.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 11 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 11 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>11</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Phased Institutional Growth Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 11.1–11.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 11.1–11.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Fifteen institutional units at launch, forty-eight a decade later — growth that is triggered, not guessed at.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>11.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Overview</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1366,7 +1366,7 @@ SECTION 10 &#183; 10.4
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 11 &#183; 11.1
+Section 11 &#183; 11.1
 :::
 
 ## 11.1 Overview
@@ -1383,7 +1383,7 @@ AMIU's institutional structure grows strategically over ten years in proportion 
 | Full | 10 | 11,021 | 29 | 19 | 48 | 150-200 |
 
 ::: {custom-style="SectionKicker"}
-SECTION 11 &#183; 11.2
+Section 11 &#183; 11.2
 :::
 
 ## 11.2 Office Growth Projection
@@ -1398,7 +1398,7 @@ SECTION 11 &#183; 11.2
 | **TOTAL OFFICES** | **10** | **16** | **22** | **29** |
 
 ::: {custom-style="SectionKicker"}
-SECTION 11 &#183; 11.3
+Section 11 &#183; 11.3
 :::
 
 ## 11.3 Committee Growth Projection
@@ -1411,7 +1411,7 @@ SECTION 11 &#183; 11.3
 | **TOTAL COMMITTEES** | **5** | **9** | **14** | **19** |
 
 ::: {custom-style="SectionKicker"}
-SECTION 11 &#183; 11.4
+Section 11 &#183; 11.4
 :::
 
 ## 11.4 Growth Triggers
@@ -1451,17 +1451,17 @@ The Senate shall review institutional structure annually and recommend adjustmen
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 12 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 12 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>12</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Year 1 — Core Institutional Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 12.1–12.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 12.1–12.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Ten offices, five committees, and 347 students — the lean structure the University actually launches with.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>12.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Overview</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1477,7 +1477,7 @@ The Senate shall review institutional structure annually and recommend adjustmen
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 12 &#183; 12.1
+Section 12 &#183; 12.1
 :::
 
 ## 12.1 Overview
@@ -1493,7 +1493,7 @@ SECTION 12 &#183; 12.1
 | Rationale | Lean structure focused on essential operations only |
 
 ::: {custom-style="SectionKicker"}
-SECTION 12 &#183; 12.2
+Section 12 &#183; 12.2
 :::
 
 ## 12.2 Year 1 Offices (10 Offices)
@@ -1514,7 +1514,7 @@ SECTION 12 &#183; 12.2
 *Total: 10 Offices*
 
 ::: {custom-style="SectionKicker"}
-SECTION 12 &#183; 12.3
+Section 12 &#183; 12.3
 :::
 
 ## 12.3 Year 1 Committees (5 Committees)
@@ -1554,17 +1554,17 @@ SECTION 12 &#183; 12.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 13 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 13 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>13</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="56"/></w:rPr><w:t>Year 3 — Expanded Institutional Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 13.1–13.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 13.1–13.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Sixteen offices and nine committees, expanded to match 1,606 students and the University's first two colleges.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>13.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Overview</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1580,7 +1580,7 @@ SECTION 12 &#183; 12.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 13 &#183; 13.1
+Section 13 &#183; 13.1
 :::
 
 ## 13.1 Overview
@@ -1595,7 +1595,7 @@ SECTION 13 &#183; 13.1
 | Total Units | 25 |
 
 ::: {custom-style="SectionKicker"}
-SECTION 13 &#183; 13.2
+Section 13 &#183; 13.2
 :::
 
 ## 13.2 Year 3 Offices (16 Offices)
@@ -1614,7 +1614,7 @@ SECTION 13 &#183; 13.2
 *Total: 16 Offices*
 
 ::: {custom-style="SectionKicker"}
-SECTION 13 &#183; 13.3
+Section 13 &#183; 13.3
 :::
 
 ## 13.3 Year 3 Committees (9 Committees)
@@ -1655,17 +1655,17 @@ SECTION 13 &#183; 13.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 14 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 14 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>14</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="56"/></w:rPr><w:t>Year 5 — Mature Institutional Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 14.1–14.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 14.1–14.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;All six colleges seated, 3,493 students enrolled, and international operations formally established.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>14.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Overview</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1681,7 +1681,7 @@ SECTION 13 &#183; 13.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 14 &#183; 14.1
+Section 14 &#183; 14.1
 :::
 
 ## 14.1 Overview
@@ -1696,7 +1696,7 @@ SECTION 14 &#183; 14.1
 | Total Units | 36 |
 
 ::: {custom-style="SectionKicker"}
-SECTION 14 &#183; 14.2
+Section 14 &#183; 14.2
 :::
 
 ## 14.2 Year 5 Offices (22 Offices)
@@ -1715,7 +1715,7 @@ SECTION 14 &#183; 14.2
 *Total: 22 Offices*
 
 ::: {custom-style="SectionKicker"}
-SECTION 14 &#183; 14.3
+Section 14 &#183; 14.3
 :::
 
 ## 14.3 Year 5 Committees (14 Committees)
@@ -1757,17 +1757,17 @@ SECTION 14 &#183; 14.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 15 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 15 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>15</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Year 10 — Full Institutional Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 15.1–15.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 15.1–15.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Twenty-nine offices, nineteen committees, 11,021 students — the full institutional structure this Compendium plans toward.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>15.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Overview</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1783,7 +1783,7 @@ SECTION 14 &#183; 14.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 15 &#183; 15.1
+Section 15 &#183; 15.1
 :::
 
 ## 15.1 Overview
@@ -1798,7 +1798,7 @@ SECTION 15 &#183; 15.1
 | Total Units | 48 |
 
 ::: {custom-style="SectionKicker"}
-SECTION 15 &#183; 15.2
+Section 15 &#183; 15.2
 :::
 
 ## 15.2 Year 10 Offices (29 Offices)
@@ -1818,7 +1818,7 @@ SECTION 15 &#183; 15.2
 *Total: 29 Offices*
 
 ::: {custom-style="SectionKicker"}
-SECTION 15 &#183; 15.3
+Section 15 &#183; 15.3
 :::
 
 ## 15.3 Year 10 Committees (19 Committees)
@@ -1860,17 +1860,17 @@ SECTION 15 &#183; 15.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 16 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 16 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>16</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Compensation Philosophy &amp; Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 16.1–16.8</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 16.1–16.8</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Compensation as service to the Ummah, not a market wage — and growing only as revenue grows.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>16.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Purpose</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1896,7 +1896,7 @@ SECTION 15 &#183; 15.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.1
+Section 16 &#183; 16.1
 :::
 
 ## 16.1 Purpose
@@ -1904,7 +1904,7 @@ SECTION 16 &#183; 16.1
 This section establishes the guiding principles for compensation, incentives, and awards at Al-Mulk International University. It reflects the University's commitment to mission-driven service while ensuring fair and sustainable compensation for all contributors.
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.2
+Section 16 &#183; 16.2
 :::
 
 ## 16.2 Guiding Principles
@@ -1918,7 +1918,7 @@ SECTION 16 &#183; 16.2
 | 5. Recognition | Incentives and awards recognize exceptional contributions. |
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.3
+Section 16 &#183; 16.3
 :::
 
 ## 16.3 Compensation Components
@@ -1935,7 +1935,7 @@ Compensation at AMIU consists of the following components:
 | Promotions | Advancement through academic ranks |
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.4
+Section 16 &#183; 16.4
 :::
 
 ## 16.4 Revenue Allocation for Compensation
@@ -1951,7 +1951,7 @@ SECTION 16 &#183; 16.4
 *Note: Compensation may be supplemented by revenue from the Independent Commercial Engine (AMIU Global Services LLC) at the discretion of the Board, subject to governance approval.*
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.5
+Section 16 &#183; 16.5
 :::
 
 ## 16.5 Compensation Philosophy
@@ -1968,7 +1968,7 @@ SECTION 16 &#183; 16.5
 | Growth-Linked | Compensation increases with institutional revenue |
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.6
+Section 16 &#183; 16.6
 :::
 
 ## 16.6 Incentive & Award Framework
@@ -1981,7 +1981,7 @@ SECTION 16 &#183; 16.6
 | Promotion Awards | Recognition of advancement through ranks | As Needed |
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.7
+Section 16 &#183; 16.7
 :::
 
 ## 16.7 Governance Oversight
@@ -1993,7 +1993,7 @@ SECTION 16 &#183; 16.7
 | Deputy Vice-Chancellor, Administration & Finance | Oversees implementation |
 
 ::: {custom-style="SectionKicker"}
-SECTION 16 &#183; 16.8
+Section 16 &#183; 16.8
 :::
 
 ## 16.8 Annual Review
@@ -2025,17 +2025,17 @@ Compensation structures shall be reviewed annually by the Deputy Vice-Chancellor
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 17 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 17 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>17</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Complete Document Inventory</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTION 17.1</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsection 17.1</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;One hundred and seven documents, each with a category, a priority, a status, and a named steward.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>17.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>All 107 Documents at a Glance</w:t></w:r></w:p>
     </w:tc>
@@ -2047,7 +2047,7 @@ Compensation structures shall be reviewed annually by the Deputy Vice-Chancellor
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 17 &#183; 17.1
+Section 17 &#183; 17.1
 :::
 
 ## 17.1 All 107 Documents at a Glance
@@ -2189,17 +2189,17 @@ SECTION 17 &#183; 17.1
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 18 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 18 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>18</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Document Registry by Category</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 18.1–18.7</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 18.1–18.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The same 107 documents, regrouped into the seven handbook categories the Senate has approved.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>18.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Governance Handbook (11)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2222,7 +2222,7 @@ SECTION 17 &#183; 17.1
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.1
+Section 18 &#183; 18.1
 :::
 
 ## 18.1 Governance Handbook (11 Documents)
@@ -2242,7 +2242,7 @@ SECTION 18 &#183; 18.1
 | 11 | GOV-011 | Whistleblower Policy | Important | Chair, Audit & Risk Committee |
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.2
+Section 18 &#183; 18.2
 :::
 
 ## 18.2 Academic Handbook (19 Documents)
@@ -2270,7 +2270,7 @@ SECTION 18 &#183; 18.2
 | 30 | ACA-019 | Virtual Faculty & Student Support Policy | Important | DVC, Academic Affairs |
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.3
+Section 18 &#183; 18.3
 :::
 
 ## 18.3 Student Handbook (23 Documents)
@@ -2302,7 +2302,7 @@ SECTION 18 &#183; 18.3
 | 53 | STU-023 | Comprehensive Disciplinary & Negative Reinforcement Policy | Critical | Dean of Students |
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.4
+Section 18 &#183; 18.4
 :::
 
 ## 18.4 Operations Handbook (27 Documents)
@@ -2338,7 +2338,7 @@ SECTION 18 &#183; 18.4
 | 80 | OPS-027 | Social Media & Student Communication Policy | Important | Director, Communications |
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.5
+Section 18 &#183; 18.5
 :::
 
 ## 18.5 Legal & Compliance Handbook (11 Documents)
@@ -2358,7 +2358,7 @@ SECTION 18 &#183; 18.5
 | 91 | LEG-011 | International Student Support Policy | Important | Dean of Students |
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.6
+Section 18 &#183; 18.6
 :::
 
 ## 18.6 Marketing & Communications Handbook (7 Documents)
@@ -2374,7 +2374,7 @@ SECTION 18 &#183; 18.6
 | 98 | MKT-007 | Marketing Plan | Critical | Director, Communications |
 
 ::: {custom-style="SectionKicker"}
-SECTION 18 &#183; 18.7
+Section 18 &#183; 18.7
 :::
 
 ## 18.7 Waqf & Research Handbook (9 Documents)
@@ -2416,17 +2416,17 @@ SECTION 18 &#183; 18.7
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 19 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 19 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>19</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Priority Ranking &amp; Development Urgency</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 19.1–19.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 19.1–19.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Forty-nine Critical, fifty-three Important, five already Complete — recomputed directly from the registry.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>19.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Priority Definitions</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2442,7 +2442,7 @@ SECTION 18 &#183; 18.7
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 19 &#183; 19.1
+Section 19 &#183; 19.1
 :::
 
 ## 19.1 Priority Definitions
@@ -2454,7 +2454,7 @@ SECTION 19 &#183; 19.1
 | Complete | Already developed and approved | Done |
 
 ::: {custom-style="SectionKicker"}
-SECTION 19 &#183; 19.2
+Section 19 &#183; 19.2
 :::
 
 ## 19.2 Summary by Priority
@@ -2469,7 +2469,7 @@ SECTION 19 &#183; 19.2
 | **TOTAL** | **107** | **100.0%** |
 
 ::: {custom-style="SectionKicker"}
-SECTION 19 &#183; 19.3
+Section 19 &#183; 19.3
 :::
 
 ## 19.3 Pre-Launch Essentials (9 Documents)
@@ -2511,17 +2511,17 @@ SECTION 19 &#183; 19.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 20 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 20 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>20</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Responsibility Assignment Matrix</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 20.1–20.7</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 20.1–20.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;For every document: who stewards it, who implements it, and who has final authority to approve it.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>20.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Governance Documents</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2544,7 +2544,7 @@ SECTION 19 &#183; 19.3
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.1
+Section 20 &#183; 20.1
 :::
 
 ## 20.1 Governance Documents
@@ -2564,7 +2564,7 @@ SECTION 20 &#183; 20.1
 | 11 | GOV-011 | Whistleblower Policy | Chair, Audit & Risk Committee | Office of Internal Audit | Board of Trustees |
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.2
+Section 20 &#183; 20.2
 :::
 
 ## 20.2 Academic Documents
@@ -2592,7 +2592,7 @@ SECTION 20 &#183; 20.2
 | 30 | ACA-019 | Virtual Faculty & Student Support Policy | DVC, Academic Affairs | Office of Student Affairs | University Senate |
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.3
+Section 20 &#183; 20.3
 :::
 
 ## 20.3 Student Documents
@@ -2624,7 +2624,7 @@ SECTION 20 &#183; 20.3
 | 53 | STU-023 | Comprehensive Disciplinary & Negative Reinforcement Policy | Dean of Students | Office of Student Affairs | University Senate |
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.4
+Section 20 &#183; 20.4
 :::
 
 ## 20.4 Operations Documents
@@ -2660,7 +2660,7 @@ SECTION 20 &#183; 20.4
 | 80 | OPS-027 | Social Media & Student Communication Policy | Director, Communications | Office of Communications | DVC, Academic Affairs |
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.5
+Section 20 &#183; 20.5
 :::
 
 ## 20.5 Legal & Compliance Documents
@@ -2680,7 +2680,7 @@ SECTION 20 &#183; 20.5
 | 91 | LEG-011 | International Student Support Policy | Dean of Students | Office of Student Affairs | University Senate |
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.6
+Section 20 &#183; 20.6
 :::
 
 ## 20.6 Marketing & Communications Documents
@@ -2696,7 +2696,7 @@ SECTION 20 &#183; 20.6
 | 98 | MKT-007 | Marketing Plan | Director, Communications | Office of Communications | DVC, Academic Affairs |
 
 ::: {custom-style="SectionKicker"}
-SECTION 20 &#183; 20.7
+Section 20 &#183; 20.7
 :::
 
 ## 20.7 Waqf & Research Documents
@@ -2738,17 +2738,17 @@ SECTION 20 &#183; 20.7
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 21 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 21 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>21</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="88"/></w:rPr><w:t>Cross-Reference Matrix</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 21.1–21.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 21.1–21.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Which documents depend on which — so no policy is drafted before its own foundation exists.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>21.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Document Dependencies</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2762,7 +2762,7 @@ SECTION 20 &#183; 20.7
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 21 &#183; 21.1
+Section 21 &#183; 21.1
 :::
 
 ## 21.1 Document Dependencies
@@ -2780,7 +2780,7 @@ SECTION 21 &#183; 21.1
 | Waqf Charter (WAQ-001) | Bylaws | Donor Stewardship |
 
 ::: {custom-style="SectionKicker"}
-SECTION 21 &#183; 21.2
+Section 21 &#183; 21.2
 :::
 
 ## 21.2 Dependency Levels
@@ -2868,17 +2868,17 @@ SECTION 21 &#183; 21.2
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 22 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 22 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>22</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="88"/></w:rPr><w:t>Implementation Roadmap</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 22.1–22.5</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 22.1–22.5</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Nine documents before launch, 102 more across three phases that follow — every document scheduled exactly once.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>22.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Phased Development Schedule</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2898,7 +2898,7 @@ SECTION 21 &#183; 21.2
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 22 &#183; 22.1
+Section 22 &#183; 22.1
 :::
 
 ## 22.1 Phased Development Schedule
@@ -2914,7 +2914,7 @@ SECTION 22 &#183; 22.1
 | **TOTAL requiring development** | | **102** | **18-24 Months** |
 
 ::: {custom-style="SectionKicker"}
-SECTION 22 &#183; 22.2
+Section 22 &#183; 22.2
 :::
 
 ## 22.2 Phase 1: Pre-Launch Essentials (9 Documents)
@@ -2932,7 +2932,7 @@ SECTION 22 &#183; 22.2
 | 58 | Tuition Collection & Refund Policy | DVC, Administration & Finance | Week 4-6 |
 
 ::: {custom-style="SectionKicker"}
-SECTION 22 &#183; 22.3
+Section 22 &#183; 22.3
 :::
 
 ## 22.3 Phase 2: Year 1 Critical Documents (40 Documents)
@@ -2940,7 +2940,7 @@ SECTION 22 &#183; 22.3
 Document numbers: 2, 7, 9, 13-18, 26-29, 32, 37-38, 44-46, 52-53, 59, 61, 76-77, 81-84, 86-89, 92-93, 98-101, 106 (every Critical-priority document not already scheduled in Phase 1). Timeline: Months 2-5.
 
 ::: {custom-style="SectionKicker"}
-SECTION 22 &#183; 22.4
+Section 22 &#183; 22.4
 :::
 
 ## 22.4 Phase 3: Year 2 Important Documents (46 Documents)
@@ -2948,7 +2948,7 @@ SECTION 22 &#183; 22.4
 Document numbers: 6, 8, 11, 19-25, 30, 33-35, 39-43, 47-51, 56-57, 62-66, 68, 78-80, 85, 90-91, 94-97, 102-104, 107 (every Important-priority document not deferred to Phase 4). Timeline: Months 6-10.
 
 ::: {custom-style="SectionKicker"}
-SECTION 22 &#183; 22.5
+Section 22 &#183; 22.5
 :::
 
 ## 22.5 Phase 4: Year 3+ Documents (7 Documents)
@@ -2988,17 +2988,17 @@ SECTION 22 &#183; 22.5
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 23 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 23 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="72"/></w:rPr><w:t>Senate Resolution &amp; Endorsement</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SUBSECTIONS 23.1–23.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 23.1–23.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Resolution 2028-001: the University Senate's formal endorsement of this Compendium as governing framework.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>23.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Senate Resolution</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -3016,7 +3016,7 @@ SECTION 22 &#183; 22.5
 
 
 ::: {custom-style="SectionKicker"}
-SECTION 23 &#183; 23.1
+Section 23 &#183; 23.1
 :::
 
 ## 23.1 Senate Resolution
@@ -3048,7 +3048,7 @@ Moved By: ______________________ &nbsp;&nbsp;&nbsp; Seconded By: _______________
 **5.** Requires that the Compendium be reviewed annually by the Senate.
 
 ::: {custom-style="SectionKicker"}
-SECTION 23 &#183; 23.2
+Section 23 &#183; 23.2
 :::
 
 ## 23.2 Approval Signatures
@@ -3064,7 +3064,7 @@ SECTION 23 &#183; 23.2
 | University Registrar | ______________________ | ______________________ | _________ |
 
 ::: {custom-style="SectionKicker"}
-SECTION 23 &#183; 23.3
+Section 23 &#183; 23.3
 :::
 
 ## 23.3 Document Control
@@ -3081,7 +3081,7 @@ SECTION 23 &#183; 23.3
 | Approved By | University Senate |
 
 ::: {custom-style="SectionKicker"}
-SECTION 23 &#183; 23.4
+Section 23 &#183; 23.4
 :::
 
 ## 23.4 Amendment Record
@@ -3118,17 +3118,17 @@ SECTION 23 &#183; 23.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 24 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 24 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>24</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="88"/></w:rPr><w:t>Glossary of Terms</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>NO SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>No subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Eleven terms, defined once, used consistently across every AMIU governing publication.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -3176,17 +3176,17 @@ SECTION 23 &#183; 23.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>SECTION 25 OF 25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Section 25 of 25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="88"/></w:rPr><w:t>List of Acronyms</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>NO SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>No subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Fifteen acronyms, spelled out once, so no reader is ever left guessing.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SUBSECTIONS</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>

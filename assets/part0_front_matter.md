@@ -21,13 +21,13 @@
         <w:vAlign w:val="center"/>
       </w:tcPr>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/><w:spacing w:val="30"/></w:rPr><w:t>SUPREME STRATEGIC PLANNING COUNCIL · FOUNDING-DECADE EDITION</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="16"/></w:rPr><w:t>Supreme Strategic Planning Council &#183; Founding-Decade Edition</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:b/><w:color w:val="B08625"/><w:sz w:val="24"/><w:spacing w:val="20"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:b/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="26"/><w:spacing w:val="12"/></w:rPr><w:t>Al-Mulk International University</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="DCE3F0"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>STRATEGIC IMPLEMENTATION</w:t></w:r></w:p>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="DCE3F0"/><w:sz w:val="21"/><w:spacing w:val="10"/></w:rPr><w:t>Strategic Implementation</w:t></w:r></w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="200"/><w:pBdr><w:top w:val="single" w:sz="4" w:space="20" w:color="B08625"/><w:bottom w:val="single" w:sz="4" w:space="20" w:color="B08625"/></w:pBdr></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:b/><w:color w:val="FFFFFF"/><w:sz w:val="76"/></w:rPr><w:t>BLUEPRINT</w:t></w:r></w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="60"/></w:pPr>
@@ -36,10 +36,10 @@
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="19"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t xml:space="preserve">DOCUMENT REFERENCE  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:b/><w:color w:val="B08625"/><w:sz w:val="16"/></w:rPr><w:t>AMIU-SB-002</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="17"/></w:rPr><w:t xml:space="preserve">Document Reference  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:b/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="17"/></w:rPr><w:t>AMIU-SB-002</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>edu.amiu.com  ·  Texas-Domiciled, Religiously Exempt  ·  Incorporated 6 December 2027</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>edu.amiu.com  ·  Texas-Domiciled, Religiously Exempt  ·  Incorporated 6 December 2027</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>
@@ -492,7 +492,7 @@ This document is organized in eight parts — Governance & Institutional Foundat
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="FFFFFF"/><w:sz w:val="34"/></w:rPr><w:t>Financial capacity shall never be a barrier to knowledge.</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>AMIU MISSION PRINCIPLE · AMIU-MP-001 § 3</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="10"/></w:rPr><w:t>AMIU Mission Principle · AMIU-MP-001 § 3</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>

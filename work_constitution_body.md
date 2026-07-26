@@ -19,17 +19,17 @@
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 1 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 1 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>I</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Definitions</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 1.1–1.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 1.1–1.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Forty-six terms, defined once, binding everywhere this Constitution uses them.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>1.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>General Definitions</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -42,7 +42,7 @@
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE I &#183; SECTION 1.1
+Article I &#183; Section 1.1
 :::
 
 ## 1.1 General Definitions
@@ -142,7 +142,7 @@ In this Constitution, unless the context otherwise requires:
 **1.1.46** "Fabrication" means the falsification or invention of data, citations, or other information in academic work.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE I &#183; SECTION 1.2
+Article I &#183; Section 1.2
 :::
 
 ## 1.2 Interpretation
@@ -184,17 +184,17 @@ ARTICLE I &#183; SECTION 1.2
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 2 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 2 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>II</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Legal Identity</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 2.1–2.7</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 2.1–2.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A Texas-domiciled 501(c)(3) religious educational corporation, incorporated 6 December 2027 — one name, one seal, one governing law.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>2.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Name</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -217,7 +217,7 @@ ARTICLE I &#183; SECTION 1.2
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.1
+Article II &#183; Section 2.1
 :::
 
 ## 2.1 Name
@@ -235,7 +235,7 @@ ARTICLE II &#183; SECTION 2.1
 **2.1.6** The University shall register and protect its name and trademarks in all jurisdictions where it operates.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.2
+Article II &#183; Section 2.2
 :::
 
 ## 2.2 Legal Status
@@ -255,7 +255,7 @@ ARTICLE II &#183; SECTION 2.2
 **2.2.7** The University shall comply with all applicable federal, state, and local laws.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.3
+Article II &#183; Section 2.3
 :::
 
 ## 2.3 Legal Domicile
@@ -273,7 +273,7 @@ ARTICLE II &#183; SECTION 2.3
 **2.3.6** The University shall maintain compliance with the laws of all jurisdictions where it operates.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.4
+Article II &#183; Section 2.4
 :::
 
 ## 2.4 Date of Establishment
@@ -287,7 +287,7 @@ ARTICLE II &#183; SECTION 2.4
 **2.4.4** The University's fiscal year shall begin on 1 January and end on 31 December.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.5
+Article II &#183; Section 2.5
 :::
 
 ## 2.5 Official Seal
@@ -305,7 +305,7 @@ ARTICLE II &#183; SECTION 2.5
 **2.5.6** The seal shall be reproduced only in accordance with approved specifications.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.6
+Article II &#183; Section 2.6
 :::
 
 ## 2.6 Powers of the University
@@ -328,7 +328,7 @@ ARTICLE II &#183; SECTION 2.6
 **2.6.4** The University shall exercise its powers in accordance with its Islamic mission and values.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE II &#183; SECTION 2.7
+Article II &#183; Section 2.7
 :::
 
 ## 2.7 Governing Law
@@ -360,17 +360,17 @@ ARTICLE II &#183; SECTION 2.7
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 3 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 3 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>III</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Mission, Vision and Values</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 3.1–3.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 3.1–3.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;To spread Islamic education worldwide at the minimum possible cost — governed by the ISLAMIC framework in every decision this Constitution authorizes.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>3.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Mission</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -387,7 +387,7 @@ ARTICLE II &#183; SECTION 2.7
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE III &#183; SECTION 3.1
+Article III &#183; Section 3.1
 :::
 
 ## 3.1 Mission
@@ -405,7 +405,7 @@ ARTICLE III &#183; SECTION 3.1
 **3.1.5** The Board shall ensure that all institutional activities are consistent with the mission.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE III &#183; SECTION 3.2
+Article III &#183; Section 3.2
 :::
 
 ## 3.2 Vision
@@ -419,7 +419,7 @@ ARTICLE III &#183; SECTION 3.2
 **3.2.3** The vision shall be reviewed and reaffirmed every five years.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE III &#183; SECTION 3.3
+Article III &#183; Section 3.3
 :::
 
 ## 3.3 Values
@@ -443,7 +443,7 @@ ARTICLE III &#183; SECTION 3.3
 **3.3.4** The University shall promote these values in all its activities.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE III &#183; SECTION 3.4
+Article III &#183; Section 3.4
 :::
 
 ## 3.4 Tagline
@@ -475,17 +475,17 @@ ARTICLE III &#183; SECTION 3.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 4 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 4 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>IV</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Interpretation</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 4.1–4.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 4.1–4.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Who resolves an ambiguity, how a dispute is settled, and what survives if a single provision falls.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>4.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Interpretation Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -500,7 +500,7 @@ ARTICLE III &#183; SECTION 3.4
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IV &#183; SECTION 4.1
+Article IV &#183; Section 4.1
 :::
 
 ## 4.1 Interpretation Authority
@@ -520,7 +520,7 @@ ARTICLE IV &#183; SECTION 4.1
 **4.1.7** The Board shall respond to interpretation requests within thirty days.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IV &#183; SECTION 4.2
+Article IV &#183; Section 4.2
 :::
 
 ## 4.2 Dispute Resolution
@@ -538,7 +538,7 @@ ARTICLE IV &#183; SECTION 4.2
 **4.2.4** All dispute resolution proceedings shall be documented and maintained in the official records.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IV &#183; SECTION 4.3
+Article IV &#183; Section 4.3
 :::
 
 ## 4.3 Severability
@@ -570,17 +570,17 @@ ARTICLE IV &#183; SECTION 4.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 5 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 5 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>V</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Governance Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 5.1–5.5</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 5.1–5.5</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A bicameral architecture — Board and Senate, co-equal in their own domains, meeting at a single operational link.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>5.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Governance Hierarchy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -599,7 +599,7 @@ ARTICLE IV &#183; SECTION 4.3
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE V &#183; SECTION 5.1
+Article V &#183; Section 5.1
 :::
 
 ## 5.1 Governance Hierarchy
@@ -620,7 +620,7 @@ ARTICLE V &#183; SECTION 5.1
 **5.1.4** No person shall exercise authority outside their designated governance role.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE V &#183; SECTION 5.2
+Article V &#183; Section 5.2
 :::
 
 ## 5.2 Bicameral Governance
@@ -644,7 +644,7 @@ ARTICLE V &#183; SECTION 5.2
 **5.2.9** The joint meeting shall be chaired by the Chairperson of the Board.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE V &#183; SECTION 5.3
+Article V &#183; Section 5.3
 :::
 
 ## 5.3 Separation of Powers
@@ -670,7 +670,7 @@ ARTICLE V &#183; SECTION 5.3
 **5.3.4** No person shall exercise authority outside the scope of their designated governance role.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE V &#183; SECTION 5.4
+Article V &#183; Section 5.4
 :::
 
 ## 5.4 Non-Delegation
@@ -688,7 +688,7 @@ ARTICLE V &#183; SECTION 5.4
 **5.4.6** Delegation shall be documented in writing.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE V &#183; SECTION 5.5
+Article V &#183; Section 5.5
 :::
 
 ## 5.5 Conflict Resolution between Governance Bodies
@@ -725,17 +725,17 @@ ARTICLE V &#183; SECTION 5.5
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 6 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 6 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>VI</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Board of Trustees</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 6.1–6.9</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 6.1–6.9</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Seven to eleven external Trustees, fiduciary stewards of the University’s long-term health, bound by a defined process before any one of them can be removed.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>6.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role and Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -762,7 +762,7 @@ ARTICLE V &#183; SECTION 5.5
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.1
+Article VI &#183; Section 6.1
 :::
 
 ## 6.1 Role and Authority
@@ -780,7 +780,7 @@ ARTICLE VI &#183; SECTION 6.1
 **6.1.6** The Board shall serve as the final appellate body for all University decisions.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.2
+Article VI &#183; Section 6.2
 :::
 
 ## 6.2 Composition
@@ -809,7 +809,7 @@ ARTICLE VI &#183; SECTION 6.2
 **6.2.8** At least one Trustee shall have expertise in Islamic affairs.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.3
+Article VI &#183; Section 6.3
 :::
 
 ## 6.3 Trustee Qualifications and Appointment
@@ -882,7 +882,7 @@ ARTICLE VI &#183; SECTION 6.3
 (d) Failure to adhere to the University's Islamic mission and values.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.4
+Article VI &#183; Section 6.4
 :::
 
 ## 6.4 Removal from Office
@@ -914,7 +914,7 @@ ARTICLE VI &#183; SECTION 6.4
 *This is the single defined process for removing a Trustee for cause; Section 6.3.4.2's Board-action disqualification for the same categories of cause is carried out through this process, not through a separate undefined mechanism.*
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.5
+Article VI &#183; Section 6.5
 :::
 
 ## 6.5 Chairperson
@@ -936,7 +936,7 @@ ARTICLE VI &#183; SECTION 6.5
 **6.5.5** In the event of a vacancy in the Chairperson position, the Board shall elect a new Chairperson within thirty days.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.6
+Article VI &#183; Section 6.6
 :::
 
 ## 6.6 Meetings
@@ -966,7 +966,7 @@ ARTICLE VI &#183; SECTION 6.6
 **6.6.12** Minutes shall be approved at the next meeting.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.7
+Article VI &#183; Section 6.7
 :::
 
 ## 6.7 Responsibilities
@@ -988,7 +988,7 @@ ARTICLE VI &#183; SECTION 6.7
 **6.7.3** The Board shall ensure compliance with all applicable laws and regulations.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.8
+Article VI &#183; Section 6.8
 :::
 
 ## 6.8 Code of Conduct
@@ -1010,7 +1010,7 @@ ARTICLE VI &#183; SECTION 6.8
 **6.8.8** The Code of Conduct shall be reviewed annually.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VI &#183; SECTION 6.9
+Article VI &#183; Section 6.9
 :::
 
 ## 6.9 Committees
@@ -1052,17 +1052,17 @@ ARTICLE VI &#183; SECTION 6.9
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 7 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 7 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>VII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>President &amp; Vice-Chancellor</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 7.1–7.6</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 7.1–7.6</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The single operational link between Board and Senate — appointed for five years, evaluated annually, removable only for cause.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>7.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role and Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1083,7 +1083,7 @@ ARTICLE VI &#183; SECTION 6.9
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VII &#183; SECTION 7.1
+Article VII &#183; Section 7.1
 :::
 
 ## 7.1 Role and Authority
@@ -1099,7 +1099,7 @@ ARTICLE VII &#183; SECTION 7.1
 **7.1.5** The President shall exercise authority in accordance with the University's Islamic mission and values.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VII &#183; SECTION 7.2
+Article VII &#183; Section 7.2
 :::
 
 ## 7.2 Appointment
@@ -1121,7 +1121,7 @@ ARTICLE VII &#183; SECTION 7.2
 **7.2.8** The search process shall be conducted in accordance with the University's equal opportunity policy.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VII &#183; SECTION 7.3
+Article VII &#183; Section 7.3
 :::
 
 ## 7.3 Eligibility
@@ -1135,7 +1135,7 @@ ARTICLE VII &#183; SECTION 7.3
 **7.3.4** The President & Vice-Chancellor must have a demonstrated commitment to Islamic education.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VII &#183; SECTION 7.4
+Article VII &#183; Section 7.4
 :::
 
 ## 7.4 Responsibilities
@@ -1152,7 +1152,7 @@ ARTICLE VII &#183; SECTION 7.4
 (h) Report regularly to the Board.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VII &#183; SECTION 7.5
+Article VII &#183; Section 7.5
 :::
 
 ## 7.5 Performance Evaluation
@@ -1171,7 +1171,7 @@ ARTICLE VII &#183; SECTION 7.5
 **7.5.4** The evaluation process shall be documented.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VII &#183; SECTION 7.6
+Article VII &#183; Section 7.6
 :::
 
 ## 7.6 Resignation and Removal
@@ -1212,17 +1212,17 @@ ARTICLE VII &#183; SECTION 7.6
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 8 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 8 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>VIII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>University Senate</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 8.1–8.8</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 8.1–8.8</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Eighteen fixed seats across four groups — supreme academic authority, answerable to no one but itself in matters of curriculum, instruction, and degrees.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>8.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role and Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1247,7 +1247,7 @@ ARTICLE VII &#183; SECTION 7.6
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.1
+Article VIII &#183; Section 8.1
 :::
 
 ## 8.1 Role and Authority
@@ -1261,7 +1261,7 @@ ARTICLE VIII &#183; SECTION 8.1
 **8.1.4** The Senate shall exercise authority in accordance with the University's Islamic mission and values.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.2
+Article VIII &#183; Section 8.2
 :::
 
 ## 8.2 Composition
@@ -1309,7 +1309,7 @@ ARTICLE VIII &#183; SECTION 8.2
 | 18 | Elected Faculty Representative | Elected by Faculty |
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.3
+Article VIII &#183; Section 8.3
 :::
 
 ## 8.3 Ex-Officio Members
@@ -1327,7 +1327,7 @@ ARTICLE VIII &#183; SECTION 8.3
 **8.3.4** Ex-officio members shall be appointed annually.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.4
+Article VIII &#183; Section 8.4
 :::
 
 ## 8.4 Eligibility
@@ -1343,7 +1343,7 @@ ARTICLE VIII &#183; SECTION 8.4
 **8.4.5** Senators must be active members of the University community.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.5
+Article VIII &#183; Section 8.5
 :::
 
 ## 8.5 Meetings
@@ -1365,7 +1365,7 @@ ARTICLE VIII &#183; SECTION 8.5
 **8.5.8** Meetings shall be conducted in accordance with Robert's Rules of Order.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.6
+Article VIII &#183; Section 8.6
 :::
 
 ## 8.6 Voting Procedures
@@ -1388,7 +1388,7 @@ ARTICLE VIII &#183; SECTION 8.6
 **8.6.6** No person shall vote on any matter in which they have a conflict of interest.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.7
+Article VIII &#183; Section 8.7
 :::
 
 ## 8.7 Responsibilities
@@ -1404,7 +1404,7 @@ ARTICLE VIII &#183; SECTION 8.7
 **8.7.2** No person shall act on behalf of the Senate without proper authorization.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE VIII &#183; SECTION 8.8
+Article VIII &#183; Section 8.8
 :::
 
 ## 8.8 Vacancies
@@ -1436,17 +1436,17 @@ ARTICLE VIII &#183; SECTION 8.8
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 9 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 9 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>IX</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Administration</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 9.1–9.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 9.1–9.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The executive management arm that turns Board policy and Senate academic vision into daily operations.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>9.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Role and Authority</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1463,7 +1463,7 @@ ARTICLE VIII &#183; SECTION 8.8
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IX &#183; SECTION 9.1
+Article IX &#183; Section 9.1
 :::
 
 ## 9.1 Role and Authority
@@ -1477,7 +1477,7 @@ ARTICLE IX &#183; SECTION 9.1
 **9.1.4** The Administration shall exercise authority in accordance with the University's Islamic mission and values.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IX &#183; SECTION 9.2
+Article IX &#183; Section 9.2
 :::
 
 ## 9.2 Composition
@@ -1492,7 +1492,7 @@ ARTICLE IX &#183; SECTION 9.2
 (f) Directors of functional areas.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IX &#183; SECTION 9.3
+Article IX &#183; Section 9.3
 :::
 
 ## 9.3 Appointment
@@ -1506,7 +1506,7 @@ ARTICLE IX &#183; SECTION 9.3
 **9.3.4** Appointments shall be subject to Board approval for senior positions.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE IX &#183; SECTION 9.4
+Article IX &#183; Section 9.4
 :::
 
 ## 9.4 Responsibilities
@@ -1542,17 +1542,17 @@ ARTICLE IX &#183; SECTION 9.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 10 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 10 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>X</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Academic Program</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 10.1–10.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 10.1–10.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A seven-tier credential ladder, fully stackable, taught through six founding colleges, primarily in English.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>10.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Academic Ladder</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1567,7 +1567,7 @@ ARTICLE IX &#183; SECTION 9.4
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE X &#183; SECTION 10.1
+Article X &#183; Section 10.1
 :::
 
 ## 10.1 Academic Ladder
@@ -1591,7 +1591,7 @@ ARTICLE X &#183; SECTION 10.1
 **10.1.4** The Senate shall approve all academic programs.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE X &#183; SECTION 10.2
+Article X &#183; Section 10.2
 :::
 
 ## 10.2 The Six Colleges
@@ -1606,7 +1606,7 @@ ARTICLE X &#183; SECTION 10.2
 (f) College of Islamic Finance, Economics & Waqf Administration.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE X &#183; SECTION 10.3
+Article X &#183; Section 10.3
 :::
 
 ## 10.3 Language of Instruction
@@ -1638,17 +1638,17 @@ ARTICLE X &#183; SECTION 10.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 11 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 11 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XI</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Waqf and Endowment</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 11.1–11.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 11.1–11.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A fiduciary board, a fixed share of gross revenue, and an unbroken commitment to scholarships, mosques, and the world’s poorest students.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>11.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Waqf Board</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1661,7 +1661,7 @@ ARTICLE X &#183; SECTION 10.3
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XI &#183; SECTION 11.1
+Article XI &#183; Section 11.1
 :::
 
 ## 11.1 Waqf Board
@@ -1677,7 +1677,7 @@ ARTICLE XI &#183; SECTION 11.1
 **11.1.5** The Waqf Board shall exercise fiduciary responsibility over Waqf funds.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XI &#183; SECTION 11.2
+Article XI &#183; Section 11.2
 :::
 
 ## 11.2 Waqf Reserve
@@ -1713,17 +1713,17 @@ ARTICLE XI &#183; SECTION 11.2
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 12 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 12 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Students’ Rights and Responsibilities</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 12.1–12.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 12.1–12.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Non-discriminatory admission and dignity, in return for integrity — the reciprocal obligation between the University and every student it enrolls.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>12.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Admission</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1738,7 +1738,7 @@ ARTICLE XI &#183; SECTION 11.2
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XII &#183; SECTION 12.1
+Article XII &#183; Section 12.1
 :::
 
 ## 12.1 Admission
@@ -1752,7 +1752,7 @@ ARTICLE XII &#183; SECTION 12.1
 **12.1.4** The University shall maintain transparent admission criteria.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XII &#183; SECTION 12.2
+Article XII &#183; Section 12.2
 :::
 
 ## 12.2 Rights
@@ -1767,7 +1767,7 @@ ARTICLE XII &#183; SECTION 12.2
 (f) Express their views, subject to Islamic values.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XII &#183; SECTION 12.3
+Article XII &#183; Section 12.3
 :::
 
 ## 12.3 Responsibilities
@@ -1801,17 +1801,17 @@ ARTICLE XII &#183; SECTION 12.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 13 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 13 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XIII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Faculty Rights and Responsibilities</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 13.1–13.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 13.1–13.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Academic freedom exercised within, not against, the University’s Islamic identity.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>13.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Academic Freedom</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1824,7 +1824,7 @@ ARTICLE XII &#183; SECTION 12.3
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XIII &#183; SECTION 13.1
+Article XIII &#183; Section 13.1
 :::
 
 ## 13.1 Academic Freedom
@@ -1838,7 +1838,7 @@ ARTICLE XIII &#183; SECTION 13.1
 **13.1.4** Academic freedom shall not be used to violate University policies.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XIII &#183; SECTION 13.2
+Article XIII &#183; Section 13.2
 :::
 
 ## 13.2 Responsibilities
@@ -1872,17 +1872,17 @@ ARTICLE XIII &#183; SECTION 13.2
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 14 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 14 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XIV</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Financial Sustainability</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 14.1–14.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 14.1–14.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A zero-deficit model, a twenty-five percent contingency reserve, and tuition priced so financial capacity is never the barrier.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>14.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Revenue Model</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1897,7 +1897,7 @@ ARTICLE XIII &#183; SECTION 13.2
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XIV &#183; SECTION 14.1
+Article XIV &#183; Section 14.1
 :::
 
 ## 14.1 Revenue Model
@@ -1909,7 +1909,7 @@ ARTICLE XIV &#183; SECTION 14.1
 **14.1.3** The University shall maintain a contingency reserve of at least 25% of annual operating expenses.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XIV &#183; SECTION 14.2
+Article XIV &#183; Section 14.2
 :::
 
 ## 14.2 Tuition
@@ -1923,7 +1923,7 @@ ARTICLE XIV &#183; SECTION 14.2
 **14.2.4** Tuition shall be reviewed annually.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XIV &#183; SECTION 14.3
+Article XIV &#183; Section 14.3
 :::
 
 ## 14.3 Compensation
@@ -1955,17 +1955,17 @@ ARTICLE XIV &#183; SECTION 14.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 15 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 15 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XV</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Transparency and Accountability</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 15.1–15.4</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 15.1–15.4</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;An annual report, an independent audit, disclosed conflicts of interest, and protection for anyone who reports misconduct in good faith.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>15.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Annual Report</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -1982,7 +1982,7 @@ ARTICLE XIV &#183; SECTION 14.3
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XV &#183; SECTION 15.1
+Article XV &#183; Section 15.1
 :::
 
 ## 15.1 Annual Report
@@ -1999,7 +1999,7 @@ ARTICLE XV &#183; SECTION 15.1
 **15.1.3** The annual report shall be published within 120 days of the end of the fiscal year.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XV &#183; SECTION 15.2
+Article XV &#183; Section 15.2
 :::
 
 ## 15.2 Audit
@@ -2013,7 +2013,7 @@ ARTICLE XV &#183; SECTION 15.2
 **15.2.4** The audit report shall be made available to stakeholders.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XV &#183; SECTION 15.3
+Article XV &#183; Section 15.3
 :::
 
 ## 15.3 Conflict of Interest
@@ -2025,7 +2025,7 @@ ARTICLE XV &#183; SECTION 15.3
 **15.3.3** Failure to disclose a conflict of interest shall be subject to disciplinary action.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XV &#183; SECTION 15.4
+Article XV &#183; Section 15.4
 :::
 
 ## 15.4 Whistleblower Protection
@@ -2057,17 +2057,17 @@ ARTICLE XV &#183; SECTION 15.4
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 16 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 16 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XVI</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Independent Officers</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 16.1–16.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 16.1–16.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Secretary, the Registrar, and the General Counsel — three offices that keep the University’s own records and law honest.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>16.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Secretary to the Board</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2082,7 +2082,7 @@ ARTICLE XV &#183; SECTION 15.4
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVI &#183; SECTION 16.1
+Article XVI &#183; Section 16.1
 :::
 
 ## 16.1 Secretary to the Board
@@ -2094,7 +2094,7 @@ ARTICLE XVI &#183; SECTION 16.1
 **16.1.3** The Secretary shall ensure proper notice of meetings.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVI &#183; SECTION 16.2
+Article XVI &#183; Section 16.2
 :::
 
 ## 16.2 University Registrar
@@ -2106,7 +2106,7 @@ ARTICLE XVI &#183; SECTION 16.2
 **16.2.3** The Registrar shall ensure compliance with FERPA.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVI &#183; SECTION 16.3
+Article XVI &#183; Section 16.3
 :::
 
 ## 16.3 General Counsel
@@ -2138,17 +2138,17 @@ ARTICLE XVI &#183; SECTION 16.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 17 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 17 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XVII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Records and Archives</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 17.1–17.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 17.1–17.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;What the University keeps, for how long, and who is allowed to see it.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>17.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Official Records</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2161,7 +2161,7 @@ ARTICLE XVI &#183; SECTION 16.3
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVII &#183; SECTION 17.1
+Article XVII &#183; Section 17.1
 :::
 
 ## 17.1 Official Records
@@ -2173,7 +2173,7 @@ ARTICLE XVII &#183; SECTION 17.1
 **17.1.3** The University shall maintain an archive of historical documents.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVII &#183; SECTION 17.2
+Article XVII &#183; Section 17.2
 :::
 
 ## 17.2 Access to Records
@@ -2205,17 +2205,17 @@ ARTICLE XVII &#183; SECTION 17.2
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 18 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 18 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XVIII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Amendment</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 18.1–18.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 18.1–18.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Two-thirds of the Board, thirty days’ notice, and a filing with the Texas Secretary of State — the only door through which this Constitution may be changed.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>18.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Amendment Procedure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2228,7 +2228,7 @@ ARTICLE XVII &#183; SECTION 17.2
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVIII &#183; SECTION 18.1
+Article XVIII &#183; Section 18.1
 :::
 
 ## 18.1 Amendment Procedure
@@ -2242,7 +2242,7 @@ ARTICLE XVIII &#183; SECTION 18.1
 **18.1.4** Amendments shall be filed with the Texas Secretary of State.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XVIII &#183; SECTION 18.2
+Article XVIII &#183; Section 18.2
 :::
 
 ## 18.2 Effective Date
@@ -2272,17 +2272,17 @@ ARTICLE XVIII &#183; SECTION 18.2
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 19 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 19 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XIX</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Transitional Provisions</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTION 19.1</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Section 19.1</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;How every prior governing document, appointment, and policy carries forward into this one without a gap in authority.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>19.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Transitional Provisions</w:t></w:r></w:p>
     </w:tc>
@@ -2293,7 +2293,7 @@ ARTICLE XVIII &#183; SECTION 18.2
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XIX &#183; SECTION 19.1
+Article XIX &#183; Section 19.1
 :::
 
 ## 19.1 Transitional Provisions
@@ -2327,17 +2327,17 @@ ARTICLE XIX &#183; SECTION 19.1
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 20 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 20 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XX</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Dissolution</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTION 20.1</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Section 20.1</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A unanimous Board vote, and every remaining asset to another 501(c)(3) charitable purpose — never to a person.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>20.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Dissolution</w:t></w:r></w:p>
     </w:tc>
@@ -2348,7 +2348,7 @@ ARTICLE XIX &#183; SECTION 19.1
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XX &#183; SECTION 20.1
+Article XX &#183; Section 20.1
 :::
 
 ## 20.1 Dissolution
@@ -2382,17 +2382,17 @@ ARTICLE XX &#183; SECTION 20.1
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 21 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 21 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XXI</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Non-Political and Non-Profit Provisions</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 21.1–21.3</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 21.1–21.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;No private inurement, no political campaigning, no activity beyond what Section 501(c)(3) permits.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>21.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Private Inurement</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2407,7 +2407,7 @@ ARTICLE XX &#183; SECTION 20.1
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XXI &#183; SECTION 21.1
+Article XXI &#183; Section 21.1
 :::
 
 ## 21.1 Private Inurement
@@ -2419,7 +2419,7 @@ ARTICLE XXI &#183; SECTION 21.1
 **21.1.3** The University shall not have capital stock or shareholders.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XXI &#183; SECTION 21.2
+Article XXI &#183; Section 21.2
 :::
 
 ## 21.2 Political Activities
@@ -2429,7 +2429,7 @@ ARTICLE XXI &#183; SECTION 21.2
 **21.2.2** The University shall not participate in, or intervene in (including the publishing or distribution of statements), any political campaign on behalf of or in opposition to any candidate for public office.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XXI &#183; SECTION 21.3
+Article XXI &#183; Section 21.3
 :::
 
 ## 21.3 Tax-Exempt Compliance
@@ -2459,17 +2459,17 @@ ARTICLE XXI &#183; SECTION 21.3
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 22 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 22 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XXII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Indemnification</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTION 22.1</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Section 22.1</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Protection for every Trustee, officer, employee, and agent who serves the University in good faith — and none for gross negligence or willful misconduct.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>22.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Indemnification of Trustees, Officers, Employees, and Agents</w:t></w:r></w:p>
     </w:tc>
@@ -2480,7 +2480,7 @@ ARTICLE XXI &#183; SECTION 21.3
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XXII &#183; SECTION 22.1
+Article XXII &#183; Section 22.1
 :::
 
 ## 22.1 Indemnification of Trustees, Officers, Employees, and Agents
@@ -2514,17 +2514,17 @@ ARTICLE XXII &#183; SECTION 22.1
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="24"/></w:rPr><w:t>ARTICLE 23 OF 23</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="12"/></w:rPr><w:t>Article 23 of 23</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="100"/></w:rPr><w:t>XXIII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Final Provisions</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 23.1–23.2</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 23.1–23.2</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;This Constitution’s own supremacy, restated once more, in its final words.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>SECTIONS OF THIS ARTICLE</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Sections of this Article</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>23.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Supremacy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2537,7 +2537,7 @@ ARTICLE XXII &#183; SECTION 22.1
 
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XXIII &#183; SECTION 23.1
+Article XXIII &#183; Section 23.1
 :::
 
 ## 23.1 Supremacy
@@ -2549,7 +2549,7 @@ ARTICLE XXIII &#183; SECTION 23.1
 **23.1.3** Any policy inconsistent with this Constitution shall be void.
 
 ::: {custom-style="SectionKicker"}
-ARTICLE XXIII &#183; SECTION 23.2
+Article XXIII &#183; Section 23.2
 :::
 
 ## 23.2 Effective Date

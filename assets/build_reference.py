@@ -35,14 +35,26 @@ GREY = RGBColor(0x5B, 0x63, 0x72)
 #                      deliberately NOT another Garamond derivative, so it
 #                      reads as a distinct second voice against Fraunces
 #                      rather than a same-family cousin.
-#   Archivo          — structural: kickers, captions, headers/footers,
+#   Archivo          — structural: captions, sub-subsection headings,
 #                      table data, TOC rows, numbered-provision labels.
 #                      A confident contemporary grotesk (Black through
 #                      Regular) replacing Liberation Sans everywhere.
+#
+# Typography-audit correction: ceremonial kickers/eyebrows (the "ARTICLE
+# IV · SECTION 4.1" tags above every heading, the "SECTIONS OF THIS
+# ARTICLE" labels on dividers, and the running header/footer) were
+# originally tracked all-caps Archivo — the same device countless SaaS
+# pitch decks and nonprofit annual reports use for wayfinding labels, and
+# the one place a genuine "this reads corporate, not Oxford/Cambridge"
+# critique landed on an otherwise-sound system. Real university-press and
+# FT-style editorial typography marks this register with small caps OF
+# THE SERIF FAMILY, not a second grotesk voice — so MONUMENTAL_FONT now
+# points at Source Serif 4 (small caps, not all caps) instead of Archivo.
 HEAD_FONT = "Source Serif 4"
 BODY_FONT = "Archivo"
 SERIF_FONT = "Liberation Serif"
-MONUMENTAL_FONT = "Archivo SemiBold"       # Level 1 — structural kickers/labels (small-scale sans)
+MONUMENTAL_FONT = "Source Serif 4"         # Level 1 — ceremonial kickers/running heads (serif small caps,
+                                            # not a grotesk sans — see the typography-audit note below)
 DISPLAY_FONT = "Fraunces"                  # Level 2 — chapter titles, founding statements, pull quotes
 DISPLAY_SEMIBOLD = "Fraunces SemiBold"     # Level 3 — section headings
 DISPLAY_BLACK = "Fraunces Black"           # monumental numerals and cover hero type
@@ -190,7 +202,7 @@ if not has_style(doc, 'SectionKicker'):
     sec_kicker.base_style = get_style(doc, 'Normal')
 else:
     sec_kicker = get_style(doc, 'SectionKicker')
-set_font(sec_kicker, MONUMENTAL_FONT, 9.5, GOLD, bold=True, all_caps=True, spacing=22)
+set_font(sec_kicker, MONUMENTAL_FONT, 10.5, GOLD, bold=True, italic=True, small_caps=True, spacing=18)
 set_para_fmt(sec_kicker, 22, 2, 1.1, keep_next=True, no_hyphens=True)
 
 # ---------------- Custom style: Part-divider kicker label ----------------
@@ -199,7 +211,7 @@ if not has_style(doc, 'PartKicker'):
     kicker.base_style = get_style(doc, 'Normal')
 else:
     kicker = get_style(doc, 'PartKicker')
-set_font(kicker, MONUMENTAL_FONT, 11, GOLD, bold=True, all_caps=True, spacing=30)
+set_font(kicker, MONUMENTAL_FONT, 12, GOLD, bold=True, italic=True, small_caps=True, spacing=24)
 set_para_fmt(kicker, 0, 2, 1.1, no_hyphens=True)
 
 # ---------------- Custom style: Part-divider thesis line ----------------
@@ -309,11 +321,11 @@ hp.text = ""
 hp.paragraph_format.tab_stops.add_tab_stop(Inches(6.3), WD_TAB_ALIGNMENT.RIGHT)
 hp.paragraph_format.space_after = Pt(0)
 r1 = hp.add_run("Al-Mulk International University")
-r1.font.name = MONUMENTAL_FONT; r1.font.size = Pt(8.5); r1.font.color.rgb = NAVY; r1.font.bold = False
-r1.font.all_caps = True
+r1.font.name = MONUMENTAL_FONT; r1.font.size = Pt(9); r1.font.color.rgb = NAVY; r1.font.bold = False
+r1.font.italic = True
 r1.font.small_caps = True
 rpr1 = r1._r.get_or_add_rPr()
-spc1 = OxmlElement('w:spacing'); spc1.set(qn('w:val'), '14'); rpr1.append(spc1)
+spc1 = OxmlElement('w:spacing'); spc1.set(qn('w:val'), '8'); rpr1.append(spc1)
 r2 = hp.add_run("\t")
 r3 = hp.add_run("Strategic Implementation Blueprint 2028–2050")
 r3.font.name = DISPLAY_FONT; r3.font.size = Pt(9.5); r3.font.color.rgb = GREY; r3.font.italic = True

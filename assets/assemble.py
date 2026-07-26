@@ -63,8 +63,8 @@ PART_TITLES = [
       (41, "Founding Access & Waqf-First Strategy")]),
 ]
 
-ROMAN_TO_WORD = {"I": "ONE", "II": "TWO", "III": "THREE", "IV": "FOUR", "V": "FIVE",
-                  "VI": "SIX", "VII": "SEVEN", "VIII": "EIGHT"}
+ROMAN_TO_WORD = {"I": "One", "II": "Two", "III": "Three", "IV": "Four", "V": "Five",
+                  "VI": "Six", "VII": "Seven", "VIII": "Eight"}
 
 # TOC-display-only shortenings: the search text (used for page lookup) must
 # stay the exact full heading text, but the narrow TOC column can wrap a
@@ -79,7 +79,7 @@ for roman, title, secrange, sections in PART_TITLES:
     # exactly once in the whole document (only on that Part's divider page) —
     # this sidesteps both the long-title page-wrap bug and the TOC's-own-row
     # duplicate-occurrence ambiguity that affect the full title string.
-    TOC_ENTRIES.append((f"Part {roman} — {title}", f"PART {ROMAN_TO_WORD[roman]} OF EIGHT", 1))
+    TOC_ENTRIES.append((f"Part {roman} — {title}", f"Part {ROMAN_TO_WORD[roman]} of Eight", 1))
     for num, sec_title in sections:
         toc_title = TOC_TITLE_OVERRIDE.get(num, sec_title)
         TOC_ENTRIES.append((f"Section {num}: {toc_title}", f"Section {num}: {sec_title}", 2))
@@ -924,10 +924,17 @@ def extract_page_map(pdf_path, txt_path):
     with open(txt_path, encoding="utf-8") as f:
         content = f.read()
     pages = content.split("\x0c")
-    norm_pages = [re.sub(r"\s+", " ", p) for p in pages]
+    # Despaced (not just whitespace-collapsed): LibreOffice's synthetic
+    # small-caps rendering inserts a spurious space-like gap after a run's
+    # initial full-height capital before the shrunk small-caps letters
+    # (e.g. "Al-Mulk" extracts as "A L -M ULK"), fragmenting pdftotext's
+    # word boundaries on every small-caps heading/kicker/running-head. This
+    # is a rendering-layer artifact, not real content, so matching must
+    # ignore all whitespace rather than merely collapsing runs of it.
+    norm_pages = [re.sub(r"\s+", "", p).lower() for p in pages]
     lookup = {}
     for display, search, level in TOC_ENTRIES:
-        norm_search = re.sub(r"\s+", " ", search).strip()
+        norm_search = re.sub(r"\s+", "", search).strip().lower()
         found = None
         page_range = range(1, len(norm_pages) + 1)
         if search not in BEFORE_TOC:

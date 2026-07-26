@@ -19,17 +19,17 @@
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART ONE OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part One of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>I</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Governance &amp; Institutional Foundations</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 1–5</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 1–5</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The bicameral architecture — Board of Trustees and University Senate — that lets AMIU govern honestly at $224,747 in Year-1 revenue and still govern honestly at $93.9M in Year 20.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>01&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Institutional Vision 2028–2050</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -48,7 +48,7 @@
 
 
 ::: {custom-style="SectionKicker"}
-PART I · SECTION 01
+Part I · Section 01
 :::
 
 ## Section 1: Institutional Vision 2028–2050
@@ -111,7 +111,7 @@ The Board of Trustees holds ultimate authority over Institutional Strategy (per 
 By 2037: Vision 2037 targets met as adopted (financial independence achieved, multi-jurisdiction accreditation pursuit underway, $0 cumulative deficit). By 2047: secular schools operating in at least Texas with recognition progress in at least one Gulf jurisdiction. By 2050: Nigeria Mega-University holding its own independent accreditation status (or a clearly documented reason for delay), and Waqf & Stakeholder Reserve cumulative balance demonstrably funding Islamic schools, widows/orphans, scholarships, and emergency relief at a scale proportionate to realized (not merely projected) revenue.
 
 ::: {custom-style="SectionKicker"}
-PART I · SECTION 02
+Part I · Section 02
 :::
 
 ## Section 2: Mission, Values, and Identity
@@ -169,7 +169,7 @@ Senate (academic authority) owns Illumination, Sanad, Inquiry through curriculum
 By Year 5: documented mission-audit with no unresolved Sharī'ah-compliance exceptions. By Year 10: Tier-4/sponsored enrollment share sustained without breaching the $0-deficit rule. By 2038: secular-program revenue observably funding the same 5% Da'wah and 20% Waqf ratios as religious-program revenue, evidencing the mission survived diversification.
 
 ::: {custom-style="SectionKicker"}
-PART I · SECTION 03
+Part I · Section 03
 :::
 
 ## Section 3: Governance Framework
@@ -229,7 +229,7 @@ The Delegation of Authority Matrix already fixes Approving Authority/Executing O
 By Year 3: all four committees operating on documented charters with succession plans filed for founder-held seats. By Year 5: zero unresolved Audit & Risk findings older than 12 months. By Year 10: governance structure has survived a full decade including at least one founder-succession event without disruption to Senate quorum or Board fiduciary continuity.
 
 ::: {custom-style="SectionKicker"}
-PART I · SECTION 04
+Part I · Section 04
 :::
 
 ## Section 4: Senate Structure
@@ -297,7 +297,7 @@ The Senate holds supreme academic authority: curriculum, standards, degree confe
 By Year 3: succession plans filed and independent elections held without contested-result disputes. By Year 5: zero quorum failures recorded. By Year 10: at least one full staggered-term rotation cycle completed for all four independent seats with documented continuity of institutional knowledge.
 
 ::: {custom-style="SectionKicker"}
-PART I · SECTION 05
+Part I · Section 05
 :::
 
 ## Section 5: Board Structure
@@ -384,17 +384,17 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART TWO OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Two of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>II</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Organizational &amp; Academic Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 6–10</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 6–10</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;How six founding colleges, six departments, and an honoraria-based faculty scale from a lone Head of Department in 2028 to a fully staffed secular-school network by the 2040s — without ever redesigning the org chart.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>06&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Organizational Chart</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -413,7 +413,7 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
 
 
 ::: {custom-style="SectionKicker"}
-PART II · SECTION 06
+Part II · Section 06
 :::
 
 ## Section 6: Organizational Chart
@@ -512,7 +512,7 @@ Year 1 org stands up at incorporation (Dec 2027)/launch (Jan 2028); Year 5 staff
 No Senate seat added outside charter amendment through 2050; Core Admin spend stays ≤18% of Payroll in every audited year; Registrar conferral backlog <30 days by Year 10.
 
 ::: {custom-style="SectionKicker"}
-PART II · SECTION 07
+Part II · Section 07
 :::
 
 ## Section 7: Academic Master Plan
@@ -584,7 +584,7 @@ Program approval/change: Senate (full body). Implementation: DVC Academic Affair
 2028 Phase 1 → 2029 Phase 2 → 2030 Phase 3 → 2033 Phase 4 → 2038 Phase 5 → 2039–2047 Phase 6 → 2048–2050 Phase 7.
 
 ::: {custom-style="SectionKicker"}
-PART II · SECTION 08
+Part II · Section 08
 :::
 
 ## Section 8: College Structure
@@ -653,7 +653,7 @@ Each college's Dean sits in Senate Group II; each School Head (Yr11+) reports ad
 2028: 6 colleges operational. 2038: 7 Schools operational with shared gen-ed live. 2042: all colleges/schools carry dedicated Associate Dean/Head tier. Success: 100% secular-student gen-ed core completion; shared Arabic core cost-per-student declining year over year as enrollment scales.
 
 ::: {custom-style="SectionKicker"}
-PART II · SECTION 09
+Part II · Section 09
 :::
 
 ## Section 9: Faculty Structure
@@ -720,7 +720,7 @@ Faculty Affairs Committee (subset of Senate) approves appointments/promotions th
 100% of religious faculty with documented isnād/ijāza on file by Yr2; Faculty Honoraria per-CH rate rising year-over-year through Yr10; secular faculty terminal-degree verification rate 100% at each School's launch.
 
 ::: {custom-style="SectionKicker"}
-PART II · SECTION 10
+Part II · Section 10
 :::
 
 ## Section 10: Department Structure
@@ -805,17 +805,17 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART THREE OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Three of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>III</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="68"/></w:rPr><w:t>Curriculum &amp; Student Journey</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 11–15</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 11–15</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The seventy-one-program portfolio, its credit-hour architecture, and the digital-first student journey that lets a Tier-4 applicant enroll, learn, and graduate without ever needing a campus.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>11&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Program Portfolio</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -834,7 +834,7 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
 
 
 ::: {custom-style="SectionKicker"}
-PART III · SECTION 11
+Part III · Section 11
 :::
 
 ## Section 11: Program Portfolio
@@ -907,7 +907,7 @@ Portfolio administration is an institutional-effectiveness function funded from 
 By 2037: 71 programs fully stabilized, ≥90% passing triennial review without corrective action. By 2041: 28 secular programs onboarded with balanced enrollment across all 13 colleges/schools. By 2050: portfolio-wide sunset/launch cadence operating on autopilot with <5% Senate-escalation rate.
 
 ::: {custom-style="SectionKicker"}
-PART III · SECTION 12
+Part III · Section 12
 :::
 
 ## Section 12: Curriculum Architecture
@@ -987,7 +987,7 @@ Faculty curriculum-mapping and Sanad-audit work is compensated through the Facul
 By 2030: all 71 programs fully mapped with Sanad Audit complete. By 2037: external-review-ready documentation for accreditation. By 2040: secular curriculum architecture published without disturbing existing tier CH totals.
 
 ::: {custom-style="SectionKicker"}
-PART III · SECTION 13
+Part III · Section 13
 :::
 
 ## Section 13: Student Journey Map
@@ -1064,7 +1064,7 @@ Inquiry-to-enrollment conversion rate; application-processing SLA (<10 business 
 By 2032: >80% of routine journey volume handled without human intervention. By 2037: documented conversion and retention metrics matching Master Plan enrollment curve (3,493 students by Year 5, 11,021 by Year 10). By 2041: parallel journeys operating cleanly for both religious and secular portfolios.
 
 ::: {custom-style="SectionKicker"}
-PART III · SECTION 14
+Part III · Section 14
 :::
 
 ## Section 14: Admission Policies
@@ -1136,7 +1136,7 @@ Same OpEx-funded operational base as Section 13 ($11,237 / $64,539 / $191,527 in
 By 2030: appeals process fully operational with documented SLA adherence. By 2037: transfer-articulation table covering major partner-region qualifications. By 2041: secular-school admission standards live without diluting religious-tier rigor.
 
 ::: {custom-style="SectionKicker"}
-PART III · SECTION 15
+Part III · Section 15
 :::
 
 ## Section 15: Faculty Recruitment Strategy
@@ -1236,17 +1236,17 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FOUR OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Four of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>IV</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Research, Publishing, Partnerships &amp; Accreditation</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 16–20</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 16–20</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Mentored research and open-access publishing built on existing faculty honoraria, and the exact, dated accreditation sequence that never gets reordered for convenience.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>16&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Research Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -1265,7 +1265,7 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
 
 
 ::: {custom-style="SectionKicker"}
-PART IV · SECTION 16
+Part IV · Section 16
 :::
 
 ## Section 16: Research Strategy
@@ -1319,7 +1319,7 @@ Yr1–2: volunteer Senate committee, no new hire. Yr3–5: supervision absorbed 
 **Measurable Success Indicators**: first Ph.D. cohort producing isnād-certified dissertations by Year 5; first Post-Doc fellowship outputs by Year 8; research function fully self-funded within existing allocations through Year 10 with no deficit attributable to research activity.
 
 ::: {custom-style="SectionKicker"}
-PART IV · SECTION 17
+Part IV · Section 17
 :::
 
 ## Section 17: Publishing Strategy
@@ -1372,7 +1372,7 @@ Publishing converts mentored research into public, citable scholarship at near-z
 **Measurable Success Indicators**: three functioning peer-reviewed e-journals by Year 5; first DOAJ listing by Year 8; publication-linked Merit Scholarship incentives active and self-funded within Waqf sub-lines with zero deficit impact.
 
 ::: {custom-style="SectionKicker"}
-PART IV · SECTION 18
+Part IV · Section 18
 :::
 
 ## Section 18: Global Partnerships Strategy
@@ -1426,7 +1426,7 @@ AMIU's scholarship pipeline, international expansion (Gambia, Nigeria, Gulf), an
 **Measurable Success Indicators**: 10+ active mosque/school MOUs by Year 3; first articulation agreement with a peer Islamic university by Year 8; documented diaspora Sadaqah Jāriyah channel operating within Waqf Board fiduciary limits with zero deficit impact.
 
 ::: {custom-style="SectionKicker"}
-PART IV · SECTION 19
+Part IV · Section 19
 :::
 
 ## Section 19: Accreditation Roadmap
@@ -1468,7 +1468,7 @@ AMIU's accreditation sequence is deliberately staged, not accelerated: religious
 **Measurable Success Indicators**: full CPD/ISO 21001/Gambia NAQAA sequence complete by Year 4; Nigeria charter application filed on schedule Year 10; US secular accreditation candidacy opened Year 11–12 with ten consecutive audited zero-deficit years on record; first Gulf ministry agreement by Year 13.
 
 ::: {custom-style="SectionKicker"}
-PART IV · SECTION 20
+Part IV · Section 20
 :::
 
 ## Section 20: ISO 21001 Roadmap
@@ -1528,7 +1528,7 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
   <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="122A4E"/><w:sz w:val="30"/></w:rPr><w:t>A plan for the Tuesday after the promise is made.</w:t></w:r>
 </w:p>
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-  <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="16"/></w:rPr><w:t>THE SUPREME STRATEGIC PLANNING COUNCIL · FOREWORD</w:t></w:r>
+  <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="10"/></w:rPr><w:t>The Supreme Strategic Planning Council · Foreword</w:t></w:r>
 </w:p>
 <w:p><w:pPr><w:spacing w:before="360" w:after="0"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -1551,17 +1551,17 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART FIVE OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Five of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>V</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Digital Infrastructure, AI &amp; Waqf Development</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 21–25</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 21–25</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Moodle-based LMS ecosystem, a Sharī’ah-gated AI strategy, and the Waqf &amp; Stakeholder Reserve’s evolution into a diversified, perpetual Islamic endowment.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>21&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>LMS Ecosystem</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -1580,7 +1580,7 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
 
 
 ::: {custom-style="SectionKicker"}
-PART V · SECTION 21
+Part V · Section 21
 :::
 
 ## Section 21: LMS Ecosystem
@@ -1641,7 +1641,7 @@ Formal Senate authority sits with **Group IV — Institutional & Digital Strateg
 By Year 5: mobile-first platform live, ≥90% payment success rate, catalog ≥50% authored. By Year 10: 71+28 catalog fully live, 99% uptime, LMS&Tech spend on track at $191,527/yr, zero unmitigated gateway-disruption incidents.
 
 ::: {custom-style="SectionKicker"}
-PART V · SECTION 22
+Part V · Section 22
 :::
 
 ## Section 22: AI Strategy
@@ -1706,7 +1706,7 @@ Theological error/hallucination in religious-content tools (HIGH impact) — mit
 By Year 5: two AI tools live (chatbot + Tajweed), zero Sharī'ah findings. By Year 10: three to four AI use cases operational, measurable staffing-efficiency gain (e.g., admissions turnaround cut by a defined %), 100% of religious-content AI tools re-certified on schedule.
 
 ::: {custom-style="SectionKicker"}
-PART V · SECTION 23
+Part V · Section 23
 :::
 
 ## Section 23: Digital Transformation Strategy
@@ -1758,7 +1758,7 @@ Cybersecurity breach exposing global student PII/payment data — mitigated by e
 By Year 5: dedicated SIS live, formal data-governance policy adopted, zero breach incidents to date. By Year 10: full LMS-SIS-payments integration, annual security audits passing, Digital Operations unit fully staffed within Payroll budget, stack proven at 11,021-student scale ahead of secular-expansion phase.
 
 ::: {custom-style="SectionKicker"}
-PART V · SECTION 24
+Part V · Section 24
 :::
 
 ## Section 24: Library Strategy
@@ -1817,7 +1817,7 @@ The **University Librarian** (Group II independent Senate seat) holds formal Sen
 By Year 5: digital catalog operational and LMS-integrated, part-time Digital Librarian in place. By Year 10: institutional repository active, library sub-budget tracking at ~$19,150/yr, Nigeria central-library plan initiated in step with charter (not before).
 
 ::: {custom-style="SectionKicker"}
-PART V · SECTION 25
+Part V · Section 25
 :::
 
 ## Section 25: Waqf Development Strategy
@@ -1908,17 +1908,17 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SIX OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Six of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VI</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Financial Growth, Marketing &amp; Branding</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 26–30</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 26–30</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Scholarships as designed policy rather than promise, grassroots near-zero-CAC marketing, and a branded-house architecture that lets expansion extend — never dilute — the AMIU name.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>26&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Scholarship Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -1937,7 +1937,7 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
 
 
 ::: {custom-style="SectionKicker"}
-PART VI · SECTION 26
+Part VI · Section 26
 :::
 
 ## Section 26: Scholarship Strategy
@@ -1990,7 +1990,7 @@ Year 1: $44,951 · Year 5: $258,158 · Year 10: $766,111 (10-year cumulative $3,
 **Measurable Success Indicators:** By Year 5, ≥5 active named scholarships and Tier-4 enrollment tracking the Growth Scenario's tier mix; by Year 10, a dedicated Scholarship Officer in place, Waqf Scholarship Block fully formalized, and aided-student retention at or above institutional average.
 
 ::: {custom-style="SectionKicker"}
-PART VI · SECTION 27
+Part VI · Section 27
 :::
 
 ## Section 27: Revenue Diversification Strategy
@@ -2042,7 +2042,7 @@ CPD content development and LMS hosting draw from LMS & Technology Infrastructur
 **Measurable Success Indicators:** By Year 5, an active CPD catalog and first named Sadaqah Jāriyah funds; by Year 10, diversified inflows measurably reducing single-year tuition-shock exposure while tuition remains >95% of gross revenue.
 
 ::: {custom-style="SectionKicker"}
-PART VI · SECTION 28
+Part VI · Section 28
 :::
 
 ## Section 28: Marketing Strategy
@@ -2096,7 +2096,7 @@ Coordinator/liaison salaries are deliberately funded from Payroll (Core Admin, 1
 **Measurable Success Indicators:** By Year 5, referral/ambassador channels driving the majority of new enrollments at CAC well under $40/student; by Year 10, tier-segmented campaigns operating within $383,055 while sustaining enrollment growth toward 11,021 students.
 
 ::: {custom-style="SectionKicker"}
-PART VI · SECTION 29
+Part VI · Section 29
 :::
 
 ## Section 29: Branding Strategy
@@ -2149,7 +2149,7 @@ Branding is not a standalone allocation category. Trademark maintenance and bran
 **Measurable Success Indicators:** By Year 5, a published style guide governing all regional materials; by Year 10, full sub-brand compliance across Gambia and Nigeria with trademark protection extended into at least one additional jurisdiction.
 
 ::: {custom-style="SectionKicker"}
-PART VI · SECTION 30
+Part VI · Section 30
 :::
 
 ## Section 30: International Expansion Strategy
@@ -2223,17 +2223,17 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART SEVEN OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Seven of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Regional Campuses &amp; Student Lifecycle</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 31–35</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 31–35</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The Nigeria Mega-University and Gulf cooperation strategies, framed honestly as funding targets rather than guarantees, alongside the student-support, alumni, and career frameworks a lean budget can actually carry.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>31&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Nigeria Campus Strategy</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -2252,7 +2252,7 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
 
 
 ::: {custom-style="SectionKicker"}
-PART VII · SECTION 31
+Part VII · Section 31
 :::
 
 ## Section 31: Nigeria Campus Strategy
@@ -2306,7 +2306,7 @@ Per the adopted risk register: "Nigeria Mega-University delay or non-approval �
 Charter application submitted on schedule (Year 10); zero Reserve overdraw; feasibility and statutory milestones met without diverting funds from Texas operations; Reserve fully funded to $333,383 cumulative by 2037 regardless of political outcome.
 
 ::: {custom-style="SectionKicker"}
-PART VII · SECTION 32
+Part VII · Section 32
 :::
 
 ## Section 32: Gulf Cooperation Strategy
@@ -2361,7 +2361,7 @@ Geopolitical/travel disruption in any single Gulf state — mitigated by targeti
 Sustained or growing Tier 1 revenue share funding Tier 2–4 scholarships; first ministry recognition agreement by 2040; Gulf donor pipeline demonstrably additive to (not substituting for) the fixed Waqf allocation.
 
 ::: {custom-style="SectionKicker"}
-PART VII · SECTION 33
+Part VII · Section 33
 :::
 
 ## Section 33: Student Support Framework
@@ -2414,7 +2414,7 @@ Understaffing/burnout on volunteer chaplaincy faculty — mitigated by rotation 
 100% of hardship escalations resolved within the 14-day standard; advising-portal adoption trending upward year-over-year; no Admin sub-line overrun; Year 10+ Board decision point reached with clear data to justify (or defer) dedicated staffing.
 
 ::: {custom-style="SectionKicker"}
-PART VII · SECTION 34
+Part VII · Section 34
 :::
 
 ## Section 34: Alumni Framework
@@ -2468,7 +2468,7 @@ Early-cohort disengagement (small numbers, no track record) — mitigated by aut
 Alumni community established from Cohort 1 (2028–2029) onward; measurable referral and mosque-nomination flow attributable to alumni by Year 5; first paid coordinator role justified by Year 10 engagement data, not assumption.
 
 ::: {custom-style="SectionKicker"}
-PART VII · SECTION 35
+Part VII · Section 35
 :::
 
 ## Section 35: Career Development Framework
@@ -2544,17 +2544,17 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
         <w:vAlign w:val="center"/>
       </w:tcPr>
 <w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="26"/></w:rPr><w:t>PART EIGHT OF EIGHT</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="14"/></w:rPr><w:t>Part Eight of Eight</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="60"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="108"/></w:rPr><w:t>VIII</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="52"/></w:rPr><w:t>Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="14"/></w:rPr><w:t>SECTIONS 36–41</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 36–41</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The fourteen-risk register, the full compliance calendar, the zero-deficit sustainability doctrine, the single consolidated milestone table that ties 2028 to 2050 &#8212; and the founding promise all of it exists to keep.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:b/><w:sz w:val="16"/><w:spacing w:val="20"/></w:rPr><w:t>CONTENTS OF THIS PART</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:b/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Contents of this Part</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>36&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>Risk Management Framework</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="130"/></w:pPr>
@@ -2575,7 +2575,7 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
 
 
 ::: {custom-style="SectionKicker"}
-PART VIII · SECTION 36
+Part VIII · Section 36
 :::
 
 ## Section 36: Risk Management Framework
@@ -2661,7 +2661,7 @@ Covered exhaustively in the table above; the meta-risk is register atrophy (the 
 Ten consecutive years (2028–2037) of zero-deficit operation with a fully current risk register; zero firewall breaches; zero uncorrected IRS commingling findings; successor plans on file for all founder-linked Senate seats by 2030.
 
 ::: {custom-style="SectionKicker"}
-PART VIII · SECTION 37
+Part VIII · Section 37
 :::
 
 ## Section 37: Compliance Framework
@@ -2741,7 +2741,7 @@ Directly overlaps Risk 8 (nonprofit/for-profit commingling scrutiny — mitigate
 Unbroken federal/state compliance record 2028–2037; both target certifications (CPD, ISO 21001) achieved in their canon target years; Gambia campus operating under valid NAQAA registration by end of Stage 3 (2031); zero IRS commingling findings across the founding decade.
 
 ::: {custom-style="SectionKicker"}
-PART VIII · SECTION 38
+Part VIII · Section 38
 :::
 
 ## Section 38: Financial Sustainability Framework
@@ -2827,7 +2827,7 @@ Primarily Risk 6 (Nigeria delay — doesn't affect solvency, only pace), Risk 9 
 Zero deficit years 2028–2037 (audited); Year-10 combined retained position at or above $5,582,369; all three scenario bands remain within adopted ranges through the decade; Downside Review mechanism never triggered — or, if triggered, resolved without a deficit event.
 
 ::: {custom-style="SectionKicker"}
-PART VIII · SECTION 39
+Part VIII · Section 39
 :::
 
 ## Section 39: Capital Development Framework
@@ -2906,7 +2906,7 @@ Directly governed by Risk 6 (Nigeria delay/non-approval — doesn't affect solve
 Gambia campus delivered within ceiling and accredited by NAQAA independently of the Texas parent (by 2031); Nigeria Reserve on its 2%-of-revenue accrual track through 2037; zero instances of cross-entity capital funding across the entire 2028–2050 horizon.
 
 ::: {custom-style="SectionKicker"}
-PART VIII · SECTION 40
+Part VIII · Section 40
 :::
 
 ## Section 40: Twenty-Year Strategic Roadmap
@@ -2979,7 +2979,7 @@ All five governance bodies (Board, Senate, Audit & Risk Committee, Waqf & Endowm
 Twenty consecutive audited zero-deficit years (2028–2047); founding-decade retained position of $5,582,369 achieved on schedule; Year-20 revenue landing within the adopted $90–150M institutional-economy target; unbroken Capital Firewall across the entire 2028–2050 horizon, with zero instances of tuition revenue funding an investor return at any point in the twenty-three-year arc.
 
 ::: {custom-style="SectionKicker"}
-PART VIII · SECTION 41
+Part VIII · Section 41
 :::
 
 ## Section 41: Founding Access & Waqf-First Strategy

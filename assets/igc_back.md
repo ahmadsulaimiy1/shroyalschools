@@ -52,16 +52,16 @@ This statement certifies that the review described above was performed and that 
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Knowledge Without Barriers&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="B08625"/><w:sz w:val="18"/></w:rPr><w:t>Institutional Governance Compendium &#183; AMIU-IGC-004</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="20"/><w:spacing w:val="8"/></w:rPr><w:t>Institutional Governance Compendium &#183; AMIU-IGC-004</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="8C97AB"/><w:sz w:val="16"/></w:rPr><w:t>edu.amiu.com  &#183;  Texas-Domiciled, Religiously Exempt  &#183;  Incorporated 6 December 2027</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="18"/><w:spacing w:val="8"/></w:rPr><w:t>edu.amiu.com  &#183;  Texas-Domiciled, Religiously Exempt  &#183;  Incorporated 6 December 2027</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="240" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>This document is the property of Al-Mulk International University and is intended for internal use by</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="8"/></w:rPr><w:t>This document is the property of Al-Mulk International University and is intended for internal use by</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="0"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="15"/></w:rPr><w:t>the Board of Trustees and University Senate. Unauthorized distribution is prohibited.</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="17"/><w:spacing w:val="8"/></w:rPr><w:t>the Board of Trustees and University Senate. Unauthorized distribution is prohibited.</w:t></w:r>
       </w:p>
     </w:tc>
   </w:tr>
