@@ -161,26 +161,26 @@ This Constitution is the supreme legal document of the University. All policies,
 | **Article III — Mission, Vision and Values** | **23** |
 | **Article IV — Interpretation** | **28** |
 | **Article V — Governance Structure** | **31** |
-| **Article VI — Board of Trustees** | **35** |
-| **Article VII — President & Vice-Chancellor** | **43** |
-| **Article VIII — University Senate** | **47** |
-| **Article IX — Administration** | **54** |
-| **Article X — Academic Program** | **57** |
-| **Article XI — Waqf and Endowment** | **60** |
-| **Article XII — Students' Rights and Responsibilities** | **62** |
-| **Article XIII — Faculty Rights and Responsibilities** | **65** |
-| **Article XIV — Financial Sustainability** | **67** |
-| **Article XV — Transparency and Accountability** | **69** |
-| **Article XVI — Independent Officers** | **72** |
-| **Article XVII — Records and Archives** | **74** |
-| **Article XVIII — Amendment** | **76** |
-| **Article XIX — Transitional Provisions** | **78** |
-| **Article XX — Dissolution** | **80** |
-| **Article XXI — Non-Political and Non-Profit Provisions** | **82** |
-| **Article XXII — Indemnification** | **84** |
-| **Article XXIII — Final Provisions** | **86** |
-| **Adoption** | **87** |
-| **Publication Certification Statement** | **88** |
+| **Article VI — Board of Trustees** | **38** |
+| **Article VII — President & Vice-Chancellor** | **46** |
+| **Article VIII — University Senate** | **50** |
+| **Article IX — Administration** | **57** |
+| **Article X — Academic Program** | **60** |
+| **Article XI — Waqf and Endowment** | **63** |
+| **Article XII — Students' Rights and Responsibilities** | **65** |
+| **Article XIII — Faculty Rights and Responsibilities** | **68** |
+| **Article XIV — Financial Sustainability** | **70** |
+| **Article XV — Transparency and Accountability** | **72** |
+| **Article XVI — Independent Officers** | **75** |
+| **Article XVII — Records and Archives** | **77** |
+| **Article XVIII — Amendment** | **79** |
+| **Article XIX — Transitional Provisions** | **81** |
+| **Article XX — Dissolution** | **83** |
+| **Article XXI — Non-Political and Non-Profit Provisions** | **85** |
+| **Article XXII — Indemnification** | **87** |
+| **Article XXIII — Final Provisions** | **89** |
+| **Adoption** | **90** |
+| **Publication Certification Statement** | **91** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -754,7 +754,7 @@ Article IV &#183; Section 4.3
   </w:tblPr>
   <w:tblGrid><w:gridCol w:w="9350"/></w:tblGrid>
   <w:tr>
-    <w:trPr><w:trHeight w:val="12200" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
+    <w:trPr><w:trHeight w:val="12550" w:hRule="atLeast"/><w:cantSplit/></w:trPr>
     <w:tc>
       <w:tcPr>
         <w:tcW w:w="9350" w:type="dxa"/>
@@ -769,7 +769,7 @@ Article IV &#183; Section 4.3
 <w:p><w:pPr><w:spacing w:before="120" w:after="80"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="60"/></w:rPr><w:t>Governance Structure</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 5.1–5.5</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Sections 5.1–5.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;A bicameral architecture — Board and Senate, co-equal in their own domains, meeting at a single operational link.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
@@ -784,6 +784,10 @@ Article IV &#183; Section 4.3
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>5.4&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Non-Delegation</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>5.5&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Conflict Resolution between Governance Bodies</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>5.6&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Continuity of Governance</w:t></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>5.7&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Merger, Acquisition &amp; Institutional Restructuring</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -896,6 +900,51 @@ Article V &#183; Section 5.5
 **5.5.2** The joint committee shall consist of three Trustees and three Senators.
 
 **5.5.3** The committee shall be chaired by a neutral facilitator selected by mutual agreement.
+
+::: {custom-style="SectionKicker"}
+Article V &#183; Section 5.6
+:::
+
+## 5.6 Continuity of Governance
+
+**5.6.1** This Section governs a Compound Vacancy: the simultaneous vacancy, incapacity, or removal of the Chairperson of the Board of Trustees and the President & Vice-Chancellor, however arising, including death, resignation, incapacity, or removal for cause under Sections 6.4 or 7.6.
+
+**5.6.2** Upon a Compound Vacancy, authority shall pass automatically, without further vote, in the following order of precedence, each acting only until the office in question is filled on a permanent or interim basis under the ordinary procedure of this Constitution:
+
+(a) The Vice-Chairperson of the Board of Trustees shall serve as Acting Chairperson;
+(b) The senior-most Deputy Vice-Chancellor by date of appointment shall serve as Acting President & Vice-Chancellor;
+(c) If the Vice-Chairperson is unable or unwilling to serve, the longest-serving Trustee not subject to a pending removal proceeding shall serve as Acting Chairperson;
+(d) If no Deputy Vice-Chancellor is able or willing to serve, the Board of Trustees shall appoint an Acting President & Vice-Chancellor from among the University's senior officers within seventy-two hours.
+
+**5.6.3** The Board of Trustees shall convene an emergency session within seven days of a Compound Vacancy to confirm the acting officers designated under Section 5.6.2 and to set a timeline for filling each office on a permanent basis, which timeline shall not exceed one hundred eighty days.
+
+**5.6.4** During a Compound Vacancy, the Acting Chairperson and Acting President & Vice-Chancellor shall be limited to ordinary administration of the University's affairs and shall not, without the express approval of two-thirds of the full Board of Trustees:
+
+(a) Enter into any transaction described in Section 5.7 (Merger, Acquisition & Institutional Restructuring);
+(b) Amend this Constitution or any governance document requiring Board or Senate approval;
+(c) Remove or appoint a Trustee, Senator, or Deputy Vice-Chancellor;
+(d) Commit the University to any expenditure or obligation outside the ordinary course of business exceeding the threshold set in the University's Procurement Policy (OPS-004).
+
+**5.6.5** Nothing in this Section limits the Board's authority to appoint permanent successors at any time before the timelines in this Section expire.
+
+::: {custom-style="SectionKicker"}
+Article V &#183; Section 5.7
+:::
+
+## 5.7 Merger, Acquisition & Institutional Restructuring
+
+**5.7.1** A Restructuring Transaction means any merger, consolidation, or acquisition involving the University; any transfer of substantially all of the University's assets; or the establishment of a new branch campus, country of operation, or degree-granting entity beyond those already adopted in the Strategic Implementation Blueprint (AMIU-SB-002) then in effect.
+
+**5.7.2** No Restructuring Transaction shall take effect unless approved by:
+
+(a) A two-thirds affirmative vote of the full Board of Trustees; and
+(b) A two-thirds affirmative vote of the full University Senate, where the Restructuring Transaction would affect academic programs, degree-granting authority, or academic governance.
+
+**5.7.3** No Restructuring Transaction shall be approved unless the Board of Trustees first receives a written assessment addressing the transaction's effect on the University's mission and values under Article III; the University's Islamic identity and religious exemption; the fixed Revenue Allocation Framework and the separation between the University and the Commercial Engine established elsewhere in University policy; existing students' and faculty members' rights under Articles XII and XIII; and the University's accreditation status.
+
+**5.7.4** No Restructuring Transaction shall diminish the University's obligations under this Constitution to any currently enrolled student or currently employed faculty member.
+
+**5.7.5** Any Restructuring Transaction approved under this Section shall be documented in the University's official records and reported to the Senate and the Board at the next joint meeting under Section 5.2.8.
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
