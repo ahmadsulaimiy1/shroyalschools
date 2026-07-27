@@ -2627,13 +2627,23 @@ Risk management draws from two existing lines, never a new one: the 5% Operating
 | 13 | Currency/FX exposure across four pricing tiers | Moderate/Medium | Multi-currency collection converted to USD on rolling basis |
 | 14 | Geopolitical disruption in Tier-4 weighted regions | Moderate/Low-Medium | No single region exceeds 10% of Tier-4 population-weighted share |
 
+**Founding-Decade Addition: Risk 15 — Cybersecurity & Data Breach**
+
+The 14 risks above are the register AMIU-MP-001 adopted at founding. A subsequent governance review identified one omission from that original register that could not wait for the Year-11 expansion window: a cybersecurity incident or student-data breach, given AMIU's entirely online, globally distributed student body from Year 1. Section 37 (Compliance Framework) had already noted this exposure but treated it as a technical-control matter outside the register; that treatment is corrected here, since a breach of this kind carries reputational, regulatory, and enrollment consequences at least as severe as several risks already scored above (Risks 9 and 13), and a risk of that severity belongs in the register the Audit & Risk Committee actually reviews quarterly, not left to be managed silently at the IT-operations level.
+
+| # | Risk | Likelihood/Impact | Primary Mitigation |
+|---|---|---|---|
+| 15 | Cybersecurity incident or student/financial data breach | Moderate/High | LMS & Technology Infrastructure line (5%) funds technical controls (access management, encryption, breach-response retainer); Data Privacy & Security Policy (OPS-016) and Backup & Disaster Recovery Plan (OPS-017) govern response; Audit & Risk Committee receives incident reports within 72 hours of detection and quarterly control-testing results year-round, not only upon incident |
+
+Risk 15 is scored and reviewed on the same cadence as Risks 1–14 from Year 1 (2028) — it is a founding-decade risk, not a Year-11+ expansion risk. Its mitigation funding remains inside the existing LMS & Technology Infrastructure line rather than a new budget category, consistent with this section's proportionate-resourcing discipline, but its presence in the register ensures it receives Board-level visibility rather than purely operational handling.
+
 **Register Evolution & New Risk Categories (Year 11+)**
 
-The register is not static. New risks are identified through quarterly Audit & Risk Committee review, Senate academic-affairs escalation, and Sharī'ah Advisory Board flagging, then scored on the same likelihood/impact scale and added with a mitigation owner. As the Year-11 secular expansion (28 programs, 7 new schools — Section 40) and the Nigeria/Gulf footprint mature, expected additions include: **Risk 15 — Professional-licensure risk** for Health Sciences, Engineering, and Law secular programs (graduates unable to sit licensure exams pending program-specific accreditation); **Risk 16 — Nigeria NUC compliance risk** (National Universities Commission approval separate from NAQAA/Texas tracks); **Risk 17 — Gulf ministry-recognition risk** (Year-13 target dependent on an established Texas secular-accreditation track record, per the adopted 20-year sequencing rationale). These follow the same scoring and mitigation-ownership discipline as Risks 1–14, keeping one register, not a competing list.
+The register is not static. New risks are identified through quarterly Audit & Risk Committee review, Senate academic-affairs escalation, and Sharī'ah Advisory Board flagging, then scored on the same likelihood/impact scale and added with a mitigation owner. As the Year-11 secular expansion (28 programs, 7 new schools — Section 40) and the Nigeria/Gulf footprint mature, expected additions include: **Risk 16 — Professional-licensure risk** for Health Sciences, Engineering, and Law secular programs (graduates unable to sit licensure exams pending program-specific accreditation); **Risk 17 — Nigeria NUC compliance risk** (National Universities Commission approval separate from NAQAA/Texas tracks); **Risk 18 — Gulf ministry-recognition risk** (Year-13 target dependent on an established Texas secular-accreditation track record, per the adopted 20-year sequencing rationale). These follow the same scoring and mitigation-ownership discipline as Risks 1–15, keeping one register, not a competing list.
 
 **KPIs**
 
-- 100% of the 14 (growing to 17+) risks reviewed at least quarterly by the Audit & Risk Committee.
+- 100% of the 15 (growing to 18+) risks reviewed at least quarterly by the Audit & Risk Committee.
 - Zero unremediated "High" likelihood/impact risks carried more than two consecutive quarters.
 - Annual external audit completed with no material findings.
 - Founder/Senate compensation disclosure published annually, on schedule, every year.
@@ -2644,7 +2654,7 @@ Covered exhaustively in the table above; the meta-risk is register atrophy (the 
 
 **Timeline**
 
-2028: register formalized, Committee seated. 2029–2030: external audit cadence established. 2030 (Yr 3): succession plans documented (Risk 12 closes). 2033 (Yr 6): coordinator reaches 1.0 FTE. 2037 (Yr 10): founding-decade risk retrospective delivered to Board. 2038 (Yr 11): Risks 15–17 formally added.
+2028: register formalized, Committee seated, Risk 15 (cybersecurity/data breach) added at founding. 2029–2030: external audit cadence established. 2030 (Yr 3): succession plans documented (Risk 12 closes). 2033 (Yr 6): coordinator reaches 1.0 FTE. 2037 (Yr 10): founding-decade risk retrospective delivered to Board. 2038 (Yr 11): Risks 16–18 formally added.
 
 **Governance Responsibilities**
 
@@ -2720,7 +2730,7 @@ Combined certification budget ($16,000 initial + $4,700/yr) fits comfortably ins
 
 **Risks & Mitigation**
 
-Directly overlaps Risk 8 (nonprofit/for-profit commingling scrutiny — mitigated by arm's-length shared-services pricing and independent counsel before any firewall amendment) and Risk 11 (accreditation candidacy delay — mitigated by framing candidacy as reserve-funded, not survival-dependent). Data-protection risk (unlisted in the original 14 but material given a global online student body) is managed operationally under the LMS & Technology Infrastructure line (5%) rather than treated as a freestanding institutional risk, since it is a technical-control matter, not a solvency matter.
+Directly overlaps Risk 8 (nonprofit/for-profit commingling scrutiny — mitigated by arm's-length shared-services pricing and independent counsel before any firewall amendment), Risk 11 (accreditation candidacy delay — mitigated by framing candidacy as reserve-funded, not survival-dependent), and Risk 15 (cybersecurity/data breach — see Section 36). Risk 15's mitigation cost sits inside the existing LMS & Technology Infrastructure line (5%) rather than a new budget category, since it is a technical-control matter, but it is scored and reviewed as a full register item, not handled as an operational matter with no Board-level visibility.
 
 **Timeline**
 
@@ -2937,7 +2947,7 @@ Twenty-year institutional roadmaps in higher education typically sequence in dec
 | 2033 (Yr 6) | Post-Doctoral Fellowship tier launches | 7; 16 |
 | 2033–2036 (Yr 6–9) | Risk/Compliance coordinator scales to 1.0 FTE; Nigeria feasibility study initiated; steady-state compliance cycle in force | 31; 36–39 |
 | 2037 (Yr 10) | Founding decade closes: 11,021 students / $3,830,549/yr; $16,669,190 ten-year cumulative revenue (Growth scenario); Liquidity Reserve Year-10 balance $4,341,842; Strategic Business Reserve $1,240,527; combined retained position $5,582,369; ten-year audited zero-deficit record complete — Nigeria charter application submitted to National Assembly/NUC | 1; 31; 38–39 |
-| 2038 (Yr 11) | Secular accreditation era begins: 28 secular programs (#72–99), 7 new schools, launch; revenue $8.36M; Risks 15–17 (licensure, NUC, Gulf recognition) formally added to register | 6–11; 19; 36–37 |
+| 2038 (Yr 11) | Secular accreditation era begins: 28 secular programs (#72–99), 7 new schools, launch; revenue $8.36M; Risks 16–18 (licensure, NUC, Gulf recognition) formally added to register | 6–11; 19; 36–37 |
 | 2039 (Yr 12) | Revenue $14.6M; Texas secular accreditation targeted complete | 19; 37 |
 | 2040 (Yr 13) | Revenue $22.7M; first Gulf ministry recognition targeted | 19; 32 |
 | 2041 (Yr 14) | Revenue $32.2M; Nigeria capital-deployment phase evaluated against Reserve sufficiency | 31; 39 |
