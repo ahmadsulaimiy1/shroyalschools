@@ -147,7 +147,7 @@ colors = [NAVY_DK, NAVY_MD, GOLD]
 wedges, _ = ax.pie(counts, colors=colors, startangle=90, counterclock=False,
                     wedgeprops=dict(width=0.42, edgecolor="white", linewidth=2))
 ax.set(aspect="equal")
-ax.text(0, 0.06, "107", ha="center", va="center", fontsize=34, fontweight="bold", color=NAVY_DK)
+ax.text(0, 0.06, str(sum(counts)), ha="center", va="center", fontsize=34, fontweight="bold", color=NAVY_DK)
 ax.text(0, -0.14, "DOCUMENTS", ha="center", va="center", fontsize=10, color=GREY, fontweight="bold")
 
 legend_y = [0.72, 0.5, 0.28]
@@ -156,8 +156,10 @@ for i, (lab, cnt, p, c) in enumerate(zip(labels, counts, pcts, colors)):
                                       fc=c, ec="none"))
     fig.text(0.775, legend_y[i] + 0.02, f"{lab} — {cnt} documents ({p}%)", transform=fig.transFigure,
              fontsize=11, va="center", color=TEXT)
-fig.text(0.5, 0.06, "Category totals: Governance 11 · Academic 19 · Student 23 · Operations 27 ·\n"
-                    "Legal & Compliance 11 · Marketing 7 · Waqf & Research 9",
+fig.text(0.5, 0.06, f"Category totals: Governance {CATEGORY_TOTALS['GOV']} · Academic {CATEGORY_TOTALS['ACA']} · "
+                    f"Student {CATEGORY_TOTALS['STU']} · Operations {CATEGORY_TOTALS['OPS']} ·\n"
+                    f"Legal & Compliance {CATEGORY_TOTALS['LEG']} · Marketing {CATEGORY_TOTALS['MKT']} · "
+                    f"Waqf & Research {CATEGORY_TOTALS['WAQ']}",
          transform=fig.transFigure, ha="center", fontsize=9, color=GREY, linespacing=1.5)
 fig.suptitle("Complete Document Inventory: Priority Breakdown (Sections 17–19)", fontsize=12.5,
              fontweight="bold", color=NAVY_DK, y=0.965)

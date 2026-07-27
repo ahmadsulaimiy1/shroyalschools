@@ -67,7 +67,7 @@
 Presented for endorsement by the University Senate
 :::
 
-This Institutional Governance Compendium constitutes the definitive governance and policy framework of Al-Mulk International University. It establishes the institutional structure, articulates the core values, defines the roles and responsibilities of all governing bodies, and provides a comprehensive inventory of the 107 policies, procedures, and governance instruments required for the operation of the University.
+This Institutional Governance Compendium constitutes the definitive governance and policy framework of Al-Mulk International University. It establishes the institutional structure, articulates the core values, defines the roles and responsibilities of all governing bodies, and provides a comprehensive inventory of the 108 policies, procedures, and governance instruments required for the operation of the University.
 
 Where the Constitution (AMIU-CON-001) sets the University's supreme legal architecture, this Compendium sets the operational detail beneath it: who is responsible for each policy, who approves it, and on what schedule it is to be developed. Twenty-five Sections, organized across institutional identity, governance hierarchy, phased growth, compensation philosophy, and the complete document registry, make up its full architecture.
 
@@ -90,7 +90,7 @@ Al-Mulk International University (AMIU) is established as a Texas-registered, re
 
 The University operates primarily as an online and distance learning institution, serving students across all time zones and continents. This mode of delivery is integral to the University's mission of spreading Islamic education worldwide without barriers.
 
-This Compendium serves as the authoritative reference for all institutional governance and policy matters. It articulates the University's mission, vision, and core values; establishes the institutional governance structure; defines the roles and responsibilities of all governing bodies; lists all 107 institutional policies, procedures, and governance instruments; assigns clear accountability for each document; provides a phased growth framework for offices and committees; sets forth the compensation philosophy and framework; and establishes governance provisions for online and distance learning.
+This Compendium serves as the authoritative reference for all institutional governance and policy matters. It articulates the University's mission, vision, and core values; establishes the institutional governance structure; defines the roles and responsibilities of all governing bodies; lists all 108 institutional policies, procedures, and governance instruments; assigns clear accountability for each document; provides a phased growth framework for offices and committees; sets forth the compensation philosophy and framework; and establishes governance provisions for online and distance learning.
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -130,9 +130,9 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 ![Complete Document Inventory: Priority Breakdown](assets/figures/igc_fig3_inventory.png)
 
-**Exhibit G3. The 107-Document Registry by Priority (Sections 17&#8211;19)**
+**Exhibit G3. The 108-Document Registry by Priority (Sections 17&#8211;19)**
 
-*Five documents are already complete; the remaining 102 are scheduled across four development phases in Section 22. The priority counts shown here were recomputed directly from the itemized registry in Section 17 during the editorial review that preceded typesetting &#8212; see the Publication Certification Statement for what that review found and corrected.*
+*Five documents are already complete; the remaining 103 are scheduled across four development phases in Section 22. The priority counts shown here were recomputed directly from the itemized registry in Section 17 during the editorial review that preceded typesetting, with Document 108 added afterward as a subsequent governance enhancement &#8212; see the Publication Certification Statement for both.*
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

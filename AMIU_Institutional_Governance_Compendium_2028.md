@@ -67,7 +67,7 @@
 Presented for endorsement by the University Senate
 :::
 
-This Institutional Governance Compendium constitutes the definitive governance and policy framework of Al-Mulk International University. It establishes the institutional structure, articulates the core values, defines the roles and responsibilities of all governing bodies, and provides a comprehensive inventory of the 107 policies, procedures, and governance instruments required for the operation of the University.
+This Institutional Governance Compendium constitutes the definitive governance and policy framework of Al-Mulk International University. It establishes the institutional structure, articulates the core values, defines the roles and responsibilities of all governing bodies, and provides a comprehensive inventory of the 108 policies, procedures, and governance instruments required for the operation of the University.
 
 Where the Constitution (AMIU-CON-001) sets the University's supreme legal architecture, this Compendium sets the operational detail beneath it: who is responsible for each policy, who approves it, and on what schedule it is to be developed. Twenty-five Sections, organized across institutional identity, governance hierarchy, phased growth, compensation philosophy, and the complete document registry, make up its full architecture.
 
@@ -90,7 +90,7 @@ Al-Mulk International University (AMIU) is established as a Texas-registered, re
 
 The University operates primarily as an online and distance learning institution, serving students across all time zones and continents. This mode of delivery is integral to the University's mission of spreading Islamic education worldwide without barriers.
 
-This Compendium serves as the authoritative reference for all institutional governance and policy matters. It articulates the University's mission, vision, and core values; establishes the institutional governance structure; defines the roles and responsibilities of all governing bodies; lists all 107 institutional policies, procedures, and governance instruments; assigns clear accountability for each document; provides a phased growth framework for offices and committees; sets forth the compensation philosophy and framework; and establishes governance provisions for online and distance learning.
+This Compendium serves as the authoritative reference for all institutional governance and policy matters. It articulates the University's mission, vision, and core values; establishes the institutional governance structure; defines the roles and responsibilities of all governing bodies; lists all 108 institutional policies, procedures, and governance instruments; assigns clear accountability for each document; provides a phased growth framework for offices and committees; sets forth the compensation philosophy and framework; and establishes governance provisions for online and distance learning.
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -130,9 +130,9 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 ![Complete Document Inventory: Priority Breakdown](assets/figures/igc_fig3_inventory.png)
 
-**Exhibit G3. The 107-Document Registry by Priority (Sections 17&#8211;19)**
+**Exhibit G3. The 108-Document Registry by Priority (Sections 17&#8211;19)**
 
-*Five documents are already complete; the remaining 102 are scheduled across four development phases in Section 22. The priority counts shown here were recomputed directly from the itemized registry in Section 17 during the editorial review that preceded typesetting &#8212; see the Publication Certification Statement for what that review found and corrected.*
+*Five documents are already complete; the remaining 103 are scheduled across four development phases in Section 22. The priority counts shown here were recomputed directly from the itemized registry in Section 17 during the editorial review that preceded typesetting, with Document 108 added afterward as a subsequent governance enhancement &#8212; see the Publication Certification Statement for both.*
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -266,7 +266,7 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 **1.2.3** Defines the roles and responsibilities of all governing bodies;
 
-**1.2.4** Lists all 107 institutional policies, procedures, and governance instruments;
+**1.2.4** Lists all 108 institutional policies, procedures, and governance instruments;
 
 **1.2.5** Assigns clear accountability for each document;
 
@@ -337,7 +337,7 @@ Each document is assigned a unique identifier following this convention:
 | MKT | Marketing | Brand, communications, and marketing documents |
 | WAQ | Waqf & Research | Endowment, fundraising, research, and risk documents |
 
-*Note: the Sequential Number in a document's code (e.g. the "003" in AMIU-GOV-003) counts only within that document's own category — it is not the same as the flat 1-107 numbering used for reference in Sections 17 and 20. Section 17's "Doc Code" column gives both side by side for every document, so the two schemes are never in doubt.*
+*Note: the Sequential Number in a document's code (e.g. the "003" in AMIU-GOV-003) counts only within that document's own category — it is not the same as the flat 1-108 numbering used for reference in Sections 17 and 20. Section 17's "Doc Code" column gives both side by side for every document, so the two schemes are never in doubt.*
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2018,7 +2018,7 @@ Section 15 &#183; 15.3
 | 16 | Executive Committee | Chair, Board of Trustees | Acts on behalf of the Board between meetings | Board Officers |
 | 17 | Governance & Nominating Committee | Trustee | Board governance, trustee nomination, policy review | 3 Trustees |
 | 18 | Staff Welfare Committee | Director of Human Resources | Staff wellness, professional development, engagement | Staff Representatives |
-| 19 | Budget & Planning Committee | DVC, Administration & Finance | Budget planning, resource allocation, financial reporting | Multi-departmental |
+| 19 | Budget & Planning Committee | Chief Financial Officer | Budget planning, resource allocation, financial reporting | Multi-departmental |
 
 *Total: 19 Committees*
 
@@ -2220,11 +2220,11 @@ Compensation structures shall be reviewed annually by the Deputy Vice-Chancellor
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsection 17.1</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;One hundred and seven documents, each with a category, a priority, a status, and a named steward.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;One hundred and eight documents, each with a category, a priority, a status, and a named steward.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>17.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>All 107 Documents at a Glance</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>17.1&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>All 108 Documents at a Glance</w:t></w:r></w:p>
     </w:tc>
   </w:tr>
 </w:tbl>
@@ -2237,9 +2237,9 @@ Compensation structures shall be reviewed annually by the Deputy Vice-Chancellor
 Section 17 &#183; 17.1
 :::
 
-## 17.1 All 107 Documents at a Glance
+## 17.1 All 108 Documents at a Glance
 
-*The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-107 reference number used throughout this Compendium — the two schemes were not previously shown side by side, which was the source of a cross-reference inconsistency corrected in Section 21.2 and disclosed in the Publication Certification Statement.*
+*The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-108 reference number used throughout this Compendium — the two schemes were not previously shown side by side, which was the source of a cross-reference inconsistency corrected in Section 21.2 and disclosed in the Publication Certification Statement. Document 108 is a subsequent governance enhancement, not part of the original 107-row source; see the Publication Certification Statement.*
 
 | # | Doc Code | Document | Category | Priority | Policy Steward |
 |---:|---|---|---|---|---|
@@ -2350,6 +2350,7 @@ Section 17 &#183; 17.1
 | 105 | WAQ-007 | Risk Register | WAQ | Complete | Chair, Audit & Risk Committee |
 | 106 | WAQ-008 | Crisis Management Policy | WAQ | Critical | Chair, Audit & Risk Committee |
 | 107 | WAQ-009 | Business Continuity & Insurance Policy | WAQ | Important | DVC, Administration & Finance |
+| 108 | OPS-028 | Institutional Effectiveness & Administrative Unit Assessment Framework | OPS | Critical | DVC, Administration & Finance |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2384,7 +2385,7 @@ Section 17 &#183; 17.1
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 18.1–18.7</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The same 107 documents, regrouped into the seven handbook categories the Senate has approved.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;The same 108 documents, regrouped into the seven handbook categories the Senate has approved.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2394,7 +2395,7 @@ Section 17 &#183; 17.1
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>18.3&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Student Handbook (23)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>18.4&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Operations Handbook (27)</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>18.4&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Operations Handbook (28)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>18.5&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Legal &amp; Compliance Handbook (11)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2492,7 +2493,7 @@ Section 18 &#183; 18.3
 Section 18 &#183; 18.4
 :::
 
-## 18.4 Operations Handbook (27 Documents)
+## 18.4 Operations Handbook (28 Documents)
 
 | # | Doc Code | Document | Priority | Policy Steward |
 |---:|---|---|---|---|
@@ -2523,6 +2524,7 @@ Section 18 &#183; 18.4
 | 78 | OPS-025 | Virtual Office Hours Policy | Important | DVC, Academic Affairs |
 | 79 | OPS-026 | Digital Resources & Library Policy | Important | University Librarian |
 | 80 | OPS-027 | Social Media & Student Communication Policy | Important | Director, Communications |
+| 108 | OPS-028 | Institutional Effectiveness & Administrative Unit Assessment Framework | Critical | DVC, Administration & Finance |
 
 ::: {custom-style="SectionKicker"}
 Section 18 &#183; 18.5
@@ -2611,7 +2613,7 @@ Section 18 &#183; 18.7
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 19.1–19.3</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Forty-nine Critical, fifty-three Important, five already Complete — recomputed directly from the registry.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Fifty Critical, fifty-three Important, five already Complete — recomputed directly from the registry.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -2646,14 +2648,14 @@ Section 19 &#183; 19.2
 
 ## 19.2 Summary by Priority
 
-*Recomputed directly from the 107-row registry in Section 17 during the editorial review — see the Publication Certification Statement for what this replaced.*
+*Recomputed directly from the 107-row registry in Section 17 during the editorial review that preceded typesetting — see the Publication Certification Statement for what this replaced. Document 108 was added afterward, as a subsequent governance enhancement, and is included in the totals below.*
 
 | Priority | Count | Percentage |
 |---|---:|---:|
-| Critical | 49 | 45.8% |
-| Important | 53 | 49.5% |
-| Complete | 5 | 4.7% |
-| **TOTAL** | **107** | **100.0%** |
+| Critical | 50 | 46.3% |
+| Important | 53 | 49.1% |
+| Complete | 5 | 4.6% |
+| **TOTAL** | **108** | **100.0%** |
 
 ::: {custom-style="SectionKicker"}
 Section 19 &#183; 19.3
@@ -2845,6 +2847,7 @@ Section 20 &#183; 20.4
 | 78 | OPS-025 | Virtual Office Hours Policy | DVC, Academic Affairs | College Deans | DVC, Academic Affairs |
 | 79 | OPS-026 | Digital Resources & Library Policy | University Librarian | Library | DVC, Academic Affairs |
 | 80 | OPS-027 | Social Media & Student Communication Policy | Director, Communications | Office of Communications | DVC, Academic Affairs |
+| 108 | OPS-028 | Institutional Effectiveness & Administrative Unit Assessment Framework | DVC, Administration & Finance | Office of Institutional Research | Board of Trustees |
 
 ::: {custom-style="SectionKicker"}
 Section 20 &#183; 20.5
@@ -2965,6 +2968,7 @@ Section 21 &#183; 21.1
 | Financial Model (OPS-001) | Strategic Plan | All Financial Policies |
 | Data Privacy (OPS-016) | FERPA, GDPR | All IT Policies |
 | Waqf Charter (WAQ-001) | Bylaws | Donor Stewardship |
+| Institutional Effectiveness Framework (OPS-028) | Program Assessment & Review Policy (ACA-003) | All Administrative Units |
 
 ::: {custom-style="SectionKicker"}
 Section 21 &#183; 21.2
@@ -2997,6 +3001,7 @@ Section 21 &#183; 21.2
 - IT Infrastructure Plan (OPS-014)
 - Data Privacy Policy (OPS-016)
 - Facilities Management (OPS-020)
+- Institutional Effectiveness Framework (OPS-028)
 
 **Level 4: Academic Documents**
 
@@ -3063,7 +3068,7 @@ Section 21 &#183; 21.2
 <w:p><w:pPr><w:spacing w:before="0" w:after="260"/><w:pBdr><w:bottom w:val="single" w:sz="10" w:space="8" w:color="B08625"/></w:pBdr></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="19"/><w:spacing w:val="10"/></w:rPr><w:t>Subsections 22.1–22.5</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="360"/><w:ind w:right="700"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Nine documents before launch, 102 more across three phases that follow — every document scheduled exactly once.&#8221;</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="25"/></w:rPr><w:t>&#8220;Nine documents before launch, 103 more across three phases that follow — every document scheduled exactly once.&#8221;</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="140"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:b/><w:sz w:val="18"/><w:spacing w:val="12"/></w:rPr><w:t>Subsections</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -3071,7 +3076,7 @@ Section 21 &#183; 21.2
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>22.2&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Phase 1: Pre-Launch Essentials (9)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>22.3&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Phase 2: Year 1 Critical Documents (40)</w:t></w:r></w:p>
+      <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>22.3&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Phase 2: Year 1 Critical Documents (41)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>22.4&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>Phase 3: Year 2 Important Documents (46)</w:t></w:r></w:p>
 <w:p><w:pPr><w:spacing w:before="0" w:after="110"/></w:pPr>
@@ -3095,10 +3100,10 @@ Section 22 &#183; 22.1
 | Phase | Description | Documents | Timeline |
 |---|---|---:|---|
 | Phase 1 | Pre-Launch Essentials | 9 | 4-6 Weeks |
-| Phase 2 | Year 1 Critical Documents | 40 | 3-4 Months |
+| Phase 2 | Year 1 Critical Documents | 41 | 3-4 Months |
 | Phase 3 | Year 2 Important Documents | 46 | 4-5 Months |
 | Phase 4 | Year 3+ Documents | 7 | 6-8 Months |
-| **TOTAL requiring development** | | **102** | **18-24 Months** |
+| **TOTAL requiring development** | | **103** | **18-24 Months** |
 
 ::: {custom-style="SectionKicker"}
 Section 22 &#183; 22.2
@@ -3122,9 +3127,9 @@ Section 22 &#183; 22.2
 Section 22 &#183; 22.3
 :::
 
-## 22.3 Phase 2: Year 1 Critical Documents (40 Documents)
+## 22.3 Phase 2: Year 1 Critical Documents (41 Documents)
 
-Document numbers: 2, 7, 9, 13-18, 26-29, 32, 37-38, 44-46, 52-53, 59, 61, 76-77, 81-84, 86-89, 92-93, 98-101, 106 (every Critical-priority document not already scheduled in Phase 1). Timeline: Months 2-5.
+Document numbers: 2, 7, 9, 13-18, 26-29, 32, 37-38, 44-46, 52-53, 59, 61, 76-77, 81-84, 86-89, 92-93, 98-101, 106, 108 (every Critical-priority document not already scheduled in Phase 1). Timeline: Months 2-5.
 
 ::: {custom-style="SectionKicker"}
 Section 22 &#183; 22.4
@@ -3433,7 +3438,9 @@ Before typesetting, this Compendium underwent a structured editorial and data-in
 
 **Reviewed and deliberately left unchanged**, because it is not an error: the Growth Summary in Section 11.1 shows Year 3 enrollment (1,606) between the figures separately cited elsewhere for Year 1 (347) and Year 5 (3,493); all three figures were cross-checked against the Constitution and Strategic Implementation Blueprint's own enrollment projections and agree exactly.
 
-This statement certifies that the review described above was performed and that every issue it identified was corrected before publication. It does not certify — and no review of a registry this large can reasonably certify — the complete absence of any error whatsoever. A reader who identifies a further issue is asked to report it to info@edu.amiu.com for correction in the next revision.
+**Subsequently added — a governance enhancement, not a correction to the original source.** After the row-by-row reconciliation above was completed against the original 107-document source, a further governance review found that the registry — despite tracking a 5-year academic program assessment cycle (ACA-003) in full — contained no equivalent institution-wide effectiveness review covering non-academic administrative units (Admissions, Registrar, Finance, IT, Student Affairs, Human Resources, Marketing & Communications, Library Services, Institutional Research, Quality Assurance, Waqf Administration, and Student Support Services), a standard expectation of accreditors that assess institutional effectiveness, not academic quality alone. Document 108, the Institutional Effectiveness & Administrative Unit Assessment Framework (OPS-028), was adopted to close that gap: a 5-year review cycle for every non-academic unit listed above, annual KPI monitoring in the interim years, a defined evidence standard (objectives, KPIs, baselines, targets, outcomes, improvement actions, and follow-up review), and an escalation path of Unit &#8594; Director &#8594; Deputy Vice-Chancellor &#8594; President &amp; Vice-Chancellor &#8594; the Board's Audit &amp; Risk Committee &#8594; Board of Trustees. It is appended as item 108, after the original 107 rows, specifically so no document already assigned a number or Doc Code in the original source is renumbered. Every summary and roadmap table in this Compendium (Sections 17&#8211;22) now includes it: the registry accordingly reports 108 documents, not 107, everywhere except the historical narrative above describing what the original reconciliation found.
+
+This statement certifies that the review described above was performed and that every issue it identified was corrected before publication, and that the subsequent addition described above is fully reconciled through every summary and roadmap table this Compendium generates. It does not certify — and no review of a registry this large can reasonably certify — the complete absence of any error whatsoever. A reader who identifies a further issue is asked to report it to info@edu.amiu.com for correction in the next revision.
 
 **Certified for Executive Release** — AMIU Office of Institutional Planning, Founding-Decade Edition.
 

@@ -8,10 +8,21 @@ itemized 107-row inventory they were supposed to summarize. Every table in
 Sections 17-22 is generated from this one list, so a summary number can
 never again silently disagree with the rows it summarizes.
 
-Source of the 107 rows: the user-supplied "AMIU Institutional Governance
-Compendium" (AMIU-IGC-004, Version 4.0), Section 17. Category, priority,
-status and steward text are transcribed verbatim from that source; only the
-derived doc_code and the corrected summary/roadmap arithmetic are new.
+Source of the original 107 rows: the user-supplied "AMIU Institutional
+Governance Compendium" (AMIU-IGC-004, Version 4.0), Section 17. Category,
+priority, status and steward text are transcribed verbatim from that
+source; only the derived doc_code and the corrected summary/roadmap
+arithmetic are new.
+
+Document 108 (Institutional Effectiveness & Administrative Unit Assessment
+Framework) is NOT part of that original 107-row source. It was adopted
+afterward, as a subsequent governance enhancement, once a review found
+that the original registry had full assessment coverage for academic
+programs (ACA-003) but none for non-academic administrative units — a
+real gap against standard accreditation expectations. It is appended at
+the end of the list, after the original 107 rows, specifically so none of
+the original 107 documents' absolute numbers or Doc Codes are disturbed;
+see the Publication Certification Statement for the full disclosure.
 """
 
 CATEGORY_ORDER = ["GOV", "ACA", "STU", "OPS", "LEG", "MKT", "WAQ"]
@@ -134,10 +145,15 @@ DOCS = [
     (105, "Risk Register", "WAQ", "Complete", "Done", "Chair, Audit & Risk Committee"),
     (106, "Crisis Management Policy", "WAQ", "Critical", "To Develop", "Chair, Audit & Risk Committee"),
     (107, "Business Continuity & Insurance Policy", "WAQ", "Important", "To Develop", "DVC, Administration & Finance"),
+    # --- End of the original 107-row source. Document 108 below is a ---
+    # --- subsequent governance enhancement, not part of that source.  ---
+    (108, "Institutional Effectiveness & Administrative Unit Assessment Framework", "OPS", "Critical", "To Develop", "DVC, Administration & Finance"),
 ]
 
-assert len(DOCS) == 107, f"expected 107 documents, got {len(DOCS)}"
-assert [d[0] for d in DOCS] == list(range(1, 108)), "document numbers must be a contiguous 1-107 sequence"
+ORIGINAL_SOURCE_COUNT = 107  # the 107 rows transcribed verbatim from AMIU-IGC-004 v4.0
+
+assert len(DOCS) == 108, f"expected 108 documents, got {len(DOCS)}"
+assert [d[0] for d in DOCS] == list(range(1, 109)), "document numbers must be a contiguous 1-108 sequence"
 
 # ---------------------------------------------------------------------------
 # Derived: category-relative Doc Code (e.g. GOV-001), matching the format
@@ -151,7 +167,7 @@ for num, title, cat, priority, status, steward in DOCS:
     DOC_CODES[num] = f"{cat}-{_cat_counters[cat]:03d}"
 
 CATEGORY_TOTALS = {c: _cat_counters[c] for c in CATEGORY_ORDER}
-assert sum(CATEGORY_TOTALS.values()) == 107
+assert sum(CATEGORY_TOTALS.values()) == 108
 
 # ---------------------------------------------------------------------------
 # Priority tallies — the authoritative numbers. The source document's own
@@ -162,10 +178,10 @@ PRIORITY_COUNTS = {"Critical": 0, "Important": 0, "Complete": 0}
 for num, title, cat, priority, status, steward in DOCS:
     PRIORITY_COUNTS[priority] += 1
 
-assert PRIORITY_COUNTS == {"Critical": 49, "Important": 53, "Complete": 5}, PRIORITY_COUNTS
+assert PRIORITY_COUNTS == {"Critical": 50, "Important": 53, "Complete": 5}, PRIORITY_COUNTS
 
 def pct(n):
-    return round(100 * n / 107, 1)
+    return round(100 * n / 108, 1)
 
 PRIORITY_PERCENTAGES = {k: pct(v) for k, v in PRIORITY_COUNTS.items()}
 
@@ -200,10 +216,10 @@ PHASE2_NUMS = [n for n in CRITICAL_NUMS if n not in PHASE1_NUMS]
 PHASE3_NUMS = [n for n in IMPORTANT_NUMS if n not in PHASE4_NUMS]
 
 assert len(PHASE1_NUMS) == 9
-assert len(PHASE2_NUMS) == 40, len(PHASE2_NUMS)
+assert len(PHASE2_NUMS) == 41, len(PHASE2_NUMS)  # 40 original + Document 108 (Critical, not in Phase 1)
 assert len(PHASE3_NUMS) == 46, len(PHASE3_NUMS)
 assert len(PHASE4_NUMS) == 7
-assert len(PHASE1_NUMS) + len(PHASE2_NUMS) + len(PHASE3_NUMS) + len(PHASE4_NUMS) == 102  # 107 - 5 Complete
+assert len(PHASE1_NUMS) + len(PHASE2_NUMS) + len(PHASE3_NUMS) + len(PHASE4_NUMS) == 103  # 108 - 5 Complete
 
 def ranges(nums):
     """Render a sorted list of document numbers as comma-joined ranges, e.g. [2,7,9,13,14,15] -> '2, 7, 9, 13-15'."""
@@ -252,7 +268,8 @@ def table_19_2_summary():
     lines = ["| Priority | Count | Percentage |", "|---|---:|---:|"]
     for k in ("Critical", "Important", "Complete"):
         lines.append(f"| {k} | {PRIORITY_COUNTS[k]} | {PRIORITY_PERCENTAGES[k]}% |")
-    lines.append(f"| **TOTAL** | **107** | **100.0%** |")
+    total = sum(PRIORITY_COUNTS.values())
+    lines.append(f"| **TOTAL** | **{total}** | **100.0%** |")
     return "\n".join(lines)
 
 # 20.x: Responsibility Assignment Matrix needs Implementation Owner / Approval
@@ -366,8 +383,9 @@ RESPONSIBILITY = {
     105: ("Chair, Audit & Risk Committee", "Office of Internal Audit", "Board of Trustees"),
     106: ("Chair, Audit & Risk Committee", "Office of Internal Audit", "University Senate"),
     107: ("DVC, Administration & Finance", "Office of Finance", "University Senate"),
+    108: ("DVC, Administration & Finance", "Office of Institutional Research", "Board of Trustees"),
 }
-assert set(RESPONSIBILITY.keys()) == set(range(1, 108))
+assert set(RESPONSIBILITY.keys()) == set(range(1, 109))
 
 def table_20_category(cat):
     lines = ["| # | Doc Code | Document | Policy Steward | Implementation Owner | Approval Authority |",
@@ -384,7 +402,8 @@ def table_22_1_roadmap():
     lines.append(f"| Phase 2 | Year 1 Critical Documents | {len(PHASE2_NUMS)} | 3-4 Months |")
     lines.append(f"| Phase 3 | Year 2 Important Documents | {len(PHASE3_NUMS)} | 4-5 Months |")
     lines.append(f"| Phase 4 | Year 3+ Documents | {len(PHASE4_NUMS)} | 6-8 Months |")
-    lines.append(f"| **TOTAL requiring development** | | **102** | **18-24 Months** |")
+    total = len(PHASE1_NUMS) + len(PHASE2_NUMS) + len(PHASE3_NUMS) + len(PHASE4_NUMS)
+    lines.append(f"| **TOTAL requiring development** | | **{total}** | **18-24 Months** |")
     return "\n".join(lines)
 
 if __name__ == "__main__":

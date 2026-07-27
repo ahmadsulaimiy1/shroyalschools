@@ -165,15 +165,15 @@ SECTIONS = [
    ("16.4","Revenue Allocation for Compensation"),("16.5","Compensation Philosophy"),
    ("16.6","Incentive & Award Framework"),("16.7","Governance Oversight"),("16.8","Annual Review")]),
  (17, "Complete Document Inventory", "Subsection 17.1",
-  "One hundred and seven documents, each with a category, a priority, a status, and a named steward.",
-  [("17.1","All 107 Documents at a Glance")]),
+  "One hundred and eight documents, each with a category, a priority, a status, and a named steward.",
+  [("17.1","All 108 Documents at a Glance")]),
  (18, "Document Registry by Category", "Subsections 18.1–18.7",
-  "The same 107 documents, regrouped into the seven handbook categories the Senate has approved.",
+  "The same 108 documents, regrouped into the seven handbook categories the Senate has approved.",
   [("18.1","Governance Handbook (11)"),("18.2","Academic Handbook (19)"),("18.3","Student Handbook (23)"),
-   ("18.4","Operations Handbook (27)"),("18.5","Legal & Compliance Handbook (11)"),
+   ("18.4","Operations Handbook (28)"),("18.5","Legal & Compliance Handbook (11)"),
    ("18.6","Marketing & Communications Handbook (7)"),("18.7","Waqf & Research Handbook (9)")]),
  (19, "Priority Ranking & Development Urgency", "Subsections 19.1–19.3",
-  "Forty-nine Critical, fifty-three Important, five already Complete — recomputed directly from the registry.",
+  "Fifty Critical, fifty-three Important, five already Complete — recomputed directly from the registry.",
   [("19.1","Priority Definitions"),("19.2","Summary by Priority"),("19.3","Pre-Launch Essentials (9)")]),
  (20, "Responsibility Assignment Matrix", "Subsections 20.1–20.7",
   "For every document: who stewards it, who implements it, and who has final authority to approve it.",
@@ -184,9 +184,9 @@ SECTIONS = [
   "Which documents depend on which — so no policy is drafted before its own foundation exists.",
   [("21.1","Document Dependencies"),("21.2","Dependency Levels")]),
  (22, "Implementation Roadmap", "Subsections 22.1–22.5",
-  "Nine documents before launch, 102 more across three phases that follow — every document scheduled exactly once.",
+  "Nine documents before launch, 103 more across three phases that follow — every document scheduled exactly once.",
   [("22.1","Phased Development Schedule"),("22.2","Phase 1: Pre-Launch Essentials (9)"),
-   ("22.3","Phase 2: Year 1 Critical Documents (40)"),("22.4","Phase 3: Year 2 Important Documents (46)"),
+   ("22.3","Phase 2: Year 1 Critical Documents (41)"),("22.4","Phase 3: Year 2 Important Documents (46)"),
    ("22.5","Phase 4: Year 3+ Documents (7)")]),
  (23, "Senate Resolution & Endorsement", "Subsections 23.1–23.4",
   "Resolution 2028-001: the University Senate's formal endorsement of this Compendium as governing framework.",
@@ -233,7 +233,7 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 **1.2.3** Defines the roles and responsibilities of all governing bodies;
 
-**1.2.4** Lists all 107 institutional policies, procedures, and governance instruments;
+**1.2.4** Lists all 108 institutional policies, procedures, and governance instruments;
 
 **1.2.5** Assigns clear accountability for each document;
 
@@ -295,7 +295,7 @@ Each document is assigned a unique identifier following this convention:
 | MKT | Marketing | Brand, communications, and marketing documents |
 | WAQ | Waqf & Research | Endowment, fundraising, research, and risk documents |
 
-*Note: the Sequential Number in a document's code (e.g. the "003" in AMIU-GOV-003) counts only within that document's own category — it is not the same as the flat 1-107 numbering used for reference in Sections 17 and 20. Section 17's "Doc Code" column gives both side by side for every document, so the two schemes are never in doubt.*
+*Note: the Sequential Number in a document's code (e.g. the "003" in AMIU-GOV-003) counts only within that document's own category — it is not the same as the flat 1-108 numbering used for reference in Sections 17 and 20. Section 17's "Doc Code" column gives both side by side for every document, so the two schemes are never in doubt.*
 '''
 
 CONTENT[2] = f'''
@@ -1163,9 +1163,9 @@ Compensation structures shall be reviewed annually by the Deputy Vice-Chancellor
 
 CONTENT[17] = f'''
 {kicker(17,"17.1")}
-## 17.1 All 107 Documents at a Glance
+## 17.1 All 108 Documents at a Glance
 
-*The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-107 reference number used throughout this Compendium — the two schemes were not previously shown side by side, which was the source of a cross-reference inconsistency corrected in Section 21.2 and disclosed in the Publication Certification Statement.*
+*The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-108 reference number used throughout this Compendium — the two schemes were not previously shown side by side, which was the source of a cross-reference inconsistency corrected in Section 21.2 and disclosed in the Publication Certification Statement. Document 108 is a subsequent governance enhancement, not part of the original 107-row source; see the Publication Certification Statement.*
 
 {table_17_full_inventory()}
 '''
@@ -1194,7 +1194,7 @@ CONTENT[19] = f'''
 {kicker(19,"19.2")}
 ## 19.2 Summary by Priority
 
-*Recomputed directly from the 107-row registry in Section 17 during the editorial review — see the Publication Certification Statement for what this replaced.*
+*Recomputed directly from the 107-row registry in Section 17 during the editorial review that preceded typesetting — see the Publication Certification Statement for what this replaced. Document 108 was added afterward, as a subsequent governance enhancement, and is included in the totals below.*
 
 {table_19_2_summary()}
 
@@ -1237,6 +1237,7 @@ CONTENT[21] = f'''
 | Financial Model (OPS-001) | Strategic Plan | All Financial Policies |
 | Data Privacy (OPS-016) | FERPA, GDPR | All IT Policies |
 | Waqf Charter (WAQ-001) | Bylaws | Donor Stewardship |
+| Institutional Effectiveness Framework (OPS-028) | Program Assessment & Review Policy (ACA-003) | All Administrative Units |
 
 {kicker(21,"21.2")}
 ## 21.2 Dependency Levels
@@ -1266,6 +1267,7 @@ CONTENT[21] = f'''
 - IT Infrastructure Plan (OPS-014)
 - Data Privacy Policy (OPS-016)
 - Facilities Management (OPS-020)
+- Institutional Effectiveness Framework (OPS-028)
 
 **Level 4: Academic Documents**
 
