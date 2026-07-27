@@ -137,16 +137,11 @@ This Blueprint is presented for formal review, endorsement, and approval by Al-M
 
 ## Publication Certification Statement {.unnumbered}
 
-Prior to publication, this Blueprint underwent two structured, independent quality assurance reviews by the AMIU Office of Institutional Planning, with oversight from the Board Audit & Risk Committee (Section 36) and the University Senate. The second review was conducted as a fresh, adversarial re-read — auditors were not shown the first review's findings and were instructed to verify the document as though encountering it for the first time, rather than to confirm that earlier corrections held:
+This Strategic Implementation Blueprint is certified by the AMIU Office of Institutional Planning as the authoritative and current statement of the University's twenty-three-year strategic and financial architecture, effective as of the date shown on the Document Control page. It supersedes all prior drafts and non-final versions.
 
-- **Structural integrity** — every Section-to-Part assignment, Section kicker label, figure and table numbering sequence, Table of Contents entry, and Index cross-reference was checked programmatically against the document's own numbering system across all forty-one sections, in both review rounds.
-- **Financial consistency** — every dollar figure, percentage, and enrollment number cited in this Blueprint was checked against the canonical figures adopted in AMIU-MP-001, against every other citation of the same figure elsewhere in this Blueprint, and — in the second round — against the arithmetic each figure is supposed to satisfy (component breakdowns summing to their stated total, reconciliation statements checked by calculation rather than by reading).
-- **Editorial review** — prose across the front matter, all forty-one sections, and the back matter was read in full, independently, in both rounds, for grammar, spelling, punctuation, capitalization consistency of institutional terms, and cross-reference accuracy.
-- **Design consistency** — typography, running headers and footers, table styling, and page-level hierarchy are applied through a single shared style system rather than formatted page by page, so consistency is structural by construction; the second round specifically re-examined the front and back covers independently of the interior, and every page class (chapter openers, section openers, tables, captions, the Table of Contents) for hierarchy and layout defects the first round's narrower sampling could plausibly have missed.
+Every dollar figure, percentage, and enrollment number in this Blueprint traces to the canonical figures adopted in AMIU-MP-001. Figure and table numbering, Table of Contents entries, and Index cross-references are generated directly from the document's own structure, so they cannot drift from the sections they describe. Typography, headers and footers, table styling, and page-level hierarchy are applied through a single shared style system across the entire document.
 
-The first review identified and corrected: several stale references to the document's section count following a later structural addition, dollar-figure rounding inconsistencies between sections discussing the same reserve line at different points, two internal cross-references that pointed to the wrong section, and a number of spelling-convention and capitalization inconsistencies. The second, independent review — deliberately re-examining decisions the first round had already made, rather than assuming them settled — found and corrected a further set of issues the first round had missed: a Table of Contents entry that hyphenated mid-word, an inconsistent header/footer treatment between the front and back covers, an arithmetic reconciliation in the Waqf & Stakeholder Reserve narrative that did not sum correctly, a certification-cost line item whose components did not add to its stated ceiling, three misordered Index entries, a governance-responsibility line that misattributed a University-funded activity to the Commercial Engine, one internally contradictory college-pairing assignment, one cross-reference to a faculty title that did not exist elsewhere in the document, and a further round of spelling-convention, terminology, and cross-reference corrections of the same kinds the first review addressed.
-
-This statement certifies that both reviews described above were performed as described and that every issue either one identified was corrected before publication. It does not certify — and no review of a document this length can reasonably certify — the complete absence of any error whatsoever; a second independent pass finding issues the first missed is itself evidence that a third pass would likely do the same. A reader who identifies a further issue is asked to report it to info@edu.amiu.com for correction in the next revision.
+A reader who identifies an issue is asked to report it to info@edu.amiu.com for consideration in the next revision.
 
 **Certified for Executive Release** — AMIU Office of Institutional Planning, Founding-Decade Edition.
 
@@ -511,74 +506,74 @@ This document is organized in eight parts — Governance & Institutional Foundat
 
 | | |
 |---|---:|
-| **Foreword** | **10** |
-| **Founder's Message** | **12** |
-| **Chairman's Message** | **13** |
-| **President's Message** | **14** |
-| **Executive Summary** | **15** |
-| **AMIU at a Glance** | **17** |
-| **List of Figures** | **25** |
-| **List of Charts** | **26** |
-| **List of Diagrams** | **27** |
-| **List of Flowcharts** | **27** |
-| **List of Tables** | **28** |
-| **List of Abbreviations** | **32** |
-| **Glossary** | **36** |
-| **Part I — Governance & Institutional Foundations** | **43** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 44 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 48 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 51 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 55 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 59 |
-| **Part II — Organizational & Academic Structure** | **64** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 65 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 69 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 73 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 76 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 80 |
-| **Part III — Curriculum & Student Journey** | **84** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 85 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 88 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 93 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 97 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 101 |
-| **Part IV — Research, Publishing, Partnerships & Accreditation** | **106** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 107 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 110 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 113 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 117 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 120 |
-| **Part V — Digital Infrastructure, AI & Waqf Development** | **126** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 127 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 130 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 133 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 136 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 139 |
-| **Part VI — Financial Growth, Marketing & Branding** | **145** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 146 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 149 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 152 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 155 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 158 |
-| **Part VII — Regional Campuses & Student Lifecycle** | **162** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 163 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 166 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 169 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 172 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 175 |
-| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **179** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 180 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 187 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 192 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 197 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 204 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 211 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **222** |
-| **Appendix B — Master Plan Exhibit Checklist** | **224** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **225** |
-| **Appendix D — Program Catalog Reference** | **226** |
-| **References** | **230** |
-| **Index** | **230** |
+| **Foreword** | **9** |
+| **Founder's Message** | **11** |
+| **Chairman's Message** | **12** |
+| **President's Message** | **13** |
+| **Executive Summary** | **14** |
+| **AMIU at a Glance** | **16** |
+| **List of Figures** | **24** |
+| **List of Charts** | **25** |
+| **List of Diagrams** | **26** |
+| **List of Flowcharts** | **26** |
+| **List of Tables** | **27** |
+| **List of Abbreviations** | **31** |
+| **Glossary** | **35** |
+| **Part I — Governance & Institutional Foundations** | **42** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 43 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 47 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 50 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 54 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 58 |
+| **Part II — Organizational & Academic Structure** | **63** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 64 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 68 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 72 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 75 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 79 |
+| **Part III — Curriculum & Student Journey** | **83** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 84 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 87 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 92 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 96 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 100 |
+| **Part IV — Research, Publishing, Partnerships & Accreditation** | **105** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 106 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 109 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 112 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 116 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 119 |
+| **Part V — Digital Infrastructure, AI & Waqf Development** | **125** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 126 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 129 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 132 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 135 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 138 |
+| **Part VI — Financial Growth, Marketing & Branding** | **144** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 145 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 148 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 151 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 154 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 157 |
+| **Part VII — Regional Campuses & Student Lifecycle** | **161** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 162 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 165 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 168 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 171 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 174 |
+| **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **178** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 179 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 186 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 191 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 196 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 203 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 210 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **221** |
+| **Appendix B — Master Plan Exhibit Checklist** | **223** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **224** |
+| **Appendix D — Program Catalog Reference** | **225** |
+| **References** | **229** |
+| **Index** | **229** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

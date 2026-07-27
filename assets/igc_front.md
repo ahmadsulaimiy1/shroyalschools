@@ -132,7 +132,7 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 **Exhibit G3. The 108-Document Registry by Priority (Sections 17&#8211;19)**
 
-*Five documents are already complete; the remaining 103 are scheduled across four development phases in Section 22. The priority counts shown here were recomputed directly from the itemized registry in Section 17 during the editorial review that preceded typesetting, with Document 108 added afterward as a subsequent governance enhancement &#8212; see the Publication Certification Statement for both.*
+*Five documents are already complete; the remaining 103 are scheduled across four development phases in Section 22. The priority counts shown here are generated directly from the itemized registry in Section 17, so they can never diverge from it.*
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

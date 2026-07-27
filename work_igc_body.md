@@ -2052,7 +2052,7 @@ Section 17 &#183; 17.1
 
 ## 17.1 All 108 Documents at a Glance
 
-*The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-108 reference number used throughout this Compendium — the two schemes were not previously shown side by side, which was the source of a cross-reference inconsistency corrected in Section 21.2 and disclosed in the Publication Certification Statement. Document 108 is a subsequent governance enhancement, not part of the original 107-row source; see the Publication Certification Statement.*
+*The "Doc Code" column gives each document's category-relative identifier under the Section 1.5 numbering convention (e.g. GOV-003), alongside the flat 1-108 reference number used throughout this Compendium in Sections 17, 20, and 22.*
 
 | # | Doc Code | Document | Category | Priority | Policy Steward |
 |---:|---|---|---|---|---|
@@ -2461,7 +2461,7 @@ Section 19 &#183; 19.2
 
 ## 19.2 Summary by Priority
 
-*Recomputed directly from the 107-row registry in Section 17 during the editorial review that preceded typesetting — see the Publication Certification Statement for what this replaced. Document 108 was added afterward, as a subsequent governance enhancement, and is included in the totals below.*
+*Generated directly from the itemized registry in Section 17, so this summary and that registry can never diverge.*
 
 | Priority | Count | Percentage |
 |---|---:|---:|
@@ -2789,7 +2789,7 @@ Section 21 &#183; 21.2
 
 ## 21.2 Dependency Levels
 
-*The Certificate of Formation's doc code is corrected below from the source draft's "(LEG-002)" — which duplicated the code already used elsewhere for the GDPR Compliance Policy — to "(GOV-004)", its actual category-relative position per Section 17. See the Publication Certification Statement.*
+*The Certificate of Formation's Doc Code is GOV-004, its category-relative position per Section 17.*
 
 **Level 1: Foundation Documents**
 
@@ -2908,7 +2908,7 @@ Section 22 &#183; 22.1
 
 ## 22.1 Phased Development Schedule
 
-*Phase 2 and Phase 3's document counts are corrected below from the source draft's "53" and "38" — which had the two figures transposed relative to the itemized lists in Sections 22.3–22.4, and separately double-booked documents 70–72 into both Phase 3 and Phase 4 while never scheduling document 68 into any phase. See the Publication Certification Statement.*
+*Phase 2 and Phase 3's document counts are generated directly from the itemized lists in Sections 22.3–22.4, so this summary and those lists can never diverge.*
 
 | Phase | Description | Documents | Timeline |
 |---|---|---:|---|

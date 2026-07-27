@@ -1794,7 +1794,7 @@ ACA-010 &#183; Credit-Hour Definition Policy
 
 ## 4.0 International Equivalency
 
-*The table below spans the full seven-tier Academic Ladder established in Constitution Article X, Section 10.1 — every credit-bearing tier is listed, including the Postgraduate Diploma, which the equivalency table did not previously carry.*
+*The table below spans the full seven-tier Academic Ladder established in Constitution Article X, Section 10.1 — every credit-bearing tier is listed, including the Postgraduate Diploma.*
 
 | AMIU Credit Hours | Approx. ECTS Equivalent |
 |---|---|
@@ -2096,7 +2096,7 @@ ACA-012 &#183; Graduation Requirements Policy
 
 ## 8.0 Graduation with Honors
 
-*The GPA bands below are stated as non-overlapping ranges — the source draft's "3.5-3.7 / 3.7-3.9 / 3.9-4.0" placed a GPA of exactly 3.7 or 3.9 in two honors tiers at once. Corrected to a single unambiguous tier per GPA value.*
+*The GPA bands below are stated as non-overlapping ranges, so every GPA value maps to exactly one honors tier.*
 
 **8.1** Honors shall be awarded based on GPA:
 
