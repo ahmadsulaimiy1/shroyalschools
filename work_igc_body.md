@@ -1831,7 +1831,7 @@ Section 15 &#183; 15.3
 | 16 | Executive Committee | Chair, Board of Trustees | Acts on behalf of the Board between meetings | Board Officers |
 | 17 | Governance & Nominating Committee | Trustee | Board governance, trustee nomination, policy review | 3 Trustees |
 | 18 | Staff Welfare Committee | Director of Human Resources | Staff wellness, professional development, engagement | Staff Representatives |
-| 19 | Budget & Planning Committee | Chief Financial Officer | Budget planning, resource allocation, financial reporting | Multi-departmental |
+| 19 | Budget & Planning Committee | DVC, Administration & Finance | Budget planning, resource allocation, financial reporting | Multi-departmental |
 
 *Total: 19 Committees*
 
