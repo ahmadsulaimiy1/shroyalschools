@@ -1,0 +1,9 @@
+{
+  "name": "al-kafi-docx-export",
+  "private": true,
+  "description": "Regenerates the Word edition of al-Kafi fi at-Tajweed from index.html",
+  "dependencies": {
+    "docx": "^9.7.1",
+    "cheerio": "^1.0.0"
+  }
+}

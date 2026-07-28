@@ -1,0 +1,371 @@
+const {
+  $, C, FONT_BODY, FONT_DISPLAY, FONT_UI, bmName, textRunsFor, mkRun, inlineRuns,
+  para, headingPara, pageBreak, boxTable, labelPara, listParagraph, buildTable,
+  NUMBERING_CONFIG, HTML_PATH, OUT_PATH, LIMIT, docx,
+} = require('./docx-build-helpers.js');
+
+const {
+  Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
+  Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle,
+  PageBreak, TableOfContents, Header, Footer, PageNumber, NumberFormat,
+  convertInchesToTwip, Bookmark, LevelFormat,
+  PositionalTab, PositionalTabAlignment, PositionalTabLeader, PositionalTabRelativeTo,
+  PageReference, VerticalAlign, TabStopType, TabStopPosition,
+} = docx;
+
+const body = [];
+const push = (...items) => { items.flat().filter(Boolean).forEach(i => body.push(i)); };
+
+// track headings we bookmark, in order, for the manual analytical index
+const indexEntries = []; // {text, bookmarkId}
+let collectIndex = true; // turned off once we leave the numbered Babs/appendices (glossary reuses .section-title for its own grouping headers, which aren't real index targets)
+
+function buildTocBlock() {
+  return [
+    headingPara('فهرس المحتويات', HeadingLevel.HEADING_1, 'native_toc', { size: 32, pageBreakBefore: true, before: 0, after: 160 }),
+    para('(اضغط بزر الماوس الأيمن على الفهرس ثم اختر "تحديث الحقل" لضبط أرقام الصفحات عند فتح المستند لأول مرة)', { align: AlignmentType.RIGHT, italics: true, color: C.ink500, size: 16, after: 200 }),
+    new TableOfContents('فهرس المحتويات', { hyperlink: true, headingStyleRange: '1-3' }),
+    pageBreak(),
+  ];
+}
+
+// ============================================================
+// COVER
+// ============================================================
+function renderCover($sec) {
+  const out = [];
+  out.push(new Paragraph({ text: '', spacing: { after: 600 } }));
+  out.push(para($sec.find('.eyebrow').text(), { align: AlignmentType.CENTER, size: 18, color: C.gold600, bold: true, after: 400 }));
+  out.push(para($sec.find('.cover .bismillah').first().text(), { align: AlignmentType.CENTER, size: 30, color: C.navy900, font: 'Amiri Quran', after: 500 }));
+  out.push(new Paragraph({
+    children: textRunsFor($sec.find('.cover h1').text(), { size: 68, bold: true, color: C.navy950, font: FONT_DISPLAY }),
+    alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: 400 },
+  }));
+  out.push(para($sec.find('.cover .subtitle').text(), { align: AlignmentType.CENTER, size: 22, color: C.ink700, after: 500 }));
+  out.push(para('۞', { align: AlignmentType.CENTER, size: 28, color: C.gold500, after: 500,
+    border: { top: { style: BorderStyle.SINGLE, size: 4, color: C.gold500, space: 12 }, bottom: { style: BorderStyle.SINGLE, size: 4, color: C.gold500, space: 12 } } }));
+  const credits = $sec.find('.credits > div');
+  for (let i = 0; i < credits.length; i += 2) {
+    const role = $(credits[i]).text();
+    const name = $(credits[i + 1]) ? $(credits[i + 1]).text() : '';
+    out.push(para(role, { align: AlignmentType.CENTER, size: 18, color: C.gold700, after: 60 }));
+    out.push(para(name, { align: AlignmentType.CENTER, size: 30, bold: true, color: C.navy950, after: 340 }));
+  }
+  out.push(para($sec.find('.footer-line').text(), { align: AlignmentType.CENTER, size: 18, color: C.ink500, after: 200 }));
+  out.push(pageBreak());
+  return out;
+}
+
+function renderHalfTitle($sec) {
+  const out = [];
+  out.push(new Paragraph({ text: '', spacing: { after: 1200 } }));
+  out.push(para($sec.find('.bismillah').text(), { align: AlignmentType.CENTER, size: 26, color: C.navy900, font: 'Amiri Quran', after: 400 }));
+  out.push(new Paragraph({
+    children: textRunsFor($sec.find('h1').text(), { size: 52, bold: true, color: C.navy950, font: FONT_DISPLAY }),
+    alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: 300 },
+  }));
+  out.push(para($sec.find('.tagline').text(), { align: AlignmentType.CENTER, size: 20, color: C.gold700 }));
+  out.push(pageBreak());
+  return out;
+}
+
+function renderColophon($sec, $footer) {
+  const out = [];
+  out.push(new Paragraph({ text: '', spacing: { after: 800 } }));
+  out.push(para($sec.find('.bismillah').text(), { align: AlignmentType.CENTER, size: 22, color: C.gold700, font: 'Amiri Quran', after: 300 }));
+  out.push(new Paragraph({
+    children: textRunsFor($sec.find('h2').text(), { size: 36, bold: true, color: C.navy950, font: FONT_DISPLAY }),
+    alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: 260 },
+  }));
+  out.push(para($sec.find('p').text(), { align: AlignmentType.CENTER, size: 20, color: C.ink700, after: 400 }));
+  if ($footer && $footer.length) {
+    out.push(para($footer.text().trim(), { align: AlignmentType.CENTER, size: 16, color: C.ink500 }));
+  }
+  return out;
+}
+
+// ============================================================
+// generic field-list (publisher info) -> mini table
+// ============================================================
+function renderFieldList($fl) {
+  const rows = [];
+  $fl.find('li').each((_, li) => {
+    const $li = $(li);
+    const k = $li.find('.k').text();
+    const v = $li.find('.v').text();
+    rows.push(new TableRow({
+      children: [
+        new TableCell({
+          width: { size: 2600, type: WidthType.DXA }, shading: { type: ShadingType.CLEAR, fill: C.cream100 },
+          margins: { top: 90, bottom: 90, left: 120, right: 120 },
+          children: [para(k, { align: AlignmentType.RIGHT, bold: true, color: C.gold700, size: 20, after: 0 })],
+        }),
+        new TableCell({
+          width: { size: 6400, type: WidthType.DXA },
+          margins: { top: 90, bottom: 90, left: 120, right: 120 },
+          children: [para(v, { align: AlignmentType.RIGHT, color: C.ink700, size: 20, after: 0 })],
+        }),
+      ],
+    }));
+  });
+  return [new Table({
+    width: { size: 100, type: WidthType.PERCENTAGE }, rows,
+    borders: {
+      top: { style: BorderStyle.SINGLE, size: 4, color: C.rule }, bottom: { style: BorderStyle.SINGLE, size: 4, color: C.rule },
+      left: { style: BorderStyle.SINGLE, size: 4, color: C.rule }, right: { style: BorderStyle.SINGLE, size: 4, color: C.rule },
+      insideHorizontal: { style: BorderStyle.SINGLE, size: 2, color: C.rule }, insideVertical: { style: BorderStyle.NONE },
+    },
+  }), new Paragraph({ text: '', spacing: { after: 160 } })];
+}
+
+// ============================================================
+// Generic content-node renderer (recursive)
+// ============================================================
+function renderNode(el) {
+  const $el = $(el);
+  const tag = el.tagName || el.name;
+  const cls = ($el.attr('class') || '');
+
+  if (tag === 'h2' && cls.includes('chapter-title')) {
+    const id = $el.closest('article').attr('id');
+    const text = $el.text().trim();
+    if (collectIndex && id) indexEntries.push({ text, id });
+    return [headingPara(text, HeadingLevel.HEADING_2, id, { size: 28, before: 320, after: 140 })];
+  }
+  if (tag === 'h2') { // front-matter page titles
+    const id = $el.closest('section').attr('id');
+    return [headingPara($el.text().trim(), HeadingLevel.HEADING_1, id, { size: 32, pageBreakBefore: true, before: 0, after: 200 })];
+  }
+  if (tag === 'h3' && cls.includes('section-title')) {
+    const id = $el.closest('*[id]').attr('id');
+    const text = $el.text().trim();
+    if (collectIndex && id) indexEntries.push({ text, id });
+    return [headingPara(text, HeadingLevel.HEADING_3, id, { size: 23, color: C.gold700, before: 260, after: 120 })];
+  }
+  if (tag === 'h3') {
+    return [headingPara($el.text().trim(), HeadingLevel.HEADING_3, null, { size: 23, before: 260, after: 120 })];
+  }
+  if (tag === 'h4') {
+    return [para($el.text().trim(), { align: AlignmentType.RIGHT, bold: true, color: C.navy800, size: 22, before: 200, after: 100 })];
+  }
+  if (tag === 'p') {
+    return [para(inlineRuns($el, { size: 22 }), { after: 140 })];
+  }
+  if (tag === 'ul' && cls.includes('field-list')) {
+    return renderFieldList($el);
+  }
+  if (tag === 'ul') {
+    if ($el.parent().hasClass('toc') || $el.closest('.toc').length) return [];
+    return $el.children('li').toArray().map(li => listParagraph($(li), 'bullet-list', { size: 22 }));
+  }
+  if (tag === 'ol') {
+    return $el.children('li').toArray().map(li => listParagraph($(li), 'decimal-list', { size: 22 }));
+  }
+  if (tag === 'div' && cls.includes('table-wrap')) {
+    return buildTable($el.find('table').first());
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('definition')) {
+    const inner = $el.children('p').toArray().map(p => para(inlineRuns($(p), { size: 22 }), { after: 80 }));
+    return [boxTable(inner, { fill: C.cream100, borderColor: C.navy800 }), new Paragraph({ text: '', spacing: { after: 140 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('note')) {
+    const title = $el.find('.note-title').text().trim();
+    const rest = $el.children().not('.note-title').toArray().flatMap(c => renderInner($(c)));
+    const inner = [labelPara(title, { bold: true, color: C.gold700, size: 18 }), ...rest];
+    return [boxTable(inner, { fill: C.white, borderColor: C.gold600 }), new Paragraph({ text: '', spacing: { after: 140 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('mistake')) {
+    const title = $el.find('.mistake-title').text().trim();
+    const ps = $el.children('p').not('.mistake-title').toArray().map(p => para(inlineRuns($(p), { size: 22 }), { after: 0 }));
+    const inner = [labelPara(title, { bold: true, color: C.mistakeBorder, size: 18 }), ...ps];
+    return [boxTable(inner, { fill: C.cream050, borderColor: C.mistakeBorder }), new Paragraph({ text: '', spacing: { after: 140 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('examples')) {
+    const title = $el.find('.examples-title').text().trim();
+    const items = $el.find('li').toArray().map(li => listParagraph($(li), 'bullet-list', { size: 21, color: C.ink700 }));
+    return [labelPara(title, { bold: true, color: C.navy800, size: 19 }), ...items, new Paragraph({ text: '', spacing: { after: 100 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('meta-card')) {
+    const title = $el.find('h3').text().trim();
+    const items = $el.find('li').toArray().map(li => listParagraph($(li), 'bullet-list', { size: 21, color: C.cream100 }));
+    const inner = [labelPara(title, { bold: true, color: C.gold300, size: 17 }), ...items];
+    return [boxTable(inner, { fill: C.navy950, borderColor: C.navy950 }), new Paragraph({ text: '', spacing: { after: 160 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('summary-card')) {
+    const title = $el.find('h3').text().trim();
+    const ps = $el.find('p').toArray().map(p => para(inlineRuns($(p), { size: 22 }), { after: 0 }));
+    const inner = [labelPara(title, { bold: true, color: C.navy900, size: 18 }), ...ps];
+    return [boxTable(inner, { fill: C.cream100, borderColor: C.gold300 }), new Paragraph({ text: '', spacing: { after: 160 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('review-card')) {
+    const title = $el.find('h3').text().trim();
+    const items = $el.find('li').toArray().map(li => listParagraph($(li), 'decimal-list', { size: 22 }));
+    const inner = [labelPara(title, { bold: true, color: C.gold700, size: 18 }), ...items];
+    return [boxTable(inner, { fill: C.white, borderColor: C.navy700 }), new Paragraph({ text: '', spacing: { after: 160 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('checkpoint')) {
+    const inner = [para(inlineRuns($el, { size: 21, bold: true, color: '241A05' }), { align: AlignmentType.RIGHT, after: 0 })];
+    return [boxTable(inner, { fill: C.gold500, borderColor: C.gold600 }), new Paragraph({ text: '', spacing: { after: 200 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('ruling')) {
+    return [para(inlineRuns($el, { size: 21, bold: true, color: C.navy900 }),
+      { align: AlignmentType.RIGHT, after: 140, shading: { type: ShadingType.CLEAR, fill: C.cream200 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('matn')) {
+    return [para(inlineRuns($el, { size: 24, color: C.navy950, font: FONT_BODY }),
+      { align: AlignmentType.CENTER, after: 160, before: 60,
+        border: { top: { style: BorderStyle.SINGLE, size: 4, color: C.gold500, space: 8 }, bottom: { style: BorderStyle.SINGLE, size: 4, color: C.gold500, space: 8 } },
+        shading: { type: ShadingType.CLEAR, fill: C.cream100 } })];
+  }
+  if (tag === 'div' && cls.split(/\s+/).includes('small-note')) {
+    const inner = [para(inlineRuns($el, { size: 18, italics: true, color: C.ink500 }), { after: 0 })];
+    return [boxTable(inner, { fill: C.cream200, borderColor: C.gold500 }), new Paragraph({ text: '', spacing: { after: 140 } })];
+  }
+  if (tag === 'div' && cls.includes('field-list')) {
+    return renderFieldList($el);
+  }
+  if (tag === 'ul' && cls.includes('field-list')) {
+    return renderFieldList($el);
+  }
+  if (tag === 'article') {
+    return renderInner($el);
+  }
+  if (tag === 'div' && (cls.includes('content') || cls.includes('page-pad'))) {
+    return renderInner($el);
+  }
+  // fall back: recurse into children
+  return renderInner($el);
+}
+
+function renderInner($el) {
+  const out = [];
+  $el.children().each((_, c) => { out.push(...renderNode(c)); });
+  return out;
+}
+
+// ============================================================
+// MAIN WALK over <body> children in document order
+// ============================================================
+const bodyChildren = $('body').children().toArray();
+let count = 0;
+for (const el of bodyChildren) {
+  if (count >= LIMIT) break;
+  const $el = $(el);
+  const tag = el.tagName;
+  const id = $el.attr('id');
+  const cls = ($el.attr('class') || '');
+
+  if (tag === 'nav' || tag === 'script') continue;
+  if (tag === 'footer') continue; // folded into colophon
+
+  if (cls.includes('cover')) { push(renderCover($el)); count++; continue; }
+  if (cls.includes('half-title')) { push(renderHalfTitle($el)); count++; continue; }
+  if (cls.includes('colophon')) { push(renderColophon($el, $('footer.book-footer'))); count++; continue; }
+  if (cls.includes('part-opener')) {
+    const kicker = $el.find('.kicker').text().trim();
+    const title = $el.find('h2').text().trim();
+    const desc = $el.find('.part-desc').text().trim();
+    push(headingPara(`${kicker} — ${title}`, HeadingLevel.HEADING_1, id, { size: 34, pageBreakBefore: true, before: 0, after: 160, color: C.navy950 }));
+    if (desc) push(para(desc, { align: AlignmentType.RIGHT, italics: true, color: C.ink500, size: 20, after: 260 }));
+    count++;
+    continue;
+  }
+  if (id === 'toc') { count++; continue; } // replaced by native TOC field, inserted just before مقدمة المؤلف
+  if (id === 'index') { count++; continue; } // replaced by generated analytical index at the end
+
+  if (cls.includes('page')) {
+    if (id === 'muqaddimah') push(buildTocBlock());
+    if (id === 'glossary') collectIndex = false;
+    push(renderInner($el));
+    count++;
+    continue;
+  }
+  // anything else at top level
+  push(renderNode(el));
+  count++;
+}
+
+// ============================================================
+// Assemble final document: title pages -> native TOC (inserted inline
+// above, right before مقدمة المؤلف) -> body -> native index
+// ============================================================
+const finalBody = body;
+
+// ---------- Native analytical index (auto page numbers via PAGEREF) ----------
+const indexBlock = [];
+indexBlock.push(headingPara('الفهرس التحليلي', HeadingLevel.HEADING_1, 'native_index', { size: 32, pageBreakBefore: true, before: 0, after: 200 }));
+for (const entry of indexEntries) {
+  if (!entry.id) continue;
+  const bm = bmName(entry.id);
+  indexBlock.push(new Paragraph({
+    bidirectional: true,
+    alignment: AlignmentType.RIGHT,
+    spacing: { after: 110 },
+    children: [
+      ...textRunsFor(entry.text, { size: 22, color: C.ink700 }),
+      new TextRun({ rightToLeft: true, children: [new PositionalTab({ alignment: PositionalTabAlignment.LEFT, leader: PositionalTabLeader.DOT, relativeTo: PositionalTabRelativeTo.MARGIN })] }),
+      new PageReference(bm, { font: FONT_UI, size: 20, bold: true, color: C.gold700 }),
+    ],
+  }));
+}
+finalBody.push(...indexBlock);
+
+// ============================================================
+// Build Document
+// ============================================================
+const doc = new Document({
+  creator: 'أحمد بن إبراهيم',
+  title: 'الكافي في التجويد',
+  description: 'مرجع شامل في أحكام تلاوة القرآن الكريم — رواية حفص عن عاصم من طريق الشاطبية',
+  features: { updateFields: true },
+  numbering: NUMBERING_CONFIG,
+  styles: {
+    default: {
+      document: { run: { font: FONT_BODY, size: 22, color: C.ink900, rightToLeft: true }, paragraph: { spacing: { line: 300 } } },
+    },
+    paragraphStyles: [
+      { id: 'Heading1', name: 'Heading 1', basedOn: 'Normal', next: 'Normal', quickFormat: true,
+        run: { font: FONT_DISPLAY, size: 32, bold: true, color: C.navy950, rightToLeft: true },
+        paragraph: { alignment: AlignmentType.RIGHT, spacing: { before: 240, after: 160 } } },
+      { id: 'Heading2', name: 'Heading 2', basedOn: 'Normal', next: 'Normal', quickFormat: true,
+        run: { font: FONT_DISPLAY, size: 28, bold: true, color: C.navy900, rightToLeft: true },
+        paragraph: { alignment: AlignmentType.RIGHT, spacing: { before: 300, after: 140 }, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: C.gold500, space: 4 } } } },
+      { id: 'Heading3', name: 'Heading 3', basedOn: 'Normal', next: 'Normal', quickFormat: true,
+        run: { font: FONT_UI, size: 23, bold: true, color: C.gold700, rightToLeft: true },
+        paragraph: { alignment: AlignmentType.RIGHT, spacing: { before: 260, after: 120 } } },
+    ],
+  },
+  sections: [
+    {
+      properties: {
+        page: {
+          size: { width: 11906, height: 16838 }, // A4 in twips
+          margin: { top: 1134, bottom: 1134, left: 1134, right: 1134 },
+        },
+        rtlGutter: true,
+      },
+      headers: {
+        default: new Header({
+          children: [new Paragraph({
+            alignment: AlignmentType.CENTER, bidirectional: true,
+            children: [mkRun('الكافي في التجويد', { size: 16, color: C.ink500, font: FONT_UI })],
+          })],
+        }),
+      },
+      footers: {
+        default: new Footer({
+          children: [new Paragraph({
+            alignment: AlignmentType.CENTER, bidirectional: true,
+            children: [new TextRun({ children: [PageNumber.CURRENT], font: FONT_UI, size: 18, color: C.gold700 })],
+          })],
+        }),
+      },
+      children: finalBody,
+    },
+  ],
+});
+
+Packer.toBuffer(doc).then((buf) => {
+  require('fs').writeFileSync(OUT_PATH, buf);
+  console.log('Wrote', OUT_PATH, buf.length, 'bytes. body blocks:', finalBody.length, 'indexEntries:', indexEntries.length);
+});
