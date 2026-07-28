@@ -19,6 +19,7 @@ const push = (...items) => { items.flat().filter(Boolean).forEach(i => body.push
 // track headings we bookmark, in order, for the manual analytical index
 const indexEntries = []; // {text, bookmarkId}
 let collectIndex = true; // turned off once we leave the numbered Babs/appendices (glossary reuses .section-title for its own grouping headers, which aren't real index targets)
+let tocInserted = false;
 
 function buildTocBlock() {
   return [
@@ -274,7 +275,7 @@ for (const el of bodyChildren) {
   if (id === 'index') { count++; continue; } // replaced by generated analytical index at the end
 
   if (cls.includes('page')) {
-    if (id === 'muqaddimah') push(buildTocBlock());
+    if (id && id.startsWith('muqaddimah') && !tocInserted) { push(buildTocBlock()); tocInserted = true; }
     if (id === 'glossary') collectIndex = false;
     push(renderInner($el));
     count++;
@@ -289,6 +290,11 @@ for (const el of bodyChildren) {
 // Assemble final document: title pages -> native TOC (inserted inline
 // above, right before مقدمة المؤلف) -> body -> native index
 // ============================================================
+if (!tocInserted) {
+  // fallback: no `id^=muqaddimah` page found — insert right after the cover/half-title block
+  const insertAt = Math.min(2, body.length);
+  body.splice(insertAt, 0, ...buildTocBlock());
+}
 const finalBody = body;
 
 // ---------- Native analytical index (auto page numbers via PAGEREF) ----------
@@ -313,10 +319,14 @@ finalBody.push(...indexBlock);
 // ============================================================
 // Build Document
 // ============================================================
+const docTitle = $('title').text().trim() || 'كتاب';
+const docDescription = $('meta[name="description"]').attr('content') || '';
+const docCreator = ($('.cover .credits .name').first().text() || '').trim() || 'مؤلف';
+
 const doc = new Document({
-  creator: 'أحمد بن إبراهيم',
-  title: 'الكافي في التجويد',
-  description: 'مرجع شامل في أحكام تلاوة القرآن الكريم — رواية حفص عن عاصم من طريق الشاطبية',
+  creator: docCreator,
+  title: docTitle,
+  description: docDescription,
   features: { updateFields: true },
   numbering: NUMBERING_CONFIG,
   styles: {
