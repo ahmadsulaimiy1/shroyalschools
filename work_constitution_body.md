@@ -1,5 +1,6 @@
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 1 — Definitions</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -165,6 +166,7 @@ Article I &#183; Section 1.2
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 2 — Legal Identity</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -341,6 +343,7 @@ Article II &#183; Section 2.7
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 3 — Mission, Vision and Values</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -456,6 +459,7 @@ Article III &#183; Section 3.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 4 — Interpretation</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -551,6 +555,7 @@ Article IV &#183; Section 4.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 5 — Governance Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -755,6 +760,7 @@ Article V &#183; Section 5.7
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 6 — Board of Trustees</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1082,6 +1088,7 @@ Article VI &#183; Section 6.9
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 7 — President &amp; Vice-Chancellor</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1242,6 +1249,7 @@ Article VII &#183; Section 7.6
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 8 — University Senate</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1466,6 +1474,7 @@ Article VIII &#183; Section 8.8
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 9 — Administration</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1572,6 +1581,7 @@ Article IX &#183; Section 9.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 10 — Academic Program</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1668,6 +1678,7 @@ Article X &#183; Section 10.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 11 — Waqf and Endowment</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1743,6 +1754,7 @@ Article XI &#183; Section 11.2
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 12 — Students’ Rights and Responsibilities</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1831,6 +1843,7 @@ Article XII &#183; Section 12.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 13 — Faculty Rights and Responsibilities</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1902,6 +1915,7 @@ Article XIII &#183; Section 13.2
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 14 — Financial Sustainability</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1985,6 +1999,7 @@ Article XIV &#183; Section 14.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 15 — Transparency and Accountability</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2087,6 +2102,7 @@ Article XV &#183; Section 15.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 16 — Independent Officers</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2168,6 +2184,7 @@ Article XVI &#183; Section 16.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 17 — Records and Archives</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2235,6 +2252,7 @@ Article XVII &#183; Section 17.2
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 18 — Amendment</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2302,6 +2320,7 @@ Article XVIII &#183; Section 18.2
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 19 — Transitional Provisions</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2357,6 +2376,7 @@ Article XIX &#183; Section 19.1
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 20 — Dissolution</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2412,6 +2432,7 @@ Article XX &#183; Section 20.1
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 21 — Non-Political and Non-Profit Provisions</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2489,6 +2510,7 @@ Article XXI &#183; Section 21.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 22 — Indemnification</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2544,6 +2566,7 @@ Article XXII &#183; Section 22.1
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Article 23 — Final Provisions</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>

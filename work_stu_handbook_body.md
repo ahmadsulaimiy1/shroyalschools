@@ -1,5 +1,6 @@
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-001: Student Code of Conduct</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -374,6 +375,7 @@ Academic Integrity Policy (ACA-013); Student Grievance Policy (STU-002); FERPA C
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-002: Student Grievance Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -551,6 +553,7 @@ Student Code of Conduct (STU-001).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-003: Student Recruitment Plan</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -708,6 +711,7 @@ Marketing Plan (MKT-007).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-004: Student Orientation Program</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -837,6 +841,7 @@ Marketing Plan (MKT-007).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-005: Student Retention Strategy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -966,6 +971,7 @@ Marketing Plan (MKT-007).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-006: Attendance Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1135,6 +1141,7 @@ Academic Calendar Policy (ACA-011).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-007: Academic Probation &amp; Dismissal Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1306,6 +1313,7 @@ Graduation Requirements Policy (ACA-012).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-008: Grade Appeal Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1467,6 +1475,7 @@ Academic Integrity Policy (ACA-013).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-009: Mental Health Support Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1618,6 +1627,7 @@ Disability Services Policy (STU-011).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-010: Career Services Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1745,6 +1755,7 @@ Disability Services Policy (STU-011).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-011: Disability Services Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1882,6 +1893,7 @@ Non-Discrimination & Title IX Policy (LEG-005).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-012: Student Activities Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2007,6 +2019,7 @@ Student Code of Conduct (STU-001).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-013: International Student Support Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2130,6 +2143,7 @@ Student Code of Conduct (STU-001).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-014: Digital Citizenship &amp; Online Conduct Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2253,6 +2267,7 @@ Student Code of Conduct (STU-001); Social Media Policy (MKT-004).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-015: Islamic Dress Code Policy for Online Learning</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2382,6 +2397,7 @@ Student Code of Conduct (STU-001).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-016: Online Classroom Etiquette &amp; Noise Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2525,6 +2541,7 @@ Digital Citizenship & Online Conduct Policy (STU-014); Student Code of Conduct (
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-017: International Time Zone Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2642,6 +2659,7 @@ Digital Citizenship & Online Conduct Policy (STU-014); Student Code of Conduct (
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-018: Virtual Campus Life Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2763,6 +2781,7 @@ Student Activities Policy (STU-012).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-019: Digital Accessibility Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2890,6 +2909,7 @@ Disability Services Policy (STU-011); Technology Requirements Policy (ACA-017).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-020: Student ID Card Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3011,6 +3031,7 @@ Technology Requirements Policy (ACA-017).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-021: Virtual Graduation Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3134,6 +3155,7 @@ Graduation Requirements Policy (ACA-012).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-022: Faculty-Student Relationship Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3265,6 +3287,7 @@ Student Code of Conduct (STU-001); HR Policies & Procedures Manual (OPS-007).
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>STU-023: Comprehensive Disciplinary &amp; Negative Reinforcement Policy</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>

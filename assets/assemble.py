@@ -135,32 +135,28 @@ def assemble(toc_markdown, outpath):
     return outpath
 
 def _retitle_header_footer(docx_path, title_text, doc_ref):
-    """Both flagship publications share one amiu-reference.docx, whose
-    default header/footer text is hardcoded to the Blueprint's own title
-    ('Strategic Implementation Blueprint 2028-2050') and document code
-    ('AMIU-SB-002') -- correct for the Blueprint, wrong for anything else
-    built from the same reference doc. Retexts the title run in the main
-    section's header and the document-reference run in its footer after
-    pandoc conversion. No-op (returns quietly) if the expected runs aren't
-    found, rather than silently leaving stale text in place undetected."""
+    """Both flagship publications share one amiu-reference.docx. The running
+    header's right side is a live STYLEREF field (always the nearest Heading
+    2, i.e. the current numbered subsection) so it needs no per-document
+    retitling — only the footer's document-code run, hardcoded in the
+    reference doc to the Blueprint's own code ('AMIU-SB-002'), still needs
+    retexting for every other document built from the same reference.
+    title_text is accepted for call-site compatibility but no longer used.
+    No-op (returns quietly) if the expected run isn't found, rather than
+    silently leaving stale text in place undetected."""
     import docx as _docx
     d = _docx.Document(docx_path)
     section = d.sections[0]
-    retitled_header = retitled_footer = False
-    for p in section.header.paragraphs:
-        for r in p.runs:
-            if 'Strategic Implementation Blueprint' in r.text:
-                r.text = title_text
-                retitled_header = True
+    retitled_footer = False
     for p in section.footer.paragraphs:
         for r in p.runs:
             if r.text.strip() == 'AMIU-SB-002':
                 r.text = doc_ref
                 retitled_footer = True
     d.save(docx_path)
-    if not (retitled_header and retitled_footer):
-        print(f"  [WARN] _retitle_header_footer: header={retitled_header} footer={retitled_footer} "
-              f"— expected run(s) not found, header/footer text may still read 'Blueprint'/AMIU-SB-002")
+    if not retitled_footer:
+        print(f"  [WARN] _retitle_header_footer: footer doc-code run not found, "
+              f"footer may still read 'AMIU-SB-002'")
 
 SEAL_PATH = "assets/brand/amiu_seal_medallion.png"
 
@@ -427,7 +423,12 @@ def _is_ceremonial_navy_table(table):
 
 NAVY_HEX = '122A4E'
 GOLD_HEX = 'B08625'
-BAND_TINT_HEX = 'E9EDF6'
+# Warm ivory, not the cool blue-grey this used to be: matches the same
+# F7F3E8 tint the KPI/Risk callout boxes already use elsewhere in these
+# documents, so the zebra band reads as the same "aged paper" premium
+# register as the rest of the design system instead of a colder, more
+# corporate-report blue tint.
+BAND_TINT_HEX = 'F7F3E8'
 
 def _style_premium_tables(docx_path):
     """Upgrade every ordinary data table (Board/Senate composition, document

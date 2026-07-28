@@ -1,5 +1,6 @@
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part I — Governance &amp; Institutional Foundations</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -365,6 +366,7 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part II — Organizational &amp; Academic Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -786,6 +788,7 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part III — Curriculum &amp; Student Journey</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1217,6 +1220,7 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part IV — Research, Publishing, Partnerships &amp; Accreditation</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1532,6 +1536,7 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
 </w:p>
 <w:p><w:pPr><w:spacing w:before="360" w:after="0"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part V — Digital Infrastructure, AI &amp; Waqf Development</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1889,6 +1894,7 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part VI — Financial Growth, Marketing &amp; Branding</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2204,6 +2210,7 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part VII — Regional Campuses &amp; Student Lifecycle</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2525,6 +2532,7 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part VIII — Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>

@@ -54,8 +54,13 @@ def divider(num, code, title, steward, thesis, section_titles):
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="17"/></w:rPr><w:t>{sec_num}&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="16"/></w:rPr><w:t>{esc(sec_title)}</w:t></w:r></w:p>''')
     body = "\n".join(rows)
     height = 10600 + min(len(section_titles), 14) * 155
+    hidden_marker = (f'<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/>'
+                      f'<w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr>'
+                      f'<w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr>'
+                      f'<w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>{code}: {esc(title)}</w:t></w:r></w:p>')
     return f'''```{{=openxml}}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+{hidden_marker}
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>

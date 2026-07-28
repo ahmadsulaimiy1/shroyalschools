@@ -142,39 +142,39 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 | | |
 |---|---:|
-| **Document Control** | **3** |
+| **Document Control** | **2** |
 | **Governance Declaration** | **4** |
 | **Preamble** | **5** |
 | **Governance Architecture** | **3** |
 | **Institutional Growth** | **7** |
 | **Document Registry** | **4** |
 | **Section 1 — Introduction & Purpose** | **13** |
-| **Section 2 — Institutional Identity** | **19** |
-| **Section 3 — The ISLAMIC Framework: Core Values** | **25** |
-| **Section 4 — Governance Hierarchy & Roles** | **30** |
-| **Section 5 — Board of Trustees: Composition, Roles & Requirements** | **36** |
-| **Section 6 — President & Vice-Chancellor: Role & Authority** | **42** |
-| **Section 7 — University Senate: Composition, Rules & Procedures** | **46** |
-| **Section 8 — Advisory & Proposing Framework** | **56** |
-| **Section 9 — Administration: Deputy Vice-Chancellors, Deans & Directors** | **60** |
-| **Section 10 — Online & Distance Learning Governance** | **68** |
-| **Section 11 — Phased Institutional Growth Framework** | **72** |
-| **Section 12 — Year 1: Core Institutional Structure** | **77** |
-| **Section 13 — Year 3: Expanded Structure** | **83** |
-| **Section 14 — Year 5: Mature Structure** | **88** |
-| **Section 15 — Year 10: Full Institutional Structure** | **93** |
-| **Section 16 — Compensation Philosophy & Framework** | **98** |
-| **Section 17 — Complete Document Inventory** | **105** |
-| **Section 18 — Document Registry by Category** | **119** |
-| **Section 19 — Priority Ranking & Development Urgency** | **134** |
-| **Section 20 — Responsibility Assignment Matrix** | **138** |
-| **Section 21 — Cross-Reference Matrix** | **156** |
-| **Section 22 — Implementation Roadmap** | **161** |
-| **Section 23 — Senate Resolution & Endorsement** | **166** |
-| **Section 24 — Glossary of Terms** | **172** |
-| **Section 25 — List of Acronyms** | **176** |
-| **Adoption** | **178** |
-| **Publication Certification Statement** | **179** |
+| **Section 2 — Institutional Identity** | **18** |
+| **Section 3 — The ISLAMIC Framework: Core Values** | **24** |
+| **Section 4 — Governance Hierarchy & Roles** | **28** |
+| **Section 5 — Board of Trustees: Composition, Roles & Requirements** | **33** |
+| **Section 6 — President & Vice-Chancellor: Role & Authority** | **39** |
+| **Section 7 — University Senate: Composition, Rules & Procedures** | **43** |
+| **Section 8 — Advisory & Proposing Framework** | **52** |
+| **Section 9 — Administration: Deputy Vice-Chancellors, Deans & Directors** | **56** |
+| **Section 10 — Online & Distance Learning Governance** | **63** |
+| **Section 11 — Phased Institutional Growth Framework** | **66** |
+| **Section 12 — Year 1: Core Institutional Structure** | **70** |
+| **Section 13 — Year 3: Expanded Structure** | **75** |
+| **Section 14 — Year 5: Mature Structure** | **79** |
+| **Section 15 — Year 10: Full Institutional Structure** | **83** |
+| **Section 16 — Compensation Philosophy & Framework** | **88** |
+| **Section 17 — Complete Document Inventory** | **94** |
+| **Section 18 — Document Registry by Category** | **107** |
+| **Section 19 — Priority Ranking & Development Urgency** | **122** |
+| **Section 20 — Responsibility Assignment Matrix** | **125** |
+| **Section 21 — Cross-Reference Matrix** | **143** |
+| **Section 22 — Implementation Roadmap** | **147** |
+| **Section 23 — Senate Resolution & Endorsement** | **151** |
+| **Section 24 — Glossary of Terms** | **156** |
+| **Section 25 — List of Acronyms** | **159** |
+| **Adoption** | **161** |
+| **Publication Certification Statement** | **162** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -187,6 +187,7 @@ This Compendium serves as the authoritative reference for all institutional gove
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 1: Introduction &amp; Purpose</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -345,6 +346,7 @@ Each document is assigned a unique identifier following this convention:
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 2: Institutional Identity</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -481,6 +483,7 @@ Section 2 &#183; 2.7
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 3: The ISLAMIC Framework — Core Values</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -591,6 +594,7 @@ Section 3 &#183; 3.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 4: Governance Hierarchy &amp; Roles</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -701,6 +705,7 @@ The University's governance structure is presented in full in **Exhibit G1** (Go
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 5: Board of Trustees — Composition, Roles &amp; Requirements</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -837,6 +842,7 @@ Section 5 &#183; 5.6
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 6: President &amp; Vice-Chancellor — Role &amp; Authority</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -925,6 +931,7 @@ Section 6 &#183; 6.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 7: University Senate — Composition, Rules &amp; Procedures</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1134,6 +1141,7 @@ Section 7 &#183; 7.9
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 8: Advisory &amp; Proposing Framework</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1217,6 +1225,7 @@ Section 8 &#183; 8.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 9: Administration — Deputy Vice-Chancellors, Deans &amp; Directors</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1400,6 +1409,7 @@ Section 9 &#183; 9.7
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 10: Online &amp; Distance Learning Governance</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1506,6 +1516,7 @@ Section 10 &#183; 10.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 11: Phased Institutional Growth Framework</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1619,6 +1630,7 @@ The Senate shall review institutional structure annually and recommend adjustmen
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 12: Year 1 — Core Institutional Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1722,6 +1734,7 @@ Section 12 &#183; 12.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 13: Year 3 — Expanded Institutional Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1823,6 +1836,7 @@ Section 13 &#183; 13.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 14: Year 5 — Mature Institutional Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1925,6 +1939,7 @@ Section 14 &#183; 14.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 15: Year 10 — Full Institutional Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2028,6 +2043,7 @@ Section 15 &#183; 15.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 16: Compensation Philosophy &amp; Framework</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2193,6 +2209,7 @@ Compensation structures shall be reviewed annually by the Deputy Vice-Chancellor
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 17: Complete Document Inventory</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2358,6 +2375,7 @@ Section 17 &#183; 17.1
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 18: Document Registry by Category</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2586,6 +2604,7 @@ Section 18 &#183; 18.7
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 19: Priority Ranking &amp; Development Urgency</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2681,6 +2700,7 @@ Section 19 &#183; 19.3
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 20: Responsibility Assignment Matrix</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2909,6 +2929,7 @@ Section 20 &#183; 20.7
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 21: Cross-Reference Matrix</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3041,6 +3062,7 @@ Section 21 &#183; 21.2
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 22: Implementation Roadmap</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3161,6 +3183,7 @@ Section 22 &#183; 22.5
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 23: Senate Resolution &amp; Endorsement</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3291,6 +3314,7 @@ Section 23 &#183; 23.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 24: Glossary of Terms</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3349,6 +3373,7 @@ Section 23 &#183; 23.4
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section 25: List of Acronyms</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>

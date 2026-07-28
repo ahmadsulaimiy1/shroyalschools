@@ -327,8 +327,17 @@ r1.font.small_caps = True
 rpr1 = r1._r.get_or_add_rPr()
 spc1 = OxmlElement('w:spacing'); spc1.set(qn('w:val'), '8'); rpr1.append(spc1)
 r2 = hp.add_run("\t")
-r3 = hp.add_run("Strategic Implementation Blueprint 2028–2050")
-r3.font.name = DISPLAY_FONT; r3.font.size = Pt(9.5); r3.font.color.rgb = GREY; r3.font.italic = True
+# Right side is a live running head, not a repeated document title: a
+# STYLEREF field that always resolves to the nearest preceding Heading 2
+# (every Section/Article/Policy numbered subsection in all five documents
+# is styled Heading 2 — see gen_*_body.py) so it reads as the current
+# subsection wherever the reader is, exactly like a university-press
+# running head, instead of the same static subtitle on all ~100-230 pages.
+# The document's own title still appears on the cover, every chapter-
+# opener/divider spread, and the footer's document code, so dropping it
+# from the per-page header loses no identifying information.
+r3 = add_field(hp, ' STYLEREF "Heading 2" \\* MERGEFORMAT ', font=DISPLAY_FONT, size=9.5, color=GREY)
+r3.font.italic = True
 # rule under header — a true hairline in restrained gold (0.375pt): thin
 # enough not to compete with the content, and a genuine hairline reads as
 # restraint rather than the "gold overuse" a thicker rule on every page

@@ -74,8 +74,20 @@ def hero_spread(roman, word, title, secrange, first_num, thesis, sections):
       <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="B08625"/><w:b/><w:sz w:val="21"/></w:rPr><w:t>{num:02d}&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="20"/></w:rPr><w:t>{esc(sec_title)}</w:t></w:r></w:p>''')
 
     body = "\n".join(rows)
+    # Hidden Heading-2 marker: invisible (w:vanish, 1pt) so it adds no visible
+    # mark on the divider page, but its presence as a real Heading-2-styled
+    # paragraph gives the running-header STYLEREF field (build_reference.py)
+    # something to resolve to on this page — without it, the field would
+    # carry forward whatever Heading 2 last appeared before the divider
+    # (e.g. a front-matter heading), which reads as wrong on a chapter-
+    # opener. Kept in sync with the visible title text above it.
+    hidden_marker = (f'<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/>'
+                      f'<w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr>'
+                      f'<w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr>'
+                      f'<w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part {word.title()} — {esc(title)}</w:t></w:r></w:p>')
     xml = f'''```{{=openxml}}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+{hidden_marker}
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>

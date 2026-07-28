@@ -63,8 +63,17 @@ def divider(num, title, subrange, thesis, subsecs):
       <w:r><w:rPr><w:rFonts w:ascii="Archivo SemiBold" w:hAnsi="Archivo SemiBold"/><w:color w:val="B08625"/><w:b/><w:sz w:val="19"/></w:rPr><w:t>{subnum}&#8194;</w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Archivo" w:hAnsi="Archivo"/><w:color w:val="FFFFFF"/><w:sz w:val="18"/></w:rPr><w:t>{esc(subtitle)}</w:t></w:r></w:p>''')
     body = "\n".join(rows)
     height = 10800 + min(len(subsecs), 9) * 210
+    # Hidden Heading-2 marker (see gen_dividers.py) so the running-header
+    # STYLEREF field resolves to this Section on its own divider page instead
+    # of carrying forward whatever Heading 2 preceded it.
+    hidden_marker = (f'<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/>'
+                      f'<w:keepNext w:val="0"/><w:keepLines w:val="0"/>'
+                      f'<w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr>'
+                      f'<w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr>'
+                      f'<w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Section {num}: {esc(title)}</w:t></w:r></w:p>')
     return f'''```{{=openxml}}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+{hidden_marker}
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
