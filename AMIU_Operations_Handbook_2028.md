@@ -102,18 +102,18 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 | **OPS-014 — IT Infrastructure Plan** | **91** |
 | **OPS-015 — LMS Technical Specifications** | **96** |
 | **OPS-016 — Data Privacy & Security Policy** | **101** |
-| **OPS-017 — Backup & Disaster Recovery Plan** | **106** |
-| **OPS-018 — IT Support Policy** | **110** |
-| **OPS-019 — Acceptable Use Policy** | **115** |
-| **OPS-020 — Facilities Management Policy** | **119** |
-| **OPS-021 — Health & Safety Policy** | **123** |
-| **OPS-022 — Emergency Response Plan** | **127** |
-| **OPS-023 — Learning Management System (LMS) Policy** | **132** |
-| **OPS-024 — Online Pedagogy Training Policy** | **136** |
-| **OPS-025 — Virtual Office Hours Policy** | **140** |
-| **OPS-026 — Digital Resources & Library Policy** | **144** |
-| **OPS-027 — Social Media & Student Communication Policy** | **148** |
-| **Publication Certification Statement** | **152** |
+| **OPS-017 — Backup & Disaster Recovery Plan** | **107** |
+| **OPS-018 — IT Support Policy** | **111** |
+| **OPS-019 — Acceptable Use Policy** | **116** |
+| **OPS-020 — Facilities Management Policy** | **120** |
+| **OPS-021 — Health & Safety Policy** | **124** |
+| **OPS-022 — Emergency Response Plan** | **128** |
+| **OPS-023 — Learning Management System (LMS) Policy** | **133** |
+| **OPS-024 — Online Pedagogy Training Policy** | **137** |
+| **OPS-025 — Virtual Office Hours Policy** | **141** |
+| **OPS-026 — Digital Resources & Library Policy** | **145** |
+| **OPS-027 — Social Media & Student Communication Policy** | **149** |
+| **Publication Certification Statement** | **153** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2183,7 +2183,9 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 
 **6.1** Constitution Article 9 (Administration)
 
-**6.2** Recruitment & Hiring Policy (OPS-008)
+**6.2** Bylaws (GOV-003)
+
+**6.3** Recruitment & Hiring Policy (OPS-008)
 
 ## 7.0 Effective Date
 
@@ -4008,6 +4010,10 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 ## 9.0 Related Documents
 
 **9.1** Constitution Article 17 (Records and Archives)
+
+**9.2** FERPA Compliance Policy (LEG-001)
+
+**9.3** GDPR Compliance Policy (LEG-002)
 
 ## 10.0 Effective Date
 

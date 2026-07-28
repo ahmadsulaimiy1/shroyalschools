@@ -50,7 +50,7 @@
 | **Effective Date** | 1 January 2028 |
 | **Classification** | Public &#8212; All Stakeholders |
 | **Supersedes** | All prior governing documents of Al-Mulk International University |
-| **Companion Volume** | Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002) |
+| **Companion Volumes** | Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001) |
 
 *This Constitution is the supreme legal document of Al-Mulk International University. All policies, regulations, and procedures adopted by the University shall be consistent with its provisions; any policy inconsistent with this Constitution is void.*
 

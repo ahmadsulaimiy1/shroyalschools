@@ -1797,7 +1797,9 @@ CONTENT[7] = '''
 
 **6.1** Constitution Article 9 (Administration)
 
-**6.2** Recruitment & Hiring Policy (OPS-008)
+**6.2** Bylaws (GOV-003)
+
+**6.3** Recruitment & Hiring Policy (OPS-008)
 
 ## 7.0 Effective Date
 
@@ -2862,6 +2864,10 @@ CONTENT[16] = '''
 ## 9.0 Related Documents
 
 **9.1** Constitution Article 17 (Records and Archives)
+
+**9.2** FERPA Compliance Policy (LEG-001)
+
+**9.3** GDPR Compliance Policy (LEG-002)
 
 ## 10.0 Effective Date
 
