@@ -426,7 +426,7 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 
 ## 8.0 Sanctions Matrix
 
-| Offense Category | First Offense | Second Offense | Third Offense |
+| Category | First Offense | Second Offense | Third Offense |
 |---|---|---|---|
 | Minor | Verbal Warning | Written Warning | Loss of Privileges |
 | Moderate | Written Warning + Probation | Suspension (1 semester) | Suspension (1 year) |
@@ -3517,7 +3517,7 @@ Student Code of Conduct (STU-001); HR Policies & Procedures Manual (OPS-007).
 
 ## 6.0 Sanctions Matrix
 
-| Offense Category | First Offense | Second Offense | Third Offense |
+| Category | First Offense | Second Offense | Third Offense |
 |---|---|---|---|
 | Minor | Verbal Warning | Written Warning | Loss of Privileges |
 | Moderate | Written Warning + Probation | Suspension (1 semester) | Suspension (1 year) |

@@ -254,7 +254,7 @@ APPROVAL = {
 
 CONTENT = {}
 
-SANCTIONS_MATRIX_TABLE = '''| Offense Category | First Offense | Second Offense | Third Offense |
+SANCTIONS_MATRIX_TABLE = '''| Category | First Offense | Second Offense | Third Offense |
 |---|---|---|---|
 | Minor | Verbal Warning | Written Warning | Loss of Privileges |
 | Moderate | Written Warning + Probation | Suspension (1 semester) | Suspension (1 year) |
