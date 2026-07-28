@@ -1,0 +1,2330 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الكافي في التجويد — أحمد بن إبراهيم</title>
+<meta name="description" content="الكافي في التجويد: مرجع شامل في أحكام تلاوة القرآن الكريم، برواية حفص عن عاصم من طريق الشاطبية">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ========================================================================
+   الكافي في التجويد — Flagship Edition
+   Palette: Deep Royal Navy / Rich Gold / Premium Cream
+   ======================================================================== */
+:root{
+  --navy-950:#0a1830;
+  --navy-900:#0d2143;
+  --navy-800:#152c54;
+  --navy-700:#1c3866;
+  --gold-700:#8a6a1f;
+  --gold-600:#a9812a;
+  --gold-500:#c39a3c;
+  --gold-300:#e3c780;
+  --cream-050:#fbf7ee;
+  --cream-100:#f6efdd;
+  --cream-200:#efe4c9;
+  --ink-900:#181410;
+  --ink-700:#3a3226;
+  --ink-500:#6b6152;
+  --rule:#d9c79a;
+  --shadow: 0 18px 50px -20px rgba(10,24,48,.35);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--cream-050);
+  color:var(--ink-900);
+  font-family:"Amiri","Cairo",serif;
+  font-size:19px;
+  line-height:2.1;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+
+/* ---------- Decorative geometric motif (subtle, CSS-only) ---------- */
+.motif-rule{
+  display:flex; align-items:center; justify-content:center; gap:14px;
+  margin:2.2em 0; direction:ltr;
+}
+.motif-rule::before,.motif-rule::after{
+  content:""; flex:1; height:1px;
+  background:linear-gradient(to right, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+}
+.motif-rule .diamond{
+  width:9px;height:9px; background:var(--gold-500);
+  transform:rotate(45deg);
+  box-shadow:0 0 0 3px var(--cream-050), 0 0 0 4px var(--rule);
+}
+.corner-frame{
+  position:relative;
+  border:1px solid var(--gold-500);
+  outline:1px solid rgba(195,154,60,.35);
+  outline-offset:6px;
+}
+
+/* ---------- Table of contents / navigation aid ---------- */
+.book-nav{
+  position:sticky; top:0; z-index:50;
+  background:var(--navy-950); color:var(--cream-100);
+  padding:.55em 1.2em; font-family:"Cairo",sans-serif; font-size:.82em;
+  display:flex; align-items:center; justify-content:space-between; gap:1em;
+  box-shadow:var(--shadow);
+}
+.book-nav a{color:var(--gold-300); text-decoration:none; font-weight:600}
+.book-nav a:hover{text-decoration:underline}
+.book-nav .brand{color:var(--cream-050); opacity:.75; letter-spacing:.02em}
+
+/* ---------- PAGE (screen: card-like sheets; print: real pages) ---------- */
+.page{
+  max-width:920px; margin:0 auto; background:#fffdf8;
+  box-shadow:var(--shadow);
+}
+.page + .page{margin-top:38px}
+.page-pad{padding:5.5vw 7vw}
+
+/* ---------- Half title ---------- */
+.half-title{
+  min-height:60vh; display:flex; flex-direction:column; align-items:center;
+  justify-content:center; text-align:center; background:var(--cream-050);
+  padding:8vw 6vw;
+}
+.half-title .bismillah{font-family:"Amiri Quran"; font-size:1.4em; color:var(--navy-900); margin-bottom:2.2em}
+.half-title h1{
+  font-family:"Aref Ruqaa"; font-weight:700; color:var(--navy-950);
+  font-size:clamp(2.1rem,5vw,3.4rem); margin:.2em 0; letter-spacing:.01em;
+}
+.half-title .tagline{font-family:"Cairo",sans-serif; color:var(--gold-700); font-size:1.05rem; letter-spacing:.15em}
+
+/* ---------- Title page (cover) ---------- */
+.cover{
+  min-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:space-between;
+  text-align:center; color:var(--cream-050);
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(195,154,60,.18), transparent 55%),
+    linear-gradient(160deg, var(--navy-950), var(--navy-800) 55%, var(--navy-900));
+  padding:7vw 6vw; position:relative; overflow:hidden;
+}
+.cover::before{
+  content:""; position:absolute; inset:18px; border:1px solid rgba(227,199,128,.55);
+  pointer-events:none;
+}
+.cover::after{
+  content:""; position:absolute; inset:26px; border:1px solid rgba(227,199,128,.25);
+  pointer-events:none;
+}
+.cover .eyebrow{font-family:"Cairo",sans-serif; letter-spacing:.35em; font-size:.72rem; color:var(--gold-300); text-transform:uppercase}
+.cover .bismillah{font-family:"Amiri Quran"; font-size:1.5em; color:var(--gold-300); margin:1.6em 0}
+.cover h1{
+  font-family:"Aref Ruqaa"; font-weight:700; font-size:clamp(2.6rem,7vw,4.6rem);
+  margin:.15em 0; color:#fff; text-shadow:0 2px 30px rgba(195,154,60,.25);
+}
+.cover .subtitle{font-family:"Cairo",sans-serif; color:var(--cream-200); font-size:1.05rem; max-width:32em; line-height:1.9; margin-top:.6em}
+.cover .divider-star{margin:2em 0; color:var(--gold-500); font-size:1.4rem}
+.cover .credits{font-family:"Cairo",sans-serif; margin-top:2em}
+.cover .credits .role{font-size:.72rem; letter-spacing:.2em; color:var(--gold-300); text-transform:uppercase; margin-bottom:.3em}
+.cover .credits .name{font-size:1.35rem; font-weight:700; color:#fff; margin-bottom:1.2em}
+.cover .footer-line{font-family:"Cairo",sans-serif; font-size:.78rem; color:var(--cream-200); opacity:.8; letter-spacing:.06em}
+
+/* ---------- Front-matter / plain content pages ---------- */
+.frontmatter{background:var(--cream-050)}
+.frontmatter h2{
+  font-family:"Aref Ruqaa"; color:var(--navy-950); font-size:1.7rem;
+  border-bottom:2px solid var(--gold-500); padding-bottom:.4em; margin-bottom:.9em;
+}
+.field-list{list-style:none; margin:0; padding:0}
+.field-list li{
+  display:flex; gap:1em; padding:.55em 0; border-bottom:1px dashed var(--rule);
+  font-family:"Cairo",sans-serif; font-size:.92rem;
+}
+.field-list .k{min-width:11em; color:var(--gold-700); font-weight:700}
+.field-list .v{color:var(--ink-700)}
+.placeholder{color:var(--ink-500); font-style:italic}
+.small-note{font-family:"Cairo",sans-serif; font-size:.8rem; color:var(--ink-500); margin-top:1.6em; line-height:1.9; background:var(--cream-200); border-inline-start:3px solid var(--gold-500); padding:.9em 1.1em}
+
+/* ---------- TOC ---------- */
+.toc{list-style:none; margin:0; padding:0}
+.toc > li{margin-bottom:1.1em}
+.toc .part-link{
+  display:flex; justify-content:space-between; align-items:baseline; gap:1em;
+  font-family:"Cairo",sans-serif; font-weight:800; color:var(--navy-950); font-size:1.05rem;
+  text-decoration:none; border-bottom:1px solid var(--gold-500); padding-bottom:.3em;
+}
+.toc ul{list-style:none; margin:.5em 0 0; padding-inline-start:1.4em}
+.toc ul li{margin-bottom:.35em}
+.toc .chap-link{
+  display:flex; justify-content:space-between; gap:1em; text-decoration:none;
+  color:var(--ink-700); font-family:"Cairo",sans-serif; font-size:.88rem;
+}
+.toc .chap-link:hover{color:var(--gold-700)}
+.toc .dots{flex:1; border-bottom:1px dotted var(--ink-500); margin-bottom:.35em}
+
+/* ---------- PART (Bab) opener ---------- */
+.part-opener{
+  min-height:70vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; color:var(--cream-050); position:relative; overflow:hidden;
+  background: linear-gradient(165deg, var(--navy-950), var(--navy-700) 70%);
+  padding:6vw;
+}
+.part-opener::before{
+  content:""; position:absolute; inset:16px; border:1px solid rgba(227,199,128,.4);
+}
+.part-opener .kicker{font-family:"Cairo",sans-serif; letter-spacing:.4em; font-size:.75rem; color:var(--gold-300); text-transform:uppercase}
+.part-opener .num{font-family:"Aref Ruqaa"; font-size:4.2rem; color:var(--gold-500); line-height:1; margin:.3em 0}
+.part-opener h2{font-family:"Aref Ruqaa"; font-size:clamp(1.8rem,4.5vw,2.7rem); color:#fff; margin:.1em 0 .3em}
+.part-opener .part-desc{font-family:"Cairo",sans-serif; color:var(--cream-200); max-width:34em; font-size:.95rem; line-height:1.9}
+
+/* ---------- CONTENT ---------- */
+.content{padding:5vw 7vw}
+.chapter{margin-bottom:3.2em}
+.chapter-title{
+  font-family:"Aref Ruqaa"; color:var(--navy-950); font-size:1.55rem;
+  margin:0 0 .2em; padding-bottom:.35em; border-bottom:3px solid var(--gold-500);
+}
+.section-title{
+  font-family:"Cairo",sans-serif; font-weight:800; color:var(--gold-700);
+  font-size:1.05rem; margin:1.6em 0 .6em; padding-inline-start:.7em;
+  border-inline-start:4px solid var(--navy-800);
+}
+.subsection-title{
+  font-family:"Cairo",sans-serif; font-weight:700; color:var(--navy-800);
+  font-size:.95rem; margin:1.2em 0 .4em;
+}
+.content p{margin:.75em 0; text-align:justify}
+.content ul,.content ol{margin:.6em 0; padding-inline-start:1.8em}
+.content li{margin:.35em 0}
+.content strong{color:var(--navy-900)}
+
+/* Qur'anic verse styling (auto-applied by script to ﴿ ﴾ spans) */
+.ayah{
+  font-family:"Amiri Quran"; color:var(--navy-950); font-weight:400;
+  font-size:1.12em; letter-spacing:.01em;
+}
+.ref{
+  font-family:"Cairo",sans-serif; font-size:.68em; color:var(--gold-700);
+  font-weight:700; margin-inline-start:.2em;
+}
+
+/* Definition / principle blocks */
+.definition{
+  background:var(--cream-100); border:1px solid var(--rule);
+  border-inline-start:5px solid var(--navy-800);
+  border-radius:2px; padding:1em 1.3em; margin:1em 0;
+}
+.definition p{margin:.4em 0}
+.definition .term{font-family:"Cairo",sans-serif; font-weight:800; color:var(--navy-900)}
+
+/* Notes / tanbihat */
+.note{
+  background:#fff; border:1px solid var(--gold-300);
+  border-inline-start:5px solid var(--gold-600);
+  padding:.95em 1.3em; margin:1.1em 0; border-radius:2px;
+}
+.note-title{
+  font-family:"Cairo",sans-serif; font-weight:800; color:var(--gold-700);
+  font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; margin:0 0 .5em;
+}
+.note ol,.note ul{margin:.3em 0}
+
+/* Common-mistake callouts */
+.mistake{
+  background:linear-gradient(0deg, var(--cream-050), #fff); border:1px solid #d8b9b0;
+  border-inline-start:5px solid #8c3b2e; padding:.9em 1.3em; margin:1.1em 0; border-radius:2px;
+}
+.mistake-title{
+  font-family:"Cairo",sans-serif; font-weight:800; color:#8c3b2e;
+  font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; margin:0 0 .45em;
+}
+
+/* Examples block */
+.examples{margin:1em 0}
+.examples-title{font-family:"Cairo",sans-serif; font-weight:700; color:var(--navy-800); font-size:.88rem; margin-bottom:.4em}
+.examples ul{list-style:none; padding:0; margin:0}
+.examples li{
+  padding:.5em .8em; border-bottom:1px dashed var(--rule); display:flex; gap:.6em; align-items:baseline;
+}
+.examples li::before{content:"◆"; color:var(--gold-500); font-size:.6em}
+
+/* Rulings / hukm line */
+.ruling{
+  font-family:"Cairo",sans-serif; font-size:.88rem; color:var(--navy-900);
+  background:var(--cream-200); display:inline-block; padding:.35em .9em;
+  border-radius:100px; margin:.5em 0; font-weight:700;
+}
+
+/* Chapter meta cards: objectives / outcomes / summary / review / checkpoint */
+.meta-card{
+  background:var(--navy-950); color:var(--cream-100); border-radius:6px;
+  padding:1.5em 1.8em; margin:0 0 2em; box-shadow:var(--shadow);
+}
+.meta-card h3{
+  font-family:"Cairo",sans-serif; color:var(--gold-300); font-size:.78rem;
+  letter-spacing:.18em; text-transform:uppercase; margin:0 0 .8em;
+}
+.meta-card ul{margin:0; padding-inline-start:1.4em}
+.meta-card li{margin:.4em 0; font-family:"Cairo",sans-serif; font-size:.92rem}
+.meta-grid{display:grid; grid-template-columns:1fr 1fr; gap:1.2em}
+@media (max-width:640px){.meta-grid{grid-template-columns:1fr}}
+
+.summary-card{
+  background:var(--cream-100); border:1px solid var(--gold-300); border-radius:6px;
+  padding:1.4em 1.7em; margin:2em 0;
+}
+.summary-card h3{font-family:"Cairo",sans-serif; color:var(--navy-900); font-size:.85rem; letter-spacing:.1em; margin:0 0 .7em; text-transform:uppercase}
+
+.review-card{
+  border:1px dashed var(--navy-700); border-radius:6px; padding:1.3em 1.6em; margin:1.6em 0;
+}
+.review-card h3{font-family:"Cairo",sans-serif; color:var(--gold-700); font-size:.85rem; letter-spacing:.1em; margin:0 0 .7em; text-transform:uppercase}
+.review-card ol{margin:0; padding-inline-start:1.5em}
+.review-card li{margin:.5em 0}
+
+.checkpoint{
+  font-family:"Cairo",sans-serif; display:flex; align-items:center; gap:.7em;
+  background:linear-gradient(90deg, var(--gold-500), var(--gold-600)); color:#241a05;
+  padding:.7em 1.1em; border-radius:4px; font-weight:800; font-size:.85rem; margin:2em 0 0;
+}
+
+/* ---------- Tables ---------- */
+.table-wrap{overflow-x:auto; margin:1.3em 0; box-shadow:var(--shadow); border-radius:4px}
+table.kafi-table{
+  width:100%; border-collapse:collapse; background:#fff; font-size:.92rem; min-width:480px;
+}
+table.kafi-table caption{
+  font-family:"Cairo",sans-serif; font-weight:700; color:var(--navy-900); text-align:right;
+  padding:.6em .9em; background:var(--cream-200); border-bottom:2px solid var(--gold-500); caption-side:top;
+}
+table.kafi-table thead th{
+  background:var(--navy-950); color:var(--gold-300); font-family:"Cairo",sans-serif;
+  font-weight:700; padding:.75em 1em; text-align:right; font-size:.85rem;
+}
+table.kafi-table tbody td{
+  padding:.7em 1em; border-bottom:1px solid var(--cream-200); vertical-align:top;
+}
+table.kafi-table tbody tr:nth-child(even){background:var(--cream-050)}
+table.kafi-table tbody tr:hover{background:var(--cream-100)}
+table.kafi-table tbody td:first-child{
+  color:var(--navy-900); font-weight:700; font-family:"Cairo",sans-serif;
+}
+
+/* ---------- Poetry line (matn verses) ---------- */
+.matn{
+  font-family:"Amiri"; font-style:normal; text-align:center; color:var(--navy-950);
+  background:var(--cream-100); border-top:1px solid var(--gold-500); border-bottom:1px solid var(--gold-500);
+  padding:.9em 1em; margin:1.1em 0; font-size:1.1em; line-height:2.2;
+}
+
+/* ---------- Colophon ---------- */
+.colophon{
+  text-align:center; padding:6vw; background:var(--navy-950); color:var(--cream-100);
+}
+.colophon .bismillah{font-family:"Amiri Quran"; color:var(--gold-300); font-size:1.3em; margin-bottom:1em}
+.colophon h2{font-family:"Aref Ruqaa"; color:#fff; font-size:1.8rem}
+.colophon p{font-family:"Cairo",sans-serif; color:var(--cream-200); max-width:36em; margin:.8em auto; line-height:2}
+
+footer.book-footer{
+  text-align:center; padding:2.5em 1em; font-family:"Cairo",sans-serif;
+  color:var(--ink-500); font-size:.78rem;
+}
+
+/* ---------- Print ---------- */
+@media print{
+  .book-nav{display:none}
+  body{background:#fff; font-size:12.5pt}
+  .page{box-shadow:none; max-width:none; margin:0}
+  .page + .page{margin-top:0}
+  .cover, .part-opener{break-after:page; break-before:page}
+  .chapter{break-inside:avoid-page}
+  .table-wrap{box-shadow:none}
+  a{color:inherit; text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="book-nav">
+  <span class="brand">الكافي في التجويد — نسخة فاخرة</span>
+  <span>
+    <a href="#toc">الفهرس</a> ·
+    <a href="#glossary">مسرد المصطلحات</a> ·
+    <a href="#index">الفهرس التحليلي</a>
+  </span>
+</nav>
+
+<!-- ============================== COVER ============================== -->
+<section class="cover">
+  <div class="eyebrow">سلسلة المراجع الشرعية · علوم القرآن الكريم</div>
+  <div>
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <h1>الكافي في التجويد</h1>
+    <p class="subtitle">مرجعٌ وافٍ شامل في أحكام تلاوة القرآن الكريم، مخارج الحروف وصفاتها، وأحكام النون الساكنة والتنوين والميم الساكنة والمدود والراء واللامات والوقف والابتداء — على رواية حفص عن عاصم من طريق الشاطبية</p>
+  </div>
+  <div class="divider-star">۞</div>
+  <div class="credits">
+    <div class="role">تأليف</div>
+    <div class="name">أحمد بن إبراهيم</div>
+    <div class="role">مراجعة وتدقيق</div>
+    <div class="name">د. محمد حسنين</div>
+  </div>
+  <div class="footer-line">الطبعة الأولى</div>
+</section>
+
+<!-- ============================== HALF TITLE ============================== -->
+<section class="half-title">
+  <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+  <h1>الكافي في التجويد</h1>
+  <div class="tagline">تأليف أحمد بن إبراهيم</div>
+</section>
+
+<!-- ============================== COPYRIGHT / PUBLISHER PAGE ============================== -->
+<section class="page frontmatter">
+  <div class="page-pad">
+    <h2>بيانات النشر</h2>
+    <ul class="field-list">
+      <li><span class="k">عنوان الكتاب</span><span class="v">الكافي في التجويد</span></li>
+      <li><span class="k">المؤلف</span><span class="v">أحمد بن إبراهيم</span></li>
+      <li><span class="k">المراجعة والتدقيق</span><span class="v">د. محمد حسنين</span></li>
+      <li><span class="k">الرواية المعتمدة</span><span class="v">حفص عن عاصم، من طريق الشاطبية</span></li>
+      <li><span class="k">الطبعة</span><span class="v">الأولى</span></li>
+      <li><span class="k">رقم الإيداع / ISBN</span><span class="v placeholder">يُستكمل من الناشر عند التسجيل الرسمي</span></li>
+      <li><span class="k">سنة النشر</span><span class="v placeholder">يُستكمل من الناشر</span></li>
+      <li><span class="k">جميع الحقوق محفوظة</span><span class="v">لا يجوز نسخ أي جزء من هذا الكتاب أو نقله بأي شكل من الأشكال إلا بإذن خطي من المؤلف، فيما عدا الاستشهاد العلمي بالإشارة إلى المصدر</span></li>
+    </ul>
+    <div class="small-note">
+      هذه الصفحة قالبٌ لبيانات النشر الرسمية (رقم الإيداع، الترقيم الدولي، جهة النشر). تُستكمل هذه الحقول من الناشر المعتمد قبل الطباعة النهائية، ولم تُدرَج بيانات افتراضية تجنّباً لأي معلومة غير موثقة.
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ENDORSEMENTS PLACEHOLDER ============================== -->
+<section class="page frontmatter">
+  <div class="page-pad">
+    <h2>تقريظات وتوصيات علمية</h2>
+    <p style="font-family:'Cairo',sans-serif; color:var(--ink-500); line-height:2;">
+      مكان مخصص لتقريظات العلماء والمؤسسات العلمية والدور الإفتائية التي تراجع الكتاب وتوصي به. تُضاف هذه التقريظات بنصوصها الرسمية وتوقيعات أصحابها عند توفرها من الجهات المعنية، حفاظاً على دقة النسبة العلمية.
+    </p>
+  </div>
+</section>
+
+<!-- ============================== AUTHOR / REVIEWER BIOS ============================== -->
+<section class="page frontmatter">
+  <div class="page-pad">
+    <h2>عن المؤلف والمراجع</h2>
+    <ul class="field-list">
+      <li><span class="k">المؤلف</span><span class="v">أحمد بن إبراهيم — <span class="placeholder">تُستكمل السيرة العلمية والمسار الإسنادي من المؤلف</span></span></li>
+      <li><span class="k">المراجع</span><span class="v">د. محمد حسنين — <span class="placeholder">تُستكمل السيرة العلمية والدرجة العلمية والانتساب المؤسسي من المراجع</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== TABLE OF CONTENTS ============================== -->
+<section class="page frontmatter" id="toc">
+  <div class="page-pad">
+    <h2>فهرس المحتويات</h2>
+    <ul class="toc">
+      <li><a class="part-link" href="#muqaddimah"><span>مقدمة المؤلف</span></a></li>
+
+      <li>
+        <a class="part-link" href="#bab1"><span>الباب الأول — المقدمات والتأصيلات</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab1-f1"><span>الفصل الأول: تعريف التجويد وحكمه</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab1-f2"><span>الفصل الثاني: اللحن وأقسامه</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab1-f3"><span>الفصل الثالث: أركان القراءة الصحيحة</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab1-f4"><span>الفصل الرابع: مراتب التلاوة والأداء</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab2"><span>الباب الثاني — مخارج الحروف</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab2-f1"><span>الفصل الأول: تعريف المخرج وأهميته</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab2-f2"><span>الفصل الثاني: المخارج العامة (٥)</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab2-f3"><span>الفصل الثالث: المخارج الخاصة (١٧)</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab3"><span>الباب الثالث — صفات الحروف</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab3-f1"><span>الفصل الأول: تعريف الصفة وأهميتها</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab3-f2"><span>الفصل الثاني: الصفات التي لها ضد</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab3-f3"><span>الفصل الثالث: الصفات التي لا ضد لها</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab4"><span>الباب الرابع — أحكام النون الساكنة والتنوين</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab4-f1"><span>الفصل الأول: التعريف</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab4-f2"><span>الفصل الثاني: الإظهار الحلقي</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab4-f3"><span>الفصل الثالث: الإدغام</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab4-f4"><span>الفصل الرابع: الإقلاب</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab4-f5"><span>الفصل الخامس: الإخفاء الحقيقي</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab5"><span>الباب الخامس — أحكام الميم الساكنة</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab5-f1"><span>الفصل الأول: التعريف</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab5-f2"><span>الفصل الثاني: الإخفاء الشفوي</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab5-f3"><span>الفصل الثالث: إدغام المثلين الصغير</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab5-f4"><span>الفصل الرابع: الإظهار الشفوي</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab6"><span>الباب السادس — أحكام المدود</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab6-f1"><span>الفصل الأول: تعريف المد وحروفه</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab6-f2"><span>الفصل الثاني: المد الطبيعي</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab6-f3"><span>الفصل الثالث: المد الفرعي بسبب الهمز</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab6-f4"><span>الفصل الرابع: المد الفرعي بسبب السكون</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab6-f5"><span>الفصل الخامس: مراتب المدود</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab7"><span>الباب السابع — أحكام الراء</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab7-f1"><span>الفصل الأول: حالات تفخيم الراء</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab7-f2"><span>الفصل الثاني: حالات ترقيق الراء</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab7-f3"><span>الفصل الثالث: حالات جواز الوجهين</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab8"><span>الباب الثامن — أحكام لفظ الجلالة واللامات</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab8-f1"><span>الفصل الأول: لفظ الجلالة</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab8-f2"><span>الفصل الثاني: لام التعريف</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab8-f3"><span>الفصل الثالث: لام الفعل والأمر والحرف</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab9"><span>الباب التاسع — أحكام الوقف والابتداء</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab9-f1"><span>الفصل الأول: تعريف الوقف وأقسامه</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab9-f2"><span>الفصل الثاني: علامات الوقف في المصحف</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab9-f3"><span>الفصل الثالث: السكتات في رواية حفص</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab9-f4"><span>الفصل الرابع: الوقف على أواخر الكلمات</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="part-link" href="#bab10"><span>الباب العاشر — الأخطاء الشائعة وتصحيحها</span></a>
+        <ul>
+          <li><a class="chap-link" href="#bab10-f1"><span>الفصل الأول: أخطاء في المخارج</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab10-f2"><span>الفصل الثاني: أخطاء في الصفات</span><span class="dots"></span></a></li>
+          <li><a class="chap-link" href="#bab10-f3"><span>الفصل الثالث: أخطاء في الأحكام</span><span class="dots"></span></a></li>
+        </ul>
+      </li>
+
+      <li><a class="part-link" href="#khatimah"><span>الخاتمة</span></a></li>
+      <li><a class="part-link" href="#appendices"><span>الملاحق</span></a></li>
+      <li><a class="part-link" href="#glossary"><span>مسرد المصطلحات</span></a></li>
+      <li><a class="part-link" href="#bibliography"><span>قائمة المصادر</span></a></li>
+      <li><a class="part-link" href="#index"><span>الفهرس التحليلي</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== AUTHOR'S INTRODUCTION ============================== -->
+<section class="page frontmatter content" id="muqaddimah">
+  <div class="page-pad">
+    <h2>مقدمة المؤلف</h2>
+    <p>الحمد لله الذي أنزل القرآن على عبده محمداً، وجعله نوراً وهدىً ورحمة للعالمين، وأمرنا بتلاوته حق تلاوته، وتدبر آياته، وتحسين ألفاظه. والصلاة والسلام على من بعثه الله بالهدى ودين الحق، وعلى آله وأصحابه الذين تلقوا القرآن عنه مشافهة، وضبطوا حروفه وحركاته، ووصلوا إلينا هذا العلم العظيم متواتراً.</p>
+    <p>أما بعد: فإن علم التجويد من أشرف العلوم الشرعية، لأنه يتعلق بكلام الله تعالى. وقد حرصت على تأليف هذا الكتاب "الكافي في التجويد" ليكون وافياً شاملاً، كافياً للقارئ في معرفة أحكام تلاوته، معتمداً على أشهر رواية وهي رواية حفص عن عاصم من طريق الشاطبية، ومحرراً على مذهب جمهور علماء التجويد.</p>
+    <p>وقد سميته "الكافي" لأنه يكفي طالب العلم من المبتدئين إلى المتقدمين، ويجمع بين الدقة والسهولة، مع إيراد الأمثلة المحققة من القرآن الكريم، والتنبيه على الأخطاء الشائعة، والاعتماد على أئمة هذا الفن كابن الجزري، وأبي عمرو الداني، والملا علي القاري، وغيرهم.</p>
+    <p>أسأل الله أن ينفع به، وأن يجعله خالصاً لوجهه الكريم.</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     الباب الأول
+===================================================================== -->
+<section class="part-opener" id="bab1">
+  <div class="kicker">الباب الأول</div>
+  <div class="num">١</div>
+  <h2>المقدمات والتأصيلات</h2>
+  <p class="part-desc">تأصيل علم التجويد: تعريفه وحكمه، اللحن وأقسامه، أركان القراءة الصحيحة، ومراتب التلاوة والأداء.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تحديد تعريف التجويد لغةً واصطلاحاً، وحكمه التكليفي.</li>
+      <li>التمييز بين اللحن الجلي واللحن الخفي وأثر كل منهما.</li>
+      <li>ضبط الأركان الثلاثة لصحة القراءة القرآنية.</li>
+      <li>التفريق العملي بين مراتب الأداء الأربع: التحقيق، الترتيل، التدوير، الحدر.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab1-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف التجويد وحكمه</h2>
+
+    <h3 class="section-title">المبحث الأول: تعريف التجويد لغة واصطلاحاً</h3>
+    <div class="definition">
+      <p><span class="term">التجويد لغة:</span> مصدر جَوَّدَ يُجَوِّدُ تَجْوِيداً، وهو التحسين والإتقان، يقال: جَوَّدَ الشيءَ إذا أتى به حسناً. والجَوْدُ ضد الرَّداءة.</p>
+      <p><span class="term">التجويد اصطلاحاً:</span> عرفه علماء التجويد بتعريفات متقاربة، أجمعها ما ذكره الإمام ابن الجزري في "النشر" حيث قال: "هو إعطاء الحروف حقها وترتيبها، ورد الحرف إلى مخرجه وأصله، مع استكمال صفاته اللازمة والعارضة، وتحقيق لفظه بلا تكلف ولا تعسف".</p>
+    </div>
+    <p>ويمكن تعريفه بأنه: علم يعرف به كيفية النطق بالكلمات القرآنية على الوجه الذي تلقاه الأئمة عن النبي ﷺ، من حيث مخارج الحروف وصفاتها، وأحكامها الساكنة والمدودة، وأحكام الوقف والابتداء، مع مراعاة مراتب الأداء، متجنباً اللحن جليه وخفيه، مع التزام الرسم العثماني والسند المتصل.</p>
+
+    <h3 class="section-title">المبحث الثاني: حكم تعلم التجويد وتعليمه</h3>
+    <p><strong>أولاً: حكم تعلم التجويد:</strong></p>
+    <p>ينقسم تعلم التجويد إلى قسمين:</p>
+    <ol>
+      <li><strong>التعلم النظري (المسائل والقواعد):</strong> معرفة أحكام التجويد كتعريف الإدغام وحروفه ومراتبه. هذا النوع فرض كفاية على الأمة، فإذا قام به من يكفي سقط الإثم عن الباقين.</li>
+      <li><strong>التعلم العملي (تطبيق التلاوة مجودة):</strong> النطق الفعلي بالقرآن مراعياً أحكام التجويد. هذا النوع فرض عين على كل مسلم مكلف قادر، لأنه لا تصح الصلاة إلا بقراءة الفاتحة مجودة.</li>
+    </ol>
+    <p><strong>الدليل:</strong> قال الإمام ابن الجزري في مقدمته:</p>
+    <div class="matn">والأخذ بالتجويد حتم لازمُ ... من لم يجود القرآن آثمُ</div>
+
+    <p><strong>ثانياً: حكم تعليم التجويد:</strong></p>
+    <ul>
+      <li>تعليم العامة قدر ما يصحح به قراءة الفاتحة: فرض كفاية على العلماء في كل بلد.</li>
+      <li>تعليم المتخصصين والقراء: فرض كفاية أيضاً، لكنه من أفضل الأعمال الصالحة.</li>
+    </ul>
+
+    <p><strong>ثالثاً: الخلاف في وجوب التجويد:</strong></p>
+    <ul>
+      <li><strong>المالكية:</strong> قالوا لا يجب التجويد على العوام، بل يكفي تصحيح الحروف من اللحن الجلي فقط.</li>
+      <li><strong>الجمهور (حنفية، شافعية، حنابلة):</strong> قالوا يجب التجويد في الفاتحة على كل قادر، لأنه جزء من صحة القراءة.</li>
+    </ul>
+    <div class="ruling">الراجح: وجوب تعلم ما يصحح به المرء قراءة الفاتحة من مخارج الحروف وصفاتها الأساسية، وما زاد فهو فضيلة.</div>
+  </article>
+
+  <article class="chapter" id="bab1-f2">
+    <h2 class="chapter-title">الفصل الثاني: اللحن وأقسامه</h2>
+
+    <h3 class="section-title">المبحث الأول: تعريف اللحن</h3>
+    <div class="definition">
+      <p><span class="term">اللحن لغة:</span> الميل والانحراف عن الصواب، يقال: لحن إذا مال.</p>
+      <p><span class="term">اللحن اصطلاحاً:</span> الخطأ في تلاوة القرآن، سواء كان في الحروف أو الحركات أو الصفات.</p>
+    </div>
+
+    <h3 class="section-title">المبحث الثاني: أقسام اللحن</h3>
+    <p>ينقسم اللحن إلى قسمين رئيسيين:</p>
+
+    <h4 class="subsection-title">أولاً: اللحن الجلي</h4>
+    <p><strong>تعريفه:</strong> هو الخطأ الذي يخل بالحرف أو الحركة تغييراً ظاهراً يدركه عامة القراء، ويبطل الصلاة عند الجمهور.</p>
+    <p><strong>ضوابطه وأمثلته:</strong></p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>نوع الخطأ</th><th>مثال الخطأ</th><th>الصواب</th><th>أثره</th></tr></thead>
+        <tbody>
+          <tr><td>قلب حرف بحرف</td><td>قراءة ﴿الضَّالِّينَ﴾ بالظاء</td><td>الضاد</td><td>بطلان الصلاة</td></tr>
+          <tr><td>تغيير حركة</td><td>كسر تاء ﴿أَنْعَمْتَ﴾</td><td>فتح التاء</td><td>بطلان عند الأئمة</td></tr>
+          <tr><td>إسكان متحرك</td><td>إسكان دال ﴿اهْدِنَا﴾</td><td>فتح الدال</td><td>بطلان</td></tr>
+          <tr><td>تحريك ساكن</td><td>ضم دال ﴿الْحَمْدُ﴾</td><td>سكون الدال</td><td>بطلان</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>حكمه:</strong> اللحن الجلي يحرم تعمده، ومن تعمده في الصلاة عامداً عالماً فعليه الإعادة باتفاق.</p>
+
+    <h4 class="subsection-title">ثانياً: اللحن الخفي</h4>
+    <p><strong>تعريفه:</strong> هو الخطأ الذي يخل بكمال الأداء دون أن يغير الحرف أو الحركة تغييراً ظاهراً، ولا يدركه إلا المتخصصون أو من له أذن موسيقية.</p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الخطأ</th><th>الموضع</th><th>الصواب المطلوب</th></tr></thead>
+        <tbody>
+          <tr><td>ترك الغنة</td><td>في ﴿مَن يَعْمَلْ﴾</td><td>غنة بمقدار حركتين</td></tr>
+          <tr><td>ترقيق الراء</td><td>في ﴿الرَّحْمَـٰنِ﴾</td><td>تفخيم الراء</td></tr>
+          <tr><td>إظهار حرف الإدغام</td><td>في ﴿مِن رَّبِّهِمْ﴾</td><td>إدغام النون في الراء</td></tr>
+          <tr><td>قصر المد المتصل</td><td>في ﴿جَاءَ﴾</td><td>مد ٤-٥ حركات</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>حكمه:</strong> تعمده في الصلاة لا يبطلها عند الجمهور، لكنه مكروه كراهة شديدة. ومن واظب على تركه مع القدرة على تعلمه فهو آثم.</p>
+
+    <h3 class="section-title">المبحث الثالث: أثر اللحن في صحة التلاوة</h3>
+    <div class="note">
+      <p class="note-title">قاعدة ذهبية</p>
+      <p>كل لحن يُغير معنى الآية تغييراً جلياً (كقلب "إياك" إلى "أياك" أو "أنعمت" إلى "أنعمتُ" بضم التاء) فهو حرام ويبطل الصلاة. وكل لحن لا يُغير المعنى لكنه يخرج عن التلقي (كتفخيم الراء في غير موضعه) فهو مكروه ولا يبطل.</p>
+    </div>
+    <div class="examples">
+      <p class="examples-title">أمثلة تطبيقية</p>
+      <ul>
+        <li>﴿إِيَّاكَ نَعْبُدُ﴾ [الفاتحة: ٥] — لو قرئت "أَيَّاكَ" بهمزة مفتوحة بدل كسرة، تغير المعنى، فهذا لحن جلي مبطل.</li>
+        <li>﴿رَبِّ الْعَالَمِينَ﴾ [الفاتحة: ٢] — لو رققت الراء مع أنها مفخمة، لم يتغير المعنى لكنه لحن خفي.</li>
+        <li>﴿مِن قَبْلِ﴾ [البقرة: ٤] — لو أظهرت النون عند القاف بدل إخفائها، لم يتغير المعنى لكنه لحن خفي.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab1-f3">
+    <h2 class="chapter-title">الفصل الثالث: أركان القراءة الصحيحة</h2>
+
+    <h3 class="section-title">المبحث الأول: الأركان الثلاثة</h3>
+    <p>لا تصح قراءة القرآن إلا باجتماع ثلاثة أركان:</p>
+
+    <h4 class="subsection-title">الركن الأول: موافقة العربية الصحيحة</h4>
+    <p>أن تكون القراءة مطابقة لأصول اللغة العربية من حيث الإعراب، والبناء، والتصريف، والجموع، والتذكير والتأنيث.</p>
+    <div class="examples">
+      <ul><li>قراءة حفص: ﴿لَعَنِتُّمْ﴾ [الحجرات: ٧] بفتح التاء على البناء للفاعل، وهي موافقة للعربية. وقراءة ابن عامر بضم التاء على البناء للمجهول، وهي أيضاً عربية صحيحة.</li></ul>
+    </div>
+
+    <h4 class="subsection-title">الركن الثاني: موافقة الرسم العثماني</h4>
+    <p>أن تكون القراءة متوافقة مع الخط الذي كتب به المصحف في عهد عثمان رضي الله عنه، ولو احتمالاً.</p>
+    <div class="examples">
+      <ul><li>كلمة ﴿فَتَيَمَّمُوا﴾ [المائدة: ٦] كتبت بدون ألف بعد التاء، فقرئت بفتح التاء (فتيمموا) وكسرها (فتيمموا) وهما موافقان للرسم.</li></ul>
+    </div>
+
+    <h4 class="subsection-title">الركن الثالث: صحة السند المتصل إلى النبي ﷺ</h4>
+    <p>أن يكون للقراءة سند متصل إلى النبي ﷺ برجال عدول ضابطين، من غير انقطاع أو علة.</p>
+
+    <p><strong>مراتب السند في القراءات:</strong></p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>المرتبة</th><th>الوصف</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>متواتر</td><td>رواها جمع لا يمكن تواطؤهم على الكذب عن مثلهم إلى النبي ﷺ</td><td>قراءة حفص، قالون، ورش</td></tr>
+          <tr><td>مشهور</td><td>صح سندها لكن لم تبلغ التواتر، ووافقت العربية والرسم</td><td>بعض قراءات يعقوب الحضرمي</td></tr>
+          <tr><td>آحاد</td><td>صح سندها لكن خالفت الرسم أو العربية</td><td>لا يعمل بها في التلاوة</td></tr>
+          <tr><td>شاذ</td><td>ضعف سندها أو خالفت الإجماع</td><td>قراءة "إياك نعبد" بإشباع الكسرة</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="section-title">المبحث الثاني: أثر اختلال الأركان</h3>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الركن المختل</th><th>حكم القراءة</th></tr></thead>
+        <tbody>
+          <tr><td>السند فقط (لكن وافق العربية والرسم)</td><td>شاذة لا تجوز التلاوة بها</td></tr>
+          <tr><td>العربية فقط (مع صحة السند والرسم)</td><td>لا تجوز، وتسمى لحناً</td></tr>
+          <tr><td>الرسم فقط (مع صحة السند والعربية)</td><td>تجوز التلاوة بها في الدرس لا في الصلاة</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيه</p>
+      <p>القراءات العشر المتواترة لا تخل بأي من الأركان الثلاثة باتفاق أهل السنة.</p>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab1-f4">
+    <h2 class="chapter-title">الفصل الرابع: مراتب التلاوة والأداء</h2>
+
+    <h3 class="section-title">المبحث الأول: التحقيق</h3>
+    <p><strong>تعريفه:</strong> إعطاء الحروف حقها من الإشباع والتمكين والإظهار والإشباع في المدود، مع التأني والترسل، والتفكر في معاني الآيات.</p>
+    <p><strong>صفاته:</strong></p>
+    <ul>
+      <li>مد المتصل والمنفصل إلى ٤ أو ٥ حركات.</li>
+      <li>إظهار جميع الحروف إظهاراً تاماً (لا إدغام كبير).</li>
+      <li>الغنة ظاهرة بمقدار حركتين.</li>
+      <li>الوقوف على رؤوس الآيات غالباً.</li>
+    </ul>
+    <p><strong>مستعمله:</strong> من يتعلم التجويد أو يتلوه على شيخه، أو من يريد التدبر الكامل.</p>
+    <div class="examples"><ul><li>قراءة سورة الفاتحة كلها بتمكين وإشباع، مع الوقوف عند كل آية.</li></ul></div>
+
+    <h3 class="section-title">المبحث الثاني: الترتيل</h3>
+    <p><strong>تعريفه:</strong> القراءة بتؤدة وطمأنينة، مع مراعاة أحكام التجويد كاملة، من غير إفراط في المد ولا تفريط، وهو المأمور به في قوله تعالى: ﴿وَرَتِّلِ الْقُرْآنَ تَرْتِيلاً﴾ [المزمل: ٤].</p>
+    <p><strong>صفاته:</strong></p>
+    <ul>
+      <li>المد الطبيعي حركتان، المتوسط ٤ حركات، المتصل ٤-٥.</li>
+      <li>ترقيق وتفخيم حسب القاعدة.</li>
+      <li>الإدغام الكامل والصغير كما في الرواية.</li>
+      <li>السرعة معتدلة بين التحقيق والحدر.</li>
+    </ul>
+    <p><strong>مستعمله:</strong> عامة القراء والمجودين، وهو الأفضل في الصلاة الجهرية والتراويح.</p>
+    <div class="examples"><ul><li>قراءة ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾ بسرعة متوسطة مع إعطاء كل حرف حقه.</li></ul></div>
+
+    <h3 class="section-title">المبحث الثالث: الحدر</h3>
+    <p><strong>تعريفه:</strong> الإسراع في القراءة مع إقامة حدود الحروف وإعطائها حقوقها من غير إخلال، أي سرعة مع ضبط.</p>
+    <p><strong>صفاته:</strong></p>
+    <ul>
+      <li>قصر المدود على حركتين حيث أمكن (المنفصل والبدل).</li>
+      <li>إخفاء الغنة في مواضعها دون مبالغة.</li>
+      <li>تقليل الوقوف، ووصل كثير من الآيات ببعضها.</li>
+    </ul>
+    <div class="mistake"><p class="mistake-title">تحذير</p><p>ليس الحدر هو الهذرمة التي تخل بالحروف والغنة، بل سرعة مضبوطة.</p></div>
+    <p><strong>مستعمله:</strong> في الصلاة السرية، أو عند ختم القرآن، أو لمن يخشى النسيان.</p>
+    <div class="examples"><ul><li>قراءة سورة الإخلاص بسرعة مع إدغام المدود القصيرة.</li></ul></div>
+
+    <h3 class="section-title">المبحث الرابع: التدوير</h3>
+    <p><strong>تعريفه:</strong> مرتبة متوسطة بين التحقيق والترتيل، أو بين الترتيل والحدر، وهو ما يستعمله معظم القراء اليوم.</p>
+    <p><strong>صفاته:</strong></p>
+    <ul>
+      <li>مدود: طبيعي حركتان، متصل ٤، منفصل ٣-٤.</li>
+      <li>غنة وسطى (ليست طويلة ولا ساقطة).</li>
+      <li>سرعة معتدلة.</li>
+    </ul>
+    <p><strong>مستعمله:</strong> عامة المجودين في تلاوتهم اليومية.</p>
+    <div class="examples"><ul><li>قراءة سورة الكهف في صلاة الجمعة بهذه المرتبة.</li></ul></div>
+
+    <h3 class="section-title">المبحث الخامس: ضوابط الانتقال بين المراتب</h3>
+    <p><strong>القواعد:</strong></p>
+    <ol>
+      <li>لا يجوز الجمع بين مرتبتين في الآية الواحدة (كأن يبدأ بتحقيق ثم يتحول إلى حدر في نفس الآية) لأنه يخل بالنظام الصوتي.</li>
+      <li>يجوز الانتقال بين الآيات (مثلاً: آية تحقيق ثم آية حدر).</li>
+      <li>مرتبة التحقيق هي الأصل في التعليم، لأنها تبين الحروف والمخارج.</li>
+      <li>مرتبة الحدر لا تجوز إلا لمن أتقن التحقيق، لأن الحدر بلا إتقان يوقع في اللحن الخفي.</li>
+    </ol>
+
+    <p><strong>جدول خلاصة المراتب:</strong></p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>المرتبة</th><th>السرعة</th><th>المدود</th><th>الوقف</th><th>الموطن المناسب</th></tr></thead>
+        <tbody>
+          <tr><td>تحقيق</td><td>بطيء جداً</td><td>طويل (٤-٥)</td><td>كثير</td><td>التعليم والتدبر</td></tr>
+          <tr><td>ترتيل</td><td>متوسط</td><td>وسط (٢-٤)</td><td>متوسط</td><td>الصلاة الجهرية</td></tr>
+          <tr><td>تدوير</td><td>متوسط إلى سريع</td><td>قصير (٢-٣)</td><td>قليل</td><td>التلاوة اليومية</td></tr>
+          <tr><td>حدر</td><td>سريع</td><td>أقصر (٢)</td><td>نادر</td><td>الختمة أو الصلاة السرية</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب الأول</h3>
+    <p>التجويد إتقان النطق بالقرآن على الصفة المتلقاة عن النبي ﷺ، وتعلم ما يصحح الفاتحة فرض عين. اللحن الجلي يبطل الصلاة، والخفي مكروه لا يبطلها. لا تصح القراءة إلا بموافقة العربية والرسم وصحة السند. ومراتب الأداء أربع: تحقيق، ترتيل، تدوير، حدر، لا يجوز الجمع بين مرتبتين في آية واحدة.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>عرّف التجويد اصطلاحاً كما ذكره ابن الجزري في "النشر".</li>
+      <li>ما الفرق بين اللحن الجلي واللحن الخفي من حيث الحكم والأثر؟ مثّل لكل منهما.</li>
+      <li>عدّد الأركان الثلاثة لصحة القراءة، وبيّن أثر اختلال كل ركن منها.</li>
+      <li>رتّب مراتب الأداء الأربع من الأبطأ إلى الأسرع، واذكر موطن استعمال كل مرتبة.</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يتمكن الدارس الآن من التمييز عملياً بين اللحن الجلي والخفي، ونطق نموذج واحد بكل مرتبة من مراتب الأداء الأربع.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب الثاني — مخارج الحروف
+===================================================================== -->
+<section class="part-opener" id="bab2">
+  <div class="kicker">الباب الثاني</div>
+  <div class="num">٢</div>
+  <h2>مخارج الحروف</h2>
+  <p class="part-desc">المخارج العامة الخمسة، والمخارج الخاصة السبعة عشر، مع أمثلة قرآنية لكل حرف.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تعريف المخرج وبيان أهمية معرفته في تصحيح النطق.</li>
+      <li>حصر المخارج العامة الخمسة وتوزيع الحروف عليها.</li>
+      <li>ضبط المخارج الخاصة السبعة عشر لكل حرف من حروف الهجاء.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab2-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف المخرج وأهميته</h2>
+    <div class="definition">
+      <p><span class="term">المخرج لغة:</span> موضع الخروج.</p>
+      <p><span class="term">المخرج اصطلاحاً:</span> الموضع الذي يخرج منه الحرف عند النطق به، ويتميز عن غيره به.</p>
+    </div>
+    <p><strong>أهمية معرفة المخارج:</strong></p>
+    <ol>
+      <li>تصحيح النطق بالحروف.</li>
+      <li>تمييز الحروف المتقاربة (مثل: ت، د، ط).</li>
+      <li>الوصول إلى التلاوة الصحيحة الخالية من اللحن.</li>
+    </ol>
+    <p><strong>الخلاف في عدد المخارج:</strong></p>
+    <ul>
+      <li>مذهب الجمهور (الخليل وسيبويه): ١٧ مخرجاً.</li>
+      <li>مذهب ابن الجزري في "النشر": ١٩ مخرجاً (فصل مخرج اللسان إلى ١٠).</li>
+      <li>المذهب المعتمد في هذا الكتاب: ١٧ مخرجاً، مع تفصيلها.</li>
+    </ul>
+  </article>
+
+  <article class="chapter" id="bab2-f2">
+    <h2 class="chapter-title">الفصل الثاني: المخارج العامة (٥ مخارج)</h2>
+    <p>قسّم علماء التجويد مخارج الحروف إلى خمسة مخارج عامة:</p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>المخرج العام</th><th>موضعه في جهاز النطق</th><th>عدد الحروف الخارجة منه</th></tr></thead>
+        <tbody>
+          <tr><td>١. الجوف</td><td>تجويف الفم والحلق</td><td>٣ (ألف المد، واو المد، ياء المد)</td></tr>
+          <tr><td>٢. الحلق</td><td>الحلق بثلاث طبقات</td><td>٦ (ء، هـ، ع، ح، غ، خ)</td></tr>
+          <tr><td>٣. اللسان</td><td>اللسان مع أجزاء الفم</td><td>١٨ حرفاً</td></tr>
+          <tr><td>٤. الشفتان</td><td>الشفتان معاً</td><td>٤ (ف، ب، م، و)</td></tr>
+          <tr><td>٥. الخيشوم</td><td>تجويف الأنف</td><td>الغنة فقط (ليست حرفاً مستقلاً)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><p class="note-title">تنبيه</p><p>الخيشوم ليس مخرجاً لأي حرف من حروف الهجاء، بل هو مخرج للغنة التي تصاحب النون والميم في حالات معينة.</p></div>
+  </article>
+
+  <article class="chapter" id="bab2-f3">
+    <h2 class="chapter-title">الفصل الثالث: المخارج الخاصة (١٧ مخرجاً)</h2>
+
+    <h3 class="section-title">المبحث الأول: الجوف (مخرج واحد)</h3>
+    <div class="definition">
+      <p><span class="term">تعريف الجوف:</span> هو الفراغ الذي في داخل الفم والحلق، أي التجويف الذي يبدأ من الصدر وينتهي إلى الشفتين.</p>
+    </div>
+    <p><strong>حروفه:</strong> حروف المد الثلاثة: الألف الساكنة المفتوح ما قبلها، الواو الساكنة المضموم ما قبلها، الياء الساكنة المكسور ما قبلها.</p>
+    <p><strong>كيفية النطق بها:</strong> لا تستقر في نقطة معينة، بل تمتد في الجوف حتى تخرج من الفم.</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>الألف: ﴿قَالَ رَبِّ﴾ [البقرة: ٣٠]</li>
+        <li>الواو: ﴿يَقُولُ الَّذِينَ آمَنُوا﴾ [البقرة: ٨]</li>
+        <li>الياء: ﴿رَبِّ الْعَالَمِينَ﴾ [الفاتحة: ٢]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الألف لا تأتي إلا مداً، فلا توجد ألف متحركة في العربية.</li>
+        <li>الواو والياء يكونان حرفي مد إذا سكنا وانكسر أو انضم ما قبلهما، ويكونان حرفي لين إذا سكنا وانفتح ما قبلهما.</li>
+        <li>خطأ شائع: إخراج الألف من الحلق (كأنها همزة)، أو إخراج الواو من الشفتين مضمومة بشدة، أو إخراج الياء من وسط اللسان.</li>
+      </ol>
+    </div>
+
+    <h3 class="section-title">المبحث الثاني: الحلق (٣ مخارج)</h3>
+    <p>ترتيب الحلق من الأعلى (أقرب إلى الفم) إلى الأسفل (أقرب إلى الصدر):</p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>المخرج الخاص</th><th>موضعه في الحلق</th><th>الحروف الخارجة منه</th></tr></thead>
+        <tbody>
+          <tr><td>١. أدنى الحلق</td><td>أقصى الحلق مما يلي الفم</td><td>الهمزة (ء) والهاء (هـ)</td></tr>
+          <tr><td>٢. وسط الحلق</td><td>وسط الحلق</td><td>العين (ع) والحاء (ح)</td></tr>
+          <tr><td>٣. أقصى الحلق</td><td>أقصى الحلق مما يلي الصدر</td><td>الغين (غ) والخاء (خ)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>كيفية التمييز بينها عملياً:</strong></p>
+    <ul>
+      <li>الهمزة: انقباض للحبال الصوتية ثم انفجار مفاجئ (شديد مجهور).</li>
+      <li>الهاء: نفس منفتح من أقصى الحلق دون اهتزاز (رخو مهموس).</li>
+      <li>العين: انقباض لوسط الحلق مع اهتزاز (بيني مجهور).</li>
+      <li>الحاء: نفس منفتح من وسط الحلق دون اهتزاز (رخو مهموس).</li>
+      <li>الغين: انقباض لأقصى الحلق مع اهتزاز (رخو مجهور مستعل).</li>
+      <li>الخاء: نفس منفتح من أقصى الحلق دون اهتزاز (رخو مهموس مستعل).</li>
+    </ul>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>الهمزة: ﴿إِنَّ الَّذِينَ كَفَرُوا﴾ [البقرة: ٦]</li>
+        <li>الهاء: ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾ [الفاتحة: ٦]</li>
+        <li>العين: ﴿إِيَّاكَ نَعْبُدُ﴾ [الفاتحة: ٥]</li>
+        <li>الحاء: ﴿الْحَمْدُ لِلَّهِ﴾ [الفاتحة: ٢]</li>
+        <li>الغين: ﴿غَيْرِ الْمَغْضُوبِ﴾ [الفاتحة: ٧]</li>
+        <li>الخاء: ﴿خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ﴾ [البقرة: ٧]</li>
+      </ul>
+    </div>
+
+    <h3 class="section-title">المبحث الثالث: اللسان (١٠ مخارج)</h3>
+    <p>اللسان هو أكبر عضو في النطق، ويخرج منه ١٨ حرفاً موزعة على ١٠ مخارج خاصة:</p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>المخرج</th><th>موضعه في اللسان</th><th>الحروف الخارجة</th></tr></thead>
+        <tbody>
+          <tr><td>١</td><td>أقصى اللسان مع ما يحاذيه من الحنك الأعلى</td><td>ق</td></tr>
+          <tr><td>٢</td><td>أقصى اللسان قليلاً مع ما يحاذيه</td><td>ك</td></tr>
+          <tr><td>٣</td><td>وسط اللسان مع ما يحاذيه من الحنك الأعلى</td><td>ج، ش، ي (غير المدية)</td></tr>
+          <tr><td>٤</td><td>حافة اللسان مع الأضراس العليا</td><td>ض</td></tr>
+          <tr><td>٥</td><td>حافة اللسان مع ما يحاذيها من الحنك الأعلى</td><td>ل</td></tr>
+          <tr><td>٦</td><td>طرف اللسان مع لثة الثنايا العليا</td><td>ر</td></tr>
+          <tr><td>٧</td><td>طرف اللسان مع أصول الثنايا العليا</td><td>ن</td></tr>
+          <tr><td>٨</td><td>طرف اللسان مع ما بين الثنايا واللثة</td><td>ط، د، ت</td></tr>
+          <tr><td>٩</td><td>طرف اللسان مع ظهر الثنايا العليا</td><td>ص، ز، س</td></tr>
+          <tr><td>١٠</td><td>طرف اللسان مع أطراف الثنايا السفلى والعليا</td><td>ظ، ذ، ث</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="examples">
+      <p class="examples-title">أمثلة لكل مخرج</p>
+      <ul>
+        <li>القاف: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾ [الإخلاص: ١]</li>
+        <li>الكاف: ﴿إِيَّاكَ نَعْبُدُ﴾ [الفاتحة: ٥]</li>
+        <li>الجيم: ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾ [الفاتحة: ٦]</li>
+        <li>الشين: ﴿مِن شَرِّ مَا خَلَقَ﴾ [الفلق: ٢]</li>
+        <li>الياء: ﴿يَوْمِ الدِّينِ﴾ [الفاتحة: ٤]</li>
+        <li>الضاد: ﴿وَلَا الضَّالِّينَ﴾ [الفاتحة: ٧]</li>
+        <li>اللام: ﴿الْحَمْدُ لِلَّهِ﴾ [الفاتحة: ٢]</li>
+        <li>الراء: ﴿الرَّحْمَـٰنِ الرَّحِيمِ﴾ [الفاتحة: ٣]</li>
+        <li>النون: ﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾ [الفاتحة: ٦]</li>
+        <li>الطاء: ﴿الصِّرَاطَ الْمُسْتَقِيمَ﴾ [الفاتحة: ٦]</li>
+        <li>الدال: ﴿الْحَمْدُ لِلَّهِ﴾ [الفاتحة: ٢]</li>
+        <li>التاء: ﴿أَنْعَمْتَ عَلَيْهِمْ﴾ [الفاتحة: ٧]</li>
+        <li>الصاد: ﴿الصِّرَاطَ﴾ [الفاتحة: ٦]</li>
+        <li>الزاي: ﴿فَالزَّاجِرَاتِ زَجْرًا﴾ [الصافات: ٢]</li>
+        <li>السين: ﴿إِيَّاكَ نَسْتَعِينُ﴾ [الفاتحة: ٥]</li>
+        <li>الظاء: ﴿فَظَلْتُمْ تَفَكَّهُونَ﴾ [الواقعة: ٦٥]</li>
+        <li>الذال: ﴿ذَٰلِكَ الْكِتَابُ﴾ [البقرة: ٢]</li>
+        <li>الثاء: ﴿فَمَن ثَقُلَتْ مَوَازِينُهُ﴾ [القارعة: ٦]</li>
+      </ul>
+    </div>
+
+    <h3 class="section-title">المبحث الرابع: الشفتان (مخرجان)</h3>
+    <p><strong>المخرج الأول: ما بين الشفتين (انطباق الشفتين)</strong></p>
+    <ul>
+      <li>حروفه: الباء (ب)، الميم (م)، الواو (و) غير المدية.</li>
+    </ul>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>الباء: ﴿بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ﴾ [الفاتحة: ١]</li>
+        <li>الميم: ﴿مَالِكِ يَوْمِ الدِّينِ﴾ [الفاتحة: ٤]</li>
+        <li>الواو: ﴿وَالْعَصْرِ﴾ [العصر: ١]</li>
+      </ul>
+    </div>
+    <p><strong>المخرج الثاني: ما بين باطن الشفة السفلى وأطراف الثنايا العليا</strong></p>
+    <ul>
+      <li>حرفه: الفاء (ف) فقط.</li>
+    </ul>
+    <div class="examples"><ul><li>﴿فَصَلِّ لِرَبِّكَ وَانْحَرْ﴾ [الكوثر: ٢]</li></ul></div>
+
+    <h3 class="section-title">المبحث الخامس: الخيشوم (مخرج واحد)</h3>
+    <div class="definition"><p><span class="term">تعريف الخيشوم:</span> هو تجويف الأنف.</p></div>
+    <p><strong>حروفه:</strong> لا يخرج منه أي حرف من حروف الهجاء، بل تخرج منه الغنة فقط، وهي صفة لازمة للنون والميم.</p>
+    <p><strong>كيفية النطق:</strong> يُغلق مجرى الهواء في الفم (بإطباق الشفتين للميم، أو انضغاط طرف اللسان للنون)، فيضطر الهواء إلى الخروج من الأنف محدثاً صوتاً رناناً هو الغنة.</p>
+    <p><strong>مواضع الغنة:</strong></p>
+    <ol>
+      <li>النون والميم المشددتان (غنة واجبة بمقدار حركتين).</li>
+      <li>النون الساكنة والتنوين عند الإخفاء الحقيقي والإدغام بغنة.</li>
+      <li>الميم الساكنة عند الإخفاء الشفوي والإدغام المتماثل.</li>
+    </ol>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>النون المشددة: ﴿إِنَّ﴾ [الفاتحة: ٦]</li>
+        <li>الميم المشددة: ﴿مِمَّا﴾ [البقرة: ٣]</li>
+      </ul>
+    </div>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب الثاني</h3>
+    <p>مخارج الحروف خمسة مخارج عامة (الجوف، الحلق، اللسان، الشفتان، الخيشوم) تتفرع إلى سبعة عشر مخرجاً خاصاً على مذهب الجمهور. معرفتها الدقيقة هي الأساس الأول لتصحيح النطق وتمييز الحروف المتقاربة.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>عدّد المخارج العامة الخمسة مع عدد الحروف الخارجة من كل منها.</li>
+      <li>ما الفرق بين حرف المد وحرف اللين بالنسبة للواو والياء؟</li>
+      <li>اذكر الحروف الخارجة من كل مخرج من مخارج الحلق الثلاثة.</li>
+      <li>ما وظيفة الخيشوم؟ ولماذا لا يُعد مخرجاً لحرف من حروف الهجاء؟</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يستطيع الدارس نطق حروف الهجاء الثمانية والعشرين كل حرف من مخرجه الصحيح، مع التمييز السمعي بين الحروف المتقاربة.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب الثالث — صفات الحروف
+===================================================================== -->
+<section class="part-opener" id="bab3">
+  <div class="kicker">الباب الثالث</div>
+  <div class="num">٣</div>
+  <h2>صفات الحروف</h2>
+  <p class="part-desc">الصفات التي لها ضد (عشر صفات) والصفات التي لا ضد لها (سبع صفات)، وأثرها في تمييز الحروف المتقاربة المخرج.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تعريف الصفة وبيان أهميتها في تمييز الحروف المتقاربة.</li>
+      <li>حصر الصفات المتضادة الخمس وأزواجها العشرة.</li>
+      <li>ضبط الصفات السبع التي لا ضد لها ومراتب القلقلة الثلاث.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab3-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف الصفة وأهميتها</h2>
+    <div class="definition">
+      <p><span class="term">تعريف الصفة اصطلاحاً:</span> كيفية تعرض للحرف عند النطق به من مخرجه، تميزه عن غيره، وتكون لازمة له.</p>
+    </div>
+    <p><strong>أهمية الصفات:</strong></p>
+    <ol>
+      <li>تميز الحروف المتقاربة في المخرج (مثل: التاء والدال والطاء - مخرج واحد، وتمييزها بالصفات).</li>
+      <li>تُكمِّل إعطاء الحرف حقه في النطق.</li>
+      <li>تصحيح الأخطاء الشائعة (كمن ينطق الضاد ظاءً، أو السين صاداً).</li>
+    </ol>
+    <p><strong>أقسام الصفات:</strong></p>
+    <ul>
+      <li>صفات لها ضد (٥ أضداد = ١٠ صفات).</li>
+      <li>صفات لا ضد لها (٧ صفات).</li>
+    </ul>
+  </article>
+
+  <article class="chapter" id="bab3-f2">
+    <h2 class="chapter-title">الفصل الثاني: الصفات التي لها ضد</h2>
+
+    <h3 class="section-title">المبحث الأول: الجهر والهمس</h3>
+    <p><strong>أولاً: الجهر</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> قوة اعتماد الحرف على مخرجه، بحيث يمنع جريان النفس معه، ويصاحبه اهتزاز في الحبال الصوتية.</p></div>
+    <p><strong>حروف الجهر:</strong> ١٩ حرفاً، وهي جميع حروف الهجاء ما عدا حروف الهمس العشرة.</p>
+    <div class="examples"><ul><li>﴿رَبِّ الْعَالَمِينَ﴾ [الفاتحة: ٢] - الراء والباء مجهورتان.</li></ul></div>
+
+    <p><strong>ثانياً: الهمس</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> ضعف اعتماد الحرف على مخرجه، بحيث يجري النفس معه، ولا يصاحبه اهتزاز في الحبال الصوتية.</p></div>
+    <p><strong>حروف الهمس:</strong> ١٠ أحرف، تُجمع في عبارة: "فحثه شخص سكت" (ف، ح، ث، هـ، ش، خ، ص، س، ك، ت).</p>
+    <div class="examples"><ul><li>﴿خَتَمَ اللَّهُ﴾ [البقرة: ٧] - الخاء والتاء مهموستان.</li></ul></div>
+
+    <h3 class="section-title">المبحث الثاني: الشدة والرخاوة والبينية</h3>
+    <p><strong>أولاً: الشدة</strong></p>
+    <div class="definition"><p><span class="term">تعريفها:</span> منع جريان الصوت عند النطق بالحرف، بحيث ينحبس الصوت في المخرج ثم ينفجر فجأة.</p></div>
+    <p><strong>حروف الشدة:</strong> ٨ أحرف، تُجمع في عبارة: "أجد قط بكت" (أ، ج، د، ق، ط، ب، ك، ت).</p>
+    <div class="examples"><ul><li>﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾ [الإخلاص: ١] - القاف شديدة.</li></ul></div>
+
+    <p><strong>ثانياً: الرخاوة</strong></p>
+    <div class="definition"><p><span class="term">تعريفها:</span> جريان الصوت مع الحرف عند النطق به، أي لا ينحبس الصوت في المخرج.</p></div>
+    <p><strong>حروف الرخاوة:</strong> جميع الحروف ما عدا حروف الشدة (٨) وحروف البينية (٥).</p>
+    <div class="examples"><ul><li>﴿مِن شَرِّ مَا خَلَقَ﴾ [الفلق: ٢] - الشين رخوة.</li></ul></div>
+
+    <p><strong>ثالثاً: البينية (التوسط)</strong></p>
+    <div class="definition"><p><span class="term">تعريفها:</span> صفة متوسطة بين الشدة والرخاوة، أي لا ينحبس الصوت انحباساً تاماً، ولا يجري جرياناً كاملاً.</p></div>
+    <p><strong>حروف البينية:</strong> ٥ أحرف: (ل، ن، ع، م، ر). تجمع في عبارة: "لن عمر".</p>
+    <div class="examples"><ul><li>﴿لِلَّهِ﴾ [الفاتحة: ٢] - اللام بينية.</li></ul></div>
+
+    <h3 class="section-title">المبحث الثالث: الاستعلاء والاستفال</h3>
+    <p><strong>أولاً: الاستعلاء</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> ارتفاع اللسان إلى الحنك الأعلى عند النطق بالحرف، فيحدث تفخيم (غلظة) في الصوت.</p></div>
+    <p><strong>حروف الاستعلاء:</strong> ٧ أحرف، تُجمع في عبارة: "خص ضغط قظ" (خ، ص، ض، غ، ط، ق، ظ).</p>
+    <div class="examples"><ul><li>﴿خَتَمَ اللَّهُ﴾ [البقرة: ٧] - الخاء مستعلية.</li></ul></div>
+
+    <p><strong>ثانياً: الاستفال</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> انخفاض اللسان إلى قاع الفم عند النطق بالحرف، فيحدث ترقيق.</p></div>
+    <p><strong>حروف الاستفال:</strong> جميع الحروف ما عدا حروف الاستعلاء السبعة.</p>
+    <div class="examples"><ul><li>﴿بِسْمِ اللَّهِ﴾ [الفاتحة: ١] - الباء والسين والميم مستفلة.</li></ul></div>
+
+    <h3 class="section-title">المبحث الرابع: الإطباق والانفتاح</h3>
+    <p><strong>أولاً: الإطباق</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> انضمام أقصى اللسان إلى الحنك الأعلى بعد النطق بالحرف، فيمتلئ الفم بالصوت.</p></div>
+    <p><strong>حروف الإطباق:</strong> ٤ أحرف: (ص، ض، ط، ظ). تجمع في عبارة: "صضطظ".</p>
+    <div class="examples"><ul><li>﴿الصِّرَاطَ﴾ [الفاتحة: ٦] - الصاد مطبقة.</li></ul></div>
+
+    <p><strong>ثانياً: الانفتاح</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> تجافي أقصى اللسان عن الحنك الأعلى، أي عدم إطباقه.</p></div>
+    <p><strong>حروف الانفتاح:</strong> جميع الحروف ما عدا حروف الإطباق الأربعة.</p>
+    <div class="examples"><ul><li>﴿بِسْمِ اللَّهِ﴾ [الفاتحة: ١] - الباء منفتحة.</li></ul></div>
+
+    <h3 class="section-title">المبحث الخامس: الإذلاق والإصمات</h3>
+    <p><strong>أولاً: الإذلاق</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> سرعة النطق بالحرف لخروجه من طرف اللسان أو الشفة.</p></div>
+    <p><strong>حروف الإذلاق:</strong> ٦ أحرف: (ر، ل، ن، م، ب، ف). تجمع في عبارة: "فر من لب".</p>
+    <div class="examples"><ul><li>﴿رَبِّ﴾ [الفاتحة: ٢] - الراء والباء ذلقتان.</li></ul></div>
+
+    <p><strong>ثانياً: الإصمات</strong></p>
+    <div class="definition"><p><span class="term">تعريفه:</span> ثقل النطق بالحرف لخروجه من غير طرف اللسان ولا الشفة.</p></div>
+    <p><strong>حروف الإصمات:</strong> جميع الحروف ما عدا حروف الإذلاق الستة.</p>
+    <div class="examples"><ul><li>﴿خَتَمَ اللَّهُ﴾ [البقرة: ٧] - الخاء والتاء واللام من الإصمات.</li></ul></div>
+  </article>
+
+  <article class="chapter" id="bab3-f3">
+    <h2 class="chapter-title">الفصل الثالث: الصفات التي لا ضد لها</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الصفة</th><th>تعريفها</th><th>حروفها</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>القلقلة</td><td>اضطراب المخرج عند النطق بالحرف الساكن حتى يسمع له نبرة قوية</td><td>ق، ط، ب، ج، د (قطب جد)</td><td>﴿قُلْ﴾ [الإخلاص: ١]</td></tr>
+          <tr><td>الصفير</td><td>صوت زائد يشبه صفير الطائر يخرج مع الحرف</td><td>ص، ز، س</td><td>﴿الصِّرَاطَ﴾ [الفاتحة: ٦]</td></tr>
+          <tr><td>اللين</td><td>سهولة وليونة في النطق بحرفي الواو والياء الساكنتين المفتوح ما قبلهما</td><td>و، ي (بشرط)</td><td>﴿بَيْتٍ﴾، ﴿يَوْمَ﴾</td></tr>
+          <tr><td>الانحراف</td><td>ميل الحرف عن مخرجه إلى مخرج آخر عند النطق به</td><td>ل، ر</td><td>﴿لِلَّهِ﴾، ﴿رَبِّ﴾</td></tr>
+          <tr><td>التكرير</td><td>ارتجاف طرف اللسان عند النطق بالراء</td><td>ر</td><td>﴿رَبِّ الْعَالَمِينَ﴾</td></tr>
+          <tr><td>التفشي</td><td>انتشار الصوت في الفم عند النطق بالحرف</td><td>ش</td><td>﴿مِن شَرِّ﴾ [الفلق: ٢]</td></tr>
+          <tr><td>الاستطالة</td><td>امتداد الصوت من أول حافة اللسان إلى آخرها عند النطق بالضاد</td><td>ض</td><td>﴿الضَّالِّينَ﴾ [الفاتحة: ٧]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>مراتب القلقلة:</strong></p>
+    <ul>
+      <li><strong>كبرى:</strong> إذا كان حرف القلقلة متحركاً في آخر الكلمة، ونُطق به مع الوقف. مثال: الوقف على ﴿الْفَلَقِ﴾ [الفلق: ١] فتُقرأ (الفلَقْ) بقلقلة القاف.</li>
+      <li><strong>وسطى:</strong> إذا كان حرف القلقلة ساكناً في وسط الكلمة. مثال: ﴿يَخْدَعُونَ﴾ [البقرة: ٩] - الدال ساكنة في الوسط.</li>
+      <li><strong>صغرى:</strong> إذا كان حرف القلقلة ساكناً في آخر الكلمة، ونُطق به مع الوقف. مثال: الوقف على ﴿قُلْ﴾ [الإخلاص: ١].</li>
+    </ul>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب الثالث</h3>
+    <p>للحروف عشر صفات متضادة (جهر/همس، شدة/رخاوة وبينهما البينية، استعلاء/استفال، إطباق/انفتاح، إذلاق/إصمات)، وسبع صفات لا ضد لها (قلقلة، صفير، لين، انحراف، تكرير، تفشٍّ، استطالة). القلقلة لها ثلاث مراتب: كبرى ووسطى وصغرى.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>ما الفرق بين الجهر والهمس؟ اذكر حروف الهمس مجموعة في عبارتها الجامعة.</li>
+      <li>عدّد حروف القلقلة، ووضّح الفرق بين مراتبها الثلاث بمثال لكل مرتبة.</li>
+      <li>لماذا سميت حروف الإطباق بهذا الاسم؟ وما أثر تركها على نطق الصاد والضاد والطاء والظاء؟</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يميّز الدارس بالسمع بين كل زوج من الصفات المتضادة، وينطق حروف القلقلة الخمسة بمراتبها الثلاث بدقة.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب الرابع — أحكام النون الساكنة والتنوين
+===================================================================== -->
+<section class="part-opener" id="bab4">
+  <div class="kicker">الباب الرابع</div>
+  <div class="num">٤</div>
+  <h2>أحكام النون الساكنة والتنوين</h2>
+  <p class="part-desc">الإظهار الحلقي، الإدغام بغنة وبلا غنة، الإقلاب، والإخفاء الحقيقي.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>التفريق بين النون الساكنة والتنوين، وبيان اشتراكهما في الأحكام.</li>
+      <li>ضبط حروف كل حكم من الأحكام الأربعة وأمثلته القرآنية.</li>
+      <li>تجنب الأخطاء الشائعة عند تطبيق كل حكم.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab4-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف النون الساكنة والتنوين</h2>
+    <div class="definition">
+      <p><span class="term">النون الساكنة:</span> هي حرف النون الخالي من الحركة (فتحة، ضمة، كسرة)، وعلامتها في الرسم: نون مكتوب عليها سكون (نْ) أو نون في آخر الكلمة لا حركة عليها. مثل: ﴿مِنْ﴾، ﴿عَنْ﴾، ﴿أَنْ﴾، ﴿مَنْ﴾.</p>
+      <p><span class="term">التنوين:</span> هو نون ساكنة زائدة تلحق آخر الاسم لفظاً لا خطاً، وتنطق ولا تكتب، وعلامتها في الرسم: (ً، ٍ، ٌ). وهو ثلاثة أنواع: تنوين النصب (فتحتان)، وتنوين الجر (كسرتان)، وتنوين الرفع (ضمتان).</p>
+    </div>
+    <p><strong>الفرق بينهما في الحكم:</strong> النون الساكنة والتنوين يشتركان في الأحكام الخمسة (الإظهار، الإدغام، الإقلاب، الإخفاء)، ولكن التنوين يُوقف عليه بقلب الألف أو بحذف النون، والنون الساكنة تبقى في الوقف.</p>
+    <p><strong>أحكام النون الساكنة والتنوين (أربعة أحكام):</strong></p>
+    <ol>
+      <li>الإظهار الحلقي</li>
+      <li>الإدغام (بغنة وبغير غنة)</li>
+      <li>الإقلاب</li>
+      <li>الإخفاء الحقيقي</li>
+    </ol>
+  </article>
+
+  <article class="chapter" id="bab4-f2">
+    <h2 class="chapter-title">الفصل الثاني: الإظهار الحلقي</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> إخراج كل حرف من مخرجه من غير غنة زائدة في الحرف المظهر، وذلك عند وقوع النون الساكنة أو التنوين قبل أحد حروف الحلق الستة.</p></div>
+    <p><strong>حروف الإظهار الحلقي:</strong> ستة أحرف، وهي: (ء، هـ، ع، ح، غ، خ).</p>
+    <p><strong>سبب الإظهار:</strong> تباعد المخرج بين النون الساكنة والتنوين (مخرجهما طرف اللسان أو الخيشوم) وبين حروف الحلق، فلا يصح إدغام ولا إخفاء.</p>
+    <p><strong>مراتب الإظهار الحلقي:</strong></p>
+    <ul>
+      <li>أعلى الحلق: الهمزة (ء)، الهاء (هـ)</li>
+      <li>وسط الحلق: العين (ع)، الحاء (ح)</li>
+      <li>أدنى الحلق: الغين (غ)، الخاء (خ)</li>
+    </ul>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>عند الهمزة: ﴿فَمَنْ آمَنَ﴾ [الأنعام: ٤٨]</li>
+        <li>عند الهاء: ﴿مَنْ هَادَ﴾ [البقرة: ٦٢]</li>
+        <li>عند العين: ﴿مَنْ عَمِلَ﴾ [غافر: ٤٠]</li>
+        <li>عند الحاء: ﴿مِنْ حَرَجٍ﴾ [الأنعام: ١٢٥]</li>
+        <li>عند الغين: ﴿مِنْ غِلٍّ﴾ [الحشر: ١٠]</li>
+        <li>عند الخاء: ﴿مُنْخَنِقَةٌ﴾ [المائدة: ٣]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الإظهار واجب مع حروف الحلق الستة في جميع القراءات المتواترة.</li>
+        <li>لا غنة في الإظهار الحلقي.</li>
+        <li>إذا جاء حرف الحلق مشدداً بعد النون الساكنة أو التنوين، فلا إدغام بل إظهار تام.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إخفاء النون الساكنة أو التنوين عند حروف الحلق (كأن ينطق "مَنْ آمَنَ" كـ"مَمَّنْ آمَنَ" بغنة)، وهذا خطأ فاحش.</p></div>
+  </article>
+
+  <article class="chapter" id="bab4-f3">
+    <h2 class="chapter-title">الفصل الثالث: الإدغام</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> إدخال حرف ساكن في حرف متحرك بعده، حتى يصيران حرفاً واحداً مشدداً من جنس الحرف الثاني، ويرتفع اللسان ارتفاعة واحدة.</p></div>
+    <p><strong>حروف الإدغام:</strong> ستة أحرف، تُجمع في عبارة: "يرملون" (ي، ر، م، ل، و، ن).</p>
+    <p><strong>سبب الإدغام:</strong> تقارب المخارج بين النون الساكنة والتنوين وهذه الحروف.</p>
+    <p><strong>شروط الإدغام:</strong></p>
+    <ol>
+      <li>أن تكون النون ساكنة أو التنوين.</li>
+      <li>أن يقع بعدها حرف من حروف الإدغام.</li>
+      <li>أن يكون الحرف الثاني متحركاً.</li>
+      <li>أن يكون الإدغام في كلمتين (إلا في أربع كلمات في القرآن تدغم النون في الواو والياء في كلمة واحدة).</li>
+    </ol>
+
+    <h3 class="section-title">المبحث الأول: إدغام بغنة</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> إدغام النون الساكنة أو التنوين في حرف من حروف الإدغام مع بقاء الغنة بمقدار حركتين.</p></div>
+    <p><strong>حروفه:</strong> أربعة أحرف، وهي: (ي، ن، م، و). تجمع في كلمة "ينمو".</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>في الياء: ﴿مَن يَعْمَلْ﴾ [الزلزلة: ٧]</li>
+        <li>في النون: ﴿مِن نَّفْسٍ﴾ [الأنعام: ١٢]</li>
+        <li>في الميم: ﴿مِن مَّاءٍ﴾ [الأنبياء: ٣٠]</li>
+        <li>في الواو: ﴿مِن وَّالٍ﴾ [الرعد: ١١]</li>
+      </ul>
+    </div>
+
+    <h3 class="section-title">المبحث الثاني: إدغام بلا غنة</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> إدغام النون الساكنة أو التنوين في حرف من حروف الإدغام مع زوال الغنة بالكلية.</p></div>
+    <p><strong>حروفه:</strong> حرفان: (ل، ر).</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>في اللام: ﴿مِن لَّدُنْهُ﴾ [الكهف: ٨٢]</li>
+        <li>في الراء: ﴿مِن رَّبِّهِمْ﴾ [البقرة: ٥]</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الإدغام بغنة يسمى إدغاماً ناقصاً لأن الغنة تبقى من الحرف الأول.</li>
+        <li>الإدغام بلا غنة يسمى إدغاماً كاملاً لأن الغنة تزول.</li>
+        <li>مقدار الغنة في الإدغام بغنة: حركتان.</li>
+        <li>الإدغام في (ل، ر) لا غنة فيه إطلاقاً.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إبقاء الغنة في إدغام (ل، ر) (فينطق "مِن رَبِّهِمْ" كـ"مِنْرَبِّهِمْ" بغنة قبل الراء).</p></div>
+
+    <p><strong>استثناءات الإدغام بغنة:</strong> هناك كلمات لا تدغم فيها النون الساكنة في الواو والياء مع أنها في كلمة واحدة، وهي أربع كلمات:</p>
+    <ol>
+      <li>﴿بُنْيَانٌ﴾ [الصف: ٤]</li>
+      <li>﴿صِنْوَانٌ﴾ [الرعد: ٤]</li>
+      <li>﴿قِنْوَانٌ﴾ [الأنعام: ٩٩]</li>
+      <li>﴿الدُّنْيَا﴾ [البقرة: ٨٥] (في بعض القراءات)</li>
+    </ol>
+  </article>
+
+  <article class="chapter" id="bab4-f4">
+    <h2 class="chapter-title">الفصل الرابع: الإقلاب</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> جعل حرف مكان آخر مع مراعاة الغنة، وذلك بإقلاب النون الساكنة أو التنوين ميماً خالصة قبل حرف واحد هو الباء (ب).</p></div>
+    <p><strong>حرف الإقلاب:</strong> الباء (ب) فقط.</p>
+    <p><strong>سبب الإقلاب:</strong> صعوبة النطق بالنون الساكنة أو التنوين ثم الباء مباشرة، لأن مخرج النون (طرف اللسان) ومخرج الباء (الشفتان) متقاربان، فقلبت النون ميماً لتوافق الباء في المخرج.</p>
+    <p><strong>كيفية النطق بالإقلاب:</strong> عند وقوع النون الساكنة أو التنوين قبل الباء، يُقلب النطق بالنون ميماً خالصة، مع إخفائها وإبقاء الغنة بمقدار حركتين، ولا تظهر النون ولا الميم ظاهرة بل تبقى الغنة فقط.</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>﴿مِن بَعْدِ﴾ [البقرة: ٢٧]</li>
+        <li>﴿سَمِيعٌ بَصِيرٌ﴾ [النساء: ٥٨]</li>
+        <li>﴿عَن بَيِّنَةٍ﴾ [البقرة: ١٨]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الإقلاب يكتب في المصحف غالباً بالميم دون إظهار النون، مثل: (مِن بَعْدِ) تكتب هكذا، لكن النون تقلب في النطق فقط.</li>
+        <li>مقدار الغنة في الإقلاب: حركتان.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إظهار النون قبل الباء (كأن ينطق "مِن بَعْدِ" بنون ظاهرة)، أو إسقاط الغنة.</p></div>
+  </article>
+
+  <article class="chapter" id="bab4-f5">
+    <h2 class="chapter-title">الفصل الخامس: الإخفاء الحقيقي</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> نطق بالنون الساكنة أو التنوين على صفة بين الإظهار والإدغام، مع بقاء الغنة، وذلك عند بقية الحروف.</p></div>
+    <p><strong>حروف الإخفاء الحقيقي:</strong> ١٥ حرفاً، وهي باقي الحروف بعد حروف الإظهار (٦) والإدغام (٦) والإقلاب (١). وتجمع في أوائل كلمات بيت الشاطبية:</p>
+    <div class="matn">صف ذا ثنا كم جاد شخص قد سما ... دم طيباً زد في تقى ضع ظالماً</div>
+    <p><strong>تفصيل حروف الإخفاء:</strong> (ص، ذ، ث، ك، ج، ش، ق، س، د، ط، ز، ف، ت، ض، ظ).</p>
+    <p><strong>كيفية النطق بالإخفاء:</strong> ينتقل اللسان إلى مخرج الحرف المخفي مع بقاء الغنة بمقدار حركتين، ولا يظهر الحرف الأول (النون أو التنوين) ظهوراً تاماً، ولا يدغم إدغاماً كاملاً.</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>عند الصاد: ﴿مِن صَلْصَالٍ﴾ [الرحمن: ١٤]</li>
+        <li>عند الذال: ﴿مَن ذَا﴾ [البقرة: ٨]</li>
+        <li>عند الثاء: ﴿مَن ثَقُلَتْ﴾ [القارعة: ٦]</li>
+        <li>عند الكاف: ﴿مِن كُلٍّ﴾ [القمر: ٤٩]</li>
+        <li>عند الجيم: ﴿مَن جَاءَ﴾ [النمل: ٨٩]</li>
+        <li>عند الشين: ﴿مَن شَاءَ﴾ [الكهف: ٢٩]</li>
+        <li>عند القاف: ﴿مِن قَبْلِ﴾ [البقرة: ٤]</li>
+        <li>عند السين: ﴿مَن سَاءَ﴾ [الأنعام: ٩٣]</li>
+        <li>عند الدال: ﴿مَن دَعَا﴾ [البقرة: ١٨٦]</li>
+        <li>عند الطاء: ﴿مِن طِينٍ﴾ [الحج: ٥]</li>
+        <li>عند الزاي: ﴿مَن زُحْزِحَ﴾ [آل عمران: ١٨٥]</li>
+        <li>عند الفاء: ﴿مَن فَعَلَ﴾ [النساء: ٨٧]</li>
+        <li>عند التاء: ﴿مَن تَابَ﴾ [الفرقان: ٧٠]</li>
+        <li>عند الضاد: ﴿مِن ضَرَرٍ﴾ [النساء: ٩١]</li>
+        <li>عند الظاء: ﴿مَن ظَلَمَ﴾ [الأنعام: ٨٢]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الإخفاء من أرق الأحكام وأدقها، ولا يتقنه إلا بالتلقي من الشيخ.</li>
+        <li>مقدار الغنة في الإخفاء: حركتان.</li>
+        <li>حروف الإخفاء هي باقي الحروف بعد حروف الإظهار والإدغام والإقلاب.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إظهار النون عند حروف الإخفاء إظهاراً تاماً، أو إدغامها إدغاماً كاملاً، أو إسقاط الغنة.</p></div>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب الرابع</h3>
+    <p>للنون الساكنة والتنوين أربعة أحكام: الإظهار الحلقي عند حروف الحلق الستة، الإدغام في "يرملون" (بغنة عند ينمو، وبلا غنة عند ل، ر)، الإقلاب عند الباء ميماً خالصة مع الغنة، والإخفاء الحقيقي عند الخمسة عشر حرفاً الباقية مع بقاء الغنة.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>عدّد حروف الإظهار الحلقي، وبيّن سبب تسميته.</li>
+      <li>ما الفرق بين الإدغام بغنة والإدغام بلا غنة؟ اذكر حروف كل قسم.</li>
+      <li>اذكر الكلمات الأربع المستثناة من إدغام النون الساكنة في الواو والياء.</li>
+      <li>وضّح كيفية النطق بالإقلاب، ومقدار الغنة فيه.</li>
+      <li>عدّد حروف الإخفاء الحقيقي كما وردت في بيت الشاطبية.</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يميّز الدارس الحكم المناسب (إظهار/إدغام/إقلاب/إخفاء) فور رؤية أي حرف يلي النون الساكنة أو التنوين، وينطقه بمقدار الغنة الصحيح.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب الخامس — أحكام الميم الساكنة
+===================================================================== -->
+<section class="part-opener" id="bab5">
+  <div class="kicker">الباب الخامس</div>
+  <div class="num">٥</div>
+  <h2>أحكام الميم الساكنة</h2>
+  <p class="part-desc">الإخفاء الشفوي، إدغام المثلين الصغير، والإظهار الشفوي.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تعريف الميم الساكنة وحصر أحكامها الثلاثة.</li>
+      <li>ضبط حرف كل حكم وكيفية النطق به.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab5-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف الميم الساكنة</h2>
+    <div class="definition"><p><span class="term">الميم الساكنة:</span> هي الميم الخالية من الحركة (فتحة، ضمة، كسرة)، وتأتي في وسط الكلمة أو آخرها. مثل: ﴿عَلَيْهِمْ﴾، ﴿لَهُمْ﴾، ﴿تَرْمِيهِمْ﴾.</p></div>
+    <p><strong>أحكام الميم الساكنة:</strong> ثلاثة أحكام:</p>
+    <ol>
+      <li>الإخفاء الشفوي</li>
+      <li>إدغام المثلين الصغير</li>
+      <li>الإظهار الشفوي</li>
+    </ol>
+    <p><strong>سبب التسمية بالشفوي:</strong> لأن الميم تخرج من الشفتين، وكذلك أحكامها تتعلق بالشفتين.</p>
+  </article>
+
+  <article class="chapter" id="bab5-f2">
+    <h2 class="chapter-title">الفصل الثاني: الإخفاء الشفوي</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> إخفاء الميم الساكنة عند الباء مع بقاء الغنة بمقدار حركتين.</p></div>
+    <p><strong>حرفه:</strong> الباء (ب) فقط.</p>
+    <p><strong>سبب الإخفاء:</strong> اتحد مخرج الميم والباء (كلاهما شفوي)، وتقارب صفاتهما، فلم يصح إدغام ولا إظهار.</p>
+    <p><strong>كيفية النطق:</strong> عند وقوع الميم الساكنة قبل الباء، تُخفى الميم وتُقلب في النطق إلى غنة خالصة من الشفتين.</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>﴿تَرْمِيهِم بِحِجَارَةٍ﴾ [الفيل: ٣]</li>
+        <li>﴿وَهُمْ بِالْآخِرَةِ﴾ [البقرة: ٤]</li>
+        <li>﴿عَلَيْهِم بَاسٌ﴾ [البقرة: ١٠]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الإخفاء الشفوي خاص بالميم الساكنة قبل الباء فقط.</li>
+        <li>مقدار الغنة: حركتان.</li>
+        <li>يسمى شفويًا لأن الميم والباء يخرجان من الشفتين.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إظهار الميم قبل الباء إظهاراً تاماً، أو إدغامها إدغاماً كاملاً.</p></div>
+  </article>
+
+  <article class="chapter" id="bab5-f3">
+    <h2 class="chapter-title">الفصل الثالث: إدغام المثلين الصغير</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> إدغام الميم الساكنة في ميم متحركة بعدها، فيصيران ميماً واحدة مشددة.</p></div>
+    <p><strong>حرفه:</strong> الميم (م) فقط.</p>
+    <p><strong>شروطه:</strong></p>
+    <ol>
+      <li>أن تكون الميم الأولى ساكنة.</li>
+      <li>أن تكون الميم الثانية متحركة.</li>
+      <li>أن يكون الحرفان في كلمتين (أو في كلمة واحدة في لفظ الجلالة ﴿اللهم﴾).</li>
+    </ol>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>﴿لَهُم مَّغْفِرَةٌ﴾ [البقرة: ٧]</li>
+        <li>﴿عَلَيْهِم مَّا﴾ [النساء: ٢٥]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>يسمى إدغام مثلين لأن الحرفين من جنس واحد.</li>
+        <li>يسمى صغيراً لأن الأول ساكن والثاني متحرك.</li>
+        <li>يصاحب هذا الإدغام غنة بمقدار حركتين.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إظهار الميم الأولى عند الميم الثانية، وعدم إدغامها.</p></div>
+  </article>
+
+  <article class="chapter" id="bab5-f4">
+    <h2 class="chapter-title">الفصل الرابع: الإظهار الشفوي</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> إظهار الميم الساكنة عند جميع الحروف ما عدا (ب، م)، أي إخراجها من مخرجها بغير غنة زائدة.</p></div>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>عند الهمزة: ﴿لَهُمْ أَجْرٌ﴾ [البقرة: ٢٥]</li>
+        <li>عند التاء: ﴿عَلَيْهِم تَابَتْ﴾ [التوبة: ١٠٤]</li>
+        <li>عند الراء: ﴿لَهُمْ رِزْقُهُمْ﴾ [البقرة: ٢٥]</li>
+        <li>عند العين: ﴿لَهُمْ عَذَابٌ﴾ [المائدة: ٣٦]</li>
+        <li>عند الفاء: ﴿لَهُمْ فِيهَا﴾ [البقرة: ٢٥]</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p class="note-title">تنبيهات</p>
+      <ol>
+        <li>الإظهار الشفوي هو الأصل في الميم الساكنة.</li>
+        <li>لا غنة في الإظهار الشفوي (إلا إذا وقعت الميم الساكنة قبل هاء الضمير في بعض القراءات).</li>
+        <li>سمي شفويًا لأن الميم تخرج من الشفتين.</li>
+      </ol>
+    </div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>إخفاء الميم الساكنة عند غير الباء، كأن يخفيها عند الفاء أو العين.</p></div>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب الخامس</h3>
+    <p>للميم الساكنة ثلاثة أحكام: الإخفاء الشفوي عند الباء مع الغنة، إدغام المثلين الصغير عند الميم المتحركة مع الغنة، والإظهار الشفوي عند بقية الحروف بلا غنة زائدة.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>ما الحرف الذي تُخفى عنده الميم الساكنة؟ وما مقدار الغنة المصاحبة؟</li>
+      <li>ما شروط إدغام المثلين الصغير في الميم الساكنة؟</li>
+      <li>لماذا سميت أحكام الميم الساكنة بالأحكام الشفوية؟</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يطبق الدارس الحكم الصحيح للميم الساكنة تلقائياً عند القراءة، مفرقاً بين الباء (إخفاء) والميم (إدغام) وسائر الحروف (إظهار).</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب السادس — أحكام المدود
+===================================================================== -->
+<section class="part-opener" id="bab6">
+  <div class="kicker">الباب السادس</div>
+  <div class="num">٦</div>
+  <h2>أحكام المدود</h2>
+  <p class="part-desc">المد الطبيعي، والمد الفرعي بسبب الهمز (المتصل، المنفصل، البدل)، والمد الفرعي بسبب السكون (العارض للسكون، اللازم، اللين)، مع جدول جامع لمراتب المدود.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تعريف المد وحصر حروفه الثلاثة وشرطها.</li>
+      <li>التمييز بين المد الطبيعي وملحقاته والمد الفرعي بأقسامه.</li>
+      <li>ضبط مقدار كل نوع من أنواع المد وحكمه.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab6-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف المد وحروفه</h2>
+    <div class="definition">
+      <p><span class="term">المد لغة:</span> الزيادة والإطالة.</p>
+      <p><span class="term">المد اصطلاحاً:</span> إطالة الصوت بحرف من حروف المد عند لقائه همزاً أو سكوناً.</p>
+    </div>
+    <p><strong>حروف المد:</strong> ثلاثة حروف، وهي:</p>
+    <ol>
+      <li>الألف الساكنة المفتوح ما قبلها.</li>
+      <li>الواو الساكنة المضموم ما قبلها.</li>
+      <li>الياء الساكنة المكسور ما قبلها.</li>
+    </ol>
+    <p><strong>شرط حروف المد:</strong> أن تكون ساكنة، وما قبلها من جنسها (مفتوح للألف، مضموم للواو، مكسور للياء).</p>
+    <p><strong>أقسام المد:</strong> ينقسم إلى قسمين رئيسيين:</p>
+    <ol>
+      <li>المد الطبيعي (الأصلي)</li>
+      <li>المد الفرعي (الزائد على الطبيعي لسبب)</li>
+    </ol>
+    <p><strong>سبب المد الفرعي:</strong> إما الهمز، وإما السكون.</p>
+  </article>
+
+  <article class="chapter" id="bab6-f2">
+    <h2 class="chapter-title">الفصل الثاني: المد الطبيعي (الأصلي)</h2>
+    <div class="definition"><p><span class="term">تعريفه:</span> مد لا تقوم ذات الحرف إلا به، ولا يكون بسبب همز ولا سكون، أي هو الزمن الطبيعي الذي يحتاجه الحرف للخروج من مخرجه.</p></div>
+    <p><strong>مقداره:</strong> حركتان (والحركة مقدار قبض الأصبع أو بسطه).</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>الألف: ﴿قَالَ رَبِّ﴾ [البقرة: ٣٠]</li>
+        <li>الواو: ﴿يَقُولُ﴾ [البقرة: ٨]</li>
+        <li>الياء: ﴿فِي الْأَرْضِ﴾ [البقرة: ١١]</li>
+      </ul>
+    </div>
+    <p><strong>ملحقات المد الطبيعي (وهي على مقدار حركتين):</strong></p>
+    <ol>
+      <li><strong>مد العوض:</strong> التنوين المنصوب إذا وقف عليه قلبت ألفاً ومدت حركتين. مثال: الوقف على ﴿سَمِيعاً﴾ تُقرأ (سَمِيعَا).</li>
+      <li><strong>مد الصلة الصغرى:</strong> هاء الضمير الغائب (هاء الكناية) إذا وقعت بين متحركين وسبقت بحرف متحرك، وليست قبلها همزة ولا بعدها همزة. مثل: ﴿إِنَّهُ كَانَ﴾ [المزمل: ٢٠].</li>
+      <li><strong>مد التمكين:</strong> ياءان متتاليتان أولاهما مشددة مكسورة والثانية ساكنة. مثل: ﴿الْحَيِّ﴾ [الفرقان: ٥٨].</li>
+    </ol>
+  </article>
+
+  <article class="chapter" id="bab6-f3">
+    <h2 class="chapter-title">الفصل الثالث: المد الفرعي بسبب الهمز</h2>
+
+    <h3 class="section-title">المبحث الأول: المد المتصل</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> أن يقع حرف المد والهمز في كلمة واحدة (أي يتصل حرف المد بالهمز في كلمة واحدة).</p></div>
+    <p><strong>مقداره:</strong> ٤ إلى ٥ حركات عند حفص (والأفضل ٤ حركات).</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>﴿جَاءَ﴾ [البقرة: ٦١] - حرف المد (الألف) والهمز في كلمة (جاء).</li>
+        <li>﴿سُوءَ﴾ [الفاتحة: ٧] - حرف المد (الواو) والهمز في كلمة (سوء).</li>
+        <li>﴿الْقُرْآنَ﴾ [الفاتحة: ٢] - حرف المد (الألف) والهمز في كلمة (القرآن).</li>
+      </ul>
+    </div>
+    <p><strong>سبب تسميته بالمتصل:</strong> لاتصال سبب المد (الهمز) بحرف المد في كلمة واحدة.</p>
+    <div class="ruling">حكمه: واجب المد بمقدار ٤ أو ٥ حركات، ولا يجوز قصره على حركتين.</div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>قصر المد المتصل على حركتين كالمد الطبيعي.</p></div>
+
+    <h3 class="section-title">المبحث الثاني: المد المنفصل</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> أن يقع حرف المد في آخر كلمة والهمز في أول الكلمة التالية (أي ينفصل حرف المد عن الهمز بكلمة مستقلة).</p></div>
+    <p><strong>مقداره:</strong> ٤ إلى ٥ حركات عند حفص (ومنه من يقصره حركتين، والقراءتان صحيحتان).</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>﴿يَا أَيُّهَا﴾ [البقرة: ٢١] - حرف المد (الألف) في آخر كلمة (يا)، والهمز في أول كلمة (أيها).</li>
+        <li>﴿إِنَّا أَعْطَيْنَاكَ﴾ [الكوثر: ١] - حرف المد (الألف) في (إنا)، والهمز في (أعطيناك).</li>
+        <li>﴿فِي أَنفُسِهِمْ﴾ [الروم: ٨] - حرف المد (الياء) في (في)، والهمز في (أنفسهم).</li>
+      </ul>
+    </div>
+    <p><strong>سبب تسميته بالمنفصل:</strong> لانفصال سبب المد عن حرف المد بكلمة مستقلة.</p>
+    <div class="ruling">حكمه: يجوز مده ٤ أو ٥ حركات، ويجوز قصره حركتين، والأفضل مده.</div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>قصره دائماً على حركتين دون جواز مده، أو مده أكثر من ٥ حركات.</p></div>
+
+    <h3 class="section-title">المبحث الثالث: مد البدل</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> أن يقع حرف المد قبل همز في كلمة واحدة (أي الهمز قبل حرف المد).</p></div>
+    <p><strong>مقداره:</strong> حركتان (مد طبيعي).</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>﴿آدَمَ﴾ [البقرة: ٣١] - الهمزة (ء) ثم الألف (حرف مد) في كلمة (آدم).</li>
+        <li>﴿إِيمَانَهُمْ﴾ [البقرة: ٨] - الهمزة (إ) ثم الياء (حرف مد).</li>
+        <li>﴿أُوتُوا﴾ [البقرة: ٧] - الهمزة (أ) ثم الواو (حرف مد).</li>
+      </ul>
+    </div>
+    <p><strong>سبب تسميته بمد البدل:</strong> لأن حرف المد أبدل من الهمزة الثانية في الأصل (آدم أصله أأدم، فأبدلت الهمزة الثانية ألفاً).</p>
+    <div class="ruling">حكمه: لا يمد زيادة على الطبيعي، بل هو مد طبيعي حركتان.</div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>مده زيادة على حركتين.</p></div>
+  </article>
+
+  <article class="chapter" id="bab6-f4">
+    <h2 class="chapter-title">الفصل الرابع: المد الفرعي بسبب السكون</h2>
+
+    <h3 class="section-title">المبحث الأول: المد العارض للسكون</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> أن يقع حرف المد ثم حرف متحرك، ثم يُوقف على ذلك الحرف فيُسكن (أي يسكن آخر الكلمة عارضاً بسبب الوقف).</p></div>
+    <p><strong>مقداره:</strong> ٢ أو ٤ أو ٦ حركات (لحفص: ٤ أو ٦، والأفضل ٤).</p>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>الوقف على ﴿الْعَالَمِينَ﴾ [الفاتحة: ٢] - حرف المد (الألف) في (العالمين) ثم نون متحركة، وعند الوقف تسكن النون، فيمد الألف ٤ حركات.</li>
+        <li>الوقف على ﴿الرَّحِيمِ﴾ [الفاتحة: ٣] - حرف المد (الياء) في (الرحيم) ثم ميم متحركة، وعند الوقف تسكن الميم، فيمد الياء.</li>
+        <li>الوقف على ﴿نَسْتَعِينُ﴾ [الفاتحة: ٥] - حرف المد (الياء) في (نستعين) ثم نون متحركة، وعند الوقف تسكن النون.</li>
+      </ul>
+    </div>
+    <p><strong>سبب تسميته بالعارض:</strong> لأن السكون عارض بسبب الوقف، وليس أصلياً في الكلمة.</p>
+    <div class="ruling">حكمه: يجوز مده ٢ أو ٤ أو ٦ حركات، والأفضل ٤ لحفص.</div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>مده دائماً ٦ حركات في كل موضع، أو قصره دائماً على حركتين.</p></div>
+
+    <h3 class="section-title">المبحث الثاني: المد اللازم</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> أن يقع حرف المد ثم حرف ساكن أصلي (سكون لازم غير عارض) في كلمة واحدة.</p></div>
+    <div class="ruling">مقداره: ٦ حركات واجبة، لا يجوز نقصها ولا زيادتها.</div>
+    <p><strong>أقسام المد اللازم:</strong></p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>القسم</th><th>تعريفه</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>لازم كلمي مثقل</td><td>سكون أصلي مع تشديد (إدغام)</td><td>﴿الضَّالِّينَ﴾ [الفاتحة: ٧]</td></tr>
+          <tr><td>لازم كلمي مخفف</td><td>سكون أصلي بلا تشديد</td><td>﴿آلْآنَ﴾ [يونس: ٥١]</td></tr>
+          <tr><td>لازم حرفي مثقل</td><td>حرف هجاء وقع بعده حرف مدغم</td><td>﴿الم﴾ [البقرة: ١] (اللام تدغم في الميم)</td></tr>
+          <tr><td>لازم حرفي مخفف</td><td>حرف هجاء بلا إدغام</td><td>﴿ق﴾ [ق: ١]، ﴿ن﴾ [القلم: ١]</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>أمثلة مفصلة:</strong></p>
+    <ul>
+      <li><strong>لازم كلمي مثقل:</strong> ﴿الضَّالِّينَ﴾ - حرف المد (الألف) ثم الضاد المشددة (سكون أصلي مع تشديد).</li>
+      <li><strong>لازم كلمي مخفف:</strong> ﴿آلْآنَ﴾ - حرف المد (الألف) ثم اللام الساكنة (سكون أصلي بلا تشديد).</li>
+      <li><strong>لازم حرفي مثقل:</strong> حروف (الم، الر، طسم) - يمد الحرف ٦ حركات مع إدغام.</li>
+      <li><strong>لازم حرفي مخفف:</strong> حروف (ق، ن، ص) - يمد الحرف ٦ حركات بلا إدغام.</li>
+    </ul>
+    <div class="note"><p class="note-title">تنبيه</p><p>المد اللازم واجب بمقدار ٦ حركات، وهو من أقوى أنواع المدود.</p></div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>قصر المد اللازم على ٤ حركات، أو مده أكثر من ٦ حركات.</p></div>
+
+    <h3 class="section-title">المبحث الثالث: مد اللين</h3>
+    <div class="definition"><p><span class="term">تعريفه:</span> أن يقع حرف لين (واو أو ياء ساكنة مفتوح ما قبلهما) ثم حرف ساكن في كلمة واحدة، مع الوقف عليه.</p></div>
+    <p><strong>مقداره:</strong> ٢ أو ٤ أو ٦ حركات عند الوقف (مثل المد العارض للسكون).</p>
+    <p><strong>الفرق بين مد اللين والمد العارض للسكون:</strong></p>
+    <ul>
+      <li>مد اللين: حرف المد هو واو أو ياء لين (مفتوح ما قبلهما).</li>
+      <li>المد العارض للسكون: حرف المد هو ألف أو واو مد أو ياء مد.</li>
+    </ul>
+    <div class="examples">
+      <p class="examples-title">أمثلة</p>
+      <ul>
+        <li>الوقف على ﴿الْبَيْتِ﴾ [الفلق: ٢] - ياء لين (بَيْتِ) ثم تاء متحركة، وعند الوقف تسكن التاء، فيمد الياء ٤ حركات.</li>
+        <li>الوقف على ﴿خَوْفٍ﴾ [البقرة: ١٥٠] - واو لين (خَوْفٍ) ثم فاء متحركة، وعند الوقف تسكن الفاء.</li>
+      </ul>
+    </div>
+    <div class="ruling">حكمه: يجوز مده ٢ أو ٤ أو ٦ حركات عند الوقف، والأفضل ٤ حركات.</div>
+    <div class="mistake"><p class="mistake-title">خطأ شائع</p><p>مد حروف اللين في الوصل (وهو خطأ، فاللين لا يمد إلا في الوقف).</p></div>
+  </article>
+
+  <article class="chapter" id="bab6-f5">
+    <h2 class="chapter-title">الفصل الخامس: مراتب المدود (جدول جامع)</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <caption>مراتب المدود عند حفص عن عاصم</caption>
+        <thead><tr><th>نوع المد</th><th>مقداره عند حفص</th><th>حكمه</th></tr></thead>
+        <tbody>
+          <tr><td>المد الطبيعي</td><td>حركتان</td><td>واجب</td></tr>
+          <tr><td>المد المتصل</td><td>٤-٥ حركات</td><td>واجب</td></tr>
+          <tr><td>المد المنفصل</td><td>٤-٥ حركات (ويجوز قصره)</td><td>جائز</td></tr>
+          <tr><td>مد البدل</td><td>حركتان</td><td>واجب</td></tr>
+          <tr><td>المد العارض للسكون</td><td>٢، ٤، ٦ (والأفضل ٤)</td><td>جائز</td></tr>
+          <tr><td>المد اللازم</td><td>٦ حركات</td><td>واجب</td></tr>
+          <tr><td>مد اللين</td><td>٢، ٤، ٦ (عند الوقف)</td><td>جائز</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>ترتيب المدود طولاً (من الأطول إلى الأقصر):</strong></p>
+    <ol>
+      <li>المد اللازم (٦ حركات)</li>
+      <li>المد المتصل والمنفصل (٤-٥ حركات)</li>
+      <li>المد العارض للسكون ومد اللين (٤ حركات في الأفضل)</li>
+      <li>المد الطبيعي ومد البدل (حركتان)</li>
+    </ol>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب السادس</h3>
+    <p>المد الطبيعي حركتان دائماً. المد الفرعي بسبب الهمز ثلاثة: المتصل (٤-٥ واجب)، المنفصل (٤-٥ جائز)، البدل (حركتان واجب). المد الفرعي بسبب السكون ثلاثة: العارض للسكون (٢،٤،٦ جائز)، اللازم (٦ واجب)، اللين (٢،٤،٦ عند الوقف).</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>ما الفرق بين المد المتصل والمد المنفصل من حيث التعريف والحكم؟</li>
+      <li>لماذا سمي مد البدل بهذا الاسم؟ وما مقداره؟</li>
+      <li>عدّد أقسام المد اللازم الأربعة مع مثال لكل قسم.</li>
+      <li>ما الفرق بين مد اللين والمد العارض للسكون؟</li>
+      <li>رتّب أنواع المدود من الأطول إلى الأقصر.</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يحدد الدارس نوع المد ومقداره فوراً عند رؤية أي حرف مد في النص القرآني، وصلاً ووقفاً.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب السابع — أحكام الراء
+===================================================================== -->
+<section class="part-opener" id="bab7">
+  <div class="kicker">الباب السابع</div>
+  <div class="num">٧</div>
+  <h2>أحكام الراء</h2>
+  <p class="part-desc">حالات تفخيم الراء الخمس، وحالات ترقيقها الخمس، وحالات جواز الوجهين.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>ضبط حالات تفخيم الراء الخمس وترقيقها الخمس.</li>
+      <li>التعرف على حالة جواز الوجهين (التفخيم والترقيق).</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab7-f1">
+    <h2 class="chapter-title">الفصل الأول: حالات تفخيم الراء (٥ حالات)</h2>
+    <p><strong>أصل الراء:</strong> بين التفخيم والترقيق، وتفخم في المواضع التالية:</p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الحالة</th><th>الشرح</th><th>المثال</th></tr></thead>
+        <tbody>
+          <tr><td>١</td><td>إذا كانت مفتوحة</td><td>﴿رَبِّ الْعَالَمِينَ﴾ [الفاتحة: ٢]</td></tr>
+          <tr><td>٢</td><td>إذا كانت مضمومة</td><td>﴿رُسُلًا﴾ [البقرة: ٨٧]</td></tr>
+          <tr><td>٣</td><td>إذا كانت ساكنة وقبلها مفتوح أو مضموم</td><td>﴿الْقُرْآنِ﴾ [الفاتحة: ٢]، ﴿فِرْعَوْنَ﴾ [البقرة: ٤٩]</td></tr>
+          <tr><td>٤</td><td>إذا كانت ساكنة وقبلها كسر عارض</td><td>﴿ارْجِعُوا﴾ [البقرة: ٦١] (الراء ساكنة وقبلها كسر عارض لأن أصلها "ارجعوا" بهمزة وصل مكسورة ثم سكون الراء)</td></tr>
+          <tr><td>٥</td><td>إذا كانت ساكنة وقبلها كسر أصلي بعدها حرف استعلاء</td><td>﴿مِرْصَادًا﴾ [النبأ: ٢١] (الراء ساكنة وقبلها كسر أصلي، وبعدها صاد من حروف الاستعلاء)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab7-f2">
+    <h2 class="chapter-title">الفصل الثاني: حالات ترقيق الراء (٥ حالات)</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الحالة</th><th>الشرح</th><th>المثال</th></tr></thead>
+        <tbody>
+          <tr><td>١</td><td>إذا كانت مكسورة</td><td>﴿رِزْقًا﴾ [البقرة: ٢٢]</td></tr>
+          <tr><td>٢</td><td>إذا كانت ساكنة وقبلها كسر أصلي ليس بعدها حرف استعلاء</td><td>﴿شِرْعَةً﴾ [المائدة: ٤٨]</td></tr>
+          <tr><td>٣</td><td>إذا كانت ساكنة وقبلها ياء ساكنة</td><td>﴿خَيْرٍ﴾ [البقرة: ٧]</td></tr>
+          <tr><td>٤</td><td>إذا وقعت في كلمة "مجرى"</td><td>﴿مَجْرَىٰهَا﴾ [هود: ٤١]</td></tr>
+          <tr><td>٥</td><td>إذا تكررت الراء مكسورة</td><td>﴿فِرِّيقْ﴾ [الشعراء: ٥٤] (وقفاً)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab7-f3">
+    <h2 class="chapter-title">الفصل الثالث: حالات جواز التفخيم والترقيق</h2>
+    <p>إذا كانت الراء ساكنة وقبلها كسر أصلي وبعدها حرف استعلاء مستفل (ليس من حروف الاستعلاء)، فيجوز الوجهان.</p>
+    <div class="examples">
+      <p class="examples-title">مثال</p>
+      <ul><li>﴿قِرْطَاسٍ﴾ [الأنعام: ٩١] - الراء ساكنة وقبلها كسر، وبعدها طاء (حرف استعلاء)، فيجوز التفخيم والترقيق.</li></ul>
+    </div>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب السابع</h3>
+    <p>تفخم الراء إذا كانت مفتوحة أو مضمومة، أو ساكنة وقبلها فتح أو ضم، أو ساكنة وقبلها كسر عارض، أو ساكنة وقبلها كسر أصلي وبعدها حرف استعلاء. وترقق في سائر الحالات، وتجوز فيها الوجهان في حالة واحدة مقيدة.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>عدّد حالات تفخيم الراء الخمس مع مثال لكل حالة.</li>
+      <li>متى يجوز في الراء الوجهان معاً؟ مثّل لذلك.</li>
+      <li>ما حكم الراء في كلمة ﴿مَجْرَىٰهَا﴾؟ ولماذا؟</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يحدد الدارس حكم الراء (تفخيماً أو ترقيقاً) في أي موضع من القرآن دون تردد.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب الثامن — أحكام لفظ الجلالة واللامات
+===================================================================== -->
+<section class="part-opener" id="bab8">
+  <div class="kicker">الباب الثامن</div>
+  <div class="num">٨</div>
+  <h2>أحكام لفظ الجلالة (الله) واللامات</h2>
+  <p class="part-desc">تفخيم لام الجلالة وترقيقها، لام التعريف الشمسية والقمرية، ولام الفعل والأمر والحرف.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>ضبط قاعدة تفخيم لام الجلالة وترقيقها.</li>
+      <li>التمييز بين لام التعريف الشمسية والقمرية.</li>
+      <li>معرفة حكم لام الفعل والأمر والحرف.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab8-f1">
+    <h2 class="chapter-title">الفصل الأول: لفظ الجلالة (الله)</h2>
+    <div class="ruling">قاعدة: لفظ الجلالة (الله) تفخم لامه أو ترقق حسب حركة ما قبله.</div>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>حركة ما قبل اللام</th><th>الحكم</th><th>المثال</th></tr></thead>
+        <tbody>
+          <tr><td>فتح</td><td>تفخيم</td><td>﴿قَالَ اللَّهُ﴾ [البقرة: ٣٠]</td></tr>
+          <tr><td>ضم</td><td>تفخيم</td><td>﴿رَسُولُ اللَّهِ﴾ [البقرة: ٧]</td></tr>
+          <tr><td>كسر</td><td>ترقيق</td><td>﴿بِسْمِ اللَّهِ﴾ [الفاتحة: ١]</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><p class="note-title">تنبيه</p><p>اللام الأولى من لفظ الجلالة (اللام الداخلة على "إله") ترقق دائماً لأنها لام تعريف، واللام الثانية (التي هي عين الكلمة) هي التي تفخم أو ترقق.</p></div>
+  </article>
+
+  <article class="chapter" id="bab8-f2">
+    <h2 class="chapter-title">الفصل الثاني: لام التعريف (أل الشمسية والقمرية)</h2>
+    <p><strong>أل الشمسية:</strong> هي اللام التي تظهر في الرسم ولا تظهر في النطق، بل يدغم حرفها في الحرف الذي بعدها.</p>
+    <ul>
+      <li>حروفها: (ت، ث، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ل، ن).</li>
+      <li>مثال: ﴿الشَّمْسُ﴾ - تنطق (اشَّمْسُ) بإدغام اللام في الشين.</li>
+    </ul>
+    <p><strong>أل القمرية:</strong> هي اللام التي تظهر في النطق والرسم معاً.</p>
+    <ul>
+      <li>حروفها: (أ، ب، ج، ح، خ، ع، غ، ف، ق، ك، م، هـ، و، ي).</li>
+      <li>مثال: ﴿الْقَمَرُ﴾ - تنطق (الْقَمَرُ) بإظهار اللام.</li>
+    </ul>
+  </article>
+
+  <article class="chapter" id="bab8-f3">
+    <h2 class="chapter-title">الفصل الثالث: لام الفعل والأمر والحرف</h2>
+    <ul>
+      <li><strong>لام الفعل:</strong> ترقق دائماً. مثال: ﴿يَقُولُ﴾ [البقرة: ٨].</li>
+      <li><strong>لام الأمر:</strong> ترقق دائماً. مثال: ﴿لِيُنْفِقْ﴾ [الطلاق: ٧].</li>
+      <li><strong>لام الحرف:</strong> ترقق دائماً. مثال: ﴿هَلْ﴾، ﴿بَلْ﴾.</li>
+    </ul>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب الثامن</h3>
+    <p>لام الجلالة تفخم بعد الفتح والضم وترقق بعد الكسر. أل الشمسية تدغم لفظاً وتظهر رسماً، وأل القمرية تظهر لفظاً ورسماً. لام الفعل والأمر والحرف ترقق دائماً.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>متى تفخم لام لفظ الجلالة؟ ومتى ترقق؟</li>
+      <li>ما الفرق بين أل الشمسية وأل القمرية؟ اذكر حروف كل منهما.</li>
+      <li>ما حكم لام الفعل واللام الحرفية؟</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يميّز الدارس تفخيم وترقيق لام الجلالة تلقائياً حسب حركة ما قبلها، ويميّز الشمسية من القمرية بالسمع والرسم.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب التاسع — أحكام الوقف والابتداء
+===================================================================== -->
+<section class="part-opener" id="bab9">
+  <div class="kicker">الباب التاسع</div>
+  <div class="num">٩</div>
+  <h2>أحكام الوقف والابتداء</h2>
+  <p class="part-desc">أقسام الوقف، علامات الوقف في المصحف، السكتات الأربع في رواية حفص، والوقف على أواخر الكلمات.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تعريف الوقف والتمييز بين أقسامه الأربعة.</li>
+      <li>ضبط علامات الوقف في المصحف ودلالة كل علامة.</li>
+      <li>حفظ مواضع السكت الأربعة في رواية حفص.</li>
+      <li>إتقان كيفية الوقف على أنواع أواخر الكلمات.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab9-f1">
+    <h2 class="chapter-title">الفصل الأول: تعريف الوقف وأقسامه</h2>
+    <div class="definition">
+      <p><span class="term">الوقف لغة:</span> الحبس والقطع.</p>
+      <p><span class="term">الوقف اصطلاحاً:</span> قطع الصوت على آخر الكلمة زمناً يتنفس فيه عادة، مع استحضار نية العودة إلى القراءة.</p>
+    </div>
+    <p><strong>أقسام الوقف من حيث الحكم:</strong></p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>القسم</th><th>تعريفه</th><th>حكمه</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>وقف لازم</td><td>الوقف على كلمة لو وصلت لأفسد المعنى أو أوهم كفراً</td><td>واجب</td><td>الوقف على ﴿لَيْسَ كَمِثْلِهِ﴾ [الشورى: ١١]</td></tr>
+          <tr><td>وقف مطلق</td><td>الوقف على كلمة تم المعنى قبلها ولا تعلق لما بعدها بها</td><td>جائز</td><td>الوقف على ﴿الْحَمْدُ لِلَّهِ﴾ [الفاتحة: ٢]</td></tr>
+          <tr><td>وقف حسن</td><td>الوقف على كلمة تم المعنى ظاهراً لكن للكلام تعلق بما بعدها</td><td>جائز</td><td>الوقف على ﴿رَبِّ الْعَالَمِينَ﴾ [الفاتحة: ٢]</td></tr>
+          <tr><td>وقف قبيح</td><td>الوقف على كلمة لم يتم المعنى</td><td>حرام</td><td>الوقف على ﴿إِيَّاكَ﴾ [الفاتحة: ٥] دون "نَعْبُدُ"</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab9-f2">
+    <h2 class="chapter-title">الفصل الثاني: علامات الوقف في المصحف</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>العلامة</th><th>معناها</th><th>حكمها</th></tr></thead>
+        <tbody>
+          <tr><td>م (وقف لازم)</td><td>الوقف واجب</td><td>يجب الوقف</td></tr>
+          <tr><td>ط (وقف مطلق)</td><td>الوقف أولى</td><td>يجوز الوقف والوصل، والوقف أولى</td></tr>
+          <tr><td>ج (وقف جائز)</td><td>الوقف جائز</td><td>يجوز الوقف والوصل</td></tr>
+          <tr><td>ص (وقف مرخص)</td><td>الوقف مرخص</td><td>يجوز الوقف لكن الوصل أولى</td></tr>
+          <tr><td>لا (لا توقف)</td><td>لا يجوز الوقف</td><td>يجب الوصل</td></tr>
+          <tr><td>قلي</td><td>الوقف أولى من الوصل</td><td>الوقف أولى</td></tr>
+          <tr><td>∴ (وقف معانقة)</td><td>علامتان متقابلتان على كلمتين</td><td>إذا وقفت على إحداهما فلا تقف على الأخرى</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab9-f3">
+    <h2 class="chapter-title">الفصل الثالث: السكتات في رواية حفص</h2>
+    <div class="definition"><p><span class="term">تعريف السكت:</span> قطع الصوت على الحرف دون نفس بقصد، ثم العودة للقراءة من الحرف نفسه.</p></div>
+    <p><strong>مواضع السكت الأربعة في رواية حفص:</strong></p>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الموضع</th><th>الآية</th><th>مكان السكت</th></tr></thead>
+        <tbody>
+          <tr><td>الأول</td><td>﴿كهيعص﴾ [مريم: ١]</td><td>بعد (كهيع)</td></tr>
+          <tr><td>الثاني</td><td>﴿عِوَجاً قَيِّماً﴾ [الكهف: ١-٢]</td><td>بعد (عوجا)</td></tr>
+          <tr><td>الثالث</td><td>﴿مَرْقَدِنَا هَـٰذَا﴾ [يس: ٥٢]</td><td>بعد (مرقدنا)</td></tr>
+          <tr><td>الرابع</td><td>﴿بَلْ رَانَ﴾ [المطففين: ١٤]</td><td>بعد (بل)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><p class="note-title">تنبيه</p><p>السكت لا نفس فيه، ومدته أقصر من الوقف.</p></div>
+  </article>
+
+  <article class="chapter" id="bab9-f4">
+    <h2 class="chapter-title">الفصل الرابع: الوقف على أواخر الكلمات</h2>
+
+    <p><strong>أولاً: الوقف على هاء التأنيث (التاء المربوطة):</strong></p>
+    <ul>
+      <li>ترسم هاء (ة) أو تاء مربوطة.</li>
+      <li>عند الوقف تقلب هاء ساكنة.</li>
+      <li>مثال: ﴿الرَّحْمَـٰنِ الرَّحِيمِ﴾ [الفاتحة: ٣] - تقف على (الرَّحْمَـٰنِ، الرَّحِيمِ) بالتاء هاء.</li>
+    </ul>
+
+    <p><strong>ثانياً: الوقف على التاء المبسوطة (التاء المفتوحة):</strong></p>
+    <ul>
+      <li>تبقى تاء ساكنة عند الوقف.</li>
+      <li>مثال: ﴿أَنْعَمْتَ﴾ [الفاتحة: ٧] - تقف على (أَنْعَمْتَ) بتاء ساكنة.</li>
+    </ul>
+
+    <p><strong>ثالثاً: الوقف على الألف المقصورة:</strong></p>
+    <ul>
+      <li>تقلب ألفاً ممدودة.</li>
+      <li>مثال: ﴿هُدًى﴾ [البقرة: ٢] - تقف على (هُدَى) بألف ممدودة.</li>
+    </ul>
+
+    <p><strong>رابعاً: الوقف على التنوين:</strong></p>
+    <ul>
+      <li>تنوين النصب (فتحتان): يقلب ألفاً ممدودة.</li>
+      <li>تنوين الرفع والجر: تحذف النون ويبقى الحرف على حركته.</li>
+      <li>مثال: ﴿سَمِيعاً﴾ - تقف على (سَمِيعَا)، ﴿سَمِيعٌ﴾ - تقف على (سَمِيعْ).</li>
+    </ul>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب التاسع</h3>
+    <p>الوقف أربعة أقسام: لازم (واجب)، مطلق وحسن (جائزان)، وقبيح (حرام). لكل علامة في رسم المصحف دلالة محددة. وفي رواية حفص أربعة مواضع للسكت. وللوقف على أواخر الكلمات أحكام خاصة بحسب نوع الحرف الأخير.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>ما الفرق بين الوقف اللازم والوقف القبيح؟</li>
+      <li>اذكر علامات الوقف الست في المصحف مع معنى كل علامة.</li>
+      <li>عدّد مواضع السكت الأربعة في رواية حفص.</li>
+      <li>كيف يوقف على هاء التأنيث والتنوين المنصوب؟</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يميّز الدارس علامات الوقف في المصحف عملياً، وينفّذ مواضع السكت الأربعة بدقة، ويحسن الوقف على أنواع أواخر الكلمات.</div>
+
+</div>
+</section>
+
+<!-- =====================================================================
+     الباب العاشر — الأخطاء الشائعة وتصحيحها
+===================================================================== -->
+<section class="part-opener" id="bab10">
+  <div class="kicker">الباب العاشر</div>
+  <div class="num">١٠</div>
+  <h2>الأخطاء الشائعة وتصحيحها</h2>
+  <p class="part-desc">مرجع تشخيصي سريع لأشيع الأخطاء في المخارج والصفات والأحكام، مع طريقة التصحيح لكل خطأ.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <div class="meta-card">
+    <h3>أهداف الباب</h3>
+    <ul>
+      <li>تلخيص أشيع الأخطاء التي يقع فيها المتعلمون، مصنّفة حسب نوعها.</li>
+      <li>ربط كل خطأ بطريقة تصحيحه العملية.</li>
+    </ul>
+  </div>
+
+  <article class="chapter" id="bab10-f1">
+    <h2 class="chapter-title">الفصل الأول: أخطاء في المخارج</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الخطأ</th><th>الصواب</th><th>طريقة التصحيح</th></tr></thead>
+        <tbody>
+          <tr><td>نطق الضاد ظاءً</td><td>الضاد تخرج من حافة اللسان مع الأضراس العليا</td><td>تمرين إلصاق حافة اللسان بالأضراس</td></tr>
+          <tr><td>نطق الظاء ضاداً</td><td>الظاء تخرج من طرف اللسان بين الثنايا</td><td>تمرين إخراج اللسان بين الأسنان</td></tr>
+          <tr><td>نطق الذال دالاً أو زاياً</td><td>الذال تخرج من طرف اللسان بين الثنايا مع اهتزاز</td><td>تمرين النطق بين الأسنان</td></tr>
+          <tr><td>نطق الثاء تاءً أو سيناً</td><td>الثاء تخرج من طرف اللسان بين الثنايا بلا اهتزاز</td><td>تمرين إخراج النفس بين الأسنان</td></tr>
+          <tr><td>إخراج الألف من الحلق</td><td>الألف تخرج من الجوف</td><td>تمرين فتح الفم دون تكلف</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab10-f2">
+    <h2 class="chapter-title">الفصل الثاني: أخطاء في الصفات</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الخطأ</th><th>الصواب</th><th>طريقة التصحيح</th></tr></thead>
+        <tbody>
+          <tr><td>ترقيق حروف الاستعلاء (خص ضغط قظ)</td><td>تفخم دائماً</td><td>تمرين ارتفاع اللسان إلى الحنك</td></tr>
+          <tr><td>تفخيم حروف الاستفال</td><td>ترقق إلا في مواضع محددة</td><td>تمرين خفض اللسان</td></tr>
+          <tr><td>إسقاط الغنة</td><td>الغنة مقدارها حركتان</td><td>تمرين إخراج الهواء من الأنف</td></tr>
+          <tr><td>جعل القلقلة حركة كاملة</td><td>القلقلة نبرة سريعة</td><td>تمرين النطق بسكون مع نبرة</td></tr>
+          <tr><td>عدم التفشي في الشين</td><td>الشين ينتشر صوته في الفم</td><td>تمرين إشاعة الصوت</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="bab10-f3">
+    <h2 class="chapter-title">الفصل الثالث: أخطاء في الأحكام</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>الخطأ</th><th>الصواب</th><th>مثال للتصحيح</th></tr></thead>
+        <tbody>
+          <tr><td>إظهار النون عند حروف الإدغام</td><td>تدغم النون في "يرملون"</td><td>﴿مَن يَعْمَلْ﴾ تدغم لا تظهر</td></tr>
+          <tr><td>إدغام النون عند حروف الإظهار</td><td>تظهر النون عند حروف الحلق</td><td>﴿مَنْ آمَنَ﴾ تظهر لا تدغم</td></tr>
+          <tr><td>ترك الإقلاب عند الباء</td><td>تقلب النون ميماً عند الباء</td><td>﴿مِن بَعْدِ﴾ تقلب ميماً</td></tr>
+          <tr><td>قصر المد المتصل</td><td>يمد ٤ إلى ٥ حركات</td><td>﴿جَاءَ﴾ يمد ٤ حركات</td></tr>
+          <tr><td>مد المد المنفصل أكثر من ٥</td><td>يمد ٤ إلى ٥ حركات فقط</td><td>﴿يَا أَيُّهَا﴾ يمد ٤ حركات</td></tr>
+          <tr><td>قصر المد اللازم</td><td>يمد ٦ حركات واجبة</td><td>﴿الضَّالِّينَ﴾ يمد ٦ حركات</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <div class="summary-card">
+    <h3>خلاصة الباب العاشر</h3>
+    <p>هذا الباب مرجع تشخيصي سريع يجمع أشهر الأخطاء التي يقع فيها المتعلمون في المخارج والصفات والأحكام، مع الصواب وطريقة التصحيح العملية لكل خطأ، ليستعين به المتعلم والمعلم على السواء عند المراجعة.</p>
+  </div>
+
+  <div class="review-card">
+    <h3>أسئلة المراجعة</h3>
+    <ol>
+      <li>ما طريقة تصحيح نطق الضاد إذا خرجت ظاءً؟</li>
+      <li>لماذا يُعد ترقيق حروف الاستعلاء خطأً في جميع الأحوال؟</li>
+      <li>وضّح خطأ إدغام النون الساكنة عند حروف الإظهار الحلقي بمثال.</li>
+    </ol>
+  </div>
+
+  <div class="checkpoint">✦ نقطة تحقق إتقان: يجب أن يراجع الدارس هذا الباب دورياً كقائمة تدقيق ذاتي قبل كل جلسة تلاوة أو اختبار إجازة.</div>
+
+</div>
+</section>
+
+<!-- ============================== الخاتمة ============================== -->
+<section class="page frontmatter content" id="khatimah">
+  <div class="page-pad">
+    <h2>الخاتمة</h2>
+    <p>الحمد لله الذي بنعمته تتم الصالحات. هذا ما تيسر جمعه في هذا الكتاب "الكافي في التجويد"، جعلته كافياً لطالب العلم من المبتدئين إلى المتقدمين، جامعاً لأصول هذا الفن وفروعه، معتمداً على رواية حفص عن عاصم من طريق الشاطبية.</p>
+    <p>أسأل الله أن يجعله خالصاً لوجهه الكريم، نافعاً لعباده المؤمنين، وأن يتقبله مني بقبول حسن، وأن ينفع به كل من قرأه أو درسه أو علمه.</p>
+    <p>وآخر دعوانا أن الحمد لله رب العالمين، وصلى الله على سيدنا محمد وعلى آله وصحبه أجمعين، ومن تبعهم بإحسان إلى يوم الدين.</p>
+  </div>
+</section>
+
+<!-- ============================== الملاحق ============================== -->
+<section class="part-opener" id="appendices">
+  <div class="kicker">الملاحق</div>
+  <div class="num">✦</div>
+  <h2>الملاحق</h2>
+  <p class="part-desc">جداول مرجعية سريعة للمراجعة النهائية قبل الاختبار أو الإجازة.</p>
+</section>
+
+<section class="page">
+<div class="content">
+
+  <article class="chapter" id="appendix-1">
+    <h2 class="chapter-title">ملحق ١: جدول مراتب المدود</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>نوع المد</th><th>مقداره عند حفص</th><th>حكمه</th></tr></thead>
+        <tbody>
+          <tr><td>المد الطبيعي</td><td>حركتان</td><td>واجب</td></tr>
+          <tr><td>المد المتصل</td><td>٤-٥ حركات</td><td>واجب</td></tr>
+          <tr><td>المد المنفصل</td><td>٤-٥ حركات (ويجوز قصره)</td><td>جائز</td></tr>
+          <tr><td>مد البدل</td><td>حركتان</td><td>واجب</td></tr>
+          <tr><td>المد العارض للسكون</td><td>٢، ٤، ٦ (والأفضل ٤)</td><td>جائز</td></tr>
+          <tr><td>المد اللازم</td><td>٦ حركات</td><td>واجب</td></tr>
+          <tr><td>مد اللين</td><td>٢، ٤، ٦ (عند الوقف)</td><td>جائز</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="appendix-2">
+    <h2 class="chapter-title">ملحق ٢: حروف التجويد في عبارات مختصرة</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>العبارة</th><th>معناها</th><th>عدد الحروف</th></tr></thead>
+        <tbody>
+          <tr><td>فحثه شخص سكت</td><td>حروف الهمس</td><td>١٠</td></tr>
+          <tr><td>أجد قط بكت</td><td>حروف الشدة</td><td>٨</td></tr>
+          <tr><td>لن عمر</td><td>حروف البينية</td><td>٥</td></tr>
+          <tr><td>خص ضغط قظ</td><td>حروف الاستعلاء</td><td>٧</td></tr>
+          <tr><td>صضطظ</td><td>حروف الإطباق</td><td>٤</td></tr>
+          <tr><td>فر من لب</td><td>حروف الإذلاق</td><td>٦</td></tr>
+          <tr><td>يرملون</td><td>حروف الإدغام</td><td>٦</td></tr>
+          <tr><td>ينمو</td><td>حروف الإدغام بغنة</td><td>٤</td></tr>
+          <tr><td>صف ذا ثنا كم جاد شخص قد سما دم طيباً زد في تقى ضع ظالماً</td><td>حروف الإخفاء</td><td>١٥</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="chapter" id="appendix-3">
+    <h2 class="chapter-title">ملحق ٣: علامات الوقف في المصحف</h2>
+    <div class="table-wrap">
+      <table class="kafi-table">
+        <thead><tr><th>العلامة</th><th>معناها</th></tr></thead>
+        <tbody>
+          <tr><td>م</td><td>وقف لازم (يجب الوقف)</td></tr>
+          <tr><td>ط</td><td>وقف مطلق (الوقف أولى)</td></tr>
+          <tr><td>ج</td><td>وقف جائز (يجوز الوقف والوصل)</td></tr>
+          <tr><td>ص</td><td>وقف مرخص (يجوز الوقف لكن الوصل أولى)</td></tr>
+          <tr><td>لا</td><td>لا توقف (يجب الوصل)</td></tr>
+          <tr><td>قلي</td><td>الوقف أولى من الوصل</td></tr>
+          <tr><td>∴</td><td>وقف معانقة</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+</div>
+</section>
+
+<!-- ============================== مسرد المصطلحات ============================== -->
+<section class="page frontmatter" id="glossary">
+  <div class="page-pad content">
+    <h2>مسرد المصطلحات</h2>
+    <p style="font-family:'Cairo',sans-serif; color:var(--ink-500); font-size:.85rem;">مسرد مستخلص من تعريفات الكتاب نفسه، مرتب حسب ورود الأبواب، مع روابط للرجوع إلى موضع كل مصطلح.</p>
+
+    <h3 class="section-title">الباب الأول</h3>
+    <div class="definition">
+      <p><a href="#bab1-f1"><span class="term">التجويد</span></a>: إعطاء الحروف حقها وترتيبها، ورد الحرف إلى مخرجه وأصله، مع استكمال صفاته اللازمة والعارضة، وتحقيق لفظه بلا تكلف ولا تعسف (ابن الجزري).</p>
+      <p><a href="#bab1-f2"><span class="term">اللحن الجلي</span></a>: خطأ يخل بالحرف أو الحركة تغييراً ظاهراً، مبطل للصلاة عند الجمهور.</p>
+      <p><a href="#bab1-f2"><span class="term">اللحن الخفي</span></a>: خطأ يخل بكمال الأداء دون تغيير ظاهر، مكروه لا يبطل.</p>
+      <p><a href="#bab1-f4"><span class="term">التحقيق / الترتيل / التدوير / الحدر</span></a>: مراتب الأداء الأربع، من الأبطأ إلى الأسرع.</p>
+    </div>
+
+    <h3 class="section-title">البابان الثاني والثالث</h3>
+    <div class="definition">
+      <p><a href="#bab2-f1"><span class="term">المخرج</span></a>: الموضع الذي يخرج منه الحرف عند النطق به.</p>
+      <p><a href="#bab3-f1"><span class="term">الصفة</span></a>: كيفية تعرض للحرف عند النطق به من مخرجه، تميزه عن غيره.</p>
+      <p><a href="#bab3-f2"><span class="term">الجهر / الهمس</span></a>: قوة اعتماد الحرف على مخرجه مع اهتزاز الحبال الصوتية أو بدونه.</p>
+      <p><a href="#bab3-f2"><span class="term">الشدة / الرخاوة / البينية</span></a>: انحباس الصوت في المخرج، أو جريانه، أو حالة وسطى.</p>
+      <p><a href="#bab3-f2"><span class="term">الاستعلاء / الاستفال</span></a>: ارتفاع اللسان إلى الحنك الأعلى أو انخفاضه.</p>
+      <p><a href="#bab3-f2"><span class="term">الإطباق / الانفتاح</span></a>: انضمام أقصى اللسان إلى الحنك الأعلى أو تجافيه عنه.</p>
+      <p><a href="#bab3-f3"><span class="term">القلقلة</span></a>: اضطراب المخرج عند النطق بالحرف الساكن حتى يسمع له نبرة قوية، ولها ثلاث مراتب.</p>
+    </div>
+
+    <h3 class="section-title">الأبواب الرابع والخامس</h3>
+    <div class="definition">
+      <p><a href="#bab4-f2"><span class="term">الإظهار الحلقي</span></a>: إخراج النون الساكنة أو التنوين من مخرجه من غير غنة زائدة عند حروف الحلق الستة.</p>
+      <p><a href="#bab4-f3"><span class="term">الإدغام</span></a>: إدخال حرف ساكن في حرف متحرك بعده حتى يصيرا حرفاً واحداً مشدداً.</p>
+      <p><a href="#bab4-f4"><span class="term">الإقلاب</span></a>: قلب النون الساكنة أو التنوين ميماً خالصة قبل الباء مع بقاء الغنة.</p>
+      <p><a href="#bab4-f5"><span class="term">الإخفاء الحقيقي</span></a>: نطق النون الساكنة أو التنوين بين الإظهار والإدغام مع بقاء الغنة، عند خمسة عشر حرفاً.</p>
+      <p><a href="#bab5-f2"><span class="term">الإخفاء الشفوي</span></a>: إخفاء الميم الساكنة عند الباء مع بقاء الغنة.</p>
+    </div>
+
+    <h3 class="section-title">الباب السادس</h3>
+    <div class="definition">
+      <p><a href="#bab6-f1"><span class="term">المد</span></a>: إطالة الصوت بحرف من حروف المد عند لقائه همزاً أو سكوناً.</p>
+      <p><a href="#bab6-f3"><span class="term">المد المتصل</span></a>: اجتماع حرف المد والهمز في كلمة واحدة، يمد ٤-٥ حركات وجوباً.</p>
+      <p><a href="#bab6-f3"><span class="term">المد المنفصل</span></a>: وقوع حرف المد آخر كلمة والهمز أول التالية، يمد ٤-٥ حركات جوازاً.</p>
+      <p><a href="#bab6-f3"><span class="term">مد البدل</span></a>: وقوع الهمز قبل حرف المد في كلمة واحدة، مقداره حركتان.</p>
+      <p><a href="#bab6-f4"><span class="term">المد اللازم</span></a>: وقوع حرف المد قبل سكون أصلي، مقداره ٦ حركات وجوباً.</p>
+      <p><a href="#bab6-f4"><span class="term">المد العارض للسكون</span></a>: مد يعرض بسبب الوقف على حرف متحرك بعد حرف المد.</p>
+    </div>
+
+    <h3 class="section-title">الأبواب السابع إلى العاشر</h3>
+    <div class="definition">
+      <p><a href="#bab8-f2"><span class="term">أل الشمسية / القمرية</span></a>: لام التعريف التي تدغم في الحرف بعدها، أو تظهر لفظاً ورسماً.</p>
+      <p><a href="#bab9-f1"><span class="term">الوقف</span></a>: قطع الصوت على آخر الكلمة زمناً يتنفس فيه عادة مع نية العودة للقراءة.</p>
+      <p><a href="#bab9-f3"><span class="term">السكت</span></a>: قطع الصوت على الحرف دون نفس بقصد، ثم العودة للقراءة من الحرف نفسه.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== قائمة المصادر ============================== -->
+<section class="page frontmatter content" id="bibliography">
+  <div class="page-pad">
+    <h2>قائمة المصادر</h2>
+    <p style="font-family:'Cairo',sans-serif; color:var(--ink-500); font-size:.85rem; margin-bottom:1.2em;">المصنفات التي استند إليها المؤلف صراحة في متن الكتاب:</p>
+    <ul style="font-family:'Amiri'; line-height:2.3;">
+      <li>ابن الجزري، محمد بن محمد — <em>النشر في القراءات العشر</em>.</li>
+      <li>ابن الجزري، محمد بن محمد — <em>المقدمة الجزرية</em> (منظومة في تجويد القرآن).</li>
+      <li>الشاطبي، القاسم بن فيره — <em>حرز الأماني ووجه التهاني</em> (منظومة الشاطبية في القراءات السبع).</li>
+      <li>الداني، أبو عمرو عثمان بن سعيد — مصنفاته في الرسم والقراءات.</li>
+      <li>الملا علي القاري — مصنفاته في شرح متون التجويد.</li>
+    </ul>
+    <div class="small-note">تُستكمل هذه القائمة ببيانات النشر الكاملة (الناشر، مكان الطبع، سنته، رقم الطبعة) من المؤلف أو الناشر المعتمد، حرصاً على الدقة التوثيقية.</div>
+  </div>
+</section>
+
+<!-- ============================== الفهرس التحليلي ============================== -->
+<section class="page frontmatter content" id="index">
+  <div class="page-pad">
+    <h2>الفهرس التحليلي</h2>
+    <ul class="toc" style="columns:1;">
+      <li><a class="chap-link" href="#bab1-f1"><span>التجويد، تعريفه وحكمه</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab1-f2"><span>اللحن، أقسامه وأحكامه</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab1-f3"><span>أركان القراءة الصحيحة</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab1-f4"><span>مراتب التلاوة والأداء</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab2-f2"><span>المخارج العامة الخمسة</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab2-f3"><span>المخارج الخاصة السبعة عشر</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab3-f2"><span>الصفات المتضادة</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab3-f3"><span>القلقلة ومراتبها</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab4-f2"><span>الإظهار الحلقي</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab4-f3"><span>الإدغام بغنة وبلا غنة</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab4-f4"><span>الإقلاب</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab4-f5"><span>الإخفاء الحقيقي</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab5-f2"><span>الإخفاء الشفوي</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab5-f3"><span>إدغام المثلين الصغير</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab5-f4"><span>الإظهار الشفوي</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab6-f2"><span>المد الطبيعي وملحقاته</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab6-f3"><span>المتصل، المنفصل، البدل</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab6-f4"><span>العارض للسكون، اللازم، اللين</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab7-f1"><span>تفخيم الراء</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab7-f2"><span>ترقيق الراء</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab8-f1"><span>لفظ الجلالة</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab8-f2"><span>أل الشمسية والقمرية</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab9-f1"><span>أقسام الوقف</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab9-f2"><span>علامات الوقف في المصحف</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab9-f3"><span>السكتات الأربع</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab10-f1"><span>أخطاء المخارج وتصحيحها</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab10-f2"><span>أخطاء الصفات وتصحيحها</span><span class="dots"></span></a></li>
+      <li><a class="chap-link" href="#bab10-f3"><span>أخطاء الأحكام وتصحيحها</span><span class="dots"></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== COLOPHON ============================== -->
+<section class="colophon">
+  <div class="bismillah">وَآخِرُ دَعْوَانَا أَنِ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+  <h2>تم الكتاب بحمد الله</h2>
+  <p>الكافي في التجويد — تأليف أحمد بن إبراهيم — مراجعة وتدقيق د. محمد حسنين</p>
+  <div class="motif-rule" style="max-width:280px; margin:1.6em auto;"><span class="diamond"></span></div>
+</section>
+
+<footer class="book-footer">
+  الكافي في التجويد · نسخة رقمية فاخرة · جميع الحقوق محفوظة للمؤلف
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var QURAN_RE = /(﴿[^﴾]*﴾)(\s*\[[^\]]*\])?/g;
+  var nodes = document.querySelectorAll('.content p, .content li, .content td, .content dd, .matn, .ruling');
+  nodes.forEach(function (el) {
+    if (el.querySelector('.ayah')) return;
+    if (!/﴿/.test(el.innerHTML)) return;
+    el.innerHTML = el.innerHTML.replace(QURAN_RE, function (m, ayah, ref) {
+      var out = '<span class="ayah">' + ayah + '</span>';
+      if (ref) out += '<span class="ref">' + ref + '</span>';
+      return out;
+    });
+  });
+});
+</script>
+
+</body>
+</html>
