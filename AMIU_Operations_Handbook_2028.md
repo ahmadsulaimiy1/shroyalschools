@@ -50,7 +50,7 @@
 | **Effective Date** | 1 January 2028 |
 | **Classification** | Public &#8212; All Stakeholders |
 | **Contains** | Policies OPS-001 through OPS-027 (Operations Handbook, 27 of 108 University documents) |
-| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Legal & Compliance Handbook (AMIU-LEGH-001) |
+| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Legal & Compliance Handbook (AMIU-LEGH-001); Marketing & Communications Handbook (AMIU-MKTH-001) |
 
 *This Operations Handbook operationalizes the financial, administrative, and operational governance the Constitution establishes and the document registry the Institutional Governance Compendium tracks. Where any provision of this Handbook conflicts with the Constitution, the Constitution governs; where any provision conflicts with the Compendium's Responsibility Assignment Matrix, this Handbook governs for the substantive content of the policy itself.*
 
@@ -85,35 +85,35 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 | | |
 |---|---:|
 | **Document Control** | **2** |
-| **Operations Policies Declaration** | **4** |
-| **OPS-001 — Financial Model** | **9** |
-| **OPS-002 — Financial Operations Manual** | **25** |
-| **OPS-003 — Budgeting Policy** | **33** |
-| **OPS-004 — Procurement Policy** | **38** |
-| **OPS-005 — Tuition Collection & Refund Policy** | **44** |
-| **OPS-006 — Payroll Policy** | **51** |
-| **OPS-007 — HR Policies & Procedures Manual** | **57** |
-| **OPS-008 — Recruitment & Hiring Policy** | **61** |
-| **OPS-009 — Employee Contract Template** | **65** |
-| **OPS-010 — Compensation Policy** | **72** |
-| **OPS-011 — Leave Policy** | **77** |
-| **OPS-012 — Performance Review Policy** | **82** |
-| **OPS-013 — Termination Policy** | **86** |
-| **OPS-014 — IT Infrastructure Plan** | **91** |
-| **OPS-015 — LMS Technical Specifications** | **96** |
-| **OPS-016 — Data Privacy & Security Policy** | **101** |
-| **OPS-017 — Backup & Disaster Recovery Plan** | **107** |
-| **OPS-018 — IT Support Policy** | **111** |
-| **OPS-019 — Acceptable Use Policy** | **116** |
-| **OPS-020 — Facilities Management Policy** | **120** |
-| **OPS-021 — Health & Safety Policy** | **124** |
-| **OPS-022 — Emergency Response Plan** | **128** |
-| **OPS-023 — Learning Management System (LMS) Policy** | **133** |
-| **OPS-024 — Online Pedagogy Training Policy** | **137** |
-| **OPS-025 — Virtual Office Hours Policy** | **141** |
-| **OPS-026 — Digital Resources & Library Policy** | **145** |
-| **OPS-027 — Social Media & Student Communication Policy** | **149** |
-| **Publication Certification Statement** | **153** |
+| **Operations Policies Declaration** | **5** |
+| **OPS-001 — Financial Model** | **10** |
+| **OPS-002 — Financial Operations Manual** | **26** |
+| **OPS-003 — Budgeting Policy** | **34** |
+| **OPS-004 — Procurement Policy** | **39** |
+| **OPS-005 — Tuition Collection & Refund Policy** | **45** |
+| **OPS-006 — Payroll Policy** | **52** |
+| **OPS-007 — HR Policies & Procedures Manual** | **58** |
+| **OPS-008 — Recruitment & Hiring Policy** | **62** |
+| **OPS-009 — Employee Contract Template** | **66** |
+| **OPS-010 — Compensation Policy** | **73** |
+| **OPS-011 — Leave Policy** | **78** |
+| **OPS-012 — Performance Review Policy** | **83** |
+| **OPS-013 — Termination Policy** | **87** |
+| **OPS-014 — IT Infrastructure Plan** | **92** |
+| **OPS-015 — LMS Technical Specifications** | **97** |
+| **OPS-016 — Data Privacy & Security Policy** | **102** |
+| **OPS-017 — Backup & Disaster Recovery Plan** | **108** |
+| **OPS-018 — IT Support Policy** | **112** |
+| **OPS-019 — Acceptable Use Policy** | **117** |
+| **OPS-020 — Facilities Management Policy** | **121** |
+| **OPS-021 — Health & Safety Policy** | **125** |
+| **OPS-022 — Emergency Response Plan** | **129** |
+| **OPS-023 — Learning Management System (LMS) Policy** | **134** |
+| **OPS-024 — Online Pedagogy Training Policy** | **138** |
+| **OPS-025 — Virtual Office Hours Policy** | **142** |
+| **OPS-026 — Digital Resources & Library Policy** | **146** |
+| **OPS-027 — Social Media & Student Communication Policy** | **150** |
+| **Publication Certification Statement** | **154** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

@@ -51,7 +51,7 @@
 | **Classification** | Restricted &#8212; Senate & Board Distribution |
 | **Prepared By** | Office of Institutional Planning |
 | **Approved By** | University Senate |
-| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001); Legal & Compliance Handbook (AMIU-LEGH-001) |
+| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001); Legal & Compliance Handbook (AMIU-LEGH-001); Marketing & Communications Handbook (AMIU-MKTH-001) |
 
 *This Compendium is the definitive policy and procedural framework of Al-Mulk International University. It operationalizes the governance architecture the Constitution establishes; where any provision of this Compendium conflicts with the Constitution, the Constitution governs.*
 

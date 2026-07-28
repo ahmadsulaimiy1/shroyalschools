@@ -50,7 +50,7 @@
 | **Effective Date** | 1 January 2028 |
 | **Classification** | Public &#8212; All Stakeholders |
 | **Contains** | Policies ACA-001 through ACA-019 (Academic Handbook, 19 of 108 University documents) |
-| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001); Legal & Compliance Handbook (AMIU-LEGH-001) |
+| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001); Legal & Compliance Handbook (AMIU-LEGH-001); Marketing & Communications Handbook (AMIU-MKTH-001) |
 
 *This Academic Handbook operationalizes the academic governance the Constitution establishes and the document registry the Institutional Governance Compendium tracks. Where any provision of this Handbook conflicts with the Constitution, the Constitution governs; where any provision conflicts with the Compendium's Responsibility Assignment Matrix, this Handbook governs for the substantive content of the policy itself.*
 

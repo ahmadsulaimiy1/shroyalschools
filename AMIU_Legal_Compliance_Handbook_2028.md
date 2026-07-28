@@ -50,7 +50,7 @@
 | **Effective Date** | 1 January 2028 |
 | **Classification** | Public &#8212; All Stakeholders |
 | **Contains** | Policies LEG-001 through LEG-011 (Legal & Compliance Handbook, 11 of 108 University documents) |
-| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001) |
+| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Student Policies Handbook (AMIU-STUH-001); Operations Handbook (AMIU-OPSH-001); Marketing & Communications Handbook (AMIU-MKTH-001) |
 
 *This Legal & Compliance Handbook operationalizes the regulatory, privacy, and non-discrimination governance the Constitution establishes and the document registry the Institutional Governance Compendium tracks. Where any provision of this Handbook conflicts with the Constitution, the Constitution governs; where any provision conflicts with the Compendium's Responsibility Assignment Matrix, this Handbook governs for the substantive content of the policy itself.*
 
@@ -85,19 +85,19 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 | | |
 |---|---:|
 | **Document Control** | **2** |
-| **Legal & Compliance Policies Declaration** | **4** |
-| **LEG-001 — FERPA Compliance Policy** | **8** |
-| **LEG-002 — GDPR Compliance Policy** | **17** |
-| **LEG-003 — Texas State Regulatory Filings Policy** | **24** |
-| **LEG-004 — Intellectual Property Policy** | **28** |
-| **LEG-005 — Non-Discrimination & Title IX Policy** | **32** |
-| **LEG-006 — Gambia Branch Operational Plan** | **38** |
-| **LEG-007 — Nigeria Campus Development Plan** | **43** |
-| **LEG-008 — Country-Specific Regulatory Compliance** | **48** |
-| **LEG-009 — Cross-Border Payment Systems Policy** | **53** |
-| **LEG-010 — International Faculty Recruitment Policy** | **58** |
-| **LEG-011 — International Student Support Policy** | **63** |
-| **Publication Certification Statement** | **69** |
+| **Legal & Compliance Policies Declaration** | **5** |
+| **LEG-001 — FERPA Compliance Policy** | **9** |
+| **LEG-002 — GDPR Compliance Policy** | **18** |
+| **LEG-003 — Texas State Regulatory Filings Policy** | **25** |
+| **LEG-004 — Intellectual Property Policy** | **29** |
+| **LEG-005 — Non-Discrimination & Title IX Policy** | **33** |
+| **LEG-006 — Gambia Branch Operational Plan** | **39** |
+| **LEG-007 — Nigeria Campus Development Plan** | **44** |
+| **LEG-008 — Country-Specific Regulatory Compliance** | **49** |
+| **LEG-009 — Cross-Border Payment Systems Policy** | **54** |
+| **LEG-010 — International Faculty Recruitment Policy** | **59** |
+| **LEG-011 — International Student Support Policy** | **64** |
+| **Publication Certification Statement** | **70** |
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
