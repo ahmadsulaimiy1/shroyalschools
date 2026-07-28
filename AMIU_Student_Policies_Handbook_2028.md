@@ -50,7 +50,7 @@
 | **Effective Date** | 1 January 2028 |
 | **Classification** | Public &#8212; All Stakeholders |
 | **Contains** | Policies STU-001 through STU-023 (Student Policies Handbook, 23 of 108 University documents) |
-| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Operations Handbook (AMIU-OPSH-001); Legal & Compliance Handbook (AMIU-LEGH-001); Marketing & Communications Handbook (AMIU-MKTH-001) |
+| **Companion Volumes** | Constitution (AMIU-CON-001); Strategic Implementation Blueprint 2028&#8211;2050 (AMIU-SB-002); Institutional Governance Compendium (AMIU-IGC-004); Academic Handbook (AMIU-ACAH-001); Operations Handbook (AMIU-OPSH-001); Legal & Compliance Handbook (AMIU-LEGH-001); Marketing & Communications Handbook (AMIU-MKTH-001); Waqf & Research Handbook (AMIU-WAQH-001) |
 
 *This Student Policies Handbook operationalizes the student rights and responsibilities the Constitution establishes and the document registry the Institutional Governance Compendium tracks. Where any provision of this Handbook conflicts with the Constitution, the Constitution governs; where any provision conflicts with the Compendium's Responsibility Assignment Matrix, this Handbook governs for the substantive content of the policy itself.*
 
@@ -83,24 +83,24 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 | | |
 |---|---:|
 | **Document Control** | **2** |
-| **Student Policies Declaration** | **4** |
-| **STU-001 — Student Code of Conduct** | **9** |
-| **STU-002 — Student Grievance Policy** | **20** |
-| **STU-003 — Student Recruitment Plan** | **26** |
-| **STU-004 — Student Orientation Program** | **30** |
-| **STU-005 — Student Retention Strategy** | **33** |
-| **STU-006 — Attendance Policy** | **36** |
-| **STU-007 — Academic Probation & Dismissal Policy** | **41** |
-| **STU-008 — Grade Appeal Policy** | **46** |
-| **STU-009 — Mental Health Support Policy** | **51** |
-| **STU-010 — Career Services Policy** | **55** |
-| **STU-011 — Disability Services Policy** | **58** |
-| **STU-012 — Student Activities Policy** | **62** |
-| **STU-013 — International Student Support Policy** | **65** |
-| **STU-014 — Digital Citizenship & Online Conduct Policy** | **68** |
-| **STU-015 — Islamic Dress Code Policy for Online Learning** | **71** |
-| **STU-016 — Online Classroom Etiquette & Noise Policy** | **75** |
-| **STU-017 — International Time Zone Policy** | **79** |
+| **Student Policies Declaration** | **5** |
+| **STU-001 — Student Code of Conduct** | **10** |
+| **STU-002 — Student Grievance Policy** | **21** |
+| **STU-003 — Student Recruitment Plan** | **27** |
+| **STU-004 — Student Orientation Program** | **31** |
+| **STU-005 — Student Retention Strategy** | **34** |
+| **STU-006 — Attendance Policy** | **37** |
+| **STU-007 — Academic Probation & Dismissal Policy** | **42** |
+| **STU-008 — Grade Appeal Policy** | **47** |
+| **STU-009 — Mental Health Support Policy** | **52** |
+| **STU-010 — Career Services Policy** | **56** |
+| **STU-011 — Disability Services Policy** | **59** |
+| **STU-012 — Student Activities Policy** | **63** |
+| **STU-013 — International Student Support Policy** | **66** |
+| **STU-014 — Digital Citizenship & Online Conduct Policy** | **69** |
+| **STU-015 — Islamic Dress Code Policy for Online Learning** | **72** |
+| **STU-016 — Online Classroom Etiquette & Noise Policy** | **76** |
+| **STU-017 — International Time Zone Policy** | **80** |
 | **STU-018 — Virtual Campus Life Policy** | **83** |
 | **STU-019 — Digital Accessibility Policy** | **87** |
 | **STU-020 — Student ID Card Policy** | **91** |
