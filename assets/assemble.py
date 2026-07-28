@@ -277,12 +277,28 @@ def _suppress_table_hyphenation(docx_path):
     Wide, many-column data tables (document registries, cross-reference
     matrices, responsibility assignments — the same >= 4-column tables
     _balance_column_widths targets) are deliberately EXCLUDED from this
-    suppression: a genuinely long single word ('Implementation',
+    suppression FOR BODY ROWS: a genuinely long single word ('Implementation',
     'Administration') in a narrow column has to break somewhere, and a real
     hyphen ('Implementa-tion') is the correct, professional way to do that —
     suppressing hyphenation there just traded a clean hyphenated break for
     an uglier bare character-orphan break ('Implementatio' / 'n') with no
-    hyphen mark at all, which is a worse-looking defect, not a better one."""
+    hyphen mark at all, which is a worse-looking defect, not a better one.
+
+    The HEADER row gets a narrower, text-aware exemption even in wide
+    tables: a column label like 'ELECTIVE/RESEARCH' already has a natural
+    break character in it, and the hyphenation algorithm was inserting an
+    additional hyphen INSIDE a word anyway ('ELECTIVE/RE-SEARCH') instead of
+    preferring the slash that was sitting right there — suppressing
+    auto-hyphenation on that cell fixes it by forcing the wrap back to the
+    slash. But a header that's a single solid word with no slash or hyphen
+    of its own ('COMPONENT') has no such natural break to fall back on:
+    suppressing hyphenation there only removes the one valid break point,
+    trading a clean 'COMPO-NENT' for an uglier bare 'COMPONE' / 'NT'
+    character-orphan split — confirmed empirically by comparing the two
+    renders. So the header-row exemption only applies to cells whose text
+    already contains a '/' or '-' for hyphenation to compete with; plain
+    single-word headers keep the same allowed-hyphenation behavior as body
+    cells in wide tables."""
     import docx as _docx
     from docx.oxml.ns import qn as _qn
     from docx.oxml import OxmlElement as _El
@@ -291,10 +307,13 @@ def _suppress_table_hyphenation(docx_path):
     for table in d.tables:
         rows = table.rows
         ncols = len(rows[0].cells) if rows else 0
-        if ncols >= MIN_COLS_TO_ALLOW_HYPHENATION:
-            continue
-        for row in rows:
+        wide_table = ncols >= MIN_COLS_TO_ALLOW_HYPHENATION
+        for ri, row in enumerate(rows):
             for cell in row.cells:
+                if wide_table and ri > 0:
+                    continue
+                if wide_table and ri == 0 and not any(c in cell.text for c in ('/', '-')):
+                    continue
                 for p in cell.paragraphs:
                     pPr = p._p.get_or_add_pPr()
                     if pPr.find(_qn('w:suppressAutoHyphens')) is None:

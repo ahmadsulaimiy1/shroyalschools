@@ -338,17 +338,32 @@ r2 = hp.add_run("\t")
 # from the per-page header loses no identifying information.
 r3 = add_field(hp, ' STYLEREF "Heading 2" \\* MERGEFORMAT ', font=DISPLAY_FONT, size=9.5, color=GREY)
 r3.font.italic = True
+pPr = hp._p.get_or_add_pPr()
 # rule under header — a true hairline in restrained gold (0.375pt): thin
 # enough not to compete with the content, and a genuine hairline reads as
 # restraint rather than the "gold overuse" a thicker rule on every page
 # would be.
-pPr = hp._p.get_or_add_pPr()
 pBdr = OxmlElement('w:pBdr')
 bottom = OxmlElement('w:bottom')
 bottom.set(qn('w:val'), 'single'); bottom.set(qn('w:sz'), '3')
 bottom.set(qn('w:space'), '6'); bottom.set(qn('w:color'), 'B08625')
 pBdr.append(bottom)
 pPr.append(pBdr)
+# Some Heading-2 subsection titles run to 65-70 characters (e.g. "Section 9:
+# Administration — Deputy Vice-Chancellors, Deans & Directors"), too long for
+# the STYLEREF result to fit on one line. LibreOffice's headless PDF export
+# ignores explicit character-formatting changes on the field itself (tested:
+# resizing that run's font from 9.5pt to 8pt to 20pt to 28pt produced zero
+# visible change in the rendered output), so the font size can't be shrunk
+# to force a fit. The next-best fix is a graceful two-line wrap instead of a
+# mid-word hyphen break: auto-hyphenation is on document-wide for body prose,
+# and without opting the header paragraph out, LibreOffice hyphenates the
+# overflow ("Accredita-" / "tion") exactly like a body paragraph, which reads
+# as a typesetting error in a running head. Suppressing it here forces the
+# wrap to the last whole word instead.
+suppress = OxmlElement('w:suppressAutoHyphens')
+suppress.set(qn('w:val'), 'true')
+pPr.append(suppress)
 
 # --- Default footer (all pages after first) ---
 # Minimalist three-part layout: volume identifier at left, nothing at
