@@ -4,7 +4,7 @@ This folder contains the flagship editorial edition of Ahmad Sulaimiy's manuscri
 
 ## What's in the file
 
-`The-76-Wisdoms-of-Success-Flagship-Edition.docx` is a complete manuscript-format book (Word `.docx`, 6"×9" book trim) including:
+`The-76-Wisdoms-of-Success-Flagship-Edition.docx` (editable manuscript) and `.pdf` (print-ready, identical layout) are a complete book, 6"×9" trim, including:
 
 - Full front matter: half title, title page, copyright page, dedication, foreword, author's preface, "How to Use This Book," and an original introduction essay ("The Islamic Philosophy of Success")
 - Six thematic parts (Foundations, Wealth & Financial Intelligence, Leadership & Influence, Character & Excellence, Relationships & Social Impact, Faith/Barakah/Legacy), each with its own divider page
@@ -21,4 +21,4 @@ This folder contains the flagship editorial edition of Ahmad Sulaimiy's manuscri
 
 ## Formatting note
 
-This environment's PDF renderer (LibreOffice) is not functional here, so the file could not be visually proofed as a PDF before delivery. The document's OOXML has been validated against the DOCX schema (passed) and structurally spot-checked (page breaks, RTL Arabic runs, table/box counts, bullet counts all match expected totals). Please open it in Word and skim for layout before printing.
+The document is 178 pages. It has been validated against the DOCX schema (passed) and visually proofed page-by-page as a rendered PDF (cover, front matter, every wisdom template variant, part dividers, indices, and back cover). Typeset in EB Garamond (Latin) and Amiri (Arabic) — both free, widely available fonts — so it renders correctly even on machines without premium commercial fonts installed.
