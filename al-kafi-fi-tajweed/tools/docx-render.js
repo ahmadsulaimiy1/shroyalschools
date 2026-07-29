@@ -70,6 +70,40 @@ function renderHalfTitle($sec) {
   return out;
 }
 
+// ============================================================
+// BACK COVER
+// ============================================================
+function renderBackCover($sec) {
+  const out = [];
+  out.push(new Paragraph({ text: '', spacing: { after: 400 } }));
+  out.push(para($sec.find('.bc-kicker').text(), { align: AlignmentType.CENTER, size: 16, color: C.gold600, bold: true, after: 300 }));
+  out.push(new Paragraph({
+    children: textRunsFor($sec.find('.bc-title').text(), { size: 34, bold: true, color: C.navy950, font: FONT_DISPLAY }),
+    alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: 300 },
+  }));
+  out.push(para($sec.find('.bc-description').text(), { align: AlignmentType.JUSTIFIED, size: 20, color: C.ink700, after: 400 }));
+  out.push(para('۞', { align: AlignmentType.CENTER, size: 22, color: C.gold500, after: 400 }));
+  const bioLabel = $sec.find('.bc-bio-block .bc-label').text().trim();
+  const bioClone = $sec.find('.bc-bio-block').clone();
+  bioClone.find('.bc-label').remove();
+  const bioText = bioClone.text().trim();
+  if (bioLabel) out.push(para(bioLabel, { align: AlignmentType.RIGHT, size: 16, color: C.gold700, bold: true, after: 80 }));
+  if (bioText) out.push(para(bioText, { align: AlignmentType.JUSTIFIED, size: 18, color: C.ink700, after: 400 }));
+  $sec.find('.bc-meta .row').each((_, row) => {
+    const $row = $(row);
+    const k = $row.find('.k').text().trim();
+    const vClone = $row.clone();
+    vClone.find('.k').remove();
+    const v = vClone.text().trim();
+    out.push(para(`${k}: ${v}`, { align: AlignmentType.RIGHT, size: 18, color: C.ink700, after: 120 }));
+  });
+  const isbnText = $sec.find('.bc-isbn').text().replace(/\s+/g, ' ').trim();
+  if (isbnText) out.push(para(isbnText, { align: AlignmentType.CENTER, size: 16, italics: true, color: C.ink500, after: 300 }));
+  const markText = $sec.find('.bc-mark').text().replace(/\s+/g, ' ').trim();
+  if (markText) out.push(para(markText, { align: AlignmentType.CENTER, size: 18, bold: true, color: C.gold700, after: 200 }));
+  return out;
+}
+
 function renderColophon($sec, $footer) {
   const out = [];
   out.push(new Paragraph({ text: '', spacing: { after: 800 } }));
@@ -259,6 +293,7 @@ for (const el of bodyChildren) {
   if (tag === 'nav' || tag === 'script') continue;
   if (tag === 'footer') continue; // folded into colophon
 
+  if (cls.includes('back-cover')) { push(renderBackCover($el)); count++; continue; }
   if (cls.includes('cover')) { push(renderCover($el)); count++; continue; }
   if (cls.includes('half-title')) { push(renderHalfTitle($el)); count++; continue; }
   if (cls.includes('colophon')) { push(renderColophon($el, $('footer.book-footer'))); count++; continue; }

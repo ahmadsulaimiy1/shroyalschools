@@ -165,7 +165,7 @@ img{max-width:100%}
   box-shadow:var(--shadow);
 }
 .page + .page{margin-top:38px}
-.page-pad{padding:5.5vw 7vw}
+.page-pad{padding:7.5vw 9.5vw}
 
 /* ---------- Half title ---------- */
 .half-title{
@@ -224,6 +224,57 @@ img{max-width:100%}
   display:flex; align-items:center; justify-content:center; font-size:.6rem; color:var(--cream-200); opacity:.5;
 }
 
+/* ---------- Back cover ---------- */
+.back-cover{
+  min-height:92vh; display:flex; flex-direction:column; justify-content:space-between;
+  color:var(--cream-050); text-align:center;
+  background:
+    radial-gradient(ellipse at 50% 110%, rgba(195,154,60,.16), transparent 55%),
+    linear-gradient(160deg, var(--navy-950), var(--navy-800) 55%, var(--navy-900));
+  padding:6vw 6.5vw; position:relative; overflow:hidden;
+}
+.back-cover::before{
+  content:""; position:absolute; inset:18px; border:1px solid rgba(227,199,128,.55); pointer-events:none;
+}
+.back-cover::after{
+  content:""; position:absolute; inset:26px; border:1px solid rgba(227,199,128,.25); pointer-events:none;
+}
+.back-cover .bc-kicker{
+  font-family:"Cairo",sans-serif; letter-spacing:.3em; font-size:.68rem; color:var(--gold-300);
+  text-transform:uppercase; margin-bottom:1.4em;
+}
+.back-cover .bc-title{font-family:"Aref Ruqaa"; font-size:1.6rem; color:#fff; margin:0 0 .8em}
+.back-cover .bc-description{
+  font-family:"Cairo",sans-serif; color:var(--cream-200); font-size:.92rem; line-height:2;
+  max-width:34em; margin:0 auto 1.6em; text-align:justify;
+}
+.back-cover .bc-rule{margin:1.2em auto; max-width:220px}
+.back-cover .bc-bio-block{
+  font-family:"Cairo",sans-serif; color:var(--cream-200); font-size:.85rem; line-height:1.95;
+  max-width:32em; margin:0 auto 1.6em; text-align:justify;
+}
+.back-cover .bc-bio-block .bc-label{
+  display:block; font-size:.68rem; letter-spacing:.2em; color:var(--gold-300); text-transform:uppercase; margin-bottom:.5em;
+}
+.back-cover .placeholder{color:var(--cream-200); opacity:.75; font-style:italic}
+.back-cover .bc-meta{
+  font-family:"Cairo",sans-serif; font-size:.78rem; color:var(--cream-200); opacity:.9;
+  border-top:1px solid rgba(227,199,128,.3); border-bottom:1px solid rgba(227,199,128,.3);
+  padding:1em 0; margin:0 auto 1.4em; max-width:34em; display:flex; flex-direction:column; gap:.5em;
+}
+.back-cover .bc-meta .row{display:flex; justify-content:space-between; gap:1em}
+.back-cover .bc-meta .row .k{color:var(--gold-300); font-weight:700}
+.back-cover .bc-bottom{display:flex; align-items:center; justify-content:space-between; width:100%; max-width:34em; margin:0 auto}
+.back-cover .bc-isbn{
+  border:1px dashed rgba(227,199,128,.5); border-radius:4px; padding:.6em 1.1em;
+  font-family:"Cairo",sans-serif; font-size:.68rem; color:var(--cream-200); opacity:.7; text-align:center;
+}
+.back-cover .bc-mark{font-family:"Cairo",sans-serif; font-size:.68rem; color:var(--gold-300); letter-spacing:.1em; text-align:center}
+.back-cover .bc-mark .logo-slot{
+  width:40px; height:40px; margin:0 auto .4em; border:1px dashed rgba(227,199,128,.5); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; font-size:.55rem; color:var(--cream-200); opacity:.5;
+}
+
 /* ---------- Front-matter / plain content pages ---------- */
 .frontmatter{background:var(--cream-050)}
 .frontmatter h2{
@@ -273,7 +324,7 @@ img{max-width:100%}
 .part-opener .part-desc{font-family:"Cairo",sans-serif; color:var(--cream-200); max-width:34em; font-size:.95rem; line-height:1.9}
 
 /* ---------- CONTENT ---------- */
-.content{padding:5vw 7vw}
+.content{padding:7vw 9.5vw}
 .chapter{margin-bottom:3.2em}
 .chapter-title{
   font-family:"Aref Ruqaa"; color:var(--navy-950); font-size:1.55rem;
@@ -447,6 +498,7 @@ footer.book-footer{
   .half-title{break-after:page}
   .colophon{break-after:avoid-page; break-inside:avoid-page}
   .colophon + footer.book-footer{break-before:avoid-page}
+  .back-cover{break-before:page; min-height:auto; height:100vh}
   .frontmatter{break-after:page}
   section.page.frontmatter.content#muqaddimah{break-after:page}
   .chapter{break-inside:avoid-page}
@@ -461,6 +513,9 @@ footer.book-footer{
   a{color:inherit; text-decoration:none}
 }
 
+.toc .pagenum{flex-shrink:0; font-variant-numeric:tabular-nums; font-weight:700; direction:ltr; unicode-bidi:isolate;}
+.toc .chap-link .pagenum{color:var(--gold-700); font-size:.85rem;}
+.toc .part-link .pagenum{color:var(--navy-950); font-size:.95rem;}
 </style>
 </head>
 <body>
@@ -474,9 +529,8 @@ footer.book-footer{
 </nav>
 
 <section class="cover">
-  <div class="eyebrow">سلسلة المراجع الشرعية · علوم القرآن الكريم</div>
+  <div class="eyebrow">سلسلة مؤلفات الإمام أحمد بن إبراهيم السليمي · المجلد (52)</div>
   <div>
-    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
     <h1>الموسوعة</h1>
     <p class="subtitle-gold">أشمل الأقوال في شرح متن تحفة الأطفال</p>
     <p class="subtitle">شرح متن تحفة الأطفال والغلمان للعلامة سليمان الجمزوري رحمه الله تعالى</p>
@@ -484,8 +538,8 @@ footer.book-footer{
   <div class="divider-star">۞</div>
   <div class="credits">
     <div class="role">تأليف</div>
-    <div class="name">أبو عبد الله جلال الدين أحمد بن إبراهيم السليمي آل سلام</div>
-    <div class="epithet">(راجي عفو ربه القدير)</div>
+    <div class="epithet" style="margin-top:0; margin-bottom:.25em; font-style:normal;">راجي عفو ربه ثم</div>
+    <div class="name">أحمد بن إبراهيم السليمي</div>
   </div>
   <div class="edition-badge">النسخة الملكية الفاخرة</div>
   <div class="publisher">
@@ -499,7 +553,7 @@ footer.book-footer{
   <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
   <h1>الموسوعة</h1>
   <div class="tagline">أشمل الأقوال في شرح متن تحفة الأطفال</div>
-  <div class="tagline" style="margin-top:.6em; font-size:.85rem;">تأليف أبو عبد الله جلال الدين أحمد بن إبراهيم السليمي آل سلام</div>
+  <div class="tagline" style="margin-top:.6em; font-size:.85rem;">تأليف راجي عفو ربه ثم أحمد بن إبراهيم السليمي</div>
 </section>
 
 <section class="page frontmatter">
@@ -508,8 +562,9 @@ footer.book-footer{
     <ul class="field-list">
       <li><span class="k">عنوان الكتاب</span><span class="v">الموسوعة — أشمل الأقوال في شرح متن تحفة الأطفال</span></li>
       <li><span class="k">الشرح على متن</span><span class="v">تحفة الأطفال والغلمان في تجويد القرآن، للعلامة سليمان الجمزوري رحمه الله</span></li>
-      <li><span class="k">المؤلف</span><span class="v">أبو عبد الله جلال الدين أحمد بن إبراهيم السليمي آل سلام (راجي عفو ربه القدير)</span></li>
+      <li><span class="k">المؤلف</span><span class="v">راجي عفو ربه ثم أحمد بن إبراهيم السليمي</span></li>
       <li><span class="k">الناشر</span><span class="v">جامعة الملك العالمية — Al-Mulk International University</span></li>
+      <li><span class="k">السلسلة</span><span class="v">سلسلة مؤلفات الإمام أحمد بن إبراهيم السليمي — المجلد (52)</span></li>
       <li><span class="k">الرواية المعتمدة</span><span class="v">حفص عن عاصم</span></li>
       <li><span class="k">الإصدار</span><span class="v">النسخة الملكية الفاخرة</span></li>
       <li><span class="k">رقم الإيداع / ISBN</span><span class="v placeholder">يُستكمل من الناشر عند التسجيل الرسمي</span></li>
@@ -535,75 +590,75 @@ footer.book-footer{
   <div class="page-pad">
     <h2>فهرس المحتويات</h2>
     <ul class="toc">
-<li><a class="part-link" href="#bab1"><span>النون الساكنة والتنوين</span></a>
+<li><a class="part-link" href="#bab1"><span>النون الساكنة والتنوين</span><span class="pagenum">38</span></a>
 <ul>
-<li><a class="chap-link" href="#bab1-v1"><span>البيت السادس</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v2"><span>البيت السابع: الإظهار الحلقي وحروفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v3"><span>البيت الثامن: تعداد حروف الإظهار</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v4"><span>البيت التاسع: الإدغام وحروفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v5"><span>البيت العاشر: قسم الإدغام بغنة وحروفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v6"><span>البيت الحادي عشر: الإظهار المطلق</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v7"><span>البيت الثاني عشر: الإدغام بغير غنة وحرفاه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v8"><span>البيت الثالث عشر: الإقلاب وحرفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v9"><span>البيت الرابع عشر: الإخفاء الحقيقي وحكمه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v10"><span>البيتان الخامس عشر والسادس عشر: حروف الإخفاء</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v11"><span>البيت الخامس عشر:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab1-v12"><span>البيت السادس عشر:</span><span class="dots"></span></a></li>
+<li><a class="chap-link" href="#bab1-v1"><span>البيت السادس</span><span class="dots"></span><span class="pagenum">41</span></a></li>
+<li><a class="chap-link" href="#bab1-v2"><span>البيت السابع: الإظهار الحلقي وحروفه</span><span class="dots"></span><span class="pagenum">47</span></a></li>
+<li><a class="chap-link" href="#bab1-v3"><span>البيت الثامن: تعداد حروف الإظهار</span><span class="dots"></span><span class="pagenum">55</span></a></li>
+<li><a class="chap-link" href="#bab1-v4"><span>البيت التاسع: الإدغام وحروفه</span><span class="dots"></span><span class="pagenum">59</span></a></li>
+<li><a class="chap-link" href="#bab1-v5"><span>البيت العاشر: قسم الإدغام بغنة وحروفه</span><span class="dots"></span><span class="pagenum">64</span></a></li>
+<li><a class="chap-link" href="#bab1-v6"><span>البيت الحادي عشر: الإظهار المطلق</span><span class="dots"></span><span class="pagenum">73</span></a></li>
+<li><a class="chap-link" href="#bab1-v7"><span>البيت الثاني عشر: الإدغام بغير غنة وحرفاه</span><span class="dots"></span><span class="pagenum">80</span></a></li>
+<li><a class="chap-link" href="#bab1-v8"><span>البيت الثالث عشر: الإقلاب وحرفه</span><span class="dots"></span><span class="pagenum">86</span></a></li>
+<li><a class="chap-link" href="#bab1-v9"><span>البيت الرابع عشر: الإخفاء الحقيقي وحكمه</span><span class="dots"></span><span class="pagenum">93</span></a></li>
+<li><a class="chap-link" href="#bab1-v10"><span>البيتان الخامس عشر والسادس عشر: حروف الإخفاء</span><span class="dots"></span><span class="pagenum">98</span></a></li>
+<li><a class="chap-link" href="#bab1-v11"><span>البيت الخامس عشر:</span><span class="dots"></span><span class="pagenum">103</span></a></li>
+<li><a class="chap-link" href="#bab1-v12"><span>البيت السادس عشر:</span><span class="dots"></span><span class="pagenum">104</span></a></li>
 </ul>
 </li>
-<li><a class="part-link" href="#bab2"><span>الميم والنون المشددتين</span></a>
+<li><a class="part-link" href="#bab2"><span>الميم والنون المشددتين</span><span class="pagenum">105</span></a>
 </li>
-<li><a class="part-link" href="#bab3"><span>الميم الساكنة</span></a>
+<li><a class="part-link" href="#bab3"><span>الميم الساكنة</span><span class="pagenum">114</span></a>
 <ul>
-<li><a class="chap-link" href="#bab3-v1"><span>البيت التاسع عشر: تعداد أحكام الميم الساكنة</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab3-v2"><span>البيت العشرون: الإخفاء الشفوي وحرفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab3-v3"><span>البيت الحادي والعشرون: الإدغام الصغير</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab3-v4"><span>البيت الثاني والعشرون: الإظهار الشفوي وحروفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab3-v5"><span>البيت الثالث والعشرون: التحذير من إخفاء الميم عند الواو والفاء</span><span class="dots"></span></a></li>
+<li><a class="chap-link" href="#bab3-v1"><span>البيت التاسع عشر: تعداد أحكام الميم الساكنة</span><span class="dots"></span><span class="pagenum">119</span></a></li>
+<li><a class="chap-link" href="#bab3-v2"><span>البيت العشرون: الإخفاء الشفوي وحرفه</span><span class="dots"></span><span class="pagenum">122</span></a></li>
+<li><a class="chap-link" href="#bab3-v3"><span>البيت الحادي والعشرون: الإدغام الصغير</span><span class="dots"></span><span class="pagenum">127</span></a></li>
+<li><a class="chap-link" href="#bab3-v4"><span>البيت الثاني والعشرون: الإظهار الشفوي وحروفه</span><span class="dots"></span><span class="pagenum">131</span></a></li>
+<li><a class="chap-link" href="#bab3-v5"><span>البيت الثالث والعشرون: التحذير من إخفاء الميم عند الواو والفاء</span><span class="dots"></span><span class="pagenum">135</span></a></li>
 </ul>
 </li>
-<li><a class="part-link" href="#bab4"><span>لام أل ولام الفعل</span></a>
+<li><a class="part-link" href="#bab4"><span>لام أل ولام الفعل</span><span class="pagenum">140</span></a>
 <ul>
-<li><a class="chap-link" href="#bab4-v1"><span>البيت الرابع والعشرون: حالا لام أل</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab4-v2"><span>البيت الخامس والعشرون: حروف الإظهار القمري</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab4-v3"><span>البيتان السادس والعشرون والسابع والعشرون: الإدغام الشمسي وحروفه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab4-v4"><span>البيت السادس والعشرون:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab4-v5"><span>البيت السابع والعشرون:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab4-v6"><span>البيت الثامن والعشرون: تسمية اللام قمرية وشمسية</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab4-v7"><span>البيت التاسع والعشرون: إظهار لام الفعل</span><span class="dots"></span></a></li>
+<li><a class="chap-link" href="#bab4-v1"><span>البيت الرابع والعشرون: حالا لام أل</span><span class="dots"></span><span class="pagenum">142</span></a></li>
+<li><a class="chap-link" href="#bab4-v2"><span>البيت الخامس والعشرون: حروف الإظهار القمري</span><span class="dots"></span><span class="pagenum">146</span></a></li>
+<li><a class="chap-link" href="#bab4-v3"><span>البيتان السادس والعشرون والسابع والعشرون: الإدغام الشمسي وحروفه</span><span class="dots"></span><span class="pagenum">151</span></a></li>
+<li><a class="chap-link" href="#bab4-v4"><span>البيت السادس والعشرون:</span><span class="dots"></span><span class="pagenum">157</span></a></li>
+<li><a class="chap-link" href="#bab4-v5"><span>البيت السابع والعشرون:</span><span class="dots"></span><span class="pagenum">158</span></a></li>
+<li><a class="chap-link" href="#bab4-v6"><span>البيت الثامن والعشرون: تسمية اللام قمرية وشمسية</span><span class="dots"></span><span class="pagenum">159</span></a></li>
+<li><a class="chap-link" href="#bab4-v7"><span>البيت التاسع والعشرون: إظهار لام الفعل</span><span class="dots"></span><span class="pagenum">162</span></a></li>
 </ul>
 </li>
-<li><a class="part-link" href="#bab5"><span>المثلين والمتقاربين والمتجانسين</span></a>
+<li><a class="part-link" href="#bab5"><span>المثلين والمتقاربين والمتجانسين</span><span class="pagenum">166</span></a>
 <ul>
-<li><a class="chap-link" href="#bab5-v1"><span>البيت الثلاثون: تعريف المثلين</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab5-v2"><span>البيت الحادي والثلاثون: تعريف المتقاربين</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab5-v3"><span>البيت الثاني والثلاثون: تعريف المتجانسين</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab5-v4"><span>البيت الثالث والثلاثون: تقسيم الإدغام إلى صغير وكبير</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab5-v5"><span>البيت الرابع والثلاثون: تعريف الإدغام الكبير</span><span class="dots"></span></a></li>
+<li><a class="chap-link" href="#bab5-v1"><span>البيت الثلاثون: تعريف المثلين</span><span class="dots"></span><span class="pagenum">169</span></a></li>
+<li><a class="chap-link" href="#bab5-v2"><span>البيت الحادي والثلاثون: تعريف المتقاربين</span><span class="dots"></span><span class="pagenum">174</span></a></li>
+<li><a class="chap-link" href="#bab5-v3"><span>البيت الثاني والثلاثون: تعريف المتجانسين</span><span class="dots"></span><span class="pagenum">177</span></a></li>
+<li><a class="chap-link" href="#bab5-v4"><span>البيت الثالث والثلاثون: تقسيم الإدغام إلى صغير وكبير</span><span class="dots"></span><span class="pagenum">180</span></a></li>
+<li><a class="chap-link" href="#bab5-v5"><span>البيت الرابع والثلاثون: تعريف الإدغام الكبير</span><span class="dots"></span><span class="pagenum">183</span></a></li>
 </ul>
 </li>
-<li><a class="part-link" href="#bab6"><span>المدود</span></a>
+<li><a class="part-link" href="#bab6"><span>المدود</span><span class="pagenum">186</span></a>
 <ul>
-<li><a class="chap-link" href="#bab6-v1"><span>البيت الخامس والثلاثون: تقسيم المد إلى أصلي وفرعي</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v2"><span>البيتان السادس والثلاثون والسابع والثلاثون: تعريف المد الطبيعي</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v3"><span>البيت السادس والثلاثون:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v4"><span>البيت السابع والثلاثون:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v5"><span>البيت الثامن والثلاثون: تعريف المد الفرعي وسبباه</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v6"><span>البيت التاسع والثلاثون: حروف المد الثلاثة</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v7"><span>البيت الأربعون: شروط حروف المد</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v8"><span>البيت الحادي والأربعون: حروف اللين</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v9"><span>البيت الثاني والأربعون: أقسام المد باعتبار الحكم</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v10"><span>البيت الثالث والأربعون: المد الواجب المتصل</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v11"><span>البيت الرابع والأربعون: المد الجائز المنفصل</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v12"><span>البيت الخامس والأربعون: المد العارض للسكون</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v13"><span>البيت السادس والأربعون: مد البدل</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v14"><span>البيت السابع والأربعون: المد اللازم</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v15"><span>البيت الثامن والأربعون: أقسام المد اللازم</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v16"><span>البيتان التاسع والأربعون والخمسون: تفصيل أقسام المد اللازم</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v17"><span>البيت التاسع والأربعون:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v18"><span>البيت الخمسون:</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v19"><span>البيت الحادي والخمسون: تعريف المد اللازم الحرفي</span><span class="dots"></span></a></li>
-<li><a class="chap-link" href="#bab6-v20"><span>البيت الثاني والخمسون: المثقل والمخفف في الحرفي</span><span class="dots"></span></a></li>
+<li><a class="chap-link" href="#bab6-v1"><span>البيت الخامس والثلاثون: تقسيم المد إلى أصلي وفرعي</span><span class="dots"></span><span class="pagenum">189</span></a></li>
+<li><a class="chap-link" href="#bab6-v2"><span>البيتان السادس والثلاثون والسابع والثلاثون: تعريف المد الطبيعي</span><span class="dots"></span><span class="pagenum">193</span></a></li>
+<li><a class="chap-link" href="#bab6-v3"><span>البيت السادس والثلاثون:</span><span class="dots"></span><span class="pagenum">198</span></a></li>
+<li><a class="chap-link" href="#bab6-v4"><span>البيت السابع والثلاثون:</span><span class="dots"></span><span class="pagenum">199</span></a></li>
+<li><a class="chap-link" href="#bab6-v5"><span>البيت الثامن والثلاثون: تعريف المد الفرعي وسبباه</span><span class="dots"></span><span class="pagenum">200</span></a></li>
+<li><a class="chap-link" href="#bab6-v6"><span>البيت التاسع والثلاثون: حروف المد الثلاثة</span><span class="dots"></span><span class="pagenum">203</span></a></li>
+<li><a class="chap-link" href="#bab6-v7"><span>البيت الأربعون: شروط حروف المد</span><span class="dots"></span><span class="pagenum">206</span></a></li>
+<li><a class="chap-link" href="#bab6-v8"><span>البيت الحادي والأربعون: حروف اللين</span><span class="dots"></span><span class="pagenum">209</span></a></li>
+<li><a class="chap-link" href="#bab6-v9"><span>البيت الثاني والأربعون: أقسام المد باعتبار الحكم</span><span class="dots"></span><span class="pagenum">212</span></a></li>
+<li><a class="chap-link" href="#bab6-v10"><span>البيت الثالث والأربعون: المد الواجب المتصل</span><span class="dots"></span><span class="pagenum">215</span></a></li>
+<li><a class="chap-link" href="#bab6-v11"><span>البيت الرابع والأربعون: المد الجائز المنفصل</span><span class="dots"></span><span class="pagenum">219</span></a></li>
+<li><a class="chap-link" href="#bab6-v12"><span>البيت الخامس والأربعون: المد العارض للسكون</span><span class="dots"></span><span class="pagenum">223</span></a></li>
+<li><a class="chap-link" href="#bab6-v13"><span>البيت السادس والأربعون: مد البدل</span><span class="dots"></span><span class="pagenum">227</span></a></li>
+<li><a class="chap-link" href="#bab6-v14"><span>البيت السابع والأربعون: المد اللازم</span><span class="dots"></span><span class="pagenum">231</span></a></li>
+<li><a class="chap-link" href="#bab6-v15"><span>البيت الثامن والأربعون: أقسام المد اللازم</span><span class="dots"></span><span class="pagenum">236</span></a></li>
+<li><a class="chap-link" href="#bab6-v16"><span>البيتان التاسع والأربعون والخمسون: تفصيل أقسام المد اللازم</span><span class="dots"></span><span class="pagenum">239</span></a></li>
+<li><a class="chap-link" href="#bab6-v17"><span>البيت التاسع والأربعون:</span><span class="dots"></span><span class="pagenum">242</span></a></li>
+<li><a class="chap-link" href="#bab6-v18"><span>البيت الخمسون:</span><span class="dots"></span><span class="pagenum">243</span></a></li>
+<li><a class="chap-link" href="#bab6-v19"><span>البيت الحادي والخمسون: تعريف المد اللازم الحرفي</span><span class="dots"></span><span class="pagenum">244</span></a></li>
+<li><a class="chap-link" href="#bab6-v20"><span>البيت الثاني والخمسون: المثقل والمخفف في الحرفي</span><span class="dots"></span><span class="pagenum">248</span></a></li>
 </ul>
 </li>
 </ul>
@@ -702,7 +757,7 @@ footer.book-footer{
 <p><strong>القول الثاني:</strong> أنه حرام كالجلي، وهو قول المحققين من المتأخرين، كابن الجزري وغيره، لأن التلاوة سنة متبعة، يجب أن تؤدى كما أنزلت، وقد قال تعالى: ﴿فَاقْرَءُوا مَا تَيَسَّرَ مِنَ الْقُرْآنِ﴾ [المزمل: 20]، أي على الوجه الذي تقرؤونه به. وهذا القول هو الراجح عندي، لأن تعمد الإخلال بالصفات مع القدرة على الإتيان بها يدل على تهاون في كلام الله، والتهاون في كلام الله محرم.</p>
 <p><strong>قلت:</strong> والأولى بالقارئ أن يجتهد في تصحيح تلاوته، وأن لا يفرط في صغيرة ولا كبيرة من أحكام التجويد، فإن القرآن كلام الله، وتلاوته عبادة، والعبادة مبناها على الاتباع، فلا يزاد فيها ولا ينقص. ومن أدى القرآن على وجهه، فله بكل حرف عشر حسنات، كما ورد في الحديث الصحيح. فكيف يفرط المرء في هذا الأجر العظيم؟!</p>
 </div></section>
-<article class="chapter" id="None-v1">
+<article class="chapter" id="muqaddimah-v1">
 <h2 class="chapter-title">البيت الأول: التعريف بالناظم</h2>
 <div class="matn">يَقُولُ رَاجِي رَحْمَةَ الْغَفُورِ ... دَوْمًا سُلَيْمَانُ هُوَ الْجَمْزُورِي</div>
 <h4 class="subsection-title">تحليل البيت لغة وإعرابًا</h4>
@@ -787,7 +842,7 @@ footer.book-footer{
 <h4 class="subsection-title">خاتمة البيت</h4>
 <p>بهذا نكون قد استوفينا القول في شرح البيت الأول، وبينا ما فيه من لطائف وفوائد. واعلم أن هذا البيت مفتتح المنظومة، فهو كالواجهة لها، وقد اشتمل على تعريف الناظم بنفسه، وبيان قصده، ورجائه من الله. وإنما أطلنا في شرحه بعض الشيء لنمهد للطالب أسلوب الشرح، وليعلم أن لكل لفظة في كلام العلماء معنى، ولكل إشارة مغزى. وسنسير على هذا المنوال في بقية الأبيات إن شاء الله.</p>
 </article>
-<article class="chapter" id="None-v2">
+<article class="chapter" id="muqaddimah-v2">
 <h2 class="chapter-title">البيت الثاني: الحمدلة والصلاة</h2>
 <div class="matn">الْحَمْدُ لِلَّهِ مُصَلِّيًا عَلَى ... مُحَمَّدٍ وَآلِهِ وَمَنْ تَلَا</div>
 <h4 class="subsection-title">تحليل البيت لغة وإعرابًا</h4>
@@ -894,7 +949,7 @@ footer.book-footer{
 <h4 class="subsection-title">خاتمة البيت</h4>
 <p>تم لنا بحمد الله شرح البيت الثاني، وبينا ما فيه من مسائل وفوائد. وقد لاحظنا كيف جمع الناظم بين الحمد لله والصلاة على رسوله، وكيف عمم الصلاة لتشمل كل تالٍ للقرآن. وفي هذا دعوة لنا أن نحمد الله على نعمة تعلم القرآن وتجويده، وأن نكثر من الصلاة على النبي صلى الله عليه وسلم، رجاء أن نكون من أهل الله وخاصته. والله الموفق.</p>
 </article>
-<article class="chapter" id="None-v3">
+<article class="chapter" id="muqaddimah-v3">
 <h2 class="chapter-title">البيت الثالث: الإخبار بموضوع النظم</h2>
 <div class="matn">وَبَعْدُ هَذَا النَّظْمُ لِلْمُرِيدِ ... فِي النُّونِ وَالتَّنْوِينِ وَالْمُدُودِ</div>
 <h4 class="subsection-title">تحليل البيت لغة وإعرابًا</h4>
@@ -978,7 +1033,7 @@ footer.book-footer{
 <h4 class="subsection-title">خاتمة البيت</h4>
 <p>بهذا نختم شرح البيت الثالث، وقد عرفنا منه أن النظم موضوع لبيان أحكام النون والتنوين والمدود، وأنه معد للطالب المريد الصادق. وسننتقل بعد هذا إلى شرح الأبيات التي فصّلت هذه الأحكام، مبتدئين بأحكام النون الساكنة والتنوين.</p>
 </article>
-<article class="chapter" id="None-v4">
+<article class="chapter" id="muqaddimah-v4">
 <h2 class="chapter-title">البيت الرابع: تسمية النظم ونسبة العلم إلى الشيخ</h2>
 <div class="matn">سَمَّيْتُهُ بِتُحْفَةِ الْأَطْفَالِ ... عَنْ شَيْخِنَا الْمِيهِيِّ ذِي الْكَمَالِ</div>
 <h4 class="subsection-title">تحليل البيت لغة وإعرابًا</h4>
@@ -1039,7 +1094,7 @@ footer.book-footer{
 <h4 class="subsection-title">خاتمة البيت</h4>
 <p>بهذا نكون قد أنهينا شرح البيت الرابع، وتعرفنا فيه على اسم النظم، وسبب تسميته، وعلى شيخ الناظم وفضله، وأهمية السند في هذا العلم. ونسأل الله أن يجعلنا من أهل القرآن، الذين هم أهل الله وخاصته.</p>
 </article>
-<article class="chapter" id="None-v5">
+<article class="chapter" id="muqaddimah-v5">
 <h2 class="chapter-title">البيت الخامس: بيان مقصد الناظم ورجائه</h2>
 <div class="matn">أَرْجُو بِهِ أَنْ يَنْفَعَ الطُّلَّابَا ... وَالْأَجْرَ وَالْقَبُولَ وَالثَّوَابَا</div>
 <h4 class="subsection-title">تحليل البيت لغة وإعرابًا</h4>
@@ -5342,6 +5397,36 @@ footer.book-footer{
 <footer class="book-footer">
   الموسوعة — أشمل الأقوال في شرح متن تحفة الأطفال · النسخة الملكية الفاخرة · جامعة الملك العالمية · جميع الحقوق محفوظة للمؤلف
 </footer>
+
+<!-- ============================== BACK COVER ============================== -->
+<section class="back-cover">
+  <div class="bc-kicker">سلسلة مؤلفات الإمام أحمد بن إبراهيم السليمي · المجلد (52)</div>
+  <div>
+    <div class="bc-title">الموسوعة — أشمل الأقوال في شرح متن تحفة الأطفال</div>
+    <p class="bc-description">
+      شرحٌ موسّع لمنظومة "تحفة الأطفال والغلمان في تجويد القرآن" للعلامة سليمان الجمزوري رحمه الله تعالى، بيتاً بيتاً، جامعاً ما تيسر من أقوال أهل هذا الفن وتحريراتهم حول أحكام النون الساكنة والتنوين، والميم الساكنة، والمدود، وغيرها من أبواب المنظومة. يسعى هذا العمل إلى تقريب المتن لطالب العلم بأسلوب جامع، مع التنبيه على مواضع الخلاف وأوجه الترجيح حيثما وردت. وهذه الطبعة تُعرض في حدود ما بلغته المخطوطة المتاحة، إذ توقف نصها أثناء الكلام على باب المدود، وتُستكمل الأجزاء الباقية في إصدار لاحق.
+    </p>
+    <div class="motif-rule bc-rule"><span class="diamond"></span></div>
+    <div class="bc-bio-block">
+      <span class="bc-label">عن المؤلف</span>
+      راجي عفو ربه ثم أحمد بن إبراهيم السليمي — <span class="placeholder">تُستكمل السيرة العلمية والمسار الإسنادي من المؤلف عند التسجيل الرسمي للطبعة</span>.
+    </div>
+  </div>
+  <div>
+    <div class="bc-meta">
+      <div class="row"><span class="k">الناشر</span><span>جامعة الملك العالمية — Al-Mulk International University</span></div>
+      <div class="row"><span class="k">السلسلة</span><span>سلسلة مؤلفات الإمام أحمد بن إبراهيم السليمي — المجلد (52)</span></div>
+      <div class="row"><span class="k">الإصدار</span><span>النسخة الملكية الفاخرة</span></div>
+    </div>
+    <div class="bc-bottom">
+      <div class="bc-isbn">رقم الإيداع / ISBN<br>يُستكمل من الناشر</div>
+      <div class="bc-mark">
+        <div class="logo-slot">الشعار</div>
+        جامعة الملك العالمية
+      </div>
+    </div>
+  </div>
+</section>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
