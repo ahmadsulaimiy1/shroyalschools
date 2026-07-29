@@ -291,9 +291,9 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 
 | Color Name | Hex Code | RGB Values | Usage |
 |---|---|---|---|
-| Royal Blue | #1A237E | (26, 35, 126) | Primary color for all materials |
-| Gold | #FFD700 | (255, 215, 0) | Secondary color for accents |
-| Red | #B71C1C | (183, 28, 28) | Accent color for urgency and calls to action |
+| Deep Navy | #122A4E | (18, 42, 78) | Primary color for all materials |
+| Gold | #B08625 | (176, 134, 37) | Secondary color for accents |
+| Ivory | #F7F3E8 | (247, 243, 232) | Tertiary color for backgrounds and panels |
 
 **5.2.2** No person shall:
 
