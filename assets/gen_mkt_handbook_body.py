@@ -50,6 +50,20 @@ Operations and Legal & Compliance Handbooks:
      Institutional Governance Compendium's registry. Corrected for
      consistency.
 
+  4. Found during a later cross-document single-source-of-truth audit
+     (not part of the original editorial review above): MKT-001's Brand
+     Style Guide stated the University's own official colors as Royal
+     Blue #1A237E, Gold #FFD700, and Red #B71C1C, and its approved fonts
+     as Georgia and Times New Roman — neither of which is what any of the
+     nine published covers or tables actually use (Navy #122A4E, Gold
+     #B08625, and the cream table-tint #F7F3E8, per assets/assemble.py's
+     NAVY_HEX/BAND_TINT_HEX; Fraunces display, Source Serif 4 reading,
+     Archivo structural, per build_reference.py). The one document meant
+     to be the authoritative record of the University's own visual
+     identity described a palette and type system nobody had ever built
+     to. Both tables are corrected to the exact values already in use
+     throughout the publication suite.
+
 All cross-references to other University documents (MKT-006's citation of
 the Crisis Management Policy as WAQ-008, MKT-007's citations of the
 Financial Model as OPS-001 and the Student Recruitment Plan as STU-003)
@@ -352,10 +366,10 @@ CONTENT[1] = '''
 
 | Usage | Font | Weight | Size |
 |---|---|---|---|
-| Headings | Georgia | Bold | 18-36pt |
-| Subheadings | Georgia | Bold Italic | 14-18pt |
-| Body Text | Times New Roman | Regular | 11-12pt |
-| Captions | Times New Roman | Italic | 9-10pt |
+| Headings | Fraunces | Black | 22-42pt |
+| Subheadings | Fraunces | SemiBold | 16-20pt |
+| Body Text | Source Serif 4 | Regular | 10.5-11pt |
+| Captions | Archivo | Bold, Small Caps | 9-10pt |
 
 **5.3.2** No person shall use unauthorized fonts.
 

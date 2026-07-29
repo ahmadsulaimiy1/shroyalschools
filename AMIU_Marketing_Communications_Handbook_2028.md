@@ -311,10 +311,10 @@ Certified for Executive Release &#8212; Founding-Decade Edition
 
 | Usage | Font | Weight | Size |
 |---|---|---|---|
-| Headings | Georgia | Bold | 18-36pt |
-| Subheadings | Georgia | Bold Italic | 14-18pt |
-| Body Text | Times New Roman | Regular | 11-12pt |
-| Captions | Times New Roman | Italic | 9-10pt |
+| Headings | Fraunces | Black | 22-42pt |
+| Subheadings | Fraunces | SemiBold | 16-20pt |
+| Body Text | Source Serif 4 | Regular | 10.5-11pt |
+| Captions | Archivo | Bold, Small Caps | 9-10pt |
 
 **5.3.2** No person shall use unauthorized fonts.
 
