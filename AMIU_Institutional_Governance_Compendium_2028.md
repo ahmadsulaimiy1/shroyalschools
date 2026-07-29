@@ -1927,7 +1927,7 @@ Section 14 &#183; 14.3
 |---:|---|---|---|---|
 | 10 | Research & Publication Committee | Dean of Graduate Studies | Research policy, ethics, and publication support | 5 Faculty |
 | 11 | Library & Learning Resources Committee | University Librarian | Library services, digital resources, LMS oversight | 3 Faculty |
-| 12 | Information Technology Committee | Chief Information Officer | IT strategy, LMS, data security oversight | 5 Members |
+| 12 | Information Technology Committee | Director, Information Technology | IT strategy, LMS, data security oversight | 5 Members |
 | 13 | Health, Safety & Emergency Response Committee | Director of Facilities | Campus safety, health standards, emergency planning | Multi-departmental |
 | 14 | Internationalization Committee | Director, International Operations | International partnerships and branch campus strategy | 5 Members |
 
@@ -2011,7 +2011,7 @@ Section 15 &#183; 15.2
 |---:|---|---|---|
 | 23 | AMIU Graduate School | Dean of Graduate Studies | Coordination of all postgraduate programs |
 | 24 | Office of Institutional Planning | Director | Strategic planning, policy coordination, performance monitoring |
-| 25 | Office of Internal Audit & Risk | Director / Chief Risk Officer | Risk management, internal audit, compliance monitoring |
+| 25 | Office of Internal Audit & Risk | Chair, Audit & Risk Committee | Risk management, internal audit, compliance monitoring |
 | 26 | Office of Procurement & Contracts | Director | Purchasing, vendor management, contract administration |
 | 27 | Office of Student Support Services | Director | Student counseling, mental health, disability services |
 | 28 | Office of the University Secretary | Secretary to the Senate | Governance support; secretariat to the Senate and Board |
@@ -2033,7 +2033,7 @@ Section 15 &#183; 15.3
 | 16 | Executive Committee | Chair, Board of Trustees | Acts on behalf of the Board between meetings | Board Officers |
 | 17 | Governance & Nominating Committee | Trustee | Board governance, trustee nomination, policy review | 3 Trustees |
 | 18 | Staff Welfare Committee | Director of Human Resources | Staff wellness, professional development, engagement | Staff Representatives |
-| 19 | Budget & Planning Committee | Chief Financial Officer | Budget planning, resource allocation, financial reporting | Multi-departmental |
+| 19 | Budget & Planning Committee | Deputy Vice-Chancellor, Administration & Finance | Budget planning, resource allocation, financial reporting | Multi-departmental |
 
 *Total: 19 Committees*
 
