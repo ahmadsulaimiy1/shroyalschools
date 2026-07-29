@@ -46,6 +46,31 @@ systemic defects were:
      clause). Removed as the same phantom-title defect already corrected
      in the Institutional Governance Compendium.
 
+  4. Restructured later, at the user's explicit direction: OPS-010's
+     original Section 6.0 (Salary Structure) set rigid, mandatory dollar
+     bands for every rank and role — e.g. "President & Vice-Chancellor:
+     $100,000–$150,000" — with "No person shall set compensation outside
+     the approved ranges." Two problems: this contradicts the
+     Constitution's own Article 14, Section 14.3, which deliberately
+     leaves compensation to Board discretion with no fixed figures; and
+     it is financially impossible against the Strategic Implementation
+     Blueprint's own Year-1 Payroll model (roughly $45,000 total across
+     all payroll categories combined, per the 20%-of-gross-revenue
+     Payroll allocation in the Financial Model, OPS-001) — a single
+     mandatory executive salary floor would have exceeded the entire
+     founding-decade payroll pool. Rewritten as a four-category personnel
+     framework (Volunteer / Adjunct-Part-Time / Contract / Permanent
+     Faculty, plus a parallel Senate Compensation Model distinguishing
+     Volunteer, Contract, and Executive Senate Members), replacing every
+     fixed salary band with Board-discretion language, and adding a
+     discretionary Allowance Framework, an Awards and Recognition
+     section, and a Revenue Participation Framework — all explicitly
+     non-guaranteed and subject to annual Board review. This was the only
+     place across all nine publications where a rigid, unfunded-liability
+     compensation figure existed; the Constitution, the Payroll Policy
+     (OPS-006, ratio-based), and the Blueprint's own honoraria modeling
+     were already principle- or ratio-based and needed no change.
+
 Formatting is normalized to house style (numbered outline points become
 bold-numbered paragraphs, ALL-CAPS section headers become sentence case)
 but no provision, clause, or numbered point from the source is cut,
@@ -208,11 +233,12 @@ POLICIES = [
    ("8.0","Enforcement"),("9.0","Related Documents"),("10.0","Effective Date")]),
  (10, "OPS-010", "Compensation Policy", "Director, Human Resources", "Office of Human Resources",
   "Constitution Article 14, Section 14.3",
-  "Published salary ranges, annual market benchmarking, and merit increases tied to performance, not favor.",
+  "Four categories of service, Board-determined compensation within each, and a discretionary allowance and recognition framework that never becomes a fixed liability.",
   [("1.0","Purpose"),("2.0","Scope"),("3.0","Definitions"),("4.0","Policy Statement"),
-   ("5.0","Compensation Philosophy"),("6.0","Salary Structure"),("7.0","Compensation Determination"),
-   ("8.0","Market Benchmarking"),("9.0","Merit Increases"),("10.0","Enforcement"),
-   ("11.0","Related Documents"),("12.0","Effective Date")]),
+   ("5.0","Personnel Categories"),("6.0","Compensation Principles"),("7.0","Allowance Framework"),
+   ("8.0","Awards and Recognition"),("9.0","Revenue Participation Framework"),
+   ("10.0","Market Benchmarking"),("11.0","Merit Increases"),("12.0","Enforcement"),
+   ("13.0","Related Documents"),("14.0","Effective Date")]),
  (11, "OPS-011", "Leave Policy", "Director, Human Resources", "Office of Human Resources",
   "Constitution Article 9, Section 9.1",
   "Fifteen days of annual leave, ten of sick leave, and unpaid religious and parental leave that no employee is denied.",
@@ -2009,137 +2035,241 @@ CONTENT[9] = '''
 CONTENT[10] = '''
 ## 1.0 Purpose
 
-**1.1** The purpose of this Policy is to establish the definitive, binding, and comprehensive compensation philosophy, salary structure, and administration standards for all employees.
+**1.1** The purpose of this Policy is to establish the definitive, binding, and comprehensive compensation philosophy, personnel categories, and discretionary allowance and recognition framework for every person who serves the University in any capacity.
 
 **1.2** This Policy ensures:
 
-**1.2.1** Fair, consistent, and competitive compensation for all employees;
+**1.2.1** That compensation reflects the University's identity as a religious, mission-driven, non-profit, Waqf-oriented institution serving the Ummah;
 
-**1.2.2** Transparency in compensation decisions;
+**1.2.2** That no provision of this Policy creates a guaranteed salary obligation the University cannot sustain if enrollment, donations, grants, or Waqf income fluctuate;
 
-**1.2.3** Legal compliance with all applicable wage and hour laws;
+**1.2.3** That the Board of Trustees retains full discretion over every compensation decision, consistent with Constitution Article 14, Section 14.3;
 
-**1.2.4** That no employee receives unauthorized compensation.
+**1.2.4** Fair, transparent, and mission-aligned treatment of every person who serves the University, whether as a volunteer, on a part-time or contract basis, or as permanent staff or faculty;
+
+**1.2.5** Legal compliance with all applicable wage and hour laws;
+
+**1.2.6** That no person receives unauthorized compensation.
 
 ## 2.0 Scope
 
-**2.1** This Policy applies to all employees.
+**2.1** This Policy applies to:
+
+**2.1.1** All employees of the University;
+
+**2.1.2** All volunteers serving the University in any capacity;
+
+**2.1.3** All faculty, regardless of category;
+
+**2.1.4** All members of University governance bodies who receive compensation, honoraria, allowances, or stipends for their service.
+
+**2.2** No person is exempt from the requirements of this Policy.
 
 ## 3.0 Definitions
 
-**3.1 Compensation.** The total remuneration paid to an employee, including base salary, benefits, and incentives.
+**3.1 Compensation.** Any base salary, honorarium, stipend, fee, allowance, award, or revenue-participation payment provided in exchange for service to the University.
 
-**3.2 Salary Structure.** The framework of salary ranges for different positions.
+**3.2 Volunteer.** A person serving the University primarily for religious service, da'wah, community contribution, or charitable participation, without an employment relationship or guarantee of payment.
 
-**3.3 Market Benchmarking.** The process of comparing salaries to market rates.
+**3.3 Adjunct/Part-Time Faculty.** Faculty compensated through teaching stipends, course-delivery payments, supervision fees, examination fees, project fees, research grants, or approved allowances, whose compensation may vary significantly by assignment.
 
-**3.4 Merit Increase.** A salary increase based on performance.
+**3.4 Contract Faculty.** Faculty compensated according to a fixed-term contract that specifies duration, workload, responsibilities, qualifications, and available institutional resources.
+
+**3.5 Permanent Faculty.** Faculty holding an indefinite appointment, eligible for base salary, performance incentives, allowances, grants, revenue participation, and research support, each as determined under this Policy.
+
+**3.6 Allowance.** A discretionary, policy-based payment made to offset a specific category of expense incurred in service to the University, not a component of base salary.
+
+**3.7 Honorarium.** A discretionary payment made in recognition of service, distinct from a salary and carrying no expectation of continuation or increase.
+
+**3.8 Revenue Participation.** A discretionary, Board-approved share of programme surplus, executive education revenue, research revenue, or approved grants awarded to a selected permanent academic leader in recognition of performance.
+
+**3.9 Market Benchmarking.** The process of comparing compensation to market rates at peer institutions, used to inform, not bind, the Board's compensation decisions.
+
+**3.10 Merit Increase.** A discretionary compensation increase based on performance, awarded from a pool the Board determines is affordable each year.
 
 ## 4.0 Policy Statement
 
-**4.1** Compensation shall be administered in accordance with this policy.
+**4.1** Compensation for every category of person described in this Policy shall be determined by the Board of Trustees upon recommendation of the President and the Finance Committee, consistent with Constitution Article 14, Section 14.3.
 
-**4.2** No person shall receive unauthorized compensation.
+**4.2** No provision of this Policy shall be construed to guarantee any person a fixed salary, allowance, award, or revenue-participation payment irrespective of the University's financial condition.
 
-**4.3** No person shall set compensation levels without proper authority.
+**4.3** No person shall receive unauthorized compensation.
 
-**4.4** All compensation decisions shall be based on market data and performance.
+**4.4** No person shall set compensation levels without proper authority.
 
-## 5.0 Compensation Philosophy
+**4.5** All compensation decisions shall take into account institutional resources, financial sustainability, workload, qualifications, responsibilities, performance, market conditions, and mission alignment.
 
-**5.1** The University's compensation philosophy is based on:
+**4.6** No person shall represent any category of service described in this Policy as an employment relationship where it is not one.
 
-**5.1.1 Mission-Driven Service.** Compensation is framed as acknowledgment of service;
+## 5.0 Personnel Categories
 
-**5.1.2 Fairness and Transparency.** Compensation is transparent and published annually;
+**5.1 Category A — Volunteers.**
 
-**5.1.3 Sustainability.** Compensation structures are sustainable over the long term;
+**5.1.1** Volunteers serve primarily for religious service, da'wah, community contribution, or charitable participation and are not employees of the University.
 
-**5.1.4 Market Competitiveness.** Compensation is competitive to attract qualified personnel.
+**5.1.2** A Volunteer may receive no compensation, occasional gifts, discretionary stipends, approved allowances, and awards and recognition under Section 8.0.
 
-## 6.0 Salary Structure
+**5.1.3** No guarantee of salary shall exist for a Volunteer, and no person shall represent a Volunteer as an employee.
 
-**6.1** Salary structure:
+**5.2 Category B — Adjunct/Part-Time Faculty.**
 
-**6.1.1 Faculty Honoraria.**
+**5.2.1** Adjunct and part-time faculty are compensated through teaching stipends, course-delivery payments, supervision fees, examination fees, project fees, research grants, and approved allowances.
 
-**6.1.1.1** Assistant Professor: $30,000–$45,000;
+**5.2.2** Compensation for Adjunct/Part-Time Faculty may vary significantly by course load, subject area, and assignment, as determined under Section 6.0.
 
-**6.1.1.2** Associate Professor: $45,000–$60,000;
+**5.3 Category C — Contract Faculty.**
 
-**6.1.1.3** Professor: $60,000–$80,000.
+**5.3.1** Contract Faculty are compensated according to their contract's duration, workload, responsibilities, qualifications, performance, and available institutional resources.
 
-**6.1.2 Administrative Salaries.**
+**5.3.2** No provision of this Policy or any other University policy shall lock the University into a compensation commitment beyond what a Contract Faculty member's contract specifies.
 
-**6.1.2.1** President & Vice-Chancellor: $100,000–$150,000;
+**5.4 Category D — Permanent Faculty.**
 
-**6.1.2.2** Deputy Vice-Chancellor: $75,000–$100,000;
+**5.4.1** Permanent Faculty may receive base salary, performance incentives, allowances, grants, revenue participation, leadership stipends, and research support, each subject to the Board's discretion under this Policy.
 
-**6.1.2.3** Director: $50,000–$75,000.
+**5.5 Senate Compensation Model.**
 
-**6.1.3 Staff Salaries.**
+**5.5.1** Membership in the University Senate does not, by itself, imply any salary.
 
-**6.1.3.1** Senior Staff: $40,000–$60,000;
+**5.5.2** A Volunteer Senate Member shall receive no salary, but may receive meeting honoraria where approved and approved allowances.
 
-**6.1.3.2** Staff: $25,000–$40,000;
+**5.5.3** A Contract Senate Member's compensation shall be based on the actual duties the member performs for the University, under that member's contract.
 
-**6.1.3.3** Support Staff: $15,000–$25,000.
+**5.5.4** An Executive Senate Member (a Senate seat held by virtue of an executive administrative appointment, such as the President & Vice-Chancellor or a Deputy Vice-Chancellor) shall be compensated according to that member's employment contract, not according to Senate membership itself.
 
-**6.2** Salary ranges shall be reviewed annually.
+## 6.0 Compensation Principles
 
-**6.3** No person shall set compensation outside the approved ranges.
+**6.1** The University's compensation philosophy is based on:
 
-## 7.0 Compensation Determination
+**6.1.1 Mission-Driven Service.** Compensation is framed first as acknowledgment of service to the University's mission and to the Ummah;
 
-**7.1** Compensation shall be determined based on:
+**6.1.2 Board Discretion.** Every compensation decision preserves the Board of Trustees' discretion and is never a self-executing entitlement;
 
-**7.1.1** Position level;
+**6.1.3 Fairness and Transparency.** Compensation decisions are made consistently and are transparent to the persons affected by them;
 
-**7.1.2** Experience and qualifications;
+**6.1.4 Sustainability.** No compensation commitment may be made that could render the University unable to meet its obligations if enrollment, donations, grants, or Waqf income decline;
 
-**7.1.3** Performance;
+**6.1.5 Mission-Aligned Competitiveness.** Compensation, taken together with the opportunities described in Section 8.0, is designed to attract qualified personnel without competing on salary alone.
 
-**7.1.4** Market rates.
+**6.2** Compensation for each Category described in Section 5.0 shall be determined by the Board of Trustees upon recommendation of the President and the Finance Committee, taking into consideration:
 
-**7.2** No person shall determine compensation without proper authority.
+**6.2.1** Institutional resources and financial sustainability;
 
-## 8.0 Market Benchmarking
+**6.2.2** Workload, qualifications, and responsibilities;
 
-**8.1** The University shall conduct market benchmarking annually.
+**6.2.3** Performance;
 
-**8.2** Benchmarking shall compare salaries to:
+**6.2.4** Market conditions, informed by the benchmarking described in Section 10.0;
 
-**8.2.1** Similar positions in peer institutions;
+**6.2.5** Mission alignment.
 
-**8.2.2** Regional market rates.
+**6.3** No Constitution provision, University policy, or contract shall state a fixed minimum or maximum compensation figure for any rank or role as a binding, self-executing entitlement; compensation figures the Board adopts from time to time under this Section are administrative guidance, not contractual guarantees, and remain subject to annual review and Board discretion.
 
-**8.3** No person shall set compensation without reference to market data.
+**6.4** No person shall set compensation without the authority this Policy grants.
 
-## 9.0 Merit Increases
+## 7.0 Allowance Framework
 
-**9.1** Merit increases shall be based on performance reviews.
+**7.1** Allowances are discretionary, policy-based payments approved by the Board of Trustees upon recommendation of the President and the Finance Committee, subject to available institutional resources. No allowance described in this Section creates a guaranteed entitlement.
 
-**9.2** The annual merit increase pool shall be determined by the Board.
+**7.2 Connectivity Allowance.** For internet and digital-teaching expenses incurred by faculty and staff delivering instruction or performing duties online.
 
-**9.3** No person shall receive unauthorized merit increases.
+**7.3 Communication Allowance.** For institutional calls and communications incurred in the course of University service.
 
-## 10.0 Enforcement
+**7.4 Research & Publication Allowance.** For books, journal-publication fees, conference participation, and academic projects.
 
-**10.1** No person shall violate any provision of this Policy.
+**7.5 Healthcare Support Allowance.** Subject to this Policy and to available institutional resources.
 
-**10.2** Violation of this Policy shall result in disciplinary action in accordance with applicable University policies.
+**7.6 Professional Development Allowance.** For certifications, training, workshops, and seminars.
 
-**10.3** The Director, Human Resources shall ensure compliance with this Policy.
+**7.7 Technology Allowance.** For laptops, devices, software, and teaching equipment.
 
-## 11.0 Related Documents
+**7.8** The Board of Trustees shall set and periodically revise the amount or range of each allowance described in this Section, published in the HR Policies & Procedures Manual (OPS-007).
 
-**11.1** Constitution Article 14 (Financial Sustainability)
+**7.9** No person shall claim an allowance described in this Section without proper authorization.
 
-**11.2** HR Policies & Procedures Manual (OPS-007)
+## 8.0 Awards and Recognition
 
-## 12.0 Effective Date
+**8.1 Academic Excellence Award.** For exceptional academic contribution. May include a cash award, a research grant, conference sponsorship, or honorary recognition, as the Board of Trustees determines.
 
-**12.1** This Policy is effective as of 1 January 2028.
+**8.2 Service to the Ummah Award.** For exceptional religious service. May include recognition, grant support, travel sponsorship, or institutional honor, as the Board of Trustees determines.
+
+**8.3** No award described in this Section is a recurring entitlement; each award is granted at the Board's discretion for the specific contribution it recognizes.
+
+**8.4** The University's value proposition to prospective and current scholars includes a global teaching platform, international student reach, academic freedom within the University's mission, research opportunities, publication support, recognition, an opportunity for Islamic service, leadership opportunities, grants, stipends, awards, flexible contracts, and remote-participation options, in addition to any compensation described elsewhere in this Policy.
+
+**8.5** No person shall represent any award described in this Section as a guaranteed or recurring payment.
+
+## 9.0 Revenue Participation Framework
+
+**9.1** The Board of Trustees may, at its discretion, approve a revenue-participation arrangement for a selected Permanent Faculty member holding an academic leadership role, drawn from:
+
+**9.1.1** A percentage of programme surplus;
+
+**9.1.2** A percentage of executive education revenue;
+
+**9.1.3** A percentage of research revenue;
+
+**9.1.4** A percentage of approved grants;
+
+**9.1.5** A performance-incentive pool.
+
+**9.2** Every revenue-participation arrangement shall be:
+
+**9.2.1** Transparent, and disclosed to the Board of Trustees in full;
+
+**9.2.2** Approved by the Board of Trustees before it takes effect;
+
+**9.2.3** Legally compliant with the University's non-profit status;
+
+**9.2.4** Financially sustainable, assessed against the same zero-deficit standard as the Financial Model (OPS-001).
+
+**9.3** No revenue-participation arrangement shall guarantee a fixed percentage in perpetuity; every arrangement remains subject to annual Board review and may be adjusted or discontinued at the Board's discretion.
+
+**9.4** No person shall enter into or represent a revenue-participation arrangement without Board approval.
+
+## 10.0 Market Benchmarking
+
+**10.1** The University shall conduct market benchmarking annually to inform, not bind, the Board's compensation decisions under Section 6.0.
+
+**10.2** Benchmarking shall compare compensation to:
+
+**10.2.1** Similar positions at peer institutions;
+
+**10.2.2** Regional market rates;
+
+**10.2.3** The compensation practices of comparable religious and mission-driven non-profit institutions.
+
+**10.3** No person shall set compensation without reference to the benchmarking described in this Section, and no benchmarking result binds the Board beyond the discretion described in Section 6.0.
+
+## 11.0 Merit Increases
+
+**11.1** Merit increases shall be based on performance reviews.
+
+**11.2** The annual merit-increase pool, if any, shall be determined by the Board of Trustees based on institutional resources and financial sustainability.
+
+**11.3** No person shall receive an unauthorized merit increase.
+
+## 12.0 Enforcement
+
+**12.1** No person shall violate any provision of this Policy.
+
+**12.2** Violation of this Policy shall result in disciplinary action in accordance with applicable University policies.
+
+**12.3** The Director, Human Resources shall ensure compliance with this Policy.
+
+## 13.0 Related Documents
+
+**13.1** Constitution Article 14, Section 14.3 (Compensation)
+
+**13.2** Financial Model (OPS-001)
+
+**13.3** Payroll Policy (OPS-006)
+
+**13.4** HR Policies & Procedures Manual (OPS-007)
+
+## 14.0 Effective Date
+
+**14.1** This Policy is effective as of 1 January 2028.
 '''
 
 CONTENT[11] = '''
