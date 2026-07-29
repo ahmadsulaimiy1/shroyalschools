@@ -1,13 +1,21 @@
 # AMIU Publications — Editorial & Governance Review Log
 
 **Internal record only. This file is not assembled into, referenced by, or
-distributed as part of any of the five published AMIU documents.** It exists
+distributed as part of any of the nine published AMIU documents.** It exists
 so the review history that previously appeared as "Publication Certification
 Statement" sections inside the published documents is preserved somewhere,
 without the published documents themselves narrating their own drafting and
-correction history. The five publications now read as final, authoritative
+correction history. The nine publications now read as final, authoritative
 institutional documents; this log is where "what was found and why it was
 changed" lives instead.
+
+The per-policy citation and approval-authority fixes for the Operations,
+Legal & Compliance, Marketing & Communications, and Waqf & Research
+Handbooks are documented in full in each handbook's own generator script
+(assets/gen_ops_handbook_body.py, gen_leg_handbook_body.py,
+gen_mkt_handbook_body.py, gen_waq_handbook_body.py) rather than duplicated
+here, following the same "what was found and why" standard as the entries
+below.
 
 Each entry below records what a review found, what was changed, and why —
 exactly as previously disclosed inside the relevant publication's own back
@@ -283,6 +291,63 @@ behavioral standard and its baseline enforcement mechanism, while STU-023 is
 the deeper, dedicated disciplinary framework the Compendium's registry lists
 as its own separate document (item 53). Retained in full in both, as
 supplied, rather than cut from either.
+
+---
+
+## Cross-Document Single-Source-of-Truth Audit (all nine publications)
+
+With all nine flagship publications in place, a separate audit pass checked
+for drift between documents rather than within any one of them — the same
+committee names, titles, colors, fonts, and facts should read identically
+wherever they appear across the whole family.
+
+**Issues found and corrected:**
+- **Brand Style Guide (MKT-001) colors and fonts didn't match reality.**
+  The policy stated the University's official colors as Royal Blue
+  #1A237E, Gold #FFD700, and Red #B71C1C, and its approved fonts as
+  Georgia and Times New Roman — none of which any of the nine published
+  covers or tables actually use. Corrected to the exact values already in
+  use throughout the suite (Navy #122A4E, Gold #B08625, cream table-tint
+  #F7F3E8; Fraunces display, Source Serif 4 reading, Archivo structural),
+  sourced directly from assets/assemble.py and assets/build_reference.py
+  rather than re-guessed.
+- **Two conflicting official taglines.** The Strategic Implementation
+  Blueprint's cover, back cover, copyright/trademark notice, and Section 29
+  all asserted "Spreading Islamic Education Worldwide, at Every Pace" as
+  the University's tagline and the phrase filed for USPTO trademark
+  protection. The Constitution (Article 3.4.1) and the Brand Style Guide
+  both say the tagline is "Knowledge Without Barriers" — which is also
+  what appears on the back cover of all eight other publications. Aligned
+  the Blueprint to the Constitution in all four places the old tagline
+  appeared.
+- **A documented fix that had regressed.** An earlier review (see the
+  Compendium's entry above) found and corrected a phantom "Chief Financial
+  Officer" title in the Year-10 Committee Roster (Budget & Planning
+  Committee) to "Deputy Vice-Chancellor, Administration & Finance" — but
+  the live generator (assets/gen_igc_body.py) still had the unfixed title;
+  the documented correction had never actually landed in the source that
+  regenerates the document. Corrected for real this time, and re-verified
+  in the rendered PDF, not just the source file.
+- **The same pattern, twice more, not previously caught.** The Year-5
+  Committee Roster's Information Technology Committee listed "Chief
+  Information Officer" as chair — a title used nowhere else across any
+  publication, where every IT-related policy and office consistently uses
+  "Director, Information Technology." And the Offices Roster listed
+  "Office of Internal Audit & Risk"'s head as "Director / Chief Risk
+  Officer" — directly contradicting the Blueprint's own explicit,
+  deliberate governance decision that "No Chief Risk Officer exists in the
+  founding decade," with risk ownership assigned instead to the Board
+  Audit & Risk Committee. Both corrected — the first to "Director,
+  Information Technology", the second to "Chair, Audit & Risk Committee",
+  matching the title already used five times across the Waqf & Research
+  Handbook's risk-trio policies.
+
+**Method:** doc-code cross-references were checked programmatically against
+igc_data.py's registry across all six policy handbooks (164 references
+checked, only two false positives from docstring prose, zero real
+mismatches); titles, colors, fonts, and the tagline were checked by direct
+grep across every source file rather than sampling. This is an ongoing
+process, not a closed one — later passes may find more.
 
 ---
 
