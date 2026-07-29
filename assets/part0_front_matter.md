@@ -33,7 +33,7 @@
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="60"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="27"/></w:rPr><w:t>2028&#8211;2050</w:t></w:r></w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="19"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="19"/></w:rPr><w:t>&#8220;Knowledge Without Barriers&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="17"/></w:rPr><w:t xml:space="preserve">Document Reference  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:b/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="17"/></w:rPr><w:t>AMIU-SB-002</w:t></w:r>
@@ -89,7 +89,7 @@ This Blueprint (AMIU-SB-002) and its companion Ten-Year Master Plan & Strategic 
 
 All financial figures, enrollment projections, and revenue trajectories beyond the audited founding-decade baseline are explicitly labeled as illustrative, directional, and contingent on the accreditation and enrollment milestones described herein. Nothing in this document constitutes a guarantee of future financial performance, accreditation outcome, or regulatory approval in any jurisdiction, including but not limited to The Gambia, the Federal Republic of Nigeria, or any Gulf Cooperation Council member state.
 
-The Al-Mulk International University name, wordmark, tagline "Spreading Islamic Education Worldwide, at Every Pace," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
+The Al-Mulk International University name, wordmark, tagline "Knowledge Without Barriers," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
 
 **Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system — a three-role editorial type system (Fraunces display, Source Serif 4 reading, Archivo structural), navy/gold institutional palette.
 

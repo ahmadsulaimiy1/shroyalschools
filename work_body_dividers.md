@@ -2109,7 +2109,7 @@ Part VI · Section 29
 
 **Rationale**
 
-AMIU's brand assets — the name, tagline ("Spreading Islamic Education Worldwide, at Every Pace"), the ISLAMIC seven-value message architecture, the domain, and the filed USPTO trademark — are already adopted and constitute the institution's core strategic asset. As AMIU scales across geography (Gambia, Nigeria, Gulf), tuition tiers, and eventually a secular-school pathway (Year 11+), the brand must extend consistently without dilution or the appearance of unequal quality.
+AMIU's brand assets — the name, tagline ("Knowledge Without Barriers"), the ISLAMIC seven-value message architecture, the domain, and the filed USPTO trademark — are already adopted and constitute the institution's core strategic asset. As AMIU scales across geography (Gambia, Nigeria, Gulf), tuition tiers, and eventually a secular-school pathway (Year 11+), the brand must extend consistently without dilution or the appearance of unequal quality.
 
 **Global Best Practices**
 

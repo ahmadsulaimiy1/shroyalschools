@@ -33,7 +33,7 @@
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="500" w:after="60"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="27"/></w:rPr><w:t>2028&#8211;2050</w:t></w:r></w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="900"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="19"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="8C97AB"/><w:sz w:val="19"/></w:rPr><w:t>&#8220;Knowledge Without Barriers&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="60"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="8C97AB"/><w:sz w:val="17"/></w:rPr><w:t xml:space="preserve">Document Reference  </w:t></w:r><w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:b/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="17"/></w:rPr><w:t>AMIU-SB-002</w:t></w:r>
@@ -89,7 +89,7 @@ This Blueprint (AMIU-SB-002) and its companion Ten-Year Master Plan & Strategic 
 
 All financial figures, enrollment projections, and revenue trajectories beyond the audited founding-decade baseline are explicitly labeled as illustrative, directional, and contingent on the accreditation and enrollment milestones described herein. Nothing in this document constitutes a guarantee of future financial performance, accreditation outcome, or regulatory approval in any jurisdiction, including but not limited to The Gambia, the Federal Republic of Nigeria, or any Gulf Cooperation Council member state.
 
-The Al-Mulk International University name, wordmark, tagline "Spreading Islamic Education Worldwide, at Every Pace," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
+The Al-Mulk International University name, wordmark, tagline "Knowledge Without Barriers," and the seven-tier ISLAMIC values framework are institutional assets of Al-Mulk International University, filed for trademark protection under USPTO Class 41.
 
 **Typesetting & Publication Design:** Prepared in-house by the AMIU Office of Institutional Planning, using the AMIU institutional style system — a three-role editorial type system (Fraunces display, Source Serif 4 reading, Archivo structural), navy/gold institutional palette.
 
@@ -516,62 +516,62 @@ This document is organized in eight parts — Governance & Institutional Foundat
 | **List of Charts** | **25** |
 | **List of Diagrams** | **26** |
 | **List of Flowcharts** | **26** |
-| **List of Tables** | **27** |
-| **List of Abbreviations** | **31** |
+| **List of Tables** | **30** |
+| **List of Abbreviations** | **34** |
 | **Glossary** | **35** |
 | **Part I — Governance & Institutional Foundations** | **42** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 43 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 47 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 50 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 54 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 58 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 1: Institutional Vision | 46 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 2: Mission, Values, and Identity | 49 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 3: Governance Framework | 53 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 4: Senate Structure | 57 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 5: Board Structure | 61 |
 | **Part II — Organizational & Academic Structure** | **63** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 64 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 68 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 72 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 75 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 79 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 6: Organizational Chart | 67 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 7: Academic Master Plan | 71 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 8: College Structure | 74 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 9: Faculty Structure | 78 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 10: Department Structure | 81 |
 | **Part III — Curriculum & Student Journey** | **83** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 84 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 87 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 92 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 96 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 100 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 11: Program Portfolio | 86 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 12: Curriculum Architecture | 91 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 13: Student Journey Map | 95 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 14: Admission Policies | 99 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 15: Faculty Recruitment Strategy | 103 |
 | **Part IV — Research, Publishing, Partnerships & Accreditation** | **105** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 106 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 109 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 112 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 116 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 119 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 16: Research Strategy | 108 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 17: Publishing Strategy | 111 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 18: Global Partnerships Strategy | 115 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 19: Accreditation Roadmap | 118 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 20: ISO 21001 Roadmap | 123 |
 | **Part V — Digital Infrastructure, AI & Waqf Development** | **125** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 126 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 129 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 132 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 135 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 138 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 21: LMS Ecosystem | 128 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 22: AI Strategy | 131 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 23: Digital Transformation Strategy | 134 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 24: Library Strategy | 137 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 25: Waqf Development Strategy | 142 |
 | **Part VI — Financial Growth, Marketing & Branding** | **144** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 145 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 148 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 151 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 154 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 157 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 26: Scholarship Strategy | 147 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 27: Revenue Diversification Strategy | 150 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 28: Marketing Strategy | 153 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 29: Branding Strategy | 156 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 30: International Expansion Strategy | 159 |
 | **Part VII — Regional Campuses & Student Lifecycle** | **161** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 162 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 165 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 168 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 171 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 174 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 31: Nigeria Campus Strategy | 164 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 32: Gulf Cooperation Strategy | 167 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 33: Student Support Framework | 170 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 34: Alumni Framework | 173 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 35: Career Development Framework | 176 |
 | **Part VIII — Risk, Compliance, Sustainability & the 20-Year Roadmap** | **178** |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 179 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 186 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 191 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 196 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 203 |
-| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 210 |
-| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **221** |
-| **Appendix B — Master Plan Exhibit Checklist** | **223** |
-| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **224** |
-| **Appendix D — Program Catalog Reference** | **225** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 36: Risk Management Framework | 185 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 37: Compliance Framework | 190 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 38: Financial Sustainability Framework | 195 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 39: Capital Development Framework | 202 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 40: Twenty-Year Strategic Roadmap | 209 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Section 41: Founding Access & Waqf-First Strategy | 220 |
+| **Appendix A — Cross-Reference to the Ten-Year Master Plan (AMIU-MP-001)** | **222** |
+| **Appendix B — Master Plan Exhibit Checklist** | **224** |
+| **Appendix C — Fixed Revenue Allocation Framework: Quick Reference** | **225** |
+| **Appendix D — Program Catalog Reference** | **231** |
 | **References** | **229** |
 | **Index** | **229** |
 
@@ -790,6 +790,7 @@ This Blueprint contains 101 tables across its forty-one sections. The thirty tab
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part I — Governance &amp; Institutional Foundations</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1155,6 +1156,7 @@ By Year 3: all six advisory/committee roles filled with documented skills-based 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part II — Organizational &amp; Academic Structure</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -1576,6 +1578,7 @@ Every department's CH-based budget reconciles annually to the Faculty Honoraria 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part III — Curriculum &amp; Student Journey</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2007,6 +2010,7 @@ By 2030: founding faculty core fully isnād-verified. By 2037: Senior Scholar/Ch
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part IV — Research, Publishing, Partnerships &amp; Accreditation</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2322,6 +2326,7 @@ Feasibility check: Year 1 (2028) OpEx is $11,237 (5% of $224,747 revenue) alone;
 </w:p>
 <w:p><w:pPr><w:spacing w:before="360" w:after="0"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="24" w:color="B08625"/></w:pBdr></w:pPr></w:p>
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part V — Digital Infrastructure, AI &amp; Waqf Development</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2679,6 +2684,7 @@ By Year 10 (2037): Strategic Business Reserve at $1,240,527 cumulative, all five
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part VI — Financial Growth, Marketing &amp; Branding</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -2893,7 +2899,7 @@ Part VI · Section 29
 
 **Rationale**
 
-AMIU's brand assets — the name, tagline ("Spreading Islamic Education Worldwide, at Every Pace"), the ISLAMIC seven-value message architecture, the domain, and the filed USPTO trademark — are already adopted and constitute the institution's core strategic asset. As AMIU scales across geography (Gambia, Nigeria, Gulf), tuition tiers, and eventually a secular-school pathway (Year 11+), the brand must extend consistently without dilution or the appearance of unequal quality.
+AMIU's brand assets — the name, tagline ("Knowledge Without Barriers"), the ISLAMIC seven-value message architecture, the domain, and the filed USPTO trademark — are already adopted and constitute the institution's core strategic asset. As AMIU scales across geography (Gambia, Nigeria, Gulf), tuition tiers, and eventually a secular-school pathway (Year 11+), the brand must extend consistently without dilution or the appearance of unequal quality.
 
 **Global Best Practices**
 
@@ -2994,6 +3000,7 @@ Gambia's $50,000 ceiling is a hard, Board-approved cap drawn from the Liquidity 
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part VII — Regional Campuses &amp; Student Lifecycle</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -3315,6 +3322,7 @@ Documented placement outcomes from Cohort 1 onward; MOU network growth year-over
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:spacing w:before="0" w:after="0"/><w:pBdr><w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:pBdr><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr></w:pPr><w:r><w:rPr><w:vanish/><w:sz w:val="2"/></w:rPr><w:t>Part VIII — Risk, Compliance, Sustainability &amp; the 20-Year Roadmap</w:t></w:r></w:p>
 <w:tbl>
   <w:tblPr>
     <w:tblW w:w="9350" w:type="dxa"/>
@@ -4107,7 +4115,7 @@ Presented for review by the Board of Trustees, the University Senate, and the Su
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="34"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="500"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Knowledge Without Barriers&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="8"/></w:rPr><w:t>Strategic Implementation Blueprint · 2028–2050 · AMIU-SB-002</w:t></w:r>

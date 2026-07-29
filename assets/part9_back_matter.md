@@ -219,7 +219,7 @@ Presented for review by the Board of Trustees, the University Senate, and the Su
         <w:r><w:rPr><w:rFonts w:ascii="Fraunces Black" w:hAnsi="Fraunces Black"/><w:color w:val="FFFFFF"/><w:b/><w:sz w:val="34"/></w:rPr><w:t>AL-MULK INTERNATIONAL UNIVERSITY</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="500"/></w:pPr>
-        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Spreading Islamic Education Worldwide, at Every Pace&#8221;</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Fraunces" w:hAnsi="Fraunces"/><w:i/><w:color w:val="DCE3F0"/><w:sz w:val="22"/></w:rPr><w:t>&#8220;Knowledge Without Barriers&#8221;</w:t></w:r>
       </w:p>
       <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="80"/></w:pPr>
         <w:r><w:rPr><w:rFonts w:ascii="Source Serif 4" w:hAnsi="Source Serif 4"/><w:i/><w:smallCaps/><w:color w:val="B08625"/><w:sz w:val="18"/><w:spacing w:val="8"/></w:rPr><w:t>Strategic Implementation Blueprint · 2028–2050 · AMIU-SB-002</w:t></w:r>
