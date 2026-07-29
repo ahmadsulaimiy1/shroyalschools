@@ -8,10 +8,24 @@ const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
   Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle,
   PageBreak, TableOfContents, Header, Footer, PageNumber, NumberFormat,
-  convertInchesToTwip, Bookmark, LevelFormat,
+  convertInchesToTwip, Bookmark, LevelFormat, ImageRun,
   PositionalTab, PositionalTabAlignment, PositionalTabLeader, PositionalTabRelativeTo,
   PageReference, VerticalAlign, TabStopType, TabStopPosition,
 } = docx;
+
+// pull a base64 data-URI <img> out of an element and turn it into a centered
+// ImageRun paragraph; returns [] if no image is present (never throws on missing art)
+function crestImageParagraph($img, sizePx) {
+  const src = $img.attr('src') || '';
+  const m = /^data:image\/(png|jpe?g);base64,(.+)$/.exec(src);
+  if (!m) return [];
+  const buffer = Buffer.from(m[2], 'base64');
+  return [new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { after: 160 },
+    children: [new ImageRun({ data: buffer, transformation: { width: sizePx, height: sizePx }, type: m[1] === 'png' ? 'png' : 'jpg' })],
+  })];
+}
 
 const body = [];
 const push = (...items) => { items.flat().filter(Boolean).forEach(i => body.push(i)); };
@@ -36,23 +50,48 @@ function buildTocBlock() {
 function renderCover($sec) {
   const out = [];
   out.push(new Paragraph({ text: '', spacing: { after: 600 } }));
-  out.push(para($sec.find('.eyebrow').text(), { align: AlignmentType.CENTER, size: 18, color: C.gold600, bold: true, after: 400 }));
-  out.push(para($sec.find('.cover .bismillah').first().text(), { align: AlignmentType.CENTER, size: 30, color: C.navy900, font: 'Amiri Quran', after: 500 }));
+  const bismillah = $sec.find('.bismillah').first().text().trim();
+  if (bismillah) out.push(para(bismillah, { align: AlignmentType.CENTER, size: 30, color: C.navy900, font: 'Amiri Quran', after: 500 }));
   out.push(new Paragraph({
-    children: textRunsFor($sec.find('.cover h1').text(), { size: 68, bold: true, color: C.navy950, font: FONT_DISPLAY }),
+    children: textRunsFor($sec.find('h1').first().text(), { size: 68, bold: true, color: C.navy950, font: FONT_DISPLAY }),
     alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: 400 },
   }));
-  out.push(para($sec.find('.cover .subtitle').text(), { align: AlignmentType.CENTER, size: 22, color: C.ink700, after: 500 }));
+  const subtitleGold = $sec.find('.subtitle-gold').text().trim();
+  if (subtitleGold) out.push(para(subtitleGold, { align: AlignmentType.CENTER, size: 24, bold: true, color: C.gold700, after: 260 }));
+  const subtitle = $sec.find('.subtitle').text().trim();
+  if (subtitle) out.push(para(subtitle, { align: AlignmentType.CENTER, size: 22, color: C.ink700, after: 500 }));
   out.push(para('۞', { align: AlignmentType.CENTER, size: 28, color: C.gold500, after: 500,
     border: { top: { style: BorderStyle.SINGLE, size: 4, color: C.gold500, space: 12 }, bottom: { style: BorderStyle.SINGLE, size: 4, color: C.gold500, space: 12 } } }));
-  const credits = $sec.find('.credits > div');
-  for (let i = 0; i < credits.length; i += 2) {
-    const role = $(credits[i]).text();
-    const name = $(credits[i + 1]) ? $(credits[i + 1]).text() : '';
-    out.push(para(role, { align: AlignmentType.CENTER, size: 18, color: C.gold700, after: 60 }));
-    out.push(para(name, { align: AlignmentType.CENTER, size: 30, bold: true, color: C.navy950, after: 340 }));
-  }
-  out.push(para($sec.find('.footer-line').text(), { align: AlignmentType.CENTER, size: 18, color: C.ink500, after: 200 }));
+
+  // each .credits block (author, then editor if present) rendered by its own
+  // role/epithet/name/credential class markers - never by sibling position
+  $sec.find('.credits').each((_, block) => {
+    const $b = $(block);
+    const role = $b.find('.role').text().trim();
+    const epithet = $b.find('.epithet').text().trim();
+    const name = $b.find('.name').text().trim();
+    const isEditor = ($b.attr('class') || '').includes('editor-credits');
+    if (role) out.push(para(role, { align: AlignmentType.CENTER, size: 18, color: C.gold700, after: 60 }));
+    if (epithet) out.push(para(epithet, { align: AlignmentType.CENTER, size: 16, italics: true, color: C.ink500, after: 40 }));
+    if (name) out.push(para(name, { align: AlignmentType.CENTER, size: isEditor ? 24 : 30, bold: true, color: C.navy950, after: isEditor ? 100 : 340 }));
+    $b.find('.credential').each((__, cred) => {
+      const t = $(cred).text().trim();
+      if (t) out.push(para(t, { align: AlignmentType.CENTER, size: 15, italics: true, color: C.ink500, after: 60 }));
+    });
+    if (isEditor) out.push(new Paragraph({ text: '', spacing: { after: 200 } }));
+  });
+
+  const seriesLine = $sec.find('.series-line').text().trim();
+  if (seriesLine) out.push(para(seriesLine, { align: AlignmentType.CENTER, size: 15, color: C.ink500, after: 200 }));
+  const editionBadge = $sec.find('.edition-badge').text().trim();
+  if (editionBadge) out.push(para(editionBadge, { align: AlignmentType.CENTER, size: 18, bold: true, color: C.gold700, after: 260 }));
+  out.push(...crestImageParagraph($sec.find('.crest-badge img').first(), 70));
+  const pubAr = $sec.find('.pub-name-ar').text().trim();
+  if (pubAr) out.push(para(pubAr, { align: AlignmentType.CENTER, size: 19, bold: true, color: C.gold700, after: 40 }));
+  const pubEn = $sec.find('.pub-name-en').text().trim();
+  if (pubEn) out.push(para(pubEn, { align: AlignmentType.CENTER, size: 16, color: C.ink500, after: 200 }));
+  const footerLine = $sec.find('.footer-line').text().trim();
+  if (footerLine) out.push(para(footerLine, { align: AlignmentType.CENTER, size: 18, color: C.ink500, after: 200 }));
   out.push(pageBreak());
   return out;
 }
@@ -60,12 +99,16 @@ function renderCover($sec) {
 function renderHalfTitle($sec) {
   const out = [];
   out.push(new Paragraph({ text: '', spacing: { after: 1200 } }));
-  out.push(para($sec.find('.bismillah').text(), { align: AlignmentType.CENTER, size: 26, color: C.navy900, font: 'Amiri Quran', after: 400 }));
+  const bismillah = $sec.find('.bismillah').text().trim();
+  if (bismillah) out.push(para(bismillah, { align: AlignmentType.CENTER, size: 26, color: C.navy900, font: 'Amiri Quran', after: 400 }));
   out.push(new Paragraph({
     children: textRunsFor($sec.find('h1').text(), { size: 52, bold: true, color: C.navy950, font: FONT_DISPLAY }),
     alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: 300 },
   }));
-  out.push(para($sec.find('.tagline').text(), { align: AlignmentType.CENTER, size: 20, color: C.gold700 }));
+  $sec.find('.tagline').each((i, t) => {
+    const text = $(t).text().trim();
+    if (text) out.push(para(text, { align: AlignmentType.CENTER, size: 20, color: C.gold700, after: i === 0 ? 100 : 0 }));
+  });
   out.push(pageBreak());
   return out;
 }
@@ -89,6 +132,17 @@ function renderBackCover($sec) {
   const bioText = bioClone.text().trim();
   if (bioLabel) out.push(para(bioLabel, { align: AlignmentType.RIGHT, size: 16, color: C.gold700, bold: true, after: 80 }));
   if (bioText) out.push(para(bioText, { align: AlignmentType.JUSTIFIED, size: 18, color: C.ink700, after: 400 }));
+
+  const editorLabel = $sec.find('.bc-editor .bc-label').text().trim();
+  const editorClone = $sec.find('.bc-editor').clone();
+  editorClone.find('.bc-label').remove();
+  const editorText = editorClone.text().trim();
+  if (editorLabel) out.push(para(editorLabel, { align: AlignmentType.RIGHT, size: 16, color: C.gold700, bold: true, after: 80 }));
+  if (editorText) out.push(para(editorText, { align: AlignmentType.JUSTIFIED, size: 18, color: C.ink700, after: 400 }));
+
+  const seriesAbout = $sec.find('.bc-series-about').text().trim();
+  if (seriesAbout) out.push(para(seriesAbout, { align: AlignmentType.CENTER, size: 16, italics: true, color: C.ink500, after: 400 }));
+
   $sec.find('.bc-meta .row').each((_, row) => {
     const $row = $(row);
     const k = $row.find('.k').text().trim();
@@ -97,9 +151,12 @@ function renderBackCover($sec) {
     const v = vClone.text().trim();
     out.push(para(`${k}: ${v}`, { align: AlignmentType.RIGHT, size: 18, color: C.ink700, after: 120 }));
   });
-  const isbnText = $sec.find('.bc-isbn').text().replace(/\s+/g, ' ').trim();
+  const isbnText = $sec.find('.bc-isbn-box .isbn-text').text().replace(/\s+/g, ' ').trim();
   if (isbnText) out.push(para(isbnText, { align: AlignmentType.CENTER, size: 16, italics: true, color: C.ink500, after: 300 }));
-  const markText = $sec.find('.bc-mark').text().replace(/\s+/g, ' ').trim();
+  out.push(...crestImageParagraph($sec.find('.bc-mark .crest-badge img').first(), 56));
+  const markLabel = $sec.find('.bc-mark').clone();
+  markLabel.find('.crest-badge').remove();
+  const markText = markLabel.text().replace(/\s+/g, ' ').trim();
   if (markText) out.push(para(markText, { align: AlignmentType.CENTER, size: 18, bold: true, color: C.gold700, after: 200 }));
   return out;
 }
