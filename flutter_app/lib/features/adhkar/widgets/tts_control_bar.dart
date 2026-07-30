@@ -1,4 +1,7 @@
-import 'package:flutter/material.dart';
+// RepeatMode is hidden from material.dart because this file's own
+// RepeatMode (core/services/tts/adhkar_audio_handler.dart) would otherwise
+// collide with Flutter's animation-builder RepeatMode of the same name.
+import 'package:flutter/material.dart' hide RepeatMode;
 import 'package:provider/provider.dart';
 
 import '../../../core/localization/app_localizations.dart';
@@ -26,7 +29,6 @@ class TtsControlBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final tts = context.watch<TtsController>();
     final t = context.loc.t;
-    final theme = Theme.of(context);
     final isCurrent = tts.currentEntry?.id == entry.id;
     final isPlaying = isCurrent && tts.status == TtsPlaybackStatus.playing;
     final isPaused = isCurrent && tts.status == TtsPlaybackStatus.paused;
@@ -115,7 +117,6 @@ class _MissingVoiceBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.loc.t;
     final theme = Theme.of(context);
     return Container(
       padding: const EdgeInsets.all(10),
