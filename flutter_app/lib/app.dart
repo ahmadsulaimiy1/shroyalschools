@@ -8,6 +8,7 @@ import 'core/database/database_helper.dart';
 import 'core/localization/app_localizations.dart';
 import 'core/services/active_dhikr_controller.dart';
 import 'core/services/feedback_service.dart';
+import 'core/services/recently_read_service.dart';
 import 'core/services/settings_controller.dart';
 import 'core/services/tts/tts_controller.dart';
 import 'core/theme/app_theme.dart';
@@ -24,6 +25,7 @@ class MisbahaApp extends StatelessWidget {
         ChangeNotifierProvider<SettingsController>(create: (_) => SettingsController()..load()),
         Provider<CounterRepository>(create: (_) => CounterRepository(DatabaseHelper.instance)),
         Provider<AdhkarRepository>(create: (_) => AdhkarRepository(DatabaseHelper.instance)),
+        Provider<RecentlyReadService>(create: (_) => RecentlyReadService()),
         ChangeNotifierProvider<ActiveDhikrController>(create: (_) => ActiveDhikrController()),
         ChangeNotifierProvider<TtsController>(create: (_) => TtsController(audioHandler)..loadVoices()),
         ProxyProvider<SettingsController, FeedbackService>(

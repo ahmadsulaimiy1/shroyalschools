@@ -46,6 +46,17 @@ class AdhkarRepository {
     return rows.map(_fromRow).toList();
   }
 
+  /// Looks up entries by id, preserving [ids]' order (most-recent-first for
+  /// the Recently Read list) rather than the database's own row order.
+  Future<List<AdhkarEntry>> byIds(List<String> ids) async {
+    if (ids.isEmpty) return [];
+    final db = await _db.database;
+    final placeholders = List.filled(ids.length, '?').join(',');
+    final rows = await db.query('adhkar', where: 'id IN ($placeholders)', whereArgs: ids);
+    final byId = {for (final row in rows) row['id'] as String: _fromRow(row)};
+    return ids.map((id) => byId[id]).whereType<AdhkarEntry>().toList();
+  }
+
   Future<Map<AdhkarCategory, int>> countsByCategory() async {
     final db = await _db.database;
     final rows = await db.rawQuery('SELECT category, COUNT(*) as c FROM adhkar GROUP BY category');

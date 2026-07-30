@@ -96,26 +96,35 @@ class _AboutScreenState extends State<AboutScreen> {
           Card(
             child: Padding(
               padding: const EdgeInsets.all(16),
-              child: Row(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CircleAvatar(
-                    radius: 36,
-                    backgroundImage: AssetImage('assets/images/developer.jpg'),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(t('about_developer_name'), style: theme.textTheme.titleMedium),
-                        const SizedBox(height: 2),
-                        Text(
-                          t('about_developer_role'),
-                          style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                  Row(
+                    children: [
+                      const CircleAvatar(
+                        radius: 36,
+                        backgroundImage: AssetImage('assets/images/developer.jpg'),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(t('about_developer_name'), style: theme.textTheme.titleMedium),
+                            const SizedBox(height: 2),
+                            Text(
+                              t('about_developer_role'),
+                              style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
+                  const Divider(height: 28),
+                  _InfoRow(icon: Icons.verified_user_outlined, text: '${t('about_islamic_supervision_title')}: ${t('about_islamic_supervision_body')}'),
+                  const SizedBox(height: 10),
+                  _InfoRow(icon: Icons.location_on_outlined, text: t('about_location')),
                 ],
               ),
             ),

@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
 
-/// Brand palette — luxury emerald + rationed gold, matching the Misbaha brand identity.
+/// Brand palette — "Royal Saudi Gold / Deep Royal Navy / Emerald Madinah
+/// Green / Premium Cream", the MISBAHA luxury Islamic-tech identity.
 class AppColors {
   AppColors._();
 
+  // Emerald Madinah Green — primary brand color.
   static const Color primaryLight = Color(0xFF0B6E4F);
-  static const Color primaryDark = Color(0xFF1C9A6E);
+  static const Color primaryDark = Color(0xFF1FAE7C);
 
-  static const Color gold = Color(0xFFB8912F);
-  static const Color goldDark = Color(0xFFD4AF37);
+  // Royal Saudi Gold — secondary/accent color.
+  static const Color gold = Color(0xFFC9A227);
+  static const Color goldDark = Color(0xFFE0BE55);
 
-  static const Color surfaceLight = Color(0xFFFBF9F4);
+  // Deep Royal Navy — tertiary color for premium/featured surfaces
+  // (Morning/Evening featured cards, headers).
+  static const Color navy = Color(0xFF0B2545);
+  static const Color navyLight = Color(0xFF17396B);
+
+  // Premium Cream — light-mode background tone.
+  static const Color surfaceLight = Color(0xFFFAF3E3);
   static const Color surfaceDark = Color(0xFF0E1512);
   static const Color surfaceElevatedLight = Color(0xFFFFFFFF);
   static const Color surfaceElevatedDark = Color(0xFF16211C);

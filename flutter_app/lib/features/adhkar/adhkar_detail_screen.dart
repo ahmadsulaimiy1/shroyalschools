@@ -6,6 +6,7 @@ import '../../core/localization/app_localizations.dart';
 import '../../core/models/adhkar_entry.dart';
 import '../../core/models/dhikr.dart' as legacy;
 import '../../core/services/active_dhikr_controller.dart';
+import '../../core/services/recently_read_service.dart';
 import '../../core/widgets/app_shell.dart';
 import 'widgets/tts_control_bar.dart';
 
@@ -22,6 +23,14 @@ class AdhkarDetailScreen extends StatefulWidget {
 
 class _AdhkarDetailScreenState extends State<AdhkarDetailScreen> {
   late AdhkarEntry _entry = widget.entry;
+
+  @override
+  void initState() {
+    super.initState();
+    // Fire-and-forget: records this open for the Adhkar screen's "Recently
+    // Read" section. Never blocks or fails the detail view if it errors.
+    context.read<RecentlyReadService>().recordView(_entry.id);
+  }
 
   @override
   Widget build(BuildContext context) {
