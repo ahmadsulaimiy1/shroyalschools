@@ -2,14 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Required for the audio_service-backed TTS reading session: a real
-         Android MediaSession with lock-screen controls and background
-         playback. No network permission is requested anywhere in this app —
-         TTS speech is generated entirely on-device. -->
+    <!-- Required for the audio_service-backed reading/recitation session: a
+         real Android MediaSession with lock-screen controls and background
+         playback. Adhkar TTS speech is generated entirely on-device (no
+         network involved); Qur'an recitation audio is the one feature that
+         uses the network below, to stream real Qari recitation and cache it
+         locally for offline replay afterward — see core/services/quran/. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:label="Misbaha"

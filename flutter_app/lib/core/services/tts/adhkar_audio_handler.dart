@@ -1,5 +1,6 @@
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:just_audio/just_audio.dart';
 
 /// Splits an adhkar's text into speakable sentences. Android's native
 /// TextToSpeech engine has no true pause/resume primitive — it can only
@@ -14,11 +15,26 @@ List<String> splitIntoSentences(String text) {
 
 enum RepeatMode { off, repeatOne, continuous }
 
-/// Bridges flutter_tts (the actual offline speech engine) to audio_service
-/// (real Android MediaSession: lock-screen transport controls, notification,
-/// and the foreground service that keeps speech going while the app is
-/// backgrounded). Neither package alone gives you both offline TTS *and*
-/// lock-screen controls — this handler is the glue between them.
+/// Which playback engine currently owns the shared handler — TtsController
+/// and QuranAudioController both listen to the same [AdhkarAudioHandler.playbackState]
+/// stream, and each needs to ignore state changes that belong to the other.
+enum AudioEngineKind { none, tts, audio }
+
+/// The app's single shared audio_service handler — Android only allows one
+/// MediaSession-backed BaseAudioHandler per process, so both playback modes
+/// live here rather than as two competing handlers:
+///
+///  - Adhkar reading: flutter_tts speaking sentence-by-sentence (genuinely
+///    offline, no network involved).
+///  - Qur'an recitation: real Qari audio via just_audio's caching source,
+///    which streams from the network on first play and transparently reads
+///    from the local cache file on every play after that — Qur'an
+///    recitation is never synthesized speech, see docs/15-QURAN-DATA-SOURCE-VERIFICATION.md
+///    for why.
+///
+/// Whichever engine is active drives the shared `playbackState`/`mediaItem`
+/// streams, so lock-screen/notification transport controls work the same
+/// way regardless of which one is playing.
 class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
   AdhkarAudioHandler() {
     _tts.setCompletionHandler(_onUtteranceComplete);
@@ -26,9 +42,18 @@ class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
     _tts.setErrorHandler((msg) {
       playbackState.add(playbackState.value.copyWith(processingState: AudioProcessingState.error));
     });
+
+    _audioPlayer.playerStateStream.listen(_onAudioPlayerStateChanged);
   }
 
   final FlutterTts _tts = FlutterTts();
+  final AudioPlayer _audioPlayer = AudioPlayer();
+  AudioEngineKind _engine = AudioEngineKind.none;
+
+  /// Lets TtsController/QuranAudioController tell apart a playbackState
+  /// event meant for them from one meant for the other engine, since both
+  /// listen to the same shared stream.
+  AudioEngineKind get activeEngine => _engine;
 
   /// Called by the owning controller whenever the "next item" in a
   /// continuous-reading session should start (see [RepeatMode.continuous]).
@@ -57,13 +82,33 @@ class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
 
   Future<void> loadItem({required String id, required String title, required String text, required String languageCode}) async {
     await stop();
+    _engine = AudioEngineKind.tts;
     _sentences = splitIntoSentences(text);
     _sentenceIndex = 0;
     mediaItem.add(MediaItem(id: id, title: title, extras: {'languageCode': languageCode}));
   }
 
+  /// Loads a Qur'an verse's recitation audio, backed by [audioSource] (a
+  /// [LockCachingAudioSource] so the caller controls exactly where the
+  /// cached file lives — see QuranAudioService).
+  Future<void> loadQuranAudio({
+    required String id,
+    required String title,
+    required AudioSource audioSource,
+  }) async {
+    await stop();
+    _engine = AudioEngineKind.audio;
+    await _audioPlayer.setAudioSource(audioSource);
+    mediaItem.add(MediaItem(id: id, title: title));
+  }
+
   @override
   Future<void> play() async {
+    if (_engine == AudioEngineKind.audio) {
+      _stoppedByUser = false;
+      await _audioPlayer.play();
+      return;
+    }
     if (_sentences.isEmpty) return;
     _stoppedByUser = false;
     playbackState.add(playbackState.value.copyWith(
@@ -83,7 +128,7 @@ class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
   }
 
   Future<void> _onUtteranceComplete() async {
-    if (_stoppedByUser) return;
+    if (_stoppedByUser || _engine != AudioEngineKind.tts) return;
     _sentenceIndex++;
     if (playbackState.value.playing) {
       await _speakCurrentSentence();
@@ -102,9 +147,41 @@ class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
     }
   }
 
+  void _onAudioPlayerStateChanged(PlayerState state) {
+    if (_engine != AudioEngineKind.audio) return;
+    final processingState = switch (state.processingState) {
+      ProcessingState.idle => AudioProcessingState.idle,
+      ProcessingState.loading => AudioProcessingState.loading,
+      ProcessingState.buffering => AudioProcessingState.buffering,
+      ProcessingState.ready => AudioProcessingState.ready,
+      ProcessingState.completed => AudioProcessingState.completed,
+    };
+    playbackState.add(playbackState.value.copyWith(
+      controls: [
+        state.playing ? MediaControl.pause : MediaControl.play,
+        MediaControl.stop,
+        MediaControl.skipToNext,
+      ],
+      playing: state.playing,
+      processingState: processingState,
+    ));
+    if (state.processingState == ProcessingState.completed && !_stoppedByUser) {
+      if (repeatMode == RepeatMode.repeatOne) {
+        _audioPlayer.seek(Duration.zero);
+        _audioPlayer.play();
+      } else if (repeatMode == RepeatMode.continuous) {
+        onRequestNext?.call();
+      }
+    }
+  }
+
   @override
   Future<void> pause() async {
     _stoppedByUser = true;
+    if (_engine == AudioEngineKind.audio) {
+      await _audioPlayer.pause();
+      return;
+    }
     await _tts.stop();
     playbackState.add(playbackState.value.copyWith(
       controls: [MediaControl.play, MediaControl.stop, MediaControl.skipToNext],
@@ -115,7 +192,11 @@ class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
   @override
   Future<void> stop() async {
     _stoppedByUser = true;
-    await _tts.stop();
+    if (_engine == AudioEngineKind.audio) {
+      await _audioPlayer.stop();
+    } else {
+      await _tts.stop();
+    }
     _sentenceIndex = 0;
     playbackState.add(playbackState.value.copyWith(
       playing: false,
@@ -130,4 +211,6 @@ class AdhkarAudioHandler extends BaseAudioHandler with SeekHandler {
   }
 
   Future<void> setSpeechRate(double rate) => _tts.setSpeechRate(rate);
+
+  Future<void> setAudioSpeed(double speed) => _audioPlayer.setSpeed(speed);
 }

@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/database/counter_repository.dart';
+import '../../core/database/quran_repository.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../core/models/dhikr.dart';
+import '../../core/models/quran_chapter.dart';
+import '../../core/models/quran_verse.dart';
 import '../../core/services/active_dhikr_controller.dart';
 import '../../core/widgets/app_shell.dart';
 
@@ -17,6 +20,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _today = 0;
   int _lifetime = 0;
+  QuranVerse? _lastReadVerse;
+  QuranChapter? _lastReadChapter;
   bool _loading = true;
 
   @override
@@ -27,16 +32,21 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _load() async {
     final repo = context.read<CounterRepository>();
+    final quranRepo = context.read<QuranRepository>();
     final startOfDay = DateTime.now();
     final today = DateTime(startOfDay.year, startOfDay.month, startOfDay.day);
     final results = await Future.wait([
       repo.countSince(today),
       repo.lifetimeCount(),
     ]);
+    final lastRead = await quranRepo.lastRead();
+    final lastReadChapter = lastRead == null ? null : await quranRepo.chapter(lastRead.surah);
     if (!mounted) return;
     setState(() {
       _today = results[0];
       _lifetime = results[1];
+      _lastReadVerse = lastRead;
+      _lastReadChapter = lastReadChapter;
       _loading = false;
     });
   }
@@ -77,6 +87,28 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+            if (_lastReadVerse != null && _lastReadChapter != null) ...[
+              const SizedBox(height: 24),
+              Text(t('quran_continue_reading'), style: theme.textTheme.titleMedium),
+              const SizedBox(height: 12),
+              Card(
+                color: theme.colorScheme.tertiary,
+                child: ListTile(
+                  contentPadding: const EdgeInsets.all(16),
+                  leading: Icon(Icons.auto_stories_outlined, color: theme.colorScheme.secondary),
+                  title: Text(
+                    '${_lastReadChapter!.nameTransliteration} — ${_lastReadChapter!.nameTranslation}',
+                    style: theme.textTheme.titleMedium?.copyWith(color: Colors.white),
+                  ),
+                  subtitle: Text(
+                    '${_lastReadVerse!.surah}:${_lastReadVerse!.ayah}',
+                    style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white.withOpacity(0.85)),
+                  ),
+                  trailing: Icon(Icons.chevron_right, color: Colors.white),
+                  onTap: () => AppShellScope.maybeOf(context)?.goToQuran(),
+                ),
+              ),
+            ],
             const SizedBox(height: 24),
             Text(t('home_suggested_dhikr'), style: theme.textTheme.titleMedium),
             const SizedBox(height: 12),

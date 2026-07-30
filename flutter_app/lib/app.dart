@@ -5,9 +5,12 @@ import 'package:provider/provider.dart';
 import 'core/database/adhkar_repository.dart';
 import 'core/database/counter_repository.dart';
 import 'core/database/database_helper.dart';
+import 'core/database/quran_repository.dart';
 import 'core/localization/app_localizations.dart';
 import 'core/services/active_dhikr_controller.dart';
 import 'core/services/feedback_service.dart';
+import 'core/services/quran/quran_audio_controller.dart';
+import 'core/services/quran/quran_audio_service.dart';
 import 'core/services/recently_read_service.dart';
 import 'core/services/settings_controller.dart';
 import 'core/services/tts/tts_controller.dart';
@@ -25,9 +28,15 @@ class MisbahaApp extends StatelessWidget {
         ChangeNotifierProvider<SettingsController>(create: (_) => SettingsController()..load()),
         Provider<CounterRepository>(create: (_) => CounterRepository(DatabaseHelper.instance)),
         Provider<AdhkarRepository>(create: (_) => AdhkarRepository(DatabaseHelper.instance)),
+        Provider<QuranRepository>(create: (_) => QuranRepository(DatabaseHelper.instance)),
         Provider<RecentlyReadService>(create: (_) => RecentlyReadService()),
         ChangeNotifierProvider<ActiveDhikrController>(create: (_) => ActiveDhikrController()),
         ChangeNotifierProvider<TtsController>(create: (_) => TtsController(audioHandler)..loadVoices()),
+        Provider<QuranAudioService>(create: (_) => QuranAudioService()),
+        ChangeNotifierProxyProvider<QuranAudioService, QuranAudioController>(
+          create: (context) => QuranAudioController(audioHandler, context.read<QuranAudioService>()),
+          update: (_, __, controller) => controller!,
+        ),
         ProxyProvider<SettingsController, FeedbackService>(
           update: (_, settings, __) => FeedbackService(settings),
         ),

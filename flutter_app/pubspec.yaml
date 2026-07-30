@@ -46,6 +46,11 @@ dependencies:
   # Opens mailto:/https: links from the About screen (contact, privacy, terms).
   url_launcher: ^6.3.1
 
+  # Streams/plays real Qari recitation audio (Qur'an) and caches each played
+  # file locally so playback works offline afterward — unlike Adhkar's TTS,
+  # Qur'an recitation must be genuine reciter audio, not synthesized speech.
+  just_audio: ^0.9.42
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -61,6 +66,7 @@ flutter:
   assets:
     - assets/icon/
     - assets/images/
+    - assets/quran/
 
 flutter_launcher_icons:
   android: true

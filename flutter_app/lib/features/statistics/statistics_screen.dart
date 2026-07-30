@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/database/counter_repository.dart';
+import '../../core/database/quran_repository.dart';
 import '../../core/localization/app_localizations.dart';
 
 class StatisticsScreen extends StatefulWidget {
@@ -18,6 +19,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
   int _lifetime = 0;
   int _sessions = 0;
   List<DailyCount> _daily = const [];
+  QuranReadingStats _quranStats = const QuranReadingStats(todayCount: 0, totalVersesRead: 0, streakDays: 0);
   bool _loading = true;
 
   @override
@@ -32,12 +34,14 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
     final startOfDay = DateTime(now.year, now.month, now.day);
     final startOfWeek = startOfDay.subtract(Duration(days: now.weekday - 1));
 
+    final quranRepo = context.read<QuranRepository>();
     final results = await Future.wait([
       repo.countSince(startOfDay),
       repo.countSince(startOfWeek),
       repo.lifetimeCount(),
       repo.sessionCount(),
       repo.dailyCounts(7),
+      quranRepo.readingStats(),
     ]);
 
     if (!mounted) return;
@@ -47,6 +51,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
       _lifetime = results[2] as int;
       _sessions = results[3] as int;
       _daily = results[4] as List<DailyCount>;
+      _quranStats = results[5] as QuranReadingStats;
       _loading = false;
     });
   }
@@ -90,6 +95,18 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
                       child: _WeeklyBarChart(daily: _daily, isRtl: isRtl),
                     ),
                   ),
+                  const SizedBox(height: 28),
+                  Text(t('quran_reading_stats'), style: theme.textTheme.titleMedium),
+                  const SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Expanded(child: _MetricCard(label: t('quran_verses_today'), value: _quranStats.todayCount)),
+                      const SizedBox(width: 12),
+                      Expanded(child: _MetricCard(label: t('quran_day_streak'), value: _quranStats.streakDays)),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  _MetricCard(label: t('quran_verses_total'), value: _quranStats.totalVersesRead),
                   if (_lifetime == 0) ...[
                     const SizedBox(height: 24),
                     Center(

@@ -12,7 +12,6 @@ enum TtsPlaybackStatus { idle, playing, paused, completed }
 class TtsController extends ChangeNotifier {
   TtsController(this._handler) {
     _handler.playbackState.listen(_onPlaybackStateChanged);
-    _handler.onRequestNext = _playNextInPlaylist;
   }
 
   final AdhkarAudioHandler _handler;
@@ -76,6 +75,11 @@ class TtsController extends ChangeNotifier {
       speechRate: _speechRate,
     );
     _handler.repeatMode = _repeatMode;
+    // The handler is shared with QuranAudioController (only one MediaSession
+    // handler is allowed per app) — (re)claim onRequestNext here rather than
+    // once in the constructor, so whichever controller last started playback
+    // is the one "continuous mode" advances.
+    _handler.onRequestNext = _playNextInPlaylist;
     await _handler.play();
   }
 
@@ -107,6 +111,9 @@ class TtsController extends ChangeNotifier {
   }
 
   void _onPlaybackStateChanged(PlaybackState state) {
+    // The handler is shared with QuranAudioController — ignore state changes
+    // that belong to the Qur'an audio engine, not this TTS one.
+    if (_handler.activeEngine == AudioEngineKind.audio) return;
     if (state.processingState == AudioProcessingState.completed) {
       _status = TtsPlaybackStatus.completed;
     } else if (state.playing) {

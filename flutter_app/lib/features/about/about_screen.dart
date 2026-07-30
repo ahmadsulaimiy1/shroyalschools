@@ -146,6 +146,16 @@ class _AboutScreenState extends State<AboutScreen> {
           ),
 
           const SizedBox(height: 24),
+          _SectionLabel(t('about_quran_source_title')),
+          const SizedBox(height: 12),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(t('about_quran_source_body'), style: theme.textTheme.bodyMedium),
+            ),
+          ),
+
+          const SizedBox(height: 24),
           _SectionLabel(t('about_contact_title')),
           const SizedBox(height: 4),
           ListTile(
