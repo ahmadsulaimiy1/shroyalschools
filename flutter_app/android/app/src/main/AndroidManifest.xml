@@ -32,4 +32,13 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+
+    <!-- Required to query activities that can process text (Android 11+ package visibility),
+         used by the Flutter engine's text-selection plugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
 </manifest>

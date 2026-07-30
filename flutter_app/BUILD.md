@@ -54,7 +54,7 @@ Install directly on a connected device: `flutter install` or
 `adb install build/app/outputs/flutter-apk/app-release.apk`.
 
 > **Note:** the release build type currently signs with the Android **debug key**
-> (`android/app/build.gradle` → `signingConfig signingConfigs.debug`) specifically so
+> (`android/app/build.gradle.kts` → `signingConfig = signingConfigs.getByName("debug")`) specifically so
 > `flutter build apk --release` works immediately with zero setup. This is fine for
 > sideloading/testing. **Before publishing to Google Play you must switch to a real
 > release keystore** — see §6.
@@ -82,30 +82,32 @@ keyAlias=misbaha
 storeFile=/absolute/path/to/misbaha-release.jks
 ```
 
-Edit `android/app/build.gradle`:
+Edit `android/app/build.gradle.kts`:
 
-```groovy
-def keystoreProperties = new Properties()
-def keystorePropertiesFile = rootProject.file("key.properties")
+```kotlin
+import java.util.Properties
+
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    keystoreProperties.load(keystorePropertiesFile.inputStream())
 }
 
 android {
     signingConfigs {
-        release {
-            keyAlias keystoreProperties["keyAlias"]
-            keyPassword keystoreProperties["keyPassword"]
-            storeFile keystoreProperties["storeFile"] ? file(keystoreProperties["storeFile"]) : null
-            storePassword keystoreProperties["storePassword"]
+        create("release") {
+            keyAlias = keystoreProperties["keyAlias"] as String?
+            keyPassword = keystoreProperties["keyPassword"] as String?
+            storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+            storePassword = keystoreProperties["storePassword"] as String?
         }
     }
     buildTypes {
         release {
-            signingConfig signingConfigs.release   // was: signingConfigs.debug
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            signingConfig = signingConfigs.getByName("release")   // was: getByName("debug")
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 }
