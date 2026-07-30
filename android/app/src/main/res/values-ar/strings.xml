@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">المسبحة</string>
+    <string name="tagline">كل حبة ذكر، كل ذكرٍ نور</string>
+
+    <!-- التنقل السفلي -->
+    <string name="nav_home">اليوم</string>
+    <string name="nav_counter">العداد</string>
+    <string name="nav_library">المكتبة</string>
+    <string name="nav_journal">السجل</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- شاشة العداد -->
+    <string name="counter_target_label">الهدف: %1$d</string>
+    <string name="counter_progress_label">%1$d من %2$d</string>
+    <string name="counter_reset">إعادة تعيين</string>
+    <string name="counter_change_target">تغيير الهدف</string>
+    <string name="counter_completed_title">اكتملت الجلسة</string>
+    <string name="counter_default_dhikr">ذكر حر</string>
+    <string name="counter_tap_hint">اضغط على الحبة للعد</string>
+    <string name="counter_a11y_bead">حبة عداد التسبيح، حالياً %1$d من %2$d، اضغط مرتين للعد</string>
+
+    <!-- الرئيسية -->
+    <string name="home_greeting">السلام عليكم</string>
+    <string name="home_streak_label">%1$d يوم متتالٍ</string>
+    <string name="home_suggested_dhikr">مقترح الآن</string>
+
+    <!-- الإعدادات -->
+    <string name="settings_language">اللغة</string>
+    <string name="settings_haptics">الاهتزاز اللمسي</string>
+    <string name="settings_reduce_motion">تقليل الحركة</string>
+    <string name="settings_high_contrast">تباين عالٍ</string>
+    <string name="settings_numeral_style">نمط الأرقام</string>
+
+    <!-- أذكار موثقة نموذجية (انظر /docs/05-DATABASE-SCHEMA.md) -->
+    <string name="dhikr_subhanallah">سبحان الله</string>
+    <string name="dhikr_alhamdulillah">الحمد لله</string>
+    <string name="dhikr_allahuakbar">الله أكبر</string>
+</resources>

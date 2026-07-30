@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Misbaha" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Misbaha.Splash" parent="Theme.Misbaha">
+        <item name="android:windowBackground">@color/misbaha_surface_light</item>
+        <item name="android:statusBarColor">@color/misbaha_surface_light</item>
+    </style>
+</resources>
