@@ -50,17 +50,38 @@ jobs:
       - name: Run tests
         run: flutter test
 
-      - name: Build release APK
-        run: flutter build apk --release
+      # --split-per-abi produces one APK per CPU architecture instead of a
+      # single "fat" universal APK containing 3 copies of the Flutter/Dart
+      # native libraries (arm64-v8a + armeabi-v7a + x86_64). See
+      # docs/17-APK-SIZE-AUDIT.md — this was the single largest contributor
+      # to APK size (a universal APK was ~60MB; the arm64-v8a APK that
+      # virtually every real Android phone since ~2018 needs is a fraction
+      # of that).
+      - name: Build release APK (split per ABI)
+        run: flutter build apk --release --split-per-abi
 
       - name: Build App Bundle (AAB)
         run: flutter build appbundle --release
+
+      # Renamed for a stable, predictable release asset name. arm64-v8a is
+      # the primary download (matches virtually all real Android phones);
+      # armeabi-v7a is kept as a fallback for older 32-bit-only devices.
+      # The Play Store install path is unaffected either way -- it always
+      # uses the AAB, which already delivers only the architecture a given
+      # device needs.
+      - name: Rename split APKs for release
+        run: |
+          cd build/app/outputs/flutter-apk
+          cp app-arm64-v8a-release.apk app-release.apk
+          cp app-armeabi-v7a-release.apk app-release-armeabi-v7a.apk
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: misbaha-release-apk
-          path: flutter_app/build/app/outputs/flutter-apk/app-release.apk
+          path: |
+            flutter_app/build/app/outputs/flutter-apk/app-release.apk
+            flutter_app/build/app/outputs/flutter-apk/app-release-armeabi-v7a.apk
           if-no-files-found: error
 
       - name: Upload AAB artifact
@@ -78,8 +99,11 @@ jobs:
           body: |
             Automatically rebuilt from commit ${{ github.sha }} on branch `${{ github.ref_name }}`.
             Download `app-release.apk` below and install it directly on an Android device
-            (enable "Install unknown apps" for your browser/file manager first).
+            (enable "Install unknown apps" for your browser/file manager first). This is the
+            arm64-v8a build, which covers virtually every Android phone sold since ~2018.
+            `app-release-armeabi-v7a.apk` is provided as a fallback for older 32-bit-only devices.
           prerelease: true
           files: |
             flutter_app/build/app/outputs/flutter-apk/app-release.apk
+            flutter_app/build/app/outputs/flutter-apk/app-release-armeabi-v7a.apk
             flutter_app/build/app/outputs/bundle/release/app-release.aab

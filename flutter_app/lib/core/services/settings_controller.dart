@@ -40,6 +40,7 @@ class SettingsController extends ChangeNotifier {
   static const _kTextSizePreset = 'text_size_preset';
   static const _kElderlyFriendlyMode = 'elderly_friendly_mode';
   static const _kQuranReadingMode = 'quran_reading_mode';
+  static const _kQuranMushafMode = 'quran_mushaf_mode';
 
   AppThemeMode _themeMode = AppThemeMode.system;
   Locale _locale = const Locale('en');
@@ -49,6 +50,7 @@ class SettingsController extends ChangeNotifier {
   TextSizePreset _textSizePreset = TextSizePreset.standard;
   bool _elderlyFriendlyMode = false;
   QuranReadingMode _quranReadingMode = QuranReadingMode.arabicTranslation;
+  bool _quranMushafMode = false;
 
   AppThemeMode get themeMode => _themeMode;
   Locale get locale => _locale;
@@ -58,6 +60,7 @@ class SettingsController extends ChangeNotifier {
   TextSizePreset get textSizePreset => _textSizePreset;
   bool get elderlyFriendlyMode => _elderlyFriendlyMode;
   QuranReadingMode get quranReadingMode => _quranReadingMode;
+  bool get quranMushafMode => _quranMushafMode;
 
   /// Elderly-friendly mode implies at least the "large" text preset, even if
   /// the user hasn't separately bumped text size — the two settings compose
@@ -98,6 +101,7 @@ class SettingsController extends ChangeNotifier {
       (e) => e.name == readingModeName,
       orElse: () => QuranReadingMode.arabicTranslation,
     );
+    _quranMushafMode = prefs.getBool(_kQuranMushafMode) ?? false;
     notifyListeners();
   }
 
@@ -160,5 +164,12 @@ class SettingsController extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_kQuranReadingMode, mode.name);
+  }
+
+  Future<void> setQuranMushafMode(bool value) async {
+    _quranMushafMode = value;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_kQuranMushafMode, value);
   }
 }

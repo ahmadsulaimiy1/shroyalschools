@@ -3,8 +3,12 @@ import 'package:provider/provider.dart';
 
 import '../../core/database/quran_repository.dart';
 import '../../core/localization/app_localizations.dart';
+import '../../core/models/quran_chapter.dart';
 import '../../core/models/quran_verse.dart';
 import '../../core/services/settings_controller.dart';
+import '../../core/theme/app_colors.dart';
+import 'tahajjud_screen.dart';
+import 'widgets/mushaf_flow_text.dart';
 import 'widgets/quran_verse_card.dart';
 
 /// Generic verse-by-verse reader — used for a single surah, a juz range,
@@ -26,6 +30,11 @@ class QuranReaderScreen extends StatefulWidget {
 
 class _QuranReaderScreenState extends State<QuranReaderScreen> {
   final _scrollController = ScrollController();
+  Map<int, QuranChapter> _chaptersById = const {};
+
+  /// Reading Focus Mode: tapping the page hides the app bar/chrome so the
+  /// text fills the screen; tapping again brings it back.
+  bool _focusMode = false;
 
   @override
   void initState() {
@@ -34,6 +43,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
       final last = widget.verses.last;
       context.read<QuranRepository>().setLastRead(last.surah, last.ayah);
     }
+    _loadChapters();
     if (widget.scrollToAyah != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         final index = widget.verses.indexWhere((v) => v.ayah == widget.scrollToAyah);
@@ -48,6 +58,12 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
     }
   }
 
+  Future<void> _loadChapters() async {
+    final chapters = await context.read<QuranRepository>().chapters();
+    if (!mounted) return;
+    setState(() => _chaptersById = {for (final c in chapters) c.number: c});
+  }
+
   @override
   void dispose() {
     _scrollController.dispose();
@@ -58,46 +74,113 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
   Widget build(BuildContext context) {
     final settings = context.watch<SettingsController>();
     final t = context.loc.t;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        actions: [
-          PopupMenuButton<QuranReadingMode>(
-            icon: const Icon(Icons.text_fields),
-            tooltip: t('quran_reading_mode'),
-            initialValue: settings.quranReadingMode,
-            onSelected: (mode) => context.read<SettingsController>().setQuranReadingMode(mode),
-            itemBuilder: (context) => [
-              CheckedPopupMenuItem(
-                value: QuranReadingMode.arabicOnly,
-                checked: settings.quranReadingMode == QuranReadingMode.arabicOnly,
-                child: Text(t('quran_mode_arabic_only')),
-              ),
-              CheckedPopupMenuItem(
-                value: QuranReadingMode.arabicTranslation,
-                checked: settings.quranReadingMode == QuranReadingMode.arabicTranslation,
-                child: Text(t('quran_mode_arabic_translation')),
-              ),
-              CheckedPopupMenuItem(
-                value: QuranReadingMode.arabicTranslationTransliteration,
-                checked: settings.quranReadingMode == QuranReadingMode.arabicTranslationTransliteration,
-                child: Text(t('quran_mode_arabic_translation_transliteration')),
-              ),
-            ],
+    final isMushaf = settings.quranMushafMode;
+
+    final toolbar = ClipRect(
+      child: AnimatedAlign(
+        alignment: Alignment.topCenter,
+        heightFactor: _focusMode ? 0.0 : 1.0,
+        duration: const Duration(milliseconds: 220),
+        curve: Curves.easeOut,
+        child: SafeArea(
+          bottom: false,
+          child: Material(
+            elevation: 2,
+            color: isMushaf ? AppColors.navy : Theme.of(context).appBarTheme.backgroundColor,
+            child: Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.arrow_back, color: isMushaf ? Colors.white : null),
+                  onPressed: () => Navigator.of(context).maybePop(),
+                ),
+                Expanded(
+                  child: Text(
+                    widget.title,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(color: isMushaf ? Colors.white : null),
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(Icons.bedtime_outlined, color: isMushaf ? AppColors.gold : null),
+                  tooltip: t('quran_tahajjud_mode'),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => TahajjudScreen(title: widget.title, verses: widget.verses)),
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(isMushaf ? Icons.menu_book : Icons.menu_book_outlined, color: isMushaf ? AppColors.gold : null),
+                  tooltip: t('quran_mushaf_mode'),
+                  onPressed: () => context.read<SettingsController>().setQuranMushafMode(!isMushaf),
+                ),
+                if (!isMushaf)
+                  PopupMenuButton<QuranReadingMode>(
+                    icon: const Icon(Icons.text_fields),
+                    tooltip: t('quran_reading_mode'),
+                    initialValue: settings.quranReadingMode,
+                    onSelected: (mode) => context.read<SettingsController>().setQuranReadingMode(mode),
+                    itemBuilder: (context) => [
+                      CheckedPopupMenuItem(
+                        value: QuranReadingMode.arabicOnly,
+                        checked: settings.quranReadingMode == QuranReadingMode.arabicOnly,
+                        child: Text(t('quran_mode_arabic_only')),
+                      ),
+                      CheckedPopupMenuItem(
+                        value: QuranReadingMode.arabicTranslation,
+                        checked: settings.quranReadingMode == QuranReadingMode.arabicTranslation,
+                        child: Text(t('quran_mode_arabic_translation')),
+                      ),
+                      CheckedPopupMenuItem(
+                        value: QuranReadingMode.arabicTranslationTransliteration,
+                        checked: settings.quranReadingMode == QuranReadingMode.arabicTranslationTransliteration,
+                        child: Text(t('quran_mode_arabic_translation_transliteration')),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
-        ],
-      ),
-      body: ListView.builder(
-        controller: _scrollController,
-        padding: const EdgeInsets.all(16),
-        itemCount: widget.verses.length,
-        itemBuilder: (context, i) => QuranVerseCard(
-          verse: widget.verses[i],
-          playlist: widget.verses,
-          index: i,
-          fontScale: settings.effectiveTextScale,
-          readingMode: settings.quranReadingMode,
         ),
+      ),
+    );
+
+    final body = GestureDetector(
+      behavior: HitTestBehavior.translucent,
+      onTap: () => setState(() => _focusMode = !_focusMode),
+      child: isMushaf
+          ? Container(
+              color: AppColors.surfaceLight,
+              child: SingleChildScrollView(
+                controller: _scrollController,
+                padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+                child: MushafFlowText(
+                  verses: widget.verses,
+                  chapters: _chaptersById,
+                  textColor: AppColors.textPrimaryLight,
+                  accentColor: AppColors.gold,
+                  fontScale: settings.effectiveTextScale,
+                ),
+              ),
+            )
+          : ListView.builder(
+              controller: _scrollController,
+              padding: const EdgeInsets.all(16),
+              itemCount: widget.verses.length,
+              itemBuilder: (context, i) => QuranVerseCard(
+                verse: widget.verses[i],
+                playlist: widget.verses,
+                index: i,
+                fontScale: settings.effectiveTextScale,
+                readingMode: settings.quranReadingMode,
+              ),
+            ),
+    );
+
+    return Scaffold(
+      body: Column(
+        children: [
+          toolbar,
+          Expanded(child: body),
+        ],
       ),
     );
   }

@@ -6,8 +6,12 @@ Every push to this repo that touches `flutter_app/` triggers
 `.github/workflows/build-flutter-apk.yml`, which builds a real release APK/AAB on a
 GitHub-hosted runner (full Android SDK + internet access) and:
 - uploads them as workflow artifacts (Actions tab → latest run → Artifacts), and
-- publishes/updates a GitHub Release tagged **`latest-apk`** with `app-release.apk` and
+- publishes/updates a GitHub Release tagged **`latest-apk`** with `app-release.apk`
+  (arm64-v8a — covers virtually every Android phone sold since ~2018),
+  `app-release-armeabi-v7a.apk` (fallback for older 32-bit-only devices), and
   `app-release.aab` attached — the easiest way to just download and install the app.
+  See `docs/17-APK-SIZE-AUDIT.md` for why CI builds split-per-ABI instead of one
+  universal APK.
 
 You can also trigger it manually: **Actions → Build Misbaha APK → Run workflow**.
 
