@@ -1,0 +1,56 @@
+name: misbaha_tasbeeh
+description: "Misbaha — Islamic Tasbeeh & Dhikr counter. Offline, Arabic/English, dark mode."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management — ChangeNotifier + provider, minimal and stable.
+  provider: ^6.1.2
+
+  # Offline local database (counter sessions, tap events, daily/lifetime stats).
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # Persisted user settings (theme, language, sound, vibration, volume-button toggle).
+  shared_preferences: ^2.3.2
+
+  # Date formatting for statistics screen.
+  intl: ^0.20.2
+
+  # App version display on the About screen.
+  package_info_plus: ^8.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # Generates all mipmap/adaptive launcher icons from assets/icon/*.png — run
+  # `dart run flutter_launcher_icons` once after `flutter pub get` (see BUILD.md).
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "assets/icon/icon_background.png"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  min_sdk_android: 23

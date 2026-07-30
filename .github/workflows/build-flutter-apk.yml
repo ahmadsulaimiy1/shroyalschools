@@ -1,0 +1,85 @@
+name: Build Misbaha APK
+
+# Builds the Flutter app in flutter_app/ into a real, installable release APK
+# (and AAB) on every push that touches it, plus on demand. GitHub-hosted
+# runners have full internet + Android SDK access, so this is where the app
+# actually gets compiled — see flutter_app/BUILD.md for why local builds in
+# some sandboxed dev environments can't reach Google's Maven repos.
+on:
+  push:
+    branches:
+      - "**"
+    paths:
+      - "flutter_app/**"
+      - ".github/workflows/build-flutter-apk.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: flutter_app
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          flutter-version: "3.44.8"
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate launcher icons
+        run: dart run flutter_launcher_icons
+
+      - name: Analyze
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Build App Bundle (AAB)
+        run: flutter build appbundle --release
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: misbaha-release-apk
+          path: flutter_app/build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: misbaha-release-aab
+          path: flutter_app/build/app/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+
+      - name: Publish "latest build" release with attached APK/AAB
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest-apk
+          name: Misbaha — Latest Build
+          body: |
+            Automatically rebuilt from commit ${{ github.sha }} on branch `${{ github.ref_name }}`.
+            Download `app-release.apk` below and install it directly on an Android device
+            (enable "Install unknown apps" for your browser/file manager first).
+          prerelease: true
+          files: |
+            flutter_app/build/app/outputs/flutter-apk/app-release.apk
+            flutter_app/build/app/outputs/bundle/release/app-release.aab
