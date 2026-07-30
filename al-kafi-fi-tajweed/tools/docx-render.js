@@ -313,6 +313,22 @@ function renderNode(el) {
     const inner = [para(inlineRuns($el, { size: 18, italics: true, color: C.ink500 }), { after: 0 })];
     return [boxTable(inner, { fill: C.cream200, borderColor: C.gold500 }), new Paragraph({ text: '', spacing: { after: 140 } })];
   }
+  if (tag === 'div' && cls.split(/\s+/).includes('pref-signoff')) {
+    const out = [new Paragraph({ text: '', spacing: { after: 60 },
+      border: { top: { style: BorderStyle.DASHED, size: 4, color: C.rule || 'D9C79A', space: 8 } } })];
+    const date = $el.find('.date').text().trim();
+    const signee = $el.find('.signee').text().trim();
+    const org = $el.find('.org').text().trim();
+    const loc = $el.find('.loc').text().trim();
+    if (date) out.push(para(date, { align: AlignmentType.CENTER, size: 18, color: C.ink500, after: 80 }));
+    if (signee) out.push(new Paragraph({
+      children: textRunsFor(signee, { size: 26, bold: true, color: C.navy900, font: FONT_DISPLAY }),
+      alignment: AlignmentType.CENTER, bidirectional: true, spacing: { after: org ? 40 : 140 },
+    }));
+    if (org) out.push(para(org, { align: AlignmentType.CENTER, size: 20, bold: true, color: C.gold700, after: 20 }));
+    if (loc) out.push(para(loc, { align: AlignmentType.CENTER, size: 19, color: C.ink500, after: 160 }));
+    return out;
+  }
   if (tag === 'div' && cls.includes('field-list')) {
     return renderFieldList($el);
   }

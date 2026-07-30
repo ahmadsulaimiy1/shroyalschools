@@ -164,7 +164,7 @@ img{max-width:100%}
   box-shadow:var(--shadow);
 }
 .page + .page{margin-top:38px}
-.page-pad{padding:7.5vw 9.5vw}
+.page-pad{padding:8.5vw 10.5vw; box-decoration-break:clone; -webkit-box-decoration-break:clone;}
 
 /* ---------- Half title ---------- */
 .half-title{
@@ -185,7 +185,9 @@ img{max-width:100%}
   text-align:center; color:var(--cream-050);
   background:
     radial-gradient(ellipse at 50% -10%, rgba(195,154,60,.18), transparent 55%),
-    linear-gradient(160deg, var(--navy-950), var(--navy-800) 55%, var(--navy-900));
+    linear-gradient(160deg, var(--navy-950), var(--navy-800) 55%, var(--navy-900)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cpath d='M23 4 L42 23 L23 42 L4 23 Z' fill='none' stroke='rgba(227,199,128,0.09)' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat:no-repeat, no-repeat, repeat;
   padding:7vw 6vw; position:relative; overflow:hidden;
 }
 .cover::before{
@@ -196,6 +198,11 @@ img{max-width:100%}
   content:""; position:absolute; inset:26px; border:1px solid rgba(227,199,128,.25);
   pointer-events:none;
 }
+.cover .corner{position:absolute; width:38px; height:38px; pointer-events:none; z-index:1}
+.cover .corner-tl{top:30px; left:30px}
+.cover .corner-tr{top:30px; right:30px; transform:scaleX(-1)}
+.cover .corner-bl{bottom:30px; left:30px; transform:scaleY(-1)}
+.cover .corner-br{bottom:30px; right:30px; transform:scale(-1,-1)}
 .cover .eyebrow{font-family:"Cairo",sans-serif; letter-spacing:.35em; font-size:.72rem; color:var(--gold-300); text-transform:uppercase}
 .cover .bismillah{font-family:"Amiri Quran"; font-size:1.5em; color:var(--gold-300); margin:1.6em 0}
 .cover h1{
@@ -242,9 +249,16 @@ img{max-width:100%}
   color:var(--cream-050); text-align:center;
   background:
     radial-gradient(ellipse at 50% 110%, rgba(195,154,60,.16), transparent 55%),
-    linear-gradient(160deg, var(--navy-950), var(--navy-800) 55%, var(--navy-900));
+    linear-gradient(160deg, var(--navy-950), var(--navy-800) 55%, var(--navy-900)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cpath d='M23 4 L42 23 L23 42 L4 23 Z' fill='none' stroke='rgba(227,199,128,0.09)' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat:no-repeat, no-repeat, repeat;
   padding:6vw 6.5vw; position:relative; overflow:hidden;
 }
+.back-cover .corner{position:absolute; width:38px; height:38px; pointer-events:none; z-index:1}
+.back-cover .corner-tl{top:30px; left:30px}
+.back-cover .corner-tr{top:30px; right:30px; transform:scaleX(-1)}
+.back-cover .corner-bl{bottom:30px; left:30px; transform:scaleY(-1)}
+.back-cover .corner-br{bottom:30px; right:30px; transform:scale(-1,-1)}
 .back-cover::before{
   content:""; position:absolute; inset:18px; border:1px solid rgba(227,199,128,.55); pointer-events:none;
 }
@@ -318,6 +332,11 @@ img{max-width:100%}
 .field-list .v{color:var(--ink-700)}
 .placeholder{color:var(--ink-500); font-style:italic}
 .small-note{font-family:"Cairo",sans-serif; font-size:.8rem; color:var(--ink-500); margin-top:1.6em; line-height:1.9; background:var(--cream-200); border-inline-start:3px solid var(--gold-500); padding:.9em 1.1em}
+.pref-signoff{text-align:center; margin-top:2.6em; padding-top:1.5em; border-top:1px dashed var(--rule)}
+.pref-signoff .date{font-family:"Cairo",sans-serif; font-size:.82rem; color:var(--ink-500); direction:ltr; margin-bottom:.5em}
+.pref-signoff .signee{font-family:"Aref Ruqaa"; font-size:1.15rem; font-weight:700; color:var(--navy-900); margin-bottom:.25em}
+.pref-signoff .org{font-family:"Cairo",sans-serif; font-size:.85rem; color:var(--gold-700); font-weight:700; margin-bottom:.1em}
+.pref-signoff .loc{font-family:"Cairo",sans-serif; font-size:.8rem; color:var(--ink-500)}
 
 /* ---------- TOC ---------- */
 .toc{list-style:none; margin:0; padding:0}
@@ -352,7 +371,7 @@ img{max-width:100%}
 .part-opener .part-desc{font-family:"Cairo",sans-serif; color:var(--cream-200); max-width:34em; font-size:.95rem; line-height:1.9}
 
 /* ---------- CONTENT ---------- */
-.content{padding:7vw 9.5vw}
+.content{padding:8vw 10.5vw; box-decoration-break:clone; -webkit-box-decoration-break:clone;}
 .chapter{margin-bottom:3.2em}
 .chapter-title{
   font-family:"Aref Ruqaa"; color:var(--navy-950); font-size:1.55rem;
@@ -549,6 +568,10 @@ footer.book-footer{
 
 <!-- ============================== COVER ============================== -->
 <section class="cover">
+  <svg class="corner corner-tl" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
+  <svg class="corner corner-tr" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
+  <svg class="corner corner-bl" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
+  <svg class="corner corner-br" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
   <h1>الوجيز في التجويد</h1>
   <p class="subtitle">مرجعٌ موجز جامع لأحكام تلاوة القرآن الكريم، مخارج الحروف وصفاتها، وأحكام النون الساكنة والتنوين والميم الساكنة والمدود والراء واللامات والوقف والابتداء — على رواية حفص عن عاصم من طريق الشاطبية</p>
   <svg class="medallion" viewBox="0 0 140 140" width="108" height="108" aria-hidden="true" focusable="false">
@@ -600,12 +623,13 @@ footer.book-footer{
       <li><span class="k">السلسلة</span><span class="v">سلسلة مؤلفات الإمام أحمد بن إبراهيم السليمي — الكتاب (51)</span></li>
       <li><span class="k">الرواية المعتمدة</span><span class="v">حفص عن عاصم، من طريق الشاطبية</span></li>
       <li><span class="k">الإصدار</span><span class="v">النسخة الملكية الفاخرة</span></li>
+      <li><span class="k">الطبعة</span><span class="v">الطبعة الأولى — First Edition, 2026</span></li>
       <li><span class="k">رقم الإيداع / ISBN</span><span class="v">ISBN 978-1-7345678-1-1</span></li>
-      <li><span class="k">سنة النشر</span><span class="v placeholder">يُستكمل من الناشر</span></li>
+      <li><span class="k">سنة النشر</span><span class="v">2026</span></li>
       <li><span class="k">جميع الحقوق محفوظة</span><span class="v">لا يجوز نسخ أي جزء من هذا الكتاب أو نقله بأي شكل من الأشكال إلا بإذن خطي من المؤلف، فيما عدا الاستشهاد العلمي بالإشارة إلى المصدر</span></li>
     </ul>
     <div class="small-note">
-      رقم الإيداع الدولي (ISBN) مثبتٌ أعلاه لأغراض هذه الطبعة. تُستكمل بقية بيانات النشر الرسمية (سنة النشر، رقم الإيداع المحلي) من الناشر المعتمد قبل الطباعة النهائية، ولم تُدرَج بيانات افتراضية تجنّباً لأي معلومة غير موثقة.
+      رقم الإيداع الدولي (ISBN) والطبعة وسنة النشر مثبتة أعلاه لهذه الطبعة. يُستكمل رقم الإيداع المحلي من الناشر المعتمد قبل الطباعة النهائية، ولم تُدرَج بيانات افتراضية تجنّباً لأي معلومة غير موثقة.
     </div>
   </div>
 </section>
@@ -649,7 +673,7 @@ footer.book-footer{
       </li>
 
       <li>
-        <a class="part-link" href="#bab2"><span>الباب الثاني — مخارج الحروف</span><span class="pagenum">21</span></a>
+        <a class="part-link" href="#bab2"><span>الباب الثاني — مخارج الحروف</span><span class="pagenum">22</span></a>
         <ul>
           <li><a class="chap-link" href="#bab2-f1"><span>الفصل الأول: تعريف المخرج وأهميته</span><span class="dots"></span><span class="pagenum">23</span></a></li>
           <li><a class="chap-link" href="#bab2-f2"><span>الفصل الثاني: المخارج العامة (٥)</span><span class="dots"></span><span class="pagenum">24</span></a></li>
@@ -660,86 +684,86 @@ footer.book-footer{
       <li>
         <a class="part-link" href="#bab3"><span>الباب الثالث — صفات الحروف</span><span class="pagenum">31</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab3-f1"><span>الفصل الأول: تعريف الصفة وأهميتها</span><span class="dots"></span><span class="pagenum">32</span></a></li>
-          <li><a class="chap-link" href="#bab3-f2"><span>الفصل الثاني: الصفات التي لها ضد</span><span class="dots"></span><span class="pagenum">33</span></a></li>
-          <li><a class="chap-link" href="#bab3-f3"><span>الفصل الثالث: الصفات التي لا ضد لها</span><span class="dots"></span><span class="pagenum">37</span></a></li>
+          <li><a class="chap-link" href="#bab3-f1"><span>الفصل الأول: تعريف الصفة وأهميتها</span><span class="dots"></span><span class="pagenum">33</span></a></li>
+          <li><a class="chap-link" href="#bab3-f2"><span>الفصل الثاني: الصفات التي لها ضد</span><span class="dots"></span><span class="pagenum">34</span></a></li>
+          <li><a class="chap-link" href="#bab3-f3"><span>الفصل الثالث: الصفات التي لا ضد لها</span><span class="dots"></span><span class="pagenum">38</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab4"><span>الباب الرابع — أحكام النون الساكنة والتنوين</span><span class="pagenum">38</span></a>
+        <a class="part-link" href="#bab4"><span>الباب الرابع — أحكام النون الساكنة والتنوين</span><span class="pagenum">40</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab4-f1"><span>الفصل الأول: التعريف</span><span class="dots"></span><span class="pagenum">40</span></a></li>
-          <li><a class="chap-link" href="#bab4-f2"><span>الفصل الثاني: الإظهار الحلقي</span><span class="dots"></span><span class="pagenum">41</span></a></li>
-          <li><a class="chap-link" href="#bab4-f3"><span>الفصل الثالث: الإدغام</span><span class="dots"></span><span class="pagenum">43</span></a></li>
-          <li><a class="chap-link" href="#bab4-f4"><span>الفصل الرابع: الإقلاب</span><span class="dots"></span><span class="pagenum">45</span></a></li>
-          <li><a class="chap-link" href="#bab4-f5"><span>الفصل الخامس: الإخفاء الحقيقي</span><span class="dots"></span><span class="pagenum">46</span></a></li>
+          <li><a class="chap-link" href="#bab4-f1"><span>الفصل الأول: التعريف</span><span class="dots"></span><span class="pagenum">41</span></a></li>
+          <li><a class="chap-link" href="#bab4-f2"><span>الفصل الثاني: الإظهار الحلقي</span><span class="dots"></span><span class="pagenum">42</span></a></li>
+          <li><a class="chap-link" href="#bab4-f3"><span>الفصل الثالث: الإدغام</span><span class="dots"></span><span class="pagenum">44</span></a></li>
+          <li><a class="chap-link" href="#bab4-f4"><span>الفصل الرابع: الإقلاب</span><span class="dots"></span><span class="pagenum">47</span></a></li>
+          <li><a class="chap-link" href="#bab4-f5"><span>الفصل الخامس: الإخفاء الحقيقي</span><span class="dots"></span><span class="pagenum">49</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab5"><span>الباب الخامس — أحكام الميم الساكنة</span><span class="pagenum">49</span></a>
+        <a class="part-link" href="#bab5"><span>الباب الخامس — أحكام الميم الساكنة</span><span class="pagenum">52</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab5-f1"><span>الفصل الأول: التعريف</span><span class="dots"></span><span class="pagenum">50</span></a></li>
-          <li><a class="chap-link" href="#bab5-f2"><span>الفصل الثاني: الإخفاء الشفوي</span><span class="dots"></span><span class="pagenum">51</span></a></li>
-          <li><a class="chap-link" href="#bab5-f3"><span>الفصل الثالث: إدغام المثلين الصغير</span><span class="dots"></span><span class="pagenum">52</span></a></li>
-          <li><a class="chap-link" href="#bab5-f4"><span>الفصل الرابع: الإظهار الشفوي</span><span class="dots"></span><span class="pagenum">53</span></a></li>
+          <li><a class="chap-link" href="#bab5-f1"><span>الفصل الأول: التعريف</span><span class="dots"></span><span class="pagenum">54</span></a></li>
+          <li><a class="chap-link" href="#bab5-f2"><span>الفصل الثاني: الإخفاء الشفوي</span><span class="dots"></span><span class="pagenum">55</span></a></li>
+          <li><a class="chap-link" href="#bab5-f3"><span>الفصل الثالث: إدغام المثلين الصغير</span><span class="dots"></span><span class="pagenum">56</span></a></li>
+          <li><a class="chap-link" href="#bab5-f4"><span>الفصل الرابع: الإظهار الشفوي</span><span class="dots"></span><span class="pagenum">57</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab6"><span>الباب السادس — أحكام المدود</span><span class="pagenum">54</span></a>
+        <a class="part-link" href="#bab6"><span>الباب السادس — أحكام المدود</span><span class="pagenum">59</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab6-f1"><span>الفصل الأول: تعريف المد وحروفه</span><span class="dots"></span><span class="pagenum">56</span></a></li>
-          <li><a class="chap-link" href="#bab6-f2"><span>الفصل الثاني: المد الطبيعي</span><span class="dots"></span><span class="pagenum">57</span></a></li>
-          <li><a class="chap-link" href="#bab6-f3"><span>الفصل الثالث: المد الفرعي بسبب الهمز</span><span class="dots"></span><span class="pagenum">58</span></a></li>
-          <li><a class="chap-link" href="#bab6-f4"><span>الفصل الرابع: المد الفرعي بسبب السكون</span><span class="dots"></span><span class="pagenum">61</span></a></li>
-          <li><a class="chap-link" href="#bab6-f5"><span>الفصل الخامس: مراتب المدود</span><span class="dots"></span><span class="pagenum">64</span></a></li>
+          <li><a class="chap-link" href="#bab6-f1"><span>الفصل الأول: تعريف المد وحروفه</span><span class="dots"></span><span class="pagenum">60</span></a></li>
+          <li><a class="chap-link" href="#bab6-f2"><span>الفصل الثاني: المد الطبيعي</span><span class="dots"></span><span class="pagenum">61</span></a></li>
+          <li><a class="chap-link" href="#bab6-f3"><span>الفصل الثالث: المد الفرعي بسبب الهمز</span><span class="dots"></span><span class="pagenum">62</span></a></li>
+          <li><a class="chap-link" href="#bab6-f4"><span>الفصل الرابع: المد الفرعي بسبب السكون</span><span class="dots"></span><span class="pagenum">65</span></a></li>
+          <li><a class="chap-link" href="#bab6-f5"><span>الفصل الخامس: مراتب المدود</span><span class="dots"></span><span class="pagenum">68</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab7"><span>الباب السابع — أحكام الراء</span><span class="pagenum">65</span></a>
+        <a class="part-link" href="#bab7"><span>الباب السابع — أحكام الراء</span><span class="pagenum">70</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab7-f1"><span>الفصل الأول: حالات تفخيم الراء</span><span class="dots"></span><span class="pagenum">67</span></a></li>
-          <li><a class="chap-link" href="#bab7-f2"><span>الفصل الثاني: حالات ترقيق الراء</span><span class="dots"></span><span class="pagenum">68</span></a></li>
-          <li><a class="chap-link" href="#bab7-f3"><span>الفصل الثالث: حالات جواز الوجهين</span><span class="dots"></span><span class="pagenum">69</span></a></li>
+          <li><a class="chap-link" href="#bab7-f1"><span>الفصل الأول: حالات تفخيم الراء</span><span class="dots"></span><span class="pagenum">71</span></a></li>
+          <li><a class="chap-link" href="#bab7-f2"><span>الفصل الثاني: حالات ترقيق الراء</span><span class="dots"></span><span class="pagenum">72</span></a></li>
+          <li><a class="chap-link" href="#bab7-f3"><span>الفصل الثالث: حالات جواز الوجهين</span><span class="dots"></span><span class="pagenum">73</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab8"><span>الباب الثامن — أحكام لفظ الجلالة واللامات</span><span class="pagenum">70</span></a>
+        <a class="part-link" href="#bab8"><span>الباب الثامن — أحكام لفظ الجلالة واللامات</span><span class="pagenum">74</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab8-f1"><span>الفصل الأول: لفظ الجلالة</span><span class="dots"></span><span class="pagenum">71</span></a></li>
-          <li><a class="chap-link" href="#bab8-f2"><span>الفصل الثاني: لام التعريف</span><span class="dots"></span><span class="pagenum">72</span></a></li>
-          <li><a class="chap-link" href="#bab8-f3"><span>الفصل الثالث: لام الفعل والأمر والحرف</span><span class="dots"></span><span class="pagenum">73</span></a></li>
+          <li><a class="chap-link" href="#bab8-f1"><span>الفصل الأول: لفظ الجلالة</span><span class="dots"></span><span class="pagenum">75</span></a></li>
+          <li><a class="chap-link" href="#bab8-f2"><span>الفصل الثاني: لام التعريف</span><span class="dots"></span><span class="pagenum">76</span></a></li>
+          <li><a class="chap-link" href="#bab8-f3"><span>الفصل الثالث: لام الفعل والأمر والحرف</span><span class="dots"></span><span class="pagenum">77</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab9"><span>الباب التاسع — أحكام الوقف والابتداء</span><span class="pagenum">74</span></a>
+        <a class="part-link" href="#bab9"><span>الباب التاسع — أحكام الوقف والابتداء</span><span class="pagenum">78</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab9-f1"><span>الفصل الأول: تعريف الوقف وأقسامه</span><span class="dots"></span><span class="pagenum">75</span></a></li>
-          <li><a class="chap-link" href="#bab9-f2"><span>الفصل الثاني: علامات الوقف في المصحف</span><span class="dots"></span><span class="pagenum">76</span></a></li>
-          <li><a class="chap-link" href="#bab9-f3"><span>الفصل الثالث: السكتات في رواية حفص</span><span class="dots"></span><span class="pagenum">77</span></a></li>
-          <li><a class="chap-link" href="#bab9-f4"><span>الفصل الرابع: الوقف على أواخر الكلمات</span><span class="dots"></span><span class="pagenum">78</span></a></li>
+          <li><a class="chap-link" href="#bab9-f1"><span>الفصل الأول: تعريف الوقف وأقسامه</span><span class="dots"></span><span class="pagenum">79</span></a></li>
+          <li><a class="chap-link" href="#bab9-f2"><span>الفصل الثاني: علامات الوقف في المصحف</span><span class="dots"></span><span class="pagenum">80</span></a></li>
+          <li><a class="chap-link" href="#bab9-f3"><span>الفصل الثالث: السكتات في رواية حفص</span><span class="dots"></span><span class="pagenum">81</span></a></li>
+          <li><a class="chap-link" href="#bab9-f4"><span>الفصل الرابع: الوقف على أواخر الكلمات</span><span class="dots"></span><span class="pagenum">82</span></a></li>
         </ul>
       </li>
 
       <li>
-        <a class="part-link" href="#bab10"><span>الباب العاشر — الأخطاء الشائعة وتصحيحها</span><span class="pagenum">79</span></a>
+        <a class="part-link" href="#bab10"><span>الباب العاشر — الأخطاء الشائعة وتصحيحها</span><span class="pagenum">83</span></a>
         <ul>
-          <li><a class="chap-link" href="#bab10-f1"><span>الفصل الأول: أخطاء في المخارج</span><span class="dots"></span><span class="pagenum">81</span></a></li>
-          <li><a class="chap-link" href="#bab10-f2"><span>الفصل الثاني: أخطاء في الصفات</span><span class="dots"></span><span class="pagenum">82</span></a></li>
-          <li><a class="chap-link" href="#bab10-f3"><span>الفصل الثالث: أخطاء في الأحكام</span><span class="dots"></span><span class="pagenum">83</span></a></li>
+          <li><a class="chap-link" href="#bab10-f1"><span>الفصل الأول: أخطاء في المخارج</span><span class="dots"></span><span class="pagenum">85</span></a></li>
+          <li><a class="chap-link" href="#bab10-f2"><span>الفصل الثاني: أخطاء في الصفات</span><span class="dots"></span><span class="pagenum">86</span></a></li>
+          <li><a class="chap-link" href="#bab10-f3"><span>الفصل الثالث: أخطاء في الأحكام</span><span class="dots"></span><span class="pagenum">87</span></a></li>
         </ul>
       </li>
 
-      <li><a class="part-link" href="#khatimah"><span>الخاتمة</span><span class="pagenum">84</span></a></li>
-      <li><a class="part-link" href="#appendices"><span>الملاحق</span><span class="pagenum">85</span></a></li>
-      <li><a class="part-link" href="#glossary"><span>مسرد المصطلحات</span><span class="pagenum">88</span></a></li>
-      <li><a class="part-link" href="#bibliography"><span>قائمة المصادر</span><span class="pagenum">91</span></a></li>
-      <li><a class="part-link" href="#index"><span>الفهرس التحليلي</span><span class="pagenum">92</span></a></li>
+      <li><a class="part-link" href="#khatimah"><span>الخاتمة</span><span class="pagenum">88</span></a></li>
+      <li><a class="part-link" href="#appendices"><span>الملاحق</span><span class="pagenum">89</span></a></li>
+      <li><a class="part-link" href="#glossary"><span>مسرد المصطلحات</span><span class="pagenum">92</span></a></li>
+      <li><a class="part-link" href="#bibliography"><span>قائمة المصادر</span><span class="pagenum">95</span></a></li>
+      <li><a class="part-link" href="#index"><span>الفهرس التحليلي</span><span class="pagenum">96</span></a></li>
     </ul>
   </div>
 </section>
@@ -752,6 +776,12 @@ footer.book-footer{
     <p>أما بعد: فإن علم التجويد من أشرف العلوم الشرعية، لأنه يتعلق بكلام الله تعالى. وقد حرصت على تأليف هذا الكتاب "الوجيز في التجويد" ليجمع أصول هذا الفن وأحكامه في عبارة موجزة لا تُمل، معتمداً على أشهر رواية وهي رواية حفص عن عاصم من طريق الشاطبية، ومحرراً على مذهب جمهور علماء التجويد.</p>
     <p>وقد سميته "الوجيز" لإيجازه واختصار عبارته، لا لقصور في مادته العلمية، رجاء أن ييسّر الله به على طالب العلم من المبتدئين إلى المتقدمين تناول هذا الفن دون إطالة تُمل أو اختصار يُخل، جامعاً ما تيسر من الدقة والسهولة، مع إيراد الأمثلة المحققة من القرآن الكريم، والتنبيه على الأخطاء الشائعة، مستفيداً فيه من جهود أئمة هذا الفن كابن الجزري، وأبي عمرو الداني، والملا علي القاري، وغيرهم، لا مستغنياً به عن شيء من تراثهم العظيم.</p>
     <p>أسأل الله أن ينفع به، وأن يجعله خالصاً لوجهه الكريم.</p>
+    <div class="pref-signoff">
+      <div class="date">12/2/2026</div>
+      <div class="signee">أحمد بن إبراهيم السليمي</div>
+      <div class="org">جامعة الملك العالمية</div>
+      <div class="loc">تكساس، الولايات المتحدة الأمريكية</div>
+    </div>
   </div>
 </section>
 
@@ -2483,28 +2513,28 @@ footer.book-footer{
       <li><a class="chap-link" href="#bab1-f4"><span>مراتب الأداء الثلاث ومنزلة الترتيل</span><span class="dots"></span><span class="pagenum">18</span></a></li>
       <li><a class="chap-link" href="#bab2-f2"><span>المخارج العامة الخمسة</span><span class="dots"></span><span class="pagenum">24</span></a></li>
       <li><a class="chap-link" href="#bab2-f3"><span>المخارج الخاصة السبعة عشر</span><span class="dots"></span><span class="pagenum">25</span></a></li>
-      <li><a class="chap-link" href="#bab3-f2"><span>الصفات المتضادة</span><span class="dots"></span><span class="pagenum">33</span></a></li>
-      <li><a class="chap-link" href="#bab3-f3"><span>القلقلة ومراتبها</span><span class="dots"></span><span class="pagenum">37</span></a></li>
-      <li><a class="chap-link" href="#bab4-f2"><span>الإظهار الحلقي</span><span class="dots"></span><span class="pagenum">41</span></a></li>
-      <li><a class="chap-link" href="#bab4-f3"><span>الإدغام بغنة وبلا غنة</span><span class="dots"></span><span class="pagenum">43</span></a></li>
-      <li><a class="chap-link" href="#bab4-f4"><span>الإقلاب</span><span class="dots"></span><span class="pagenum">45</span></a></li>
-      <li><a class="chap-link" href="#bab4-f5"><span>الإخفاء الحقيقي</span><span class="dots"></span><span class="pagenum">46</span></a></li>
-      <li><a class="chap-link" href="#bab5-f2"><span>الإخفاء الشفوي</span><span class="dots"></span><span class="pagenum">51</span></a></li>
-      <li><a class="chap-link" href="#bab5-f3"><span>إدغام المثلين الصغير</span><span class="dots"></span><span class="pagenum">52</span></a></li>
-      <li><a class="chap-link" href="#bab5-f4"><span>الإظهار الشفوي</span><span class="dots"></span><span class="pagenum">53</span></a></li>
-      <li><a class="chap-link" href="#bab6-f2"><span>المد الطبيعي وملحقاته</span><span class="dots"></span><span class="pagenum">57</span></a></li>
-      <li><a class="chap-link" href="#bab6-f3"><span>المتصل، المنفصل، البدل</span><span class="dots"></span><span class="pagenum">58</span></a></li>
-      <li><a class="chap-link" href="#bab6-f4"><span>العارض للسكون، اللازم، اللين</span><span class="dots"></span><span class="pagenum">61</span></a></li>
-      <li><a class="chap-link" href="#bab7-f1"><span>تفخيم الراء</span><span class="dots"></span><span class="pagenum">67</span></a></li>
-      <li><a class="chap-link" href="#bab7-f2"><span>ترقيق الراء</span><span class="dots"></span><span class="pagenum">68</span></a></li>
-      <li><a class="chap-link" href="#bab8-f1"><span>لفظ الجلالة</span><span class="dots"></span><span class="pagenum">71</span></a></li>
-      <li><a class="chap-link" href="#bab8-f2"><span>أل الشمسية والقمرية</span><span class="dots"></span><span class="pagenum">72</span></a></li>
-      <li><a class="chap-link" href="#bab9-f1"><span>أقسام الوقف</span><span class="dots"></span><span class="pagenum">75</span></a></li>
-      <li><a class="chap-link" href="#bab9-f2"><span>علامات الوقف في المصحف</span><span class="dots"></span><span class="pagenum">76</span></a></li>
-      <li><a class="chap-link" href="#bab9-f3"><span>السكتات الأربع</span><span class="dots"></span><span class="pagenum">77</span></a></li>
-      <li><a class="chap-link" href="#bab10-f1"><span>أخطاء المخارج وتصحيحها</span><span class="dots"></span><span class="pagenum">81</span></a></li>
-      <li><a class="chap-link" href="#bab10-f2"><span>أخطاء الصفات وتصحيحها</span><span class="dots"></span><span class="pagenum">82</span></a></li>
-      <li><a class="chap-link" href="#bab10-f3"><span>أخطاء الأحكام وتصحيحها</span><span class="dots"></span><span class="pagenum">83</span></a></li>
+      <li><a class="chap-link" href="#bab3-f2"><span>الصفات المتضادة</span><span class="dots"></span><span class="pagenum">34</span></a></li>
+      <li><a class="chap-link" href="#bab3-f3"><span>القلقلة ومراتبها</span><span class="dots"></span><span class="pagenum">38</span></a></li>
+      <li><a class="chap-link" href="#bab4-f2"><span>الإظهار الحلقي</span><span class="dots"></span><span class="pagenum">42</span></a></li>
+      <li><a class="chap-link" href="#bab4-f3"><span>الإدغام بغنة وبلا غنة</span><span class="dots"></span><span class="pagenum">44</span></a></li>
+      <li><a class="chap-link" href="#bab4-f4"><span>الإقلاب</span><span class="dots"></span><span class="pagenum">47</span></a></li>
+      <li><a class="chap-link" href="#bab4-f5"><span>الإخفاء الحقيقي</span><span class="dots"></span><span class="pagenum">49</span></a></li>
+      <li><a class="chap-link" href="#bab5-f2"><span>الإخفاء الشفوي</span><span class="dots"></span><span class="pagenum">55</span></a></li>
+      <li><a class="chap-link" href="#bab5-f3"><span>إدغام المثلين الصغير</span><span class="dots"></span><span class="pagenum">56</span></a></li>
+      <li><a class="chap-link" href="#bab5-f4"><span>الإظهار الشفوي</span><span class="dots"></span><span class="pagenum">57</span></a></li>
+      <li><a class="chap-link" href="#bab6-f2"><span>المد الطبيعي وملحقاته</span><span class="dots"></span><span class="pagenum">61</span></a></li>
+      <li><a class="chap-link" href="#bab6-f3"><span>المتصل، المنفصل، البدل</span><span class="dots"></span><span class="pagenum">62</span></a></li>
+      <li><a class="chap-link" href="#bab6-f4"><span>العارض للسكون، اللازم، اللين</span><span class="dots"></span><span class="pagenum">65</span></a></li>
+      <li><a class="chap-link" href="#bab7-f1"><span>تفخيم الراء</span><span class="dots"></span><span class="pagenum">71</span></a></li>
+      <li><a class="chap-link" href="#bab7-f2"><span>ترقيق الراء</span><span class="dots"></span><span class="pagenum">72</span></a></li>
+      <li><a class="chap-link" href="#bab8-f1"><span>لفظ الجلالة</span><span class="dots"></span><span class="pagenum">75</span></a></li>
+      <li><a class="chap-link" href="#bab8-f2"><span>أل الشمسية والقمرية</span><span class="dots"></span><span class="pagenum">76</span></a></li>
+      <li><a class="chap-link" href="#bab9-f1"><span>أقسام الوقف</span><span class="dots"></span><span class="pagenum">79</span></a></li>
+      <li><a class="chap-link" href="#bab9-f2"><span>علامات الوقف في المصحف</span><span class="dots"></span><span class="pagenum">80</span></a></li>
+      <li><a class="chap-link" href="#bab9-f3"><span>السكتات الأربع</span><span class="dots"></span><span class="pagenum">81</span></a></li>
+      <li><a class="chap-link" href="#bab10-f1"><span>أخطاء المخارج وتصحيحها</span><span class="dots"></span><span class="pagenum">85</span></a></li>
+      <li><a class="chap-link" href="#bab10-f2"><span>أخطاء الصفات وتصحيحها</span><span class="dots"></span><span class="pagenum">86</span></a></li>
+      <li><a class="chap-link" href="#bab10-f3"><span>أخطاء الأحكام وتصحيحها</span><span class="dots"></span><span class="pagenum">87</span></a></li>
     </ul>
   </div>
 </section>
@@ -2524,6 +2554,10 @@ footer.book-footer{
 
 <!-- ============================== BACK COVER ============================== -->
 <section class="back-cover">
+  <svg class="corner corner-tl" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
+  <svg class="corner corner-tr" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
+  <svg class="corner corner-bl" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
+  <svg class="corner corner-br" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 L2 14 Q2 2 14 2 L38 2" fill="none" stroke="#c39a3c" stroke-width="1" opacity="0.55"/><path d="M2 28 Q2 8 22 8" fill="none" stroke="#e3c780" stroke-width="0.8" opacity="0.5"/><circle cx="2" cy="2" r="2.5" fill="#c39a3c" opacity="0.8"/></svg>
   <div class="bc-kicker">سلسلة مؤلفات الإمام أحمد بن إبراهيم السليمي · الكتاب (51)</div>
   <div>
     <div class="bc-title">الوجيز في التجويد</div>
