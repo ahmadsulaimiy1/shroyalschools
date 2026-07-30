@@ -17,7 +17,7 @@
 
     <!-- Coarse location is sufficient to compute a Qiblah bearing (accuracy
          of a few hundred metres does not meaningfully change the great-circle
-         bearing to the Kaaba) -- see core/services/qiblah_service.dart. -->
+         bearing to the Kaaba); see core/services/qiblah_service.dart. -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
