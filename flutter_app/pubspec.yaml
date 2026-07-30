@@ -28,8 +28,11 @@ dependencies:
   # Date formatting for statistics screen.
   intl: ^0.20.2
 
-  # App version display on the About screen.
-  package_info_plus: ^8.0.2
+  # App version display on the About screen. Pinned to ^10.2.1 (bumped from
+  # ^8.0.2) because geolocator >=14.0.3 transitively requires
+  # package_info_plus ^10.0.0 via geolocator_linux -- see the CI failure
+  # this fixed for the exact resolver error.
+  package_info_plus: ^10.2.1
 
   # Offline text-to-speech — drives the device's installed Android
   # TextToSpeech engine/voice packs directly, no network calls.
