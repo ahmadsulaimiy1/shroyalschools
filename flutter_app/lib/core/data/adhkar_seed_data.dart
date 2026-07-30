@@ -1,23 +1,17 @@
 import '../models/adhkar_entry.dart';
 
-/// Seed content for the Adhkar library, drawn from two classical
-/// compilations — see /docs and the app's About screen for full attribution:
+/// Seed content for the Adhkar library, sourced from الورد المصفى ("Al-Wird
+/// al-Musaffa"), selected by 'Abd al-'Aziz bin 'Abd al-Rahman Al-Faisal Al
+/// Sa'ud (رحمه الله), published by Dar As-Salam, Cairo (1423H/2003).
 ///
-/// 1. الورد المصفى ("Al-Wird al-Musaffa"), selected by 'Abd al-'Aziz bin
-///    'Abd al-Rahman Al-Faisal Al Sa'ud (رحمه الله), published by Dar
-///    As-Salam, Cairo (1423H/2003). A two-part compilation: Qur'anic du'a
-///    verses in Mushaf order (category: quranicDuas), and Prophetic/
-///    traditional supplications with no built-in time-of-day categorization
-///    (mapped to generalDhikr/dailyDuas/protection by each entry's content —
-///    this book has no Morning/Evening/Sleep/Wake-up/Travel/Prayer sections).
-/// 2. Hisn al-Muslim ("Fortress of the Muslim") by Sa'id bin Ali bin Wahf
-///    Al-Qahtani, which does use that time-of-day taxonomy — its Morning,
-///    Evening, Waking Up, Going to Sleep, prayer-related, and travel
-///    chapters populate the categories the first book doesn't cover.
-///
-/// See docs/13-ADHKAR-IMPORT-VERIFICATION-REPORT.md and
-/// docs/14-HISN-AL-MUSLIM-IMPORT.md for the full import verification report
-/// and category-mapping rationale.
+/// Reproduced under license from the publisher — see /docs and the app's
+/// About screen for the full attribution. This is a two-part compilation:
+/// Part 1 is Qur'anic du'a verses in Mushaf order (category: quranicDuas);
+/// Part 2 is Prophetic/traditional supplications with no built-in time-of-day
+/// categorization (mapped here to generalDhikr/dailyDuas/protection based on
+/// each entry's content). The book does not contain distinct Morning/
+/// Evening/Sleep/Wake-up/Travel/Prayer sections — see docs/13-ADHKAR-IMPORT-VERIFICATION-REPORT.md
+/// for the full import verification report and category-mapping rationale.
 final DateTime _importedAt = DateTime.utc(2026, 7, 30);
 
 final List<AdhkarEntry> wirdAlMusaffaSeed = [
@@ -4320,11 +4314,11 @@ ARABIC: لاَ حَولَ وَلاَ قُوَّةَ إِلَّا بِاللَّ�
     id: r'''subhana_rabbiyal_adheem''',
     category: AdhkarCategory.prayer,
     titleAr: r'''تسبيح الركوع''',
-    titleEn: r'''Dhikr of Ruku'''',
+    titleEn: r"""Dhikr of Ruku'""",
     arabicText: r'''سُبْحَانَ رَبِّيَ العَظِيمِ''',
     transliteration: r'''Subḥāna Rabbiyal-ʿAẓīm.''',
     translationEn: r'''Glory be to my Lord, the Mighty.''',
-    sourceReference: r'''Hisn al-Muslim (Fortress of the Muslim), Sa'id bin Ali Al-Qahtani — Du'a of Ruku'''',
+    sourceReference: r"""Hisn al-Muslim (Fortress of the Muslim), Sa'id bin Ali Al-Qahtani — Du'a of Ruku'""",
     repetitionCount: 3,
     repetitionNote: r'''Recited three times (minimum)''',
     audioAvailable: true,
@@ -4348,11 +4342,11 @@ ARABIC: لاَ حَولَ وَلاَ قُوَّةَ إِلَّا بِاللَّ�
     id: r'''samiallahu_liman_hamidah''',
     category: AdhkarCategory.prayer,
     titleAr: r'''ذكر الرفع من الركوع''',
-    titleEn: r'''Dhikr Upon Rising From Ruku'''',
+    titleEn: r"""Dhikr Upon Rising From Ruku'""",
     arabicText: r'''سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ. رَبَّنَا وَلَكَ الحَمْدُ، حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ''',
     transliteration: r'''Samiʿallāhu liman ḥamidah. Rabbanā wa lakal-ḥamd, ḥamdan kathīran ṭayyiban mubārakan fīh.''',
     translationEn: r'''Allah hears the one who praises Him. Our Lord, to You is due all praise, praise that is abundant, good, and blessed.''',
-    sourceReference: r'''Hisn al-Muslim (Fortress of the Muslim), Sa'id bin Ali Al-Qahtani — Du'a Upon Rising From Ruku'''',
+    sourceReference: r"""Hisn al-Muslim (Fortress of the Muslim), Sa'id bin Ali Al-Qahtani — Du'a Upon Rising From Ruku'""",
     repetitionCount: 1,
     repetitionNote: r'''"Sami' Allahu liman hamidah" is said while rising; "Rabbana wa lakal-hamd" upon standing straight''',
     audioAvailable: true,
@@ -4362,11 +4356,11 @@ ARABIC: لاَ حَولَ وَلاَ قُوَّةَ إِلَّا بِاللَّ�
     id: r'''milas_samawati_wal_ard''',
     category: AdhkarCategory.prayer,
     titleAr: r'''ملء السماوات وملء الأرض''',
-    titleEn: r'''Extended Praise After Rising From Ruku'''',
+    titleEn: r"""Extended Praise After Rising From Ruku'""",
     arabicText: r'''مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ. أَهْلَ الثَّنَاءِ وَالمَجْدِ، أَحَقُّ مَا قَالَ العَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ وَلَا مُعْطِيَ لِمَا مَنَعْتَ وَلَا يَنْفَعُ ذَا الجَدِّ مِنْكَ الجَدُّ''',
     transliteration: r'''Milʾas-samāwāti wa milʾal-arḍi wa mā baynahumā, wa milʾa mā shiʾta min shayʾin baʿd. Ahlath-thanāʾi wal-majd, aḥaqqu mā qālal-ʿabd, wa kullunā laka ʿabd. Allāhumma lā māniʿa limā aʿṭayt, wa lā muʿṭiya limā manaʿt, wa lā yanfaʿu dhal-jaddi minkal-jadd.''',
     translationEn: r'''(Praise) filling the heavens and filling the earth and whatever is between them, and filling whatever else You wish. O One deserving of praise and glory, that is the truest thing a servant has said, and all of us are Your servants. O Allah, none can withhold what You give, and none can give what You withhold, and no possessor of might can benefit from his might against You.''',
-    sourceReference: r'''Hisn al-Muslim (Fortress of the Muslim), Sa'id bin Ali Al-Qahtani — Du'a Upon Rising From Ruku'''',
+    sourceReference: r"""Hisn al-Muslim (Fortress of the Muslim), Sa'id bin Ali Al-Qahtani — Du'a Upon Rising From Ruku'""",
     repetitionCount: 1,
     repetitionNote: r'''An extended addition after "Rabbana wa lakal-hamd"''',
     audioAvailable: true,
