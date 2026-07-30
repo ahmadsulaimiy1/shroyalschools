@@ -5,6 +5,7 @@ import '../../../core/database/quran_repository.dart';
 import '../../../core/localization/app_localizations.dart';
 import '../../../core/models/quran_verse.dart';
 import '../../../core/services/quran/quran_audio_controller.dart';
+import '../../../core/services/settings_controller.dart';
 
 class QuranVerseCard extends StatefulWidget {
   const QuranVerseCard({
@@ -13,12 +14,14 @@ class QuranVerseCard extends StatefulWidget {
     required this.playlist,
     required this.index,
     this.fontScale = 1.0,
+    this.readingMode = QuranReadingMode.arabicTranslation,
   });
 
   final QuranVerse verse;
   final List<QuranVerse> playlist;
   final int index;
   final double fontScale;
+  final QuranReadingMode readingMode;
 
   @override
   State<QuranVerseCard> createState() => _QuranVerseCardState();
@@ -104,12 +107,29 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
             ),
             Text(
               v.arabicText,
-              style: theme.textTheme.headlineSmall?.copyWith(height: 2.0, fontSize: (theme.textTheme.headlineSmall?.fontSize ?? 24) * widget.fontScale),
+              style: theme.textTheme.headlineSmall?.copyWith(
+                fontFamily: 'AmiriQuran',
+                height: 2.3,
+                letterSpacing: 0.5,
+                fontSize: (theme.textTheme.headlineSmall?.fontSize ?? 24) * 1.05 * widget.fontScale,
+              ),
               textAlign: TextAlign.right,
               textDirection: TextDirection.rtl,
             ),
-            const Divider(height: 24),
-            Text(v.translationEn, style: theme.textTheme.bodyMedium),
+            if (widget.readingMode != QuranReadingMode.arabicOnly) ...[
+              const Divider(height: 24),
+              if (widget.readingMode == QuranReadingMode.arabicTranslationTransliteration && v.transliteration.isNotEmpty) ...[
+                Text(
+                  v.transliteration,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    fontStyle: FontStyle.italic,
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                ),
+                const SizedBox(height: 8),
+              ],
+              Text(v.translationEn, style: theme.textTheme.bodyMedium),
+            ],
           ],
         ),
       ),

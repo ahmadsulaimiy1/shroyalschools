@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/database/quran_repository.dart';
+import '../../core/localization/app_localizations.dart';
 import '../../core/models/quran_verse.dart';
 import '../../core/services/settings_controller.dart';
 import 'widgets/quran_verse_card.dart';
@@ -56,8 +57,36 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
   @override
   Widget build(BuildContext context) {
     final settings = context.watch<SettingsController>();
+    final t = context.loc.t;
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
+      appBar: AppBar(
+        title: Text(widget.title),
+        actions: [
+          PopupMenuButton<QuranReadingMode>(
+            icon: const Icon(Icons.text_fields),
+            tooltip: t('quran_reading_mode'),
+            initialValue: settings.quranReadingMode,
+            onSelected: (mode) => context.read<SettingsController>().setQuranReadingMode(mode),
+            itemBuilder: (context) => [
+              CheckedPopupMenuItem(
+                value: QuranReadingMode.arabicOnly,
+                checked: settings.quranReadingMode == QuranReadingMode.arabicOnly,
+                child: Text(t('quran_mode_arabic_only')),
+              ),
+              CheckedPopupMenuItem(
+                value: QuranReadingMode.arabicTranslation,
+                checked: settings.quranReadingMode == QuranReadingMode.arabicTranslation,
+                child: Text(t('quran_mode_arabic_translation')),
+              ),
+              CheckedPopupMenuItem(
+                value: QuranReadingMode.arabicTranslationTransliteration,
+                checked: settings.quranReadingMode == QuranReadingMode.arabicTranslationTransliteration,
+                child: Text(t('quran_mode_arabic_translation_transliteration')),
+              ),
+            ],
+          ),
+        ],
+      ),
       body: ListView.builder(
         controller: _scrollController,
         padding: const EdgeInsets.all(16),
@@ -67,6 +96,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
           playlist: widget.verses,
           index: i,
           fontScale: settings.effectiveTextScale,
+          readingMode: settings.quranReadingMode,
         ),
       ),
     );

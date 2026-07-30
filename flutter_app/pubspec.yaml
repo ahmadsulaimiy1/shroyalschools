@@ -51,6 +51,10 @@ dependencies:
   # Qur'an recitation must be genuine reciter audio, not synthesized speech.
   just_audio: ^0.9.42
 
+  # Keeps the screen awake during Tahajjud Mode's hands-free auto-scroll
+  # recitation, without requiring the user to touch the screen.
+  wakelock_plus: ^1.2.8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -67,6 +71,11 @@ flutter:
     - assets/icon/
     - assets/images/
     - assets/quran/
+
+  fonts:
+    - family: AmiriQuran
+      fonts:
+        - asset: assets/fonts/AmiriQuran-Regular.ttf
 
 flutter_launcher_icons:
   android: true

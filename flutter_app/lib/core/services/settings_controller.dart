@@ -9,6 +9,11 @@ enum AppThemeMode { system, light, dark }
 /// [elderlyFriendlyMode], not by this enum alone).
 enum TextSizePreset { standard, large, extraLarge }
 
+/// Qur'an Reading Modes (A/B/C from the Premium Qur'an Experience directive).
+/// D (Tafsir) and E (word-by-word Study Mode) are future-expansion items and
+/// deliberately not represented here yet.
+enum QuranReadingMode { arabicOnly, arabicTranslation, arabicTranslationTransliteration }
+
 extension TextSizePresetX on TextSizePreset {
   double get scaleFactor {
     switch (this) {
@@ -34,6 +39,7 @@ class SettingsController extends ChangeNotifier {
   static const _kVolumeButtonEnabled = 'volume_button_enabled';
   static const _kTextSizePreset = 'text_size_preset';
   static const _kElderlyFriendlyMode = 'elderly_friendly_mode';
+  static const _kQuranReadingMode = 'quran_reading_mode';
 
   AppThemeMode _themeMode = AppThemeMode.system;
   Locale _locale = const Locale('en');
@@ -42,6 +48,7 @@ class SettingsController extends ChangeNotifier {
   bool _volumeButtonEnabled = false;
   TextSizePreset _textSizePreset = TextSizePreset.standard;
   bool _elderlyFriendlyMode = false;
+  QuranReadingMode _quranReadingMode = QuranReadingMode.arabicTranslation;
 
   AppThemeMode get themeMode => _themeMode;
   Locale get locale => _locale;
@@ -50,6 +57,7 @@ class SettingsController extends ChangeNotifier {
   bool get volumeButtonEnabled => _volumeButtonEnabled;
   TextSizePreset get textSizePreset => _textSizePreset;
   bool get elderlyFriendlyMode => _elderlyFriendlyMode;
+  QuranReadingMode get quranReadingMode => _quranReadingMode;
 
   /// Elderly-friendly mode implies at least the "large" text preset, even if
   /// the user hasn't separately bumped text size — the two settings compose
@@ -85,6 +93,11 @@ class SettingsController extends ChangeNotifier {
       orElse: () => TextSizePreset.standard,
     );
     _elderlyFriendlyMode = prefs.getBool(_kElderlyFriendlyMode) ?? false;
+    final readingModeName = prefs.getString(_kQuranReadingMode);
+    _quranReadingMode = QuranReadingMode.values.firstWhere(
+      (e) => e.name == readingModeName,
+      orElse: () => QuranReadingMode.arabicTranslation,
+    );
     notifyListeners();
   }
 
@@ -140,5 +153,12 @@ class SettingsController extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_kElderlyFriendlyMode, value);
+  }
+
+  Future<void> setQuranReadingMode(QuranReadingMode mode) async {
+    _quranReadingMode = mode;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_kQuranReadingMode, mode.name);
   }
 }
