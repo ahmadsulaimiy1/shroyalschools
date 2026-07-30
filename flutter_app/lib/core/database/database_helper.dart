@@ -16,11 +16,17 @@ import 'package:sqflite/sqflite.dart';
 ///    user-generated Qur'an reading state — the verse text/translation itself
 ///    is not stored here, it's loaded from the bundled assets/quran/*.json at
 ///    runtime (see core/database/quran_repository.dart).
+///  - quran_bookmarks.label / quran_verse_notes (v4): an optional label on a
+///    bookmark (e.g. "For Friday khutbah") and free-text reflection/study
+///    notes on any verse, bookmarked or not.
+///  - khatm_plan (v5): a single active Khatm (Qur'an-completion) plan --
+///    start date + target date, used to compute a daily verse target
+///    against the existing quran_reads log.
 class DatabaseHelper {
   DatabaseHelper._internal();
   static final DatabaseHelper instance = DatabaseHelper._internal();
 
-  static const int schemaVersion = 3;
+  static const int schemaVersion = 5;
 
   static Database? _database;
 
@@ -39,6 +45,7 @@ class DatabaseHelper {
         await _createCounterTables(db);
         await _createAdhkarTable(db);
         await _createQuranTables(db);
+        await _createKhatmTable(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
@@ -46,6 +53,22 @@ class DatabaseHelper {
         }
         if (oldVersion < 3) {
           await _createQuranTables(db);
+        }
+        if (oldVersion < 4) {
+          // v4 adds an optional label to bookmarks and a free-text
+          // reflection-note table -- _createQuranTables is idempotent
+          // (IF NOT EXISTS) so it's safe to re-run for the new
+          // quran_verse_notes table; the label column needs an explicit
+          // ALTER TABLE since SQLite has no "ADD COLUMN IF NOT EXISTS".
+          await _createQuranTables(db);
+          final columns = await db.rawQuery('PRAGMA table_info(quran_bookmarks)');
+          final hasLabel = columns.any((c) => c['name'] == 'label');
+          if (!hasLabel) {
+            await db.execute('ALTER TABLE quran_bookmarks ADD COLUMN label TEXT');
+          }
+        }
+        if (oldVersion < 5) {
+          await _createKhatmTable(db);
         }
       },
     );
@@ -100,6 +123,7 @@ class DatabaseHelper {
       CREATE TABLE IF NOT EXISTS quran_bookmarks (
         surah INTEGER NOT NULL,
         ayah INTEGER NOT NULL,
+        label TEXT,
         created_at INTEGER NOT NULL,
         PRIMARY KEY (surah, ayah)
       )
@@ -128,6 +152,26 @@ class DatabaseHelper {
       )
     ''');
     await db.execute('CREATE INDEX IF NOT EXISTS idx_quran_reads_read_at ON quran_reads (read_at)');
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS quran_verse_notes (
+        surah INTEGER NOT NULL,
+        ayah INTEGER NOT NULL,
+        note TEXT NOT NULL,
+        updated_at INTEGER NOT NULL,
+        PRIMARY KEY (surah, ayah)
+      )
+    ''');
+  }
+
+  Future<void> _createKhatmTable(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS khatm_plan (
+        id INTEGER PRIMARY KEY CHECK (id = 1),
+        start_date INTEGER NOT NULL,
+        target_date INTEGER NOT NULL,
+        created_at INTEGER NOT NULL
+      )
+    ''');
   }
 
   Future<void> resetAllData() async {

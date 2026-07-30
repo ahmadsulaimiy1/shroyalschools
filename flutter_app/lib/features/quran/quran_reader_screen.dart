@@ -5,6 +5,8 @@ import '../../core/database/quran_repository.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../core/models/quran_chapter.dart';
 import '../../core/models/quran_verse.dart';
+import '../../core/services/quran/quran_audio_controller.dart';
+import '../../core/services/quran/quran_audio_service.dart';
 import '../../core/services/settings_controller.dart';
 import '../../core/theme/app_colors.dart';
 import 'tahajjud_screen.dart';
@@ -73,6 +75,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
   @override
   Widget build(BuildContext context) {
     final settings = context.watch<SettingsController>();
+    final audio = context.watch<QuranAudioController>();
     final t = context.loc.t;
     final isMushaf = settings.quranMushafMode;
 
@@ -111,6 +114,15 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                   icon: Icon(isMushaf ? Icons.menu_book : Icons.menu_book_outlined, color: isMushaf ? AppColors.gold : null),
                   tooltip: t('quran_mushaf_mode'),
                   onPressed: () => context.read<SettingsController>().setQuranMushafMode(!isMushaf),
+                ),
+                PopupMenuButton<QuranReciter>(
+                  icon: Icon(Icons.record_voice_over_outlined, color: isMushaf ? AppColors.gold : null),
+                  tooltip: t('quran_reciter'),
+                  initialValue: audio.reciter,
+                  onSelected: (r) => context.read<QuranAudioController>().setReciter(r),
+                  itemBuilder: (context) => QuranReciter.values
+                      .map((r) => CheckedPopupMenuItem(value: r, checked: audio.reciter == r, child: Text(r.displayName)))
+                      .toList(),
                 ),
                 if (!isMushaf)
                   PopupMenuButton<QuranReadingMode>(

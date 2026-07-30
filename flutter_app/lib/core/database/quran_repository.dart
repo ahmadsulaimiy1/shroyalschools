@@ -19,6 +19,14 @@ class QuranReadingStats {
   final int streakDays;
 }
 
+class KhatmPlan {
+  const KhatmPlan({required this.startDate, required this.targetDate});
+  final DateTime startDate;
+  final DateTime targetDate;
+}
+
+const int totalQuranVerseCount = 6236;
+
 /// The Qur'an text/translation/chapter/juz metadata is bundled as read-only
 /// JSON assets (assets/quran/*.json) rather than shipped as generated Dart
 /// source or a sqflite table — at ~6,236 verses that would bloat both the
@@ -83,6 +91,15 @@ class QuranRepository {
     return null;
   }
 
+  /// Deterministic "verse of the day" -- the same calendar day always shows
+  /// the same verse, cycling through the full 6,236-verse corpus.
+  Future<QuranVerse> dailyVerse(DateTime date) async {
+    await _ensureLoaded();
+    final dayOfYear = DateTime(date.year, date.month, date.day).difference(DateTime(date.year, 1, 1)).inDays;
+    final index = dayOfYear % _verses!.length;
+    return _verses![index];
+  }
+
   Future<List<QuranJuz>> juzList() async {
     await _ensureLoaded();
     return _juz!;
@@ -117,11 +134,11 @@ class QuranRepository {
 
   // --- Bookmarks ---
 
-  Future<void> addBookmark(int surah, int ayah) async {
+  Future<void> addBookmark(int surah, int ayah, {String? label}) async {
     final db = await _db.database;
     await db.insert(
       'quran_bookmarks',
-      {'surah': surah, 'ayah': ayah, 'created_at': DateTime.now().millisecondsSinceEpoch},
+      {'surah': surah, 'ayah': ayah, 'label': label, 'created_at': DateTime.now().millisecondsSinceEpoch},
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
@@ -129,6 +146,18 @@ class QuranRepository {
   Future<void> removeBookmark(int surah, int ayah) async {
     final db = await _db.database;
     await db.delete('quran_bookmarks', where: 'surah = ? AND ayah = ?', whereArgs: [surah, ayah]);
+  }
+
+  Future<void> setBookmarkLabel(int surah, int ayah, String? label) async {
+    final db = await _db.database;
+    await db.update('quran_bookmarks', {'label': label}, where: 'surah = ? AND ayah = ?', whereArgs: [surah, ayah]);
+  }
+
+  Future<String?> bookmarkLabel(int surah, int ayah) async {
+    final db = await _db.database;
+    final rows = await db.query('quran_bookmarks', where: 'surah = ? AND ayah = ?', whereArgs: [surah, ayah]);
+    if (rows.isEmpty) return null;
+    return rows.first['label'] as String?;
   }
 
   Future<bool> isBookmarked(int surah, int ayah) async {
@@ -141,6 +170,35 @@ class QuranRepository {
     await _ensureLoaded();
     final db = await _db.database;
     final rows = await db.query('quran_bookmarks', orderBy: 'created_at DESC');
+    return _resolveRows(rows);
+  }
+
+  // --- Reflection / study notes ---
+
+  Future<void> setVerseNote(int surah, int ayah, String note) async {
+    final db = await _db.database;
+    if (note.trim().isEmpty) {
+      await db.delete('quran_verse_notes', where: 'surah = ? AND ayah = ?', whereArgs: [surah, ayah]);
+      return;
+    }
+    await db.insert(
+      'quran_verse_notes',
+      {'surah': surah, 'ayah': ayah, 'note': note, 'updated_at': DateTime.now().millisecondsSinceEpoch},
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<String?> verseNote(int surah, int ayah) async {
+    final db = await _db.database;
+    final rows = await db.query('quran_verse_notes', where: 'surah = ? AND ayah = ?', whereArgs: [surah, ayah]);
+    if (rows.isEmpty) return null;
+    return rows.first['note'] as String?;
+  }
+
+  Future<List<QuranVerse>> versesWithNotes() async {
+    await _ensureLoaded();
+    final db = await _db.database;
+    final rows = await db.query('quran_verse_notes', orderBy: 'updated_at DESC');
     return _resolveRows(rows);
   }
 
@@ -236,5 +294,50 @@ class QuranRepository {
       totalVersesRead: Sqflite.firstIntValue(totalRows) ?? 0,
       streakDays: streak,
     );
+  }
+
+  // --- Khatm (completion) plan ---
+
+  Future<void> setKhatmPlan(DateTime targetDate) async {
+    final db = await _db.database;
+    final now = DateTime.now();
+    await db.insert(
+      'khatm_plan',
+      {
+        'id': 1,
+        'start_date': DateTime(now.year, now.month, now.day).millisecondsSinceEpoch,
+        'target_date': DateTime(targetDate.year, targetDate.month, targetDate.day).millisecondsSinceEpoch,
+        'created_at': now.millisecondsSinceEpoch,
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<void> clearKhatmPlan() async {
+    final db = await _db.database;
+    await db.delete('khatm_plan', where: 'id = 1');
+  }
+
+  Future<KhatmPlan?> khatmPlan() async {
+    final db = await _db.database;
+    final rows = await db.query('khatm_plan', where: 'id = 1');
+    if (rows.isEmpty) return null;
+    final row = rows.first;
+    return KhatmPlan(
+      startDate: DateTime.fromMillisecondsSinceEpoch(row['start_date'] as int),
+      targetDate: DateTime.fromMillisecondsSinceEpoch(row['target_date'] as int),
+    );
+  }
+
+  /// Distinct verses read since [since] (inclusive of that whole day) --
+  /// used to compute Khatm progress against the plan's start date.
+  Future<int> versesReadSince(DateTime since) async {
+    final db = await _db.database;
+    final startMs = DateTime(since.year, since.month, since.day).millisecondsSinceEpoch;
+    final rows = await db.rawQuery(
+      'SELECT COUNT(DISTINCT surah || ":" || ayah) as c FROM quran_reads WHERE read_at >= ?',
+      [startMs],
+    );
+    return Sqflite.firstIntValue(rows) ?? 0;
   }
 }

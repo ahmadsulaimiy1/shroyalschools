@@ -15,6 +15,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!-- Coarse location is sufficient to compute a Qiblah bearing (accuracy
+         of a few hundred metres does not meaningfully change the great-circle
+         bearing to the Kaaba) -- see core/services/qiblah_service.dart. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.compass" android:required="false" />
+
     <application
         android:label="Misbaha"
         android:name="${applicationName}"

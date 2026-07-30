@@ -55,6 +55,11 @@ dependencies:
   # recitation, without requiring the user to touch the screen.
   wakelock_plus: ^1.2.8
 
+  # Device magnetometer heading + GPS location for the Qiblah compass --
+  # see core/services/qiblah_service.dart and features/qiblah/.
+  flutter_compass: ^0.8.1
+  geolocator: ^14.0.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -71,6 +76,7 @@ flutter:
     - assets/icon/
     - assets/images/
     - assets/quran/
+    - assets/hadith/
 
   fonts:
     - family: AmiriQuran

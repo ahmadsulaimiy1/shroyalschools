@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'core/database/adhkar_repository.dart';
 import 'core/database/counter_repository.dart';
 import 'core/database/database_helper.dart';
+import 'core/database/hadith_repository.dart';
 import 'core/database/quran_repository.dart';
 import 'core/localization/app_localizations.dart';
 import 'core/services/active_dhikr_controller.dart';
@@ -29,6 +30,7 @@ class MisbahaApp extends StatelessWidget {
         Provider<CounterRepository>(create: (_) => CounterRepository(DatabaseHelper.instance)),
         Provider<AdhkarRepository>(create: (_) => AdhkarRepository(DatabaseHelper.instance)),
         Provider<QuranRepository>(create: (_) => QuranRepository(DatabaseHelper.instance)),
+        Provider<HadithRepository>(create: (_) => HadithRepository()),
         Provider<RecentlyReadService>(create: (_) => RecentlyReadService()),
         ChangeNotifierProvider<ActiveDhikrController>(create: (_) => ActiveDhikrController()),
         ChangeNotifierProvider<TtsController>(create: (_) => TtsController(audioHandler)..loadVoices()),

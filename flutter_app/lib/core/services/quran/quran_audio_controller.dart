@@ -1,9 +1,12 @@
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../models/quran_verse.dart';
 import '../tts/adhkar_audio_handler.dart';
 import 'quran_audio_service.dart';
+
+const _kQuranReciterPref = 'quran_reciter';
 
 enum QuranPlaybackStatus { idle, loading, playing, paused, completed }
 
@@ -14,6 +17,17 @@ enum QuranPlaybackStatus { idle, loading, playing, paused, completed }
 class QuranAudioController extends ChangeNotifier {
   QuranAudioController(this._handler, this._audioService) {
     _handler.playbackState.listen(_onPlaybackStateChanged);
+    _loadReciter();
+  }
+
+  Future<void> _loadReciter() async {
+    final prefs = await SharedPreferences.getInstance();
+    final name = prefs.getString(_kQuranReciterPref);
+    final match = QuranReciter.values.where((r) => r.name == name);
+    if (match.isNotEmpty) {
+      _reciter = match.first;
+      notifyListeners();
+    }
   }
 
   final AdhkarAudioHandler _handler;
@@ -33,6 +47,15 @@ class QuranAudioController extends ChangeNotifier {
   bool isCurrentlyPlaying(QuranVerse verse) =>
       currentVerse?.surah == verse.surah && currentVerse?.ayah == verse.ayah && _status == QuranPlaybackStatus.playing;
 
+  QuranReciter _reciter = QuranReciter.alafasy;
+  QuranReciter get reciter => _reciter;
+  Future<void> setReciter(QuranReciter reciter) async {
+    _reciter = reciter;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_kQuranReciterPref, reciter.name);
+  }
+
   /// Plays [verse] aloud. [playlist] + [index] enable continuous recitation:
   /// when this verse finishes and repeat mode is [RepeatMode.continuous],
   /// the next verse in [playlist] starts automatically.
@@ -44,7 +67,7 @@ class QuranAudioController extends ChangeNotifier {
     _status = QuranPlaybackStatus.loading;
     notifyListeners();
 
-    final source = await _audioService.audioSourceFor(verse.surah, verse.ayah);
+    final source = await _audioService.audioSourceFor(verse.surah, verse.ayah, reciter: _reciter);
     await _handler.loadQuranAudio(
       id: verse.key,
       title: 'Surah ${verse.surah}, Ayah ${verse.ayah}',

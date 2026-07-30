@@ -30,6 +30,8 @@ class QuranVerseCard extends StatefulWidget {
 class _QuranVerseCardState extends State<QuranVerseCard> {
   bool _bookmarked = false;
   bool _favourite = false;
+  String? _bookmarkLabel;
+  String? _note;
 
   @override
   void initState() {
@@ -41,11 +43,69 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
     final repo = context.read<QuranRepository>();
     final bookmarked = await repo.isBookmarked(widget.verse.surah, widget.verse.ayah);
     final favourite = await repo.isFavourite(widget.verse.surah, widget.verse.ayah);
+    final label = await repo.bookmarkLabel(widget.verse.surah, widget.verse.ayah);
+    final note = await repo.verseNote(widget.verse.surah, widget.verse.ayah);
     if (!mounted) return;
     setState(() {
       _bookmarked = bookmarked;
       _favourite = favourite;
+      _bookmarkLabel = label;
+      _note = note;
     });
+  }
+
+  Future<void> _editBookmarkLabel() async {
+    final t = context.loc.t;
+    final controller = TextEditingController(text: _bookmarkLabel ?? '');
+    final result = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(t('quran_bookmark_label_title')),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          decoration: InputDecoration(hintText: t('quran_bookmark_label_hint')),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(t('cancel'))),
+          FilledButton(onPressed: () => Navigator.of(context).pop(controller.text), child: Text(t('save'))),
+        ],
+      ),
+    );
+    if (result == null) return;
+    final repo = context.read<QuranRepository>();
+    final label = result.trim().isEmpty ? null : result.trim();
+    if (!_bookmarked) {
+      await repo.addBookmark(widget.verse.surah, widget.verse.ayah, label: label);
+    } else {
+      await repo.setBookmarkLabel(widget.verse.surah, widget.verse.ayah, label);
+    }
+    if (mounted) setState(() { _bookmarked = true; _bookmarkLabel = label; });
+  }
+
+  Future<void> _editNote() async {
+    final t = context.loc.t;
+    final controller = TextEditingController(text: _note ?? '');
+    final result = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(t('quran_reflection_note_title')),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          maxLines: 5,
+          decoration: InputDecoration(hintText: t('quran_reflection_note_hint')),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(t('cancel'))),
+          FilledButton(onPressed: () => Navigator.of(context).pop(controller.text), child: Text(t('save'))),
+        ],
+      ),
+    );
+    if (result == null) return;
+    final repo = context.read<QuranRepository>();
+    await repo.setVerseNote(widget.verse.surah, widget.verse.ayah, result.trim());
+    if (mounted) setState(() => _note = result.trim().isEmpty ? null : result.trim());
   }
 
   @override
@@ -82,18 +142,26 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
                     }
                   },
                 ),
+                GestureDetector(
+                  onLongPress: _editBookmarkLabel,
+                  child: IconButton(
+                    icon: Icon(_bookmarked ? Icons.bookmark : Icons.bookmark_border, color: theme.colorScheme.secondary),
+                    tooltip: _bookmarked ? t('quran_remove_bookmark') : t('quran_add_bookmark'),
+                    onPressed: () async {
+                      final repo = context.read<QuranRepository>();
+                      if (_bookmarked) {
+                        await repo.removeBookmark(v.surah, v.ayah);
+                      } else {
+                        await repo.addBookmark(v.surah, v.ayah);
+                      }
+                      if (mounted) setState(() { _bookmarked = !_bookmarked; if (!_bookmarked) _bookmarkLabel = null; });
+                    },
+                  ),
+                ),
                 IconButton(
-                  icon: Icon(_bookmarked ? Icons.bookmark : Icons.bookmark_border, color: theme.colorScheme.secondary),
-                  tooltip: _bookmarked ? t('quran_remove_bookmark') : t('quran_add_bookmark'),
-                  onPressed: () async {
-                    final repo = context.read<QuranRepository>();
-                    if (_bookmarked) {
-                      await repo.removeBookmark(v.surah, v.ayah);
-                    } else {
-                      await repo.addBookmark(v.surah, v.ayah);
-                    }
-                    if (mounted) setState(() => _bookmarked = !_bookmarked);
-                  },
+                  icon: Icon(_note != null ? Icons.edit_note : Icons.note_add_outlined, color: theme.colorScheme.secondary),
+                  tooltip: t('quran_reflection_note_title'),
+                  onPressed: _editNote,
                 ),
                 IconButton(
                   icon: Icon(_favourite ? Icons.star : Icons.star_border, color: theme.colorScheme.secondary),
@@ -105,6 +173,18 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
                 ),
               ],
             ),
+            if (_bookmarkLabel != null && _bookmarkLabel!.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Align(
+                  alignment: AlignmentDirectional.centerEnd,
+                  child: Chip(
+                    label: Text(_bookmarkLabel!, style: theme.textTheme.labelSmall),
+                    visualDensity: VisualDensity.compact,
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+              ),
             Text(
               v.arabicText,
               style: theme.textTheme.headlineSmall?.copyWith(
@@ -129,6 +209,24 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
                 const SizedBox(height: 8),
               ],
               Text(v.translationEn, style: theme.textTheme.bodyMedium),
+            ],
+            if (_note != null && _note!.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.secondaryContainer.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.edit_note, size: 18, color: theme.colorScheme.secondary),
+                    const SizedBox(width: 8),
+                    Expanded(child: Text(_note!, style: theme.textTheme.bodySmall)),
+                  ],
+                ),
+              ),
             ],
           ],
         ),
