@@ -12,6 +12,7 @@ import '../../core/models/quran_verse.dart';
 import '../../core/services/active_dhikr_controller.dart';
 import '../../core/widgets/app_shell.dart';
 import '../khatm/khatm_screen.dart';
+import '../masjid/masjid_mode_screen.dart';
 import '../qiblah/qiblah_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -139,6 +140,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                icon: const Icon(Icons.mosque_outlined),
+                label: Text(t('masjid_mode')),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const MasjidModeScreen())),
+              ),
             ),
             if (_dailyVerse != null) ...[
               const SizedBox(height: 24),

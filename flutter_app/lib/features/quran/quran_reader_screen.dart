@@ -8,6 +8,7 @@ import '../../core/models/quran_verse.dart';
 import '../../core/services/quran/quran_audio_controller.dart';
 import '../../core/services/quran/quran_audio_service.dart';
 import '../../core/services/settings_controller.dart';
+import '../../core/services/tts/adhkar_audio_handler.dart' show RepeatMode;
 import '../../core/theme/app_colors.dart';
 import 'tahajjud_screen.dart';
 import 'widgets/mushaf_flow_text.dart';
@@ -115,6 +116,34 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                   tooltip: t('quran_mushaf_mode'),
                   onPressed: () => context.read<SettingsController>().setQuranMushafMode(!isMushaf),
                 ),
+                PopupMenuButton<String>(
+                  icon: Icon(Icons.playlist_play, color: isMushaf ? AppColors.gold : null),
+                  tooltip: t('quran_playback_options'),
+                  onSelected: (action) {
+                    final audioController = context.read<QuranAudioController>();
+                    if (action == 'play_all') {
+                      audioController.setMemorizationMode(false);
+                      if (widget.verses.isNotEmpty) {
+                        audioController.setRepeatMode(RepeatMode.continuous);
+                        audioController.playVerse(widget.verses.first, playlist: widget.verses, index: 0);
+                      }
+                    } else if (action == 'toggle_memorization') {
+                      final enabling = !audio.memorizationMode;
+                      audioController.setMemorizationMode(enabling);
+                      if (enabling && widget.verses.isNotEmpty) {
+                        audioController.playVerse(widget.verses.first, playlist: widget.verses, index: 0);
+                      }
+                    }
+                  },
+                  itemBuilder: (context) => [
+                    PopupMenuItem(value: 'play_all', child: Text(t('quran_play_surah_juz'))),
+                    CheckedPopupMenuItem(
+                      value: 'toggle_memorization',
+                      checked: audio.memorizationMode,
+                      child: Text(t('quran_memorization_mode')),
+                    ),
+                  ],
+                ),
                 PopupMenuButton<QuranReciter>(
                   icon: Icon(Icons.record_voice_over_outlined, color: isMushaf ? AppColors.gold : null),
                   tooltip: t('quran_reciter'),
@@ -160,16 +189,27 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
       onTap: () => setState(() => _focusMode = !_focusMode),
       child: isMushaf
           ? Container(
-              color: AppColors.surfaceLight,
-              child: SingleChildScrollView(
-                controller: _scrollController,
-                padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
-                child: MushafFlowText(
-                  verses: widget.verses,
-                  chapters: _chaptersById,
-                  textColor: AppColors.textPrimaryLight,
-                  accentColor: AppColors.gold,
-                  fontScale: settings.effectiveTextScale,
+              padding: const EdgeInsets.all(8),
+              // Royal Mushaf page frame: a restrained double gold border
+              // around the whole reading surface, echoing the ornamental
+              // border printed on a real Mushaf page without competing
+              // with the text itself.
+              decoration: BoxDecoration(
+                color: AppColors.surfaceLight,
+                border: Border.all(color: AppColors.gold.withOpacity(0.5), width: 1),
+              ),
+              child: Container(
+                decoration: BoxDecoration(border: Border.all(color: AppColors.gold, width: 2)),
+                child: SingleChildScrollView(
+                  controller: _scrollController,
+                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 40),
+                  child: MushafFlowText(
+                    verses: widget.verses,
+                    chapters: _chaptersById,
+                    textColor: AppColors.textPrimaryLight,
+                    accentColor: AppColors.gold,
+                    fontScale: settings.effectiveTextScale,
+                  ),
                 ),
               ),
             )

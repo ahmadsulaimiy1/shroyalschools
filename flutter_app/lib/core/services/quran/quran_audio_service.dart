@@ -15,7 +15,8 @@ enum QuranReciter {
   abdulBasit('Abdul_Basit_Murattal_192kbps', 'Abdul Basit Abdus-Samad'),
   maherAlMuaiqly('Maher_AlMuaiqly_64kbps', 'Maher Al-Muaiqly'),
   sudais('Abdurrahmaan_As-Sudais_192kbps', 'Abdurrahman As-Sudais'),
-  hudhaify('Hudhaify_128kbps', 'Ali Al-Hudhaify');
+  hudhaify('Hudhaify_128kbps', 'Ali Al-Hudhaify'),
+  minshawi('Minshawy_Murattal_128kbps', 'Muhammad Siddiq Al-Minshawi');
 
   const QuranReciter(this.folder, this.displayName);
   final String folder;

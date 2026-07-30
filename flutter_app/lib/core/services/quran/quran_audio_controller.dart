@@ -39,6 +39,16 @@ class QuranAudioController extends ChangeNotifier {
   RepeatMode _repeatMode = RepeatMode.off;
   QuranPlaybackStatus _status = QuranPlaybackStatus.idle;
 
+  /// Memorisation Mode: repeat each verse [memorizationTargetRepeats] times
+  /// before moving on to the next one in the playlist -- handled entirely
+  /// in this controller (the shared handler's own repeat modes are left at
+  /// [RepeatMode.off] while this is active) so it never races with the
+  /// handler's internal repeatOne/continuous timing.
+  bool _memorizationMode = false;
+  int memorizationTargetRepeats = 3;
+  int _memorizationRepeatsLeft = 0;
+  bool get memorizationMode => _memorizationMode;
+
   QuranVerse? get currentVerse => (_currentIndex >= 0 && _currentIndex < _playlist.length) ? _playlist[_currentIndex] : null;
   QuranPlaybackStatus get status => _status;
   double get speed => _speed;
@@ -56,13 +66,29 @@ class QuranAudioController extends ChangeNotifier {
     await prefs.setString(_kQuranReciterPref, reciter.name);
   }
 
+  /// Set to true immediately before an internal same-verse replay so
+  /// [playVerse] knows not to reset the memorisation repeat counter.
+  bool _isMemorizationReplay = false;
+
+  void setMemorizationMode(bool enabled) {
+    _memorizationMode = enabled;
+    notifyListeners();
+  }
+
   /// Plays [verse] aloud. [playlist] + [index] enable continuous recitation:
   /// when this verse finishes and repeat mode is [RepeatMode.continuous],
-  /// the next verse in [playlist] starts automatically.
+  /// the next verse in [playlist] starts automatically. When
+  /// [memorizationMode] is on, each verse instead repeats
+  /// [memorizationTargetRepeats] times before advancing.
   Future<void> playVerse(QuranVerse verse, {List<QuranVerse>? playlist, int? index}) async {
     _playlist = playlist ?? [verse];
     _currentIndex = index ?? _playlist.indexWhere((v) => v.surah == verse.surah && v.ayah == verse.ayah);
     if (_currentIndex < 0) _currentIndex = 0;
+
+    if (!_isMemorizationReplay) {
+      _memorizationRepeatsLeft = memorizationTargetRepeats;
+    }
+    _isMemorizationReplay = false;
 
     _status = QuranPlaybackStatus.loading;
     notifyListeners();
@@ -73,7 +99,10 @@ class QuranAudioController extends ChangeNotifier {
       title: 'Surah ${verse.surah}, Ayah ${verse.ayah}',
       audioSource: source,
     );
-    _handler.repeatMode = _repeatMode;
+    // Memorisation Mode drives its own repeat/advance logic from
+    // _onPlaybackStateChanged below, so the shared handler is told not to
+    // do anything special on completion while it's active.
+    _handler.repeatMode = _memorizationMode ? RepeatMode.off : _repeatMode;
     // Shared with TtsController — reclaimed here so continuous mode always
     // advances whichever content (adhkar or Qur'an) is currently playing.
     _handler.onRequestNext = _playNextInPlaylist;
@@ -88,6 +117,13 @@ class QuranAudioController extends ChangeNotifier {
       _status = QuranPlaybackStatus.completed;
       notifyListeners();
     }
+  }
+
+  Future<void> _replayCurrentVerse() async {
+    final verse = currentVerse;
+    if (verse == null) return;
+    _isMemorizationReplay = true;
+    await playVerse(verse, playlist: _playlist, index: _currentIndex);
   }
 
   Future<void> pause() => _handler.pause();
@@ -114,6 +150,15 @@ class QuranAudioController extends ChangeNotifier {
     if (_handler.activeEngine == AudioEngineKind.tts) return;
     if (state.processingState == AudioProcessingState.completed) {
       _status = QuranPlaybackStatus.completed;
+      if (_memorizationMode) {
+        _memorizationRepeatsLeft--;
+        if (_memorizationRepeatsLeft > 0) {
+          _replayCurrentVerse();
+        } else {
+          _memorizationRepeatsLeft = memorizationTargetRepeats;
+          _playNextInPlaylist();
+        }
+      }
     } else if (state.processingState == AudioProcessingState.loading ||
         state.processingState == AudioProcessingState.buffering) {
       _status = QuranPlaybackStatus.loading;

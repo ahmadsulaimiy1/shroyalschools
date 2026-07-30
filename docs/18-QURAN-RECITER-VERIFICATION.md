@@ -42,8 +42,15 @@ corroboration instead of a direct browse.
   an Internet Archive mirror item named `quran_Hudhaify_64kbps_045`
   confirming the `Hudhaify_{bitrate}kbps` naming convention is real and
   already in third-party circulation.
+- **Muhammad Siddiq Al-Minshawi** (added Phase 4) -- `Minshawy_Murattal_128kbps`.
+  This one has the strongest evidence of all six: a web search directly
+  surfaced the exact live URL
+  `https://www.everyayah.com/data/Minshawy_Murattal_128kbps/021089.mp3`
+  (surah 21, ayah 89) as a search-indexed page, not just a name mentioned
+  in a third party's docs -- i.e. this specific per-ayah file's URL has
+  been crawled from the live site.
 
-All five reciters use the same per-ayah filename convention already
+All six reciters use the same per-ayah filename convention already
 verified for Alafasy (`{surah:03d}{ayah:03d}.mp3`), since this is a
 site-wide convention on everyayah.com, not something reciter-specific.
 

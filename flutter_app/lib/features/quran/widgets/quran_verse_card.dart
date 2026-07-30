@@ -190,7 +190,12 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
               style: theme.textTheme.headlineSmall?.copyWith(
                 fontFamily: 'AmiriQuran',
                 height: 2.3,
-                letterSpacing: 0.5,
+                // Arabic is a cursive/joining script -- any non-zero
+                // letterSpacing inserts a gap after every shaped glyph
+                // cluster, which visually breaks letter joining (looks like
+                // detached/disconnected letters). Never apply letterSpacing
+                // to Arabic text.
+                letterSpacing: 0.0,
                 fontSize: (theme.textTheme.headlineSmall?.fontSize ?? 24) * 1.05 * widget.fontScale,
               ),
               textAlign: TextAlign.right,

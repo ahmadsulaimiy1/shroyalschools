@@ -52,6 +52,11 @@ class SettingsController extends ChangeNotifier {
   QuranReadingMode _quranReadingMode = QuranReadingMode.arabicTranslation;
   bool _quranMushafMode = false;
 
+  /// True while Masjid Mode is active: distraction-free worship, and a hook
+  /// point for a future notification system to check before showing any
+  /// non-essential (non-prayer-related) notification -- see docs/21.
+  bool _masjidMode = false;
+
   AppThemeMode get themeMode => _themeMode;
   Locale get locale => _locale;
   bool get soundEnabled => _soundEnabled;
@@ -61,6 +66,7 @@ class SettingsController extends ChangeNotifier {
   bool get elderlyFriendlyMode => _elderlyFriendlyMode;
   QuranReadingMode get quranReadingMode => _quranReadingMode;
   bool get quranMushafMode => _quranMushafMode;
+  bool get masjidMode => _masjidMode;
 
   /// Elderly-friendly mode implies at least the "large" text preset, even if
   /// the user hasn't separately bumped text size — the two settings compose
@@ -171,5 +177,13 @@ class SettingsController extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_kQuranMushafMode, value);
+  }
+
+  /// Deliberately session-only (not persisted): Masjid Mode represents
+  /// "currently praying right now," not a durable preference, so it should
+  /// never carry over to the next app launch.
+  void setMasjidMode(bool value) {
+    _masjidMode = value;
+    notifyListeners();
   }
 }
