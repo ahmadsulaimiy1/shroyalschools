@@ -55,6 +55,21 @@ class SettingsScreen extends StatelessWidget {
             onChanged: settings.setVolumeButtonEnabled,
           ),
           const Divider(height: 24),
+          _SectionHeader(t('settings_accessibility')),
+          ListTile(
+            leading: const Icon(Icons.format_size),
+            title: Text(t('settings_text_size')),
+            subtitle: Text(_textSizeLabel(context, settings.textSizePreset)),
+            onTap: () => _showTextSizeSheet(context, settings),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.elderly_outlined),
+            title: Text(t('settings_elderly_mode')),
+            subtitle: Text(t('settings_elderly_mode_subtitle')),
+            value: settings.elderlyFriendlyMode,
+            onChanged: settings.setElderlyFriendlyMode,
+          ),
+          const Divider(height: 24),
           _SectionHeader(t('settings_data')),
           ListTile(
             leading: Icon(Icons.delete_outline, color: theme.colorScheme.error),
@@ -103,6 +118,45 @@ class SettingsScreen extends StatelessWidget {
                   title: Text(_themeLabel(context, mode)),
                   onChanged: (value) {
                     if (value != null) settings.setThemeMode(value);
+                    Navigator.pop(context);
+                  },
+                ),
+              const SizedBox(height: 8),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  String _textSizeLabel(BuildContext context, TextSizePreset preset) {
+    final t = context.loc.t;
+    switch (preset) {
+      case TextSizePreset.standard:
+        return t('settings_text_size_standard');
+      case TextSizePreset.large:
+        return t('settings_text_size_large');
+      case TextSizePreset.extraLarge:
+        return t('settings_text_size_extra_large');
+    }
+  }
+
+  void _showTextSizeSheet(BuildContext context, SettingsController settings) {
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+      builder: (context) {
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (final preset in TextSizePreset.values)
+                RadioListTile<TextSizePreset>(
+                  value: preset,
+                  groupValue: settings.textSizePreset,
+                  title: Text(_textSizeLabel(context, preset)),
+                  onChanged: (value) {
+                    if (value != null) settings.setTextSizePreset(value);
                     Navigator.pop(context);
                   },
                 ),

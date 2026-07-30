@@ -1,32 +1,83 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/database/adhkar_repository.dart';
 import '../../core/localization/app_localizations.dart';
-import '../../core/models/dhikr.dart';
-import '../../core/services/active_dhikr_controller.dart';
-import '../../core/widgets/app_shell.dart';
+import '../../core/models/adhkar_entry.dart';
+import 'adhkar_category_screen.dart';
+import 'adhkar_favourites_screen.dart';
 
-class AdhkarScreen extends StatelessWidget {
+/// The Adhkar library home: browse by category or jump to Favourites.
+/// Category order follows the Phase 2 directive's required taxonomy; entry
+/// counts come straight from the database so categories the current content
+/// pack doesn't cover (see docs/13-ADHKAR-IMPORT-VERIFICATION-REPORT.md)
+/// honestly show as empty rather than being hidden or faked.
+class AdhkarScreen extends StatefulWidget {
   const AdhkarScreen({super.key});
 
+  @override
+  State<AdhkarScreen> createState() => _AdhkarScreenState();
+}
+
+class _AdhkarScreenState extends State<AdhkarScreen> {
   static const _categoryOrder = [
-    DhikrCategory.postSalah,
-    DhikrCategory.morning,
-    DhikrCategory.evening,
-    DhikrCategory.general,
+    AdhkarCategory.morning,
+    AdhkarCategory.evening,
+    AdhkarCategory.sleep,
+    AdhkarCategory.wakeUp,
+    AdhkarCategory.prayer,
+    AdhkarCategory.travel,
+    AdhkarCategory.protection,
+    AdhkarCategory.quranicDuas,
+    AdhkarCategory.dailyDuas,
+    AdhkarCategory.generalDhikr,
   ];
 
-  String _categoryLabel(BuildContext context, DhikrCategory category) {
+  Map<AdhkarCategory, int> _counts = {};
+  bool _loading = true;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final counts = await context.read<AdhkarRepository>().countsByCategory();
+    if (!mounted) return;
+    setState(() {
+      _counts = counts;
+      _loading = false;
+    });
+  }
+
+  String _categoryLabel(BuildContext context, AdhkarCategory category) {
     final t = context.loc.t;
+    return t('adhkar_category_${category.id}');
+  }
+
+  IconData _categoryIcon(AdhkarCategory category) {
     switch (category) {
-      case DhikrCategory.postSalah:
-        return t('adhkar_category_post_salah');
-      case DhikrCategory.morning:
-        return t('adhkar_category_morning');
-      case DhikrCategory.evening:
-        return t('adhkar_category_evening');
-      case DhikrCategory.general:
-        return t('adhkar_category_general');
+      case AdhkarCategory.morning:
+        return Icons.wb_sunny_outlined;
+      case AdhkarCategory.evening:
+        return Icons.nights_stay_outlined;
+      case AdhkarCategory.sleep:
+        return Icons.bedtime_outlined;
+      case AdhkarCategory.wakeUp:
+        return Icons.alarm;
+      case AdhkarCategory.prayer:
+        return Icons.mosque_outlined;
+      case AdhkarCategory.travel:
+        return Icons.flight_takeoff;
+      case AdhkarCategory.protection:
+        return Icons.shield_outlined;
+      case AdhkarCategory.quranicDuas:
+        return Icons.menu_book_outlined;
+      case AdhkarCategory.dailyDuas:
+        return Icons.today_outlined;
+      case AdhkarCategory.generalDhikr:
+        return Icons.favorite_border;
     }
   }
 
@@ -36,71 +87,55 @@ class AdhkarScreen extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('adhkar_title'))),
-      body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: [
-          for (final category in _categoryOrder) ...[
-            Padding(
-              padding: const EdgeInsets.only(bottom: 12, top: 8),
-              child: Text(_categoryLabel(context, category), style: theme.textTheme.titleMedium),
+      appBar: AppBar(
+        title: Text(t('adhkar_title')),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.star_outline),
+            tooltip: t('adhkar_favourites'),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const AdhkarFavouritesScreen()),
             ),
-            ...seedAdhkar.where((d) => d.category == category).map(
-                  (dhikr) => _AdhkarCard(dhikr: dhikr),
-                ),
-            const SizedBox(height: 12),
-          ],
+          ),
         ],
       ),
-    );
-  }
-}
-
-class _AdhkarCard extends StatelessWidget {
-  const _AdhkarCard({required this.dhikr});
-  final Dhikr dhikr;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final t = context.loc.t;
-
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(dhikr.arabicText, style: theme.textTheme.titleLarge, textAlign: TextAlign.right),
-            const SizedBox(height: 6),
-            Text(dhikr.transliteration, style: theme.textTheme.bodyMedium),
-            Text(
-              dhikr.translationEn,
-              style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+      body: _loading
+          ? const Center(child: CircularProgressIndicator())
+          : RefreshIndicator(
+              onRefresh: _load,
+              child: ListView.builder(
+                padding: const EdgeInsets.all(16),
+                itemCount: _categoryOrder.length,
+                itemBuilder: (context, i) {
+                  final category = _categoryOrder[i];
+                  final count = _counts[category] ?? 0;
+                  return Card(
+                    margin: const EdgeInsets.only(bottom: 12),
+                    child: ListTile(
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      leading: CircleAvatar(
+                        backgroundColor: theme.colorScheme.secondary.withOpacity(0.15),
+                        child: Icon(_categoryIcon(category), color: theme.colorScheme.secondary),
+                      ),
+                      title: Text(_categoryLabel(context, category), style: theme.textTheme.titleMedium),
+                      subtitle: Text(
+                        count == 0
+                            ? t('adhkar_no_entries_category')
+                            : context.loc.tArgs('adhkar_entries_count', [count]),
+                      ),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: count == 0
+                          ? null
+                          : () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) => AdhkarCategoryScreen(category: category),
+                                ),
+                              ),
+                    ),
+                  );
+                },
+              ),
             ),
-            const SizedBox(height: 10),
-            Text(
-              '${t('adhkar_source')}: ${dhikr.sourceCitation}',
-              style: theme.textTheme.labelLarge?.copyWith(color: theme.colorScheme.secondary),
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                Text('${t('adhkar_target')}: ${dhikr.defaultTarget}', style: theme.textTheme.labelLarge),
-                const Spacer(),
-                FilledButton(
-                  onPressed: () {
-                    context.read<ActiveDhikrController>().select(dhikr);
-                    AppShellScope.maybeOf(context)?.goToCounter();
-                  },
-                  child: Text(t('adhkar_start_counting')),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
     );
   }
 }

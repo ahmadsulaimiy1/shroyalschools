@@ -1,7 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../core/data/adhkar_seed_data.dart';
+import '../../core/database/adhkar_repository.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../core/widgets/app_shell.dart';
 
@@ -23,6 +26,10 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   void initState() {
     super.initState();
+    // Fire-and-forget: seeds the offline adhkar library on first run without
+    // blocking the splash animation. Safe to call every launch — insertion
+    // is idempotent (existing ids are skipped, favourites untouched).
+    context.read<AdhkarRepository>().seedIfNeeded(wirdAlMusaffaSeed);
     Timer(const Duration(milliseconds: 1400), _goToShell);
   }
 

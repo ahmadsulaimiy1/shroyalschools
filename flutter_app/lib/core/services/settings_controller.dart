@@ -3,6 +3,25 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 enum AppThemeMode { system, light, dark }
 
+/// Text scale presets for the accessibility "Large Text" / "Elderly-Friendly"
+/// modes. Elderly-friendly goes beyond a simple font bump — it also widens
+/// touch targets and spacing app-wide (applied by screens reading
+/// [elderlyFriendlyMode], not by this enum alone).
+enum TextSizePreset { standard, large, extraLarge }
+
+extension TextSizePresetX on TextSizePreset {
+  double get scaleFactor {
+    switch (this) {
+      case TextSizePreset.standard:
+        return 1.0;
+      case TextSizePreset.large:
+        return 1.25;
+      case TextSizePreset.extraLarge:
+        return 1.5;
+    }
+  }
+}
+
 /// Single source of truth for user-configurable settings, persisted locally via
 /// SharedPreferences (fully offline). Exposed as a ChangeNotifier so the whole
 /// widget tree (theme, locale, feedback toggles) reacts live to changes made in
@@ -13,18 +32,30 @@ class SettingsController extends ChangeNotifier {
   static const _kSoundEnabled = 'sound_enabled';
   static const _kVibrationEnabled = 'vibration_enabled';
   static const _kVolumeButtonEnabled = 'volume_button_enabled';
+  static const _kTextSizePreset = 'text_size_preset';
+  static const _kElderlyFriendlyMode = 'elderly_friendly_mode';
 
   AppThemeMode _themeMode = AppThemeMode.system;
   Locale _locale = const Locale('en');
   bool _soundEnabled = true;
   bool _vibrationEnabled = true;
   bool _volumeButtonEnabled = false;
+  TextSizePreset _textSizePreset = TextSizePreset.standard;
+  bool _elderlyFriendlyMode = false;
 
   AppThemeMode get themeMode => _themeMode;
   Locale get locale => _locale;
   bool get soundEnabled => _soundEnabled;
   bool get vibrationEnabled => _vibrationEnabled;
   bool get volumeButtonEnabled => _volumeButtonEnabled;
+  TextSizePreset get textSizePreset => _textSizePreset;
+  bool get elderlyFriendlyMode => _elderlyFriendlyMode;
+
+  /// Elderly-friendly mode implies at least the "large" text preset, even if
+  /// the user hasn't separately bumped text size — the two settings compose
+  /// rather than conflict.
+  double get effectiveTextScale =>
+      _elderlyFriendlyMode ? _textSizePreset.scaleFactor.clamp(1.25, 1.5) : _textSizePreset.scaleFactor;
 
   ThemeMode get flutterThemeMode {
     switch (_themeMode) {
@@ -48,6 +79,12 @@ class SettingsController extends ChangeNotifier {
     _soundEnabled = prefs.getBool(_kSoundEnabled) ?? true;
     _vibrationEnabled = prefs.getBool(_kVibrationEnabled) ?? true;
     _volumeButtonEnabled = prefs.getBool(_kVolumeButtonEnabled) ?? false;
+    final presetName = prefs.getString(_kTextSizePreset);
+    _textSizePreset = TextSizePreset.values.firstWhere(
+      (e) => e.name == presetName,
+      orElse: () => TextSizePreset.standard,
+    );
+    _elderlyFriendlyMode = prefs.getBool(_kElderlyFriendlyMode) ?? false;
     notifyListeners();
   }
 
@@ -84,5 +121,24 @@ class SettingsController extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_kVolumeButtonEnabled, value);
+  }
+
+  Future<void> setTextSizePreset(TextSizePreset preset) async {
+    _textSizePreset = preset;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_kTextSizePreset, preset.name);
+  }
+
+  Future<void> setElderlyFriendlyMode(bool value) async {
+    _elderlyFriendlyMode = value;
+    if (value && _textSizePreset == TextSizePreset.standard) {
+      _textSizePreset = TextSizePreset.large;
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_kTextSizePreset, _textSizePreset.name);
+    }
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_kElderlyFriendlyMode, value);
   }
 }
