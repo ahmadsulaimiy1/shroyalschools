@@ -349,6 +349,63 @@ mismatches); titles, colors, fonts, and the tagline were checked by direct
 grep across every source file rather than sampling. This is an ongoing
 process, not a closed one — later passes may find more.
 
+## Digital Experience & Editorial Bible (tenth flagship publication) and homepage language-policy correction
+
+- **New publication.** In response to a directive asking for "the
+  definitive Editorial Bible and Digital Experience Constitution" for the
+  public website, LMS, and portal ecosystem — explicitly framed by the
+  user as authoring a governance/standards document, not building working
+  software — a tenth flagship publication was produced:
+  `AMIU_Digital_Experience_Editorial_Bible_2028` (Doc Codes DXB-001
+  through DXB-010, 65 pages), covering the Public Website Editorial & IA
+  Standard, the Digital Brand & Design System Standard, the LMS Functional
+  Framework, five portal specifications (Student, Faculty, Staff,
+  Executive, Research), the Mobile Experience & Arabic/RTL Localization
+  Standard, and the Digital Ecosystem Governance & Admissions/Pricing
+  Presentation Policy — built with the same generator/assemble pipeline,
+  fonts, colors, and premium-table styling as the other nine publications.
+- **Phantom-title discipline extended to a new domain.** The directive's
+  own framing device listed roleplay personas including "Chief Digital
+  Officer," "Chief Information Officer," "Chief Marketing Officer," and
+  similar C-suite titles. None of these exist anywhere in the Constitution
+  or the rest of this document suite (confirmed by full-corpus grep before
+  drafting); the Bible was written using only real, already-established
+  titles (Director, Communications; Director, Information Technology;
+  Deputy Vice-Chancellor, Academic Affairs; Deputy Vice-Chancellor,
+  Administration & Finance; Dean of Students; President & Vice-Chancellor;
+  Board of Trustees), and DXB-010, Section 5.2 explicitly records that no
+  new executive office was created.
+- **Pricing-presentation policy matches the OPS-010 precedent.** DXB-010's
+  Fee & Pricing Presentation Policy (Section 7.0) follows the same
+  Board-discretion, no-fixed-public-figure standard already established
+  for compensation in OPS-010 — professional public presentation,
+  automatic location-specific pricing/scholarship/waiver application, and
+  no public disclosure of the underlying regional-pricing mechanism,
+  exactly as the directive requested.
+- **Homepage language-policy correction.** DXB-009 (Mobile Experience &
+  Arabic/RTL Localization Standard) sets English and Arabic as the only
+  two launch languages, with French, Urdu, Turkish, Bahasa Indonesia,
+  Bahasa Melayu, Hausa, and Swahili as a named future-readiness roadmap —
+  narrower than an earlier working version of the homepage artifact,
+  which presented French and Urdu as fully live alongside English and
+  Arabic. The homepage was corrected in the same session so French and
+  Urdu are now dormant, disabled language-selector entries (their real,
+  already-written translations remain in the page's data payload,
+  unexposed, per DXB-009 Section 8.1's "no rebuild required" future-
+  readiness standard) — so the published artifact and this Bible's stated
+  policy do not silently disagree with each other.
+- **Registration scope boundary, disclosed rather than silently left
+  open.** DXB-001 through DXB-010 are a new, self-contained document
+  series and are deliberately NOT yet added to the Institutional
+  Governance Compendium's 108-document registry (`igc_data.py`): that
+  registry is the data module that generates the Compendium's own
+  Section 17-22 tables, and hand-adding ten rows without regenerating
+  those dependent tables in the same pass would recreate the exact
+  drift-between-summary-and-source defect the registry was built to
+  prevent in the first place. This is disclosed in the Bible's own
+  Publication Certification Statement as a recommended follow-on step for
+  the Compendium's next revision cycle, not fixed silently or partially.
+
 ---
 
 *Every fact recorded above remains true of the current publications — the
