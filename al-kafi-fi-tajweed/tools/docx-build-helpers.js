@@ -26,6 +26,7 @@ const LIMIT = process.argv[4] ? parseInt(process.argv[4], 10) : Infinity; // for
 
 const html = fs.readFileSync(HTML_PATH, 'utf-8');
 const $ = cheerio.load(html, { decodeEntities: false });
+const HEADER_TITLE = ($('title').first().text() || 'الكافي في التجويد').split('—')[0].trim();
 
 // ---------- Palette ----------
 const C = {
@@ -269,6 +270,6 @@ function buildTable($table) {
 module.exports = {
   $, C, FONT_BODY, FONT_DISPLAY, FONT_UI, bmName, textRunsFor, mkRun, inlineRuns,
   para, headingPara, pageBreak, boxTable, labelPara, listParagraph, buildTable,
-  NUMBERING_CONFIG, HTML_PATH, OUT_PATH, LIMIT,
+  NUMBERING_CONFIG, HTML_PATH, OUT_PATH, LIMIT, HEADER_TITLE,
   docx: require('docx'),
 };

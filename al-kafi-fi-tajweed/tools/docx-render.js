@@ -1,7 +1,7 @@
 const {
   $, C, FONT_BODY, FONT_DISPLAY, FONT_UI, bmName, textRunsFor, mkRun, inlineRuns,
   para, headingPara, pageBreak, boxTable, labelPara, listParagraph, buildTable,
-  NUMBERING_CONFIG, HTML_PATH, OUT_PATH, LIMIT, docx,
+  NUMBERING_CONFIG, HTML_PATH, OUT_PATH, LIMIT, HEADER_TITLE, docx,
 } = require('./docx-build-helpers.js');
 
 const {
@@ -466,7 +466,7 @@ const doc = new Document({
         default: new Header({
           children: [new Paragraph({
             alignment: AlignmentType.CENTER, bidirectional: true,
-            children: [mkRun('الكافي في التجويد', { size: 16, color: C.ink500, font: FONT_UI })],
+            children: [mkRun(HEADER_TITLE, { size: 16, color: C.ink500, font: FONT_UI })],
           })],
         }),
       },
