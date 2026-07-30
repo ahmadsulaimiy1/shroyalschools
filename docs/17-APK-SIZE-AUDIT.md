@@ -86,10 +86,24 @@ Tajweed highlighting therefore remains unimplemented, unchanged from
 `docs/16`'s conclusion — this is disclosed as an attempted-but-blocked check
 rather than silently dropped.
 
-## 6. Before / after
+## 6. Before / after — confirmed
 
-| Build | Size |
-|---|---|
-| Universal APK (commit `1a9696c`, before this fix) | 59.7 MB |
-| arm64-v8a APK (after `--split-per-abi`) | _filled in after CI confirms — see commit referenced in the PR/commit history following this doc_ |
-| armeabi-v7a APK (after `--split-per-abi`) | _filled in after CI confirms_ |
+Measured from commit `c40c082`'s CI run (GitHub release asset sizes, exact
+bytes, no download/unzip required to read them):
+
+| Build | Size | Change |
+|---|---|---|
+| Universal APK (commit `1a9696c`, before this fix) | 59.7 MB | — |
+| **arm64-v8a APK (`app-release.apk`, the primary download)** | **21.4 MB** | **−64%** |
+| armeabi-v7a APK (`app-release-armeabi-v7a.apk`, fallback) | 19.1 MB | −68% |
+| AAB (`app-release.aab`, Play Store path — unaffected either way) | 56.3 MB | ~unchanged |
+
+The primary direct-download APK went from 59.7 MB to 21.4 MB — confirming
+the universal-APK packaging was indeed responsible for the large majority
+of the previously reported size, exactly as predicted in §1-§2. This lands
+within this doc's own "Good: 20–35 MB" band for an app of this feature
+scope (Tasbeeh counter, full Adhkar library, full Qur'an text/translation/
+transliteration, Qari audio playback, Madani Mushaf/Tahajjud reading
+modes). The AAB size is expected to stay roughly where it was, since it has
+always carried all architectures for Play's per-device delivery — that was
+never the size problem.
