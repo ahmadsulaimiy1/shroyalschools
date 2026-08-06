@@ -28,6 +28,24 @@ class AppTheme {
         error: AppColors.errorDark,
       );
 
+  /// True-black variant of [dark] for AMOLED screens: every pixel that
+  /// would otherwise be the dark palette's near-black background becomes
+  /// pure black (`#000000`), which AMOLED panels render by turning those
+  /// pixels off entirely -- lower battery draw and, for many users,
+  /// higher contrast/less eye strain in a dark room. Everything else
+  /// (gold accent, text colours) stays identical to [dark].
+  static ThemeData get amoled => _build(
+        brightness: Brightness.dark,
+        primary: AppColors.primaryDark,
+        secondary: AppColors.goldDark,
+        tertiary: AppColors.navyLight,
+        background: Colors.black,
+        surface: Colors.black,
+        onSurface: AppColors.textPrimaryDark,
+        onSurfaceVariant: AppColors.textSecondaryDark,
+        error: AppColors.errorDark,
+      );
+
   static ThemeData _build({
     required Brightness brightness,
     required Color primary,

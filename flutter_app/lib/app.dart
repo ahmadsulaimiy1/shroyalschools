@@ -53,7 +53,7 @@ class MisbahaApp extends StatelessWidget {
             title: 'Misbaha',
             debugShowCheckedModeBanner: false,
             theme: AppTheme.light,
-            darkTheme: AppTheme.dark,
+            darkTheme: settings.amoledBlackEnabled ? AppTheme.amoled : AppTheme.dark,
             themeMode: settings.flutterThemeMode,
             locale: settings.locale,
             supportedLocales: AppLocalizations.supportedLocales,

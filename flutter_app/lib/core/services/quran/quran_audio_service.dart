@@ -58,4 +58,30 @@ class QuranAudioService {
     }
     return File('${cacheDir.path}/${reciter.name}_${surah}_$ayah.mp3');
   }
+
+  /// Total bytes of every cached recitation file across every reciter --
+  /// backs the Downloads section of Settings, which shows this figure
+  /// rather than a per-reciter breakdown (cache files aren't tracked with
+  /// enough metadata to attribute cheaply without adding a manifest).
+  Future<int> cacheSizeBytes() async {
+    final baseDir = await getApplicationSupportDirectory();
+    final cacheDir = Directory('${baseDir.path}/quran_audio_cache');
+    if (!await cacheDir.exists()) return 0;
+    var total = 0;
+    await for (final entity in cacheDir.list()) {
+      if (entity is File) total += await entity.length();
+    }
+    return total;
+  }
+
+  /// Deletes every cached recitation file. Verses already read stay in the
+  /// Qur'an database (bookmarks, notes, last-read); only the downloaded
+  /// audio itself is removed, and will simply re-download on next play.
+  Future<void> clearCache() async {
+    final baseDir = await getApplicationSupportDirectory();
+    final cacheDir = Directory('${baseDir.path}/quran_audio_cache');
+    if (await cacheDir.exists()) {
+      await cacheDir.delete(recursive: true);
+    }
+  }
 }

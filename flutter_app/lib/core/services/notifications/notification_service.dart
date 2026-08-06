@@ -95,6 +95,8 @@ class NotificationService {
 
   Future<bool> canScheduleExactAlarms() async => await _android?.canScheduleExactNotifications() ?? false;
 
+  Future<bool> areNotificationsEnabled() async => await _android?.areNotificationsEnabled() ?? false;
+
   Future<AndroidScheduleMode> _scheduleModeFor({required bool exactRequested}) async {
     if (!exactRequested) return AndroidScheduleMode.inexactAllowWhileIdle;
     return await canScheduleExactAlarms() ? AndroidScheduleMode.exactAllowWhileIdle : AndroidScheduleMode.inexactAllowWhileIdle;

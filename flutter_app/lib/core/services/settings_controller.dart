@@ -46,6 +46,7 @@ class SettingsController extends ChangeNotifier {
   static const _kVolumeButtonEnabled = 'volume_button_enabled';
   static const _kTextSizePreset = 'text_size_preset';
   static const _kElderlyFriendlyMode = 'elderly_friendly_mode';
+  static const _kAmoledBlackEnabled = 'amoled_black_enabled';
   static const _kQuranReadingMode = 'quran_reading_mode';
   static const _kQuranMushafMode = 'quran_mushaf_mode';
   static const _kQuranScrollMode = 'quran_scroll_mode';
@@ -57,6 +58,7 @@ class SettingsController extends ChangeNotifier {
   bool _volumeButtonEnabled = false;
   TextSizePreset _textSizePreset = TextSizePreset.standard;
   bool _elderlyFriendlyMode = false;
+  bool _amoledBlackEnabled = false;
   QuranReadingMode _quranReadingMode = QuranReadingMode.arabicTranslation;
   bool _quranMushafMode = false;
   QuranScrollMode _quranScrollMode = QuranScrollMode.verticalList;
@@ -73,6 +75,7 @@ class SettingsController extends ChangeNotifier {
   bool get volumeButtonEnabled => _volumeButtonEnabled;
   TextSizePreset get textSizePreset => _textSizePreset;
   bool get elderlyFriendlyMode => _elderlyFriendlyMode;
+  bool get amoledBlackEnabled => _amoledBlackEnabled;
   QuranReadingMode get quranReadingMode => _quranReadingMode;
   bool get quranMushafMode => _quranMushafMode;
   bool get masjidMode => _masjidMode;
@@ -112,6 +115,7 @@ class SettingsController extends ChangeNotifier {
       orElse: () => TextSizePreset.standard,
     );
     _elderlyFriendlyMode = prefs.getBool(_kElderlyFriendlyMode) ?? false;
+    _amoledBlackEnabled = prefs.getBool(_kAmoledBlackEnabled) ?? false;
     final readingModeName = prefs.getString(_kQuranReadingMode);
     _quranReadingMode = QuranReadingMode.values.firstWhere(
       (e) => e.name == readingModeName,
@@ -178,6 +182,13 @@ class SettingsController extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_kElderlyFriendlyMode, value);
+  }
+
+  Future<void> setAmoledBlackEnabled(bool value) async {
+    _amoledBlackEnabled = value;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_kAmoledBlackEnabled, value);
   }
 
   Future<void> setQuranReadingMode(QuranReadingMode mode) async {
