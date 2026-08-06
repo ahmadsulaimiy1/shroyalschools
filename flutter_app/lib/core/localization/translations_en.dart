@@ -131,6 +131,8 @@ const Map<String, String> enTranslations = {
   'calendar_event_eid_al_fitr': 'Eid al-Fitr',
   'calendar_event_day_of_arafah': 'Day of Arafah',
   'calendar_event_eid_al_adha': 'Eid al-Adha',
+  'dashboard_title': "Today's Worship",
+  'dashboard_khatm_today': '{0} of {1} verses today',
   'hadith_reference': 'Sahih al-Bukhari, Book {0}, Hadith {1}',
 
   'home_greeting': 'Assalamu Alaikum',

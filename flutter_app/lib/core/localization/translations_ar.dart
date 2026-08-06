@@ -131,6 +131,8 @@ const Map<String, String> arTranslations = {
   'calendar_event_eid_al_fitr': 'عيد الفطر',
   'calendar_event_day_of_arafah': 'يوم عرفة',
   'calendar_event_eid_al_adha': 'عيد الأضحى',
+  'dashboard_title': 'عبادة اليوم',
+  'dashboard_khatm_today': '{0} من {1} آية اليوم',
   'hadith_reference': 'صحيح البخاري، الكتاب {0}، الحديث {1}',
 
   'home_greeting': 'السلام عليكم',

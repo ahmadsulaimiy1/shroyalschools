@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/database/counter_repository.dart';
@@ -10,6 +11,9 @@ import '../../core/models/hadith_entry.dart';
 import '../../core/models/quran_chapter.dart';
 import '../../core/models/quran_verse.dart';
 import '../../core/services/active_dhikr_controller.dart';
+import '../../core/services/prayer_settings_controller.dart';
+import '../../core/services/prayer_times_service.dart';
+import '../../core/theme/app_colors.dart';
 import '../../core/widgets/app_shell.dart';
 import '../calendar/islamic_calendar_screen.dart';
 import '../khatm/khatm_screen.dart';
@@ -31,6 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
   QuranChapter? _lastReadChapter;
   QuranVerse? _dailyVerse;
   HadithEntry? _dailyHadith;
+  KhatmPlan? _khatmPlan;
+  int _khatmVersesToday = 0;
+  int _khatmDailyTarget = 0;
   bool _loading = true;
 
   @override
@@ -53,6 +60,15 @@ class _HomeScreenState extends State<HomeScreen> {
     final lastReadChapter = lastRead == null ? null : await quranRepo.chapter(lastRead.surah);
     final dailyVerse = await quranRepo.dailyVerse(now);
     final dailyHadith = await hadithRepo.dailyHadith(now);
+    final khatmPlan = await quranRepo.khatmPlan();
+    final khatmVersesToday = await quranRepo.versesReadSince(today);
+    var khatmDailyTarget = 0;
+    if (khatmPlan != null) {
+      final versesSincePlanStart = await quranRepo.versesReadSince(khatmPlan.startDate);
+      final versesRemaining = (totalQuranVerseCount - versesSincePlanStart).clamp(0, totalQuranVerseCount);
+      final daysRemaining = khatmPlan.targetDate.difference(today).inDays.clamp(1, 999999);
+      khatmDailyTarget = (versesRemaining / daysRemaining).ceil();
+    }
     if (!mounted) return;
     setState(() {
       _today = results[0];
@@ -61,8 +77,36 @@ class _HomeScreenState extends State<HomeScreen> {
       _lastReadChapter = lastReadChapter;
       _dailyVerse = dailyVerse;
       _dailyHadith = dailyHadith;
+      _khatmPlan = khatmPlan;
+      _khatmVersesToday = khatmVersesToday;
+      _khatmDailyTarget = khatmDailyTarget;
       _loading = false;
     });
+  }
+
+  _NextPrayerInfo? _nextPrayerInfo(PrayerSettingsController prayerSettings) {
+    if (!prayerSettings.hasLocation) return null;
+    const service = PrayerTimesService();
+    final now = DateTime.now();
+    final today = service.calculate(
+      latitude: prayerSettings.latitude!,
+      longitude: prayerSettings.longitude!,
+      date: now,
+      method: prayerSettings.method,
+      madhab: prayerSettings.madhab,
+      adjustmentsMinutes: prayerSettings.adjustments,
+    );
+    final next = today.nextPrayer(at: now);
+    if (next != null) return _NextPrayerInfo(name: next, time: today.timeFor(next));
+    final tomorrow = service.calculate(
+      latitude: prayerSettings.latitude!,
+      longitude: prayerSettings.longitude!,
+      date: now.add(const Duration(days: 1)),
+      method: prayerSettings.method,
+      madhab: prayerSettings.madhab,
+      adjustmentsMinutes: prayerSettings.adjustments,
+    );
+    return _NextPrayerInfo(name: PrayerName.fajr, time: tomorrow.fajr);
   }
 
   @override
@@ -70,6 +114,8 @@ class _HomeScreenState extends State<HomeScreen> {
     final theme = Theme.of(context);
     final t = context.loc.t;
     final suggested = seedAdhkar.first;
+    final prayerSettings = context.watch<PrayerSettingsController>();
+    final nextPrayer = _nextPrayerInfo(prayerSettings);
 
     return Scaffold(
       appBar: AppBar(title: Text(t('app_name'))),
@@ -81,6 +127,20 @@ class _HomeScreenState extends State<HomeScreen> {
             Text(t('home_greeting'), style: theme.textTheme.headlineMedium),
             const SizedBox(height: 4),
             Text(t('home_subtitle'), style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
+            const SizedBox(height: 20),
+            Text(t('dashboard_title'), style: theme.textTheme.titleMedium),
+            const SizedBox(height: 12),
+            _WorshipDashboardCard(
+              nextPrayer: nextPrayer,
+              todayDhikrCount: _loading ? null : _today,
+              khatmPlan: _khatmPlan,
+              khatmVersesToday: _khatmVersesToday,
+              khatmDailyTarget: _khatmDailyTarget,
+              t: t,
+              onTapPrayer: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PrayerTimesScreen())),
+              onTapKhatm: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const KhatmScreen())),
+              onTapDhikr: () => AppShellScope.maybeOf(context)?.goToCounter(),
+            ),
             const SizedBox(height: 24),
             Row(
               children: [
@@ -256,6 +316,109 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _NextPrayerInfo {
+  const _NextPrayerInfo({required this.name, required this.time});
+  final PrayerName name;
+  final DateTime time;
+}
+
+/// A single elegant summary of today's worship, bringing together the next
+/// prayer, dhikr count, and Khatm daily target that Phase 5 Part 2's closing
+/// directive asked for -- reusing the same repositories/services each of
+/// those already has its own dedicated screen for, rather than introducing
+/// any new tracking mechanism.
+class _WorshipDashboardCard extends StatelessWidget {
+  const _WorshipDashboardCard({
+    required this.nextPrayer,
+    required this.todayDhikrCount,
+    required this.khatmPlan,
+    required this.khatmVersesToday,
+    required this.khatmDailyTarget,
+    required this.t,
+    required this.onTapPrayer,
+    required this.onTapKhatm,
+    required this.onTapDhikr,
+  });
+
+  final _NextPrayerInfo? nextPrayer;
+  final int? todayDhikrCount;
+  final KhatmPlan? khatmPlan;
+  final int khatmVersesToday;
+  final int khatmDailyTarget;
+  final String Function(String) t;
+  final VoidCallback onTapPrayer;
+  final VoidCallback onTapKhatm;
+  final VoidCallback onTapDhikr;
+
+  String _prayerName(PrayerName p) => switch (p) {
+        PrayerName.fajr => t('prayer_fajr'),
+        PrayerName.sunrise => t('prayer_sunrise'),
+        PrayerName.dhuhr => t('prayer_dhuhr'),
+        PrayerName.asr => t('prayer_asr'),
+        PrayerName.maghrib => t('prayer_maghrib'),
+        PrayerName.isha => t('prayer_isha'),
+      };
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Card(
+      color: AppColors.navy,
+      child: Padding(
+        padding: const EdgeInsets.all(4),
+        child: Column(
+          children: [
+            _DashboardTile(
+              icon: Icons.access_time_outlined,
+              label: t('prayer_next_in'),
+              value: nextPrayer == null
+                  ? t('prayer_times_title')
+                  : '${_prayerName(nextPrayer!.name)} · ${DateFormat.jm().format(nextPrayer!.time)}',
+              onTap: onTapPrayer,
+            ),
+            const Divider(height: 1, color: Colors.white24),
+            _DashboardTile(
+              icon: Icons.fingerprint,
+              label: t('home_todays_count'),
+              value: todayDhikrCount == null ? '—' : '$todayDhikrCount',
+              onTap: onTapDhikr,
+            ),
+            const Divider(height: 1, color: Colors.white24),
+            _DashboardTile(
+              icon: Icons.flag_outlined,
+              label: t('khatm_title'),
+              value: khatmPlan == null
+                  ? t('khatm_set_target')
+                  : context.loc.tArgs('dashboard_khatm_today', [khatmVersesToday, khatmDailyTarget]),
+              onTap: onTapKhatm,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _DashboardTile extends StatelessWidget {
+  const _DashboardTile({required this.icon, required this.label, required this.value, required this.onTap});
+  final IconData icon;
+  final String label;
+  final String value;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon, color: AppColors.gold),
+      title: Text(label, style: const TextStyle(color: Colors.white70, fontSize: 13)),
+      subtitle: Text(value, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
+      trailing: const Icon(Icons.chevron_right, color: Colors.white38),
+      onTap: onTap,
     );
   }
 }
