@@ -70,6 +70,12 @@ dependencies:
   # fix is stored). See core/services/prayer_times_service.dart.
   adhan_dart: ^2.0.1
 
+  # Hijri/Gregorian calendar conversion (Umm al-Qura tabular calendar, the
+  # same convention used officially in Saudi Arabia), BSD-2-Clause
+  # licensed, no runtime dependencies, pure on-device calculation. See
+  # core/services/hijri_calendar_service.dart.
+  hijri: ^3.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
