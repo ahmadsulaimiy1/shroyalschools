@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- Worship reminders (prayer/Tahajjud/Qur'an/Adhkar) are scheduled local
-         notifications via flutter_local_notifications -- see
+         notifications via flutter_local_notifications — see
          core/services/notifications/. RECEIVE_BOOT_COMPLETED lets the plugin
          re-arm scheduled reminders after the device restarts (Android clears
          AlarmManager alarms on reboot). SCHEDULE_EXACT_ALARM is requested at
@@ -26,7 +26,7 @@
          reserved for alarm-clock/calendar-category apps and carries its own
          store-review requirements this app doesn't need to take on.
          USE_FULL_SCREEN_INTENT powers the Tahajjud "strong wake" option only
-         (a real wake-up screen, like an alarm clock) -- never used for
+         (a real wake-up screen, like an alarm clock) — never used for
          ordinary prayer/Qur'an/Adhkar reminders, which stay as normal
          notifications. -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
