@@ -9,7 +9,7 @@ import '../../core/models/quran_chapter.dart';
 import '../../core/models/quran_verse.dart';
 import 'widgets/mushaf_flow_text.dart';
 
-enum TahajjudSpeed { verySlow, slow, medium, fast }
+enum TahajjudSpeed { verySlow, slow, medium, fast, custom }
 
 const _tahajjudSpeedPxPerSecond = {
   TahajjudSpeed.verySlow: 8.0,
@@ -17,6 +17,9 @@ const _tahajjudSpeedPxPerSecond = {
   TahajjudSpeed.medium: 30.0,
   TahajjudSpeed.fast: 48.0,
 };
+
+const _minCustomSpeed = 4.0;
+const _maxCustomSpeed = 70.0;
 
 /// Hands-free auto-scrolling reciter view for Tahajjud/Qiyam al-Layl: dark,
 /// warm, low-glare colours; smooth continuous scroll driven by a frame
@@ -37,7 +40,7 @@ class _TahajjudScreenState extends State<TahajjudScreen> with SingleTickerProvid
   final _scrollController = ScrollController();
   Duration _lastTick = Duration.zero;
   bool _playing = false;
-  TahajjudSpeed _speed = TahajjudSpeed.slow;
+  double _pxPerSecond = _tahajjudSpeedPxPerSecond[TahajjudSpeed.slow]!;
   Map<int, QuranChapter> _chaptersById = const {};
 
   static const _bg = Color(0xFF0B0F14);
@@ -62,8 +65,7 @@ class _TahajjudScreenState extends State<TahajjudScreen> with SingleTickerProvid
     final dt = (elapsed - _lastTick).inMicroseconds / 1e6;
     _lastTick = elapsed;
     final maxExtent = _scrollController.position.maxScrollExtent;
-    final pxPerSecond = _tahajjudSpeedPxPerSecond[_speed]!;
-    final next = (_scrollController.offset + pxPerSecond * dt).clamp(0.0, maxExtent).toDouble();
+    final next = (_scrollController.offset + _pxPerSecond * dt).clamp(0.0, maxExtent).toDouble();
     _scrollController.jumpTo(next);
     if (next >= maxExtent && maxExtent > 0) {
       _pause();
@@ -96,6 +98,7 @@ class _TahajjudScreenState extends State<TahajjudScreen> with SingleTickerProvid
         TahajjudSpeed.slow => t('tahajjud_speed_slow'),
         TahajjudSpeed.medium => t('tahajjud_speed_medium'),
         TahajjudSpeed.fast => t('tahajjud_speed_fast'),
+        TahajjudSpeed.custom => t('tahajjud_speed_custom'),
       };
 
   @override
@@ -121,12 +124,32 @@ class _TahajjudScreenState extends State<TahajjudScreen> with SingleTickerProvid
                   PopupMenuButton<TahajjudSpeed>(
                     icon: const Icon(Icons.speed, color: _accent),
                     tooltip: t('tahajjud_speed'),
-                    initialValue: _speed,
-                    onSelected: (s) => setState(() => _speed = s),
+                    onSelected: (s) => setState(() => _pxPerSecond = _tahajjudSpeedPxPerSecond[s]!),
                     itemBuilder: (context) => TahajjudSpeed.values
-                        .map((s) => CheckedPopupMenuItem(value: s, checked: _speed == s, child: Text(_speedLabel(t, s))))
+                        .where((s) => s != TahajjudSpeed.custom)
+                        .map((s) => PopupMenuItem(value: s, child: Text(_speedLabel(t, s))))
                         .toList(),
                   ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(Icons.slow_motion_video, size: 18, color: _text.withOpacity(0.6)),
+                  Expanded(
+                    child: SliderTheme(
+                      data: SliderTheme.of(context).copyWith(activeTrackColor: _accent, thumbColor: _accent),
+                      child: Slider(
+                        value: _pxPerSecond.clamp(_minCustomSpeed, _maxCustomSpeed).toDouble(),
+                        min: _minCustomSpeed,
+                        max: _maxCustomSpeed,
+                        onChanged: (v) => setState(() => _pxPerSecond = v),
+                      ),
+                    ),
+                  ),
+                  Icon(Icons.fast_forward, size: 18, color: _text.withOpacity(0.6)),
                 ],
               ),
             ),

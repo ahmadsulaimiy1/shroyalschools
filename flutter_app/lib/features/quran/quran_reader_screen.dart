@@ -33,6 +33,7 @@ class QuranReaderScreen extends StatefulWidget {
 
 class _QuranReaderScreenState extends State<QuranReaderScreen> {
   final _scrollController = ScrollController();
+  final _pageController = PageController();
   Map<int, QuranChapter> _chaptersById = const {};
 
   /// Reading Focus Mode: tapping the page hides the app bar/chrome so the
@@ -70,6 +71,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
   @override
   void dispose() {
     _scrollController.dispose();
+    _pageController.dispose();
     super.dispose();
   }
 
@@ -154,6 +156,18 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                       .toList(),
                 ),
                 if (!isMushaf)
+                  IconButton(
+                    icon: Icon(settings.quranScrollMode == QuranScrollMode.horizontalSwipe
+                        ? Icons.view_carousel_outlined
+                        : Icons.view_agenda_outlined),
+                    tooltip: t('quran_scroll_mode'),
+                    onPressed: () => context.read<SettingsController>().setQuranScrollMode(
+                          settings.quranScrollMode == QuranScrollMode.horizontalSwipe
+                              ? QuranScrollMode.verticalList
+                              : QuranScrollMode.horizontalSwipe,
+                        ),
+                  ),
+                if (!isMushaf)
                   PopupMenuButton<QuranReadingMode>(
                     icon: const Icon(Icons.text_fields),
                     tooltip: t('quran_reading_mode'),
@@ -213,18 +227,37 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                 ),
               ),
             )
-          : ListView.builder(
-              controller: _scrollController,
-              padding: const EdgeInsets.all(16),
-              itemCount: widget.verses.length,
-              itemBuilder: (context, i) => QuranVerseCard(
-                verse: widget.verses[i],
-                playlist: widget.verses,
-                index: i,
-                fontScale: settings.effectiveTextScale,
-                readingMode: settings.quranReadingMode,
-              ),
-            ),
+          : settings.quranScrollMode == QuranScrollMode.horizontalSwipe
+              ? PageView.builder(
+                  controller: _pageController,
+                  itemCount: widget.verses.length,
+                  itemBuilder: (context, i) => Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Center(
+                      child: SingleChildScrollView(
+                        child: QuranVerseCard(
+                          verse: widget.verses[i],
+                          playlist: widget.verses,
+                          index: i,
+                          fontScale: settings.effectiveTextScale,
+                          readingMode: settings.quranReadingMode,
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              : ListView.builder(
+                  controller: _scrollController,
+                  padding: const EdgeInsets.all(16),
+                  itemCount: widget.verses.length,
+                  itemBuilder: (context, i) => QuranVerseCard(
+                    verse: widget.verses[i],
+                    playlist: widget.verses,
+                    index: i,
+                    fontScale: settings.effectiveTextScale,
+                    readingMode: settings.quranReadingMode,
+                  ),
+                ),
     );
 
     return Scaffold(

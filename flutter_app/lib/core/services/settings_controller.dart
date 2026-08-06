@@ -14,6 +14,13 @@ enum TextSizePreset { standard, large, extraLarge }
 /// deliberately not represented here yet.
 enum QuranReadingMode { arabicOnly, arabicTranslation, arabicTranslationTransliteration }
 
+/// Card-view scrolling behaviour (Mushaf mode always uses a single
+/// continuous flow regardless of this setting, since that's the whole
+/// point of a Mushaf page). "Page Mode" in the Phase 5 directive would mean
+/// exact King Fahd Mushaf pagination -- not yet available, see docs/21/22
+/// -- so this offers the two modes buildable without that data today.
+enum QuranScrollMode { verticalList, horizontalSwipe }
+
 extension TextSizePresetX on TextSizePreset {
   double get scaleFactor {
     switch (this) {
@@ -41,6 +48,7 @@ class SettingsController extends ChangeNotifier {
   static const _kElderlyFriendlyMode = 'elderly_friendly_mode';
   static const _kQuranReadingMode = 'quran_reading_mode';
   static const _kQuranMushafMode = 'quran_mushaf_mode';
+  static const _kQuranScrollMode = 'quran_scroll_mode';
 
   AppThemeMode _themeMode = AppThemeMode.system;
   Locale _locale = const Locale('en');
@@ -51,6 +59,7 @@ class SettingsController extends ChangeNotifier {
   bool _elderlyFriendlyMode = false;
   QuranReadingMode _quranReadingMode = QuranReadingMode.arabicTranslation;
   bool _quranMushafMode = false;
+  QuranScrollMode _quranScrollMode = QuranScrollMode.verticalList;
 
   /// True while Masjid Mode is active: distraction-free worship, and a hook
   /// point for a future notification system to check before showing any
@@ -67,6 +76,7 @@ class SettingsController extends ChangeNotifier {
   QuranReadingMode get quranReadingMode => _quranReadingMode;
   bool get quranMushafMode => _quranMushafMode;
   bool get masjidMode => _masjidMode;
+  QuranScrollMode get quranScrollMode => _quranScrollMode;
 
   /// Elderly-friendly mode implies at least the "large" text preset, even if
   /// the user hasn't separately bumped text size — the two settings compose
@@ -108,6 +118,11 @@ class SettingsController extends ChangeNotifier {
       orElse: () => QuranReadingMode.arabicTranslation,
     );
     _quranMushafMode = prefs.getBool(_kQuranMushafMode) ?? false;
+    final scrollModeName = prefs.getString(_kQuranScrollMode);
+    _quranScrollMode = QuranScrollMode.values.firstWhere(
+      (e) => e.name == scrollModeName,
+      orElse: () => QuranScrollMode.verticalList,
+    );
     notifyListeners();
   }
 
@@ -177,6 +192,13 @@ class SettingsController extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_kQuranMushafMode, value);
+  }
+
+  Future<void> setQuranScrollMode(QuranScrollMode mode) async {
+    _quranScrollMode = mode;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_kQuranScrollMode, mode.name);
   }
 
   /// Deliberately session-only (not persisted): Masjid Mode represents
