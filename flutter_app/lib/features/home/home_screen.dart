@@ -13,6 +13,7 @@ import '../../core/services/active_dhikr_controller.dart';
 import '../../core/widgets/app_shell.dart';
 import '../khatm/khatm_screen.dart';
 import '../masjid/masjid_mode_screen.dart';
+import '../prayer/prayer_times_screen.dart';
 import '../qiblah/qiblah_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -122,6 +123,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
             const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                icon: const Icon(Icons.access_time_outlined),
+                label: Text(t('prayer_times_title')),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PrayerTimesScreen())),
+              ),
+            ),
+            const SizedBox(height: 12),
             Row(
               children: [
                 Expanded(
