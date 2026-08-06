@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/localization/app_localizations.dart';
+import '../../core/services/notifications/reminder_scheduler.dart';
 import '../../core/services/prayer_settings_controller.dart';
 import '../../core/services/prayer_times_service.dart';
 import '../../core/theme/app_colors.dart';
@@ -87,6 +88,11 @@ class _PrayerTimesScreenState extends State<PrayerTimesScreen> {
   void _recompute() {
     final prayerSettings = context.read<PrayerSettingsController>();
     if (!prayerSettings.hasLocation) return;
+    // Prayer-linked reminders (Adhan, early, iqamah, missed, Tahajjud) are
+    // computed from these same settings, so any change here needs them
+    // re-primed too -- fire-and-forget, this screen doesn't need to wait
+    // on it to show updated times.
+    rescheduleReminders(context);
     final today = DateTime.now();
     final times = _service.calculate(
       latitude: prayerSettings.latitude!,

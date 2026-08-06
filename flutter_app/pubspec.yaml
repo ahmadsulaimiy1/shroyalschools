@@ -76,6 +76,13 @@ dependencies:
   # core/services/hijri_calendar_service.dart.
   hijri: ^3.0.1
 
+  # Scheduled local notifications for the worship reminder system (prayer,
+  # Tahajjud, Qur'an, Adhkar) -- see core/services/notifications/. Requires
+  # the `timezone` package for timezone-aware exact scheduling.
+  flutter_local_notifications: ^22.2.0
+  timezone: ^0.11.1
+  flutter_timezone: ^5.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

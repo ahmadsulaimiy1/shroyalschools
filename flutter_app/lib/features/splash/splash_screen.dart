@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../core/data/adhkar_seed_data.dart';
 import '../../core/database/adhkar_repository.dart';
 import '../../core/localization/app_localizations.dart';
+import '../../core/services/notifications/reminder_scheduler.dart';
 import '../../core/widgets/app_shell.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -30,6 +31,14 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     // blocking the splash animation. Safe to call every launch — insertion
     // is idempotent (existing ids are skipped, favourites untouched).
     context.read<AdhkarRepository>().seedIfNeeded(wirdAlMusaffaSeed);
+    // Re-primes the worship reminder system on every launch -- covers both
+    // "a reminder was enabled last session, extend its rolling window" and
+    // "prayer times shifted since yesterday". Scheduling without the
+    // notification/exact-alarm permission granted is harmless (Android
+    // simply won't surface anything); the permission itself is only ever
+    // requested when the user actually turns a reminder on, from the
+    // Notifications settings screen -- never uninvited here.
+    rescheduleReminders(context);
     Timer(const Duration(milliseconds: 1400), _goToShell);
   }
 

@@ -1,7 +1,9 @@
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app.dart';
+import 'core/services/notifications/notification_service.dart';
 import 'core/services/tts/adhkar_audio_handler.dart';
 
 late final AdhkarAudioHandler audioHandler;
@@ -31,6 +33,14 @@ Future<void> main() async {
   } catch (_) {
     audioHandler = AdhkarAudioHandler();
   }
+
+  // Reads the persisted language preference directly (mirrors
+  // SettingsController's own 'language_code' key) since notification
+  // channels must be created before the widget tree -- and therefore
+  // SettingsController -- exists. See notification_service.dart.
+  final prefs = await SharedPreferences.getInstance();
+  final languageCode = prefs.getString('language_code') ?? 'en';
+  await NotificationService.instance.init(locale: Locale(languageCode));
 
   runApp(const MisbahaApp());
 }

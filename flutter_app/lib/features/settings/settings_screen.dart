@@ -5,6 +5,7 @@ import '../../core/database/counter_repository.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../core/services/settings_controller.dart';
 import '../about/about_screen.dart';
+import 'notification_settings_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -53,6 +54,15 @@ class SettingsScreen extends StatelessWidget {
             subtitle: Text(t('settings_volume_button_counter_subtitle')),
             value: settings.volumeButtonEnabled,
             onChanged: settings.setVolumeButtonEnabled,
+          ),
+          const Divider(height: 24),
+          ListTile(
+            leading: const Icon(Icons.notifications_active_outlined),
+            title: Text(t('notif_settings_title')),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const NotificationSettingsScreen()),
+            ),
           ),
           const Divider(height: 24),
           _SectionHeader(t('settings_accessibility')),

@@ -15,6 +15,24 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!-- Worship reminders (prayer/Tahajjud/Qur'an/Adhkar) are scheduled local
+         notifications via flutter_local_notifications -- see
+         core/services/notifications/. RECEIVE_BOOT_COMPLETED lets the plugin
+         re-arm scheduled reminders after the device restarts (Android clears
+         AlarmManager alarms on reboot). SCHEDULE_EXACT_ALARM is requested at
+         runtime (not silently assumed) so reminders can fire at the precise
+         minute a prayer time or reminder is due; if declined, the app falls
+         back to inexact scheduling rather than USE_EXACT_ALARM, which is
+         reserved for alarm-clock/calendar-category apps and carries its own
+         store-review requirements this app doesn't need to take on.
+         USE_FULL_SCREEN_INTENT powers the Tahajjud "strong wake" option only
+         (a real wake-up screen, like an alarm clock) -- never used for
+         ordinary prayer/Qur'an/Adhkar reminders, which stay as normal
+         notifications. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
     <!-- Coarse location is sufficient to compute a Qiblah bearing (accuracy
          of a few hundred metres does not meaningfully change the great-circle
          bearing to the Kaaba); see core/services/qiblah_service.dart. -->
@@ -37,7 +55,9 @@
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true">
 
             <!-- Flutter draws the Android launch screen until the first frame is
                  rendered, then this handoff meta-data swaps to the normal theme. -->
@@ -73,6 +93,20 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- flutter_local_notifications: delivers scheduled worship reminders
+             and re-arms them after a reboot (Android clears AlarmManager
+             alarms on restart, so without the boot receiver every reminder
+             would silently stop firing until the app was next opened). -->
+        <receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+        <receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
             </intent-filter>
         </receiver>
     </application>

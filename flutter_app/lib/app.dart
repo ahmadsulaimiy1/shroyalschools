@@ -10,6 +10,7 @@ import 'core/database/quran_repository.dart';
 import 'core/localization/app_localizations.dart';
 import 'core/services/active_dhikr_controller.dart';
 import 'core/services/feedback_service.dart';
+import 'core/services/notifications/reminder_settings_controller.dart';
 import 'core/services/prayer_settings_controller.dart';
 import 'core/services/quran/quran_audio_controller.dart';
 import 'core/services/quran/quran_audio_service.dart';
@@ -44,6 +45,7 @@ class MisbahaApp extends StatelessWidget {
           update: (_, settings, __) => FeedbackService(settings),
         ),
         ChangeNotifierProvider<PrayerSettingsController>(create: (_) => PrayerSettingsController()..load()),
+        ChangeNotifierProvider<ReminderSettingsController>(create: (_) => ReminderSettingsController()..load()),
       ],
       child: Consumer<SettingsController>(
         builder: (context, settings, _) {

@@ -3,6 +3,9 @@ import 'package:provider/provider.dart';
 
 import '../../core/localization/app_localizations.dart';
 import '../../core/models/adhkar_entry.dart';
+import '../../core/services/notifications/reminder_scheduler.dart';
+import '../../core/services/prayer_settings_controller.dart';
+import '../../core/services/prayer_times_service.dart';
 import '../../core/services/settings_controller.dart';
 import '../adhkar/adhkar_category_screen.dart';
 
@@ -33,6 +36,40 @@ class _MasjidModeScreenState extends State<MasjidModeScreen> {
 
   void _endMasjidMode(BuildContext context) {
     context.read<SettingsController>().setMasjidMode(false);
+  }
+
+  /// Best-effort: cancels today's still-pending Iqamah/Missed-Prayer
+  /// reminders for whichever prayer most recently started, so tapping
+  /// "Finished Praying" doesn't get followed by a reminder for a prayer
+  /// the user just prayed. Silently does nothing if location/prayer
+  /// settings aren't configured -- Masjid Mode itself doesn't depend on
+  /// them, so this is a bonus, not a requirement.
+  void _markCurrentPrayerCompleted(BuildContext context) {
+    final prayerSettings = context.read<PrayerSettingsController>();
+    if (!prayerSettings.hasLocation) return;
+    const service = PrayerTimesService();
+    final now = DateTime.now();
+    final times = service.calculate(
+      latitude: prayerSettings.latitude!,
+      longitude: prayerSettings.longitude!,
+      date: now,
+      method: prayerSettings.method,
+      madhab: prayerSettings.madhab,
+      adjustmentsMinutes: prayerSettings.adjustments,
+    );
+    PrayerName? current;
+    for (final p in [PrayerName.fajr, PrayerName.dhuhr, PrayerName.asr, PrayerName.maghrib, PrayerName.isha]) {
+      if (!times.timeFor(p).isAfter(now)) current = p;
+    }
+    if (current != null) {
+      final scheduler = ReminderScheduler(
+        prayerSettings: prayerSettings,
+        reminderSettings: context.read(),
+        quranRepository: context.read(),
+        loc: context.loc,
+      );
+      scheduler.markPrayerCompletedToday(current);
+    }
   }
 
   @override
@@ -69,6 +106,7 @@ class _MasjidModeScreenState extends State<MasjidModeScreen> {
                   icon: const Icon(Icons.check_circle_outline),
                   label: Text(t('masjid_mode_finished_praying')),
                   onPressed: () {
+                    _markCurrentPrayerCompleted(context);
                     _endMasjidMode(context);
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (_) => const AdhkarCategoryScreen(category: AdhkarCategory.prayer)),
