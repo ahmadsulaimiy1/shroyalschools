@@ -51,8 +51,8 @@ class NotificationService {
     if (_initialized) return;
     tz.initializeTimeZones();
     try {
-      final timeZoneName = await FlutterTimezone.getLocalTimezone();
-      tz.setLocalLocation(tz.getLocation(timeZoneName));
+      final timeZoneInfo = await FlutterTimezone.getLocalTimezone();
+      tz.setLocalLocation(tz.getLocation(timeZoneInfo.identifier));
     } catch (_) {
       // Falls back to whatever default `timezone` ships with (UTC) --
       // reminders would then fire at the wrong clock time until the device's
