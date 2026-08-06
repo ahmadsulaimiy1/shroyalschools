@@ -64,6 +64,8 @@ const Map<String, String> arTranslations = {
   'quran_bookmark_label_hint': 'مثال: "لخطبة الجمعة"',
   'quran_reflection_note_title': 'ملاحظة تدبر',
   'quran_reflection_note_hint': 'اكتب تأملاتك حول هذه الآية…',
+  'quran_sajdah_verse': 'آية سجدة التلاوة',
+  'quran_sajdah_short': 'سجدة',
   'cancel': 'إلغاء',
   'save': 'حفظ',
   'qiblah_title': 'اتجاه القبلة',

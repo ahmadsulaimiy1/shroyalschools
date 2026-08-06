@@ -64,6 +64,8 @@ const Map<String, String> enTranslations = {
   'quran_bookmark_label_hint': 'e.g. "For Friday khutbah"',
   'quran_reflection_note_title': 'Reflection Note',
   'quran_reflection_note_hint': 'Write your thoughts on this verse…',
+  'quran_sajdah_verse': 'Verse of Prostration (Sajdah al-Tilawah)',
+  'quran_sajdah_short': 'Sajdah',
   'cancel': 'Cancel',
   'save': 'Save',
   'qiblah_title': 'Qiblah Direction',

@@ -130,6 +130,18 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
                   backgroundColor: theme.colorScheme.secondary.withOpacity(0.15),
                   child: Text('${v.ayah}', style: theme.textTheme.labelLarge?.copyWith(color: theme.colorScheme.secondary)),
                 ),
+                if (v.isSajdah) ...[
+                  const SizedBox(width: 8),
+                  Tooltip(
+                    message: t('quran_sajdah_verse'),
+                    child: Chip(
+                      avatar: Icon(Icons.self_improvement, size: 16, color: theme.colorScheme.secondary),
+                      label: Text(t('quran_sajdah_short'), style: theme.textTheme.labelSmall),
+                      visualDensity: VisualDensity.compact,
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    ),
+                  ),
+                ],
                 const Spacer(),
                 IconButton(
                   icon: Icon(isPlaying ? Icons.pause_circle_outline : Icons.play_circle_outline),

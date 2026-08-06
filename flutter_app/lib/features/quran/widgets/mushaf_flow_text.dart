@@ -103,6 +103,14 @@ class MushafFlowText extends StatelessWidget {
                   alignment: PlaceholderAlignment.middle,
                   child: _AyahMarker(number: v.ayah, color: accentColor, textColor: textColor, size: baseSize * 0.62),
                 ),
+                if (v.isSajdah)
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.middle,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 3),
+                      child: _SajdahMarker(color: accentColor, size: baseSize * 0.62),
+                    ),
+                  ),
                 const TextSpan(text: '  '),
               ],
             ),
@@ -174,6 +182,38 @@ class _CornerFlourish extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [dot(), const SizedBox(width: 6), diamond(), const SizedBox(width: 6), dot()],
+    );
+  }
+}
+
+/// The traditional printed-Mushaf sajdah (prostration) mark -- a small
+/// domed/pointed outline enclosing the ۩ glyph itself, matching how this
+/// symbol is set apart from the ordinary ayah-end rosette in real Mushafs.
+/// Shown only on the 15 verses whose bundled Arabic text already carries
+/// this mark (see [QuranVerse.isSajdah]).
+class _SajdahMarker extends StatelessWidget {
+  const _SajdahMarker({required this.color, required this.size});
+  final Color color;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: context.loc.t('quran_sajdah_verse'),
+      child: Container(
+        width: size,
+        height: size,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(color: color, width: 1.2),
+        ),
+        child: Text(
+          '۩',
+          textDirection: TextDirection.rtl,
+          style: TextStyle(fontFamily: 'AmiriQuran', fontSize: size * 0.7, color: color, fontWeight: FontWeight.w600),
+        ),
+      ),
     );
   }
 }
