@@ -87,9 +87,25 @@ document: one `.page` root per printed page, a declared `hz:slide-selector`,
 canvas dimensions on every root, no animation or script, and the Adobe Fonts
 link left exactly as the fontkit returned it.
 
-To import, run `python3 build/bundle.py --mode express` and hand the resulting
-`dist/*.express.html` to Adobe Express. Those bundles keep the Adobe Fonts link
-and inline the images, so they carry everything the importer needs.
+Two ready-to-import bundles are committed:
+
+- `dist/graduation-ceremony-brochure.express.html`
+- `dist/graduand-yearbook.express.html`
+
+Each is a single self-contained file — nine `.page` roots, the Adobe Fonts link
+exactly as the fontkit returned it, every photograph embedded, no external
+reference of any kind and no script. Open Adobe Express, import the file, and
+you get an editable nine-page document.
+
+Regenerate them after any content change with:
+
+```bash
+python3 build/bundle.py --mode express
+```
+
+Importing needs an Adobe account rather than a guest session, and the machine
+doing the import must be able to reach `use.typekit.net` for the fonts to come
+through as Adobe Caslon Pro and Adobe Arabic rather than falling back.
 
 ### Why the print bundle substitutes fonts
 
