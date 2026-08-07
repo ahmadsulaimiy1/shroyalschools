@@ -1,0 +1,20 @@
+{
+  "_note": "Facts here are taken from the school's own signage in assets/source/. Anything not on the signage is null and must be supplied before printing.",
+
+  "name": "Sultan Hanafi Royal Schools",
+  "name_arabic": "مدارس السلطان حنفي الملكية",
+  "website": "shroyalschools.ng",
+  "website_url": "https://shroyalschools.ng",
+  "phones": ["0803 807 8664", "0807 374 7650", "0802 074 2289"],
+  "provisions": [
+    "Secular Education",
+    "Islamic & Arabic Education",
+    "Complete Qur'an Memorization"
+  ],
+  "modes": "Day & Boarding",
+
+  "motto": null,
+  "address": null,
+  "email": null,
+  "established": null
+}

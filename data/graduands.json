@@ -1,0 +1,44 @@
+{
+  "_note": "Replace the placeholder names with the real roll, then re-run build/build.py. While `verified` is false, both documents print a DRAFT banner on the roll pages so an unchecked list can never be mistaken for a final one. Set `verified` to true only once a member of staff has checked every spelling.",
+  "_starting_point": "assets/source/graduands-name-cards.jpg shows students holding handwritten name cards. A best-effort transcription is in data/NAMES-FROM-PHOTO.md — it is handwriting read from a photograph, so treat it as a prompt for the registrar, not as data.",
+
+  "verified": false,
+
+  "sections": [
+    {
+      "title": "The Graduating Set",
+      "subtitle": "⟨Basic 6 / JSS 3 / SSS 3 — amend as appropriate⟩",
+      "names": [
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩"
+      ]
+    },
+    {
+      "title": "Ḥuffāẓ of the Set",
+      "subtitle": "Graduands who have completed Qur'an memorization",
+      "names": [
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩",
+        "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩", "⟨Surname, Firstname⟩"
+      ]
+    }
+  ],
+
+  "prefects": [
+    { "office": "Head Boy", "name": "⟨Name⟩" },
+    { "office": "Head Girl", "name": "⟨Name⟩" },
+    { "office": "Assistant Head Boy", "name": "⟨Name⟩" },
+    { "office": "Assistant Head Girl", "name": "⟨Name⟩" },
+    { "office": "Senior Prefect (Academics)", "name": "⟨Name⟩" },
+    { "office": "Senior Prefect (Islamic Affairs)", "name": "⟨Name⟩" },
+    { "office": "Boarding House Prefect", "name": "⟨Name⟩" },
+    { "office": "Games and Sports Prefect", "name": "⟨Name⟩" },
+    { "office": "Health and Sanitation Prefect", "name": "⟨Name⟩" },
+    { "office": "Library Prefect", "name": "⟨Name⟩" }
+  ]
+}

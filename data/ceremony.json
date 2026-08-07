@@ -1,0 +1,87 @@
+{
+  "_note": "Every value wrapped in angle brackets is a placeholder awaiting confirmation. Replace the text, re-run build/build.py, and the brochure and yearbook both update.",
+
+  "edition": "⟨Nth⟩ Graduation Ceremony",
+  "session": "⟨2025 / 2026 Academic Session⟩",
+  "class_year": "⟨20XX⟩",
+  "date": "⟨Saturday, 00 Month 20XX⟩",
+  "time": "⟨10:00 a.m. prompt⟩",
+  "venue": "⟨School Hall, Sultan Hanafi Royal Schools⟩",
+
+  "dignitaries": [
+    { "role": "Chairman of the Occasion", "name": "⟨Name and title⟩" },
+    { "role": "Guest of Honour", "name": "⟨Name and title⟩" },
+    { "role": "Special Guest of Honour", "name": "⟨Name and title⟩" },
+    { "role": "Chief Host", "name": "⟨The Proprietor⟩" },
+    { "role": "Royal Father of the Day", "name": "⟨Name and title⟩" },
+    { "role": "Guest Lecturer", "name": "⟨Name and title⟩" }
+  ],
+
+  "order": [
+    { "time": "⟨09:30⟩", "item": "Arrival and Seating of Guests" },
+    { "time": "⟨10:00⟩", "item": "Recitation from the Holy Qur'ān", "by": "⟨Name⟩" },
+    { "time": "", "item": "Opening Prayer (Du'ā')", "by": "⟨Name⟩" },
+    { "time": "", "item": "National Anthem and School Anthem" },
+    { "time": "", "item": "Welcome Address", "by": "The Proprietor" },
+    { "time": "", "item": "Introduction of Guests and Dignitaries", "by": "⟨Master of Ceremonies⟩" },
+    { "time": "", "item": "Address by the Head Teacher", "by": "⟨Name⟩" },
+    { "time": "", "item": "Qur'ān Memorization Presentation", "by": "The Ḥuffāẓ of the Class" },
+    { "time": "", "item": "Presentation of Graduands", "by": "⟨Name⟩" },
+    { "time": "", "item": "Conferment and Presentation of Certificates" },
+    { "time": "", "item": "Investiture of the Graduation Stole" },
+    { "time": "", "item": "Valedictory Speech", "by": "⟨Head Graduand⟩" },
+    { "time": "", "item": "The Sultan Royal Annual Competition Awards" },
+    { "time": "", "item": "Presentation of Prizes and Special Awards" },
+    { "time": "", "item": "Address by the Guest of Honour" },
+    { "time": "", "item": "Choreography and Cultural Presentation" },
+    { "time": "", "item": "Remarks by the Chairman of the Occasion" },
+    { "time": "", "item": "Vote of Thanks", "by": "⟨Name⟩" },
+    { "time": "", "item": "Closing Prayer (Du'ā')", "by": "⟨Name⟩" },
+    { "time": "⟨02:00⟩", "item": "Refreshments and Photographs" }
+  ],
+
+  "awards": [
+    { "title": "The Sultan Royal Award for Excellence in Qur'ān", "subtitle": "Ḥifẓ and Tajwīd", "recipient": "⟨Recipient⟩" },
+    { "title": "The Sultan Royal Award for Excellence in Arabic Language", "subtitle": "Al-Lughah al-'Arabiyyah", "recipient": "⟨Recipient⟩" },
+    { "title": "The Sultan Royal Award for Excellence in Adhān", "subtitle": "The Call to Prayer", "recipient": "⟨Recipient⟩" },
+    { "title": "Best Graduating Student", "subtitle": "Overall Academic Distinction", "recipient": "⟨Recipient⟩" },
+    { "title": "Best in the Sciences", "subtitle": "Physics, Chemistry and Biology", "recipient": "⟨Recipient⟩" },
+    { "title": "Best in Islamic Studies", "subtitle": "Fiqh, Sīrah and Tawḥīd", "recipient": "⟨Recipient⟩" },
+    { "title": "Award for Character and Conduct", "subtitle": "Ḥusn al-Khuluq", "recipient": "⟨Recipient⟩" },
+    { "title": "Award for Diligence and Punctuality", "subtitle": "Attendance and Application", "recipient": "⟨Recipient⟩" },
+    { "title": "Best in Vocational and Technical Studies", "subtitle": "Workshop Practice", "recipient": "⟨Recipient⟩" },
+    { "title": "Sportsmanship Award", "subtitle": "Games and Athletics", "recipient": "⟨Recipient⟩" }
+  ],
+
+  "proprietor_message": {
+    "heading": "From the Proprietor",
+    "signature": "⟨Name⟩",
+    "signature_role": "Proprietor, Sultan Hanafi Royal Schools",
+    "paragraphs": [
+      "⟨Open by welcoming parents, guardians and invited guests to the ceremony, and by thanking Allah for bringing the set to this day.⟩",
+      "⟨Speak to what this class has carried: the secular curriculum alongside Islamic and Arabic education, and the discipline of complete Qur'an memorization that sets a Sultan Hanafi child apart.⟩",
+      "⟨Acknowledge the teachers, the boarding staff and the parents whose sacrifice made the years possible.⟩",
+      "⟨Close with a charge to the graduands and a prayer for the road ahead.⟩"
+    ]
+  },
+
+  "head_teacher_message": {
+    "heading": "From the Head Teacher",
+    "signature": "⟨Name⟩",
+    "signature_role": "Head Teacher",
+    "paragraphs": [
+      "⟨Reflect on the academic year: results, competitions entered, and the character of this particular set.⟩",
+      "⟨Name the milestones worth remembering — the laboratories, the workshop, the Spelling Leaders competition, the annual awards.⟩",
+      "⟨Send them off with counsel they can carry into secondary or tertiary study.⟩"
+    ]
+  },
+
+  "acknowledgements": [
+    "The parents and guardians of the graduating set",
+    "The Chairman of the Occasion and all invited dignitaries",
+    "The academic and non-academic staff of Sultan Hanafi Royal Schools",
+    "The boarding house staff and matrons",
+    "The Parent–Teacher Association",
+    "⟨Sponsors and well-wishers⟩"
+  ]
+}
