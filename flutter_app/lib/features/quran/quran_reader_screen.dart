@@ -98,7 +98,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                     children: [
                       Expanded(
                         child: DropdownButtonFormField<int>(
-                          value: startIndex,
+                          initialValue: startIndex,
                           decoration: InputDecoration(labelText: t('quran_repeat_range_from')),
                           items: [
                             for (var i = 0; i < widget.verses.length; i++)
@@ -113,7 +113,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                       const SizedBox(width: 12),
                       Expanded(
                         child: DropdownButtonFormField<int>(
-                          value: endIndex,
+                          initialValue: endIndex,
                           decoration: InputDecoration(labelText: t('quran_repeat_range_to')),
                           items: [
                             for (var i = 0; i < widget.verses.length; i++)
