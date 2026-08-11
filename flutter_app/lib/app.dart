@@ -14,6 +14,7 @@ import 'core/services/notifications/reminder_settings_controller.dart';
 import 'core/services/prayer_settings_controller.dart';
 import 'core/services/quran/quran_audio_controller.dart';
 import 'core/services/quran/quran_audio_service.dart';
+import 'core/services/quran/reciter_download_controller.dart';
 import 'core/services/recently_read_service.dart';
 import 'core/services/settings_controller.dart';
 import 'core/services/tts/tts_controller.dart';
@@ -40,6 +41,9 @@ class MisbahaApp extends StatelessWidget {
         ChangeNotifierProxyProvider<QuranAudioService, QuranAudioController>(
           create: (context) => QuranAudioController(audioHandler, context.read<QuranAudioService>()),
           update: (_, __, controller) => controller!,
+        ),
+        ChangeNotifierProvider<ReciterDownloadController>(
+          create: (context) => ReciterDownloadController(context.read<QuranAudioService>(), context.read<QuranRepository>()),
         ),
         ProxyProvider<SettingsController, FeedbackService>(
           update: (_, settings, __) => FeedbackService(settings),

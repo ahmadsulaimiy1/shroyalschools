@@ -6,6 +6,7 @@ import '../../../core/localization/app_localizations.dart';
 import '../../../core/models/quran_verse.dart';
 import '../../../core/services/quran/quran_audio_controller.dart';
 import '../../../core/services/settings_controller.dart';
+import '../../../core/services/tts/adhkar_audio_handler.dart' show RepeatMode;
 
 class QuranVerseCard extends StatefulWidget {
   const QuranVerseCard({
@@ -143,16 +144,30 @@ class _QuranVerseCardState extends State<QuranVerseCard> {
                   ),
                 ],
                 const Spacer(),
-                IconButton(
-                  icon: Icon(isPlaying ? Icons.pause_circle_outline : Icons.play_circle_outline),
-                  tooltip: isPlaying ? t('quran_pause_recitation') : t('quran_play_recitation'),
-                  onPressed: () {
-                    if (isPlaying) {
-                      audio.pause();
-                    } else {
-                      audio.playVerse(v, playlist: widget.playlist, index: widget.index);
-                    }
+                GestureDetector(
+                  onLongPress: () {
+                    // Long-press: repeat just this verse in a loop, ignoring
+                    // whatever playlist/repeat state the surah-level toolbar
+                    // had set -- a quick way to repeat a single ayah without
+                    // opening the Repeat Range sheet.
+                    audio.setMemorizationMode(false);
+                    audio.setRepeatMode(RepeatMode.repeatOne);
+                    audio.setLoopPlaylist(false);
+                    audio.playVerse(v, playlist: [v], index: 0);
                   },
+                  child: IconButton(
+                    icon: Icon(isPlaying ? Icons.pause_circle_outline : Icons.play_circle_outline),
+                    tooltip: isPlaying
+                        ? t('quran_pause_recitation')
+                        : '${t('quran_play_recitation')} (${t('quran_repeat_this_verse_hint')})',
+                    onPressed: () {
+                      if (isPlaying) {
+                        audio.pause();
+                      } else {
+                        audio.playVerse(v, playlist: widget.playlist, index: widget.index);
+                      }
+                    },
+                  ),
                 ),
                 GestureDetector(
                   onLongPress: _editBookmarkLabel,

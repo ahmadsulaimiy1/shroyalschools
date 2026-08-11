@@ -83,6 +83,13 @@ dependencies:
   timezone: ^0.11.1
   flutter_timezone: ^5.1.0
 
+  # Pure-Dart HTTP client used only by the Reciter Centre to download a full
+  # reciter's recitation pack for permanent offline storage -- distinct from
+  # just_audio's own lazy per-play caching in QuranAudioService. No native
+  # Android code, so it carries none of the manifest/Gradle risk that a
+  # plugin package would.
+  http: ^1.2.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

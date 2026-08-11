@@ -68,6 +68,90 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
     setState(() => _chaptersById = {for (final c in chapters) c.number: c});
   }
 
+  /// Repeat Range: lets the reader pick a start/end ayah from the verses on
+  /// screen and loops just that sub-range indefinitely (e.g. one page while
+  /// memorising, or one ruku' during reflection) -- distinct from Memorisation
+  /// Mode, which repeats each verse individually before advancing.
+  void _showRepeatRangeSheet(BuildContext context) {
+    if (widget.verses.isEmpty) return;
+    final t = context.loc.t;
+    var startIndex = 0;
+    var endIndex = widget.verses.length - 1;
+
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+      builder: (sheetContext) => StatefulBuilder(
+        builder: (sheetContext, setSheetState) {
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t('quran_repeat_range'), style: Theme.of(sheetContext).textTheme.titleMedium),
+                  const SizedBox(height: 4),
+                  Text(t('quran_repeat_range_hint'), style: Theme.of(sheetContext).textTheme.bodySmall),
+                  const SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: DropdownButtonFormField<int>(
+                          value: startIndex,
+                          decoration: InputDecoration(labelText: t('quran_repeat_range_from')),
+                          items: [
+                            for (var i = 0; i < widget.verses.length; i++)
+                              DropdownMenuItem(value: i, child: Text('${widget.verses[i].ayah}')),
+                          ],
+                          onChanged: (value) => setSheetState(() {
+                            startIndex = value ?? startIndex;
+                            if (startIndex > endIndex) endIndex = startIndex;
+                          }),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: DropdownButtonFormField<int>(
+                          value: endIndex,
+                          decoration: InputDecoration(labelText: t('quran_repeat_range_to')),
+                          items: [
+                            for (var i = 0; i < widget.verses.length; i++)
+                              DropdownMenuItem(value: i, child: Text('${widget.verses[i].ayah}')),
+                          ],
+                          onChanged: (value) => setSheetState(() {
+                            endIndex = value ?? endIndex;
+                            if (endIndex < startIndex) startIndex = endIndex;
+                          }),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton(
+                      onPressed: () {
+                        final range = widget.verses.sublist(startIndex, endIndex + 1);
+                        final audioController = context.read<QuranAudioController>();
+                        audioController.setMemorizationMode(false);
+                        audioController.setRepeatMode(RepeatMode.continuous);
+                        audioController.setLoopPlaylist(true);
+                        audioController.playVerse(range.first, playlist: range, index: 0);
+                        Navigator.pop(sheetContext);
+                      },
+                      child: Text(t('quran_repeat_range_start')),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
   @override
   void dispose() {
     _scrollController.dispose();
@@ -125,16 +209,20 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                     final audioController = context.read<QuranAudioController>();
                     if (action == 'play_all') {
                       audioController.setMemorizationMode(false);
+                      audioController.setLoopPlaylist(false);
                       if (widget.verses.isNotEmpty) {
                         audioController.setRepeatMode(RepeatMode.continuous);
                         audioController.playVerse(widget.verses.first, playlist: widget.verses, index: 0);
                       }
                     } else if (action == 'toggle_memorization') {
                       final enabling = !audio.memorizationMode;
+                      audioController.setLoopPlaylist(false);
                       audioController.setMemorizationMode(enabling);
                       if (enabling && widget.verses.isNotEmpty) {
                         audioController.playVerse(widget.verses.first, playlist: widget.verses, index: 0);
                       }
+                    } else if (action == 'repeat_range') {
+                      _showRepeatRangeSheet(context);
                     }
                   },
                   itemBuilder: (context) => [
@@ -144,6 +232,7 @@ class _QuranReaderScreenState extends State<QuranReaderScreen> {
                       checked: audio.memorizationMode,
                       child: Text(t('quran_memorization_mode')),
                     ),
+                    PopupMenuItem(value: 'repeat_range', child: Text(t('quran_repeat_range'))),
                   ],
                 ),
                 PopupMenuButton<QuranReciter>(

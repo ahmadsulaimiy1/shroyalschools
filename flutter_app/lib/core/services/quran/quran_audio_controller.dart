@@ -49,6 +49,20 @@ class QuranAudioController extends ChangeNotifier {
   int _memorizationRepeatsLeft = 0;
   bool get memorizationMode => _memorizationMode;
 
+  /// Repeat Range: when the current playlist reaches its last verse, start
+  /// over from its first verse instead of stopping -- used for looping a
+  /// user-selected verse range indefinitely (see quran_reader_screen.dart's
+  /// "Repeat Range" action). Requires [repeatMode] to be [RepeatMode.continuous]
+  /// as well, since that's what makes the shared handler call back into this
+  /// controller when a verse finishes at all; this flag only changes what
+  /// happens once the playlist itself runs out.
+  bool _loopPlaylist = false;
+  bool get loopPlaylist => _loopPlaylist;
+  void setLoopPlaylist(bool value) {
+    _loopPlaylist = value;
+    notifyListeners();
+  }
+
   QuranVerse? get currentVerse => (_currentIndex >= 0 && _currentIndex < _playlist.length) ? _playlist[_currentIndex] : null;
   QuranPlaybackStatus get status => _status;
   double get speed => _speed;
@@ -113,6 +127,8 @@ class QuranAudioController extends ChangeNotifier {
   Future<void> _playNextInPlaylist() async {
     if (_currentIndex + 1 < _playlist.length) {
       await playVerse(_playlist[_currentIndex + 1], playlist: _playlist, index: _currentIndex + 1);
+    } else if (_loopPlaylist && _playlist.isNotEmpty) {
+      await playVerse(_playlist[0], playlist: _playlist, index: 0);
     } else {
       _status = QuranPlaybackStatus.completed;
       notifyListeners();

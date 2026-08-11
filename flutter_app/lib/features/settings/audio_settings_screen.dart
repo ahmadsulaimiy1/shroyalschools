@@ -8,6 +8,7 @@ import '../../core/services/quran/quran_audio_controller.dart';
 import '../../core/services/quran/quran_audio_service.dart';
 import '../../core/services/tts/tts_controller.dart';
 import '../../core/theme/app_colors.dart';
+import '../quran/reciter_centre_screen.dart';
 
 /// Audio: Qari reciter + Qur'an playback speed, Adhkar TTS voice + speed,
 /// a sleep timer that pauses whichever engine is currently playing, and
@@ -96,6 +97,13 @@ class _AudioSettingsScreenState extends State<AudioSettingsScreen> {
             title: Text(t('quran_reciter')),
             subtitle: Text(quranAudio.reciter.displayName),
             onTap: () => _pickReciter(context, quranAudio),
+          ),
+          ListTile(
+            leading: const Icon(Icons.library_music_outlined),
+            title: Text(t('settings_reciter_centre')),
+            subtitle: Text(t('settings_reciter_centre_subtitle')),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ReciterCentreScreen())),
           ),
           ListTile(
             leading: const Icon(Icons.speed_outlined),
