@@ -8,6 +8,8 @@ Technical specification for rebuilding **https://itqan-quran.com/**
 HTTP responses across both hosts.
 **Phase 2** — platform intelligence: competitive research, V2 design, portal and architecture
 specification.
+**Phase 3** — implementation: the rebuilt marketing site and registration router in
+[`../web`](../web).
 
 ---
 
@@ -56,6 +58,21 @@ Two things to know before reading anything else:
 | [16-educational-features.md](16-educational-features.md) | Hifz, tajweed, tilawah, ijazah/sanad, revision engine, mushaf, AI guardrails |
 | [17-standards-gap-analysis.md](17-standards-gap-analysis.md) | vs Moodle/Canvas/Classroom; xAPI/LTI/WCAG; what to build and **what not to** |
 | [18-architecture.md](18-architecture.md) | 100k students / 10k concurrent; **in-Kingdom hosting**; scaling path; assumptions register |
+
+### Phase 3 — Implementation
+
+[`../web`](../web) is a working Next.js 15 app implementing the marketing site and the
+registration router. It fixes 18 verified V1 defects, each cross-referenced back to the
+document that recorded it — see [`../web/README.md`](../web/README.md).
+
+The headline change: **availability is shown before the user leaves the site.** Closed
+tracks render a "full" badge and route to a waitlist that collects an email address, so
+the 61% of journeys that previously dead-ended are now recoverable. The router is three
+plain GET forms and works with JavaScript disabled.
+
+Two things were deliberately left alone rather than guessed: the women's WhatsApp number
+(not invented — one honest channel is shown until it is configured) and waitlist
+persistence (validated but not stored until the PDPL hosting decision is made).
 
 ---
 
