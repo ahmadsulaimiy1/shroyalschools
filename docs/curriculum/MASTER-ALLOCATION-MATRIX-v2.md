@@ -1,4 +1,10 @@
 # MASTER ALLOCATION MATRIX — v2 (REBUILT)
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+> · المنطق وعلم الكلام — تجاوزه السجل
+
 ## 28 subjects × G1–G12 · rulings applied · load rising with the grade
 
 **Governing principle** `[CURRENT COUNCIL DIRECTION]` — *Director General:*

@@ -1,4 +1,8 @@
 # الخطة الكاملة — FULL PLAN, ALL TWELVE CLASSES
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Cornerstones · term courses · intensives · with hours and a completeness audit
 
 ---

@@ -1,4 +1,8 @@
 # FULL BREAKDOWN — ALL TWELVE CLASSES
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Every grade · every subject · form, حصص, text, assessment, transcript section
 
 **Key** — ● مستقل · **I** مدمج · **E‑ع** مضمّن مُعلَّم · **U** وحدة · **A/B/C** = transcript section

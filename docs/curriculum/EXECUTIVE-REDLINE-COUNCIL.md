@@ -1,4 +1,9 @@
 # EXECUTIVE REDLINE COUNCIL — STANDING CHARTER
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+
 ## SHRS · GACAIS · permanent constitutional review body
 
 `[CURRENT COUNCIL DIRECTION]` — established by the Director General.

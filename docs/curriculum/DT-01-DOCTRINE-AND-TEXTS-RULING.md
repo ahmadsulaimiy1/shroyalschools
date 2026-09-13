@@ -1,4 +1,8 @@
 # قرار مجلس العقيدة والنصوص — DT-01
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Booklist conformity with the non-exclusivity constitution · ADOPTED, not tabled
 
 ---

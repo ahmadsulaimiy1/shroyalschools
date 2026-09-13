@@ -1,4 +1,9 @@
 # MASTER ALLOCATION MATRIX — v3
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · المنطق وعلم الكلام — تجاوزه السجل
+
 ## Three programmes · 28 subjects · G1–G12 · dynamic lifecycles
 
 **Constitutional structure** `[CURRENT COUNCIL DIRECTION]` — however many

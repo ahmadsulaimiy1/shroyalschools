@@ -1,4 +1,10 @@
 # منهاج مدارس السلطان حنفي الملكية
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · G12 = ١٣ حصة — تجاوزه السجل
+> · المنطق وعلم الكلام — تجاوزه السجل
+
 # SHRS CURRICULUM — CONSOLIDATED MASTER
 ## G1–G12 · three programmes · 24 named subjects · all board rulings applied
 

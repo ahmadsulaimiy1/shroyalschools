@@ -1,4 +1,9 @@
 # MASTER ALLOCATION MATRIX — PHASE 1
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · المنطق وعلم الكلام — تجاوزه السجل
+
 ## SHRS · 26 subjects × G1–G12 · instructional status only
 
 **No minutes, periods, hours, frequencies or timetable slots appear here.**

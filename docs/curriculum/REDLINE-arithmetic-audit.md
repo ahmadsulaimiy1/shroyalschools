@@ -1,4 +1,8 @@
 # REDLINE FINDING — Timetable Arithmetic Audit
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## SHRS G1–G12 · 26 subjects · 3 programmes
 
 **Status:** Findings only. No solutions adopted. No architectural change authorised by this document.

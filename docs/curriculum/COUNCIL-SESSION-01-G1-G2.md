@@ -1,4 +1,10 @@
 # EXECUTIVE REDLINE COUNCIL — SESSION 01
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+> · ١٩س٢٠د — تجاوزه السجل
+
 ## Subject: the G1–G2 instructional week
 
 Convened under `EXECUTIVE-REDLINE-COUNCIL.md`. Ten independent lenses, then

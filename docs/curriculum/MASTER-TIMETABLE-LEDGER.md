@@ -1,4 +1,10 @@
 # MASTER TIMETABLE LEDGER — v2
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+> · ١٩س٢٠د — تجاوزه السجل
+
 ## SHRS G1–G12 · rebuilt on the recovered ledger of ACD-007 Part 4
 
 **Supersedes:** v1 of this document (commit `dec6b6a`) in full.

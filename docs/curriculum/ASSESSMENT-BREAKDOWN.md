@@ -1,4 +1,8 @@
 # ASSESSMENT — FULL BREAKDOWN
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Clean reference · every subject, every mechanism, every paper
 
 ---

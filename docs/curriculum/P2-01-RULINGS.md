@@ -1,4 +1,9 @@
 # P2-01 — THE FOUR CONSTITUTIONAL RULINGS
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+
 ## Prepared for Executive Council. Nothing adopted. Phase 3 remains stopped.
 
 **New evidence.** ACD-007 **Part 1, التدقيق الشامل** (pp.9–11) is a four-column

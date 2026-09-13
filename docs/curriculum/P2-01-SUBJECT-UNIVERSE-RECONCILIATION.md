@@ -1,4 +1,10 @@
 # P2-01 — SUBJECT-UNIVERSE RECONCILIATION
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+> · المنطق وعلم الكلام — تجاوزه السجل
+
 ## ACD-007 §3.2 register (18) × the Council's 26-subject universe
 
 Neither architecture receives priority for being cleaner. The register is

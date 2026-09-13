@@ -1,4 +1,11 @@
 # DURATION AND TIMETABLE ARCHITECTURE
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+> · ١٩س٢٠د — تجاوزه السجل
+> · المنطق وعلم الكلام مادة واحدة — تجاوزه السجل
+
 ## SHRS G1–G12 · 28 subjects · engineered onto the recovered week
 
 Built on `MASTER-ALLOCATION-MATRIX-v2.md`. Every grade balances **exactly** to

@@ -1,4 +1,8 @@
 # MASTER ALLOCATION MATRIX — v4
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Five specialist boards applied · three programmes · 28 subjects
 
 Reviewed independently by boards in Qur'anic sciences, Arabic language and

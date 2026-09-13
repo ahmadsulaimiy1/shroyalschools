@@ -1,4 +1,8 @@
 # الخطة الشاملة · COMPREHENSIVE PLAN
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 # كل صف · كل برنامج · كل مادة
 
 **Load rises 7 → 19 sciences across the twelve classes. The graduating class

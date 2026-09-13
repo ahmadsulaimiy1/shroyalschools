@@ -1,4 +1,8 @@
 # COUNCIL DECISION SHEET 01
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Four constitutional rulings · P2-01
 
 Analysis: `P2-01-RULINGS.md`. Vote **h first** — it conditions **a**.

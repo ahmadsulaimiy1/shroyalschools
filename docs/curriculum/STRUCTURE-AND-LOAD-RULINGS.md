@@ -1,4 +1,11 @@
 # STRUCTURE AND LOAD BOARD — RULINGS ADOPTED
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+> · ١٩س٢٠د — تجاوزه السجل
+> · G12 = ١٣ حصة — تجاوزه السجل
+
 ## Five questions settled · all figures binding · every grade balances with zero remainder
 
 ---

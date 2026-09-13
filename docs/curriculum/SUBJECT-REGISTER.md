@@ -1,4 +1,9 @@
 # SUBJECT REGISTER — DEFINITIVE
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · المنطق وعلم الكلام — تجاوزه السجل
+
 ## How many subjects · under which programme · taught in which classes
 
 | | البرنامج | Subjects |

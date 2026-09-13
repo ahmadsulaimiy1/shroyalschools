@@ -1,4 +1,9 @@
 # PHASE 2 — WHOLE-SYSTEM REDLINE
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · G12 = ١٣ حصة — تجاوزه السجل
+
 ## The 26 × 12 matrix reviewed as one system
 
 Reviewed against **ACD-007 §3.2, سجل المواد** (pp.16–17), which registers

@@ -1,4 +1,9 @@
 # COUNCIL DECISION SHEET 02
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+> · ٧٥٤ ساعة — تجاوزه السجل
+
 ## Four rulings + one tabled · supersedes Sheet 01
 
 **State: frozen.** Nothing adopted. Phase 3 stopped. No periods, minutes,

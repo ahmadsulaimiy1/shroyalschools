@@ -1,4 +1,8 @@
 # TERM-COURSE ARCHITECTURE — FULL ALLOCATION REPORT
+
+> ## ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+> **المرجع الوحيد هو `00-LOCKED-DECISIONS.md`.** هذه الوثيقة تسجّل مرحلة من العمل، وقد تجاوزها السجل.
+
 ## Cornerstones run throughout · lesser sciences run as term courses · nothing is compressed
 
 ---
