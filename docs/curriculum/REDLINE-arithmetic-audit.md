@@ -3,12 +3,14 @@
 
 **Status:** Findings only. No solutions adopted. No architectural change authorised by this document.
 
-> **SUPERSEDED IN PART — see `MASTER-TIMETABLE-LEDGER.md` §7.**
-> The ceilings this audit measured demand against (7 and 19 lessons/week) were
-> never derived from the clock. Rebuilt from the constitutional operating week,
-> **the G6, G8 and G12 overloads reported below do not exist.** The findings
-> about contradictions *between* subjects survive unchanged. This document is
-> retained as the record of how the error was found, not as a source of figures.
+> **REINSTATED — see `MASTER-TIMETABLE-LEDGER.md` §6 and §8.**
+> A banner added at commit `dec6b6a` declared the G6/G8/G12 overloads below
+> void, on the ground that the 19-lesson ceiling was underived. That was wrong.
+> ACD-007 §4.4 establishes 19 حصة as the exact count of the recovered daily
+> grids, and the weekly ledger balances to the minute. **Every finding below
+> stands**, and the overloads are marginally worse than stated here, because a
+> 100-minute weekly مراجعة line was missing from the account. The contested
+> pool is 760 min/week at G3–G11, not 930.
 
 ---
 
