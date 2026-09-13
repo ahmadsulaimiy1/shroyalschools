@@ -7,6 +7,25 @@ development, and assessment and accreditation. **34 cells changed.** Every
 subject still falls under one of the three programmes.
 
 
+## The three programmes
+
+`[CURRENT COUNCIL DIRECTION]` — the constitutional names. Every subject at every
+grade falls under one of these three, and under no other heading.
+
+| | Programme | Subjects |
+|---|---|---|
+| **الأول** | **القرآن وعلومه** | 4 |
+| **الثاني** | **اللغة وعلومها** | 12 |
+| **الثالث** | **الدراسات الإسلامية** | 12 |
+| | | **28** |
+
+The second programme is **اللغة وعلومها**, not «اللغة العربية وعلومها». The
+distinction is not cosmetic: the programme carries **الترجمة**, whose primary
+direction is العربية → اليوربا, and a programme named for Arabic alone could not
+hold it.
+
+---
+
 ## القرآن وعلومه — 4 subjects
 
 | Subject | G1 | G2 | G3 | G4 | G5 | G6 | G7 | G8 | G9 | G10 | G11 | G12 |
@@ -16,7 +35,7 @@ subject still falls under one of the three programmes.
 | التفسير | E | E | E | E | E | ● | I | ● | ● | ● | ● | ● |
 | أصول التفسير | — | — | — | — | — | — | — | E | U | E | ● | I |
 
-## اللغة العربية وعلومها — 12 subjects
+## اللغة وعلومها — 12 subjects
 
 | Subject | G1 | G2 | G3 | G4 | G5 | G6 | G7 | G8 | G9 | G10 | G11 | G12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -59,7 +78,7 @@ subject still falls under one of the three programmes.
 | | G1 | G2 | G3 | G4 | G5 | G6 | G7 | G8 | G9 | G10 | G11 | G12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | القرآن وعلومه | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 4 | 4 | 4 | 4 | 4 |
-| اللغة العربية وعلومها | 4 | 4 | 4 | 5 | 5 | 5 | 6 | 8 | 10 | 9 | 9 | 9 |
+| اللغة وعلومها | 4 | 4 | 4 | 5 | 5 | 5 | 6 | 8 | 10 | 9 | 9 | 9 |
 | الدراسات الإسلامية | 1 | 1 | 1 | 1 | 1 | 1 | 7 | 10 | 10 | 11 | 11 | 12 |
 | **Child-facing subjects** | **8** | **8** | **8** | **9** | **9** | **9** | **16** | **22** | **24** | **24** | **24** | **25** |
 | *strands inside التربية الإسلامية* | 4 | 4 | 4 | 4 | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -83,7 +102,7 @@ removal of subjects that were **named but not taught**.
   footprint of an edit, not a decision. A وحدة cannot carry the G11 certificate
   whose recovered wording is «خمسة عشر جزءًا راسخة **بتجويد مُجاز بلجنة**».
 
-### اللغة العربية وعلومها
+### اللغة وعلومها
 - **القراءة والتهجي ends at G3**, its recovered range. بوابة الطلاقة's criterion
   «قارئ مستقل ٤٠–٥٠ كلمة/دقيقة مشكولًا» *is* its completion condition; after it the
   subject has no content of its own and annexes its neighbour's.
