@@ -3,6 +3,13 @@
 
 **Status:** Findings only. No solutions adopted. No architectural change authorised by this document.
 
+> **SUPERSEDED IN PART — see `MASTER-TIMETABLE-LEDGER.md` §7.**
+> The ceilings this audit measured demand against (7 and 19 lessons/week) were
+> never derived from the clock. Rebuilt from the constitutional operating week,
+> **the G6, G8 and G12 overloads reported below do not exist.** The findings
+> about contradictions *between* subjects survive unchanged. This document is
+> retained as the record of how the error was found, not as a source of figures.
+
 ---
 
 ## 1. Method
