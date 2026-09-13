@@ -17,9 +17,9 @@ Part 7), ACD-010, `MASTER-ALLOCATION-MATRIX-v4.md`, `P2-01-RULINGS.md`,
 **supplementary** institution. Pupils attend a conventional school in the morning
 and this institution in the afternoon and at weekends. It does not teach
 mathematics, science or English and **must never assess them**, with the single
-exception of WAEC, which is a *certificate condition* discharged through the
-morning stream and the G12 revision programme — never a subject of this
-institution's own marking. Every rule below is written for an institution whose
+exception of WAEC, which appears on the transcript only as **إثبات الجلوس** — proof
+that the candidate sat it — discharged through the morning stream and the G12 revision
+programme, and **never a subject of this institution's own marking** (§6.2a). Every rule below is written for an institution whose
 pupils are already carrying a full external examination load elsewhere. **Assessment
 volume is therefore a rationed good, and the rationing is the policy's first
 substantive act.**
@@ -250,7 +250,7 @@ Each science carries a named half — **السيرة ٥٠ · التاريخ ٥٠
 | **G9** | **7** | **الشهادة الإعدادية, external examiner** |
 | G10 | up to 9 | the heaviest internal year |
 | **G11** | up to 8 | **plus الثانوية القرآنية, Section C, لجنة الامتحانات القرآنية** |
-| **G12** | **up to 4 internal** | the certification year: WAEC, البحث المحكّم, الخطبة, المناظرة, مناقشة التخرج, خدمة التتويج. **G12 is not a year of new papers.** |
+| **G12** | **up to 4 internal** | the certification year: WAEC revision (a service, not a gate — §6.2a), البحث المحكّم, الخطبة, المناظرة, مناقشة التخرج, خدمة التتويج. **G12 is not a year of new papers.** |
 
 ---
 
@@ -279,8 +279,8 @@ published rubric by a trained assessor, and the 30/70 split applies unchanged.
 | **الشهادة الابتدائية** (G5) | mean of the G5 graded subjects, external examiner countersigning | see Part 6 |
 | **شهادة الجسر اللغوي** (G6) | **not an average** — بوابة الجسر بلجنة ثلاثية, a gate | pass/fail on the gate criteria |
 | **الشهادة الإعدادية** (G9) | **المتوسط العام** of the seven papers (equal weight, 1/7 each) **+ بوابة القرآن ٨/١٠** | Part 6 + Part 9 |
-| **الثانوية القرآنية** (G11) | **no average at all** — a single Section C condition | Part 9 |
-| **شهادة التخرج** (G12) | **no average at all** — ten competencies + مناقشة + WAEC, all Section C | Part 7 |
+| **الثانوية القرآنية** (G11) | **no average at all** — a single Section C condition: **اثنا عشر جزءًا متقنة بتجويد مُجاز بلجنة**, with **خمسة عشر جزءًا = مرتبة الامتياز** recorded on the same certificate | Part 9 |
+| **شهادة التخرج** (G12) | **no average at all** — ten competencies + مناقشة التخرج, all Section C; **WAEC is a recorded fact, not a gate** | Part 7 |
 
 **The seven G9 papers carry equal weight.** [PROFESSIONAL INFERENCE] The
 alternative — weighting العربية or الفقه higher — was considered and rejected: any
@@ -348,7 +348,29 @@ the following:
 
 **Never compensable, under any circumstance, by any authority:**
 بوابة القرآن ٨/١٠ · الثانوية القرآنية · any of the ten competencies · مناقشة التخرج
-· WAEC completion · خدمة التتويج.
+· خدمة التتويج.
+
+### 6.2a The WAEC entry — a recorded fact, not a gate
+**`[EXECUTIVE COUNCIL RULING — supersedes «إتمام WAEC»]`**
+
+The G12 requirement is **«إثبات الجلوس لامتحان WAEC»** — **proof of sitting, not proof
+of passing.** Its consequences within this policy:
+
+- It is **not a gate.** A candidate who sat WAEC and did not pass it **still receives
+  شهادة التخرج** if the ten competencies and مناقشة التخرج are satisfied. WAEC results
+  are the morning stream's business, and this institution does not teach the subjects
+  it would be certifying.
+- It is **recorded on the transcript** as a **fact**, in Section C, in the form
+  «**أثبت الجلوس لامتحان WAEC — [dates] — [centre number]**». **No grade, no result,
+  no pass/fail is copied onto this institution's transcript**, because this
+  institution did not award it and cannot stand behind it.
+- Evidence accepted: the WAEC entry slip or examination docket, plus the centre's
+  attendance confirmation. **The institution verifies attendance; it never requests,
+  stores or reports a WAEC grade.**
+- Consequence for the timetable question at Part 14 §3: WAEC's zero timetabled
+  minutes are now **a service the institution offers** (intensive revision, §3.1 of
+  the constitution) rather than **a condition it guarantees**. **The certificate no
+  longer depends on an outcome the institution cannot produce.**
 
 ## 6.3 THE CONDITION RULE — القاعدة الحاكمة
 
@@ -432,7 +454,11 @@ and no others**, printed in this order, on one document.
 │  الشرط                         الحالة      التاريخ    اللجنة          │
 │  بوابة القرآن (٨/١٠)          مستوفٍ      ../../..   لجنة الامتحانات  │
 │         الحاصل المسجَّل: ٩/١٠ — قياس عتبة لا درجة مُدرَّجة              │
-│  إتمام WAEC                   —           —          —               │
+│  الثانوية القرآنية (١٢ جزءًا  —           —          لجنة الامتحانات  │
+│    متقنة بتجويد مُجاز)                                 القرآنية       │
+│         مرتبة الامتياز (١٥ جزءًا): ☐ نعم  ☐ لا                        │
+│  إثبات الجلوس لامتحان WAEC    —           —          —               │
+│         واقعة مسجَّلة لا بوابة — لا تُنقل نتيجة WAEC إلى هذا الكشف      │
 │  خدمة التتويج (الكفاية ١٠)    —           —          —               │
 │  مناقشة التخرج                —           —          —               │
 ├──────────────────────────────────────────────────────────────────────┤
@@ -601,8 +627,10 @@ before consenting. **A stage‑3 decision is final within the institution.**
 
 - The Qur'an gate has its own appeal route, including **review of the audio record
   by a third examiner who did not sit on the panel** — `QURAN-GATE-PROTOCOL.md` §9.
-- A **condition** (WAEC, competency 10, مناقشة التخرج) is appealed on **procedure
-  and evidence only**. There is no mark to re-mark. The question is always: *was the
+- A **condition** (competency 10, مناقشة التخرج) is appealed on **procedure
+  and evidence only**. A dispute about the **WAEC entry** is a dispute of **fact**
+  («did he sit?»), resolved against the docket and the centre's confirmation — never
+  about a WAEC grade, which this institution neither holds nor reports. There is no mark to re-mark. The question is always: *was the
   condition met, and was it judged by the process this policy prescribes?*
 
 ---
@@ -672,24 +700,41 @@ and not destroyed on schedule until the appeal closes. Destruction at end of ter
 
 Recorded, not concealed:
 
-1. **The 15-juz target.** `MASTER-ALLOCATION-MATRIX-v4.md` §2: funded acquisition
-   yields **12.7 juz**, against a certificate wording of fifteen. This policy makes
-   the G11 instrument a **quality** gate on a **declared** corpus so that it remains
-   valid under either resolution — but **the number on the الثانوية القرآنية
-   certificate is a Director General's decision, not an assessment decision.**
+1. ~~**The 15-juz target.**~~ **SETTLED by Executive Council ruling.** The
+   الثانوية القرآنية gate is **اثنا عشر جزءًا متقنة بتجويد مُجاز بلجنة**, with
+   **خمسة عشر جزءًا recorded on the same certificate as مرتبة الامتياز**. This
+   resolves the arithmetic recorded at `MASTER-ALLOCATION-MATRIX-v4.md` §2 (funded
+   acquisition = 12.7 juz) **without lowering what the certificate asserts**: twelve
+   are certified متقنة rather than fifteen asserted and unfunded. Operationalised in
+   `QURAN-GATE-PROTOCOL.md` Part 5.
 2. **G12 load.** The Director General's ruling stands. This policy's Part 3 ceiling of
    four internal G12 papers is built for the certification year the corpus describes;
    if the ruling changes, Part 3 is amended.
-3. **WAEC's zero timetabled minutes** while being a certificate condition. Part 6
-   treats it as a Section C condition; **it remains unfunded in the timetable.**
+3. ~~**WAEC's zero timetabled minutes** while being a certificate condition.~~
+   **SETTLED by Executive Council ruling** — §6.2a. WAEC is now **إثبات الجلوس**, a
+   recorded fact rather than a gate, so **the certificate no longer depends on an
+   outcome produced outside this institution's teaching.** The timetable gap remains
+   a timetable question, but it is no longer a certification risk.
 4. **The booklist/madhhab conflict.** الفقه booklists are monolithically Mālikī while
    the constitution declares أهل السنة with no exclusive school. **Assessment cannot
-   fix this and this policy does not pretend to** — but it does refuse to let the
-   examination entrench it: **every فقه paper from G9 upward must contain at least one
-   مسألة خلافية requiring the candidate to name more than one position and give سبب
-   الخلاف** (`SPEC-GRID-G9-fiqh-usul.md`, AO4). A comparative paper on a monolithic
-   booklist will expose the conflict every single year, which is the correct
-   behaviour for an examination.
+   fix this and this policy does not pretend to** — but it refuses to let the
+   examination entrench it.
+
+   **`[EXECUTIVE COUNCIL RULING — قاعدة الخلاف الإلزامية]`** Every terminal فقه paper
+   **from G10 upward, adopted early at G9**, carries a **compulsory** question in the
+   form **«اذكر قولين، ودليل كل قول، وسبب الخلاف»**, worth **not less than 15% of the
+   paper**, and:
+
+   > **An answer naming only one school's position cannot exceed HALF the marks of
+   > that question, even where that position is correct.**
+
+   The half-mark cap is the operative clause. Without it a monolithic booklist
+   produces monolithic candidates who are nonetheless fully rewarded, and the
+   comparative constitution is a dead letter in the only place that actually
+   disciplines teaching — the examination. **The cap penalises the syllabus, not the
+   child**, and it is published to teachers a full year before it first bites.
+   Implemented at `SPEC-GRID-G9-fiqh-usul.md` §3a and §5, and worked through in
+   `SPECIMEN-G9-fiqh-usul.md` Part II, group (د).
 5. **The child's week** — 54 hours in institutions at age six. Assessment load has
    been rationed as hard as this policy can ration it; the remaining hours are a
    timetable question.

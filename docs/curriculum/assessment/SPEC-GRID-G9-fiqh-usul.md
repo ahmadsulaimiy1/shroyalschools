@@ -168,10 +168,13 @@ one AO**, and the mark scheme labels each mark with its AO.
 |---|---|---|---|---|---|---|---|
 | **د١** | **العبادات** (تراكمي: طهارة، صلاة، زكاة، صيام، حج) | **5** | **4** | **3** | 0 | **12** | 12% |
 | **د٢** | **الأطعمة والذبائح والأيمان والنذور** | **3** | **2** | **3** | 0 | **8** | 8% |
-| **د٣** | **المعاملات**: البيع الصحيح والفاسد، الربا، الغرر | **3** | **3** | **4** | **4** | **14** | 14% |
-| **د٤** | **فقه الأسرة**: النكاح، الصداق، الولي والشهود، الطلاق، العدة، النفقة | **4** | **5** | **5** | **8** | **22** | 22% |
+| **د٣** | **المعاملات**: البيع الصحيح والفاسد، الربا، الغرر | **3** | **3** | **4** | **2** | **12** | 12% |
+| **د٤** | **فقه الأسرة**: النكاح، الصداق، الولي والشهود، الطلاق، العدة، النفقة | **4** | **5** | **5** | **10** | **24** | 24% |
 | **د٥** | **وحدة الفرائض**: أصحاب الفروض، التعصيب، قسمة بسيطة | **2** | **2** | **8** | **2** | **14** | 14% |
 | | **مجموع قسم الفقه** | **17** | **16** | **23** | **14** | **70** | **70%** |
+
+> **د٣ and د٤ were re-weighted (14→12 and 22→24) to fund the compulsory خلاف question
+> at §3a.** All AO totals and the paper total are unchanged.
 
 ### القسم الثاني — أصول الفقه — ٣٠ درجة
 
@@ -195,6 +198,65 @@ one AO**, and the mark scheme labels each mark with its AO.
 
 **Domain tolerance: ±2 marks per domain, ±1 per cell, provided AO totals stay
 within their ±2 and the paper totals exactly 100.**
+
+---
+
+## 3a. THE COMPULSORY خلاف QUESTION AND THE HALF-MARK CAP
+### `[EXECUTIVE COUNCIL RULING — binding, overrides any earlier weighting]`
+
+Every terminal فقه paper **from G10 upward, adopted early at G9**, must carry a
+**compulsory** question in the form:
+
+> **«اذكر قولين، ودليل كل قول، وسبب الخلاف.»**
+
+**Three binding requirements:**
+
+1. **Weight.** The question carries **not less than 15% of the paper**. On
+   `G9/FQH-USL/01` it is **group (د), 16 marks = 16%**.
+2. **Compulsory in substance.** A *choice between two خلاف questions* satisfies the
+   rule; a choice between a خلاف question and anything else does not. Both options in
+   group (د) are خلاف questions, in the same domain, of the same tariff and the same
+   AO profile (§5 rule 2).
+3. **THE HALF-MARK CAP — سقف النصف.**
+
+   > **الإجابة التي تقتصر على قول مذهبٍ واحد لا تتجاوز نصف درجة السؤال، ولو كان ذلك
+   > القول صحيحًا في نفسه.**
+   >
+   > **An answer naming only one school's position cannot exceed half the marks of
+   > that question, even where that position is correct.**
+
+   **On this paper the cap is 8 of 16.** It is applied by the marker **after** the
+   points/levels marks have been totalled, as a ceiling — never by deducting marks
+   from correct content.
+
+**How the cap is triggered, precisely — so that two markers apply it identically:**
+
+| Situation | Capped? |
+|---|---|
+| Two positions stated, both attributed, one preferred with reasons | **No** |
+| Two positions stated, only one attributed | No — cap not triggered; the attribution marks are simply not earned |
+| **One position only**, however well argued, however correct | **YES — ceiling 8/16** |
+| One position stated, the other mentioned only to be dismissed without content («وخالف بعضهم وهو قول ضعيف») | **YES** — a named dismissal is not a stated position |
+| One position stated **and** the other stated **inaccurately** | No — the cap targets absence, not error; mark the error where it falls |
+| Candidate states two positions on a matter where no second position exists | No — but the item should not have been set; flag to the scrutineer |
+
+**Why the cap exists, stated so that no future board deletes it as harsh.** The
+institution's constitution declares **أهل السنة with no exclusive school**, and its
+own booklists are **monolithically Mālikī** — a conflict recorded and unresolved at
+`MASTER-ALLOCATION-MATRIX-v4.md` §"Unresolved" ¶1. Without the cap, a candidate
+taught only one school's فقه, who reproduces it perfectly, scores full marks — and the
+examination, which is the only instrument that actually disciplines teaching, ratifies
+the very monolingualism the constitution forbids. **The cap makes the conflict cost
+something, in the one place the institution cannot ignore.** It penalises the
+syllabus, not the child, and it is published to teachers **a full year before it
+first bites**.
+
+**Access note.** The cap is a construct rule, not a fluency rule. It applies
+identically to candidates holding access arrangements; **no access arrangement lifts
+it**, because lifting it would lower the standard rather than remove a barrier
+(`ASSESSMENT-POLICY.md` Part 12).
+
+---
 
 **Why د٤ is the largest domain.** فقه الأسرة is the year's own new content — the
 completion of الرسالة's core — and every other domain is either cumulative (د١ د٢ د٣)
@@ -221,10 +283,10 @@ content, never the architecture.
 
 | Group | Type | Choice | Count | Tariff | Marks | AO profile (fixed) | Domains |
 |---|---|---|---|---|---|---|---|
-| **(أ)** | أسئلة قصيرة — short answer | **إلزامي** all | **10** | **٢** each | **20** | هـ١ ١١ · هـ٢ ٧ · هـ٣ ٢ | **د١ ×3 (6), د٢ ×1 (2), د٣ ×4 (8), د٤ ×1 (2), د٥ ×1 (2)** |
-| **(ب)** | أسئلة متوسطة — structured, sub-parted | **إلزامي** all | **4** | **٦** each | **24** | هـ١ ٤ · هـ٢ ٧ · هـ٣ ٩ · هـ٤ ٤ | **one each from د١ د٢ د٣ د٤ (6 each)** |
+| **(أ)** | أسئلة قصيرة — short answer | **إلزامي** all | **10** | **٢** each | **20** | هـ١ ١٣ · هـ٢ ٥ · هـ٣ ٢ | **د١ ×3 (6), د٢ ×1 (2), د٣ ×4 (8), د٤ ×1 (2), د٥ ×1 (2)** |
+| **(ب)** | أسئلة متوسطة — structured, sub-parted | **إلزامي** all | **4** | **٦ · ٦ · ٤ · ٦** | **22** | هـ١ ٤ · هـ٢ ٦ · هـ٣ ١٠ · هـ٤ ٢ | **د١ (6), د٢ (6), د٣ (4), د٤ (6)** |
 | **(ج)** | **مسألة الفرائض التطبيقية** | **إلزامي** | **1** | **١٢** | **12** | هـ٢ ٢ · هـ٣ ٨ · هـ٤ ٢ | **د٥ (12)** |
-| **(د)** | **سؤال الخلاف** | **اختر واحدًا من اثنين — كلاهما من د٤** | **1 of 2** | **١٤** | **14** | **هـ٢ ٣ · هـ٣ ٣ · هـ٤ ٨** | **د٤ (14)** |
+| **(د)** | **سؤال الخلاف** — §3a, **١٦٪ من الورقة، بسقف النصف** | **اختر واحدًا من اثنين — كلاهما من د٤** | **1 of 2** | **١٦** | **16** | **هـ٢ ٣ · هـ٣ ٣ · هـ٤ ١٠** | **د٤ (16)** |
 | | | | **16 responses** | | **70** | **هـ١ ١٧ · هـ٢ ١٦ · هـ٣ ٢٣ · هـ٤ ١٤** | |
 
 **Domain reconciliation for القسم الأول** — the setter checks this sum, because it is
@@ -234,10 +296,13 @@ the commonest place a paper drifts off grid:
 |---|---|---|---|---|---|---|
 | د١ | 6 | 6 | — | — | **12** | 12 ✓ |
 | د٢ | 2 | 6 | — | — | **8** | 8 ✓ |
-| د٣ | 8 | 6 | — | — | **14** | 14 ✓ |
-| د٤ | 2 | 6 | — | 14 | **22** | 22 ✓ |
+| د٣ | 8 | 4 | — | — | **12** | 12 ✓ |
+| د٤ | 2 | 6 | — | **16** | **24** | 24 ✓ |
 | د٥ | 2 | — | 12 | — | **14** | 14 ✓ |
-| | 20 | 24 | 12 | 14 | **70** | **70 ✓** |
+| | 20 | 22 | 12 | **16** | **70** | **70 ✓** |
+
+**خلاف weight check (§3a):** group (د) = 16/100 = **16% ≥ 15% ✓**. Half-mark cap =
+**8/16**.
 
 ### القسم الثاني — أصول الفقه — ٣٠ درجة — زمن استرشادي ٥٠ دقيقة
 
@@ -275,11 +340,15 @@ Group (ز) is therefore one compulsory question in two parts, one part per domai
    identical content domain**, preserves fairness for the candidate who prepared one
    dispute deeply without letting anyone skip anything the grid claims to assess.
 2. **Paired options must be of equal demand AND of the same domain.** Both options in
-   group (د) carry 14 marks, both sit in **د٤ فقه الأسرة**, both are هـ٤-dominant at
-   exactly 8 marks, and both demand positions + holders + سبب الخلاف + an applied
-   case. A setter offering a 14-mark analysis against a 14-mark narration, or a د٤
-   option against a د٣ option, has set a trap and broken the domain reconciliation;
-   the paper is returned.
+   group (د) carry **16 marks**, both sit in **د٤ فقه الأسرة**, both are هـ٤-dominant
+   at exactly **10 marks**, and both demand **positions + holders + دليل each position
+   + سبب الخلاف + an applied case on both positions**. A setter offering a 16-mark
+   analysis against a 16-mark narration, or a د٤ option against a د٣ option, has set a
+   trap and broken the domain reconciliation; the paper is returned.
+2a. **Group (د) is the §3a compulsory خلاف question.** Its internal shape is fixed:
+   **(أ) الأقوال ونسبتها ودليل كل قول — ٨ · (ب) سبب الخلاف — ٤ · (ج) التطبيق على
+   القولين — ٤.** The **half-mark cap (8/16)** is printed in the mark scheme of every
+   live paper, in these words, and is applied as a ceiling after totalling.
 3. **Group (ج) is never optional.** الفرائض is the year's unit and every candidate
    attempts the division.
 4. **Mark-per-minute discipline.** The paper runs at **0.67 marks/minute**. A
@@ -326,7 +395,7 @@ expectation. A paper using a command word outside this table is returned.
 | **اقسم التركة** | هـ٣ | a worked division with stated steps | 12 |
 | **طبِّق على الحالة الآتية** | هـ٣ | an outcome reached on an unseen case | 6–12 |
 | **استدلّ لـ… وسمِّ نوع الدليل** | هـ٤ | the نص + naming it كتاب/سنة/إجماع/قياس | 6–8 |
-| **اذكر الخلاف في… ونسبة كل قول لقائله، وبيِّن سبب الخلاف** | **هـ٤** | **positions + holders + سبب الخلاف** — **the mandatory formula** | **14** |
+| **اذكر قولين، ودليل كل قول، وسبب الخلاف** | **هـ٤** | **positions + holders + دليل each + سبب الخلاف** — **the §3a mandatory formula, half-mark cap applies** | **16** |
 | **وازن بين القولين** | هـ٤ | two positions weighed with reasons | 10–14 |
 
 ### 6.2 Stems
@@ -382,9 +451,10 @@ So that the 2027 paper is the same examination as the 2026 paper:
    | **C** | عدد الشهود وشرط العدالة في عقد النكاح | طلاق الغضبان |
    | **D** | حضانة الصغير بعد الفرقة ومدتها | الإشهاد على الرجعة |
    The cycle is published to teachers **as a list**, never as "this year's". The
-   **د٣ هـ٤ marks (4)** are carried by a compulsory sub-part of group (ب) ب٣ — a
+   **د٣ هـ٤ marks (2)** are carried by a compulsory sub-part of group (ب) ب٣ — a
    minor dispute in المعاملات — so that المعاملات also meets disagreement every year
-   without creating a second choice point.
+   without creating a second choice point. **The §3a half-mark cap does not apply to
+   that 2-mark sub-part**; §3a governs the compulsory 16-mark question only.
 6. **The paper is archived permanently** with its grid, mark scheme, mark
    distribution, anchor data and external examiner's report
    (`ASSESSMENT-POLICY.md` Part 13).
@@ -398,10 +468,15 @@ external examiner on the cohort evidence (`ASSESSMENT-POLICY.md` §8.2).
 
 | Band | Mark | What a script at this boundary looks like on THIS paper |
 |---|---|---|
-| **امتياز** | **80** | Group (د) answered with positions **and** holders **and** a correct سبب الخلاف; the فرائض division correct including the final shares; أصول answers use the technical vocabulary accurately and within syllabus |
-| **جدارة** | **70** | Group (د) has positions and holders but the سبب الخلاف is thin or asserted; فرائض correct in method with a slip in arithmetic; أصول secure on الأدلة الأربعة |
-| **إجادة** | **60** | Recall secure; applied cases mostly right on familiar patterns; group (د) is narrative — one position given, no سبب; أصول names the الأدلة but the worked example is weak |
-| **مقبول** | **50** | Recall present and usable; applied cases right where the pattern is close to a taught one; group (د) is a single madhhab's ruling restated with no awareness that it is disputed; أصول at or just above the 12/30 floor |
+| **امتياز** | **80** | Group (د) answered with positions **and** holders **and** a دليل for each **and** a correct سبب الخلاف; the فرائض division correct including the final shares; أصول answers use the technical vocabulary accurately and within syllabus |
+| **جدارة** | **70** | Group (د) has positions, holders and at least one دليل, but the سبب الخلاف is thin or asserted; فرائض correct in method with a slip in arithmetic; أصول secure on الأدلة الأربعة |
+| **إجادة** | **60** | Recall secure; applied cases mostly right on familiar patterns; group (د) states two positions but narrates rather than locates the disagreement; أصول names the الأدلة but the worked example is weak |
+| **مقبول** | **50** | Recall present and usable; applied cases right where the pattern is close to a taught one; group (د) is **a single madhhab's ruling restated — the §3a cap bites and the question cannot exceed 8/16**; أصول at or just above the 12/30 floor |
+
+> **Boundary consequence of the §3a cap.** A candidate capped at 8/16 on group (د) has
+> lost **at least 8 marks of the 100**. On this paper that is, by itself, the
+> difference between جدارة and إجادة for a mid-cohort script. **The cap is therefore
+> not symbolic; it moves bands, and the standardisation meeting must say so aloud.**
 | **لم يبلغ المستوى** | **0–49** | Recall gapped; فرائض not attempted or attempted without method; أصول below the floor |
 
 **The section floor bites independently of the boundary.** A candidate on 62 with
@@ -417,19 +492,21 @@ G9/FQH-USL/01 · ١٠٠ درجة · ١٥٠ دقيقة · العربية · بل�
 القسم الأول — الفقه — ٧٠            القسم الثاني — أصول الفقه — ٣٠
  د١ العبادات              ١٢          د٦ الأحكام التكليفية       ٦
  د٢ أطعمة وذبائح وأيمان    ٨          د٧ الأدلة الأربعة         ١٢
- د٣ معاملات               ١٤          د٨ الأمر والنهي والصارف    ٧
- د٤ فقه الأسرة            ٢٢          د٩ القياس والعلة           ٥
+ د٣ معاملات               ١٢          د٨ الأمر والنهي والصارف    ٧
+ د٤ فقه الأسرة            ٢٤          د٩ القياس والعلة           ٥
  د٥ وحدة الفرائض          ١٤          ─────────────────────────────
  ─────────────────────────            أرضية القسم: ١٢/٣٠ إلزامية
 (أ) ١٠ × ٢ = ٢٠ إلزامي               (هـ) ٦ × ٢ = ١٢ إلزامي
-(ب)  ٤ × ٦ = ٢٤ إلزامي               (و)  ١ × ٨ =  ٨ إلزامي
+(ب) ٦+٦+٤+٦ = ٢٢ إلزامي              (و)  ١ × ٨ =  ٨ إلزامي
 (ج)  ١ × ١٢= ١٢ فرائض إلزامي         (ز)  ٥+٥ = ١٠ إلزامي (أ) صارف (ب) قياس
-(د)  ١ × ١٤= ١٤ خلاف — اختر ١ من ٢، كلاهما من د٤
+(د)  ١ × ١٦= ١٦ خلاف — اختر ١ من ٢، كلاهما من د٤
         ← هذا هو موضع الاختيار الوحيد في الورقة كلها
+        ← ١٦٪ ≥ ١٥٪ المقررة · سقف النصف ٨/١٦
 
 هـ١ ٢٥ · هـ٢ ٢٥ · هـ٣ ٢٨ · هـ٤ ٢٢    (تسامح ±٢ لكل هدف)
 
-إلزامي كل عام: مسألة خلافية بالأقوال ونسبتها لقائليها وسبب الخلاف.
+إلزامي كل عام (§3a): «اذكر قولين، ودليل كل قول، وسبب الخلاف» — لا يقل عن ١٥٪،
+ومن اقتصر على قول مذهبٍ واحد فلا يتجاوز نصف درجة السؤال ولو كان قوله صحيحًا.
 ممنوع: مصطلحات الورقات · إنشاء القياس · الحجب والعول والرد · التفصيل الجنسي
        · الإفتاء في معيَّن · التكفير · حساب يتجاوز المقام ٢٤
 ```
