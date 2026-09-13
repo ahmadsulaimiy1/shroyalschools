@@ -3,6 +3,11 @@
 
 **Supersedes:** v1 of this document (commit `dec6b6a`) in full.
 
+**Amended by COUNCIL-SESSION-01:** §5.1 below is **withdrawn** — the الروضة
+dismissal rule governs an abolished pre-stage, not G1–G2. See
+`COUNCIL-SESSION-01-G1-G2.md` §3. §5.2 is superseded by that session's §7.
+All figures in §§1–4 and §6–§8 stand.
+
 **Basis:** SHRS-ACD-2026-007, المخطط الرئيس, **Part 4 §§4.1–4.4 (pp.18–22)**
 and **Part 3 §3.1 (p.15)**. `[RECOVERED]`
 
@@ -111,14 +116,14 @@ that make ACD-007 §4.4 balance exactly.
 
 ## 3. The full week, in six layers
 
-| Layer | Mon–Wed ×3 | Sat–Sun ×2 | Week |
-|---|---|---|---|
-| **1 · Gross clock** | 240 → 720 | 360 → 720 | **1,440** |
-| **2 · Protected non-instructional** | 10 + 30 = 40 → 120 | 15 + 15 + 45 + 5 = 80 → 160 | **280** |
-| **3 · Usable instructional** | 200 → 600 | 280 → 560 | **1,160** |
-| — of which الساعة القرآنية | 60 → 180 | 60 → 120 | **300** |
-| — of which مواد (حصص × 40) | 3 حصص → 360 | 5 حصص → 400 | **760** |
-| — of which مراجعة | 10 + 10 = 20 → 60 | 20 → 40 | **100** |
+| Layer | Per Mon–Wed day | Per Sat–Sun day | **Week** | *(internal, min)* |
+|---|---|---|---|---|
+| **1 · Gross clock** | 4 h | 6 h | **24 h** | *1,440* |
+| **2 · Protected non-instructional** | 40 m | 1 h 20 m | **4 h 40 m** | *280* |
+| **3 · Usable instructional** | 3 h 20 m | 4 h 40 m | **19 h 20 m** | *1,160* |
+| — of which الساعة القرآنية | 1 h | 1 h | **5 h** | *300* |
+| — of which مواد (حصص × 40 m) | 3 حصص = 2 h | 5 حصص = 3 h 20 m | **12 h 40 m** | *760* |
+| — of which مراجعة | 20 m | 20 m | **1 h 40 m** | *100* |
 
 **Weekly حصص: (3 × 3) + (2 × 5) = 19.**
 
@@ -143,13 +148,16 @@ This reproduces ACD-007 §4.4 exactly:
 > السنة (**٣٩ أسبوعًا**) · حضورًا كاملًا **٩٣٦ ساعة** · تعليميًا صافيًا
 > **٧٥٤ ساعة** · ثلاثة فصول × ١٣ أسبوعًا: **تشخيص + ١٠ تدريس + تقويم + إغلاق**
 
-| | |
-|---|---|
-| Terms | 3 × 13 weeks = 39 |
-| Structure of a term | 1 diagnosis + **10 teaching** + 1 assessment + 1 closing |
-| Attendance days | 39 × 5 = **195** |
-| Gross | 39 × 1,440 = 56,160 min = **936 h** ✓ |
-| Net instructional | 39 × 1,160 = 45,240 min = **754 h** ✓ |
+| | | *(internal, min)* |
+|---|---|---|
+| Terms | 3 × 13 weeks = 39 | |
+| Structure of a term | 1 diagnosis + **10 teaching** + 1 assessment + 1 closing | |
+| Attendance days | 39 × 5 = **195** | |
+| Gross | **936 hours** ✓ | *56,160* |
+| Net instructional | **754 hours** ✓ | *45,240* |
+| — الساعة القرآنية | **195 hours** ✓ | *11,700* |
+| — مواد | **494 hours** | *29,640* |
+| — مراجعة | **65 hours** | *3,900* |
 
 **There is no mid-term break and no withdrawn examination week.** Assessment
 and closing are *inside* the 13 and are attended. The v1 figure of 171
@@ -192,9 +200,9 @@ The corpus does **not** apply one week to all years.
 
 | Cohort | Net/week | حصص/week | Annual | Source |
 |---|---|---|---|---|
-| **الروضة** | ≈ 610 min ≈ **10 h** | **7** | 390 h | §4.4 قاعدة |
-| **الصفوف ١–١١** | 1,160 min = 19 h 20 m | **19** | 754 h | §4.4 |
-| **سنة التتويج** | 840 min = **14 h** | — | 546 h | §4.4 (546 ÷ 39) |
+| **الروضة** *(abolished — see Session 01 §3)* | **10 h 10 m** | 7 | 390 h | §4.4 قاعدة |
+| **الصفوف ١–١١** | **19 h 20 m** | **19** | **754 h** | §4.4 |
+| **سنة التتويج** | **14 h** | — | 546 h | §4.4 (546 ÷ 39) |
 
 ### 5.1 The infant week is recovered, not missing
 
@@ -261,8 +269,9 @@ scenario" was wrong because v1 was measuring the wrong clock — it counted all
 1,230 of its assumed usable minutes as available to subjects, when 300 belong
 to the Qur'an hour and **100 to مراجعة, a line v1 did not carry at all.**
 
-**The contested pool is 760 minutes a week — 19 حصص of 40 minutes — for all of
-Programme 2 and Programme 3 at G3–G11.** Not 930.
+**The contested pool is 12 hours 40 minutes a week — 19 حصص of 40 minutes —
+for all of Programme 2 and Programme 3 at G3–G11.** *(internal: 760 min.)*
+Not the 15 h 30 m that v1 asserted.
 
 ---
 
@@ -270,9 +279,9 @@ Programme 2 and Programme 3 at G3–G11.** Not 930.
 
 | Grade | Calculated demand | Operational allocation | Variance |
 |---|---|---|---|
-| G1–G2 | 7 حصص = 280 min | 7 حصص = 280 min | **0** — exact, per §5.1 |
-| G6 | ~21–22 حصص = 840–880 | 19 حصص = 760 | **−80 to −120 min (2–3 حصص)** |
-| G8 | ~23 حصص = 920 | 19 حصص = 760 | **−160 min (4 حصص)** |
+| G1–G2 | `[BLACK]` — CR-04 open | not adopted | see Session 01 §7 |
+| G6 | ~21–22 حصص = **14 h – 14 h 40 m** | 19 حصص = **12 h 40 m** | **−1 h 20 m to −2 h** (2–3 حصص) |
+| G8 | ~23 حصص = **15 h 20 m** | 19 حصص = **12 h 40 m** | **−2 h 40 m** (4 حصص) |
 | G12 | ~22 حصص = 880 | see below | **not yet computable** |
 | G3–G5, G7, G9–G11 | not yet summed | 19 حصص = 760 | **not yet computed** |
 
