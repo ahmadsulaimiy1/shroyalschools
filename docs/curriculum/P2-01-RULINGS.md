@@ -13,8 +13,14 @@ ACD-007 had already named and already answered.
 
 # 1 · P2-01-h — EARLY DIFFERENTIATION OF THE SHARʿĪ SCIENCES
 
-> **Does SHRS name and differentiate the sharʿī sciences as separate disciplines
-> before G6, or hold them integrated until the later years?**
+> **Which remedy should SHRS adopt for the already-diagnosed G7 transition
+> problem?**
+>
+> `[COUNCIL REFRAME]` The question is no longer whether named subjects begin
+> early or at G7 in the abstract. ACD-007 Part 1 diagnosed the transition defect
+> and prescribed a remedy. The three architectures below are **three remedies to
+> one recorded problem**, and are to be evaluated against the recovered evidence
+> rather than against general educational preference.
 
 ## 1.1 Evidence
 
@@ -71,11 +77,18 @@ model. `[BLACK]` — separate ruling, listed as **P2-01-k**.
 
 ## 1.3 Options
 
-| | **H1 — hold integrated to G6** | **H2 — ratify early differentiation** | **H3 — graduated naming** |
+| | **H1 — retain late naming, bridge at G7** | **H2 — dissolve the transition downward** | **H3 — graduated naming + explicit bridge** |
 |---|---|---|---|
-| Shape | one التربية الإسلامية to G6; sciences named at ٧ | the 26-subject universe as built | sciences exist as **named strands inside** التربية الإسلامية from G3–G6, becoming subjects at ٧ |
-| Basis | `[RECOVERED]` §3.2 + the Part 1 remedy | `[CURRENT COUNCIL DIRECTION]` | `[NEW ENGINEERING DECISION]` |
-| G7 jump | preserved, bridged in term 1 | dissolved | softened without being dissolved |
+| Shape | one التربية الإسلامية to G6; the eleven-subject transition **bridged within Term 1 of G7** exactly as Part 1 prescribes | named subjects move progressively downward through G1–G8 until no transition remains | التربية الإسلامية remains the **child-facing umbrella** G1–G6 while its **internal strands are developed and sequenced G3–G6**; formal differentiation at G7; **the Term-1 G7 bridge is also implemented** |
+| Basis | `[RECOVERED]` §3.2 + the Part 1 remedy, applied as written | `[CURRENT COUNCIL DIRECTION]` | `[NEW ENGINEERING DECISION]` built on both |
+| The G7 jump | preserved and bridged | dissolved | **reduced *and* bridged** |
+| Part 1's remedy | implemented | discarded | implemented |
+
+`[COUNCIL REFRAME]` H3 as tabled by the Council is stronger than the form
+first drafted: it **implements the Part 1 bridge as well as** reducing the jump.
+The earlier draft left the bridge implicit, which would have discarded a
+prescribed remedy while claiming to honour it. The correction is adopted into
+the option and noted here rather than absorbed silently.
 
 ## 1.4 Consequences
 
@@ -88,7 +101,7 @@ model. `[BLACK]` — separate ruling, listed as **P2-01-k**.
 | **Timetable** *(deferred)* | frees primary capacity | the G1 and G8 pressure already found | intermediate |
 | **Staffing** | one primary religion teacher per class | five specialists, or one teacher presenting five subjects — which is differentiation in name only | one teacher, structured guide |
 | **Certification** | G1–G6 reports carry one religion line | six lines from G3 | one line, strand annexe |
-| **Downstream** | the G7 jump remains real and must be bridged — ACD-007's unfinished work | G7 jump gone; G8 pressure instead (Phase 2 §12: +6 claimants) | jump reduced; G8 unrelieved |
+| **Downstream** | jump bridged as prescribed; Part 1's unfinished work completed | G7 jump gone; G8 pressure instead (Phase 2 §12: +6 claimants) | jump reduced **and** bridged; G8 unrelieved |
 
 ## 1.5 Contradictions — preserved, not resolved
 
@@ -101,8 +114,10 @@ model. `[BLACK]` — separate ruling, listed as **P2-01-k**.
 
 ## 1.6 Recommendation — `[PROFESSIONAL INFERENCE]`
 
-**H3.** It is the only option that keeps ACD-007's pedagogical principle intact
-while capturing what H2 was actually reaching for. «الدين محبةً وعادةً قبل أن
+**H3**, in the form tabled by the Council — graduated strands **plus** the Term-1
+G7 bridge. It is the only option that keeps ACD-007's pedagogical principle
+intact, implements the remedy Part 1 actually prescribed, and captures what H2
+was reaching for. «الدين محبةً وعادةً قبل أن
 يكون علومًا مسماة» constrains **what the child is told he is studying** — it
 does not forbid the institution from knowing, sequencing and assessing strands
 internally. H1 leaves a defect ACD-007 itself flagged; H2 pays for the fix with
@@ -254,8 +269,11 @@ identity; the other becomes a note.
 not homeless — it was orphaned when the matrix renamed that subject
 **الإنشاء والخطابة** and dropped البحث from its identity. `[RECOVERED]`
 
-**Recommended placement:** restore البحث as a named component of subject 14 at
-G10–G12, distinct from خدمة التتويج. The paper is the *research* outcome; the
+**Recommended placement:** restore البحث as a named component of **subject 14**
+at G10–G12, distinct from خدمة التتويج. **No 27th subject is created.** The
+matrix's **الإنشاء والخطابة** is flagged as a **naming and content defect in an
+existing row** — the subject was renamed and البحث dropped from its identity —
+and is corrected in place at the matrix rebuild. The paper is the *research* outcome; the
 service project is the *service* outcome. Part 7 requires both, separately.
 
 ## 3.5 Recommendation — `[PROFESSIONAL INFERENCE]`
@@ -394,19 +412,89 @@ implemented**, because C pushes load onto the grade that is already heaviest.
 
 ---
 
-# 6 · A THIRD-ORDER NOTE THE COUNCIL SHOULD HAVE
+# 6 · REDLINE REGISTER — RR-01 · THE RECOVERED G9 REMEDY
 
-`[RECOVERED]` Part 1, السنوات المثقلة:
+`[RECOVERED]` ACD-007 Part 1, التدقيق الشامل — **السنوات المثقلة**:
 
-> «**التاسع مثقل** — سنة شهادة + إحدى عشرة مادة مسماة» → remedy: «**دمج السيرة
-> بالتاريخ** + رفع نصاب الحفظ وتخفيف الجديد في ف٣»
+> الحكم: «**التاسع مثقل**» · البينة: «**سنة شهادة + إحدى عشرة مادة مسماة**» ·
+> موضع الإصلاح: «**دمج السيرة بالتاريخ** + رفع نصاب الحفظ وتخفيف الجديد في ف٣»
 
-ACD-007 found grade 9 overloaded and merged **السيرة with التاريخ** to relieve
-it. **The 26-subject matrix splits them.** The project later rediscovered G8–G9
-overload by arithmetic and proposed cuts.
+**The institution declared eleven named subjects at G9 to be an overload**, and
+merged السيرة with التاريخ to relieve it.
 
-This is not a fifth ruling — it follows from h — but it is the clearest single
-illustration of the pattern: **the corpus had already diagnosed and remedied
-three of the load problems this project rediscovered from scratch** (G9 heavy,
-G12 light, G7 jump). The rebuilt matrix should be checked against Part 1's
-remedies before it is redlined again.
+`[CURRENT COUNCIL DIRECTION]` The matrix at G9:
+
+| | Status |
+|---|---|
+| السيرة النبوية | **U — وحدة** |
+| التاريخ الإسلامي | **● — مستقل** |
+| Live subjects at G9 | **24** |
+| Claiming space directly | **14** |
+
+Two observations, neither resolved here:
+
+1. **The matrix does not merge them.** It keeps two entries and instead demotes
+   السيرة to a bounded unit. That is a *different* relief mechanism, applied to
+   the same pair, at the same grade, for what is presumably the same reason —
+   arrived at independently, without sight of Part 1.
+2. **The matrix's G9 carries 14 subjects claiming space directly against the
+   eleven ACD-007 called «مثقل».** The overload the corpus diagnosed has been
+   exceeded, not relieved.
+
+**RR-01 is a conflict with a recovered remedy and is flagged, not fixed.** It
+does not require a fifth vote — it follows from P2-01-h — but it must be carried
+into the matrix rebuild as a named item and answered explicitly there.
+
+`[RED — DOCUMENT RECONCILIATION REQUIRED]`
+
+---
+---
+
+# 7 · P2-01-k — THEOLOGICAL AND MADHHAB ARCHITECTURE
+
+**Status: `TABLED — NO RECOMMENDATION`.**
+
+`[RECOVERED]` ACD-007 §3.2 states a creed **posture** only:
+
+> العقيدة — «صيانة الأصل: **وسطية أهل السنة بأدلتها بلا غلو ولا تمييع**»
+
+`[UNVERIFIED]` A full-text search of ACD-007 returns **no occurrence** of
+**مذهب**، **مالكي** or **مالك**. The corpus establishes **no madhhab in fiqh**
+and **no named school of creed** — neither Mālikī, nor Ashʿarī, nor Salafī, nor
+any other.
+
+`[CURRENT COUNCIL DIRECTION]` A creed booklist was directed in an earlier
+sitting. A booklist is not a doctrinal ruling, and the relationship between that
+list and the recovered posture has never been stated.
+
+**Standing prohibition.** No institutional madhhab or creed orientation may be
+inferred from the classical texts appearing in drafts. Those texts were proposed
+by subject-level drafting, not ruled by the Council. Inferring doctrine from a
+draft booklist would let drafting determine constitution.
+
+This ruling is **orthogonal** to P2-01-h: any differentiation model works under
+any madhhab, and any madhhab can be declared under any differentiation model.
+It does not block the matrix rebuild. It **does** block content specification
+for العقيدة، التوحيد، الفقه and أصول الفقه.
+
+`[BLACK — EXECUTIVE COUNCIL DECISION REQUIRED]`
+
+---
+---
+
+# 8 · A THIRD-ORDER NOTE THE COUNCIL SHOULD HAVE
+
+RR-01 is one instance of a wider pattern. **ACD-007 Part 1 had already
+diagnosed and remedied three of the load problems this project rediscovered
+from scratch:**
+
+| Part 1 diagnosis | Recorded remedy | How this project met it |
+|---|---|---|
+| «التاسع مثقل» | دمج السيرة بالتاريخ | rediscovered as G8–G9 overload by arithmetic; cuts proposed |
+| «الثاني عشر خفيف» | برمجة خدمة التتويج والتحرير الامتحاني | rediscovered as "G12 over by ~3"; the opposite conclusion |
+| «قفزة السابع غير ممهدة» | تمهيد الفصل الأول من السابع | dissolved by moving subjects downward |
+
+**Part 1 is to be treated as an institutional self-audit carrying prior
+diagnoses and recorded remedies — not as historical background.** The rebuilt
+matrix must be checked against every Part 1 remedy before redline #2, and each
+departure minuted.
