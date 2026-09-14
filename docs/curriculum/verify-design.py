@@ -239,6 +239,45 @@ elif os.path.exists(pdf):
 else:
     NOTE.append('the PDF was not built, so the board check did not run')
 
+# ── D-18 · the executive register drops nothing ─────────────────────
+# Ruled by the Director General: «34 is correct — keep the register as built.»
+# A directive had named a 26-subject universe; building from it would have
+# dropped الفرائض (ring-fenced by L-19, and lost once already), الإنشاء
+# والتعبير (L-39), قواعد اللغة الوظيفية, فقه اللغة والمعاجم, خدمة التتويج and
+# علم الكلام, merged المنطق with علم الكلام, and renamed four more.
+#
+# So the register is checked against the corpus itself, not against a list:
+# every subject the allocation carries must appear on that page, under its own
+# programme, spelled as the corpus spells it. This is the one failure mode the
+# whole project exists to prevent — a name quietly not making it into a rebuild.
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location('_gtg', os.path.join(H, 'gen-teacher-guide.py'))
+_g = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_g)                       # safe: build() is under __main__
+_page = _g.exec_register()
+_blocks = re.split(r'(?=<div class="erp )', _page)
+_missing, _total = [], 0
+for _k, _pn, _pt, _pen, _cls, _num, _blurb in _g.PROGS:
+    _subs = _g.SUBS_OF[_k]
+    _total += len(_subs)
+    if _k == 'التتويج':                            # carried as a note, not a block
+        _where = _page
+    else:
+        _where = next((b for b in _blocks if f'class="erp {_cls}"' in b), '')
+        if not _where:
+            _missing.append(f'{_pt}: whole programme absent')
+            continue
+    for _sub in _subs:
+        if _g.e(_sub) not in _where:
+            _missing.append(f'{_pt} / {_sub}')
+_rows = len(re.findall(r'<tr><th>', _page))
+check('D-18', not _missing and _rows == sum(len(_g.SUBS_OF[k]) for k, *_ in _g.PROGS
+                                            if k != 'التتويج'),
+      f'the register carries all {_total} subjects of the corpus, '
+      f'{_rows} in table rows' + (f' — MISSING: {_missing}' if _missing else ''),
+      'a subject being dropped or renamed in a rebuild — the failure this '
+      'whole corpus exists to prevent')
+
 # ── a reported defect, not a failing one ────────────────────────────
 # Isolated Arabic marks print in the last millimetre of the text block on a
 # handful of pages: ḥarakāt with no base letter under them. They are inside
@@ -281,4 +320,4 @@ if FAIL:
     print('  A locked design item is broken. It changes only by an explicit ruling')
     print('  written into CURRICULUM-EDITORIAL-BIBLE.md §X-ter FIRST, with its reason.')
     sys.exit(1)
-print('\n✓ بنودُ القفل الستةَ عشرَ سليمة · D-01 … D-16 hold.')
+print('\n✓ بنودُ القفل سليمة · D-01 … D-18 hold.')

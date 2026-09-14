@@ -28,7 +28,7 @@
 > **GACAIS–CURRICULUM v1.0 is closed.** Its design — the six typefaces, the six
 > colours, the three ramps, the cover system of front · spine · back, and the
 > refusal to claim an approval that has not happened — is locked in
-> **`CURRICULUM-EDITORIAL-BIBLE.md` §X-ter** as **D-01 … D-16**, and the
+> **`CURRICULUM-EDITORIAL-BIBLE.md` §X-ter** as **D-01 … D-18**, and the
 > Director General's own instructions that produced it are kept verbatim in
 > **Appendix A** of the same file.
 >
@@ -39,7 +39,7 @@
 > it has already happened once to the curriculum, and Appendix A exists so it
 > cannot happen to the book.
 >
-> The lock is **mechanical**: `verify-design.py` enforces D-01 … D-16 and
+> The lock is **mechanical**: `verify-design.py` enforces D-01 … D-18 and
 > `build-handbook.sh` **refuses to publish** if one is broken, exactly as
 > `verify.py` refuses on a broken curriculum item. Build it with
 > **`bash build-handbook.sh`**, never by hand. The published

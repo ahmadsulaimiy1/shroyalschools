@@ -683,8 +683,8 @@ to the curriculum. It will not be allowed to happen to the book.
 | edition | **GACAIS–CURRICULUM v1.0** · first edition · September 2026 |
 | commit | the commit that carries this section |
 | pages | **79** — front board · 77 text pages · back board |
-| `SHRS-CURRICULUM-HANDBOOK.pdf` | `959ee5ca5328e7599629c10f45bd68b75d3a0feb7dfae1d6db61976b2a15c0c0` |
-| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `f9e60243bfd937a3412db28ac5aaa64eb6f8abc07c24942567af0a4dec24d84c` |
+| `SHRS-CURRICULUM-HANDBOOK.pdf` | `4a285b2a13be28b42770e2eb12967d4ee2e332c0d277aa396a1fd2e06a117bb8` |
+| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `d8d6ad4721127fa62446622b140caee580fa712c2d7ab2e07e1d7e8b690ec589` |
 | `assets/shrs-crest.png` | `9050ea9fe7cc4c2c1d6ff8c4a9cb26f488c85bed878032df695d00aca45b4ceb` |
 | `assets/gacais-mark.png` | `9d573297d0998e684789b3be15dc4ecbafd267c0d24de61da4c1a66e41d260ad` |
 
@@ -750,8 +750,25 @@ and would have **merged المنطق with علم الكلام** (two subjects in
 one line in the list), **renamed** العروض وعلم القافية → العروض, الخط والإملاء →
 الإملاء, التاريخ والسيرة → التاريخ الإسلامي, and **moved** القراءة والتهجي and
 النشيد والمحفوظات out of اللغة into القرآن. Every one of those is forbidden by
-the directive's own §3. **The conflict is reported, not resolved here** — only
-the Director General can close it.
+the directive's own §3.
+
+> **RULED, Director General:** *«34 is correct — keep the register as built.»*
+> The conflict is **closed**. The twenty-six-subject list is superseded and is
+> not to be reintroduced by a later rebuild, a later directive quoting it, or a
+> board's own judgement. It changes only by a new express ruling written here
+> first.
+
+### D-18 · the register drops nothing
+
+The ruling is not left to memory. **The executive register is checked against
+the corpus itself, not against any list**: every subject the allocation carries
+must appear on that page, under its own programme, **spelled as the corpus
+spells it**. Dropping one subject, dropping a whole programme block, or
+renaming العروض وعلم القافية to العروض each fail the build — all three were
+tried, and all three were caught.
+
+This is the one failure mode the entire corpus exists to prevent: a name
+quietly not making it into a rebuild. الفرائض has already been lost once.
 
 ### The lock is mechanical
 
