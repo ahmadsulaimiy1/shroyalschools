@@ -690,9 +690,19 @@ to the curriculum. It will not be allowed to happen to the book.
 
 > **The earlier build of v1.0 (commit `b51d06b`) is withdrawn.** It carried the
 > refused green cover and the «واعتماد» claim. The version number is unchanged
-> because the *edition* is unchanged; the **build** is not, and the hashes above
-> are how the two are told apart. Anyone holding a copy whose hash is not in
-> this table is holding the withdrawn build.
+> because the *edition* is unchanged; the **build** is not.
+>
+> **What the hashes do and do not prove — read this before relying on them.**
+> They identify **the exact files committed at this commit**. They are *not* a
+> test of whether some other copy is the right edition, because **this build is
+> not byte-reproducible**: Chromium's PDF writer varies its object ordering and
+> font subsetting between runs, so a fresh `build-handbook.sh` produces a
+> visually identical file with a different hash. That was measured, not assumed
+> — two consecutive builds of identical HTML differed even after stripping
+> `/CreationDate`, `/ModDate` and `/ID`. So: a hash **match** proves a copy is
+> the published file; a hash **mismatch** proves only that it is a different
+> file, which may be an honest rebuild. To tell the withdrawn build apart, look
+> at it — it is green, centred, and its imprint says «واعتماد».
 
 ### How to rebuild it
 
