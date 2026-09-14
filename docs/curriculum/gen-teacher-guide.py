@@ -743,7 +743,7 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .nav .sl{color:#A89880;font-size:7.6pt;}
 .nav .ngate{font-size:8pt;color:var(--burg);width:19%;}
 /* ── class page ─────────────────────────────────────────────────── */
-.cpage{page-break-before:always;padding:9mm 19mm 5mm;}
+.cpage{page-break-before:always;padding:0 0 9mm;}
 .cph{display:flex;align-items:center;gap:7mm;padding-bottom:4.5mm;margin:0 0 7mm;
  border-bottom:.5pt solid var(--line);position:relative;}
 .cph:after{content:'';position:absolute;bottom:-.5pt;right:0;width:30mm;height:1.4pt;
@@ -796,19 +796,25 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
  border-bottom:.5pt solid var(--line);position:relative;}
 .alh:after{content:'';position:absolute;bottom:-.5pt;right:0;width:22mm;height:1.4pt;
  background:var(--gold);}
-.alt{margin:0 0 6mm;page-break-inside:avoid;}
+.alt{margin:0 0 6mm;page-break-inside:avoid;overflow:hidden;}
 .alt h4{font-size:10.4pt;color:var(--brown);margin:0 0 2.4mm;padding-right:3.4mm;
  border-right:1.6pt solid var(--gold);line-height:1.35;}
 .alt.p2 h4{border-color:var(--bronze);} .alt.p3 h4{border-color:var(--burg);}
 .alt.p4 h4{border-color:#A08F79;}
 .atab{width:100%;border-collapse:collapse;font-size:9pt;}
+/* a header must never print alone at a page foot */
+.atab thead,.books thead,.txt thead,.xrt thead,.rota thead,.open thead,
+.glance thead,.nav thead,.xmap thead{break-after:avoid;page-break-after:avoid;}
+.atab tr,.books tr,.txt tr,.xrt tr,.rota tr,.open tr,.glance tr,.nav tr,.xmap tr{
+ break-inside:avoid;page-break-inside:avoid;}
+.alt h4,.books h3,.rota h6,.xreg h4{break-after:avoid;page-break-after:avoid;}
 .atab thead th{background:transparent;color:var(--bronze);
  font-family:'Reem Kufi',sans-serif;font-size:7.2pt;font-weight:400;
  letter-spacing:.07em;padding:2.2mm 2.4mm;text-align:right;
  border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);}
 .atab tbody th{text-align:right;font-family:'Amiri',serif;font-weight:700;
- color:var(--brown);width:22%;padding:2.4mm;border-bottom:.3pt solid var(--hair);}
-.atab td{padding:2.4mm;border-bottom:.3pt solid var(--hair);color:#3F3225;
+ color:var(--brown);width:22%;padding:2.4mm 2.4mm 3.4mm;border-bottom:.3pt solid var(--hair);}
+.atab td{padding:2.4mm 2.4mm 3.4mm;border-bottom:.3pt solid var(--hair);color:#3F3225;
  vertical-align:top;line-height:1.6;}
 .atab tbody tr:nth-child(even) th,.atab tbody tr:nth-child(even) td{background:#F8F2E6;}
 /* the three table voices: brown for allocation, blue for navigation,
@@ -843,7 +849,7 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
  font-weight:400;letter-spacing:.07em;}
 .rota tbody th{color:var(--brown);font-family:'Amiri',serif;font-weight:700;}
 .rota tbody tr:last-child th,.rota tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
-.books{margin-top:6mm;page-break-inside:auto;}
+.books{margin-top:6mm;page-break-inside:auto;overflow:hidden;}
 .books h3{margin:0 0 2.8mm;font-size:10.6pt;color:var(--brown);padding-bottom:2mm;
  border-bottom:.9pt solid var(--gold);}
 .books table{width:100%;border-collapse:collapse;font-size:8.8pt;}
@@ -932,7 +938,7 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .xnote{margin:4mm 0 0;page-break-inside:avoid;font-size:8.2pt;color:var(--mute);border-top:.35pt solid var(--hair);
  padding-top:3mm;line-height:1.75;}
 /* subject register */
-.xreg{margin:0 0 5mm;page-break-inside:avoid;}
+.xreg{margin:0 0 5mm;page-break-inside:avoid;overflow:hidden;}
 .xreg h4{font-size:10.6pt;color:var(--brown);margin:0 0 2.4mm;padding-bottom:1.8mm;
  border-bottom:.9pt solid var(--gold);display:flex;align-items:baseline;}
 .xreg.p2 h4{border-color:var(--bronze);} .xreg.p3 h4{border-color:var(--blue);}
@@ -1438,13 +1444,7 @@ def build():
       '<tr><td class="w">عددُ الحصص والمُدَد</td>'
       '<td>لم تُعتمد — وحُذفت من هذه الوثيقة عمدًا</td></tr>'
       '</tbody></table>')
-    w('<div class="colo"><b>عن هذا الإصدار.</b> '
-      'مولَّدٌ آليًّا من <b>allocation-v11.json</b> و<b>00-LOCKED-DECISIONS.md</b> '
-      'بواسطة <code>gen-teacher-guide.py</code> — فلا يُحرَّر باليد، وإنما يُغيَّر المصدرُ '
-      'ويُعاد التوليد. وموضعا المحفوظ في الصفّين الأول والثاني من ورقة عمل المدير العام. '
-      'ولم يُوضَع في هذه الوثيقة اسمٌ ولا موضعٌ ولا نصٌّ لا أصلَ له في أحد هذين المصدرين. '
-      '<br><br><b>وهي وثيقةُ عملٍ غيرُ معتمدة</b> — تُقرأ للتواصل، ولا يُحتجّ بها قرارًا، '
-      'ولا تُغني عن الوثائق الحاكمة حين تصدر.</div></div>')
+    w('</div>')
 
     w('</body></html>')
     return o.getvalue()
