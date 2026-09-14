@@ -4,7 +4,8 @@ import os; SP=os.path.dirname(os.path.abspath(__file__))+'/'
 D=json.load(open(SP+'allocation-v11.json'))
 PROGS=[('القرآن','البرنامج الأول · القرآن وعلومه'),('اللغة','البرنامج الثاني · اللغة وعلومها'),
        ('الإسلامية','البرنامج الثالث · الدراسات الإسلامية'),('التتويج','خدمة سنة التتويج')]
-def clean(n): return n.replace('*','').strip()
+import curriculum_data as C
+clean = C.display
 # build: subject -> prog -> {grade: mark}
 M={}; P={}
 for g in range(1,13):

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-import json, io
+import io
 import os; SP=os.path.dirname(os.path.abspath(__file__))+'/'
-D=json.load(open(SP+'allocation-v11.json'))
+import curriculum_data as C
+from curriculum_data import D, quran_minutes
 
 AR={'الأول':1}
 NAMES={1:('الأول','Primary 1'),2:('الثاني','Primary 2'),3:('الثالث','Primary 3'),
@@ -14,8 +15,8 @@ SECTIONS=[('القسم التمهيدي',[1,2],'التهيئة وفك الحرف
  ('القسم الثانوي',[10,11,12],'علوم الآلة والمتون الكبرى ثم سنة التتويج','**الثانوية القرآنية** (١١) · **شهادة التخرج** (١٢)')]
 PROG=[('القرآن','**البرنامج الأول · القرآن وعلومه**'),('اللغة','**البرنامج الثاني · اللغة وعلومها**'),
  ('الإسلامية','**البرنامج الثالث · الدراسات الإسلامية**'),('التتويج','**خدمة سنة التتويج**')]
-STRANDS={g:'التوحيد · الفقه · الحديث النبوي · السيرة النبوية' for g in range(1,6)}
-STRANDS[6]='التوحيد · الفقه · الحديث النبوي'  # السيرة تخرج مادةً مسمّاة: التاريخ والسيرة
+# one definition, shared with verify.py and gen-allocation.py
+STRANDS={g:' · '.join(v) for g,v in C.STRANDS.items()}
 
 def hrs(lessons):
     m=lessons*40
@@ -26,7 +27,7 @@ def grade_rows(g):
     """returns dict prog -> list of row tuples, plus totals"""
     corner,slots,hosted=D[str(g)]
     lower = g<=6
-    qmin = 290 if lower else 340
+    qmin = quran_minutes(g)
     qhrs = hrs(int(qmin*39/40)) if False else ('188 س 30 د' if lower else '221 س')
     rows={p:[] for p,_ in PROG}
     rows['القرآن'].append(('**حفظ القرآن الكريم**','**مستقل**','الساعة المحمية',f'{qmin} د/أسبوع','—',qhrs,'خارج الخانات — لا تُقتطع لأي مادة'))

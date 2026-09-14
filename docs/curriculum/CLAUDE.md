@@ -84,11 +84,13 @@ they were missed before.
 | Every term slot carries exactly three terms | L-11 |
 | The cornerstones never pause | L-13 |
 | The hand-weighted subjects keep their weight | L-14/15/16/17 |
-| Translation into Yoruba carried, not dropped | L-18 |
+| Translation carried, not dropped — **the target language is not fixed** | L-18 |
 | Farāʾiḍ ring-fenced | L-19 |
 | The Qur'anic hour untouched | L-20 |
 | Every class balances its weekly lessons | L-24/25 |
-| Every subject has a named source text | **L-30** |
+| Every subject-grade RESOLVES to a source text | **L-30** |
+| Every prescribed book title is one the register carries | **L-30/سند** |
+| Chapter Five's counts recompute and match | **L-31/ب٥** |
 | Tajwīd independent in classes 4–11, not folded into the hour | **L-32** |
 | Rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses | **L-33** |
 | No science opened before its instrument | **L-34** |
@@ -98,7 +100,7 @@ they were missed before.
 | The living language runs unbroken 4–12, الترجمة 7–12 | **L-38** |
 | الإنشاء والتعبير 4–9, البحث والخطابة 10–12 — never swapped | **L-39** |
 
-**That is 30 of the 39.** The script prints the other nine every run and does not
+**That is 30 of the 39**, now with three checks where there was one. The script prints the other nine every run and does not
 claim them. They are matters of judgement, not arithmetic — the forms vocabulary
 (L-08), a subject returning higher rather than repeating (L-12), the madhhab
 rules (L-21/22/23) and the rules of evidence (L-26–L-29). **A green run is not a
@@ -107,6 +109,24 @@ verification until a person has read those nine.** The script says so itself.
 If you change the allocation, change **`allocation-v11.json`** and regenerate —
 never hand-edit `CLASS-BOOK.md` or `SUBJECT-REGISTER.md`. They are generated
 files. Hand-editing them is what let the counts drift apart.
+
+**And never add a second copy of a fact.** The source map, the name normaliser,
+the forms vocabulary, the strand lists and the Qurʾān-hour minutes live once, in
+`curriculum_data.py`, which every script imports. They used to live twice — in
+the verifier and in the generator — and the copies drifted. That drift is
+precisely what let `verify.py` report a clean run while the published document
+carried ten `[RED — لا مصدر مُسجَّل]` markers, and what dropped الفرائض from the
+certificate line while its check reported sound. If a fact needs to be known in
+two places, it belongs in that module, not in both.
+
+### The script now reports contradictions as well as breaches
+
+A breach fails the run. A **contradiction** is different: the data clashes with a
+locked item, or a load-bearing figure was never declared by anyone. The script
+prints these under `تناقضاتٌ تُرفَع ولا تُصلَح هنا` and **does not fix them**,
+because fixing them would be deciding them. They go to the Director General,
+item by item. A green exit with contradictions listed is **not** clearance to
+publish, and the script says so on its last line.
 
 ## Working language
 

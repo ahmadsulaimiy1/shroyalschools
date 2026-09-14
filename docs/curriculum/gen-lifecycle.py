@@ -5,7 +5,8 @@ H=os.path.dirname(os.path.abspath(__file__))
 spec=importlib.util.spec_from_file_location('ga',os.path.join(H,'gen-allocation.py'))
 # reuse the data layer without re-running the renderer: read it directly instead
 D=json.load(open(os.path.join(H,'allocation-v11.json'),encoding='utf-8'))
-def cl(n): return n.replace('*','').strip()
+import curriculum_data as C
+cl = C.display
 NAMES={1:'الأول',2:'الثاني',3:'الثالث',4:'الرابع',5:'الخامس',6:'السادس',7:'السابع',
 8:'الثامن',9:'التاسع',10:'العاشر',11:'الحادي عشر',12:'الثاني عشر'}
 PROG={'القرآن':'الأول · القرآن وعلومه','اللغة':'الثاني · اللغة وعلومها',

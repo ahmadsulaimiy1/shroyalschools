@@ -5,25 +5,18 @@
 Run from docs/curriculum:  python3 verify.py
 Exits non-zero if any locked item is violated. Nothing is published on a failure.
 """
-import json, os, sys
+import re, sys
+import curriculum_data as C
+from curriculum_data import D, REG, GRADES, CEIL, clean
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-D = json.load(open(os.path.join(HERE, 'allocation-v11.json'), encoding='utf-8'))
-REG = open(os.path.join(HERE, '00-LOCKED-DECISIONS.md'), encoding='utf-8').read()
-
-fails, notes = [], []
+fails, notes, contradictions = [], [], []
 def check(item, ok, detail):
     (notes if ok else fails).append(f'{"✓" if ok else "✗"} {item} — {detail}')
 
-def clean(n):
-    n = n.replace('*', '').strip()
-    if n.startswith('كتاب اللغة'):      return 'اللغة العربية'
-    if n.startswith('كتاب الدراسات'):   return 'التربية الإسلامية'
-    if n == 'الفرائض التطبيقية':        return 'الفرائض'
-    return n
-
-GRADES = [str(g) for g in range(1, 13)]
-CEIL   = {g: (13 if int(g) <= 6 else 19) for g in GRADES}
+def contradiction(item, detail):
+    """Not a script bug and not mine to settle: a clash between the data and a
+    locked item, or a figure nobody declared. Reported, never silently fixed."""
+    contradictions.append(f'⚠ {item} — {detail}')
 
 # ── L-24/25 · the week balances in every class ──────────────────────────────
 bad = [g for g in GRADES
@@ -35,7 +28,7 @@ bad = [(g, s[0]) for g in GRADES for s in D[g][1] if sum(t[1] for t in s[2]) != 
 check('L-11', not bad, f'كل خانة فصلية تستوفي ثلاثة فصول — {bad or "36/36"}')
 
 # ── L-03/04 · every subject under one of the three programmes ───────────────
-PROGS = {'القرآن', 'اللغة', 'الإسلامية', 'التتويج'}
+PROGS = set(C.PROG_IN_DATA)   # three locked + التتويج, which L-03 does not admit
 bad = set()
 subs = {'حفظ القرآن الكريم': 'القرآن', 'التوحيد': 'الإسلامية', 'السيرة النبوية': 'الإسلامية'}
 for g in GRADES:
@@ -45,19 +38,50 @@ for g in GRADES:
         for t in s[2]:                      subs[clean(t[2])] = t[3]; bad |= {t[3]} - PROGS
     for x in hosted:                        subs[clean(x[0])] = x[1]; bad |= {x[1]} - PROGS
 check('L-03/04', not bad, f'كل مادة تحت أحد البرامج — {len(subs)} مادة، ولا واحدة خارجها')
+extra = sorted({p for g in GRADES for _, p, _, _ in D[g][0]} - set(C.PROGRAMMES))
+if extra:
+    who = sorted({clean(x[0]) for g in GRADES for x in D[g][0] if x[1] in extra})
+    contradiction('L-03/04', f'برنامجٌ رابع في البيانات ({" · ".join(extra)}) يحمل '
+                  f'{" · ".join(who)} — وL-03 يحصر البرامج في ثلاثة، وL-04 لا يقبل مادة خارجها')
 
-# ── L-30 · every subject has a named source ────────────────────────────────
-INDEX = {  # subjects whose texts sit under a combined heading in the register
-    'الحديث النبوي': 'الحديث ومصطلحه', 'مصطلح الحديث': 'الحديث ومصطلحه',
-    'السيرة النبوية': 'السيرة والتاريخ', 'التاريخ والسيرة': 'السيرة والتاريخ',
-}
-missing = [s for s in subs if s not in REG and INDEX.get(s, '') not in REG]
-check('L-30', not missing, f'لكل مادة مصدر — {missing or "لا مادة بلا مصدر"}')
+# ── L-30 · every subject-grade resolves to a source the register carries ───
+# The old check asked whether a subject NAME appeared anywhere in the register
+# text. Nearly every name does, so it passed green while the published document
+# printed [RED — لا مصدر مُسجَّل] in ten places. It now calls the SAME src()
+# the generator calls, so the check and the document cannot disagree again.
+red, flagged = [], []
+for sub, gs in C.subject_grades().items():
+    for g in gs:
+        t = C.src(sub, g)
+        if 'RED' in t:                     red.append(f'{sub} ({g})')
+        elif 'لا مصدر مُسجَّل' in t:        flagged.append(f'{sub} ({g})')
+check('L-30', not red, f'لكل مادة مصدر يُحلّه المولِّد — {red or "لا مادة بلا مصدر"}')
+if flagged:
+    contradiction('L-30', 'مواضعُ لا نصَّ لها في السجل، مُعلَنةً بسببها لا مستورة: '
+                  + ' · '.join(flagged))
+
+# ── L-30/provenance · no prescribed book that the register does not carry ──
+# This catches the opposite failure: a title invented in the generator and
+# never ruled. «مجلة الأحكام ١–٩٩» was one; the register spells it العدلية.
+ghost = [f'{sub} {lo}–{hi}: {b}'
+         for sub, ents in C.SRC.items() for lo, hi, t in ents
+         for b in C.named_books(t) if b not in REG]
+check('L-30/سند', not ghost,
+      f'كل كتاب مقرَّر مذكور في السجل — {ghost or str(sum(len(C.named_books(t)) for e in C.SRC.values() for _,_,t in e)) + " عنوانًا، كلها مسندة"}')
 
 # ── L-20 · the Qurʾānic hour is never drawn upon ───────────────────────────
+# The old check asked only whether ḥifẓ had left the slot ledger. It never
+# asked the question that matters: has another science moved INTO the hour?
 bad = [g for g in GRADES
        if any(clean(x[0]) == 'حفظ القرآن الكريم' for x in D[g][0] + D[g][2])]
 check('L-20', not bad, 'الساعة القرآنية خارج الخانات في كل صف — 12/12')
+
+inside = [(g, clean(x[0])) for g in GRADES for x in D[g][2]
+          if 'الساعة القرآنية' in x[2]]
+if inside:
+    contradiction('L-20', 'علومٌ تسكن الساعة القرآنية — والحمايةُ تمنع الاقتطاع '
+                  'ولا تمنع الإسكان: '
+                  + ' · '.join(f'{g}: {n}' for g, n in inside))
 
 # ── L-32 · tajwīd independent 4–11, never folded into the hour there ───────
 bad = []
@@ -69,7 +93,9 @@ for g in GRADES:
 check('L-32', not bad, f'التجويد مستقل ٤–١١ — {bad or "8/8"}')
 
 # ── L-33 · these are chapters of tajwīd, never courses ─────────────────────
-FORBIDDEN = ['الرسم العثماني', 'أصول رواية حفص', 'رواية حفص', 'علوم القرآن']
+# L-33 names الرسم العثماني and فرش رواية حفص and nothing else. علوم القرآن
+# was in this list by my error, so a unit the register prescribes was banned.
+FORBIDDEN = ['الرسم العثماني', 'أصول رواية حفص', 'رواية حفص', 'فرش رواية حفص']
 bad = [(g, n) for g in GRADES for n in FORBIDDEN
        for x in D[g][0] + D[g][2] if clean(x[0]) == n]
 bad += [(g, t[2]) for g in GRADES for s in D[g][1] for t in s[2] if clean(t[2]) in FORBIDDEN]
@@ -143,9 +169,15 @@ sci = [sum(1 for sub in subs
 drops = [(i + 1, sci[i - 1], sci[i]) for i in range(1, 12) if sci[i] < sci[i - 1]]
 check('L-09', not drops, f'الحمل يرتفع مع الصف — {drops or sci}')
 
-# ── L-18 · translation into Yoruba is carried, not dropped ───────────────
+# ── L-18 · translation is carried, not dropped ──────────────────────────
+# The target language is NOT fixed: the Director General has ruled it may be
+# English, Hausa, Urdu or Yoruba. This checks the subject is present, and says
+# nothing about which tongue — the register's own wording still needs editing.
 check('L-18', grades_present('الترجمة'),
-      f'الترجمة إلى اليوربا حاضرة — {grades_present("الترجمة")}')
+      f'الترجمة حاضرة — {grades_present("الترجمة")} · واللغةُ الهدفُ غير مسمّاة')
+if 'إلى اليوربا' in REG:
+    contradiction('L-18/L-38', 'السجل ما زال يكتب «الترجمة إلى اليوربا» في '
+                  f'{REG.count("إلى اليوربا")} موضعًا، وقد قُضي بأن اللغة غير مسمّاة')
 
 # ── L-19 · farāʾiḍ is ring-fenced with its own paper ─────────────────────
 fg = grades_present('الفرائض')
@@ -229,6 +261,57 @@ check('L-35', not bad, f'ترتيب البلاغة: المعاني ← البي�
 bad = [(g, x[0]) for g in GRADES for x in D[g][2] if not x[2].strip()]
 check('L-07', not bad, f'لا اسمَ بلا دقيقة ولا مضيف — {bad or "لا واحد"}')
 
+# ── L-08 · every hosted entry must declare one of the six forms ───────────
+# The generator falls back to مضمّن when no form is declared. That fallback
+# changes a child's mark — مدمج earns a named section with a 40% floor, مضمّن
+# earns no paper at all — so a silent default is a decision taken by a script.
+noform = [(g, clean(x[0]), clean(x[2]))
+          for g in GRADES for x in D[g][2]
+          if not any(x[3].strip().startswith(f) for f in C.FORMS)]
+if noform:
+    contradiction('L-08', f'{len(noform)} مدخلًا مستضافًا بلا صيغة مصرَّحة، '
+                  'والمولِّد يفترض «مضمّن» — وهو فرقٌ في درجة الطالب لا في التحرير: '
+                  + ' · '.join(f'{g}:{n}⊂{h}' for g, n, h in noform[:6])
+                  + (f' … وسائرها في الوثيقة المولَّدة' if len(noform) > 6 else ''))
+
+# ── الساعة القرآنية · the figures nobody declared ─────────────────────────
+if not C.QURAN_HOUR_DECLARED:
+    lo, up = C.QURAN_HOUR['lower'], C.QURAN_HOUR['upper']
+    if str(lo) not in REG and str(up) not in REG:
+        contradiction('L-20/L-25', f'مقدار الساعة القرآنية ({lo} و{up} دقيقة أسبوعيًّا) '
+                      'ليس في السجل ولا في بيانات التوزيع — كان مكتوبًا في المولِّد وحده، '
+                      'وهو الآن في موضع واحد ينتظر قرارًا يُدرجه في السجل')
+
+# ── L-31 · Chapter Five is arithmetic, so it is recomputed and COMPARED ────
+# The chapter declares its numbers computed from L-31. They were typed, and had
+# gone stale: 12 sciences at G1–3 against a live 11, 13 at G7 against 15, and
+# 10 books at G9 against 11. A number derived by a declared rule is now proved
+# against the register on every run, so it can never drift again.
+AR = '٠١٢٣٤٥٦٧٨٩'
+def ar(n): return ''.join(AR[int(c)] for c in str(n))
+
+written = {}
+for line in REG.split('\n'):
+    m = re.match(r'^\|\s*([٠-٩]+)\s*\|\s*([٠-٩]+)\s*\|\s*\*\*([٠-٩]+)\*\*'
+                 r'\s*\+\s*المصحف\s*\|\s*([٠-٩]+)\s*\|\s*([^|]+)\|', line.strip())
+    if m:
+        g = str(int(''.join(str(AR.index(c)) for c in m.group(1))))
+        written[g] = (m.group(2), m.group(3), m.group(4), m.group(5).strip())
+
+bad = []
+for g in GRADES:
+    mins = CEIL[g] * 40 * 39 + C.quran_minutes(g) * 39
+    h, mm = divmod(mins, 60)
+    want = (ar(CEIL[g]), ar(C.books(g)), ar(len(C.sciences(g))),
+            f'{ar(h)} س' + (f' {ar(mm)} د' if mm else ''))
+    got = written.get(g)
+    if got is None:
+        bad.append(f'{g}: لا سطر له في الباب الخامس')
+    elif got != want:
+        bad.append(f'{g}: مكتوب {got} والمحسوب {want}')
+check('L-31/ب٥', not bad,
+      f'الباب الخامس يطابق الحساب — {bad or str(len(written)) + "/12 سطرًا، حصصًا وكتبًا وعلومًا وساعات"}')
+
 # Locked items no script can judge — they are read by a person, not asserted here.
 BY_HAND = {
     'L-08': 'الصيغ وحدها: مستقل · مدمج · مضمّن · وحدة · دوراني · مسار',
@@ -247,6 +330,12 @@ COVERED = {'L-01','L-02','L-03','L-04','L-05','L-06','L-07','L-09','L-10','L-11'
 
 for line in notes + fails: print(line)
 print()
+if contradictions:
+    print('── تناقضاتٌ تُرفَع ولا تُصلَح هنا ' + '─'*34)
+    for line in contradictions: print(line)
+    print('  هذه ليست أخطاءَ برمجة. كلُّ واحدٍ منها يصطدم ببندٍ مقفل أو برقمٍ لم '
+          'يُعلنه أحد،\n  فلا يُغيَّر إلا بقرار صريح من المدير العام.')
+    print()
 print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٩.')
 print(f'لا يفحصه إلا قارئ ({len(BY_HAND)} بندًا): ' + ' · '.join(sorted(BY_HAND)))
 for k in sorted(BY_HAND): print(f'    {k} — {BY_HAND[k]}')
@@ -256,3 +345,6 @@ if fails:
     sys.exit(1)
 print(f'✓ البنود الـ{len(COVERED)} المفحوصة آليًّا سليمة.')
 print('  والتسعةُ الباقية تُقرأ ولا تُفحَص — فلا يُقال «تمّ التحقق» حتى تُقرأ.')
+if contradictions:
+    print(f'  ومع ذلك: {len(contradictions)} تناقضًا مرفوعًا أعلاه ينتظر قرارًا. '
+          'السلامةُ الآلية ليست إجازةَ نشر.')
