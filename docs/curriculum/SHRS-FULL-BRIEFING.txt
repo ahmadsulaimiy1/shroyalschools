@@ -3,28 +3,6 @@ SULTAN HANAFI ROYAL SCHOOLS (SHRS) / GACAIS
 COMPLETE CURRICULUM BRIEFING - EVERYTHING THAT HAS BEEN SETTLED
 ================================================================================
 
-CONTENTS
---------------------------------------------------------------------------------
-  Read this first - what this document is and how to use it
-  PART 1   The constitutional structure - 12 classes, 4 sections, 3 programmes
-  PART 2   Time - the operating week and the annual ledger
-  PART 3   The vocabulary of instructional form, and how assessment follows it
-  PART 4   The thirty-five locked decisions, in full, with reasons
-  PART 5   Tartīb al-ʿulūm - no science before its instrument
-  PART 6   The complete subject register - 33 subjects across 12 classes
-  PART 6B  Class by class, in full operational detail
-  PART 7   Tajwīd across the twelve classes
-  PART 8   The term-course architecture
-  PART 9   Madhhab policy and the non-exclusivity conformity test
-  PART 10  Assessment, the scale, the transcript and the gates
-  PART 11  The prescribed texts, all three programmes
-  PART 12  Errors already made and corrected - do not repeat these
-  PART 13  How the lock is enforced mechanically
-  PART 14  Generated vs hand-written documents
-  PART 15  What is still open
-  PART 16  If you are an AI picking this up
-
-
 READ THIS FIRST - WHAT THIS DOCUMENT IS AND HOW TO USE IT
 --------------------------------------------------------------------------------
 
@@ -278,7 +256,7 @@ assessment consequence with no discretion:
     شرط       NEVER CARRIES A MARK       -               no         Section C
 
 ================================================================================
-PART 4 - THE THIRTY-FIVE LOCKED DECISIONS, IN FULL
+PART 4 - THE THIRTY-SIX LOCKED DECISIONS, IN FULL
 ================================================================================
 
 Each is given in the original Arabic exactly as it stands in the register,
@@ -446,6 +424,17 @@ L-35  ترتيب البلاغة: المعاني ← البيان ← البدي�
       maʿānī is applied grammar and bayān rests upon it. This is the order of
       the Talkhīṣ and the Miftāḥ. Our draft had inverted the first two.
 
+L-36  لا تفسير قبل الصف الخامس. أولُ موضع التفسير الخامس، ولا يُلقَّن في الأول إلى الرابع
+      NO TAFSĪR BEFORE CLASS FIVE. Tafsīr had been taught from class one,
+      embedded in the Qurʾānic hour, the meaning given alongside each sabaq.
+      But in classes one to four the child is unlocking the letter and working
+      toward fluency - بوابة القراءة at one, بوابة الطلاقة at three. Giving him
+      the meaning before he can read the words is a science before its
+      instrument, the same fault L-34 names. The chapter's own rule already
+      said tafsīr follows what is memorised; it should follow it from the point
+      the child reads. First place: CLASS FIVE, alongside الشهادة الابتدائية.
+      It held no slot in classes 1-4, so the timetable was unaffected.
+
 ================================================================================
 PART 5 - TARTĪB AL-ʿULŪM: NO SCIENCE BEFORE ITS INSTRUMENT (L-34, L-35)
 ================================================================================
@@ -490,6 +479,9 @@ THE LADDER:
     المنطق               النضج والعقيدة          classes 7-11
       -> first place: class 12
 
+    التفسير              القراءة والطلاقة        بوابة القراءة 1 · بوابة الطلاقة 3
+      -> first place: CLASS 5, alongside الشهادة الابتدائية (L-36)
+
 WHAT PRECEDES BALĀGHAH IN CLASS 9 IS النقد والآداب - chosen texts read, tasted
 and memorised from, WITH NO RHETORICAL TERMINOLOGY AT ALL. The taste first; then
 class 10 gives the student a name for what he had been finding and could not
@@ -525,8 +517,8 @@ PROGRAMME ONE - القرآن وعلومه - 4 subjects
     SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
     ------------------------------------------------------------------------------
     حفظ القرآن الكريم         HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR
-    التفسير                   EMBD EMBD EMBD EMBD EMBD EMBD  IND  IND  IND  IND  IND  IND
     التجويد                   EMBD EMBD EMBD  IND  IND  IND  IND  IND  IND  IND  IND EMBD
+    التفسير                      .    .    .    . EMBD EMBD  IND  IND  IND  IND  IND  IND
     أصول التفسير                 .    .    .    .    .    .    .    .    .    . TERM EMBD
 
 
@@ -576,15 +568,15 @@ CAPSTONE SERVICE - خدمة سنة التتويج - 2 subjects
 
 SUBJECTS PER CLASS (named sciences the student actually meets):
 
-    class    1   2   3   4   5   6   7   8   9  10  11  12
-    count   12  12  12  13  13  13  13  15  15  19  21  27
-    slots   13  13  13  13  13  13  19  19  19  19  19  19
-    books    3   3   3   3   3   3   9  10  10  11  11  14
+    class     1   2   3   4   5   6   7   8   9  10  11  12
+    count    11  11  11  12  13  13  13  15  15  19  21  27
+    slots    13  13  13  13  13  13  19  19  19  19  19  19
+    books     3   3   3   3   3   3   9  10  10  11  11  14
 
 The load rises and the graduating class carries the most, as L-09 and L-10
 require. The book floor of three holds through the whole of the lower school
-even as the sciences grow from 12 to 13 - which is exactly what L-05 intends:
-the child meets more knowledge without carrying more books.
+even as the sciences grow - which is exactly what L-05 intends: the child meets
+more knowledge without carrying more books.
 
 WHAT IS *NOT* A SUBJECT - do not re-add these, they have been removed twice:
 
@@ -609,13 +601,10 @@ The Arabic syllabus notes are the actual prescribed content.
 --- CLASS 1 · الصف الأول · Primary 1 -------------------
     13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
 
-  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
     - حفظ القرآن الكريم
         form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
         note: outside the slot ledger; never drawn upon by any subject
-    - التفسير
-        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside الساعة القرآنية :: مضمّن — يُلقَّن مع كل سبق
     - التجويد
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
@@ -646,13 +635,10 @@ The Arabic syllabus notes are the actual prescribed content.
 --- CLASS 2 · الصف الثاني · Primary 2 -------------------
     13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
 
-  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
     - حفظ القرآن الكريم
         form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
         note: outside the slot ledger; never drawn upon by any subject
-    - التفسير
-        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside الساعة القرآنية :: مضمّن — يُلقَّن مع كل سبق
     - التجويد
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
@@ -683,13 +669,10 @@ The Arabic syllabus notes are the actual prescribed content.
 --- CLASS 3 · الصف الثالث · Primary 3 -------------------
     13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
 
-  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
     - حفظ القرآن الكريم
         form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
         note: outside the slot ledger; never drawn upon by any subject
-    - التفسير
-        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside الساعة القرآنية :: مضمّن — يُلقَّن مع كل سبق
     - التجويد
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
@@ -720,16 +703,13 @@ The Arabic syllabus notes are the actual prescribed content.
 --- CLASS 4 · الصف الرابع · Primary 4 -------------------
     13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
 
-  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
     - حفظ القرآن الكريم
         form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
         note: outside the slot ledger; never drawn upon by any subject
     - التجويد
         form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
         note: **تحفة الأطفال** — حصة مستقلة داخل كتاب القرآن وعلومه
-    - التفسير
-        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside الساعة القرآنية :: مضمّن
 
   PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
     - كتاب اللغة وعلومها — اللغة العربية
@@ -1500,11 +1480,13 @@ recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
     ورقة الإتقان والإقراء (school-authored)        10-11
 
     TAFSĪR:
-    المختصر في تفسير القرآن الكريم - مركز تفسير    1-6    TEACHER material for
+    المختصر في تفسير القرآن الكريم - مركز تفسير    5-6    TEACHER material for
                                                           the general meaning
                                                           inside the sabaq.
                                                           NO MATN IN THE
-                                                          CHILD'S HAND.
+                                                          CHILD'S HAND. AND
+                                                          NOTHING BEFORE CLASS
+                                                          FIVE (L-36).
     التفسير الميسر - مجمع الملك فهد                7-9    student text; matches
                                                           the prescribed page
     تيسير الكريم الرحمن (السعدي)                   10-12  the base text -
@@ -1517,7 +1499,8 @@ recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
     جامع البيان - الطبري                           11-12  teacher reference
 
     LOCKED RULE ON TAFSĪR:
-      classes 1-9   التفسير يتبع المحفوظ - tafsīr FOLLOWS what is memorised
+      NO TAFSĪR BEFORE CLASS FIVE (L-36)
+      classes 5-9   التفسير يتبع المحفوظ - tafsīr FOLLOWS what is memorised
       classes 10-12 يفارق المحفوظ - it PARTS from what is memorised, because
                     the graduate must read tafsīr of what he has not memorised
 
@@ -1759,18 +1742,22 @@ what has already been settled. Every item below actually happened.
     balāghah the order was بيان then معاني, which is inverted. These are now
     L-34 and L-35.
 
-15. Book counts drifted between documents - the same class showing 9 in one
+15. التفسير was taught from class one, embedded in the Qurʾānic hour, to
+    children still unlocking the letter. Meaning before reading is a science
+    before its instrument. It now begins at class five. This is now L-36.
+
+16. Book counts drifted between documents - the same class showing 9 in one
     file and 11 in another - purely because each file was tallied by hand. This
     is now L-31.
 
-16. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
+17. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
     books by splitting قواعد اللغة الوظيفية out as its own entry. It folds back
     into the language book carrying بوابة الجسر.
 
-17. The annual ledger claimed 754 hours where 100 minutes had been booked as
+18. The annual ledger claimed 754 hours where 100 minutes had been booked as
     مراجعة when 60 of those minutes were wuḍūʾ and dismissal. Corrected to 715.
 
-18. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
+19. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
     including a kindergarten that was later abolished, and was never
     recalculated.
 
@@ -1812,7 +1799,7 @@ It checks the allocation data against the register and EXITS NON-ZERO if any
 locked item is broken. A non-zero exit means the document is not ready and is
 not published.
 
-TWENTY-SIX OF THE THIRTY-FIVE ITEMS ARE CHECKED MECHANICALLY:
+TWENTY-SEVEN OF THE THIRTY-SIX ITEMS ARE CHECKED MECHANICALLY:
 
     L-01/02   twelve classes in four sections
     L-03/04   every subject under one of the three programmes
@@ -1836,6 +1823,7 @@ TWENTY-SIX OF THE THIRTY-FIVE ITEMS ARE CHECKED MECHANICALLY:
     L-33      rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses
     L-34      no science opened before its instrument
     L-35      balāghah runs maʿānī -> bayān -> badīʿ
+    L-36      no tafsīr before class five
 
 NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
 every run rather than pretending otherwise:

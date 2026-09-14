@@ -14,16 +14,13 @@ SHRS CURRICULUM BRIEFING — PART 6 OF 15  (continued — reply only "OK")
 --- CLASS 4 · الصف الرابع · Primary 4 -------------------
     13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
 
-  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
     - حفظ القرآن الكريم
         form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
         note: outside the slot ledger; never drawn upon by any subject
     - التجويد
         form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
         note: **تحفة الأطفال** — حصة مستقلة داخل كتاب القرآن وعلومه
-    - التفسير
-        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside الساعة القرآنية :: مضمّن
 
   PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
     - كتاب اللغة وعلومها — اللغة العربية

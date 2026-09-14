@@ -2,31 +2,6 @@ SHRS CURRICULUM BRIEFING — PART 2 OF 15  (continued — reply only "OK")
 ============================================================================
 
 
-There is one presentational exception at class 12: WAEC and التحرير الامتحاني
-are grouped under a heading called خدمة سنة التتويج (capstone-year service).
-They remain accountable to the three-programme rule; the heading is an
-administrative grouping for the certificate year, not a fourth programme.
-
-================================================================================
-PART 2 - TIME: THE OPERATING WEEK AND THE ANNUAL LEDGER
-================================================================================
-
-2.1  THE WEEK AS ACTUALLY OPERATED
---------------------------------------------------------------------------------
-
-    Monday    14:00 - 18:00
-    Tuesday   14:00 - 18:00
-    Wednesday 14:00 - 18:00
-    Thursday  NO SCHOOL (لا دوام)
-    Friday    NO SCHOOL (لا دوام)
-    Saturday  09:00 - 15:00
-    Sunday    09:00 - 15:00
-
-This is a supplementary school. Children attend other schooling on Thursday and
-Friday. The week is short and every minute is contested - which is why the
-arithmetic below is treated as a constitutional matter and not an
-administrative one.
-
 2.2  THE UNITS
 --------------------------------------------------------------------------------
 
@@ -137,7 +112,7 @@ assessment consequence with no discretion:
     شرط       NEVER CARRIES A MARK       -               no         Section C
 
 ================================================================================
-PART 4 - THE THIRTY-FIVE LOCKED DECISIONS, IN FULL
+PART 4 - THE THIRTY-SIX LOCKED DECISIONS, IN FULL
 ================================================================================
 
 Each is given in the original Arabic exactly as it stands in the register,
@@ -149,3 +124,25 @@ CHAPTER ONE - PRINCIPLES
 L-01  ١٢ صفًّا — لا أكثر ولا أقل. لا روضة ولا مرحلة قبلها
       Twelve classes, no more and no fewer. No kindergarten and no stage before
       it. Any plan that assumes thirteen or more funded years is invalid.
+
+L-02  ٤ أقسام: التمهيدي (١–٢) · الابتدائي (٣–٦) · الإعدادي (٧–٩) · الثانوي (١٠–١٢)
+      Four sections, with those exact class ranges. This was forgotten once in
+      a rebuild and had to be restated angrily.
+
+L-03  ٣ برامج: القرآن وعلومه · اللغة وعلومها · الدراسات الإسلامية
+      Three programmes. Note again: اللغة وعلومها, not اللغة العربية وعلومها.
+
+L-04  كل مادة تحت واحد من البرامج الثلاثة، ولا واحدة خارجها
+      Every subject under one of the three programmes; none outside.
+
+L-05  في التمهيدي والابتدائي كل شيء مدمج أو مضمّن. لا يُثقَل الطفل بالكتب
+      In التمهيدي and الابتدائي (classes 1-6) EVERYTHING is merged or embedded.
+      The child is not burdened with books. This is why classes 1-6 carry only
+      three books despite meeting twelve or thirteen named sciences.
+
+L-06  الحد الأدنى ثلاثة كتب — كتاب لكل برنامج — والمصحف. والمصحف أصلٌ لا كتابَ تعليم
+      Minimum THREE books - one per programme - plus the muṣḥaf. The muṣḥaf is
+      a source, not a teaching book, and is never counted as Programme One's
+      book. This was originally "two books", which left Programme One with no
+      book at all in the lower classes. The Director General caught it: if
+      there are three programmes, there must be at least three books.

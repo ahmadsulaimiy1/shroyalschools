@@ -105,19 +105,17 @@ what has already been settled. Every item below actually happened.
     balāghah the order was بيان then معاني, which is inverted. These are now
     L-34 and L-35.
 
-15. Book counts drifted between documents - the same class showing 9 in one
+15. التفسير was taught from class one, embedded in the Qurʾānic hour, to
+    children still unlocking the letter. Meaning before reading is a science
+    before its instrument. It now begins at class five. This is now L-36.
+
+16. Book counts drifted between documents - the same class showing 9 in one
     file and 11 in another - purely because each file was tallied by hand. This
     is now L-31.
 
-16. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
+17. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
     books by splitting قواعد اللغة الوظيفية out as its own entry. It folds back
     into the language book carrying بوابة الجسر.
 
-17. The annual ledger claimed 754 hours where 100 minutes had been booked as
+18. The annual ledger claimed 754 hours where 100 minutes had been booked as
     مراجعة when 60 of those minutes were wuḍūʾ and dismissal. Corrected to 715.
-
-18. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
-    including a kindergarten that was later abolished, and was never
-    recalculated.
-
-12.2  METHOD ERRORS THE DIRECTOR GENERAL CORRECTED DIRECTLY

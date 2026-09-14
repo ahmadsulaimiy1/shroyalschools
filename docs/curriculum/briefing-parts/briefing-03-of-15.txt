@@ -2,28 +2,6 @@ SHRS CURRICULUM BRIEFING — PART 3 OF 15  (continued — reply only "OK")
 ============================================================================
 
 
-L-02  ٤ أقسام: التمهيدي (١–٢) · الابتدائي (٣–٦) · الإعدادي (٧–٩) · الثانوي (١٠–١٢)
-      Four sections, with those exact class ranges. This was forgotten once in
-      a rebuild and had to be restated angrily.
-
-L-03  ٣ برامج: القرآن وعلومه · اللغة وعلومها · الدراسات الإسلامية
-      Three programmes. Note again: اللغة وعلومها, not اللغة العربية وعلومها.
-
-L-04  كل مادة تحت واحد من البرامج الثلاثة، ولا واحدة خارجها
-      Every subject under one of the three programmes; none outside.
-
-L-05  في التمهيدي والابتدائي كل شيء مدمج أو مضمّن. لا يُثقَل الطفل بالكتب
-      In التمهيدي and الابتدائي (classes 1-6) EVERYTHING is merged or embedded.
-      The child is not burdened with books. This is why classes 1-6 carry only
-      three books despite meeting twelve or thirteen named sciences.
-
-L-06  الحد الأدنى ثلاثة كتب — كتاب لكل برنامج — والمصحف. والمصحف أصلٌ لا كتابَ تعليم
-      Minimum THREE books - one per programme - plus the muṣḥaf. The muṣḥaf is
-      a source, not a teaching book, and is never counted as Programme One's
-      book. This was originally "two books", which left Programme One with no
-      book at all in the lower classes. The Director General caught it: if
-      there are three programmes, there must be at least three books.
-
 L-07  لا اسمَ بلا دقيقة — لا مادة بلا حصص ولا مضيف مسمّى
       No name without a minute. See Part 3.
 
@@ -145,3 +123,25 @@ L-33  الرسم العثماني وفرش رواية حفص بابان داخل
       tajwīd syllabus - not subjects and not courses. The riwāyah is a
       description of the muṣḥaf we read from (L-23), not a subject on a
       timetable.
+
+L-34  لا يُقدَّم علمٌ على آلته. ولا تُفتَح البلاغة قبل تمام النحو الأساس —
+      فأولُ موضعها العاشر، بعد ختم قطر الندى في التاسع
+      NO SCIENCE BEFORE ITS INSTRUMENT. Balāghah is not opened before
+      foundational naḥw is complete - its first place is class 10, after Qaṭr
+      al-Nadā closes in class 9. See Part 5.
+
+L-35  ترتيب البلاغة: المعاني ← البيان ← البديع. لأن المعاني نحوٌ مطبَّق، والبيان قائم عليه
+      The order within balāghah is maʿānī, then bayān, then badīʿ - because
+      maʿānī is applied grammar and bayān rests upon it. This is the order of
+      the Talkhīṣ and the Miftāḥ. Our draft had inverted the first two.
+
+L-36  لا تفسير قبل الصف الخامس. أولُ موضع التفسير الخامس، ولا يُلقَّن في الأول إلى الرابع
+      NO TAFSĪR BEFORE CLASS FIVE. Tafsīr had been taught from class one,
+      embedded in the Qurʾānic hour, the meaning given alongside each sabaq.
+      But in classes one to four the child is unlocking the letter and working
+      toward fluency - بوابة القراءة at one, بوابة الطلاقة at three. Giving him
+      the meaning before he can read the words is a science before its
+      instrument, the same fault L-34 names. The chapter's own rule already
+      said tafsīr follows what is memorised; it should follow it from the point
+      the child reads. First place: CLASS FIVE, alongside الشهادة الابتدائية.
+      It held no slot in classes 1-4, so the timetable was unaffected.

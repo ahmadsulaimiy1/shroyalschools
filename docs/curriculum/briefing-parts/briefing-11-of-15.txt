@@ -79,11 +79,13 @@ recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
     ورقة الإتقان والإقراء (school-authored)        10-11
 
     TAFSĪR:
-    المختصر في تفسير القرآن الكريم - مركز تفسير    1-6    TEACHER material for
+    المختصر في تفسير القرآن الكريم - مركز تفسير    5-6    TEACHER material for
                                                           the general meaning
                                                           inside the sabaq.
                                                           NO MATN IN THE
-                                                          CHILD'S HAND.
+                                                          CHILD'S HAND. AND
+                                                          NOTHING BEFORE CLASS
+                                                          FIVE (L-36).
     التفسير الميسر - مجمع الملك فهد                7-9    student text; matches
                                                           the prescribed page
     تيسير الكريم الرحمن (السعدي)                   10-12  the base text -
@@ -96,7 +98,8 @@ recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
     جامع البيان - الطبري                           11-12  teacher reference
 
     LOCKED RULE ON TAFSĪR:
-      classes 1-9   التفسير يتبع المحفوظ - tafsīr FOLLOWS what is memorised
+      NO TAFSĪR BEFORE CLASS FIVE (L-36)
+      classes 5-9   التفسير يتبع المحفوظ - tafsīr FOLLOWS what is memorised
       classes 10-12 يفارق المحفوظ - it PARTS from what is memorised, because
                     the graduate must read tafsīr of what he has not memorised
 
@@ -131,5 +134,3 @@ recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
     كراسة النسخ والرقعة (school) +
       قواعد الإملاء - عبد السلام هارون             1-6    الخط والإملاء
     مواد استقرائية (school-authored)               4-6    قواعد اللغة الوظيفية.
-                                                          THE RULE IS TOUCHED
-                                                          IN THE TEXT. NO MATN,

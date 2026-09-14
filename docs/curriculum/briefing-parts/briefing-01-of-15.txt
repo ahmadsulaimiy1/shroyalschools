@@ -12,28 +12,6 @@ SULTAN HANAFI ROYAL SCHOOLS (SHRS) / GACAIS
 COMPLETE CURRICULUM BRIEFING - EVERYTHING THAT HAS BEEN SETTLED
 ================================================================================
 
-CONTENTS
---------------------------------------------------------------------------------
-  Read this first - what this document is and how to use it
-  PART 1   The constitutional structure - 12 classes, 4 sections, 3 programmes
-  PART 2   Time - the operating week and the annual ledger
-  PART 3   The vocabulary of instructional form, and how assessment follows it
-  PART 4   The thirty-five locked decisions, in full, with reasons
-  PART 5   Tartīb al-ʿulūm - no science before its instrument
-  PART 6   The complete subject register - 33 subjects across 12 classes
-  PART 6B  Class by class, in full operational detail
-  PART 7   Tajwīd across the twelve classes
-  PART 8   The term-course architecture
-  PART 9   Madhhab policy and the non-exclusivity conformity test
-  PART 10  Assessment, the scale, the transcript and the gates
-  PART 11  The prescribed texts, all three programmes
-  PART 12  Errors already made and corrected - do not repeat these
-  PART 13  How the lock is enforced mechanically
-  PART 14  Generated vs hand-written documents
-  PART 15  What is still open
-  PART 16  If you are an AI picking this up
-
-
 READ THIS FIRST - WHAT THIS DOCUMENT IS AND HOW TO USE IT
 --------------------------------------------------------------------------------
 
@@ -151,3 +129,28 @@ The binding rule:
     كل مادة في كل صف تقع تحت واحد من البرامج الثلاثة، ولا تقع خارجها.
     "Every subject, in every class, falls under one of the three programmes -
     and none falls outside them."
+
+There is one presentational exception at class 12: WAEC and التحرير الامتحاني
+are grouped under a heading called خدمة سنة التتويج (capstone-year service).
+They remain accountable to the three-programme rule; the heading is an
+administrative grouping for the certificate year, not a fourth programme.
+
+================================================================================
+PART 2 - TIME: THE OPERATING WEEK AND THE ANNUAL LEDGER
+================================================================================
+
+2.1  THE WEEK AS ACTUALLY OPERATED
+--------------------------------------------------------------------------------
+
+    Monday    14:00 - 18:00
+    Tuesday   14:00 - 18:00
+    Wednesday 14:00 - 18:00
+    Thursday  NO SCHOOL (لا دوام)
+    Friday    NO SCHOOL (لا دوام)
+    Saturday  09:00 - 15:00
+    Sunday    09:00 - 15:00
+
+This is a supplementary school. Children attend other schooling on Thursday and
+Friday. The week is short and every minute is contested - which is why the
+arithmetic below is treated as a constitutional matter and not an
+administrative one.

@@ -2,17 +2,6 @@ SHRS CURRICULUM BRIEFING — PART 4 OF 15  (continued — reply only "OK")
 ============================================================================
 
 
-L-34  لا يُقدَّم علمٌ على آلته. ولا تُفتَح البلاغة قبل تمام النحو الأساس —
-      فأولُ موضعها العاشر، بعد ختم قطر الندى في التاسع
-      NO SCIENCE BEFORE ITS INSTRUMENT. Balāghah is not opened before
-      foundational naḥw is complete - its first place is class 10, after Qaṭr
-      al-Nadā closes in class 9. See Part 5.
-
-L-35  ترتيب البلاغة: المعاني ← البيان ← البديع. لأن المعاني نحوٌ مطبَّق، والبيان قائم عليه
-      The order within balāghah is maʿānī, then bayān, then badīʿ - because
-      maʿānī is applied grammar and bayān rests upon it. This is the order of
-      the Talkhīṣ and the Miftāḥ. Our draft had inverted the first two.
-
 ================================================================================
 PART 5 - TARTĪB AL-ʿULŪM: NO SCIENCE BEFORE ITS INSTRUMENT (L-34, L-35)
 ================================================================================
@@ -57,6 +46,9 @@ THE LADDER:
     المنطق               النضج والعقيدة          classes 7-11
       -> first place: class 12
 
+    التفسير              القراءة والطلاقة        بوابة القراءة 1 · بوابة الطلاقة 3
+      -> first place: CLASS 5, alongside الشهادة الابتدائية (L-36)
+
 WHAT PRECEDES BALĀGHAH IN CLASS 9 IS النقد والآداب - chosen texts read, tasted
 and memorised from, WITH NO RHETORICAL TERMINOLOGY AT ALL. The taste first; then
 class 10 gives the student a name for what he had been finding and could not
@@ -92,8 +84,8 @@ PROGRAMME ONE - القرآن وعلومه - 4 subjects
     SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
     ------------------------------------------------------------------------------
     حفظ القرآن الكريم         HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR
-    التفسير                   EMBD EMBD EMBD EMBD EMBD EMBD  IND  IND  IND  IND  IND  IND
     التجويد                   EMBD EMBD EMBD  IND  IND  IND  IND  IND  IND  IND  IND EMBD
+    التفسير                      .    .    .    . EMBD EMBD  IND  IND  IND  IND  IND  IND
     أصول التفسير                 .    .    .    .    .    .    .    .    .    . TERM EMBD
 
 

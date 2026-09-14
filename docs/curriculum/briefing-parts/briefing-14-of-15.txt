@@ -1,6 +1,12 @@
 SHRS CURRICULUM BRIEFING — PART 14 OF 15  (continued — reply only "OK")
 ============================================================================
 
+
+19. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
+    including a kindergarten that was later abolished, and was never
+    recalculated.
+
+12.2  METHOD ERRORS THE DIRECTOR GENERAL CORRECTED DIRECTLY
 --------------------------------------------------------------------------------
     - Executing instructions blindly instead of organising scholars to reason
       about them. The instruction was explicit: "think like scholars, organise
@@ -38,7 +44,7 @@ It checks the allocation data against the register and EXITS NON-ZERO if any
 locked item is broken. A non-zero exit means the document is not ready and is
 not published.
 
-TWENTY-SIX OF THE THIRTY-FIVE ITEMS ARE CHECKED MECHANICALLY:
+TWENTY-SEVEN OF THE THIRTY-SIX ITEMS ARE CHECKED MECHANICALLY:
 
     L-01/02   twelve classes in four sections
     L-03/04   every subject under one of the three programmes
@@ -62,6 +68,7 @@ TWENTY-SIX OF THE THIRTY-FIVE ITEMS ARE CHECKED MECHANICALLY:
     L-33      rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses
     L-34      no science opened before its instrument
     L-35      balāghah runs maʿānī -> bayān -> badīʿ
+    L-36      no tafsīr before class five
 
 NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
 every run rather than pretending otherwise:
@@ -135,9 +142,3 @@ BANNER reading:
 Ten of them additionally carry a banner naming the tajwīd and rasm errors
 specifically. DO NOT TAKE FIGURES FROM ANY OF THEM. They are kept as a record
 of how the work moved, not as sources.
-
-There is also a published bilingual instrument summarising everything, kept
-current with the register.
-
-================================================================================
-PART 15 - WHAT IS STILL OPEN
