@@ -1,7 +1,7 @@
 # سجل المواد · THE SUBJECT REGISTER
 ### كم مادة نُدرِّس · تحت أي برنامج · في أي صف
 
-> **مولَّد من نفس المصدر الذي وُلِّد منه `CLASS-BOOK.md`. متوافق مع `00-LOCKED-DECISIONS.md`.**
+> **مولَّد آليًّا** بواسطة `generate-subject-register.py` من `allocation-v11.json` — نفس المصدر الذي وُلِّد منه `CLASS-BOOK.md`، ومتوافق مع `00-LOCKED-DECISIONS.md`. **لا يُحرَّر باليد.**
 
 | الرمز | المعنى | كتاب؟ | ورقة؟ |
 |---|---|---|---|

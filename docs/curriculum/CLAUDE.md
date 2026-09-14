@@ -2,6 +2,16 @@
 
 ## Read this before touching anything in `docs/curriculum/`
 
+> **The standard behind these rules is `CURRICULUM-EDITORIAL-BIBLE.md`** — what
+> the corpus is for, the constitutional order, the closed vocabulary, each law
+> with the failure it prevents, the house tone, and the list of gaps that must
+> never be filled by invention. This file is the enforcement; that one is the
+> reasoning. Read it once before your first change, and again whenever a rule
+> here looks arbitrary — it will explain which loss it was written against.
+>
+> Its companion in the `sultan-` repository, `docs/editorial-bible.md`, governs
+> the school's brand and visual identity. Neither bible may contradict the other.
+
 **`00-LOCKED-DECISIONS.md` is the only source of settled decisions.**
 Read it in full before any change to any curriculum file. Not the other
 documents — they are derived and may be stale. **The register governs.**

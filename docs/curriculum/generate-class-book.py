@@ -54,7 +54,10 @@ def counts(g):
 
 out=io.StringIO()
 w=out.write
-w('# البنية الدستورية · CONSTITUTIONAL STRUCTURE\n\n# ٤ أقسام · ١٢ صفًّا · ٣ برامج\n\n')
+w('# البنية الدستورية · CONSTITUTIONAL STRUCTURE\n\n'
+  '> **مولَّدة آليًّا** من `allocation-v11.json` بواسطة `generate-class-book.py`.\n'
+  '> **لا تُحرَّر باليد.** إن لزم تغيير، فغيِّر المصدر وأعد التوليد.\n\n'
+  '# ٤ أقسام · ١٢ صفًّا · ٣ برامج\n\n')
 w('| القسم | الصفوف | العنوان | بوابة الخروج |\n|---|---|---|---|\n')
 for nm,gs,title,gate in SECTIONS:
     a,b=NAMES[gs[0]],NAMES[gs[-1]]
