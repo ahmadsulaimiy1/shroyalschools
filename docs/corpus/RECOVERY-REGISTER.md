@@ -272,6 +272,147 @@ document of the corpus.
 
 ---
 
+## 9 · ACD-008 and ACD-009 — the recovery search, and its result
+
+**Ordered by the Director General, 14 September 2026, before any master document
+is written. Result: UNRECOVERED. They are not reconstructed.**
+
+### What was searched
+
+| Scope | Method |
+|---|---|
+| **9 local clones, every ref** — `shroyalschools`, `shroyalschools-real`, `sultan-` (×2 checkouts), `sultan-arabic` (×2), `al-madeenahcollege`, `my-books`, `worldwencollege` | `git grep` across **44 refs** combined — branches, remotes, tags — for `ACD-008` · `ACD-2026-008` · `ACD-009` · `ACD-2026-009` |
+| The same 9 clones | `git grep` by concept, not filename: `المنهاج التفصيلي` · `إطار منهج العربية` · `الأرض المعيارية` · `GACAIS` · `SHRS-ACD` |
+| The same 9 clones | `git log --all --diff-filter=A --name-only` for **every `.pdf`, `.docx`, `.doc`, `.odt` ever added on any branch** — this catches files later deleted or orphaned |
+| Session upload cache | Full directory listing — 7 files total |
+| Session scratchpad and working directories | Full listing |
+
+### What came back
+
+**Zero matches for ACD-008 or ACD-009 in any repository, on any branch, in any
+commit, under any filename or by any concept phrase.**
+
+The only occurrences of those IDs anywhere on disk are **PUB-006's own
+adjudication register**, and this register quoting it.
+
+Every PDF and DOCX ever committed across all nine clones was enumerated and
+accounted for. None is an Arabic curriculum document. Two near-misses are named
+here so they are never mistaken for the real thing later:
+
+| Near-miss | What it actually is |
+|---|---|
+| `my-books/SULTAN INTERMDIATE BOOK 2-2.pdf` | A finished **student book** (Word 2019, December 2024) — a product, not the curriculum it was built from |
+| `worldwencollege/publication/IEFC *` (13 files incl. *Internal Editorial Bible*, *Complete Curriculum*) | **A different institution's** corpus (WEC/IEFC). Confirmed previously as the source of a mistaken upload |
+
+`Stromex.ai` was not searched in this pass: it is a technology company's
+repository, not an SHRS one, and a prior pass found nothing SHRS-related in it.
+
+### Their status is preserved, not reconstructed
+
+PUB-006's rulings on them stand as the only surviving description. Quoted, not
+paraphrased:
+
+| Doc | Ruling | PUB-006's own words |
+|---|---|---|
+| **ACD-008** المنهاج التفصيلي عربية، الثاني، ط٢ | **موافق** | «**الأرض المعيارية** … وهو الوثيقة الوحيدة البالغة دقة المستوى الثالث كاملةً: **الرقم والحصة والصفحة والنسبة** — وكل منهاجٍ يُقاس إليها» |
+| **ACD-009** إطار منهج العربية | **موافق مع استدراك** | «يضاف إليه في طبعته التالية: **قائمة الرموز وثبت المصادر** على العمارة الجديدة» |
+
+### Standing consequence — this gap stays visible
+
+**ACD-008 is the declared benchmark for what a detailed curriculum must look
+like.** Master 02 will therefore be written **without its measure**, and must say
+so on its own face rather than quietly proceeding as though the standard were
+known.
+
+**It is not reconstructed from derived material, and no substitute is nominated.**
+Any future document claiming to be "the standard ground" is a new document under
+a new ID, never a restoration of ACD-008.
+
+**Tag: [UNRECOVERED] — highest recovery priority.** Only the Director General can
+close it, by supplying the files.
+
+---
+
+## 10 · The consolidation of PUB-006 — architectural decision AD-01
+
+**Recorded 14 September 2026. Authorised by the Director General on behalf of
+the Council.** This is the version event the consolidation requires, so the
+chain is auditable.
+
+### The authorisation, as given
+
+> The Council authorises the **substantive consolidation** of the previously
+> absorbed Supreme Constitution and Design Covenant material into the
+> three-master architecture, **but this must not weaken, supersede, or silently
+> alter any ruling contained in PUB-006.**
+>
+> PUB-006 is the **controlling recovered source** during consolidation. Its
+> provisions remain authoritative unless and until expressly amended through the
+> required Council procedure.
+>
+> **The three-master architecture is a reorganisation of the governing corpus,
+> not a rewriting of its rulings.**
+
+### The five rules this imposes on every consolidation act
+
+1. **Substance, provenance and authority travel together.** A provision moved
+   into a master carries its PUB-006 article number and its status. It does not
+   arrive as new prose of equal weight.
+2. **No silent amendment.** Any change of meaning, however small, is a Council
+   matter and is refused at this level. Where a master's structure makes a
+   provision read differently, the provision is quoted rather than restated.
+3. **Named protections — these are not weakened by redistribution:**
+   - **Article 1** — PUB-006's own amendment authority: amended only by a Council
+     decision recorded in the version register.
+   - **Article 4 · الصدق التقريري** — no work described as meeting a standard
+     without a documented check; a claim exceeding its check is a violation
+     recorded under its writer's name.
+   - **The thirteen quality gates** — «لا يُجاز عملٌ دونها».
+   - **The four doors** — «ولا يُجيز بابٌ عن باب»: الفنية · التحريرية ·
+     الأكاديمية · الشرعية.
+   - **The binding typographic and design rules** — جدول الأدوار الحرفية الملزم ·
+     منظومة الشبكة · منظومة اللون · قانون التصوير.
+   - **Article 2** — النطاق الجامع, and Article 3 — المحاكمة الرجعية, and
+     Article 5 — سؤال العقود.
+4. **Cross-reference over duplication.** Where a provision is needed in two
+   masters, it is written once in its proper master and cross-referenced from
+   the other. Duplication is how two copies drift.
+5. **The source artifacts are permanent.** `docs/corpus/source/` is never
+   deleted, never edited, never superseded — **even after its substance is fully
+   consolidated.** A consolidated master is a reorganisation of the ruling; the
+   PDF remains the evidence that the ruling was made. This is now a standing rule
+   of the corpus, adopted on the Director General's own direction after the four
+   founding files were found to have survived only by accident.
+
+### The audit chain
+
+Every consolidated provision must be traceable along this line, and Master 01
+carries the table that does it:
+
+```
+original document  →  absorbed ruling  →  consolidated master  →  current version
+   PUB-004/005          PUB-006 §x           Master 0n §y          v1.0, AD-01
+```
+
+Worked, for the two the Director General asked about:
+
+| Original | Absorbed ruling | Consolidated into | Version event |
+|---|---|---|---|
+| **PUB-004** الدستور الأعلى | PUB-006 §§1–2, by «مستوعبان» ruling p.16 | **Master 01** — supremacy, scope, retroactive adjudication, attribution | v1.0 · **AD-01** |
+| **PUB-005** ميثاق التصميم | PUB-006 §§12–17, same ruling | **Master 03** — typography, grid, colour, photography | v1.0 · **AD-01** |
+| **PUB-006 §§5–11 + 13 gates** | — (original) | **Master 02** — publication architecture and quality gates | v1.0 · **AD-01** |
+| **PUB-001** | منسوخ — abrogated by PUB-006 | **nowhere** — not cited, by its own ruling | — |
+
+### What AD-01 does not authorise
+
+- It does not ratify ACD-007, ACD-010 or ACD-011 — all three remain **pending
+  Council signature** on their own approval pages, and consolidation does not
+  sign them.
+- It does not resolve any of the open items in §8.
+- It does not permit a fourth master.
+
+---
+
 *First recover → then consolidate → then identify genuine gaps → then develop.*
-*This register closes step one. Step two does not begin without the Director
-General's word on §7 and §8.*
+*Step one is closed: §9 records the recovery search, §10 records AD-01.*
+*Master 01 proceeds. Masters 02 and 03 do not begin until it is adopted.*
