@@ -11,6 +11,17 @@
 >
 > Its companion in the `sultan-` repository, `docs/editorial-bible.md`, governs
 > the school's brand and visual identity. Neither bible may contradict the other.
+>
+> **And read Part II of it before you assume this register is supreme.** It is
+> not. Under Article 12.1 of the Constitution of SHRS, `00-LOCKED-DECISIONS.md`
+> is a **Register** — the bottom tier — beneath Policies, Regulations, Statutes,
+> the Governance Charter and the Constitution, all of which live in the
+> `sultan-` repository and **outrank it**. Curriculum changes are approved by
+> the **Academic Council** (Charter Art. 68(b)), reviewed by the **Curriculum
+> Review Panel** (Art. 71), and on ʿaqīdah content are subject to a binding
+> **Religious Determination** of the Shariah Council (Art. 80D). «وما ليس في
+> هذا السجل فليس بقرار» is true of this corpus. It was never true of the
+> Institution.
 
 **`00-LOCKED-DECISIONS.md` is the only source of settled decisions.**
 Read it in full before any change to any curriculum file. Not the other

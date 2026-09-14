@@ -1,7 +1,9 @@
 # The Curriculum — an editorial bible
 
 **Sultan Hanafi Royal Schools · GACAIS**
-**Version 1.0 — 14 September 2026. Governing standard for the curriculum corpus.**
+**Version 1.1 — 14 September 2026. Governing standard for the curriculum corpus.**
+*(v1.1: Part II added — the corpus placed inside the Institution's own
+constitutional hierarchy, correcting v1.0's claim to be tier-1 authority.)*
 
 *The companion to `docs/editorial-bible.md` in the `sultan-` repository, which
 governs the school's visual and brand identity. That bible holds the school's
@@ -72,7 +74,99 @@ case.
 
 ---
 
-## II. The constitutional order
+## II. Where this corpus sits in the Institution's constitutional order
+
+**This part was added in v1.1, as a correction.** Version 1.0 described an
+internal order — register, data, instruments, generated documents — and stopped
+there, as though the curriculum corpus were a self-contained world. It is not.
+The Institution has its own constitutional hierarchy, written down, and the
+corpus sits inside it. Writing a standard that did not acknowledge that was the
+same failure this bible was written against, committed one level up: an
+authority chain invented from what happened to be in front of me, when the real
+one already existed in another repository.
+
+### The hierarchy that actually governs
+
+Constitution, Article 12.1 — authority descends in this order:
+
+```
+The Constitution of Sultan Hanafi Royal Schools
+  └─ The Governance Charter          (this Constitution's governance component)
+      └─ Statute        (Charter Art. 163 — Board approves)
+          └─ Regulation (Charter Art. 164 — Management Team approves)
+              └─ Policy (Charter Art. 165 — established policy-making process)
+                  └─ Handbook · Manual · Form · Template · REGISTER · SOP
+```
+
+**Article 12.2, and it is not optional:** *"No instrument in that hierarchy may
+lawfully conflict with an instrument above it, and is void to the extent of any
+such conflict."* Charter Article 162 says the same at its own level.
+
+### What that makes each of our files
+
+| Our file | Its rank | Consequence |
+|---|---|---|
+| `00-LOCKED-DECISIONS.md` | **a Register** — the bottom tier of Article 12.1 | It is authoritative *within the corpus* and subordinate to every instrument above it. «وما ليس في هذا السجل فليس بقرار» remains true of the corpus; it was never true of the Institution. |
+| `assessment/ASSESSMENT-POLICY.md` | intended as a **Policy** (Art. 165) | It therefore outranks the register on assessment. The register's Chapter Six, which dropped the policy's relief valve, is void to the extent of that conflict — not merely inconsistent. |
+| This bible | **a Standard** — bottom tier with the register | It states the house discipline. It confers no authority. |
+| The generated documents | **Templates and Registers** — bottom tier | |
+
+**Version 1.0 of this bible called itself "tier 1 material: authority, not
+derivation." That was wrong, and is corrected here.**
+
+### Who actually approves a curriculum decision
+
+The Director General's rulings are the **source** of this work and the reason
+it is coherent. They are not, by themselves, its constitutional route to force.
+The Charter routes it:
+
+| Charter article | What it says |
+|---|---|
+| **Art. 68(b)** | The **Academic Council** approves curriculum standards and changes to curriculum, **on recommendation of the relevant Heads of Department** |
+| **Art. 68(e)** | Academic Council legislation binds every Constituent Institution unless a Head records a formal objection to the Head of Schools / Administrator |
+| **Art. 71** | The **Curriculum Review Panel**, an Academic Committee of the Academic Council, exercises the technical function of curriculum review |
+| **Art. 61** | The **Vice Principal (Academics)** is responsible for curriculum implementation and chairs the Academic Committee |
+| **Art. 74 / 77** | The **Principal, School of Islamic and Arabic Studies** holds constitutional responsibility for Islamic curriculum, Arabic education and Islamic scholarship — which is this corpus |
+| **Art. 80D** | The **Shariah Council** may issue a binding **Religious Determination** on curriculum content materially affecting ʿaqīdah. It binds unless **three-quarters of the Governors** resolve that the Council exceeded its remit |
+
+**Three things follow, and each is a correction to how this work has proceeded:**
+
+1. **The ten-reviewer panel convened in September 2026 has a constitutional
+   counterpart that already existed** — the Curriculum Review Panel, Article 71.
+   The ten briefs were written and dispatched without reference to it. Their
+   findings are sound and were verified against the files; but they are the
+   work of an ad-hoc panel, and the route by which they become binding runs
+   through the Academic Council, not through this directory.
+
+2. **The ʿaqīdah findings are not the Director General's alone to settle.**
+   Reviewer R-06 raised seven red findings on العقيدة والتوحيد وعلم الكلام,
+   including the framing of «كتاب الفِرَق» and whether Ashʿarī doctrine is
+   declared as the ʿaqīdah frame. Under Article 80D that is Shariah Council
+   territory, and its determination binds the Board short of a three-quarters
+   override.
+
+3. **AC-08 · Curriculum Framework is a registered, tracked document of this
+   Institution, and it is PARTIAL.** The Governance Master Register carries it:
+   owner **Head, Research & Development** *(office pending Board recognition)*,
+   approver **Academic Council, then the Board for major structural change**,
+   review **biennial**, scope *"the Institution-wide curriculum architecture
+   across all four Constituent Institutions"*, and it *"constrains individual
+   subject syllabi."* **This corpus is the GACAIS portion of AC-08.** It has
+   been built as though no such slot existed. It should be presented as the
+   substance that closes it.
+
+### What must not be read into this
+
+This part changes **no ruling, no subject, no lesson and no mark.** Every locked
+item stands exactly as it stood. What changes is the *claim* the corpus makes
+about its own standing: it is a Register and a set of Standards beneath a Policy
+that has not yet been written, inside a Charter that names who approves it. Said
+plainly because the alternative — a curriculum corpus that believes itself
+supreme — is precisely the drift this bible exists to catch.
+
+---
+
+## III. The internal order of the corpus
 
 Four tiers. Each governs the one below it, absolutely, and nothing governs
 upward.
@@ -105,7 +199,7 @@ until the next rebuild and then dies.
 
 ---
 
-## III. The vocabulary
+## IV. The vocabulary
 
 Closed lists. A word outside them is not a synonym; it is an unrecorded
 decision wearing a familiar coat.
@@ -146,7 +240,7 @@ verifier now reports all twenty-five of them.
 
 ---
 
-## IV. The laws, and the failure each one prevents
+## V. The laws, and the failure each one prevents
 
 Every law below is in the register with a number. They are restated here with
 their *reason*, because a rule whose reason is lost is a rule that gets argued
@@ -235,7 +329,7 @@ worse than no check**, because it buys confidence with nothing behind it.
 
 ---
 
-## V. Naming, numbering and language
+## VI. Naming, numbering and language
 
 **Arabic is the working language of the corpus.** Subject names, text titles
 and instructional forms are written in Arabic. English may gloss a rule; it may
@@ -247,7 +341,7 @@ by the time it reaches a scheme of work.
 14 September 2026: it may be English, Hausa, Urdu or Yoruba. The subject is the
 skill of carrying meaning into the tongue of the listener, taught by its
 principles; the section chooses its tongue. *(L-18 and L-38 still read «إلى
-اليوربا» and need editing — see §VIII.)*
+اليوربا» and need editing — see §IX.)*
 
 **Locked items are `L-nn`** and are cited by number, never paraphrased. A board
 may refer a locked item back by its number. **A board may not overrule one.**
@@ -263,7 +357,7 @@ and each confirmed it in writing before reporting.
 
 ---
 
-## VI. Tone and register
+## VII. Tone and register
 
 The curriculum documents are written in the same voice as the school's
 policies, and for the same reason: **a document that reads as reviewed and
@@ -290,7 +384,7 @@ approved is a stronger claim than any amount of assertion.**
 
 ---
 
-## VII. The mechanical guarantee
+## VIII. The mechanical guarantee
 
 ```
 cd docs/curriculum && python3 verify.py
@@ -317,7 +411,7 @@ breaking the thing it guards and confirming the run fails.
 
 ---
 
-## VIII. What does not exist yet — do not fabricate
+## IX. What does not exist yet — do not fabricate
 
 The brand bible carries this section and so does this one, for the same reason.
 Each item below is a real gap. **None may be filled by inference, by a
@@ -339,7 +433,7 @@ voice, and it does not supply something plausible.
 
 ---
 
-## IX. Open decisions for the Director General
+## X. Open decisions
 
 Twelve locked items and six contradictions stand referred. They are listed in
 full, with the reviewer who raised each, in
@@ -352,15 +446,18 @@ item by item.**
 
 ---
 
-## X. How this bible is amended
+## XI. How this bible is amended
 
-This bible is tier 1 material: it is authority, not derivation. It changes the
-way the register changes — by an explicit ruling from the Director General,
-written down with its reason, and never by a rebuild.
+This bible is a **Standard** under Article 12.1 — the bottom tier of the
+Institution's hierarchy, alongside the register it describes. It states
+discipline; it confers no authority, and it is void to the extent it ever
+conflicts with a Policy, Regulation, Statute, the Charter or the Constitution.
+It changes the way the register changes — by an explicit ruling from the
+Director General, written down with its reason, and never by a rebuild.
 
 When a rule here is found to have failed — as L-20's protection did, as
-Chapter Five's arithmetic did — **the failure is added to §IV with the rule**,
+Chapter Five's arithmetic did — **the failure is added to §V with the rule**,
 not quietly patched. A standard that hides its own near-misses teaches nothing
 to the person who inherits it.
 
-*Extended as decisions are made and as the gaps in §VIII are closed.*
+*Extended as decisions are made and as the gaps in §IX are closed.*
