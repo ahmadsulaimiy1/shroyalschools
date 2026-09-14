@@ -171,6 +171,32 @@ bad = [f'{sci} يُفتح في {first(sci)} وآلتُه ({tool}) تُختم ف�
        if first(sci) is not None and first(sci) <= close]
 check('L-34', not bad, f'لا يُقدَّم علمٌ على آلته — {bad or "4/4"}')
 
+# ── L-37 · Arabic is the instrument: parity at JSS, a third at SS ─────────
+def share(g):
+    corner, slots, _ = D[g]
+    T = {'القرآن':0,'اللغة':0,'الإسلامية':0,'التتويج':0}
+    for name, p, n, _n in corner:            T[p] += n*3
+    for lab, cap, terms in slots:
+        for term, nt, name, p, _n in terms:  T[p] += cap*nt
+    return T, sum(T.values())
+
+bad = []
+for g in GRADES:
+    T, tot = share(g)
+    if 7 <= int(g) <= 9 and T['اللغة'] < T['الإسلامية']:
+        bad.append(f'{g}: لغة {T["اللغة"]} < شرعية {T["الإسلامية"]}')
+    if int(g) >= 10 and T['اللغة']*3 < tot:
+        bad.append(f'{g}: لغة دون الثلث ({T["اللغة"]}/{tot})')
+check('L-37', not bad,
+      'الإعدادي تكافؤ · الثانوي أرضية الثلث — ' + (str(bad) if bad else
+      ' · '.join(f'{g}:{share(g)[0]["اللغة"]*100//share(g)[1]}%' for g in GRADES if int(g)>=7)))
+
+# ── L-38 · the living language is carried, not only its instruments ───────
+gap = [g for g in range(7, 13) if g not in grades_present('البحث والخطابة')]
+tr  = [g for g in range(7, 13) if g not in grades_present('الترجمة')]
+check('L-38', not gap and not tr,
+      f'البحث والخطابة ٧–١٢ — {gap or "6/6"} · الترجمة — {tr or "6/6"}')
+
 # ── L-36 · no tafsīr before class five ────────────────────────────────────
 present=[int(g) for g in GRADES
          if any(clean(x[0])=='التفسير' for x in D[g][0]+D[g][2])
@@ -207,11 +233,11 @@ BY_HAND = {
 }
 COVERED = {'L-01','L-02','L-03','L-04','L-05','L-06','L-07','L-09','L-10','L-11',
            'L-13','L-14','L-15','L-16','L-17','L-18','L-19','L-20','L-24','L-25',
-           'L-30','L-31','L-32','L-33','L-34','L-35','L-36'}
+           'L-30','L-31','L-32','L-33','L-34','L-35','L-36','L-37','L-38'}
 
 for line in notes + fails: print(line)
 print()
-print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٦.')
+print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٨.')
 print(f'لا يفحصه إلا قارئ ({len(BY_HAND)} بندًا): ' + ' · '.join(sorted(BY_HAND)))
 for k in sorted(BY_HAND): print(f'    {k} — {BY_HAND[k]}')
 print()

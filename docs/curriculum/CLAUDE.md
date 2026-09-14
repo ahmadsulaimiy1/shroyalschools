@@ -50,6 +50,11 @@ them. It happened to:
   same error one layer down. A science was being taught before its instrument
 - **التفسير taught from class one** — the meaning given to a child still
   unlocking the letter, before he could read the words. The same fault again
+- **Arabic collapsing at the bridge** — 61% of the week in class 6, 31% in
+  class 7, while Islamic studies took 53%. And **البحث والخطابة, the priority
+  subject, was absent from classes 7, 8 and 9 entirely**, with الترجمة absent
+  until class 10. The language is the instrument of every sharʿī science; it
+  was being given less time than the sciences that depend on it
 
 None of these were disagreements. They were losses. The register is the remedy,
 and it only works if it is read first.
@@ -89,8 +94,10 @@ they were missed before.
 | No science opened before its instrument | **L-34** |
 | Balāghah runs maʿānī → bayān → badīʿ | **L-35** |
 | No tafsīr before class five | **L-36** |
+| Arabic ≥ Islamic studies at Ideadi; ≥ one third at Thanawi | **L-37** |
+| البحث والخطابة and الترجمة carried in every class 7–12 | **L-38** |
 
-**That is 27 of the 36.** The script prints the other nine every run and does not
+**That is 29 of the 38.** The script prints the other nine every run and does not
 claim them. They are matters of judgement, not arithmetic — the forms vocabulary
 (L-08), a subject returning higher rather than repeating (L-12), the madhhab
 rules (L-21/22/23) and the rules of evidence (L-26–L-29). **A green run is not a
