@@ -522,10 +522,63 @@ belongs to before reading a word of it.
 
 ### The binding
 
-The cover is symmetrical, double-framed in gold, and ornamented at the centre
-with a **khātam** — two squares set on one circle, inside a ticked ring. Its
-geometry is computed in the generator, not drawn by eye, so the star is true.
-The ground is the green of the first programme. Gold draws; it does not fill.
+**[CURRENT COUNCIL DIRECTION — Director General.]** A first cover was built
+green, centred, double-framed and medallioned. It was refused in those terms:
+*"do not repeat the giant central circular geometric logo, the large empty
+green background, the conventional double gold rectangular border, the centred
+logo → title → subtitle stack… I want human art direction: asymmetry where
+appropriate, sophisticated negative space and a strong editorial concept."*
+The direction that replaced it was **Royal Gold + white/ivory + coffee brown +
+warm cream, with brown substantially present**, and the brief *"a luxury
+Saudi/Gulf academic publication, a prestigious royal institution, a high-end
+contemporary Arabic publishing house."*
+
+What is on the cover now, and why:
+
+- **Colour blocking, not a field.** A coffee-brown cloth panel is held hard to
+  the top and right edges over a warm cream ground, split roughly three to one.
+  Nothing on the cover is symmetrical about the page centre.
+- **Architecture, not an emblem.** A two-centred arch — the portal form, not a
+  medallion — is drawn across the cloth in gold hairlines and **cropped by the
+  trim**. It is a fragment, deliberately incomplete.
+- **One ornament, used once.** The house lozenge is repeated into a lattice and
+  run as a single tooled band across the full width, where the cloth meets the
+  cream. It is the SHRS form, not a downloaded arabesque.
+- **Gold that behaves like foil.** Every gold on this cover is a gradient, in
+  CSS or in the SVG, because flat gold prints as yellow ink and a gradient
+  reads as metal catching light along its length. The title's second line is
+  gradient-clipped to the glyphs themselves.
+- **The title as typography.** «دليلُ المنهج» in ivory, «العربيِّ والإسلامي» in
+  foil, Amiri at 43pt on two deliberate lines, with the English title set
+  beneath in Cormorant Garamond at 18.5pt on 0.2em — a Latin display face
+  chosen because the text serif could not hold tracked capitals.
+- **Cloth, not paper.** The panel carries a fine two-axis tick at very low
+  alpha, and casts a soft shadow onto the cream, so the brown reads as a bound
+  board rather than a filled rectangle.
+
+### The Institution's own marks
+
+The **SHRS crest** and the **GACAIS emblem** are the Institution's, supplied by
+the Director General, and are used **as given** — the released branding
+baseline forbids replacing the existing crest, and nothing here invents one.
+The only alteration is that the crest's own wordmark lockup is cropped away so
+the artwork can sit beside typeset lines; the crest artwork itself is untouched.
+Both are inlined as data URIs from `docs/curriculum/assets/` so the published
+HTML stays a single self-contained file.
+
+- The **crest** sits on the cloth, in a lockup with the house name in Arabic
+  and Latin, divided by a gold hairline.
+- The **GACAIS emblem** sits in the cream foot on a small block of its own deep
+  navy — the one place a supporting colour is blocked rather than ruled.
+
+### The supervision
+
+**[CURRENT COUNCIL DIRECTION.]** The cover and the imprint page both carry:
+
+> تحت إشراف راجي عفو ربه
+> **أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام**
+
+set in the reading voice, above a gold rule, exactly as given.
 
 ---
 

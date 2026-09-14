@@ -9,7 +9,7 @@ no declared form, the handbook SAYS SO rather than guessing.
 
 Never hand-edit the output. Change the source and regenerate.
 """
-import os, io, html
+import os, io, html, base64
 import curriculum_data as C
 from curriculum_data import D
 
@@ -574,6 +574,20 @@ for sub, entries in C.SRC.items():
             TEXTS.append((lo, hi, b, sub, kind))
 TEXTS.sort(key=lambda x: (x[0], x[1], x[3]))
 
+
+# ── the institution's own marks ─────────────────────────────────────
+# The crest and the GACAIS emblem are the Institution's, supplied by the
+# Director General. They are used as given: the crest's own wordmark
+# lockup is cropped away so the artwork can sit beside typeset lines,
+# and nothing else about either mark is altered. Both are inlined as
+# data URIs so the published HTML remains one self-contained file.
+def _mark(name):
+    fp = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets', name)
+    with open(fp, 'rb') as f:
+        return 'data:image/png;base64,' + base64.b64encode(f.read()).decode('ascii')
+CREST  = _mark('shrs-crest.png')
+GACAIS = _mark('gacais-mark.png')
+
 CSS = """
 /* ═══════════════════════════════════════════════════════════════════
    SHRS CURRICULUM HANDBOOK · type & page system
@@ -664,71 +678,135 @@ p{margin:0 0 4.8mm;}
 .brk{page-break-before:always;}
 .pg.brk{padding-top:0;}
 /* ═══════════════════════════════════════════════════════════════════
-   THE BINDING · a title page in the register of a printed madrasah text
+   THE BINDING · brown cloth, gold foil, ivory type
    ───────────────────────────────────────────────────────────────────
-   Symmetrical, framed, ornamented at the centre. The ground is the deep
-   green of the first programme, because the book belongs to the Qurʾān
-   before it belongs to anything else. Gold does the drawing; it never
-   fills. The medallion is a khātam — two squares on one circle — set out
-   by computation, not by eye, so its geometry is true.
+   The composition is editorial, not devotional: a coffee-brown panel
+   held hard to the top and right edges over a warm cream ground, split
+   roughly three to one, with an architectural fragment — a two-centred
+   arch, cropped by the trim — drawn across it in gold hairlines. The
+   arch is the decoration; there is no medallion and no rectangular
+   border. The gold is a gradient in every instance, because flat gold
+   reads as yellow ink and a gradient reads as foil catching light.
+   The one ornament of the house, the lozenge, is repeated into a
+   lattice and used once, as a band across the whole width, where the
+   panel meets the cream. Nothing on this cover is symmetrical about
+   the page centre.
    ═══════════════════════════════════════════════════════════════════ */
-.cover{height:297mm;padding:0;display:flex;flex-direction:column;
- page-break-after:always;position:relative;overflow:hidden;color:#F2E9D6;
- background:#0F3F38;
- background-image:radial-gradient(120% 85% at 50% 22%,#18544A 0%,#0F3F38 46%,#0A2E29 100%);}
-/* the double frame: a hair outside, a heavier rule within */
-.cover .fr1{position:absolute;top:11mm;right:11mm;left:11mm;bottom:11mm;
- border:.5pt solid rgba(198,161,91,.55);}
-.cover .fr2{position:absolute;top:13.4mm;right:13.4mm;left:13.4mm;bottom:13.4mm;
- border:1.6pt solid rgba(198,161,91,.82);}
-.cover .fr3{position:absolute;top:15.6mm;right:15.6mm;left:15.6mm;bottom:15.6mm;
- border:.4pt solid rgba(198,161,91,.38);}
-/* a lozenge sunk into each corner of the heavy rule */
-.cover .cl{position:absolute;width:3.4mm;height:3.4mm;background:#C6A15B;
- transform:rotate(45deg);}
-.cover .cl.a{top:11.7mm;right:11.7mm;} .cover .cl.b{top:11.7mm;left:11.7mm;}
-.cover .cl.c{bottom:11.7mm;right:11.7mm;} .cover .cl.d{bottom:11.7mm;left:11.7mm;}
-.cover .body{flex:1;display:flex;flex-direction:column;align-items:center;
- text-align:center;padding:27mm 30mm 0;position:relative;z-index:2;}
-/* ── the house, stated once, quietly ────────────────────────────── */
-.cover .house{font-family:var(--fk);font-size:12.6pt;font-weight:600;
- color:#EBD8B2;line-height:1.75;margin:0 0 2.8mm;}
-.cover .houseL{font-family:var(--fu);font-weight:600;font-size:7.2pt;
- letter-spacing:.24em;text-transform:uppercase;color:#B99C63;direction:ltr;
- margin:0 0 3.4mm;padding-right:.24em;}
-.cover .dept{font-family:var(--fn);font-size:8.4pt;color:#9FB3A6;line-height:1.7;
- margin:0 0 9mm;}
-.cover .med{width:51mm;height:51mm;display:block;margin:0 0 8.5mm;}
-/* ── the title ──────────────────────────────────────────────────── */
-.cover .tr{display:flex;align-items:center;width:100%;max-width:112mm;margin:0 0 6mm;}
-.cover .tr:before,.cover .tr:after{content:'';flex:1;height:.5pt;
- background:linear-gradient(90deg,rgba(198,161,91,0),#C6A15B,rgba(198,161,91,0));}
-.cover .tr i{width:2.4mm;height:2.4mm;background:#C6A15B;transform:rotate(45deg);
- margin:0 4mm;display:block;flex:none;}
-.cover h1{font-family:var(--fa);font-weight:700;font-size:37pt;line-height:1.5;
- margin:0 0 5mm;color:#FFFAF0;letter-spacing:0;}
-.cover .titleL{font-family:var(--fd);font-weight:600;font-size:13pt;
- letter-spacing:.3em;text-transform:uppercase;color:#D9BE84;direction:ltr;
- margin:0 0 7mm;padding-right:.3em;}
-.cover .sub{font-family:var(--fa);font-size:12.6pt;color:#CBD4C4;line-height:2.05;
- max-width:104mm;margin:0 0 4mm;}
-/* ── the imprint foot ───────────────────────────────────────────── */
-.cover .foot{position:relative;z-index:2;margin:0 15.6mm 21mm;padding:6.5mm 12mm 0;
- text-align:center;border-top:.5pt solid rgba(198,161,91,.42);}
-.cover .foot .mk{display:flex;align-items:center;justify-content:center;margin:0 0 4.6mm;}
-.cover .foot .mk:before,.cover .foot .mk:after{content:'';width:11mm;height:.5pt;
- background:rgba(198,161,91,.6);}
-.cover .foot .mk i{width:1.9mm;height:1.9mm;background:#C6A15B;transform:rotate(45deg);
- margin:0 2.6mm;display:block;}
-.cover .foot .pub{font-family:var(--fk);font-size:9.6pt;font-weight:600;color:#E2CFA6;
- line-height:1.75;margin:0 0 2.2mm;}
-.cover .foot .pubL{font-family:var(--fu);font-weight:500;font-size:6.4pt;
- letter-spacing:.1em;text-transform:uppercase;color:#8FA396;direction:ltr;
- line-height:1.62;margin:0 0 4.4mm;padding-right:.1em;}
-.cover .foot .ed{font-family:var(--fa);font-size:9.6pt;color:#D9BE84;margin:0 0 1.8mm;}
-.cover .foot .ver{font-family:var(--fu);font-weight:500;font-size:6.3pt;
- letter-spacing:.16em;text-transform:uppercase;color:#7E9186;direction:ltr;
- padding-right:.16em;}
+.cover{height:297mm;width:210mm;padding:0;page-break-after:always;
+ position:relative;overflow:hidden;color:#3B2A1D;
+ background:#F2E7D3;
+ background-image:linear-gradient(160deg,#F7EFE0 0%,#F1E5D0 52%,#E9DAC0 100%);}
+/* ── the cloth panel ────────────────────────────────────────────── */
+.cover .panel{position:absolute;top:0;right:0;width:154mm;height:186mm;
+ box-shadow:-1.6mm 0 4mm rgba(64,43,22,.16);
+ background:#2C1E11;
+ background-image:
+  repeating-linear-gradient(90deg,rgba(255,247,230,.030) 0 .32mm,transparent .32mm .64mm),
+  repeating-linear-gradient(0deg,rgba(0,0,0,.13) 0 .32mm,transparent .32mm .64mm),
+  linear-gradient(152deg,#3A2817 0%,#2C1E11 46%,#1E1208 100%);
+ overflow:hidden;}
+/* an L of light, not a border: the two edges the cloth actually turns on */
+.cover .panel:after{content:'';position:absolute;left:0;top:0;bottom:0;width:.7pt;
+ background:linear-gradient(180deg,rgba(214,186,128,.15),rgba(240,222,178,.8) 46%,
+  rgba(214,186,128,.2));}
+.cover .pedge{position:absolute;top:186mm;right:0;width:154mm;height:.7pt;
+ background:linear-gradient(90deg,rgba(214,186,128,.12),rgba(240,222,178,.7) 62%,
+  rgba(214,186,128,.25));z-index:4;}
+.cover .arch{position:absolute;top:46mm;right:-34mm;width:168mm;height:196mm;
+ opacity:.30;}
+/* ── what is set on the cloth ───────────────────────────────────── */
+.cover .pc{position:absolute;top:0;right:0;width:154mm;height:186mm;
+ padding:23mm 24mm 0 20mm;z-index:3;}
+/* crest and typeset name on one line — a lockup, not a stack */
+.cover .lock{display:flex;align-items:center;gap:6.5mm;}
+.cover .lock img{width:31mm;height:auto;display:block;flex:none;}
+.cover .lock .ln{flex:1;text-align:right;padding-left:6.5mm;
+ border-left:.5pt solid rgba(214,186,128,.34);}
+/* the supervision, set where a title page has always set it */
+.cover .sup{position:absolute;right:24mm;left:20mm;bottom:13mm;text-align:right;
+ border-top:.4pt solid rgba(214,186,128,.28);padding-top:4.2mm;}
+.cover .sup i{display:block;font-family:var(--fn);font-style:normal;font-size:7.2pt;
+ color:#A3937A;margin:0 0 2.2mm;}
+.cover .sup b{display:block;font-family:var(--fa);font-weight:700;font-size:11.6pt;
+ color:#EEE1C9;line-height:1.55;}
+.cover .hrule{width:20mm;height:1.5pt;margin:3.4mm 0 0;
+ background-image:linear-gradient(90deg,#F2E2BB,#AD8B4B 55%,#7E6029);}
+.cover .house{font-family:var(--fk);font-weight:600;font-size:11.8pt;
+ color:#F6EEDD;line-height:1.55;margin:0 0 2.2mm;}
+.cover .houseL{display:inline-block;font-family:var(--fu);font-weight:600;font-size:6.8pt;
+ letter-spacing:.28em;text-transform:uppercase;direction:ltr;text-align:right;
+ margin:0 0 0;padding-left:.28em;
+ background-image:linear-gradient(92deg,#C09A54,#F2E2BB 42%,#A98A4C);
+ -webkit-background-clip:text;background-clip:text;color:transparent;}
+/* the title, set as a piece of typography and not as a line of text */
+.cover .title{position:absolute;right:24mm;left:20mm;top:82mm;}
+.cover .t1{font-family:var(--fa);font-weight:700;font-size:43pt;line-height:1.28;
+ color:#FCF5E7;margin:0 0 1mm;
+ text-shadow:0 .5pt 0 rgba(0,0,0,.55),0 -.3pt 0 rgba(255,248,232,.10);}
+.cover .t2{display:inline-block;font-family:var(--fa);font-weight:700;font-size:43pt;line-height:1.34;
+ margin:0 0 7mm;
+ background-image:linear-gradient(96deg,#7E6029 0%,#D6BA80 16%,#F4E5C0 29%,
+  #AD8B4B 45%,#8A6A2E 57%,#EBD39C 73%,#C09A54 87%,#7E6029 100%);
+ -webkit-background-clip:text;background-clip:text;color:transparent;}
+.cover .tsep{display:flex;align-items:center;margin:0 0 6mm;}
+.cover .tsep:before{content:'';width:26mm;height:1pt;
+ background-image:linear-gradient(90deg,#F2E2BB,#8A6A2E);}
+.cover .tsep i{width:2.1mm;height:2.1mm;margin:0 3mm;transform:rotate(45deg);
+ display:block;background-image:linear-gradient(135deg,#F2E2BB,#8A6A2E);}
+.cover .tsep:after{content:'';flex:1;height:.35pt;background:rgba(214,186,128,.34);}
+.cover .dept{font-family:var(--fn);font-size:8.8pt;color:#CDBB9B;line-height:1.75;
+ margin:0 0 1.6mm;}
+.cover .deptL{font-family:var(--fu);font-weight:500;font-size:6.2pt;
+ letter-spacing:.2em;text-transform:uppercase;color:#93805F;direction:ltr;
+ text-align:right;padding-left:.2em;}
+/* ── the lattice band, the one ornament, used once ──────────────── */
+.cover .band{position:absolute;top:178mm;left:0;width:210mm;height:8mm;z-index:5;
+ background:#2A1A0C;
+ background-image:linear-gradient(180deg,#33200F,#22140880 58%,#1B1006);
+ border-top:1.1pt solid rgba(230,208,156,.72);
+ border-bottom:.5pt solid rgba(230,208,156,.42);}
+.cover .band .lat{position:absolute;inset:0;width:100%;height:100%;opacity:.85;}
+/* ── the cream register ─────────────────────────────────────────── */
+.cover .lower{position:absolute;top:201mm;right:24mm;left:20mm;text-align:right;}
+.cover .lrule{width:34mm;height:1.4pt;margin:0 0 5mm;margin-right:0;
+ background-image:linear-gradient(90deg,#7E6029,#AD8B4B 40%,#F2E2BB);}
+.cover .titleL{font-family:var(--fd);font-weight:700;font-size:18.5pt;
+ letter-spacing:.2em;text-transform:uppercase;color:#2E1E0C;direction:ltr;
+ text-align:right;line-height:1.36;margin:0 0 5.4mm;padding-left:.2em;}
+.cover .sub{font-family:var(--fa);font-size:11.2pt;color:#5C452E;line-height:1.92;
+ margin:0;}
+/* ── the left margin: editorial marks, set vertically ───────────── */
+.cover .mark{position:absolute;top:25mm;left:20mm;width:26mm;z-index:6;}
+.cover .mark .mr{width:11mm;height:1.2pt;margin:0 0 3.4mm;
+ background-image:linear-gradient(90deg,#7E6029,#E2C68C);}
+.cover .mark .mn{font-family:var(--fd);font-weight:700;font-size:26pt;line-height:1;
+ margin:0 0 2.4mm;direction:ltr;color:#A8863F;}
+.cover .mark .ml{font-family:var(--fu);font-weight:600;font-size:5.5pt;
+ letter-spacing:.2em;text-transform:uppercase;color:#8E7A5C;direction:ltr;
+ line-height:1.7;padding-left:.2em;}
+.cover .spine{position:absolute;left:21.5mm;bottom:126mm;z-index:6;
+ writing-mode:vertical-rl;transform:rotate(180deg);
+ font-family:var(--fu);font-weight:600;font-size:6pt;letter-spacing:.3em;
+ text-transform:uppercase;color:#93805F;direction:ltr;}
+/* ── the foot ───────────────────────────────────────────────────── */
+.cover .foot{position:absolute;left:20mm;right:24mm;bottom:16mm;
+ border-top:.4pt solid rgba(120,95,58,.4);padding-top:4.6mm;
+ display:flex;align-items:flex-end;gap:10mm;}
+.cover .foot .im{flex:1;display:flex;align-items:center;gap:5.4mm;}
+.cover .foot .im .tx{flex:1;text-align:right;}
+.cover .foot .gb{flex:none;background:#0C1527;padding:2.4mm 3mm;
+ border:.4pt solid rgba(214,186,128,.42);}
+.cover .foot .gb img{width:10.5mm;height:auto;display:block;}
+.cover .foot .pub{font-family:var(--fk);font-weight:600;font-size:9pt;color:#3B2A1D;
+ line-height:1.7;margin:0 0 1.6mm;}
+.cover .foot .pubL{font-family:var(--fu);font-weight:500;font-size:5.9pt;
+ letter-spacing:.12em;text-transform:uppercase;color:#8A7558;direction:ltr;
+ text-align:right;line-height:1.66;padding-left:.12em;}
+.cover .foot .ed{direction:ltr;text-align:left;padding-bottom:.4mm;}
+.cover .foot .ed b{display:block;font-family:var(--fa);font-weight:700;font-size:9.4pt;
+ color:#6B4A2E;direction:rtl;margin:0 0 1.4mm;}
+.cover .foot .ed span{display:block;font-family:var(--fu);font-weight:500;font-size:5.6pt;
+ letter-spacing:.15em;text-transform:uppercase;color:#9C8767;line-height:1.7;}
 /* ── imprint ────────────────────────────────────────────────────── */
 .imp{padding:0 7mm 0;}
 .imp h2{border:0;font-size:12.4pt;margin:0 0 6mm;color:var(--brown);padding:0;
@@ -745,6 +823,12 @@ p{margin:0 0 4.8mm;}
  margin:0 0 5.5mm;font-size:9.2pt;line-height:1.74;}
 .imp .attr .lat{display:block;font-size:7pt;margin-top:3mm;letter-spacing:.1em;
  text-transform:none;color:var(--bronze);line-height:1.6;}
+.sups{border-top:1.3pt solid var(--gold);border-bottom:.35pt solid var(--line);
+ padding:3.2mm 0 3.6mm;margin:0 0 5.5mm;}
+.sups i{display:block;font-family:var(--fn);font-style:normal;font-size:7.6pt;
+ color:var(--mute);margin:0 0 1.8mm;}
+.sups b{display:block;font-family:var(--fa);font-weight:700;font-size:11pt;
+ color:var(--brown);line-height:1.55;}
 .imp .status{border-top:.9pt solid var(--burg);border-bottom:.4pt solid var(--hair);
  padding:3mm 0 3.4mm;font-size:9pt;color:#4A3226;margin:0 0 5.5mm;line-height:1.74;}
 .toc{font-size:10pt;}
@@ -1306,28 +1390,43 @@ def build():
 
     # ═══ COVER ═══
     w('<div class="cover">'
-      '<div class="fr1"></div><div class="fr2"></div><div class="fr3"></div>'
-      '<div class="cl a"></div><div class="cl b"></div>'
-      '<div class="cl c"></div><div class="cl d"></div>'
-      '<div class="body">'
-      '<div class="house">مدارسُ السلطان حنفي الملكية</div>'
+      '<div class="panel">' '<svg class="arch" viewBox="0 0 168 210" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="url(#ag)" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="1" y2=".4"><stop offset="0" stop-color="#6E5322"/><stop offset=".3" stop-color="#E0C489"/><stop offset=".55" stop-color="#9C7C3F"/><stop offset=".8" stop-color="#EDD7A4"/><stop offset="1" stop-color="#7E6029"/></linearGradient></defs><path d="M6,172 L6,96 A96,96 0 0,1 84,20 A96,96 0 0,1 162,96 L162,172" stroke-width="1.1"/><path d="M15,152 L15,99 A88,88 0 0,1 84,31 A88,88 0 0,1 153,99 L153,152" stroke-width=".4"/><path d="M84,20 L84,44" stroke-width=".4" opacity=".5"/><g fill="url(#ag)" stroke="none"><rect x="-3.2" y="-3.2" width="6.4" height="6.4" transform="translate(84,31) rotate(45)"/><rect x="-2" y="-2" width="4" height="4" transform="translate(6,96) rotate(45)"/><rect x="-2" y="-2" width="4" height="4" transform="translate(162,96) rotate(45)"/></g></svg>' '</div>'
+      '<div class="pedge"></div>'
+      '<div class="pc">'
+      '<div class="lock">'
+      f'<img class="crest" src="{CREST}" alt="">'
+      '<div class="ln"><div class="house">مدارسُ السلطان حنفي الملكية</div>'
       '<div class="houseL">Sultan Hanafi Royal Schools</div>'
+      '<div class="hrule"></div></div></div>'
+      '<div class="title">'
+      '<div class="t1">دليلُ المنهج</div>'
+      '<div class="t2">العربيِّ والإسلامي</div>'
+      '<div class="tsep"><i></i></div>'
       '<div class="dept">قسمُ الدراسات الإسلامية والعربية</div>'
-      '<svg class="med" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#C6A15B" stroke-linejoin="miter"><circle cx="100" cy="100" r="97" stroke-width="1"/><circle cx="100" cy="100" r="88" stroke-width="2.6"/><g stroke-width="1"><line x1="188.00" y1="100.00" x2="195.00" y2="100.00"/><line x1="185.00" y1="122.78" x2="191.76" y2="124.59"/><line x1="176.21" y1="144.00" x2="182.27" y2="147.50"/><line x1="162.23" y1="162.23" x2="167.18" y2="167.18"/><line x1="144.00" y1="176.21" x2="147.50" y2="182.27"/><line x1="122.78" y1="185.00" x2="124.59" y2="191.76"/><line x1="100.00" y1="188.00" x2="100.00" y2="195.00"/><line x1="77.22" y1="185.00" x2="75.41" y2="191.76"/><line x1="56.00" y1="176.21" x2="52.50" y2="182.27"/><line x1="37.77" y1="162.23" x2="32.82" y2="167.18"/><line x1="23.79" y1="144.00" x2="17.73" y2="147.50"/><line x1="15.00" y1="122.78" x2="8.24" y2="124.59"/><line x1="12.00" y1="100.00" x2="5.00" y2="100.00"/><line x1="15.00" y1="77.22" x2="8.24" y2="75.41"/><line x1="23.79" y1="56.00" x2="17.73" y2="52.50"/><line x1="37.77" y1="37.77" x2="32.82" y2="32.82"/><line x1="56.00" y1="23.79" x2="52.50" y2="17.73"/><line x1="77.22" y1="15.00" x2="75.41" y2="8.24"/><line x1="100.00" y1="12.00" x2="100.00" y2="5.00"/><line x1="122.78" y1="15.00" x2="124.59" y2="8.24"/><line x1="144.00" y1="23.79" x2="147.50" y2="17.73"/><line x1="162.23" y1="37.77" x2="167.18" y2="32.82"/><line x1="176.21" y1="56.00" x2="182.27" y2="52.50"/><line x1="185.00" y1="77.22" x2="191.76" y2="75.41"/></g><polygon points="152.33,152.33 47.67,152.33 47.67,47.67 152.33,47.67" stroke-width="1.5"/><polygon points="174.00,100.00 100.00,174.00 26.00,100.00 100.00,26.00" stroke-width="1.5"/><circle cx="100" cy="100" r="52" stroke-width="1"/><g fill="#C6A15B" stroke="none"><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(146.00,100.00) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(132.53,132.53) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(100.00,146.00) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(67.47,132.53) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(54.00,100.00) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(67.47,67.47) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(100.00,54.00) rotate(45)"/><rect x="-3.1" y="-3.1" width="6.2" height="6.2" transform="translate(132.53,67.47) rotate(45)"/></g><circle cx="100" cy="100" r="30" stroke-width="2.2"/><circle cx="100" cy="100" r="24" stroke-width=".8"/><rect x="-6.4" y="-6.4" width="12.8" height="12.8" transform="translate(100,100) rotate(45)" fill="#C6A15B" stroke="none"/></svg>'
-      '<div class="tr"><i></i></div>'
-      '<h1>دليلُ المنهج<br>العربيِّ والإسلامي</h1>'
-      '<div class="titleL">The Curriculum Handbook</div>'
-      '<div class="sub">البرامجُ الثلاثة، وأقسامُها الأربعة،<br>'
-      'وتدرُّجُ موادِّها في اثني عشر صفًّا</div>'
+      '<div class="deptL">School of Islamic and Arabic Studies</div>'
       '</div>'
-      '<div class="foot"><div class="mk"><i></i></div>'
+      '<div class="sup"><i>تحت إشراف راجي عفو ربه</i>'
+      '<b>أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام</b></div>'
+      '</div>'
+      '<div class="band">' '<svg class="lat" viewBox="0 0 630 30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2=".35"><stop offset="0" stop-color="#7E6029"/><stop offset=".17" stop-color="#D6BA80"/><stop offset=".31" stop-color="#F2E2BB"/><stop offset=".47" stop-color="#AD8B4B"/><stop offset=".62" stop-color="#8A6A2E"/><stop offset=".78" stop-color="#E6CC93"/><stop offset=".9" stop-color="#C09A54"/><stop offset="1" stop-color="#7E6029"/></linearGradient></defs><pattern id="px" patternUnits="userSpaceOnUse" width="26" height="30"><path d="M0,15 L13,2.5 L26,15 L13,27.5 Z" fill="none" stroke="url(#lg)" stroke-width="1"/><path d="M13,2.5 L13,0 M13,27.5 L13,30" stroke="url(#lg)" stroke-width=".6"/><rect x="-1.7" y="-1.7" width="3.4" height="3.4" fill="url(#lg)" transform="translate(13,15) rotate(45)"/></pattern><rect x="0" y="0" width="630" height="30" fill="url(#px)"/></svg>' '</div>'
+      '<div class="mark"><div class="mr"></div><div class="mn">01</div>'
+      '<div class="ml">First edition<br>MMXXVI</div></div>'
+      '<div class="spine">Sultan Hanafi Royal Schools &middot; '
+      'School of Islamic and Arabic Studies</div>'
+      '<div class="lower"><div class="lrule"></div>'
+      '<div class="titleL">The Curriculum<br>Handbook</div>'
+      '<div class="sub">البرامجُ الثلاثة، وأقسامُها الأربعة،<br>'
+      'وتدرُّجُ موادِّها في اثني عشر صفًّا</div></div>'
+      '<div class="foot"><div class="im"><div class="tx">'
       '<div class="pub">الهيئةُ الأكاديمية العالمية للدراسات العربية<br>'
       'والإسلامية والدعوة والمناهج والبحوث</div>'
       '<div class="pubL">Global Academic Council for Arabic and Islamic Studies,<br>'
-      'Da&rsquo;wah, Curriculum and Research</div>'
-      '<div class="ed">الإصدارُ الأول · سبتمبر ٢٠٢٦</div>'
-      '<div class="ver">GACAIS&ndash;CURRICULUM v1.0 &middot; '
-      'Working edition &middot; not yet ratified by Council</div></div></div>')
+      'Da&rsquo;wah, Curriculum and Research</div></div>'
+      f'<div class="gb"><img src="{GACAIS}" alt=""></div></div>'
+      '<div class="ed"><b>الإصدارُ الأول · سبتمبر ٢٠٢٦</b>'
+      '<span>GACAIS&ndash;CURRICULUM v1.0</span>'
+      '<span>Working edition &middot; not yet ratified</span></div></div>'
+      '</div>')
 
     # ═══ IMPRINT ═══
     w('<div class="imp"><h2>عن هذا الإصدار</h2>')
@@ -1338,6 +1437,8 @@ def build():
       '<b>الهيئة الأكاديمية العالمية للدراسات العربية والإسلامية والدعوة والمناهج والبحوث</b>'
       '<div class="lat">Prepared, Supervised, and Approved by the Global Academic Council '
       'for Arabic and Islamic Studies, Da\'wah, Curriculum and Research (GACAIS)</div></div>')
+    w('<div class="sups"><i>تحت إشراف راجي عفو ربه</i>'
+      '<b>أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام</b></div>')
     w('<div class="status"><b>وثيقةُ عملٍ للعرض والتواصل — لا للتقرير.</b><br>'
       'تنقل هذه النشرةُ ترتيبَ المنهج كما هو قائمٌ اليوم، ليقرأه المعلّمُ والإدارةُ '
       'ومجلسُ الأمناء ووليُّ الأمر على صورةٍ واحدة. '
