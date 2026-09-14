@@ -2,6 +2,60 @@ SHRS CURRICULUM BRIEFING — PART 10 OF 15  (continued — reply only "OK")
 ============================================================================
 
 
+  CAPSTONE SERVICE - خدمة سنة التتويج  (2 subjects)
+    - WAEC
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الدراسات الإسلامية · العربية
+    - التحرير الامتحاني
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الجزء الثاني — خارج WAEC
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة فصلية (أ) [2 slots/wk]: ف١ الفرائض التطبيقية >> ف٢ الدراسات الحديثة >> ف٣ علم الكلام
+    خانة فصلية (ب) [2 slots/wk]: ف١ النقد والآداب >> ف٢ العروض وعلم القافية >> ف٣ المنطق
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+================================================================================
+PART 7 - TAJWĪD ACROSS THE TWELVE CLASSES (L-32, L-33)
+================================================================================
+
+This was one of the four errors the Director General personally corrected. The
+principle:
+
+    الساعة القرآنية للحفظ والمراجعة. والتجويد علمٌ له حصته ومتنه وورقته.
+    "The Qur'anic hour is for memorisation and revision. Tajwīd is a science
+    with its own lesson, its own matn and its own paper."
+
+Folding the science into the memorisation hour in the advanced classes left a
+discipline that has a matn and no lesson. The Qur'anic sciences board had
+already ruled that tajwīd should be independent - and that ruling was mislaid
+during a rebuild.
+
+    CLASS      FORM          SLOTS   MATN AND SYLLABUS
+    ---------------------------------------------------------------------------
+    1-3        مضمّن         -       No matn. Correction of makhārij and ṣifāt
+                                     by ear and by talqīn only.
+    4          مستقل         1       تحفة الأطفال والغلمان
+    5          مستقل         1       تحفة الأطفال, completed
+    6          مستقل         1       المقدمة الجزرية - introduction
+    7          مستقل         1       الجزرية - المخارج والصفات
+    8          مستقل         1       الجزرية - الأحكام
+    9          مستقل         1       الجزرية completed · الوقف والابتدا ·
+                                     فرش رواية حفص · الرسم العثماني
+    10         مستقل         1       الإتقان - application across the whole
+                                     muṣḥaf
+    11         مستقل         1       الإقراء والتصحيح - preparation for the
+                                     الثانوية القرآنية committee
+    12         مضمّن         -       No matn. The science completed at class 11;
+                                     here it is maintenance and checking only.
+
+    INDEPENDENT IN EIGHT CLASSES (4-11) = 208 HOURS.
+
+The two bolded items at class 9 - فرش رواية حفص and الرسم العثماني - are
+CHAPTERS OF THIS SYLLABUS. They are not courses and must never be re-entered as
+subjects.
+
 Tajwīd's matn is bound INSIDE كتاب القرآن وعلومه, which is why making it
 independent did not break the three-book floor in classes 4-6.
 
@@ -86,50 +140,3 @@ actually built runs:
     البدعة            مالكي deliberately (الاعتصام للشاطبي)
     الصوت الحنفي      الطحاوي, شرح معاني الآثار
     النظير الإقليمي   عثمان بن فودي, إحياء السنة - West African
-
-CRITICAL RULE (L-29): DO NOT INFER THE SCHOOL'S CREED OR MADHHAB FROM THE
-BOOKLIST. The texts above are proposed by drafting work. They do not establish
-orientation. Only an explicit ruling does.
-
-مِعيار عدم الحصر - THE NON-EXCLUSIVITY CONFORMITY TEST
---------------------------------------------------------------------------------
-A mechanical test, so that "no exclusive madhhab" is auditable rather than
-aspirational. All five must hold:
-
-    1. Every course DECLARES its frame explicitly in its documents.
-    2. A BOUND REGISTER of the reasons for disagreement (سجل مدارك الخلاف) is
-       maintained.
-    3. All four schools appear TWICE OR MORE in the distribution, and NO SINGLE
-       SCHOOL exceeds 50%.
-    4. A comparative-disagreement question is worth 16% OF EVERY FIQH PAPER
-       from class 10 onward, AND an answer given in a single madhhab may not
-       score more than HALF the marks on it.
-    5. The external reviewer is NOT from the frame school.
-
-TEXTS EXPLICITLY REJECTED AS MATNS (these decisions are locked):
-    متن البناء في الصرف    rejected - outside the recovered scope of ṣarf (7-11)
-                           and its attribution is not verified
-    ملحة الإعراب           NOT taught as a matn - it is memorisation repertoire
-    مختصر خليل             rejected as a matn - for familiarity only
-    كشف الشبهات            for the TEACHER only, at every class - never a
-                           student text
-    نواقض الإسلام          taught AFTER the موانع (impediments), never before
-    كتاب التوحيد           a limited unit, NOT a pillar
-    جوهرة التوحيد          read as a DOCUMENT, not taught as doctrine
-
-================================================================================
-PART 10 - ASSESSMENT, THE SCALE, THE TRANSCRIPT AND THE GATES
-================================================================================
-
-10.1  THE DOCTRINE
---------------------------------------------------------------------------------
-Instructional form determines assessment consequence MECHANICALLY. There is no
-discretion. The table is in Part 3. The one rule that must never bend:
-
-    الشرط لا يحمل درجة أبدًا  -  "A condition never carries a mark."
-
-10.2  THE THREE-SECTION TRANSCRIPT
---------------------------------------------------------------------------------
-    SECTION A   Graded subjects. Enter the average. مستقل، مدمج، مضمّن.
-    SECTION B   Units (وحدات). Achievement ratings. Do NOT enter the average.
-    SECTION C   Conditions (شروط). Met / not met. NO MARKS EVER.

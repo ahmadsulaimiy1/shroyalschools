@@ -256,7 +256,7 @@ assessment consequence with no discretion:
     شرط       NEVER CARRIES A MARK       -               no         Section C
 
 ================================================================================
-PART 4 - THE THIRTY-SIX LOCKED DECISIONS, IN FULL
+PART 4 - THE THIRTY-NINE LOCKED DECISIONS, IN FULL
 ================================================================================
 
 Each is given in the original Arabic exactly as it stands in the register,
@@ -435,6 +435,46 @@ L-36  لا تفسير قبل الصف الخامس. أولُ موضع التفس
       the child reads. First place: CLASS FIVE, alongside الشهادة الابتدائية.
       It held no slot in classes 1-4, so the timetable was unaffected.
 
+L-37  العربية آلةُ العلوم كلِّها. ففي الإعدادي لا ينزل برنامج اللغة عن الدراسات
+      الإسلامية. وفي الثانوي على ألّا تنزل اللغة عن الثلث
+      ARABIC IS THE INSTRUMENT OF EVERY SHARʿĪ SCIENCE. The language had been
+      collapsing at the bridge: 61.5% of the week in class 6, 31.6% in class 7,
+      while Islamic studies took 52.6% - its highest share anywhere in the
+      school. Giving the sciences more time than the instrument they depend on
+      is the fault of L-34 at the level of the programme. In Ideadi, the section
+      that BUILDS the instrument, the language programme does not fall below
+      Islamic studies. In Thanawi the instrument is USED on the major matns, so
+      the sharʿī share may rise - against a floor of one third.
+      (This rule was first written to cover Thanawi too; measurement showed
+      classes 11 and 12 failing it, and the RULE was narrowed rather than the
+      curriculum bent to it.)
+
+L-38  اللغة العربية ليست النحو. الإنشاء والتعبير مادةُ اللغة الحية في الابتدائي
+      والإعدادي، ثم تنضج بحثًا وخطابةً في الثانوي
+      THE LANGUAGE IS NOT ITS GRAMMAR. In class 8 the instrumental sciences held
+      15 lesson-terms against 6 for the living language. And the communication
+      subject was absent from classes 7, 8 and 9 entirely, with الترجمة absent
+      before class 10 - while L-18 makes both a priority. The living language
+      now runs unbroken from class 4 to class 12, with الترجمة إلى اليوربا
+      embedded in it from class 7.
+          LIVING LANGUAGE   اللغة العربية (مطالعة · محادثة · استيعاب · نصوص) ·
+                            الإنشاء والتعبير / البحث والخطابة · النشيد
+                            والمحفوظات · النقد والآداب · الترجمة
+          INSTRUMENTS       النحو · الصرف · العروض وعلم القافية ·
+                            فقه اللغة والمعاجم
+
+L-39  لا يُقحَم اسمُ مرحلةٍ في غيرها. البحث عملُ الثانوي لا الإعدادي
+      A STAGE'S NAME IS NOT IMPORTED INTO ANOTHER STAGE. البحث is the work of
+      Thanawi. A boy of thirteen composes and expresses; he does not referee
+      research. The ladder:
+          classes 4-6    الإنشاء والتعبير  embedded in اللغة العربية
+          class 7        الإنشاء والتعبير  التعبير الشفوي والكتابي · الوصف والسرد
+          class 8        الإنشاء والتعبير  الإنشاء الموجَّه · الرسالة والتقرير
+          class 9        الإنشاء والتعبير  الإنشاء الحر والإلقاء · الخطبة القصيرة
+          classes 10-12  البحث والخطابة   البحث المحكّم · الخطبة · المناظرة
+      The instrumental sciences at Ideadi are النحو والصرف, and they are not the
+      living language and do not stand in for it.
+
 ================================================================================
 PART 5 - TARTĪB AL-ʿULŪM: NO SCIENCE BEFORE ITS INSTRUMENT (L-34, L-35)
 ================================================================================
@@ -482,6 +522,12 @@ THE LADDER:
     التفسير              القراءة والطلاقة        بوابة القراءة 1 · بوابة الطلاقة 3
       -> first place: CLASS 5, alongside الشهادة الابتدائية (L-36)
 
+    البحث والخطابة       الإنشاء والتعبير        classes 4-9
+      -> first place: CLASS 10 (L-39)
+
+    every sharʿī science  اللغة العربية          from class 1, hardest at Ideadi
+      -> and therefore the language does not fall below them at Ideadi (L-37)
+
 WHAT PRECEDES BALĀGHAH IN CLASS 9 IS النقد والآداب - chosen texts read, tasted
 and memorised from, WITH NO RHETORICAL TERMINOLOGY AT ALL. The taste first; then
 class 10 gives the student a name for what he had been finding and could not
@@ -492,7 +538,7 @@ opening while Qaṭr al-Nadā was still unfinished that same year) and moved
 النقد والآداب into the vacated term.
 
 ================================================================================
-PART 6 - THE COMPLETE SUBJECT REGISTER: 33 SUBJECTS
+PART 6 - THE COMPLETE SUBJECT REGISTER: 34 SUBJECTS
 ================================================================================
 
 Legend for the grid below:
@@ -507,10 +553,10 @@ Legend for the grid below:
 
 SUBJECT COUNT BY PROGRAMME
     PROGRAMME ONE - القرآن وعلومه                         4
-    PROGRAMME TWO - اللغة وعلومها                        13
+    PROGRAMME TWO - اللغة وعلومها                        14
     PROGRAMME THREE - الدراسات الإسلامية                 14
     CAPSTONE SERVICE - خدمة سنة التتويج                   2
-    TOTAL                                                33
+    TOTAL                                                34
 
 
 PROGRAMME ONE - القرآن وعلومه - 4 subjects
@@ -522,22 +568,23 @@ PROGRAMME ONE - القرآن وعلومه - 4 subjects
     أصول التفسير                 .    .    .    .    .    .    .    .    .    . TERM EMBD
 
 
-PROGRAMME TWO - اللغة وعلومها - 13 subjects
+PROGRAMME TWO - اللغة وعلومها - 14 subjects
     SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
     ------------------------------------------------------------------------------
     اللغة العربية              IND  IND  IND  IND  IND  IND  IND  IND  IND  IND  IND  IND
     النشيد والمحفوظات         EMBD EMBD EMBD EMBD EMBD EMBD EMBD EMBD    . EMBD EMBD EMBD
     الخط والإملاء             MERG MERG MERG MERG MERG MERG    .    .    .    .    .    .
     القراءة والتهجي           MERG MERG MERG    .    .    .    .    .    .    .    .    .
-    البحث والخطابة               .    .    . EMBD EMBD EMBD    .    .    .  IND  IND  IND
+    الإنشاء والتعبير             .    .    . EMBD EMBD EMBD  IND  IND  IND    .    .    .
     قواعد اللغة الوظيفية         .    .    . MERG MERG MERG    .    .    .    .    .    .
     النحو                        .    .    .    .    .    .  IND  IND  IND  IND  IND  IND
     الصرف                        .    .    .    .    .    . MERG  IND  IND TERM EMBD EMBD
+    الترجمة                      .    .    .    .    .    . EMBD EMBD EMBD EMBD EMBD EMBD
     فقه اللغة والمعاجم           .    .    .    .    .    .    . EMBD    .    .    .    .
     النقد والآداب                .    .    .    .    .    .    .    . TERM TERM EMBD TERM
     العروض وعلم القافية          .    .    .    .    .    .    .    . TERM EMBD EMBD TERM
     البلاغة                      .    .    .    .    .    .    .    .    .  IND  IND  IND
-    الترجمة                      .    .    .    .    .    .    .    .    . EMBD EMBD EMBD
+    البحث والخطابة               .    .    .    .    .    .    .    .    .  IND  IND  IND
 
 
 PROGRAMME THREE - الدراسات الإسلامية - 14 subjects
@@ -546,7 +593,7 @@ PROGRAMME THREE - الدراسات الإسلامية - 14 subjects
     الفقه                     STRD STRD STRD STRD STRD STRD  IND  IND  IND  IND  IND  IND
     الحديث النبوي             STRD STRD STRD STRD STRD STRD  IND  IND  IND  IND  IND  IND
     التوحيد                   STRD STRD STRD STRD STRD STRD EMBD EMBD EMBD EMBD EMBD EMBD
-    التربية الإسلامية          IND  IND  IND  IND  IND  IND  IND  IND    .    .    .    .
+    التربية الإسلامية          IND  IND  IND  IND  IND  IND MERG MERG    .    .    .    .
     السيرة النبوية            STRD STRD STRD STRD STRD    .    .    .    .    .    .    .
     التاريخ والسيرة              .    .    .    .    . MERG  IND  IND  IND TERM EMBD EMBD
     العقيدة                      .    .    .    .    .    .  IND  IND  IND  IND  IND  IND
@@ -568,27 +615,29 @@ CAPSTONE SERVICE - خدمة سنة التتويج - 2 subjects
 
 SUBJECTS PER CLASS (named sciences the student actually meets):
 
-    class     1   2   3   4   5   6   7   8   9  10  11  12
-    count    11  11  11  12  13  13  13  15  15  19  21  27
-    slots    13  13  13  13  13  13  19  19  19  19  19  19
-    books     3   3   3   3   3   3   9  10  10  11  11  14
+    class      1    2    3    4    5    6    7    8    9   10   11   12
+    count     11   11   11   12   13   13   15   17   17   19   21   27
+    slots     13   13   13   13   13   13   19   19   19   19   19   19
+    books      3    3    3    3    3    3    9   10   11   11   11   14
+    lang%     69   69   69   54   54   62   42   42   44   44   37   33
 
 The load rises and the graduating class carries the most, as L-09 and L-10
-require. The book floor of three holds through the whole of the lower school
-even as the sciences grow - which is exactly what L-05 intends: the child meets
-more knowledge without carrying more books.
+require. The book floor of three holds through the whole of the lower school.
+The lang% row is the language programme's share of the week: it does not fall
+below Islamic studies at Ideadi (L-37), and does not fall below a third at
+Thanawi.
 
 WHAT IS *NOT* A SUBJECT - do not re-add these, they have been removed twice:
 
-    الرسم العثماني        A chapter inside the class-9 tajwīd syllabus. Not a
-                          course, not a subject. (L-33)
-    رواية حفص عن عاصم     A description of the muṣḥaf we read from (L-23). Not
-                          a subject that gets taught. Its farsh is a chapter in
-                          the tajwīd paper.
-    علوم القرآن           Not a standalone course. Its topics are distributed:
-                          أصول التفسير sits inside التفسير, and التجويد is a
-                          science in its own right.
-    المصحف                A source. Never counted among the books or subjects.
+    الرسم العثماني        A chapter inside the class-9 tajwīd syllabus. (L-33)
+    رواية حفص عن عاصم     A description of the muṣḥaf we read from. (L-23)
+    علوم القرآن           Not a standalone course; its topics are distributed.
+    المصحف                A source. Never counted among books or subjects.
+
+AND DO NOT SWAP THESE TWO - they are different subjects for different stages:
+
+    الإنشاء والتعبير      classes 4-9.  Composition and expression.
+    البحث والخطابة        classes 10-12. Refereed research, khuṭbah, munāẓarah.
 
 ================================================================================
 PART 6B - CLASS BY CLASS, IN FULL DETAIL
@@ -721,9 +770,9 @@ The Arabic syllabus notes are the actual prescribed content.
     - الخط والإملاء
         form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مدمج
-    - البحث والخطابة
+    - الإنشاء والتعبير
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside اللغة العربية :: مضمّن — الإنشاء والتعبير
+        note: inside اللغة العربية :: مضمّن — التعبير الشفوي والكتابي · الوصف والسرد
     - النشيد والمحفوظات
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مضمّن
@@ -761,9 +810,9 @@ The Arabic syllabus notes are the actual prescribed content.
     - الخط والإملاء
         form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مدمج
-    - البحث والخطابة
+    - الإنشاء والتعبير
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside اللغة العربية :: مضمّن — الإنشاء والتعبير
+        note: inside اللغة العربية :: مضمّن — التعبير الشفوي والكتابي · الوصف والسرد
     - النشيد والمحفوظات
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مضمّن
@@ -801,9 +850,9 @@ The Arabic syllabus notes are the actual prescribed content.
     - الخط والإملاء
         form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مدمج
-    - البحث والخطابة
+    - الإنشاء والتعبير
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
-        note: inside اللغة العربية :: مضمّن — الإنشاء
+        note: inside اللغة العربية :: مضمّن — التعبير الكتابي · التلخيص والوصف
     - النشيد والمحفوظات
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مضمّن
@@ -834,19 +883,25 @@ The Arabic syllabus notes are the actual prescribed content.
         form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
         note: **الجزرية** — المخارج والصفات
 
-  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+  PROGRAMME TWO  - اللغة وعلومها  (6 subjects)
     - اللغة العربية
-        form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
-        note: يضم النشيد والمحفوظات
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: **المطالعة الموسعة والمحادثة والاستيعاب والنصوص** — يضم النشيد والمحفوظات
     - النحو
         form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
         note: الآجرومية — **مع الصرف في كتاب واحد**
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **التعبير الشفوي والكتابي** · الوصف والسرد والمحادثة
     - الصرف
         form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
         note: inside النحو :: مدمج — الميزان والمشتقات
     - النشيد والمحفوظات
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مضمّن — ملحة الإعراب
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد النص القصير إلى اليوربا
 
   PROGRAMME THREE - الدراسات الإسلامية  (6 subjects)
     - الفقه
@@ -861,12 +916,12 @@ The Arabic syllabus notes are the actual prescribed content.
     - التاريخ والسيرة
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
         note: -
-    - التربية الإسلامية
-        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
-        note: السلوك والآداب والتزكية
     - التوحيد
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside العقيدة :: مضمّن — باب مسمّى
+    - التربية الإسلامية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مدمج — قسم مسمّى: السلوك والآداب والتزكية · **الأدب المفرد** · أرضية ٤٠٪
 
   Slot arithmetic: 19 allocated / 19 available. Balanced.
 
@@ -884,22 +939,28 @@ The Arabic syllabus notes are the actual prescribed content.
         form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
         note: **الجزرية** — الأحكام
 
-  PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
+  PROGRAMME TWO  - اللغة وعلومها  (7 subjects)
     - النحو
         form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
         note: قطر الندى
     - اللغة العربية
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
-        note: -
+        note: **المطالعة والنصوص والاستيعاب والمحادثة**
     - الصرف
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
         note: لامية الأفعال + دورة المعاجم
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإنشاء الموجَّه** · الرسالة والتقرير والتلخيص
     - فقه اللغة والمعاجم
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside الصرف :: دورة ٣ أسابيع
     - النشيد والمحفوظات
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside اللغة العربية :: مضمّن — قناة المتون
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد الرسالة والتقرير إلى اليوربا
 
   PROGRAMME THREE - الدراسات الإسلامية  (7 subjects)
     - الفقه
@@ -914,20 +975,20 @@ The Arabic syllabus notes are the actual prescribed content.
     - التاريخ والسيرة
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
         note: -
-    - التربية الإسلامية
-        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
-        note: -
     - التوحيد
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside العقيدة :: 
     - أصول الفقه
         form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
         note: inside الفقه :: التأصيل العملي
+    - التربية الإسلامية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مدمج — قسم مسمّى: السلوك والآداب والتزكية · **الأدب المفرد** · أرضية ٤٠٪
 
   Slot arithmetic: 19 allocated / 19 available. Balanced.
 
 --- CLASS 9 · الصف التاسع · JSS 3 -----------------------
-    19 lesson-slots per week | 10 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+    19 lesson-slots per week | 11 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
 
   PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
     - حفظ القرآن الكريم
@@ -940,13 +1001,16 @@ The Arabic syllabus notes are the actual prescribed content.
         form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
         note: **الجزرية** تمامًا · الوقف والابتدا · **فرش رواية حفص** · **الرسم العثماني**
 
-  PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
+  PROGRAMME TWO  - اللغة وعلومها  (7 subjects)
     - النحو
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
         note: قطر الندى تمامًا
     - اللغة العربية
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
-        note: -
+        note: **المطالعة الناقدة والمحادثة والاستيعاب**
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإنشاء الحر والإلقاء** · المقالة القصيرة والخطبة القصيرة أمام الصف
     - الصرف
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
         note: المعتل والإعلال
@@ -956,6 +1020,9 @@ The Arabic syllabus notes are the actual prescribed content.
     - العروض وعلم القافية
         form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
         note: البحور المشهورة بالسمع — تدريب أذن
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد الخطبة إلى اليوربا
 
   PROGRAMME THREE - الدراسات الإسلامية  (7 subjects)
     - الفقه
@@ -968,7 +1035,7 @@ The Arabic syllabus notes are the actual prescribed content.
         form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
         note: عمدة + الأدب المفرد
     - التاريخ والسيرة
-        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
         note: الأندلس وغرب أفريقيا
     - مصطلح الحديث
         form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
@@ -1746,18 +1813,30 @@ what has already been settled. Every item below actually happened.
     children still unlocking the letter. Meaning before reading is a science
     before its instrument. It now begins at class five. This is now L-36.
 
-16. Book counts drifted between documents - the same class showing 9 in one
+16. The language collapsed at the bridge — 61.5% of the week in class 6, 31.6%
+    in class 7, Islamic studies at 52.6%. البحث والخطابة, the priority subject,
+    was absent from classes 7-9 entirely and الترجمة from every class before 10.
+    This is now L-37 and L-38.
+
+17. البحث والخطابة was put into Ideadi as the fix for the above — which was the
+    same fault one layer over: a subject before its stage. A boy of thirteen
+    composes; he does not referee research. And the same error had been sitting
+    unnoticed at classes 4-6, where the label read البحث والخطابة while the
+    content beneath it already read «الإنشاء والتعبير» — right content, imported
+    name. This is now L-39.
+
+18. Book counts drifted between documents - the same class showing 9 in one
     file and 11 in another - purely because each file was tallied by hand. This
     is now L-31.
 
-17. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
+19. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
     books by splitting قواعد اللغة الوظيفية out as its own entry. It folds back
     into the language book carrying بوابة الجسر.
 
-18. The annual ledger claimed 754 hours where 100 minutes had been booked as
+20. The annual ledger claimed 754 hours where 100 minutes had been booked as
     مراجعة when 60 of those minutes were wuḍūʾ and dismissal. Corrected to 715.
 
-19. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
+21. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
     including a kindergarten that was later abolished, and was never
     recalculated.
 
@@ -1799,7 +1878,7 @@ It checks the allocation data against the register and EXITS NON-ZERO if any
 locked item is broken. A non-zero exit means the document is not ready and is
 not published.
 
-TWENTY-SEVEN OF THE THIRTY-SIX ITEMS ARE CHECKED MECHANICALLY:
+THIRTY OF THE THIRTY-NINE ITEMS ARE CHECKED MECHANICALLY:
 
     L-01/02   twelve classes in four sections
     L-03/04   every subject under one of the three programmes
@@ -1824,6 +1903,9 @@ TWENTY-SEVEN OF THE THIRTY-SIX ITEMS ARE CHECKED MECHANICALLY:
     L-34      no science opened before its instrument
     L-35      balāghah runs maʿānī -> bayān -> badīʿ
     L-36      no tafsīr before class five
+    L-37      Arabic >= Islamic studies at Ideadi; >= one third at Thanawi
+    L-38      the living language unbroken 4-12, الترجمة 7-12
+    L-39      الإنشاء والتعبير 4-9, البحث والخطابة 10-12, never swapped
 
 NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
 every run rather than pretending otherwise:

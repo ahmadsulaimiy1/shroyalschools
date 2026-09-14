@@ -2,6 +2,53 @@ SHRS CURRICULUM BRIEFING — PART 11 OF 15  (continued — reply only "OK")
 ============================================================================
 
 
+CRITICAL RULE (L-29): DO NOT INFER THE SCHOOL'S CREED OR MADHHAB FROM THE
+BOOKLIST. The texts above are proposed by drafting work. They do not establish
+orientation. Only an explicit ruling does.
+
+مِعيار عدم الحصر - THE NON-EXCLUSIVITY CONFORMITY TEST
+--------------------------------------------------------------------------------
+A mechanical test, so that "no exclusive madhhab" is auditable rather than
+aspirational. All five must hold:
+
+    1. Every course DECLARES its frame explicitly in its documents.
+    2. A BOUND REGISTER of the reasons for disagreement (سجل مدارك الخلاف) is
+       maintained.
+    3. All four schools appear TWICE OR MORE in the distribution, and NO SINGLE
+       SCHOOL exceeds 50%.
+    4. A comparative-disagreement question is worth 16% OF EVERY FIQH PAPER
+       from class 10 onward, AND an answer given in a single madhhab may not
+       score more than HALF the marks on it.
+    5. The external reviewer is NOT from the frame school.
+
+TEXTS EXPLICITLY REJECTED AS MATNS (these decisions are locked):
+    متن البناء في الصرف    rejected - outside the recovered scope of ṣarf (7-11)
+                           and its attribution is not verified
+    ملحة الإعراب           NOT taught as a matn - it is memorisation repertoire
+    مختصر خليل             rejected as a matn - for familiarity only
+    كشف الشبهات            for the TEACHER only, at every class - never a
+                           student text
+    نواقض الإسلام          taught AFTER the موانع (impediments), never before
+    كتاب التوحيد           a limited unit, NOT a pillar
+    جوهرة التوحيد          read as a DOCUMENT, not taught as doctrine
+
+================================================================================
+PART 10 - ASSESSMENT, THE SCALE, THE TRANSCRIPT AND THE GATES
+================================================================================
+
+10.1  THE DOCTRINE
+--------------------------------------------------------------------------------
+Instructional form determines assessment consequence MECHANICALLY. There is no
+discretion. The table is in Part 3. The one rule that must never bend:
+
+    الشرط لا يحمل درجة أبدًا  -  "A condition never carries a mark."
+
+10.2  THE THREE-SECTION TRANSCRIPT
+--------------------------------------------------------------------------------
+    SECTION A   Graded subjects. Enter the average. مستقل، مدمج، مضمّن.
+    SECTION B   Units (وحدات). Achievement ratings. Do NOT enter the average.
+    SECTION C   Conditions (شروط). Met / not met. NO MARKS EVER.
+
     Plus, for classes 1-2 only: a DESCRIPTIVE APPENDIX reading متقن / نامٍ /
     مبتدئ, with NO NUMBER. A small child gets one mark in Section A and a
     description - not a spread of numbers.
@@ -77,60 +124,3 @@ recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
     هداية القاري - عبد الفتاح المرصفي              6-12   teacher reference
     الملخص المفيد في علم التجويد - محمد أحمد معبد  6-9    student reference
     ورقة الإتقان والإقراء (school-authored)        10-11
-
-    TAFSĪR:
-    المختصر في تفسير القرآن الكريم - مركز تفسير    5-6    TEACHER material for
-                                                          the general meaning
-                                                          inside the sabaq.
-                                                          NO MATN IN THE
-                                                          CHILD'S HAND. AND
-                                                          NOTHING BEFORE CLASS
-                                                          FIVE (L-36).
-    التفسير الميسر - مجمع الملك فهد                7-9    student text; matches
-                                                          the prescribed page
-    تيسير الكريم الرحمن (السعدي)                   10-12  the base text -
-                                                          contemporary, non-
-                                                          madhhabī
-    تفسير القرآن العظيم - ابن كثير (selections)    10-12  the model of tafsīr
-                                                          bi-l-maʾthūr
-    الجامع لأحكام القرآن - القرطبي                 11-12  MĀLIKĪ, DECLARED -
-                                                          for آيات الأحكام
-    جامع البيان - الطبري                           11-12  teacher reference
-
-    LOCKED RULE ON TAFSĪR:
-      NO TAFSĪR BEFORE CLASS FIVE (L-36)
-      classes 5-9   التفسير يتبع المحفوظ - tafsīr FOLLOWS what is memorised
-      classes 10-12 يفارق المحفوظ - it PARTS from what is memorised, because
-                    the graduate must read tafsīr of what he has not memorised
-
-    أصول التفسير وعلوم القرآن:
-    مباحث في علوم القرآن - مناع القطان             9      TEACHER material.
-                                                          NO MATN AT CLASS 9,
-                                                          DELIBERATELY.
-    مقدمة في أصول التفسير - ابن تيمية              11-12  the prescribed matn
-
-11.2  PROGRAMME TWO - اللغة وعلومها
---------------------------------------------------------------------------------
-    المقدمة الآجرومية - ابن آجروم                  7      first naḥw matn
-    قطر الندى وبل الصدى - ابن هشام                 8-9    second naḥw matn
-    ألفية ابن مالك (prescribed sections)           10-12  the highest naḥw matn
-    شرح ابن عقيل - ابن عقيل                        10-12  teacher reference
-    النحو الواضح - الجارم وأمين                    5-7    exercise bank
-    جامع الدروس العربية - الغلاييني                8-12   reference
-    لامية الأفعال - ابن مالك                       8-10   the ṣarf matn
-    شرح بحرق على لامية الأفعال - بحرق الحضرمي      8-10   teacher reference
-    البلاغة الواضحة - الجارم وأمين                 9-10   base balāghah text
-    الجوهر المكنون - الأخضري                       11-12  the balāghah manẓūmah
-    جواهر البلاغة - الهاشمي                        12     reference
-    دلائل الإعجاز - الجرجاني (selections)          12     entry to iʿjāz
-    ملحة الإعراب - الحريري                         7-8    MEMORISATION ONLY -
-                                                          NOT A TEACHING MATN
-    ديوان الشافعي · لامية ابن الوردي ·
-      تائية الإلبيري                               6-12   the memorisation
-                                                          channel
-    مفتاح البيان (school materials)                1-3    unlocking the letter -
-                                                          33 weeks with its own
-                                                          gates
-    كراسة النسخ والرقعة (school) +
-      قواعد الإملاء - عبد السلام هارون             1-6    الخط والإملاء
-    مواد استقرائية (school-authored)               4-6    قواعد اللغة الوظيفية.

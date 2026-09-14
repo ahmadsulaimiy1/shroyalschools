@@ -5,6 +5,79 @@ for my question.
 ============================================================================
 
 
+NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
+every run rather than pretending otherwise:
+
+    L-08  the closed vocabulary of instructional forms
+    L-12  a subject returning HIGHER rather than repeating
+    L-21  ahl al-sunnah without exclusive madhhab
+    L-22  the frame may differ from topic to topic
+    L-23  the riwāyah and the muṣḥaf
+    L-26  a missing document is never invented
+    L-27  recovered material never mixed with a current ruling
+    L-28  an inference never presented as recovered text
+    L-29  creed and madhhab never inferred from a booklist
+
+The script closes with:
+
+    والتسعةُ الباقية تُقرأ ولا تُفحَص — فلا يُقال «تمّ التحقق» حتى تُقرأ.
+    "The remaining nine are read, not checked - so it is not said that
+    verification is complete until they have been read."
+
+A GREEN RUN IS NOT A VERIFICATION UNTIL A PERSON HAS READ THOSE NINE.
+
+The verifier has been TESTED AGAINST REGRESSIONS THAT ACTUALLY OCCURRED - the
+Primary 6 fourth book, الترجمة silently dropped, tajwīd folded back into the
+hour, الرسم العثماني re-added as a course, and balāghah opened at class 9. In
+each case the relevant checks fail and the script exits 1. A check that cannot
+fail is not a lock.
+
+================================================================================
+PART 14 - GENERATED VS HAND-WRITTEN DOCUMENTS
+================================================================================
+
+THE SINGLE SOURCE OF ALLOCATION DATA:
+    docs/curriculum/allocation-v11.json
+
+Its structure, per class:  [cornerstones, term_slots, hosted]
+    cornerstones = [subject, programme, weekly_slots, syllabus_note]
+    term_slots   = [label, slots_per_week,
+                      [[term, n_terms, subject, programme, note], ...]]
+    hosted       = [subject, programme, host, note]
+
+GENERATED FILES - NEVER HAND-EDIT THESE:
+    docs/curriculum/CLASS-BOOK.md          <- generate-class-book.py
+    docs/curriculum/SUBJECT-REGISTER.md    <- generate-subject-register.py
+
+Both reproduce byte-for-byte from the JSON. Hand-editing them is precisely what
+let the counts drift apart between documents. If you need to change the
+curriculum, CHANGE THE JSON AND REGENERATE.
+
+AUTHORITATIVE, HAND-MAINTAINED:
+    docs/curriculum/00-LOCKED-DECISIONS.md   THE REGISTER. The only source of
+                                             settled decisions.
+    docs/curriculum/CLAUDE.md                enforces the lock; loaded
+                                             automatically at session start
+    docs/curriculum/verify.py                the mechanical check
+
+ASSESSMENT INSTRUMENTS (hand-written, ~3,350 lines):
+    docs/curriculum/assessment/ASSESSMENT-POLICY.md
+    docs/curriculum/assessment/SPEC-GRID-G9-fiqh-usul.md
+    docs/curriculum/assessment/SPECIMEN-G9-fiqh-usul.md
+    docs/curriculum/assessment/QURAN-GATE-PROTOCOL.md
+    docs/curriculum/assessment/PRIMARY-STRAND-DESCRIPTORS.md
+
+DERIVED AND SUPERSEDED - roughly twenty-five further markdown files in
+docs/curriculum/ record earlier stages of the work. EVERY ONE OF THEM CARRIES A
+BANNER reading:
+
+    ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+    "A derived document - do not rely on it for figures."
+
+Ten of them additionally carry a banner naming the tajwīd and rasm errors
+specifically. DO NOT TAKE FIGURES FROM ANY OF THEM. They are kept as a record
+of how the work moved, not as sources.
+
 There is also a published bilingual instrument summarising everything, kept
 current with the register.
 
