@@ -1,0 +1,152 @@
+SHRS CURRICULUM BRIEFING — PART 15 OF 15  (FINAL PART)
+
+That is the complete briefing. Confirm you have all 15 parts, then wait
+for my question.
+============================================================================
+
+
+NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
+every run rather than pretending otherwise:
+
+    L-08  the closed vocabulary of instructional forms
+    L-12  a subject returning HIGHER rather than repeating
+    L-21  ahl al-sunnah without exclusive madhhab
+    L-22  the frame may differ from topic to topic
+    L-23  the riwāyah and the muṣḥaf
+    L-26  a missing document is never invented
+    L-27  recovered material never mixed with a current ruling
+    L-28  an inference never presented as recovered text
+    L-29  creed and madhhab never inferred from a booklist
+
+The script closes with:
+
+    والتسعةُ الباقية تُقرأ ولا تُفحَص — فلا يُقال «تمّ التحقق» حتى تُقرأ.
+    "The remaining nine are read, not checked - so it is not said that
+    verification is complete until they have been read."
+
+A GREEN RUN IS NOT A VERIFICATION UNTIL A PERSON HAS READ THOSE NINE.
+
+The verifier has been TESTED AGAINST REGRESSIONS THAT ACTUALLY OCCURRED - the
+Primary 6 fourth book, الترجمة silently dropped, tajwīd folded back into the
+hour, الرسم العثماني re-added as a course, and balāghah opened at class 9. In
+each case the relevant checks fail and the script exits 1. A check that cannot
+fail is not a lock.
+
+================================================================================
+PART 14 - GENERATED VS HAND-WRITTEN DOCUMENTS
+================================================================================
+
+THE SINGLE SOURCE OF ALLOCATION DATA:
+    docs/curriculum/allocation-v11.json
+
+Its structure, per class:  [cornerstones, term_slots, hosted]
+    cornerstones = [subject, programme, weekly_slots, syllabus_note]
+    term_slots   = [label, slots_per_week,
+                      [[term, n_terms, subject, programme, note], ...]]
+    hosted       = [subject, programme, host, note]
+
+GENERATED FILES - NEVER HAND-EDIT THESE:
+    docs/curriculum/CLASS-BOOK.md          <- generate-class-book.py
+    docs/curriculum/SUBJECT-REGISTER.md    <- generate-subject-register.py
+
+Both reproduce byte-for-byte from the JSON. Hand-editing them is precisely what
+let the counts drift apart between documents. If you need to change the
+curriculum, CHANGE THE JSON AND REGENERATE.
+
+AUTHORITATIVE, HAND-MAINTAINED:
+    docs/curriculum/00-LOCKED-DECISIONS.md   THE REGISTER. The only source of
+                                             settled decisions.
+    docs/curriculum/CLAUDE.md                enforces the lock; loaded
+                                             automatically at session start
+    docs/curriculum/verify.py                the mechanical check
+
+ASSESSMENT INSTRUMENTS (hand-written, ~3,350 lines):
+    docs/curriculum/assessment/ASSESSMENT-POLICY.md
+    docs/curriculum/assessment/SPEC-GRID-G9-fiqh-usul.md
+    docs/curriculum/assessment/SPECIMEN-G9-fiqh-usul.md
+    docs/curriculum/assessment/QURAN-GATE-PROTOCOL.md
+    docs/curriculum/assessment/PRIMARY-STRAND-DESCRIPTORS.md
+
+DERIVED AND SUPERSEDED - roughly twenty-five further markdown files in
+docs/curriculum/ record earlier stages of the work. EVERY ONE OF THEM CARRIES A
+BANNER reading:
+
+    ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+    "A derived document - do not rely on it for figures."
+
+Ten of them additionally carry a banner naming the tajwīd and rasm errors
+specifically. DO NOT TAKE FIGURES FROM ANY OF THEM. They are kept as a record
+of how the work moved, not as sources.
+
+There is also a published bilingual instrument summarising everything, kept
+current with the register.
+
+================================================================================
+PART 15 - WHAT IS STILL OPEN
+================================================================================
+
+These are known and deliberately recorded as debts, not hidden as gaps:
+
+ 1. The school must actually AUTHOR its own materials - كتاب القرآن وعلومه،
+    كتاب الدراسات الإسلامية، مفتاح البيان، متن الأدلة، كتاب الفِرَق، كراسة
+    التركات النيجيرية، كراسة النوازل، دليل المشروع، كراسة التحرير، ورقة الإتقان
+    والإقراء، كراسة النسخ والرقعة، دليل الإنشاء والخطابة، دورة المعاجم. Each is
+    a DEBT OWED BY THE SCHOOL, and each is adopted exactly as a matn once
+    written.
+
+ 2. كراسة التركات النيجيرية contains Nigerian legal content (the Sharīʿah Court
+    of Appeal, the Marriage Act, إدي-إيجي and أوري-أوجوري customary practice)
+    and MUST BE REVIEWED BY A NIGERIAN LAWYER before use.
+
+ 3. The edition of شرح سبط المارديني is to be verified.
+
+ 4. The certified distribution register at section 3.2 of SHRS-ACD-2026-007 is
+    still missing from the corpus. The architecture reconstructs it and must
+    say so.
+
+ 5. Assessment instruments exist for class 9 fiqh/uṣūl as a worked specimen.
+    The remaining papers, spec grids and specimens have not been written.
+
+ 6. The nine non-mechanical locked items (Part 13) require a scholar's reading
+    before any publication is called verified.
+
+================================================================================
+PART 16 - IF YOU ARE AN AI PICKING THIS UP
+================================================================================
+
+Do these things, in this order:
+
+ 1. READ docs/curriculum/00-LOCKED-DECISIONS.md IN FULL, before touching
+    anything. Not the other documents - they are derived and may be stale.
+
+ 2. RUN python3 docs/curriculum/verify.py and confirm it is green, so you know
+    the state you inherited.
+
+ 3. Do NOT rebuild a document from whatever is in front of you. That is the
+    documented failure mode of this entire project and it has cost months.
+
+ 4. Do NOT hand-edit CLASS-BOOK.md or SUBJECT-REGISTER.md. Change the JSON and
+    regenerate.
+
+ 5. Write subject names and text titles IN ARABIC.
+
+ 6. If a change would break a locked item, STOP AND ASK. Do not make the change
+    and explain afterwards.
+
+ 7. If you are given a new ruling, write it into the register FIRST - in the
+    change log, with its reason - and only then implement it.
+
+ 8. Do not present a mathematically balanced solution as though balance made it
+    correct. A mathematical solution is not automatically a curriculum
+    solution. Ask what a child of that age actually meets, what book is in his
+    hand, and which science he needs before this one.
+
+ 9. Do not infer the school's creed or madhhab from any booklist.
+
+10. When you report, be exact. Say what you verified and how. Say what you did
+    not verify. The Director General has caught every unearned claim so far.
+
+================================================================================
+END OF BRIEFING
+================================================================================
+

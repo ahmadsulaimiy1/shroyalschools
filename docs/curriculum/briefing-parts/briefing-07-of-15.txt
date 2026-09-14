@@ -1,0 +1,148 @@
+SHRS CURRICULUM BRIEFING — PART 7 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 5 slots | year hours: 130h
+        note: يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 6 · الصف السادس · Primary 6 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **المقدمة الجزرية** — مدخل
+    - التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن
+
+  PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 8 slots | year hours: 208h
+        note: يضم: قواعد اللغة الوظيفية (وبوابة الجسر) · الخط والإملاء · الإنشاء · النشيد
+    - قواعد اللغة الوظيفية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — **يحمل بوابة الجسر بلجنة ثلاثية**
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج
+    - الإنشاء والتعبير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — التعبير الكتابي · التلخيص والوصف
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (2 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: يضم المسارات الخمسة، ومنه المقدمة الأخضرية
+    - التاريخ والسيرة
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside التربية الإسلامية :: مدمج
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 7 · الصف السابع · JSS 1 -----------------------
+    19 lesson-slots per week | 9 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: جزء عم منهجيًّا
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الجزرية** — المخارج والصفات
+
+  PROGRAMME TWO  - اللغة وعلومها  (6 subjects)
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: **المطالعة الموسعة والمحادثة والاستيعاب والنصوص** — يضم النشيد والمحفوظات
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
+        note: الآجرومية — **مع الصرف في كتاب واحد**
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **التعبير الشفوي والكتابي** · الوصف والسرد والمحادثة
+    - الصرف
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside النحو :: مدمج — الميزان والمشتقات
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — ملحة الإعراب
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد النص القصير إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (6 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الأخضرية تمامًا
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: متن الأدلة + الأصول الثلاثة
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الأربعون + زيادات ابن رجب
+    - التاريخ والسيرة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: -
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: مضمّن — باب مسمّى
+    - التربية الإسلامية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مدمج — قسم مسمّى: السلوك والآداب والتزكية · **الأدب المفرد** · أرضية ٤٠٪
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 8 · الصف الثامن · JSS 2 -----------------------
+    19 lesson-slots per week | 10 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: آيات الأحكام + أصول التفسير مضمّنًا
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الجزرية** — الأحكام
+
+  PROGRAMME TWO  - اللغة وعلومها  (7 subjects)
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
+        note: قطر الندى
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **المطالعة والنصوص والاستيعاب والمحادثة**
+    - الصرف
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: لامية الأفعال + دورة المعاجم
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإنشاء الموجَّه** · الرسالة والتقرير والتلخيص
+    - فقه اللغة والمعاجم
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الصرف :: دورة ٣ أسابيع
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — قناة المتون
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد الرسالة والتقرير إلى اليوربا

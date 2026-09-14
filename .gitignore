@@ -1,0 +1,4 @@
+
+# Python bytecode from the curriculum scripts
+__pycache__/
+*.pyc

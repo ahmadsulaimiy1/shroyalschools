@@ -1,0 +1,147 @@
+SULTAN HANAFI ROYAL SCHOOLS (SHRS / GACAIS) — CURRICULUM BRIEFING (SHORT FORM)
+================================================================================
+A supplementary Islamic and Arabic school in the Yoruba-speaking region of
+Nigeria (Ilorin / Ibadan). One coherent twelve-year system, not twelve year
+plans stitched together. Everything below is SETTLED and must not be redesigned.
+Write all subject names and text titles IN ARABIC.
+
+THE ONE THING TO UNDERSTAND FIRST
+Every document in this project was at some point rebuilt from whatever was in
+front of the rebuilder, and each time, decisions settled earlier but absent from
+THAT file were silently dropped. Four subjects vanished this way once. Do not
+rebuild from context. The rule is:
+    "لا يُغيَّر بند مقفل إلا بقرار صريح جديد من المدير العام. وما ليس في هذا السجل فليس بقرار."
+    A locked item changes only by explicit new ruling. What is not in the
+    register is not a decision.
+
+STRUCTURE
+  12 classes exactly. No kindergarten, no stage before class 1.
+  4 sections: التمهيدي (1-2) · الابتدائي (3-6) · الإعدادي (7-9) · الثانوي (10-12)
+  3 programmes, and EVERY subject falls under one of them:
+      البرنامج الأول   القرآن وعلومه
+      البرنامج الثاني  اللغة وعلومها      <- NOT "اللغة العربية وعلومها"
+      البرنامج الثالث  الدراسات الإسلامية
+
+TIME
+  Mon-Wed 14:00-18:00 · Thu-Fri no school · Sat-Sun 09:00-15:00
+  حصة = 40 min · فصل = 13 weeks · year = 39 weeks in 3 terms
+  Weekly slots: 13 in classes 1-6, 19 in classes 7-12
+  الساعة القرآنية — a protected daily hour OUTSIDE those slots (290 min/wk lower,
+  340 upper). NEVER drawn upon by any subject, in any class.
+  Year: 526h30m (classes 1-6) / 715h (7-12). Whole journey 7,449 hours.
+
+INSTRUCTIONAL FORMS — closed vocabulary, invent no seventh
+  مستقل  independent: own slot, own book, own paper, enters the average
+  مدمج   merged with ONE named partner: no book, a NAMED SECTION on the
+         partner's paper with a 40% floor
+  مضمّن  embedded in a NAMED HOST: no slot, no book, assessed inside the host
+  وحدة   examined block with no slot; consumes its host's minutes; Section B,
+         does NOT enter the average
+  مسار   a strand inside a book: no mark, descriptive only (متقن/نامٍ/مبتدئ)
+  شرط    a condition: NEVER CARRIES A MARK. Section C, met or not met.
+  GOVERNING RULE: لا اسمَ بلا دقيقة — no subject on any list without lessons or a
+  named host. (WAEC once gated the certificate with zero timetabled minutes and
+  a "38/38 accounted for" check still balanced.)
+
+THE DESIGN IDEAS THAT MATTER MOST
+  1. Lower classes (1-6): EVERYTHING merged or embedded. The child is not
+     burdened with books. Minimum THREE books — one per programme — plus the
+     muṣḥaf. The muṣḥaf is a source, never counted as Programme One's book;
+     كتاب القرآن وعلومه is Programme One's actual book.
+  2. TERM COURSES, like a university. Not every subject every term. One weekly
+     slot (خانة فصلية) carries three different courses across the year, and is
+     counted ONCE in the ledger. A subject may pause and return — provided it
+     returns HIGHER, not as repetition.
+  3. The load RISES with the class, and THE GRADUATING CLASS CARRIES THE MOST
+     (27 sciences, 14 books). A board once reduced it and was reversed.
+  4. CORNERSTONES NEVER PAUSE — النحو · اللغة العربية · الفقه · العقيدة ·
+     الحديث · التفسير run continuously from class 7 to 12.
+  5. NO SCIENCE BEFORE ITS INSTRUMENT (لا يُقدَّم علمٌ على آلته). البلاغة does not
+     open before foundational naḥw is complete — first place is CLASS 10, after
+     قطر الندى closes in class 9. And within it the order is المعاني (10) →
+     البيان (11) → البديع (12), the order of the Talkhīṣ and the Miftāḥ, because
+     maʿānī is applied grammar and bayān rests on it. What precedes balāghah in
+     class 9 is النقد والآداب — texts tasted, WITH NO RHETORICAL TERMINOLOGY.
+     Taste first; class 10 then names what the student had been finding.
+  6. ARABIC IS THE INSTRUMENT OF EVERY SHARʿĪ SCIENCE, so at Ideadi — the
+     section that BUILDS the instrument — the language programme does not fall
+     below Islamic studies (42% / 42% / 44% against 42% / 42% / 40%). At Thanawi
+     the instrument is USED on the major matns, so the sharʿī share may rise,
+     against a floor of one third. AND THE LANGUAGE IS NOT ITS GRAMMAR: النحو
+     والصرف are instruments ABOUT Arabic, not Arabic. The living language —
+     مطالعة، محادثة، استيعاب، إنشاء، خطابة — runs unbroken from class 4 to 12,
+     with الترجمة إلى اليوربا embedded from class 7.
+  7. الإنشاء والتعبير (classes 4–9) MATURES INTO البحث والخطابة (10–12). Never
+     swap them: البحث is the work of Thanawi. A boy of thirteen composes and
+     expresses; he does not referee research. Class 7 التعبير الشفوي والكتابي ·
+     class 8 الإنشاء الموجَّه · class 9 الإنشاء الحر والإلقاء · then البحث المحكّم
+     والخطبة والمناظرة from class 10.
+  8. NO TAFSĪR BEFORE CLASS FIVE. It had been taught from class one inside the
+     Qur'anic hour; a child still unlocking the letter was being given the
+     meaning before he could read the words — a science before its instrument.
+     It now begins at class 5, alongside الشهادة الابتدائية, and runs to 12.
+     التفسير يتبع المحفوظ — tafsīr follows what is memorised (classes 5-9);
+     from class 10 it parts from it, because the graduate must read tafsīr of
+     what he has not memorised.
+  9. التجويد IS AN INDEPENDENT SUBJECT, classes 4-11 — its own lesson, matn and
+     paper. It is NOT folded into the Qur'anic hour in the advanced classes; the
+     hour is for ḥifẓ and murājaʿah. تحفة الأطفال (4-5) → الجزرية (6-9) →
+     الإتقان (10) → الإقراء والتصحيح (11). 208 hours. Embedded without a matn in
+     classes 1-3 and, as maintenance only, in class 12.
+ 10. الرسم العثماني and فرش رواية حفص are CHAPTERS inside the class-9 tajwīd
+     syllabus — NOT courses, NOT subjects. رواية حفص عن عاصم is a description of
+     the muṣḥaf we read from, not a subject taught. علوم القرآن is likewise not
+     a standalone course.
+ 11. الخطابة والتواصل are a priority, and with them الترجمة إلى اليوربا — the
+     graduate renders his research and khuṭbah back into Yoruba.
+ 12. البلاغة 9 terms (floor 6) · العروض never a single term · النقد والآداب a
+     subject with weight, not a small unit · الصرف in EVERY advanced class ·
+     الفرائض ring-fenced with its own paper and certificate line.
+
+34 SUBJECTS: 4 under القرآن وعلومه · 14 under اللغة وعلومها · 14 under
+الدراسات الإسلامية · 2 capstone-year service (WAEC, التحرير الامتحاني).
+Sciences per class: 11 11 11 12 13 13 15 17 17 19 21 27
+Books per class:     3  3  3  3  3  3  9 10 10 11 11 14
+
+MADHHAB
+أهل السنة with NO exclusive commitment to one school, and the declared frame MAY
+DIFFER FROM TOPIC TO TOPIC. A core text is a DECLARED TEACHING FRAME (إطار
+تعليمي مُعلَن), never an affiliation. As built: مالكي in furūʿ · شافعي in uṣūl,
+farāʾiḍ and muṣṭalaḥ · حنبلي in the first ḥadīth and creed matns · حنفي in the
+creedal spine (الطحاوية) · مالكي deliberately for bidʿah (الاعتصام) · a West
+African regional peer (عثمان بن فودي).
+  مِعيار عدم الحصر — the conformity test, all five must hold: every course
+  declares its frame · a bound register of the reasons for disagreement · all
+  four schools appear twice or more with none above 50% · a comparative question
+  worth 16% of every fiqh paper from class 10, with a single-madhhab answer
+  capped at half marks · an external reviewer NOT of the frame school.
+  CRITICAL: never infer the school's creed or madhhab from a booklist.
+  Riwāyah: حفص عن عاصم. Muṣḥaf: مطبعة الملك فهد.
+
+ASSESSMENT AND GATES
+  Scale: امتياز 80 · جدارة 70 · إجادة 60 · مقبول 50. الشهادة الإعدادية needs 55+.
+  Transcript: Section A graded · Section B units (no average) · Section C
+  conditions (NO MARKS EVER).
+  Gates: بوابة القراءة (1) · الطلاقة (3) · الشهادة الابتدائية (5) · بوابة الجسر
+  (6) · الشهادة الإعدادية (9, external examiner) · الثانوية القرآنية (11) ·
+  شهادة التخرج (12: ten competencies + viva + proof of sitting WAEC).
+  QUR'AN TARGET: TWELVE JUZʾ certified (متقنة), with FIFTEEN as مرتبة الامتياز.
+  The original fifteen was calculated on thirteen funded years including a
+  kindergarten that was later abolished, and was never recalculated. A school
+  that certifies fifteen on twelve years is certifying what it did not fund.
+
+RULES OF EVIDENCE — these bind you
+  A missing document is never invented. Recovered material is never mixed with a
+  current ruling. An inference is never presented as recovered text. Creed and
+  madhhab are never inferred from booklists. Every subject has a named source
+  (when this was first checked, THIRTEEN subjects had none — including التربية
+  الإسلامية, the first book a child holds). School-authored material is adopted
+  exactly as a matn; what is not yet written is A DEBT OWED BY THE SCHOOL, never
+  a gap in the curriculum.
+
+IF YOU ARE ASKED TO WORK ON THIS
+  Do not redesign what is above. Do not rebuild a document from whatever is in
+  front of you. If a change would break one of these, STOP AND ASK first. A
+  mathematically balanced timetable is not automatically a curriculum solution —
+  ask what a child of that age actually meets, what book is in his hand, and
+  which science he needs before this one.

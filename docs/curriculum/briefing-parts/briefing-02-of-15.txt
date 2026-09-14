@@ -1,0 +1,148 @@
+SHRS CURRICULUM BRIEFING — PART 2 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+2.2  THE UNITS
+--------------------------------------------------------------------------------
+
+    حصة (lesson slot)     = 40 minutes
+    فصل (term)            = 13 weeks
+    سنة (year)            = 39 weeks, in three terms
+    Weekly slots, classes 1-6   = 13
+    Weekly slots, classes 7-12  = 19
+
+2.3  THE PROTECTED QUR'ANIC HOUR - الساعة القرآنية
+--------------------------------------------------------------------------------
+
+A protected daily hour for memorisation and revision sits OUTSIDE the 13 or 19
+weekly slots entirely. It is 290 minutes a week in classes 1-6 and 340 minutes
+a week in classes 7-12.
+
+    الساعة القرآنية محمية - لا تُقتطع لأي مادة في أي صف
+    "The Qur'anic hour is protected - it is not drawn upon for any subject in
+    any class."
+
+No subject may take minutes from it. This has been violated in drafts by
+quietly hosting subjects inside it; see Part 9, error 12.
+
+2.4  THE ANNUAL LEDGER
+--------------------------------------------------------------------------------
+
+    Classes 1-6:   13 slots x 39 weeks x 40 min = 338h subject time
+                   + 188h30m Qur'anic hour
+                   = 526h30m per year
+
+    Classes 7-12:  19 slots x 39 weeks x 40 min = 494h subject time
+                   + 221h Qur'anic hour
+                   = 715h per year
+
+    THE WHOLE TWELVE-YEAR JOURNEY:  7,449 hours
+
+A rule of method applies here and must be respected: never round silently, and
+always separate ANALYTICAL DEMAND (how much time a subject needs) from
+OPERATIONAL ALLOCATION (how much time it is actually given). A timetable period
+is an operational decision; it is not the unit of curriculum design.
+
+An earlier ledger claimed 754 hours per year and a 19h20m week. That was wrong:
+100 minutes had been booked as مراجعة (revision) when 60 of those minutes were
+actually wuḍūʾ and dismissal. The corrected figures - 18h20m per week and 715
+hours per year - are the ones above.
+
+================================================================================
+PART 3 - THE VOCABULARY OF INSTRUCTIONAL FORM
+================================================================================
+
+This vocabulary is closed. These six forms and no others may be used to describe
+how a subject is delivered. Inventing a seventh form is a breach of L-08.
+
+    مستقل   INDEPENDENT
+            Holds its own timetable slot. Has its own book. Has its own exam
+            paper. Enters the average. Appears in Section A of the transcript.
+
+    مدمج    MERGED
+            Shares a slot with ONE named partner subject. Has no book of its
+            own - it lives inside the partner's book. It gets a NAMED SECTION on
+            the partner's paper with a 40% floor, so it cannot be quietly
+            dropped. Enters the average, aggregated.
+
+    مضمّن   EMBEDDED
+            Taught inside a NAMED HOST subject. No slot, no book, no separate
+            paper. Assessed inside the host. Still appears in Section A through
+            its host.
+
+    وحدة    UNIT
+            A named, separately examined block that never holds a slot of its
+            own. Consumes its HOST's minutes. Appears in Section B of the
+            transcript as an achievement rating. Does NOT enter the average.
+
+    مسار    STRAND
+            A thread inside a book (used for the four strands inside كتاب
+            الدراسات الإسلامية in the lower classes). No slot, no book, no
+            mark. Appears only as a descriptive appendix - متقن / نامٍ / مبتدئ -
+            with NO NUMBER attached.
+
+    دوراني  ROTATING
+            A slot that cycles between courses. Reserved vocabulary; used
+            sparingly.
+
+    شرط     CONDITION
+            Not an instructional form but an assessment category. A شرط NEVER
+            CARRIES A MARK. It appears in Section C of the transcript as met or
+            not met. خدمة التتويج and the WAEC sitting requirement are شروط.
+
+THE GOVERNING PRINCIPLE (L-07):  لا اسمَ بلا دقيقة
+    "No name without a minute."
+    No subject may appear on any list unless it has either timetabled lessons
+    or a NAMED HOST. A subject with neither is a fiction. This rule exists
+    because a subject (WAEC) once gated the leaving certificate while having
+    zero timetabled minutes anywhere in the school, and a "38/38 subjects
+    accounted for" check still came out balanced because the claimant had never
+    been entered into the ledger at all.
+
+ASSESSMENT FOLLOWS FORM MECHANICALLY. The instructional form determines the
+assessment consequence with no discretion:
+
+    form      paper?                    book?           average?   transcript
+    -------------------------------------------------------------------------
+    مستقل     yes                       yes             yes        Section A
+    مدمج      named section, 40% floor   partner's book  yes        Section A
+    مضمّن     no                        no              via host   Section A
+    وحدة      achievement rating         no              no         Section B
+    مسار      no                        no              no         descriptive
+    شرط       NEVER CARRIES A MARK       -               no         Section C
+
+================================================================================
+PART 4 - THE THIRTY-NINE LOCKED DECISIONS, IN FULL
+================================================================================
+
+Each is given in the original Arabic exactly as it stands in the register,
+followed by an explanation of what it means and why it exists. These are the
+constitution. Do not paraphrase them away.
+
+CHAPTER ONE - PRINCIPLES
+
+L-01  ١٢ صفًّا — لا أكثر ولا أقل. لا روضة ولا مرحلة قبلها
+      Twelve classes, no more and no fewer. No kindergarten and no stage before
+      it. Any plan that assumes thirteen or more funded years is invalid.
+
+L-02  ٤ أقسام: التمهيدي (١–٢) · الابتدائي (٣–٦) · الإعدادي (٧–٩) · الثانوي (١٠–١٢)
+      Four sections, with those exact class ranges. This was forgotten once in
+      a rebuild and had to be restated angrily.
+
+L-03  ٣ برامج: القرآن وعلومه · اللغة وعلومها · الدراسات الإسلامية
+      Three programmes. Note again: اللغة وعلومها, not اللغة العربية وعلومها.
+
+L-04  كل مادة تحت واحد من البرامج الثلاثة، ولا واحدة خارجها
+      Every subject under one of the three programmes; none outside.
+
+L-05  في التمهيدي والابتدائي كل شيء مدمج أو مضمّن. لا يُثقَل الطفل بالكتب
+      In التمهيدي and الابتدائي (classes 1-6) EVERYTHING is merged or embedded.
+      The child is not burdened with books. This is why classes 1-6 carry only
+      three books despite meeting twelve or thirteen named sciences.
+
+L-06  الحد الأدنى ثلاثة كتب — كتاب لكل برنامج — والمصحف. والمصحف أصلٌ لا كتابَ تعليم
+      Minimum THREE books - one per programme - plus the muṣḥaf. The muṣḥaf is
+      a source, not a teaching book, and is never counted as Programme One's
+      book. This was originally "two books", which left Programme One with no
+      book at all in the lower classes. The Director General caught it: if
+      there are three programmes, there must be at least three books.
