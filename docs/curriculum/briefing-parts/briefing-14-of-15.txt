@@ -1,0 +1,143 @@
+SHRS CURRICULUM BRIEFING — PART 14 OF 15  (continued — reply only "OK")
+============================================================================
+
+--------------------------------------------------------------------------------
+    - Executing instructions blindly instead of organising scholars to reason
+      about them. The instruction was explicit: "think like scholars, organise
+      scholars to do that for you... don't just carry out my instruction
+      blindfoldedly."
+    - Producing English subject names. Arabic is required.
+    - Rebuilding documents from whatever was in front of the rebuilder.
+    - Presenting a mathematically balanced solution as though balance alone
+      made it a curriculum solution. It does not.
+
+12.3  A NOTE ON WHAT THE RECOVERED DOCUMENTS ALREADY CONTAINED
+--------------------------------------------------------------------------------
+SHRS-ACD-2026-007 Part 1 had ALREADY diagnosed and remedied three load problems
+that this project then rediscovered from scratch:
+    - class 9 overloaded  -> remedy: دمج السيرة بالتاريخ
+    - class 12 too light  -> remedy: برمجة خدمة التتويج
+    - the class 7 jump    -> remedy: تمهيد الفصل الأول
+Read the corpus before designing. The answer may already be in it.
+
+Note also: the certified distribution register named at section 3.2 of
+SHRS-ACD-2026-007 IS STILL MISSING from the corpus. The current subject
+architecture is a reconstruction of it, and that fact must be stated wherever
+the architecture is presented as authoritative. Do not claim it as recovered.
+
+================================================================================
+PART 13 - HOW THE LOCK IS ENFORCED MECHANICALLY
+================================================================================
+
+A register that only a reader checks is how every previous decision was lost.
+So the register is now enforced by a script.
+
+    RUN:  cd docs/curriculum && python3 verify.py
+
+It checks the allocation data against the register and EXITS NON-ZERO if any
+locked item is broken. A non-zero exit means the document is not ready and is
+not published.
+
+TWENTY-SIX OF THE THIRTY-FIVE ITEMS ARE CHECKED MECHANICALLY:
+
+    L-01/02   twelve classes in four sections
+    L-03/04   every subject under one of the three programmes
+    L-05      lower classes: everything merged or embedded
+    L-06/31   three books minimum, one per programme, classes 1-6
+    L-07      no name without a lesson or a named host
+    L-09      the load rises with the class
+    L-10      the graduating class carries the most
+    L-11      every term slot carries exactly three terms
+    L-13      the cornerstones never pause
+    L-14      balāghah carries six full terms or more
+    L-15      prosody is never taught in a single term
+    L-16      criticism and literature keeps its weight
+    L-17      ṣarf is present in every advanced class
+    L-18      translation into Yoruba is carried, not dropped
+    L-19      farāʾiḍ is ring-fenced
+    L-20      the Qur'anic hour untouched
+    L-24/25   every class balances its weekly lessons
+    L-30      every subject has a named source
+    L-32      tajwīd independent in classes 4-11
+    L-33      rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses
+    L-34      no science opened before its instrument
+    L-35      balāghah runs maʿānī -> bayān -> badīʿ
+
+NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
+every run rather than pretending otherwise:
+
+    L-08  the closed vocabulary of instructional forms
+    L-12  a subject returning HIGHER rather than repeating
+    L-21  ahl al-sunnah without exclusive madhhab
+    L-22  the frame may differ from topic to topic
+    L-23  the riwāyah and the muṣḥaf
+    L-26  a missing document is never invented
+    L-27  recovered material never mixed with a current ruling
+    L-28  an inference never presented as recovered text
+    L-29  creed and madhhab never inferred from a booklist
+
+The script closes with:
+
+    والتسعةُ الباقية تُقرأ ولا تُفحَص — فلا يُقال «تمّ التحقق» حتى تُقرأ.
+    "The remaining nine are read, not checked - so it is not said that
+    verification is complete until they have been read."
+
+A GREEN RUN IS NOT A VERIFICATION UNTIL A PERSON HAS READ THOSE NINE.
+
+The verifier has been TESTED AGAINST REGRESSIONS THAT ACTUALLY OCCURRED - the
+Primary 6 fourth book, الترجمة silently dropped, tajwīd folded back into the
+hour, الرسم العثماني re-added as a course, and balāghah opened at class 9. In
+each case the relevant checks fail and the script exits 1. A check that cannot
+fail is not a lock.
+
+================================================================================
+PART 14 - GENERATED VS HAND-WRITTEN DOCUMENTS
+================================================================================
+
+THE SINGLE SOURCE OF ALLOCATION DATA:
+    docs/curriculum/allocation-v11.json
+
+Its structure, per class:  [cornerstones, term_slots, hosted]
+    cornerstones = [subject, programme, weekly_slots, syllabus_note]
+    term_slots   = [label, slots_per_week,
+                      [[term, n_terms, subject, programme, note], ...]]
+    hosted       = [subject, programme, host, note]
+
+GENERATED FILES - NEVER HAND-EDIT THESE:
+    docs/curriculum/CLASS-BOOK.md          <- generate-class-book.py
+    docs/curriculum/SUBJECT-REGISTER.md    <- generate-subject-register.py
+
+Both reproduce byte-for-byte from the JSON. Hand-editing them is precisely what
+let the counts drift apart between documents. If you need to change the
+curriculum, CHANGE THE JSON AND REGENERATE.
+
+AUTHORITATIVE, HAND-MAINTAINED:
+    docs/curriculum/00-LOCKED-DECISIONS.md   THE REGISTER. The only source of
+                                             settled decisions.
+    docs/curriculum/CLAUDE.md                enforces the lock; loaded
+                                             automatically at session start
+    docs/curriculum/verify.py                the mechanical check
+
+ASSESSMENT INSTRUMENTS (hand-written, ~3,350 lines):
+    docs/curriculum/assessment/ASSESSMENT-POLICY.md
+    docs/curriculum/assessment/SPEC-GRID-G9-fiqh-usul.md
+    docs/curriculum/assessment/SPECIMEN-G9-fiqh-usul.md
+    docs/curriculum/assessment/QURAN-GATE-PROTOCOL.md
+    docs/curriculum/assessment/PRIMARY-STRAND-DESCRIPTORS.md
+
+DERIVED AND SUPERSEDED - roughly twenty-five further markdown files in
+docs/curriculum/ record earlier stages of the work. EVERY ONE OF THEM CARRIES A
+BANNER reading:
+
+    ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+    "A derived document - do not rely on it for figures."
+
+Ten of them additionally carry a banner naming the tajwīd and rasm errors
+specifically. DO NOT TAKE FIGURES FROM ANY OF THEM. They are kept as a record
+of how the work moved, not as sources.
+
+There is also a published bilingual instrument summarising everything, kept
+current with the register.
+
+================================================================================
+PART 15 - WHAT IS STILL OPEN

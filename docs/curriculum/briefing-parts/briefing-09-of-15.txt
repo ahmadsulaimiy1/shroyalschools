@@ -1,0 +1,143 @@
+SHRS CURRICULUM BRIEFING — PART 9 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 12 · الصف الثاني عشر · SS 3 ------------------------
+    19 lesson-slots per week | 14 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (4 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: سورة بعمقها
+    - أصول التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside التفسير :: تطبيق منهجي
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — العلم تمّ عند الحادي عشر؛ هنا صيانةٌ وتدقيق
+
+  PROGRAMME TWO  - اللغة وعلومها  (9 subjects)
+    - البحث والخطابة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **البحث ١٥٠٠ كلمة · الخطبة عشر دقائق · المناظرة بأدب الخلاف**
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: لغة البحث والمناقشة
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الألفية تمامًا + أصول النحو + **الصرف مدمجًا**
+    - البلاغة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **علم البديع ومدخل الإعجاز**
+    - النقد والآداب
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: الأدب الأندلسي والأفريقي
+    - العروض وعلم القافية
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: علم القافية — الوحدة الختامية
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside كل مادة بمتنها :: 
+    - الصرف
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside النحو :: مراجعة تطبيقية
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: رد البحث والخطبة إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (12 subjects)
+    - خدمة التتويج
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: إشراف — شرط الشهادة
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: بداية المجتهد تمامًا
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الطحاوية تمامًا
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: البخاري ومسلم + جامع العلوم والحكم
+    - أصول الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: المقاصد + القواعد + مجلة الأحكام
+    - الفرائض التطبيقية
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: التركات · محكمة الاستئناف الشرعية · قانون الزواج · إدي-إيجي وأوري-أوجوري
+    - الدراسات الحديثة
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: النوازل وفقه التعايش
+    - علم الكلام
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: دراسةٌ عنه لا له
+    - المنطق
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: التصورات والتصديقات
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: 
+    - مصطلح الحديث
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مقدمات الكتب الستة
+    - التاريخ والسيرة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: مادة البحث المحكّم
+
+  CAPSTONE SERVICE - خدمة سنة التتويج  (2 subjects)
+    - WAEC
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الدراسات الإسلامية · العربية
+    - التحرير الامتحاني
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الجزء الثاني — خارج WAEC
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة فصلية (أ) [2 slots/wk]: ف١ الفرائض التطبيقية >> ف٢ الدراسات الحديثة >> ف٣ علم الكلام
+    خانة فصلية (ب) [2 slots/wk]: ف١ النقد والآداب >> ف٢ العروض وعلم القافية >> ف٣ المنطق
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+================================================================================
+PART 7 - TAJWĪD ACROSS THE TWELVE CLASSES (L-32, L-33)
+================================================================================
+
+This was one of the four errors the Director General personally corrected. The
+principle:
+
+    الساعة القرآنية للحفظ والمراجعة. والتجويد علمٌ له حصته ومتنه وورقته.
+    "The Qur'anic hour is for memorisation and revision. Tajwīd is a science
+    with its own lesson, its own matn and its own paper."
+
+Folding the science into the memorisation hour in the advanced classes left a
+discipline that has a matn and no lesson. The Qur'anic sciences board had
+already ruled that tajwīd should be independent - and that ruling was mislaid
+during a rebuild.
+
+    CLASS      FORM          SLOTS   MATN AND SYLLABUS
+    ---------------------------------------------------------------------------
+    1-3        مضمّن         -       No matn. Correction of makhārij and ṣifāt
+                                     by ear and by talqīn only.
+    4          مستقل         1       تحفة الأطفال والغلمان
+    5          مستقل         1       تحفة الأطفال, completed
+    6          مستقل         1       المقدمة الجزرية - introduction
+    7          مستقل         1       الجزرية - المخارج والصفات
+    8          مستقل         1       الجزرية - الأحكام
+    9          مستقل         1       الجزرية completed · الوقف والابتدا ·
+                                     فرش رواية حفص · الرسم العثماني
+    10         مستقل         1       الإتقان - application across the whole
+                                     muṣḥaf
+    11         مستقل         1       الإقراء والتصحيح - preparation for the
+                                     الثانوية القرآنية committee
+    12         مضمّن         -       No matn. The science completed at class 11;
+                                     here it is maintenance and checking only.
+
+    INDEPENDENT IN EIGHT CLASSES (4-11) = 208 HOURS.
+
+The two bolded items at class 9 - فرش رواية حفص and الرسم العثماني - are
+CHAPTERS OF THIS SYLLABUS. They are not courses and must never be re-entered as
+subjects.

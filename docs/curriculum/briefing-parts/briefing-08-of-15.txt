@@ -1,0 +1,146 @@
+SHRS CURRICULUM BRIEFING — PART 8 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: يفارق المحفوظ
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإتقان** — التطبيق على المصحف كاملًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (9 subjects)
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: المطالعة الموسعة والمحادثة والمناظرة
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: ألفية ابن مالك
+    - البلاغة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **علم المعاني** — الإسناد والمسند والتقديم والتأخير والحذف · ومعه العروض مدمجًا في ف٢+ف٣
+    - البحث والخطابة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: منهج البحث والخطابة وأدب الحوار
+    - النقد والآداب
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: النصوص الجاهلية والإسلامية
+    - الصرف
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: لامية الأفعال تمامًا والتصريف التطبيقي
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside كل مادة بمتنها :: قناة المتون
+    - العروض وعلم القافية
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البلاغة :: ف٢+ف٣ — التقطيع والبحور
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: رد المقال إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (7 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: مختصر القدوري + المرشد المعين وثيقةً
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: أم البراهين والواسطية معًا
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: بلوغ المرام والموطأ — ومعه مصطلح الحديث مدمجًا
+    - أصول الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الورقات — النصف الأول
+    - التاريخ والسيرة
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: الإسلام في نيجيريا — الشيخ آدم الإلوري
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: باب مسمّى
+    - مصطلح الحديث
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: نخبة الفكر
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة فصلية [2 slots/wk]: ف١ التاريخ والسيرة >> ف٢ النقد والآداب >> ف٣ الصرف
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 11 · الصف الحادي عشر · SS 2 ------------------------
+    19 lesson-slots per week | 11 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (4 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: آيات الأحكام والبياني
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإقراء والتصحيح** — استعدادًا للجنة الثانوية القرآنية
+    - أصول التفسير
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: مقدمة ابن تيمية
+
+  PROGRAMME TWO  - اللغة وعلومها  (9 subjects)
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: المهارات الأربع العليا
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الألفية — ومعه الصرف مدمجًا
+    - البلاغة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **علم البيان** — التشبيه والمجاز والكناية · ومعه النقد والآداب والعروض مدمجَين
+    - البحث والخطابة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: إعداد البحث المحكّم والخطبة
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside كل مادة بمتنها :: 
+    - الصرف
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside النحو :: أبنية ومعتل تطبيقًا
+    - النقد والآداب
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البلاغة :: النقد التطبيقي
+    - العروض وعلم القافية
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البلاغة :: الزحافات والعلل
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: المصطلح الشرعي
+
+  PROGRAMME THREE - الدراسات الإسلامية  (8 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: بداية المجتهد وإحياء السنة
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الاعتصام وكتاب التوحيد وحدةً — ومعه كتاب الفِرَق والتاريخ
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: بلوغ المرام والشمائل — ومعه مصطلح الحديث مدمجًا
+    - أصول الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الورقات تمامًا ونظم الورقات
+    - الفرائض
+        form: INDEPENDENT | duration: term course ف١+ف٢ | weekly: 2 slots | year hours: 34h40m
+        note: متن الرحبية · ٥٢ حصة · ورقة وسطر مستقلان
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: 
+    - مصطلح الحديث
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: نزهة النظر وتخريج
+    - التاريخ والسيرة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: كتاب الفِرَق ومكانة علماء غرب أفريقيا
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة مكثفة [2 slots/wk]: ف١+ف٢ الفرائض >> ف٣ أصول التفسير

@@ -1,0 +1,73 @@
+SHRS CURRICULUM BRIEFING — PART 15 OF 15  (FINAL PART)
+
+That is the complete briefing. Confirm you have all 15 parts, then wait
+for my question.
+============================================================================
+
+================================================================================
+
+These are known and deliberately recorded as debts, not hidden as gaps:
+
+ 1. The school must actually AUTHOR its own materials - كتاب القرآن وعلومه،
+    كتاب الدراسات الإسلامية، مفتاح البيان، متن الأدلة، كتاب الفِرَق، كراسة
+    التركات النيجيرية، كراسة النوازل، دليل المشروع، كراسة التحرير، ورقة الإتقان
+    والإقراء، كراسة النسخ والرقعة، دليل الإنشاء والخطابة، دورة المعاجم. Each is
+    a DEBT OWED BY THE SCHOOL, and each is adopted exactly as a matn once
+    written.
+
+ 2. كراسة التركات النيجيرية contains Nigerian legal content (the Sharīʿah Court
+    of Appeal, the Marriage Act, إدي-إيجي and أوري-أوجوري customary practice)
+    and MUST BE REVIEWED BY A NIGERIAN LAWYER before use.
+
+ 3. The edition of شرح سبط المارديني is to be verified.
+
+ 4. The certified distribution register at section 3.2 of SHRS-ACD-2026-007 is
+    still missing from the corpus. The architecture reconstructs it and must
+    say so.
+
+ 5. Assessment instruments exist for class 9 fiqh/uṣūl as a worked specimen.
+    The remaining papers, spec grids and specimens have not been written.
+
+ 6. The nine non-mechanical locked items (Part 13) require a scholar's reading
+    before any publication is called verified.
+
+================================================================================
+PART 16 - IF YOU ARE AN AI PICKING THIS UP
+================================================================================
+
+Do these things, in this order:
+
+ 1. READ docs/curriculum/00-LOCKED-DECISIONS.md IN FULL, before touching
+    anything. Not the other documents - they are derived and may be stale.
+
+ 2. RUN python3 docs/curriculum/verify.py and confirm it is green, so you know
+    the state you inherited.
+
+ 3. Do NOT rebuild a document from whatever is in front of you. That is the
+    documented failure mode of this entire project and it has cost months.
+
+ 4. Do NOT hand-edit CLASS-BOOK.md or SUBJECT-REGISTER.md. Change the JSON and
+    regenerate.
+
+ 5. Write subject names and text titles IN ARABIC.
+
+ 6. If a change would break a locked item, STOP AND ASK. Do not make the change
+    and explain afterwards.
+
+ 7. If you are given a new ruling, write it into the register FIRST - in the
+    change log, with its reason - and only then implement it.
+
+ 8. Do not present a mathematically balanced solution as though balance made it
+    correct. A mathematical solution is not automatically a curriculum
+    solution. Ask what a child of that age actually meets, what book is in his
+    hand, and which science he needs before this one.
+
+ 9. Do not infer the school's creed or madhhab from any booklist.
+
+10. When you report, be exact. Say what you verified and how. Say what you did
+    not verify. The Director General has caught every unearned claim so far.
+
+================================================================================
+END OF BRIEFING
+================================================================================
+

@@ -1,0 +1,145 @@
+SHRS CURRICULUM BRIEFING — PART 5 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+
+CAPSTONE SERVICE - خدمة سنة التتويج - 2 subjects
+    SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
+    ------------------------------------------------------------------------------
+    WAEC                         .    .    .    .    .    .    .    .    .    .    .  IND
+    التحرير الامتحاني            .    .    .    .    .    .    .    .    .    .    .  IND
+
+
+SUBJECTS PER CLASS (named sciences the student actually meets):
+
+    class    1   2   3   4   5   6   7   8   9  10  11  12
+    count   12  12  12  13  13  13  13  15  15  19  21  27
+    slots   13  13  13  13  13  13  19  19  19  19  19  19
+    books    3   3   3   3   3   3   9  10  10  11  11  14
+
+The load rises and the graduating class carries the most, as L-09 and L-10
+require. The book floor of three holds through the whole of the lower school
+even as the sciences grow from 12 to 13 - which is exactly what L-05 intends:
+the child meets more knowledge without carrying more books.
+
+WHAT IS *NOT* A SUBJECT - do not re-add these, they have been removed twice:
+
+    الرسم العثماني        A chapter inside the class-9 tajwīd syllabus. Not a
+                          course, not a subject. (L-33)
+    رواية حفص عن عاصم     A description of the muṣḥaf we read from (L-23). Not
+                          a subject that gets taught. Its farsh is a chapter in
+                          the tajwīd paper.
+    علوم القرآن           Not a standalone course. Its topics are distributed:
+                          أصول التفسير sits inside التفسير, and التجويد is a
+                          science in its own right.
+    المصحف                A source. Never counted among the books or subjects.
+
+================================================================================
+PART 6B - CLASS BY CLASS, IN FULL DETAIL
+================================================================================
+
+Every class, every subject, its form, its duration, its weekly slots, its annual
+hours and its syllabus note. This is the operational heart of the curriculum.
+The Arabic syllabus notes are the actual prescribed content.
+
+--- CLASS 1 · الصف الأول · Primary 1 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — يُلقَّن مع كل سبق
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 9 slots | year hours: 234h
+        note: كتاب واحد يضم: القراءة والتهجي · الخط والإملاء · النشيد والمحفوظات
+    - القراءة والتهجي
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — وبوابته تُقوَّم على حدة
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — ملف أعمال
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: كتاب واحد يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 2 · الصف الثاني · Primary 2 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — يُلقَّن مع كل سبق
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 9 slots | year hours: 234h
+        note: كتاب واحد يضم: القراءة والتهجي · الخط والإملاء · النشيد والمحفوظات
+    - القراءة والتهجي
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — وبوابته تُقوَّم على حدة
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — ملف أعمال
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: كتاب واحد يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 3 · الصف الثالث · Primary 3 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — يُلقَّن مع كل سبق
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 9 slots | year hours: 234h
+        note: كتاب واحد يضم: القراءة والتهجي · الخط والإملاء · النشيد والمحفوظات
+    - القراءة والتهجي
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — وبوابته تُقوَّم على حدة
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — ملف أعمال
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن

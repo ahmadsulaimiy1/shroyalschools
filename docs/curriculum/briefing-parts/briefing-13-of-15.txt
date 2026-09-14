@@ -1,0 +1,123 @@
+SHRS CURRICULUM BRIEFING — PART 13 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+    SCHOOL-AUTHORED MATERIALS (these were the thirteen subjects that the L-30
+    check found had NO SOURCE AT ALL - including التربية الإسلامية itself, the
+    very first book a child holds):
+    كتاب الدراسات الإسلامية (school)            1-8    TERBIYAH - carries the
+                                                       four strands; and from
+                                                       it المقدمة الأخضرية at
+                                                       class 6
+    كراسة التركات النيجيرية (school)            12     estates left unnamed ·
+                                                       the Sharīʿah Court of
+                                                       Appeal · the Marriage
+                                                       Act · إدي-إيجي and
+                                                       أوري-أوجوري. ITS LEGAL
+                                                       CONTENT IS TO BE REVIEWED
+                                                       BY A NIGERIAN LAWYER.
+    كراسة النوازل (school) + فقه النوازل
+      - محمد الجيزاني (teacher)                 12     الدراسات الحديثة
+    علم الكلام sources                          12     الإبانة - الأشعري
+                                                       (extract) · مقالات
+                                                       الإسلاميين - الأشعري ·
+                                                       كتاب التوحيد - الماتريدي
+                                                       (extract) · إلجام العوام
+                                                       - الغزالي · تحريم النظر
+                                                       في كتب الكلام - ابن قدامة
+                                                       · درء التعارض - ابن تيمية
+                                                       (its introduction) ·
+                                                       جوهرة التوحيد - اللقاني
+                                                       (READ AS A DOCUMENT)
+    دليل المشروع وملفه (school)                 12     خدمة التتويج - proposal ·
+                                                       permissions · log ·
+                                                       impact · beneficiary
+                                                       testimony. NOT A
+                                                       KNOWLEDGE SUBJECT - IT IS
+                                                       SUPERVISION.
+    كراسة التحرير (school)                      12     التحرير الامتحاني -
+                                                       reading the rubric ·
+                                                       timing · command words ·
+                                                       structure
+
+================================================================================
+PART 12 - ERRORS ALREADY MADE AND CORRECTED - DO NOT REPEAT THESE
+================================================================================
+
+This section exists so that the next person does not spend weeks rediscovering
+what has already been settled. Every item below actually happened.
+
+12.1  STRUCTURAL AND ARITHMETIC ERRORS
+--------------------------------------------------------------------------------
+ 1. A whole recovered document (SHRS-ACD-2026-007, Part 4, sections 4.1-4.4)
+    containing a complete timetable and ledger was MISSED, and version 1 of the
+    ledger was built on invented scenarios instead. Always read the recovered
+    corpus completely before building.
+
+ 2. A "monotonic status" rule was INVENTED - once a subject rose in status it
+    could never be demoted. This was never ruled and was withdrawn. It is not
+    compulsory to teach every subject every term.
+
+ 3. All eleven sharʿī sciences were made STRANDS at classes 1-6, including the
+    instrumental sciences (أصول الفقه، مصطلح الحديث، المنطق). A child of six
+    does not have a strand of uṣūl al-fiqh. Corrected to four legitimate
+    strands: التوحيد، الفقه، الحديث، السيرة.
+
+ 4. A shared term-slot was counted ONCE PER COURSE instead of once per slot,
+    producing a class 9 carrying 23 slots against a ceiling of 19.
+
+ 5. The MUṢḤAF was counted as Programme One's book, which left the lower
+    classes with books for only two of three programmes. The muṣḥaf is a
+    source. كتاب القرآن وعلومه was created to be Programme One's actual book.
+
+ 6. WAEC had ZERO TIMETABLED MINUTES at class 12 while gating the leaving
+    certificate - and a "38/38 subjects accounted for" check still balanced,
+    because a mandatory claimant had never been entered into the ledger at all.
+    This is the origin of L-07.
+
+ 7. A timetable was built on allocation matrix v2 while the matrix in force was
+    v3 - two internally verified documents specifying different weeks.
+
+ 8. Asymmetric مدمج notation (السيرة I / التاريخ ●) was recording a HOST-GUEST
+    relation, not a merge - so a ruling to merge sīrah with history had never
+    actually been implemented despite appearing to be.
+
+ 9. FOUR SUBJECTS WERE SILENTLY DROPPED during an unrelated balāghah rebuild:
+    أصول التفسير · التاريخ والسيرة · الترجمة · مصطلح الحديث. The Director
+    General noticed. This is the single most characteristic failure of this
+    project.
+
+10. The L-30 check FAILED on its first run: thirteen subjects had no source at
+    all, including التربية الإسلامية - the first book a child ever holds.
+
+11. The three-programme structure was forgotten, and then the four sections
+    were forgotten, in successive rebuilds.
+
+12. The Qur'anic sciences board's ruling that تجويد be مستقل at classes 4-11
+    was OVERRIDDEN in a rebuild, folding the science back into the memorisation
+    hour. This is now L-32.
+
+13. الرسم العثماني was carried as an independent course and رواية حفص as
+    another. Neither is a course. This is now L-33.
+
+14. البلاغة was opened in class 9 term 1 while قطر الندى was still unfinished
+    that same year - teaching a science before its instrument. And within
+    balāghah the order was بيان then معاني, which is inverted. These are now
+    L-34 and L-35.
+
+15. Book counts drifted between documents - the same class showing 9 in one
+    file and 11 in another - purely because each file was tallied by hand. This
+    is now L-31.
+
+16. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
+    books by splitting قواعد اللغة الوظيفية out as its own entry. It folds back
+    into the language book carrying بوابة الجسر.
+
+17. The annual ledger claimed 754 hours where 100 minutes had been booked as
+    مراجعة when 60 of those minutes were wuḍūʾ and dismissal. Corrected to 715.
+
+18. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
+    including a kindergarten that was later abolished, and was never
+    recalculated.
+
+12.2  METHOD ERRORS THE DIRECTOR GENERAL CORRECTED DIRECTLY
