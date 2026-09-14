@@ -171,6 +171,15 @@ bad = [f'{sci} يُفتح في {first(sci)} وآلتُه ({tool}) تُختم ف�
        if first(sci) is not None and first(sci) <= close]
 check('L-34', not bad, f'لا يُقدَّم علمٌ على آلته — {bad or "4/4"}')
 
+# ── L-36 · no tafsīr before class five ────────────────────────────────────
+present=[int(g) for g in GRADES
+         if any(clean(x[0])=='التفسير' for x in D[g][0]+D[g][2])
+         or any(clean(t[2])=='التفسير' for sl in D[g][1] for t in sl[2])]
+early=[g for g in present if g<5]
+check('L-36', not early and present and min(present)==5,
+      f'لا تفسير قبل الخامس — أوله {min(present) if present else "غائب"}، ومستمرٌّ إلى {max(present) if present else "—"}'
+      + (f' · وُجد في {early}' if early else ''))
+
 # ── L-35 · المعاني ← البيان ← البديع ──────────────────────────────────────
 def balaghah(g):
     for x in D[g][0]:
@@ -198,11 +207,11 @@ BY_HAND = {
 }
 COVERED = {'L-01','L-02','L-03','L-04','L-05','L-06','L-07','L-09','L-10','L-11',
            'L-13','L-14','L-15','L-16','L-17','L-18','L-19','L-20','L-24','L-25',
-           'L-30','L-31','L-32','L-33','L-34','L-35'}
+           'L-30','L-31','L-32','L-33','L-34','L-35','L-36'}
 
 for line in notes + fails: print(line)
 print()
-print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٥.')
+print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٦.')
 print(f'لا يفحصه إلا قارئ ({len(BY_HAND)} بندًا): ' + ' · '.join(sorted(BY_HAND)))
 for k in sorted(BY_HAND): print(f'    {k} — {BY_HAND[k]}')
 print()
