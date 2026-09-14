@@ -51,11 +51,24 @@ fc-cache -f >/dev/null 2>&1 || true
 python3 "$HERE/verify.py" || { echo "!! a locked item is broken — not building" >&2; exit 1; }
 python3 "$HERE/gen-teacher-guide.py"
 
-# ── 3 · render, two passes, then join ───────────────────────────────
-python3 "$HERE/topdf.py" "$HERE/HANDBOOK-cover.html" "$TMP/cover.pdf" 1 NOFURN
+# ── 3 · render each board on its own terms, then join ───────────────
+#  The two boards bleed to the trim, so they render at margin 0 with no
+#  running furniture. The text block does not. The wraparound sheet is a
+#  fourth render at the binder's trim — front · spine · back on one piece.
+python3 "$HERE/topdf.py" "$HERE/HANDBOOK-cover.html" "$TMP/front.pdf" 1 NOFURN
+python3 "$HERE/topdf.py" "$HERE/HANDBOOK-back.html"  "$TMP/back.pdf"  1 NOFURN
 python3 "$HERE/topdf.py" "$HERE/HANDBOOK-body.html"  "$TMP/body.pdf"
-pdfunite "$TMP/cover.pdf" "$TMP/body.pdf" "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf"
+pdfunite "$TMP/front.pdf" "$TMP/body.pdf" "$TMP/back.pdf" \
+         "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf"
+
+WRAP_W=$(python3 -c "import re,io;src=open('$HERE/gen-teacher-guide.py',encoding='utf-8').read();\
+import ast;print(2*210+int(re.search(r'SPINE_MM = (\\d+)',src).group(1)))")
+python3 "$HERE/topdf.py" "$HERE/HANDBOOK-wrap.html" \
+        "$HERE/SHRS-CURRICULUM-COVER-WRAP.pdf" 1 NOFURN "${WRAP_W}x297"
 
 # ── 4 · the furniture must never print over the text ────────────────
-python3 "$HERE/audit-furniture.py" "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf"
+NPAGES=$(pdfinfo "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf" | awk '/^Pages:/{print $2}')
+python3 "$HERE/audit-furniture.py" "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf" \
+        "--boards=1,$NPAGES"      # the front board and the back board
 echo "built · $HERE/SHRS-CURRICULUM-HANDBOOK.pdf"
+echo "built · $HERE/SHRS-CURRICULUM-COVER-WRAP.pdf  (${WRAP_W} x 297 mm, trim, no bleed)"

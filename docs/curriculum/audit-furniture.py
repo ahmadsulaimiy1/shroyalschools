@@ -1,6 +1,14 @@
 import subprocess, sys, re, html
 from collections import Counter
 PDF = sys.argv[1]
+# The full-bleed boards are named by the build, not guessed. Guessing them
+# from 'this page has no furniture' fails: the covers carry their own
+# letterspaced GACAIS line, and pdftotext splits letterspaced Latin into
+# single letters, so the cover's own type matches the running foot's tokens.
+BOARDS = set()
+for _a in sys.argv[2:]:
+    if _a.startswith('--boards='):
+        BOARDS = {int(v) for v in _a.split('=',1)[1].split(',') if v.strip()}
 PT = 72/25.4
 TOP = 29.0*PT      # content must not start above this
 BOT = 23.0*PT      # nor end below (H - this)
@@ -31,7 +39,7 @@ for w,h,body in pages:
 hdr_bot = max(tops) if tops else 0
 ftr_top = min(bots) if bots else float(pages[0][1])
 print(f'furniture band: header ends y={hdr_bot:.1f} · footer starts y={ftr_top:.1f}')
-bad=[]
+bad=[]; boards=set()
 for pno,(w,h,body) in enumerate(pages,1):
     H=float(h)
     # the furniture's real position ON THIS PAGE, not a global minimum
@@ -47,12 +55,16 @@ for pno,(w,h,body) in enumerate(pages,1):
         x0,y0,x1,y1 = map(float, m.group(1,2,3,4))
         t = html.unescape(m.group(5)).strip()
         if not t or t in furn: continue
-        if pno==1: continue                       # the cover is full-bleed by design
+        if pno in BOARDS:
+            boards.add(pno); continue          # a board bleeds; nothing to collide with
         if y1 < 22 or y0 > H-34: continue         # inside the furniture band = furniture
         # a collision is content intruding on the furniture band (or within 8pt)
         if y0 < hdr_bot + 8:  bad.append((pno,'HEADER',round(y0,1),t[:30]))
         elif y1 > ftr_top - 8: bad.append((pno,'FOOTER',round(y1,1),t[:30]))
 print(f'pages={N}   furniture tokens ignored: {len(furn)}')
+print('full-bleed boards skipped: ' + (', '.join(f'p{n}' for n in sorted(BOARDS)) or 'none'))
+_missing = BOARDS - set(range(1, N+1))
+if _missing: print(f'!! declared boards outside the file: {sorted(_missing)}')
 print(f'REAL COLLISIONS: {len(bad)}')
 seen=set()
 for pno,zone,y,t in bad:

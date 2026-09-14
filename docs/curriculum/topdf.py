@@ -3,6 +3,11 @@ from playwright.async_api import async_playwright
 SRC, OUT = sys.argv[1], sys.argv[2]
 RANGES = sys.argv[3] if len(sys.argv)>3 else ''
 NOFURN = len(sys.argv)>4
+# an explicit trim size, for sheets that are not A4 — the wraparound cover
+SIZE = None
+for a in sys.argv[4:]:
+    if 'x' in a and a.replace('x','').replace('mm','').isdigit():
+        SIZE = [f'{v}mm' for v in a.replace('mm','').split('x')]
 HDR = """<div style="width:100%;font-family:Archivo,'Helvetica Neue',sans-serif;
  font-weight:600;font-size:6.1pt;letter-spacing:.19em;text-transform:uppercase;
  color:#9C8A6E;padding:0 19mm;display:flex;justify-content:space-between;
@@ -29,7 +34,8 @@ async def main():
         b = await p.chromium.launch(**kw)
         pg = await b.new_page()
         await pg.goto(f'file://{SRC}', wait_until='networkidle')
-        await pg.pdf(path=OUT, format='A4', print_background=True,
+        dims = ({'width': SIZE[0], 'height': SIZE[1]} if SIZE else {'format': 'A4'})
+        await pg.pdf(path=OUT, print_background=True, **dims,
                      display_header_footer=not NOFURN, header_template=HDR, footer_template=FTR,
                      margin=({'top':'0','bottom':'0','left':'0','right':'0'} if NOFURN else
                              {'top':'29mm','bottom':'23mm','left':'19mm','right':'19mm'}),

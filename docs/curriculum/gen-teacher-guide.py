@@ -588,6 +588,70 @@ def _mark(name):
 CREST  = _mark('shrs-crest.png')
 GACAIS = _mark('gacais-mark.png')
 
+
+# ── the physical book ───────────────────────────────────────────────
+# The spine width is CALCULATED, not chosen: 80 printed pages is 40 leaves;
+# on 120 gsm uncoated cream (≈0.15 mm a leaf) the text block is ≈6 mm; two
+# 2.5 mm boards and the endpapers bring it to ≈12 mm, and 14 mm is taken so
+# the spine type has air. **This is an assumption until the binder confirms
+# the stock.** Change SPINE_MM and the wraparound sheet resizes itself.
+SPINE_MM = 14
+PAGE_MM = 210
+WRAP_MM = PAGE_MM * 2 + SPINE_MM          # 434 mm, trim size, no bleed added
+
+# The statement on the back board. Every clause of it is already in this
+# document — it is a précis of the programme openers, not a new claim.
+STATEMENT = (
+    'منهجٌ واحدٌ في اثني عشر صفًّا، تجري موادُّه في ثلاثة برامجَ متعاقبة، '
+    'في أربعة أقسامٍ يسلِّم كلٌّ منها إلى الذي بعده. '
+    'القرآنُ أصلُ الرحلة لا مادةً فيها، والعربيّةُ آلةُ كلِّ علمٍ شرعيّ فتبدأ قبل '
+    'غيرها وتنتهي بعده، والدراساتُ الإسلامية تُفتَح على المتون الكبرى حين ينضج الطالب.')
+
+
+# ── the two drawings of the cover system ────────────────────────────
+# Both take an id suffix, because the wraparound sheet carries the front
+# and the back in ONE document and duplicate gradient ids would collide.
+FOIL = ('<stop offset="0" stop-color="#7E6029"/><stop offset=".17" stop-color="#D6BA80"/>'
+        '<stop offset=".31" stop-color="#F2E2BB"/><stop offset=".47" stop-color="#AD8B4B"/>'
+        '<stop offset=".62" stop-color="#8A6A2E"/><stop offset=".78" stop-color="#E6CC93"/>'
+        '<stop offset=".9" stop-color="#C09A54"/><stop offset="1" stop-color="#7E6029"/>')
+
+
+def arch_svg(k, cls='arch'):
+    """The two-centred arch — the portal form, cropped by the trim."""
+    return (f'<svg class="{cls}" viewBox="0 0 168 210" xmlns="http://www.w3.org/2000/svg" '
+            f'fill="none" stroke="url(#ag{k})" preserveAspectRatio="none">'
+            f'<defs><linearGradient id="ag{k}" x1="0" y1="0" x2="1" y2=".4">'
+            '<stop offset="0" stop-color="#6E5322"/><stop offset=".3" stop-color="#E0C489"/>'
+            '<stop offset=".55" stop-color="#9C7C3F"/><stop offset=".8" stop-color="#EDD7A4"/>'
+            '<stop offset="1" stop-color="#7E6029"/></linearGradient></defs>'
+            '<path d="M6,172 L6,96 A96,96 0 0,1 84,20 A96,96 0 0,1 162,96 L162,172" '
+            'stroke-width="1.1"/>'
+            '<path d="M15,152 L15,99 A88,88 0 0,1 84,31 A88,88 0 0,1 153,99 L153,152" '
+            'stroke-width=".4"/>'
+            '<path d="M84,20 L84,44" stroke-width=".4" opacity=".5"/>'
+            f'<g fill="url(#ag{k})" stroke="none">'
+            '<rect x="-3.2" y="-3.2" width="6.4" height="6.4" '
+            'transform="translate(84,31) rotate(45)"/>'
+            '<rect x="-2" y="-2" width="4" height="4" transform="translate(6,96) rotate(45)"/>'
+            '<rect x="-2" y="-2" width="4" height="4" transform="translate(162,96) rotate(45)"/>'
+            '</g></svg>')
+
+
+def lat_svg(k):
+    """The house lozenge repeated into a tooled band."""
+    return (f'<svg class="lat" viewBox="0 0 630 30" xmlns="http://www.w3.org/2000/svg" '
+            f'preserveAspectRatio="none"><defs><linearGradient id="lg{k}" x1="0" y1="0" '
+            f'x2="1" y2=".35">{FOIL}</linearGradient></defs>'
+            f'<pattern id="px{k}" patternUnits="userSpaceOnUse" width="26" height="30">'
+            f'<path d="M0,15 L13,2.5 L26,15 L13,27.5 Z" fill="none" stroke="url(#lg{k})" '
+            'stroke-width="1"/>'
+            f'<path d="M13,2.5 L13,0 M13,27.5 L13,30" stroke="url(#lg{k})" stroke-width=".6"/>'
+            f'<rect x="-1.7" y="-1.7" width="3.4" height="3.4" fill="url(#lg{k})" '
+            'transform="translate(13,15) rotate(45)"/></pattern>'
+            f'<rect x="0" y="0" width="630" height="30" fill="url(#px{k})"/></svg>')
+
+
 CSS = """
 /* ═══════════════════════════════════════════════════════════════════
    SHRS CURRICULUM HANDBOOK · type & page system
@@ -784,7 +848,7 @@ p{margin:0 0 4.8mm;}
 .cover .mark .ml{font-family:var(--fu);font-weight:600;font-size:5.5pt;
  letter-spacing:.2em;text-transform:uppercase;color:#8E7A5C;direction:ltr;
  line-height:1.7;padding-left:.2em;}
-.cover .spine{position:absolute;left:21.5mm;bottom:126mm;z-index:6;
+.cover .vlabel{position:absolute;left:21.5mm;bottom:126mm;z-index:6;
  writing-mode:vertical-rl;transform:rotate(180deg);
  font-family:var(--fu);font-weight:600;font-size:6pt;letter-spacing:.3em;
  text-transform:uppercase;color:#93805F;direction:ltr;}
@@ -821,6 +885,12 @@ p{margin:0 0 4.8mm;}
 .xver .vs{margin-right:auto;font-size:8.4pt;color:var(--burg);}
 .imp .attr{border-right:.9pt solid var(--gold);padding:3.4mm 6mm 4.4mm;background:var(--paper2);
  margin:0 0 5.5mm;font-size:9.2pt;line-height:1.74;}
+.imp .attr .pend{margin-top:3.4mm;padding-top:2.8mm;font-family:var(--fa);
+ border-top:.4pt solid var(--line);font-size:9pt;color:var(--burg);
+ letter-spacing:0;line-height:1.7;}
+.imp .attr .pend span{display:block;font-family:var(--fu);font-weight:500;
+ font-size:6.4pt;letter-spacing:.09em;text-transform:uppercase;color:#8A6A62;
+ direction:ltr;margin-top:1.6mm;}
 .imp .attr .lat{display:block;font-size:7pt;margin-top:3mm;letter-spacing:.1em;
  text-transform:none;color:var(--bronze);line-height:1.6;}
 .sups{border-top:1.3pt solid var(--gold);border-bottom:.35pt solid var(--line);
@@ -1376,21 +1446,139 @@ h6{font-size:7.2pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:0;}
 .cls{border-top:.9pt solid var(--brown);padding:3.4mm 0 4.5mm;margin:0 0 6mm;
  page-break-inside:avoid;}
 .clsh{display:flex;align-items:baseline;gap:5mm;margin:0 0 3mm;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   THE BACK BOARD AND THE SPINE · one object with the front
+   ───────────────────────────────────────────────────────────────────
+   The front is brown over cream; the back inverts it — cream over a
+   quarter-height band of the same cloth, so the brown runs unbroken
+   across the spine and then stops. The arch returns mirrored, so its
+   crop falls on the other edge of the sheet. The lattice band returns
+   at a different station. Nothing is copied; everything rhymes.
+   Laid flat, an Arabic book reads FRONT · SPINE · BACK from the left.
+   ═══════════════════════════════════════════════════════════════════ */
+.back{height:297mm;width:210mm;padding:0;page-break-before:always;
+ position:relative;overflow:hidden;color:#3B2A1D;
+ background:#F2E7D3;
+ background-image:linear-gradient(200deg,#F7EFE0 0%,#F1E5D0 54%,#E9DAC0 100%);}
+.back .bpanel{position:absolute;top:0;left:0;width:210mm;height:84mm;
+ background:#2C1E11;overflow:hidden;box-shadow:0 1.4mm 4mm rgba(64,43,22,.15);
+ background-image:
+  repeating-linear-gradient(90deg,rgba(255,247,230,.030) 0 .32mm,transparent .32mm .64mm),
+  repeating-linear-gradient(0deg,rgba(0,0,0,.13) 0 .32mm,transparent .32mm .64mm),
+  linear-gradient(152deg,#3A2817 0%,#2C1E11 52%,#1E1208 100%);}
+.back .barch{position:absolute;top:-14mm;left:-30mm;width:168mm;height:196mm;
+ opacity:.24;transform:scaleX(-1);}
+.back .bedge{position:absolute;top:84mm;left:0;width:210mm;height:.7pt;z-index:4;
+ background:linear-gradient(90deg,rgba(240,222,178,.7),rgba(214,186,128,.18));}
+.back .bpc{position:absolute;top:0;left:0;width:210mm;height:84mm;
+ padding:17mm 22mm 0 22mm;z-index:3;}
+.back .block{display:flex;align-items:center;gap:5.5mm;margin:0 0 5mm;}
+.back .block img{width:20mm;height:auto;display:block;flex:none;}
+.back .block .ln{flex:1;text-align:right;padding-left:5.5mm;
+ border-left:.5pt solid rgba(214,186,128,.32);}
+.back .house{font-family:var(--fk);font-weight:600;font-size:10.4pt;color:#F4EBD8;
+ line-height:1.5;margin:0 0 1.8mm;}
+.back .houseL{display:inline-block;font-family:var(--fu);font-weight:600;font-size:6.1pt;
+ letter-spacing:.24em;text-transform:uppercase;color:#C2A36A;direction:ltr;
+ padding-left:.24em;}
+.back .bt{font-family:var(--fa);font-weight:700;font-size:15pt;color:#FBF3E3;
+ line-height:1.5;margin:0 0 1.6mm;}
+.back .btL{display:inline-block;font-family:var(--fd);font-weight:600;font-size:9.6pt;
+ letter-spacing:.22em;text-transform:uppercase;color:#C2A36A;direction:ltr;
+ padding-left:.22em;}
+.back .bband{position:absolute;top:79mm;left:0;width:210mm;height:8mm;z-index:5;
+ background:#2A1A0C;
+ background-image:linear-gradient(180deg,#33200F,#22140880 58%,#1B1006);
+ border-top:1.1pt solid rgba(230,208,156,.72);
+ border-bottom:.5pt solid rgba(230,208,156,.42);}
+.back .bband .lat{position:absolute;inset:0;width:100%;height:100%;opacity:.85;}
+/* ── the cream register of the back board ───────────────────────── */
+.back .blower{position:absolute;top:110mm;right:22mm;left:22mm;text-align:right;}
+/* the composition closes on the same rule-and-lozenge the front opens with */
+.back .bclose{display:flex;align-items:center;margin:9mm 0 0;}
+.back .bclose:before{content:'';flex:1;height:.35pt;background:rgba(120,95,58,.26);}
+.back .bclose i{width:2.1mm;height:2.1mm;margin:0 3.4mm;transform:rotate(45deg);
+ display:block;background-image:linear-gradient(135deg,#E2C68C,#8A6A2E);}
+.back .bclose:after{content:'';width:26mm;height:1pt;
+ background-image:linear-gradient(90deg,#7E6029,#E2C68C);}
+.back .bsec{margin:5mm 0 0;font-family:var(--fn);font-size:7.4pt;color:#8A7658;
+ line-height:1.9;}
+.back .bstate{font-family:var(--fa);font-size:11.2pt;color:#3F2E1E;line-height:2.02;
+ margin:0 0 5mm;}
+.back .bstateL{font-family:var(--fl);font-size:8.4pt;color:#6B5941;line-height:1.68;
+ direction:ltr;text-align:left;margin:0 0 7.5mm;
+ border-top:.4pt solid rgba(120,95,58,.3);padding-top:3.6mm;}
+.back .figs{display:flex;gap:0;margin:0 0 7.5mm;}
+.back .fg{flex:1;text-align:center;padding:0 3mm;
+ border-left:.35pt solid rgba(120,95,58,.26);}
+.back .fg:last-child{border-left:0;}
+.back .fg b{display:block;font-family:var(--fa);font-weight:700;font-size:25pt;
+ line-height:1;color:#8A6A2E;margin:0 0 2.2mm;}
+.back .fg span{display:block;font-family:var(--fn);font-size:7.6pt;color:#7A684F;}
+.back .bstatus{border-top:1.3pt solid var(--gold);border-bottom:.35pt solid rgba(120,95,58,.3);
+ padding:3.4mm 0 4mm;margin:0 0 7mm;font-family:var(--fa);font-size:9.4pt;
+ color:#4A3826;line-height:1.82;}
+.back .bstatus b{color:#6E1D2B;}
+.back .bstatus span{display:block;font-family:var(--fu);font-weight:500;font-size:6.2pt;
+ letter-spacing:.09em;text-transform:uppercase;color:#8A6A62;direction:ltr;
+ text-align:left;margin-top:2.4mm;line-height:1.7;}
+.back .bgac{display:flex;align-items:center;gap:5.4mm;}
+.back .bgac .gb{flex:none;background:#0C1527;padding:2.4mm 3mm;
+ border:.4pt solid rgba(214,186,128,.42);}
+.back .bgac .gb img{width:10.5mm;height:auto;display:block;}
+.back .bgac .tx{flex:1;text-align:right;}
+.back .bgac .pub{font-family:var(--fa);font-size:9pt;color:#3B2A1D;line-height:1.72;
+ margin:0 0 1.6mm;}
+.back .bgac .pubL{font-family:var(--fu);font-weight:500;font-size:5.9pt;
+ letter-spacing:.1em;text-transform:uppercase;color:#8A7558;direction:ltr;
+ text-align:right;line-height:1.66;padding-left:.1em;}
+.back .bfoot{position:absolute;left:22mm;right:22mm;bottom:18mm;
+ border-top:.4pt solid rgba(120,95,58,.36);padding-top:3.6mm;
+ display:flex;align-items:baseline;gap:8mm;}
+.back .bfoot .l{flex:none;font-family:var(--fu);font-weight:500;font-size:5.6pt;
+ letter-spacing:.15em;text-transform:uppercase;color:#9C8767;direction:ltr;}
+.back .bfoot .r{flex:1;text-align:right;font-family:var(--fn);font-size:7.2pt;
+ color:#7A684F;}
+/* ── the spine ──────────────────────────────────────────────────── */
+.bspine{width:14mm;height:297mm;position:relative;overflow:hidden;flex:none;
+ background:#2C1E11;
+ background-image:
+  repeating-linear-gradient(0deg,rgba(255,247,230,.030) 0 .32mm,transparent .32mm .64mm),
+  linear-gradient(90deg,#1A1008 0%,#33240F 26%,#2C1E11 74%,#1A1008 100%);}
+.bspine:before,.bspine:after{content:'';position:absolute;top:9mm;bottom:9mm;width:.45pt;
+ background:linear-gradient(180deg,rgba(214,186,128,.12),rgba(240,222,178,.62) 46%,
+  rgba(214,186,128,.14));}
+.bspine:before{left:2.6mm;} .bspine:after{right:2.6mm;}
+.bspine .stop{position:absolute;top:13mm;left:0;right:0;text-align:center;
+ font-family:var(--fu);font-weight:600;font-size:5.2pt;letter-spacing:.16em;
+ color:#B79A63;direction:ltr;writing-mode:vertical-rl;height:22mm;
+ display:flex;align-items:center;justify-content:center;}
+.bspine .sp{position:absolute;top:44mm;bottom:34mm;left:0;right:0;
+ writing-mode:vertical-rl;text-align:center;
+ display:flex;align-items:center;justify-content:center;}
+.bspine .s1{font-family:var(--fa);font-weight:700;font-size:12.6pt;color:#FCF5E7;}
+.bspine .s2{font-family:var(--fk);font-weight:600;font-size:7.2pt;color:#C0A886;
+ margin-right:3mm;}
+.bspine .sfoot{position:absolute;bottom:9mm;left:0;right:0;text-align:center;}
+.bspine .sfoot img{width:9.4mm;height:auto;margin:0 auto;display:block;}
+/* ── the wraparound sheet, for the binder ───────────────────────── */
+.wrap{width:434mm;height:297mm;display:flex;position:relative;overflow:hidden;}
+.wrap .cover,.wrap .back{page-break-before:auto;page-break-after:auto;flex:none;}
+
 .clsh h3{margin:0;font-size:13pt;}
 .cn{font-family:var(--fa);font-size:21pt;color:var(--gold2);line-height:1;font-weight:700;}
 .csec{margin-right:auto;font-size:8.4pt;color:var(--mute);}
 """
 
 
-def build():
-    o = io.StringIO(); w = o.write
-    w('<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">'
-      '<title>مدارس السلطان حنفي الملكية — دليل المنهج العربي والإسلامي</title>'
-      f'<style>{CSS}</style></head><body>')
 
-    # ═══ COVER ═══
-    w('<div class="cover">'
-      '<div class="panel">' '<svg class="arch" viewBox="0 0 168 210" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="url(#ag)" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="1" y2=".4"><stop offset="0" stop-color="#6E5322"/><stop offset=".3" stop-color="#E0C489"/><stop offset=".55" stop-color="#9C7C3F"/><stop offset=".8" stop-color="#EDD7A4"/><stop offset="1" stop-color="#7E6029"/></linearGradient></defs><path d="M6,172 L6,96 A96,96 0 0,1 84,20 A96,96 0 0,1 162,96 L162,172" stroke-width="1.1"/><path d="M15,152 L15,99 A88,88 0 0,1 84,31 A88,88 0 0,1 153,99 L153,152" stroke-width=".4"/><path d="M84,20 L84,44" stroke-width=".4" opacity=".5"/><g fill="url(#ag)" stroke="none"><rect x="-3.2" y="-3.2" width="6.4" height="6.4" transform="translate(84,31) rotate(45)"/><rect x="-2" y="-2" width="4" height="4" transform="translate(6,96) rotate(45)"/><rect x="-2" y="-2" width="4" height="4" transform="translate(162,96) rotate(45)"/></g></svg>' '</div>'
+def front_cover():
+    """The front board: coffee cloth held to the top and right edges over
+    warm cream, a cropped portal arch drawn on it in gold, and the title
+    set half in ivory and half in foil."""
+    return ('<div class="cover">'
+      '<div class="panel">' + arch_svg('f') + '</div>'
       '<div class="pedge"></div>'
       '<div class="pc">'
       '<div class="lock">'
@@ -1408,10 +1596,10 @@ def build():
       '<div class="sup"><i>تحت إشراف راجي عفو ربه</i>'
       '<b>أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام</b></div>'
       '</div>'
-      '<div class="band">' '<svg class="lat" viewBox="0 0 630 30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2=".35"><stop offset="0" stop-color="#7E6029"/><stop offset=".17" stop-color="#D6BA80"/><stop offset=".31" stop-color="#F2E2BB"/><stop offset=".47" stop-color="#AD8B4B"/><stop offset=".62" stop-color="#8A6A2E"/><stop offset=".78" stop-color="#E6CC93"/><stop offset=".9" stop-color="#C09A54"/><stop offset="1" stop-color="#7E6029"/></linearGradient></defs><pattern id="px" patternUnits="userSpaceOnUse" width="26" height="30"><path d="M0,15 L13,2.5 L26,15 L13,27.5 Z" fill="none" stroke="url(#lg)" stroke-width="1"/><path d="M13,2.5 L13,0 M13,27.5 L13,30" stroke="url(#lg)" stroke-width=".6"/><rect x="-1.7" y="-1.7" width="3.4" height="3.4" fill="url(#lg)" transform="translate(13,15) rotate(45)"/></pattern><rect x="0" y="0" width="630" height="30" fill="url(#px)"/></svg>' '</div>'
+      '<div class="band">' + lat_svg('f') + '</div>'
       '<div class="mark"><div class="mr"></div><div class="mn">01</div>'
       '<div class="ml">First edition<br>MMXXVI</div></div>'
-      '<div class="spine">Sultan Hanafi Royal Schools &middot; '
+      '<div class="vlabel">Sultan Hanafi Royal Schools &middot; '
       'School of Islamic and Arabic Studies</div>'
       '<div class="lower"><div class="lrule"></div>'
       '<div class="titleL">The Curriculum<br>Handbook</div>'
@@ -1428,15 +1616,89 @@ def build():
       '<span>Working edition &middot; not yet ratified</span></div></div>'
       '</div>')
 
+
+def back_cover():
+    """The back board. It is the same object as the front, turned over: the
+    cloth continues across the spine but stops at a quarter of the height,
+    the arch is mirrored so its crop falls on the other edge, and the lattice
+    band returns at a different station. Cream dominates here, brown there."""
+    figs = [(ar(3), 'برامج'), (ar(4), 'أقسام'),
+            (ar(len(PROG_OF)), 'مادة'), (ar(12), 'صفًّا')]
+    o = ['<div class="back">',
+         '<div class="bpanel">', arch_svg('b', 'barch'), '</div>',
+         '<div class="bedge"></div>',
+         '<div class="bpc">',
+         '<div class="block">',
+         f'<img class="crest" src="{CREST}" alt="">',
+         '<div class="ln"><div class="house">مدارسُ السلطان حنفي الملكية</div>',
+         '<div class="houseL">Sultan Hanafi Royal Schools</div></div></div>',
+         '<div class="bt">دليلُ المنهج العربيِّ والإسلامي</div>',
+         '<div class="btL">The Curriculum Handbook</div>',
+         '</div>',
+         '<div class="bband">', lat_svg('b'), '</div>',
+         '<div class="blower">',
+         '<div class="bstate">', e(STATEMENT), '</div>',
+         '<div class="bstateL">One curriculum across twelve classes, in three '
+         'programmes and four sections. This handbook sets out what is taught in '
+         'each class, from which text, and under which form of instruction.</div>',
+         '<div class="figs">']
+    for n, lab in figs:
+        o.append(f'<div class="fg"><b>{n}</b><span>{lab}</span></div>')
+    o.append('</div>')
+    o.append('<div class="bstatus">وثيقةُ عملٍ للعرض والتواصل — لا تُنشئ قرارًا ولا '
+             'تعتمد منهجًا. <b>تُرفع إلى مجلس الأمناء لاعتمادها، ولم تُعتمد بعد.</b>'
+             '<span>A working document for presentation. To be submitted to the '
+             'Board of Trustees for approval &mdash; not yet approved.</span></div>')
+    o.append('<div class="bgac">'
+             f'<div class="gb"><img src="{GACAIS}" alt=""></div>'
+             '<div class="tx"><div class="pub">إعدادٌ وإشراف — الهيئةُ الأكاديمية '
+             'العالمية للدراسات العربية والإسلامية والدعوة والمناهج والبحوث</div>'
+             '<div class="pubL">Prepared and supervised by the Global Academic Council '
+             'for Arabic and Islamic Studies, Da&rsquo;wah, Curriculum and Research</div>'
+             '</div></div>')
+    o.append('<div class="bclose"><i></i></div>')
+    o.append('<div class="bsec">الأقسامُ الأربعة — '
+             'التمهيديُّ ١–٢ · الابتدائيُّ ٣–٦ · الإعداديُّ ٧–٩ · الثانويُّ ١٠–١٢</div>')
+    o.append('</div>')
+    o.append('<div class="bfoot"><span class="l">GACAIS&ndash;CURRICULUM v1.0 '
+             '&middot; first edition &middot; September 2026</span>'
+             '<span class="r">مدارسُ السلطان حنفي الملكية · قسمُ الدراسات الإسلامية والعربية'
+             '</span></div>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def spine_panel():
+    """The spine. Arabic spines read top to bottom, so the type is set in a
+    vertical writing mode rather than rotated by hand. The width is a
+    CALCULATION, not a choice — see SPINE_MM."""
+    return ('<div class="bspine">'
+            '<div class="stop">GACAIS</div>'
+            '<div class="sp"><span class="s1">دليلُ المنهج العربيِّ والإسلامي</span>'
+            '<span class="s2">مدارسُ السلطان حنفي الملكية</span></div>'
+            f'<div class="sfoot"><img src="{CREST}" alt=""></div></div>')
+
+def build():
+    o = io.StringIO(); w = o.write
+    w('<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">'
+      '<title>مدارس السلطان حنفي الملكية — دليل المنهج العربي والإسلامي</title>'
+      f'<style>{CSS}</style></head><body>')
+
+    # ═══ COVER ═══
+    w(front_cover())
+
     # ═══ IMPRINT ═══
     w('<div class="imp"><h2>عن هذا الإصدار</h2>')
     w('<div class="xver"><span class="vid">GACAIS&ndash;CURRICULUM v1.0</span>'
       '<span class="vd">الإصدار الأول · ١٤ سبتمبر ٢٠٢٦</span>'
       '<span class="vs">وثيقةُ عملٍ — لم يعتمدها المجلس بعد</span></div>')
-    w('<div class="attr">إعدادٌ وإشرافٌ واعتماد:<br>'
+    w('<div class="attr">إعدادٌ وإشراف:<br>'
       '<b>الهيئة الأكاديمية العالمية للدراسات العربية والإسلامية والدعوة والمناهج والبحوث</b>'
-      '<div class="lat">Prepared, Supervised, and Approved by the Global Academic Council '
-      'for Arabic and Islamic Studies, Da\'wah, Curriculum and Research (GACAIS)</div></div>')
+      '<div class="lat">Prepared and supervised by the Global Academic Council '
+      'for Arabic and Islamic Studies, Da\'wah, Curriculum and Research (GACAIS)</div>'
+      '<div class="lat pend">تُرفع إلى مجلس الأمناء لاعتمادها &mdash; ولم تُعتمد بعد.<br>'
+      '<span>To be submitted to the Board of Trustees for approval &mdash; '
+      'not yet approved.</span></div></div>')
     w('<div class="sups"><i>تحت إشراف راجي عفو ربه</i>'
       '<b>أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام</b></div>')
     w('<div class="status"><b>وثيقةُ عملٍ للعرض والتواصل — لا للتقرير.</b><br>'
@@ -1689,18 +1951,34 @@ def build():
       '</tbody></table>')
     w('</div>')
 
+    # ═══ BACK BOARD ═══ the last page of the book, and the other half
+    # of the cover system
+    w(back_cover())
+
     w('</body></html>')
     return o.getvalue()
 
 
 if __name__ == '__main__':
     doc = build()
-    i, j = doc.index('<div class="cover">'), doc.index('<div class="imp">')
     head = doc[:doc.index('<body>') + 6]
-    cover = head + doc[i:j] + '</body></html>'
-    body = head + doc[j:]
-    open(os.path.join(H, 'HANDBOOK-cover.html'), 'w', encoding='utf-8').write(cover)
-    open(os.path.join(H, 'HANDBOOK-body.html'), 'w', encoding='utf-8').write(body)
+    i = doc.index('<div class="cover">')
+    j = doc.index('<div class="imp">')
+    k = doc.index('<div class="back">')
+    tail = '</body></html>'
+    front, back = doc[i:j], doc[k:doc.rindex('</body>')]
+    open(os.path.join(H, 'HANDBOOK-cover.html'), 'w', encoding='utf-8').write(head + front + tail)
+    open(os.path.join(H, 'HANDBOOK-back.html'), 'w', encoding='utf-8').write(head + back + tail)
+    open(os.path.join(H, 'HANDBOOK-body.html'), 'w', encoding='utf-8').write(head + doc[j:k] + tail)
+    # the binder's sheet: laid flat, an Arabic book reads FRONT · SPINE · BACK
+    # from the left, so in an RTL flex row the children go back, spine, front.
+    # the sheet is not A4, and the main stylesheet says @page{size:A4}, so the
+    # wraparound document restates its own trim before anything is laid out
+    wsz = (f'<style>@page{{size:{WRAP_MM}mm 297mm;margin:0;}}'
+           f'html,body{{width:{WRAP_MM}mm;height:297mm;}}</style>')
+    wrap = (head.replace('</head>', wsz + '</head>') + '<div class="wrap">'
+            + back + spine_panel() + front + '</div>' + tail)
+    open(os.path.join(H, 'HANDBOOK-wrap.html'), 'w', encoding='utf-8').write(wrap)
     p = os.path.join(H, 'SHRS-CURRICULUM-HANDBOOK.html')
     open(p, 'w', encoding='utf-8').write(doc)
     print(f'written — {len(doc)//1024} KB · {len(PROG_OF)} subjects · '

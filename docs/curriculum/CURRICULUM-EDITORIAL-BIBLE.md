@@ -556,6 +556,49 @@ What is on the cover now, and why:
   alpha, and casts a soft shadow onto the cream, so the brown reads as a bound
   board rather than a filled rectangle.
 
+### Front, spine and back are one object
+
+**[CURRENT COUNCIL DIRECTION.]** *"The front cover + spine + back cover must be
+conceived as one continuous premium physical book cover system… the back must
+not simply be a blank brown/cream page or a copy of the front."*
+
+The back board is the front turned over, not a second design:
+
+- the **cloth continues across the spine** and then stops at a quarter of the
+  height, so brown dominates the front and cream dominates the back;
+- the **arch returns mirrored**, so its crop falls on the other edge of the
+  sheet;
+- the **lattice band returns at a different station** — 178mm on the front,
+  79mm on the back;
+- the crest, the gold, the cream and the type are the same throughout.
+
+Nothing is copied; everything rhymes.
+
+The back carries what a back board is for: a précis of the curriculum — every
+clause of it already in the document, none of it a new claim — the four figures
+(٣ برامج · ٤ أقسام · ٣٤ مادة · ١٢ صفًّا), the four sections with their grade
+ranges, the status, the GACAIS attribution, and the publication line. No QR
+code: nothing on this document needs one.
+
+The **spine** is set in a vertical writing mode rather than rotated by hand,
+because Arabic spines read **top to bottom**. Its width is a **calculation, not
+a choice** — `SPINE_MM` in the generator — 80 printed pages is 40 leaves; on
+120 gsm uncoated cream (≈0.15mm a leaf) the text block is ≈6mm; two 2.5mm
+boards and endpapers bring it to ≈12mm, and 14mm is taken so the spine type has
+air. **That is an assumption until the binder confirms the stock.** Change
+`SPINE_MM` and the wraparound sheet resizes itself.
+
+Three PDFs come out of one build:
+
+| File | What it is |
+|---|---|
+| `SHRS-CURRICULUM-HANDBOOK.pdf` | front board · 78 text pages · back board |
+| `SHRS-CURRICULUM-COVER-WRAP.pdf` | the binder's sheet, 434 × 297mm at trim, **no bleed added** |
+| the two board HTMLs | rendered at margin 0 with no running furniture, because they bleed |
+
+Laid flat, an Arabic book reads **front · spine · back from the left**, and the
+wraparound sheet is built in that order.
+
 ### The Institution's own marks
 
 The **SHRS crest** and the **GACAIS emblem** are the Institution's, supplied by
@@ -570,6 +613,23 @@ HTML stays a single self-contained file.
   and Latin, divided by a gold hairline.
 - The **GACAIS emblem** sits in the cream foot on a small block of its own deep
   navy — the one place a supporting colour is blocked rather than ruled.
+
+### What this document claims, and what it does not
+
+**[CURRENT COUNCIL DIRECTION.]** *"Don't claim GACAIS approval. Rather, to be
+submitted to the Board for approval — say yet to be approved."*
+
+The imprint read **«إعدادٌ وإشرافٌ واعتماد»** — *prepared, supervised and
+**approved*** — which asserted an approval that has not happened. It now reads
+**«إعدادٌ وإشراف»** alone, followed on both the imprint page and the back board
+by:
+
+> تُرفع إلى مجلس الأمناء لاعتمادها — ولم تُعتمد بعد.
+> *To be submitted to the Board of Trustees for approval — not yet approved.*
+
+This is Article 4 of PUB-006, **الصدق التقريري**, applied to the document's own
+cover: a publication may not describe its own standing more favourably than the
+record supports.
 
 ### The supervision
 
