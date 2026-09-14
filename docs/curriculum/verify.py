@@ -192,10 +192,20 @@ check('L-37', not bad,
       ' · '.join(f'{g}:{share(g)[0]["اللغة"]*100//share(g)[1]}%' for g in GRADES if int(g)>=7)))
 
 # ── L-38 · the living language is carried, not only its instruments ───────
-gap = [g for g in range(7, 13) if g not in grades_present('البحث والخطابة')]
+ins = grades_present('الإنشاء والتعبير')
+bh  = grades_present('البحث والخطابة')
+live = sorted(set(ins) | set(bh))
+gap = [g for g in range(4, 13) if g not in live]
 tr  = [g for g in range(7, 13) if g not in grades_present('الترجمة')]
 check('L-38', not gap and not tr,
-      f'البحث والخطابة ٧–١٢ — {gap or "6/6"} · الترجمة — {tr or "6/6"}')
+      f'اللغة الحية متصلة ٤–١٢ — {gap or "9/9"} · الترجمة ٧–١٢ — {tr or "6/6"}')
+
+# ── L-39 · a stage's name is not imported into another stage ──────────────
+bad = []
+if [g for g in bh if g < 10]:   bad.append(f'البحث في {[g for g in bh if g<10]} — والبحث عملُ الثانوي')
+if [g for g in ins if g > 9]:   bad.append(f'الإنشاء في {[g for g in ins if g>9]} — وقد نضج بحثًا')
+check('L-39', not bad,
+      f'الإنشاء {ins} ثم البحث {bh} — ' + (str(bad) if bad else 'لا إقحام'))
 
 # ── L-36 · no tafsīr before class five ────────────────────────────────────
 present=[int(g) for g in GRADES
@@ -233,11 +243,11 @@ BY_HAND = {
 }
 COVERED = {'L-01','L-02','L-03','L-04','L-05','L-06','L-07','L-09','L-10','L-11',
            'L-13','L-14','L-15','L-16','L-17','L-18','L-19','L-20','L-24','L-25',
-           'L-30','L-31','L-32','L-33','L-34','L-35','L-36','L-37','L-38'}
+           'L-30','L-31','L-32','L-33','L-34','L-35','L-36','L-37','L-38','L-39'}
 
 for line in notes + fails: print(line)
 print()
-print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٨.')
+print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٩.')
 print(f'لا يفحصه إلا قارئ ({len(BY_HAND)} بندًا): ' + ' · '.join(sorted(BY_HAND)))
 for k in sorted(BY_HAND): print(f'    {k} — {BY_HAND[k]}')
 print()

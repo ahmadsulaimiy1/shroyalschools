@@ -95,9 +95,10 @@ they were missed before.
 | Balāghah runs maʿānī → bayān → badīʿ | **L-35** |
 | No tafsīr before class five | **L-36** |
 | Arabic ≥ Islamic studies at Ideadi; ≥ one third at Thanawi | **L-37** |
-| البحث والخطابة and الترجمة carried in every class 7–12 | **L-38** |
+| The living language runs unbroken 4–12, الترجمة 7–12 | **L-38** |
+| الإنشاء والتعبير 4–9, البحث والخطابة 10–12 — never swapped | **L-39** |
 
-**That is 29 of the 38.** The script prints the other nine every run and does not
+**That is 30 of the 39.** The script prints the other nine every run and does not
 claim them. They are matters of judgement, not arithmetic — the forms vocabulary
 (L-08), a subject returning higher rather than repeating (L-12), the madhhab
 rules (L-21/22/23) and the rules of evidence (L-26–L-29). **A green run is not a
