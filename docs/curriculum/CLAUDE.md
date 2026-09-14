@@ -40,6 +40,11 @@ them. It happened to:
 - **أصول التفسير · التاريخ والسيرة · الترجمة · مصطلح الحديث** — dropped from the
   matrix during an unrelated rebuild
 - **البرنامج الأول's booklist** — never written at all
+- **التجويد as an independent science** — the Qur'anic sciences board ruled it
+  and the ruling was mislaid; the science was folded back into the memorisation
+  hour, leaving a discipline with a matn and no lesson
+- **الرسم العثماني and رواية حفص counted as courses** — a chapter of tajwīd and a
+  description of the muṣḥaf, carried for months as two subjects on the register
 
 None of these were disagreements. They were losses. The register is the remedy,
 and it only works if it is read first.
@@ -48,21 +53,32 @@ and it only works if it is read first.
 
 ## Before publishing or reporting anything
 
-Run the checks in the register's Chapter Five and Six:
+```
+cd docs/curriculum && python3 verify.py
+```
 
-| | |
+It checks the allocation against the register mechanically and **exits
+non-zero** if any locked item is broken. A non-zero exit means the document is
+not ready and is not published. Do not read the checks off by eye — that is how
+they were missed before.
+
+| | Locked item |
 |---|---|
-| Every class balances its weekly lessons | ١٢ / ١٢ |
-| Every term balances | ٣٦ / ٣٦ |
-| Every subject under one of the three programmes | all |
-| Every subject has a named source text (**L-30**) | all |
-| The Qur'anic hour untouched | ١٢ / ١٢ |
-| A name without a minute or a named host (**L-07**) | none |
-| Three books minimum, one per programme (**L-06**) | ١–٦ |
+| Every class balances its weekly lessons | L-24/25 |
+| Every term slot carries exactly three terms | L-11 |
+| Every subject under one of the three programmes | L-03/04 |
+| Every subject has a named source text | **L-30** |
+| The Qur'anic hour untouched | L-20 |
+| Tajwīd independent in classes 4–11, not folded into the hour | **L-32** |
+| Rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses | **L-33** |
+| Three books minimum, one per programme, classes 1–6 | L-06/31 |
+| The graduating class carries the most | L-10 |
+| The cornerstones never pause | L-13 |
+| No name without a lesson or a named host | L-07 |
 
-If any check fails, the document is not ready and is not published.
-
----
+If you change the allocation, change **`allocation-v11.json`** and regenerate —
+never hand-edit `CLASS-BOOK.md` or `SUBJECT-REGISTER.md`. They are generated
+files. Hand-editing them is what let the counts drift apart.
 
 ## Working language
 
