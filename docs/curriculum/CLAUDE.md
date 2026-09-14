@@ -45,6 +45,9 @@ them. It happened to:
   hour, leaving a discipline with a matn and no lesson
 - **الرسم العثماني and رواية حفص counted as courses** — a chapter of tajwīd and a
   description of the muṣḥaf, carried for months as two subjects on the register
+- **البلاغة opened before النحو** — in the first term of class 9, while قطر الندى
+  was still unfinished that same year; and **البيان before المعاني**, which is the
+  same error one layer down. A science was being taught before its instrument
 
 None of these were disagreements. They were losses. The register is the remedy,
 and it only works if it is read first.
@@ -71,6 +74,9 @@ they were missed before.
 | The Qur'anic hour untouched | L-20 |
 | Tajwīd independent in classes 4–11, not folded into the hour | **L-32** |
 | Rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses | **L-33** |
+| No science opened before its instrument | **L-34** |
+| Balāghah runs maʿānī → bayān → badīʿ | **L-35** |
+| The hand-weighted subjects keep their weight | L-14/15/16/17 |
 | Three books minimum, one per programme, classes 1–6 | L-06/31 |
 | The graduating class carries the most | L-10 |
 | The cornerstones never pause | L-13 |

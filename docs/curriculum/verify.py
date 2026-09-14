@@ -95,6 +95,57 @@ for s in CORNERS:
     if gaps: bad.append((s, gaps))
 check('L-13', not bad, f'مواد الأساس لا تنقطع من السابع — {bad or "6/6"}')
 
+# ── L-14/15/16/17 · the subjects the Director General weighted by hand ────
+def terms(subject):
+    n = 0
+    for g in GRADES:
+        corner, slots, _ = D[g]
+        if any(clean(x[0]) == subject for x in corner): n += 3      # a full year
+        for sl in slots:
+            for t in sl[2]:
+                if clean(t[2]) == subject: n += t[1]
+    return n
+def grades_present(subject):
+    return [int(g) for g in GRADES
+            if any(clean(x[0]) == subject for x in D[g][0] + D[g][2])
+            or any(clean(t[2]) == subject for sl in D[g][1] for t in sl[2])]
+
+check('L-14', terms('البلاغة') >= 6,       f'البلاغة ستة فصول فأكثر — {terms("البلاغة")} فصلًا')
+check('L-15', terms('العروض وعلم القافية') > 1,
+      f'العروض لا يُدرَّس في فصل واحد — {terms("العروض وعلم القافية")} فصلًا في {grades_present("العروض وعلم القافية")}')
+check('L-16', terms('النقد والآداب') >= 3,
+      f'النقد والآداب مادة لها وزنها — {terms("النقد والآداب")} فصلًا في {grades_present("النقد والآداب")}')
+adv = [g for g in range(7, 13) if g not in grades_present('الصرف')]
+check('L-17', not adv, f'الصرف حاضر في كل صف متقدم — {adv or "6/6"}')
+
+# ── L-34 · no science before its instrument ───────────────────────────────
+def first(subject):
+    hits = []
+    for g in GRADES:
+        corner, slots, hosted = D[g]
+        if any(clean(x[0]) == subject for x in corner):                 hits.append(int(g))
+        elif any(clean(t[2]) == subject for sl in slots for t in sl[2]): hits.append(int(g))
+    return min(hits) if hits else None
+
+# (science, its instrument, the class the instrument closes in)
+LADDER = [('البلاغة',        'النحو الأساس — قطر الندى', 9),
+          ('أصول الفقه',     'الفقه',                    7),
+          ('مصطلح الحديث',   'الحديث النبوي',            7),
+          ('المنطق',         'النضج والعقيدة',          11)]
+bad = [f'{sci} يُفتح في {first(sci)} وآلتُه ({tool}) تُختم في {close}'
+       for sci, tool, close in LADDER
+       if first(sci) is not None and first(sci) <= close]
+check('L-34', not bad, f'لا يُقدَّم علمٌ على آلته — {bad or "4/4"}')
+
+# ── L-35 · المعاني ← البيان ← البديع ──────────────────────────────────────
+def balaghah(g):
+    for x in D[g][0]:
+        if clean(x[0]) == 'البلاغة': return x[3]
+    return ''
+order = [('10', 'المعاني'), ('11', 'البيان'), ('12', 'البديع')]
+bad = [f'{g}: ليس فيه {br}' for g, br in order if br not in balaghah(g)]
+check('L-35', not bad, f'ترتيب البلاغة: المعاني ← البيان ← البديع — {bad or "3/3"}')
+
 # ── L-07 · no name without a lesson or a named host ───────────────────────
 bad = [(g, x[0]) for g in GRADES for x in D[g][2] if not x[2].strip()]
 check('L-07', not bad, f'لا اسمَ بلا دقيقة ولا مضيف — {bad or "لا واحد"}')
