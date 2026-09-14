@@ -213,6 +213,108 @@ def term_rota(g):
     return ''.join(o)
 
 
+# ── VIEW 1 · CLASS → WHAT IS TAUGHT ────────────────────────────────────────
+MARK = {'مستقل':('m-ind','مستقل'),'مدمج':('m-mrg','مدمج'),'مضمّن':('m-emb','مضمّن'),
+        'وحدة':('m-unt','وحدة'),'دوراني':('m-rot','دوراني'),'مسار':('m-str','مسار'),
+        'فصلي':('m-trm','مقرر فصلي')}
+
+
+def glance_row(g):
+    """One line per class: the subject NAMES only. The ten-second view."""
+    o = [f'<tr><th class="gcell"><b>{ar(g)}</b><span>{CLS[g]}</span></th>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        items = [(s, v) for s, v in T[g].items() if v[2] == key]
+        if not items:
+            o.append('<td class="gl-none">—</td>'); continue
+        ind = [s for s, v in sorted(items) if v[0] in ('مستقل', 'فصلي')]
+        oth = [s for s, v in sorted(items) if v[0] not in ('مستقل', 'فصلي')]
+        bits = ' · '.join(f'<b>{e(x)}</b>' for x in ind)
+        if oth:
+            bits += ('<span class="gl-o">' + (' · ' if ind else '')
+                     + ' · '.join(e(x) for x in oth) + '</span>')
+        o.append(f'<td>{bits}</td>')
+    extra = [s for s, v in T[g].items() if v[2] == 'التتويج']
+    o.append(f'<td class="gl-x">{" · ".join(e(x) for x in sorted(extra)) if extra else "—"}</td>')
+    o.append('</tr>')
+    return ''.join(o)
+
+
+def glance_table():
+    o = ['<table class="glance"><thead><tr><th class="gcell">الصف</th>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        o.append(f'<th>{e(pt)}</th>')
+    o.append('<th class="gl-x">سنة التتويج</th></tr></thead><tbody>')
+    cur = None
+    for g in range(1, 13):
+        sec = next(x for x in SECTIONS if g in x[3])
+        if sec[0] != cur:
+            cur = sec[0]
+            o.append(f'<tr class="gsec"><td colspan="5">{cur}'
+                     f'<span> — الصفوف {ar(sec[3][0])}–{ar(sec[3][-1])}</span></td></tr>')
+        o.append(glance_row(g))
+    o.append('</tbody></table>')
+    return ''.join(o)
+
+
+def class_full(g):
+    """A full page for one class. The definitive answer to: what do I teach?"""
+    sec = next(x for x in SECTIONS if g in x[3])
+    gate = next((n for x, n in GATES if x == g), None)
+    o = [f'<div class="cpage"><div class="cph"><div class="cpn">{ar(g)}</div>'
+         f'<div class="cpt"><h2>الصف {CLS[g]}</h2>'
+         f'<div class="cpsec">{sec[0]} <span class="en">&middot; GRADE {g}</span></div></div>']
+    if gate:
+        o.append(f'<div class="cpgate">{e(gate)}</div>')
+    o.append('</div>')
+    if g in SHEET_HIFZ:
+        o.append(f'<div class="cphifz">المحفوظ هذا العام — <b>{SHEET_HIFZ[g]}</b></div>')
+    o.append('<div class="cpcols">')
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        items = sorted([(s, v) for s, v in T[g].items() if v[2] == key])
+        if not items:
+            continue
+        o.append(f'<div class="cpcol {cls}"><h3>{e(pt)}</h3><ul class="slist">')
+        rank = {'مستقل': 0, 'فصلي': 1}
+        for s, (f, h, p, note) in sorted(items, key=lambda x: (rank.get(x[1][0], 2), x[0])):
+            if f is None:
+                o.append(f'<li class="li-q"><i class="mk m-q"></i><span class="sn">{e(s)}</span>'
+                         f'<span class="mt">داخل {e(h or "—")} — <b>يُعرَض على المجلس</b></span></li>')
+                continue
+            cl, lbl = MARK[f]
+            if f == 'مستقل':
+                o.append(f'<li class="li-i"><i class="mk {cl}"></i>'
+                         f'<span class="sn"><b>{e(s)}</b></span></li>')
+            elif f == 'فصلي':
+                o.append(f'<li><i class="mk {cl}"></i><span class="sn"><b>{e(s)}</b></span>'
+                         f'<span class="mt">{lbl} — {e(h)}</span></li>')
+            else:
+                o.append(f'<li><i class="mk {cl}"></i><span class="sn">{e(s)}</span>'
+                         f'<span class="mt">{lbl}{" ← " + e(h) if h else ""}</span></li>')
+        o.append('</ul></div>')
+    o.append('</div>')
+    o.append(term_rota(g))
+    # what to open: the prescribed text for each subject taught this year
+    rows = []
+    for sub in sorted(T[g], key=lambda x: (T[g][x][0] not in ('مستقل', 'فصلي'), x)):
+        t = C.src(sub, g)
+        if 'RED' in t or 'لا مصدر' in t:
+            rows.append((sub, '<i class="nosrc">لا نصَّ مسجَّلًا بعد</i>')); continue
+        t = t.replace('**', '').strip()
+        if t.startswith('—') or not t:
+            continue
+        rows.append((sub, e(t)))
+    if rows:
+        o.append('<div class="books"><h3>نصوصُ هذا الصف — ما يُفتَح في الحصّة</h3><table>')
+        for sub, t in rows:
+            o.append(f'<tr><th>{e(sub)}</th><td>{t}</td></tr>')
+        o.append('</table></div>')
+    n_ind = sum(1 for s, v in T[g].items() if v[0] in ('مستقل', 'فصلي'))
+    o.append(f'<div class="cpfoot">يلقى طالبُ هذا الصف <b>{ar(len(T[g]))}</b> مادةً مسمّاة، '
+             f'منها <b>{ar(n_ind)}</b> بحصّةٍ خاصّة، وسائرُها داخل مضيفٍ مسمًّى.</div>')
+    o.append('</div>')
+    return ''.join(o)
+
+
 def class_page(g):
     sec = next(s for s in SECTIONS if g in s[3])
     o = [f'<div class="cls"><div class="clsh"><h3>الصف {CLS[g]}</h3>'
@@ -357,6 +459,68 @@ h6{font-size:8.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.04em;font-
 .forms .k{width:19%;font-weight:700;color:var(--brown);white-space:nowrap;}
 .forms .sw{display:inline-block;width:3.4mm;height:3.4mm;margin-left:2mm;
  vertical-align:-.5mm;border:.5pt solid #C9B896;}
+
+/* ── view 1 · glance + class pages ───────────────────────────────── */
+.glance{width:100%;border-collapse:collapse;font-size:8.5pt;}
+.glance th,.glance td{border-bottom:.45pt solid var(--line);padding:2.2mm 2.5mm;
+ text-align:right;vertical-align:top;line-height:1.6;}
+.glance thead th{border-bottom:1.2pt solid var(--brown);font-family:'Noto Kufi Arabic',sans-serif;
+ font-size:8pt;color:var(--brown);font-weight:400;background:#FBF7F0;}
+.glance .gcell{width:9%;background:#FBF7F0;text-align:center;white-space:nowrap;}
+.glance .gcell b{display:block;font-family:'Noto Kufi Arabic',sans-serif;font-size:13pt;
+ color:var(--brown);line-height:1.1;}
+.glance .gcell span{font-size:7pt;color:#8A7A66;}
+.glance td b{color:var(--brown);}
+.glance .gl-o{color:#9A8A76;}
+.glance .gl-x{width:11%;color:#8A7A66;font-size:8pt;}
+.glance .gl-none{color:#C9BDA9;}
+.glance tr.gsec td{background:#3B2A1D;color:#E9CE8A;font-family:'Noto Kufi Arabic',sans-serif;
+ font-size:8.4pt;padding:1.6mm 2.5mm;border:0;}
+.glance tr.gsec span{color:#A08F79;font-size:7.4pt;}
+.cpage{page-break-before:always;padding:9mm 15mm 4mm;}
+.cph{display:flex;align-items:center;gap:5mm;border-bottom:1.6pt solid var(--gold);
+ padding-bottom:3mm;margin:0 0 4mm;}
+.cpn{font-family:'Noto Kufi Arabic',sans-serif;font-size:38pt;line-height:.9;
+ color:var(--brown);}
+.cpt h2{border:0;padding:0;margin:0;font-size:19pt;}
+.cpsec{font-size:9.4pt;color:#8A7A66;margin-top:.8mm;}
+.cpsec .en{font-family:Georgia,serif;letter-spacing:.1em;font-size:8pt;}
+.cpgate{margin-right:auto;background:#3B2A1D;color:#E9CE8A;font-family:'Noto Kufi Arabic',sans-serif;
+ font-size:9pt;padding:2mm 4mm;}
+.cphifz{background:#F6EFE1;border-right:2pt solid var(--gold);padding:2.2mm 4mm;
+ font-size:9.6pt;margin:0 0 4mm;}
+.cpcols{display:flex;gap:6mm;align-items:flex-start;}
+.cpcol{flex:1;border-top:2.2pt solid var(--gold);padding-top:2.5mm;}
+.cpcol.p2{border-color:#6B4A2E;} .cpcol.p3{border-color:#7C1F2E;}
+.cpcol.p4{border-color:#A08F79;flex:.7;}
+.cpcol h3{margin:0 0 2.5mm;font-size:10.4pt;color:var(--brown);}
+.slist{list-style:none;margin:0;padding:0;}
+.slist li{position:relative;padding-right:5.2mm;margin:0 0 2.2mm;font-size:9.6pt;
+ line-height:1.45;}
+.slist .mk{position:absolute;right:0;top:1.5mm;width:2.8mm;height:2.8mm;display:block;
+ border:.4pt solid rgba(0,0,0,.12);}
+.mk.m-ind{background:#3B2A1D;} .mk.m-trm{background:#B08E4E;}
+.mk.m-mrg{background:#8A6B45;} .mk.m-emb{background:#C6A15B;}
+.mk.m-unt{background:#D8BE8B;} .mk.m-rot{background:#DFCBA6;}
+.mk.m-str{background:#EFE2C8;} .mk.m-q{background:#F0D9D3;border-color:#C89A8E;}
+.slist .sn{color:#2A2016;} .slist li.li-i .sn b{font-size:10.4pt;color:var(--brown);}
+.slist .mt{display:block;font-size:7.8pt;color:#9A8A76;line-height:1.35;}
+.slist li.li-q .mt b{color:var(--burg);font-weight:400;}
+.books{margin-top:5mm;border-top:.9pt solid var(--gold);padding-top:3mm;}
+.books h3{margin:0 0 2mm;font-size:9.8pt;color:var(--brown);}
+.books table{width:100%;border-collapse:collapse;font-size:8.6pt;}
+.books th{width:21%;text-align:right;vertical-align:top;padding:1.2mm 0 1.2mm 3mm;
+ color:var(--bronze);font-family:'Amiri',serif;font-weight:700;
+ border-bottom:.4pt solid #F0E7D6;}
+.books td{padding:1.2mm 0;color:#4A3826;border-bottom:.4pt solid #F0E7D6;line-height:1.5;}
+.books .nosrc{color:var(--burg);font-style:normal;}
+.cpfoot{margin-top:4mm;border-top:.5pt solid var(--line);padding-top:2.5mm;
+ font-size:8.8pt;color:#8A7A66;}
+.cpfoot b{color:var(--brown);font-family:'Noto Kufi Arabic',sans-serif;}
+.keyrow{display:flex;flex-wrap:wrap;gap:2mm 5mm;font-size:8.8pt;margin:0 0 5mm;
+ border:.5pt solid var(--line);padding:3mm 4mm;background:#FDFBF7;}
+.keyrow span{display:flex;align-items:center;gap:1.8mm;}
+.keyrow i{width:3mm;height:3mm;display:block;border:.4pt solid rgba(0,0,0,.12);}
 /* ── lifeline ────────────────────────────────────────────────────── */
 .ll{display:flex;gap:.8mm;margin:1.5mm 0 2mm;}
 .ll i{flex:1;height:4.4mm;display:block;border-radius:.4mm;}
@@ -472,16 +636,22 @@ def build():
     w('<h2>المحتويات</h2><div class="toc">')
     toc = [('الباب الأول','بنيةُ المنهج',[('الرحلة في اثني عشر صفًّا',''),
             ('كيف تُقرأ صيغُ التدريس',''),('الأقسام الأربعة','')])]
-    w('<div class="pt">الباب الأول</div>')
+    w('<div class="pt">الباب الأول · بنيةُ المنهج</div>')
     for t in ['الرحلةُ في اثني عشر صفًّا','كيف تُقرأ هذه الوثيقة — الصيغُ الستّ',
-              'الأقسامُ الأربعة وبواباتها']:
+              'الأقسامُ الأربعة']:
         w(f'<div><span class="t">{t}</span><span class="p">—</span></div>')
+    w('<div class="pt">الباب الثاني · ما يُدرَّس في كل صف — المنظرُ الأول</div>')
+    w('<div><span class="t"><b>المنهجُ كلُّه في صفحة واحدة</b> — الصفوف ١–١٢</span>'
+      '<span class="p">جدول</span></div>')
+    for g in range(1, 13):
+        w(f'<div><span class="t">الصف {CLS[g]} — صفحتُه كاملة</span>'
+          f'<span class="p">{ar(len(T[g]))} مادة</span></div>')
+    w('<div class="pt">الأبواب الثالث والرابع والخامس · رحلةُ كلِّ مادة</div>')
     for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
-        w(f'<div class="pt">{pn}</div>')
-        w(f'<div><span class="t">{pt} — الخريطة وبطاقاتُ المواد</span>'
+        w(f'<div><span class="t">{pt} — بطاقاتُ المواد</span>'
           f'<span class="p">{ar(len(SUBS_OF[key]))} مادة</span></div>')
     w('<div class="pt">الأبواب الختامية</div>')
-    for t in ['ما يُدرَّس في كل صف','مواضعُ المتون','قواعدُ لازمة · وما هو موقوف']:
+    for t in ['مواضعُ المتون','قواعدُ لازمة · وما هو موقوف']:
         w(f'<div><span class="t">{t}</span><span class="p">—</span></div>')
     w('</div></div>')
 
@@ -553,6 +723,45 @@ def build():
           f'<p>{desc}</p></div>')
     w('</div>')
 
+
+    # ═══ PART TWO · VIEW 1 — CLASS → WHAT IS TAUGHT ═══
+    w('<div class="opener"><div class="pn">PART TWO</div>'
+      '<h2>ما يُدرَّس في كل صف</h2><div class="ar2">المنظرُ الأول، وأسرعُ جواب</div>'
+      '<div class="en3">WHAT IS TAUGHT IN EACH CLASS</div>'
+      '<p>هذا البابُ يجيب سؤالًا واحدًا في ثوانٍ: <b>ماذا أُدرِّس في صفّي؟</b> '
+      'جدولٌ جامعٌ يضع المنهجَ كلَّه في صفحةٍ واحدة، ثم صفحةٌ كاملةٌ لكلِّ صفٍّ على حدة. '
+      'ومن أراد رحلةَ مادةٍ بعينها عبر الصفوف فبابُها بعدَ هذا.</p>'
+      '<div class="stat"><div><b>١٢</b><span>صفحة صف</span></div>'
+      '<div><b>٣</b><span>برامج في كل صفحة</span></div>'
+      '<div><b>٠</b><span>رمزٍ يحتاج فكًّا</span></div></div></div>')
+
+    w('<div class="pg brk"><h2>المنهجُ كلُّه في صفحةٍ واحدة</h2>'
+      '<p class="lead">الأسماءُ <b>الغامقة</b> موادُّ لها حصّةٌ خاصّة في الجدول. '
+      'والأسماءُ الفاتحة تُدرَّس داخل مادةٍ أخرى مسمّاة — وهي منهجٌ حقيقيّ يُدرَّس '
+      'ويُقوَّم، لا إضافةٌ اختيارية. وتفصيلُ كلِّ صفٍّ في صفحته.</p>')
+    w(glance_table())
+    w('</div>')
+
+    w('<div class="pg brk"><h2>صفحةُ الصف — كيف تُقرأ</h2>'
+      '<p class="lead">كلُّ صفٍّ في صفحةٍ واحدة، وبرامجُه الثلاثة في ثلاثة أعمدة. '
+      'وأمام كلِّ مادةٍ مربّعٌ صغير يقول كيف تُدرَّس:</p>'
+      '<div class="keyrow">'
+      '<span><i class="m-ind"></i> <b>مستقلّ</b> — حصّة وكتاب وورقة</span>'
+      '<span><i class="m-trm"></i> مقرَّر فصليّ — فصلٌ واحد</span>'
+      '<span><i class="m-mrg"></i> مدمج — في ورقة الشريك</span>'
+      '<span><i class="m-emb"></i> مضمّن — داخل مضيفه</span>'
+      '<span><i class="m-unt"></i> وحدة</span>'
+      '<span><i class="m-rot"></i> دوراني</span>'
+      '<span><i class="m-str"></i> مسار — خيطٌ في كتاب</span>'
+      '<span><i class="m-q"></i> لم تُصرَّح صيغتُه — يُعرَض على المجلس</span>'
+      '</div>'
+      '<p class="g" style="font-size:9.2pt">والمادةُ التي لا تظهر في صفحة صفٍّ '
+      '<b>لا تُدرَّس فيه</b>. وما ظهر بمربّعٍ فاتحٍ ومعه «← اسمُ مادة» فهو يُدرَّس '
+      'داخل حصص تلك المادة، ومعلّمُها مسؤولٌ عنه.</p></div>')
+
+    for g in range(1, 13):
+        w(class_full(g))
+
     # ═══ PROGRAMME PARTS ═══
     for key, pn, pt, pen, cls, num, blurb in PROGS:
         subs = SUBS_OF[key]
@@ -566,25 +775,15 @@ def build():
           f'<div><b>{ar(ind)}</b><span>تستقلّ بورقة</span></div>'
           f'<div><b>{ar(min(FIRST[s] for s in subs))}–{ar(max(LAST[s] for s in subs))}</b>'
           '<span>مدى الصفوف</span></div></div></div>')
-        w(f'<div class="pg brk {cls}"><h2>{e(pt)} — خريطةُ المواد</h2>'
-          '<p class="lead">كلُّ شريطٍ رحلةُ مادةٍ من أول صفٍّ تلقاه فيه إلى آخره. '
-          'وتغيُّرُ اللون تغيُّرٌ في صيغة التدريس، لا في المادة نفسها.</p>'
+        w(f'<div class="pg brk {cls}"><h2>{e(pt)} — رحلةُ كلِّ مادة</h2>'
+          '<p class="lead">البابُ الثاني أجاب: «ماذا أُدرِّس في صفّي؟» '
+          'وهذا يجيب عكسَه: <b>«أُدرِّس هذه المادة — فأين تقع في الرحلة؟»</b> '
+          'كلُّ شريطٍ رحلةُ مادةٍ من أول صفٍّ تلقاه فيه إلى آخره، '
+          'وتغيُّرُ اللون تغيُّرٌ في صيغة التدريس لا في المادة.</p>'
           '<div class="cards">')
         for s in subs:
             w(subject_card(s))
         w('</div></div>')
-
-    # ═══ CLASS BY CLASS ═══
-    w('<div class="opener"><div class="pn">PART FIVE</div>'
-      '<h2>ما يُدرَّس في كل صف</h2><div class="ar2">المنظرُ المقلوب</div>'
-      '<div class="en3">THE CLASS-BY-CLASS VIEW</div>'
-      '<p>المعلّمُ يسأل عن صفِّه لا عن رحلة المادة، ووليُّ الأمر يسأل عن ابنه لا عن المنهج. '
-      'وهذا البابُ جوابُهما: كلُّ صفٍّ وما يلقاه فيه الطالبُ من البرامج الثلاثة، '
-      'ومقرَّراتُه الفصلية إن كانت له.</p></div>')
-    w('<div class="pg brk">')
-    for g in range(1, 13):
-        w(class_page(g))
-    w('</div>')
 
     # ═══ TEXTS ═══
     w('<div class="opener"><div class="pn">PART SIX</div>'
