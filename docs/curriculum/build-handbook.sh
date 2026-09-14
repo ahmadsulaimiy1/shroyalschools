@@ -48,7 +48,10 @@ done
 fc-cache -f >/dev/null 2>&1 || true
 
 # ── 2 · generate the HTML from the register and the allocation ──────
-python3 "$HERE/verify.py" || { echo "!! a locked item is broken — not building" >&2; exit 1; }
+python3 "$HERE/verify.py" || {
+  echo "!! a locked CURRICULUM item is broken — not building" >&2; exit 1; }
+python3 "$HERE/verify-design.py" || {
+  echo "!! a locked DESIGN item is broken — not building" >&2; exit 1; }
 python3 "$HERE/gen-teacher-guide.py"
 
 # ── 3 · render each board on its own terms, then join ───────────────
@@ -70,5 +73,11 @@ python3 "$HERE/topdf.py" "$HERE/HANDBOOK-wrap.html" \
 NPAGES=$(pdfinfo "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf" | awk '/^Pages:/{print $2}')
 python3 "$HERE/audit-furniture.py" "$HERE/SHRS-CURRICULUM-HANDBOOK.pdf" \
         "--boards=1,$NPAGES"      # the front board and the back board
+
+# ── 5 · and the design lock again, now that the artefact exists ─────
+#  The first pass checked the source. This one also checks the book that
+#  came out of it — the page count, and that both boards are present.
+python3 "$HERE/verify-design.py" >/dev/null || {
+  echo "!! the built edition breaks a locked design item" >&2; exit 1; }
 echo "built · $HERE/SHRS-CURRICULUM-HANDBOOK.pdf"
 echo "built · $HERE/SHRS-CURRICULUM-COVER-WRAP.pdf  (${WRAP_W} x 297 mm, trim, no bleed)"

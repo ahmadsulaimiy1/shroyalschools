@@ -39,7 +39,10 @@
 > it has already happened once to the curriculum, and Appendix A exists so it
 > cannot happen to the book.
 >
-> Build it with **`bash build-handbook.sh`**, never by hand. The published
+> The lock is **mechanical**: `verify-design.py` enforces D-01 … D-16 and
+> `build-handbook.sh` **refuses to publish** if one is broken, exactly as
+> `verify.py` refuses on a broken curriculum item. Build it with
+> **`bash build-handbook.sh`**, never by hand. The published
 > hashes are in §X-ter; a copy whose hash is not in that table is the withdrawn
 > build.
 

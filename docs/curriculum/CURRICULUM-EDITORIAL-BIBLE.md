@@ -683,8 +683,8 @@ to the curriculum. It will not be allowed to happen to the book.
 | edition | **GACAIS–CURRICULUM v1.0** · first edition · September 2026 |
 | commit | the commit that carries this section |
 | pages | **80** — front board · 78 text pages · back board |
-| `SHRS-CURRICULUM-HANDBOOK.pdf` | `95e31319391de8d703f5ba8e332c8f8b72f6efa1353731c1a4e20866bf133d90` |
-| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `33f684abb9b0c6e1425e205f773c84fb23761a98bf6ba1661277b4f27fa16daa` |
+| `SHRS-CURRICULUM-HANDBOOK.pdf` | `d982a4bd33690a47307f407e6a87a0d5871b6159ef374984cbea817fe446546b` |
+| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `f329e11d768f7a00a9c60699b19d67151ce23c6e81338c1f56dfcb1f86ce6d39` |
 | `assets/shrs-crest.png` | `9050ea9fe7cc4c2c1d6ff8c4a9cb26f488c85bed878032df695d00aca45b4ceb` |
 | `assets/gacais-mark.png` | `9d573297d0998e684789b3be15dc4ecbafd267c0d24de61da4c1a66e41d260ad` |
 
@@ -703,6 +703,35 @@ to the curriculum. It will not be allowed to happen to the book.
 > the published file; a hash **mismatch** proves only that it is a different
 > file, which may be an honest rebuild. To tell the withdrawn build apart, look
 > at it — it is green, centred, and its imprint says «واعتماد».
+
+### The lock is mechanical
+
+A lock that is only prose is not a lock — it is a note, and notes are what this
+project keeps losing. **`verify-design.py` enforces D-01 … D-16 against the
+generator and the built book, and `build-handbook.sh` refuses to publish if any
+of them is broken**, exactly as `verify.py` already refuses on a broken
+curriculum item.
+
+```
+cd docs/curriculum && python3 verify-design.py
+```
+
+**Every check was proved able to fail.** Each item was broken on purpose and
+the script was required to catch it — the same discipline that was applied to
+L-31. Three of the checks did not survive that test the first time and were
+rewritten, which is recorded here because the rewriting is the point:
+
+| | The check as first written | Why it was not a check |
+|---|---|---|
+| **D-02** | any Reem Kufi rule whose selector *contains* `h2`/`h3` | it flagged `.sot h3`, a short unvowelled section title that is Reem Kufi's proper work. A check that cries wolf gets switched off. Now matched **per comma-separated selector, exactly**. |
+| **D-06** | does *any* of the four families still name the programme's colour? | a tamper that recoloured the class card passed, because the allocation table still matched. Then, matching the bare token, `--blue` passed from inside `--bluetint`. Now **all 30 load-bearing declarations are named** and each must hold. |
+| **D-07** | are `top:0`, `right:0`, `width:154mm` present? | it did not test the asymmetry it exists to protect. Now the cream margin is **measured** and must fall between 42 and 70mm. |
+
+**And on its first honest run the lock caught three live defects** that the
+manual sweep had missed: `.card dt`, `.txt thead th` and `.open thead th` were
+still setting Arabic in the display kufi at 7.2pt **with tracking on it** —
+breaking D-01 and D-03 in three places in the published book. They are fixed.
+That is what the lock is for.
 
 ### How to rebuild it
 
