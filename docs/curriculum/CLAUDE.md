@@ -67,20 +67,31 @@ they were missed before.
 
 | | Locked item |
 |---|---|
-| Every class balances its weekly lessons | L-24/25 |
-| Every term slot carries exactly three terms | L-11 |
+| Twelve classes in four sections | L-01/02 |
 | Every subject under one of the three programmes | L-03/04 |
-| Every subject has a named source text | **L-30** |
+| Lower classes: everything embedded or merged | L-05 |
+| Three books minimum, one per programme, classes 1–6 | L-06/31 |
+| No name without a lesson or a named host | **L-07** |
+| The load rises with the class | L-09 |
+| The graduating class carries the most | L-10 |
+| Every term slot carries exactly three terms | L-11 |
+| The cornerstones never pause | L-13 |
+| The hand-weighted subjects keep their weight | L-14/15/16/17 |
+| Translation into Yoruba carried, not dropped | L-18 |
+| Farāʾiḍ ring-fenced | L-19 |
 | The Qur'anic hour untouched | L-20 |
+| Every class balances its weekly lessons | L-24/25 |
+| Every subject has a named source text | **L-30** |
 | Tajwīd independent in classes 4–11, not folded into the hour | **L-32** |
 | Rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses | **L-33** |
 | No science opened before its instrument | **L-34** |
 | Balāghah runs maʿānī → bayān → badīʿ | **L-35** |
-| The hand-weighted subjects keep their weight | L-14/15/16/17 |
-| Three books minimum, one per programme, classes 1–6 | L-06/31 |
-| The graduating class carries the most | L-10 |
-| The cornerstones never pause | L-13 |
-| No name without a lesson or a named host | L-07 |
+
+**That is 26 of the 35.** The script prints the other nine every run and does not
+claim them. They are matters of judgement, not arithmetic — the forms vocabulary
+(L-08), a subject returning higher rather than repeating (L-12), the madhhab
+rules (L-21/22/23) and the rules of evidence (L-26–L-29). **A green run is not a
+verification until a person has read those nine.** The script says so itself.
 
 If you change the allocation, change **`allocation-v11.json`** and regenerate —
 never hand-edit `CLASS-BOOK.md` or `SUBJECT-REGISTER.md`. They are generated

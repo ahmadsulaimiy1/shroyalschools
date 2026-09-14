@@ -118,6 +118,40 @@ check('L-16', terms('النقد والآداب') >= 3,
 adv = [g for g in range(7, 13) if g not in grades_present('الصرف')]
 check('L-17', not adv, f'الصرف حاضر في كل صف متقدم — {adv or "6/6"}')
 
+# ── L-01/02 · twelve classes in four sections ─────────────────────────────
+SECTIONS = {'التمهيدي': [1, 2], 'الابتدائي': [3, 4, 5, 6],
+            'الإعدادي': [7, 8, 9], 'الثانوي': [10, 11, 12]}
+flat = [g for gs in SECTIONS.values() for g in gs]
+check('L-01/02', len(D) == 12 and sorted(flat) == list(range(1, 13)),
+      f'١٢ صفًّا في ٤ أقسام — {" · ".join(f"{k} {len(v)}" for k, v in SECTIONS.items())}')
+
+# ── L-05 · in the lower classes everything is embedded or merged ──────────
+bad = []
+for g in GRADES:
+    if int(g) > 6: continue
+    for x in D[g][0]:
+        n = clean(x[0])
+        if n not in ('اللغة العربية', 'التربية الإسلامية', 'التجويد'):
+            bad.append(f'{g}: {n} مستقل')
+check('L-05', not bad, f'التمهيدي والابتدائي: كل شيء مدمج أو مضمّن — {bad or "6/6"}')
+
+# ── L-09 · the load rises with the class ──────────────────────────────────
+sci = [sum(1 for sub in subs
+           if any(clean(x[0]) == sub for x in D[g][0] + D[g][2])
+           or any(clean(t[2]) == sub for sl in D[g][1] for t in sl[2]))
+       for g in GRADES]
+drops = [(i + 1, sci[i - 1], sci[i]) for i in range(1, 12) if sci[i] < sci[i - 1]]
+check('L-09', not drops, f'الحمل يرتفع مع الصف — {drops or sci}')
+
+# ── L-18 · translation into Yoruba is carried, not dropped ───────────────
+check('L-18', grades_present('الترجمة'),
+      f'الترجمة إلى اليوربا حاضرة — {grades_present("الترجمة")}')
+
+# ── L-19 · farāʾiḍ is ring-fenced with its own paper ─────────────────────
+fg = grades_present('الفرائض')
+check('L-19', len(fg) >= 2 and terms('الفرائض') >= 3,
+      f'الفرائض بابٌ مُصان — {terms("الفرائض")} فصلًا في {fg}')
+
 # ── L-34 · no science before its instrument ───────────────────────────────
 def first(subject):
     hits = []
@@ -150,9 +184,30 @@ check('L-35', not bad, f'ترتيب البلاغة: المعاني ← البي�
 bad = [(g, x[0]) for g in GRADES for x in D[g][2] if not x[2].strip()]
 check('L-07', not bad, f'لا اسمَ بلا دقيقة ولا مضيف — {bad or "لا واحد"}')
 
+# Locked items no script can judge — they are read by a person, not asserted here.
+BY_HAND = {
+    'L-08': 'الصيغ وحدها: مستقل · مدمج · مضمّن · وحدة · دوراني · مسار',
+    'L-12': 'إن عادت المادة بعد انقطاع عادت أعلى، لا تكرارًا',
+    'L-21': 'مذهب أهل السنة بلا التزام مذهب واحد — يُقاس بمِعيار عدم الحصر',
+    'L-22': 'يجوز أن يختلف الإطار من باب إلى باب',
+    'L-23': 'الرواية حفص عن عاصم · المصحف مطبعة الملك فهد',
+    'L-26': 'لا يُختلق دليل مفقود',
+    'L-27': 'لا يُخلط المستردّ بقرار المجلس الحالي',
+    'L-28': 'لا يُقدَّم استنتاج على أنه نصٌّ مستردّ',
+    'L-29': 'لا تُستنبط العقيدة ولا المذهب من قوائم الكتب',
+}
+COVERED = {'L-01','L-02','L-03','L-04','L-05','L-06','L-07','L-09','L-10','L-11',
+           'L-13','L-14','L-15','L-16','L-17','L-18','L-19','L-20','L-24','L-25',
+           'L-30','L-31','L-32','L-33','L-34','L-35'}
+
 for line in notes + fails: print(line)
+print()
+print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٥.')
+print(f'لا يفحصه إلا قارئ ({len(BY_HAND)} بندًا): ' + ' · '.join(sorted(BY_HAND)))
+for k in sorted(BY_HAND): print(f'    {k} — {BY_HAND[k]}')
 print()
 if fails:
     print(f'✗ {len(fails)} بندًا مقفلًا مخروقًا. الوثيقة ليست جاهزة ولا تُنشر.')
     sys.exit(1)
-print('✓ كل البنود المقفلة سليمة. جاهزة للنشر.')
+print(f'✓ البنود الـ{len(COVERED)} المفحوصة آليًّا سليمة.')
+print('  والتسعةُ الباقية تُقرأ ولا تُفحَص — فلا يُقال «تمّ التحقق» حتى تُقرأ.')
