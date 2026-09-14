@@ -215,6 +215,108 @@ def term_rota(g):
     return ''.join(o)
 
 
+# ── THE EXECUTIVE OPENING · four pages, before anything else ──────────────
+def exec_overview():
+    """Page 1 — what this institution teaches, stated once."""
+    o = ['<div class="xpg"><div class="xmast">'
+         '<div class="xlat">Sultan Hanafi Royal Schools</div>'
+         '<h1>مدارس السلطان حنفي الملكية</h1>'
+         '<div class="xdiv"><i></i></div>'
+         '<div class="xdept">قسم الدراسات الإسلامية والعربية</div>'
+         '<div class="xlat2">School of Islamic and Arabic Studies</div>'
+         '<div class="xhb">دليلُ المنهج · THE CURRICULUM HANDBOOK</div>'
+         '</div>']
+    o.append('<p class="xlead">منهجٌ واحدٌ يمتدُّ اثني عشر صفًّا، تجري فيه '
+             '<b>ثلاثةُ برامجَ متوازية</b> لا متعاقبة، في <b>أربعة أقسامٍ</b> يسلّم كلٌّ منها '
+             'إلى الذي بعده بعبورٍ مسمًّى. والمادةُ الواحدة لا تُدرَّس على صورةٍ واحدة طولَ '
+             'الرحلة: تبدأ خيطًا داخل كتاب، ثم تُضمَّن في مضيفٍ مسمّى، ثم تستقلّ بحصّتها '
+             'وكتابها وورقتها حين ينضج صاحبُها لها.</p>')
+    o.append('<div class="xgrid">')
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        subs = SUBS_OF[key]
+        ind = len({x for x in subs if any(T[g].get(x,(None,))[0]=='مستقل' for g in range(1,13))})
+        o.append(f'<div class="xp {cls}"><div class="xpn">{num}</div>'
+                 f'<h3>{e(pt)}</h3><div class="xpe">{e(pen.split("·")[1].strip())}</div>'
+                 f'<div class="xpstat"><span><b>{ar(len(subs))}</b> مادة</span>'
+                 f'<span><b>{ar(ind)}</b> تستقلّ بورقة</span></div>'
+                 f'<p>{blurb.split(".")[0]}.</p></div>')
+    o.append('</div>')
+    o.append('<div class="xsec"><h4>الأقسامُ الأربعة</h4><div class="xsrow">')
+    for idx,(name, en, char, gs, desc) in enumerate(SECTIONS,1):
+        gates = [n for x,n in GATES if x in gs]
+        o.append(f'<div class="xs s{idx}"><div class="xsn">{ar(gs[0])}–{ar(gs[-1])}</div>'
+                 f'<b>{name}</b><i>{en}</i>'
+                 f'<u>{e(" · ".join(gates)) if gates else "لا بوابة"}</u></div>')
+    o.append('</div></div>')
+    o.append('<p class="xnote">وثيقةُ عملٍ للعرض — لا تُنشئ قرارًا ولا تعتمد منهجًا. '
+             'وما كان موقوفًا على المجلس فهو مُعلَّمٌ في موضعه. '
+             'والمُدَدُ الزمنية لم تُعتمد بعدُ فلا تَرِد هنا.</p>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def exec_register():
+    """Page 2 — the whole subject universe, at a glance."""
+    o = ['<div class="xpg brk"><h2>سجلُّ المواد — المنهجُ كلُّه</h2>'
+         '<p class="lead">أربعٌ وثلاثون مادةً مسمّاة في ثلاثة برامج. '
+         '«المدى» أوّلُ صفٍّ تلقاها فيه وآخرُه؛ و«تستقلّ» أولُ صفٍّ تصير فيه بحصّةٍ '
+         'وكتابٍ وورقةٍ خاصّة.</p>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        subs = SUBS_OF[key]
+        if not subs: continue
+        o.append(f'<div class="xreg {cls}"><h4><span class="rnum">{num}</span>{e(pt)}'
+                 f'<em>{ar(len(subs))} مادة</em></h4>'
+                 '<table class="xrt"><thead><tr><th>المادة</th><th>المدى</th>'
+                 '<th>تستقلّ</th><th>التقويم</th></tr></thead><tbody>')
+        for sub in subs:
+            gs=[g for g in range(1,13) if sub in T[g]]
+            ind=[g for g in gs if T[g][sub][0]=='مستقل']
+            rng_=f'{ar(FIRST[sub])}–{ar(LAST[sub])}' if FIRST[sub]!=LAST[sub] else ar(FIRST[sub])
+            o.append(f'<tr><th>{e(sub)}</th><td class="c">{rng_}</td>'
+                     f'<td class="c">{ar(min(ind)) if ind else "—"}</td>'
+                     f'<td>{"ورقةٌ مستقلة" if ind else "داخل مضيفه"}</td></tr>')
+        o.append('</tbody></table></div>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def exec_map():
+    """Page 3 — the twelve-year journey, in one grid."""
+    o = ['<div class="xpg brk"><h2>خريطةُ الرحلة — اثنا عشر صفًّا</h2>'
+         '<p class="lead">أين تبدأ كلُّ مادةٍ، وأين تتغيّر صيغتُها، وأين تنتهي. '
+         'والعمودُ المظلَّل صفٌّ فيه بوابة.</p>']
+    o.append('<table class="xmap"><thead><tr><th class="ms">المادة</th>')
+    for g in range(1,13):
+        gt = any(x==g for x,_ in GATES)
+        o.append(f'<th class="{"gt" if gt else ""}">{ar(g)}</th>')
+    o.append('</tr></thead><tbody>')
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        subs=SUBS_OF[key]
+        if not subs: continue
+        o.append(f'<tr class="mh {cls}"><td colspan="13">'
+                 f'<span class="rnum">{num}</span>{e(pt)}</td></tr>')
+        for sub in subs:
+            o.append(f'<tr><th class="ms">{e(sub)}</th>')
+            for g in range(1,13):
+                v=T[g].get(sub)
+                if not v: o.append('<td class="m0"></td>'); continue
+                f=v[0]
+                if f is None: o.append('<td class="mq">؟</td>')
+                else: o.append(f'<td class="m {CLASSOF.get(f,"emb")}"></td>')
+            o.append('</tr>')
+    o.append('</tbody></table>')
+    o.append('<div class="mapkey">'
+             '<span><i class="ind"></i> مستقل — حصّة وكتاب وورقة</span>'
+             '<span><i class="trm"></i> مقرر فصلي</span>'
+             '<span><i class="mrg"></i> مدمج</span>'
+             '<span><i class="emb"></i> مضمّن</span>'
+             '<span><i class="unt"></i> وحدة</span>'
+             '<span><i class="str"></i> مسار</span>'
+             '<span><i class="mqk">؟</i> لم تُصرَّح — يُعرَض على المجلس</span>'
+             '<span><i class="g0"></i> لا يُدرَّس</span></div>')
+    o.append('</div>')
+    return ''.join(o)
+
 # ── counting, stated once so the numbers can be audited ───────────────────
 def tally(g):
     """Curriculum areas vs timetabled slots — never conflated."""
@@ -478,7 +580,7 @@ CSS = """
    Baseline unit 4.8mm. Arabic leads; Latin supports quietly.
    Gold behaves as foil: hairlines and registration, never fill.
    ═══════════════════════════════════════════════════════════════════ */
-@page{size:A4;margin:0;}
+@page{size:A4;}   /* margins come from the renderer, so the furniture owns them */
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{font-family:'Amiri',serif;font-size:10.6pt;line-height:1.78;
@@ -490,17 +592,30 @@ body{font-family:'Amiri',serif;font-size:10.6pt;line-height:1.78;
  --line:#E0D2B8;--hair:#EDE3D1;--mute:#9A8A76;--burg:#7C1F2E;}
 /* ── Latin is a quiet supporting voice, never a competitor ──────── */
 .en,.lat{direction:ltr;font-family:'EB Garamond',Georgia,'Times New Roman',serif;
- font-weight:400;letter-spacing:.16em;text-transform:uppercase;
- font-size:7.1pt;color:var(--mute);}
-.kufi{font-family:'Noto Kufi Arabic',sans-serif;font-weight:400;}
+ font-weight:500;letter-spacing:.085em;text-transform:uppercase;
+ font-size:7.6pt;line-height:1.5;color:#7D6C55;word-spacing:.04em;}
+.enx{direction:ltr;font-family:'EB Garamond',Georgia,serif;font-weight:400;
+ letter-spacing:.012em;text-transform:none;font-size:9pt;line-height:1.62;
+ color:#4A3B2C;}
+.kufi{font-family:'Reem Kufi',sans-serif;font-weight:500;}
+/* Two Arabic voices, deliberately divided:
+   Amiri  — the reading voice: body, tables, numerals, subject names.
+   Reem Kufi — the institutional voice: mastheads, part and section titles,
+               programme names, grade titles, small labels. Never body text. */
 h1,h2,h3,h4{font-family:'Amiri',serif;font-weight:700;letter-spacing:0;}
-h5,h6{font-family:'Noto Kufi Arabic',sans-serif;font-weight:400;}
+/* institutional display — Reem Kufi, tracked open, never below 11pt */
+.cover h1,.xmast h1,.xdept,.opener h2,.opener .ar2,.sot h3,.cpband .cpt h2,
+.secop .sot h3,h2,.alh,.xsec h4{font-family:'Reem Kufi',sans-serif;font-weight:600;
+ letter-spacing:.004em;}
+.cover h1{font-weight:700;} .xmast h1{font-weight:700;}
+.opener h2{font-weight:700;} .cpband .cpt h2{font-weight:600;}
+h5,h6{font-family:'Reem Kufi',sans-serif;font-weight:400;}
 p{margin:0 0 4.8mm;}
 .g{color:var(--mute);}
-.pg{padding:0 19mm;}
-.pg>h2:first-child{padding-top:5mm;}
+.pg{padding:0;}
+.pg>h2:first-child{padding-top:0;}
 .brk{page-break-before:always;}
-.pg.brk{padding-top:5mm;}
+.pg.brk{padding-top:0;}
 /* ── cover ──────────────────────────────────────────────────────── */
 .cover{height:297mm;padding:0;display:flex;flex-direction:column;
  page-break-after:always;background:#3B2A1D;color:#F3E8D6;position:relative;}
@@ -509,48 +624,48 @@ p{margin:0 0 4.8mm;}
 .cover .top{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
  padding:0 26mm 0;}
 .cover .rule{height:1.1pt;background:var(--gold2);width:26mm;margin:0 0 11mm;}
-.cover .inst{font-family:'EB Garamond',Georgia,serif;font-size:8.2pt;letter-spacing:.3em;
+.cover .inst{font-family:'EB Garamond',Georgia,serif;font-size:8.2pt;letter-spacing:.14em;
  color:var(--gold2);direction:ltr;margin:0 0 3mm;text-transform:uppercase;}
 .cover .instar{font-size:11.4pt;color:#D7C5A4;margin:0 0 19mm;letter-spacing:.02em;}
-.cover h1{font-size:36pt;line-height:1.34;margin:0 0 6mm;color:#FFFCF6;font-weight:700;}
-.cover .en2{font-family:'EB Garamond',Georgia,serif;font-size:10pt;letter-spacing:.26em;
+.cover h1{font-size:32pt;line-height:1.42;margin:0 0 6mm;color:#FFFCF6;font-weight:700;}
+.cover .en2{font-family:'EB Garamond',Georgia,serif;font-size:10pt;letter-spacing:.13em;
  color:var(--gold2);direction:ltr;margin:0 0 6mm;text-transform:uppercase;}
 .cover .sub{font-size:12.4pt;color:#C9B79A;margin:0 0 24mm;max-width:118mm;line-height:1.95;}
 .cover .foot{background:#1E1409;padding:12mm 26mm;border-top:.5pt solid rgba(196,161,91,.4);}
 .cover .foot .l1{font-size:10pt;color:var(--champ);margin:0 0 2mm;}
 .cover .foot .l2{font-family:'EB Garamond',Georgia,serif;font-size:7.2pt;color:#8E7C63;
- direction:ltr;letter-spacing:.2em;text-transform:uppercase;}
+ direction:ltr;letter-spacing:.1em;text-transform:uppercase;}
 /* ── imprint ────────────────────────────────────────────────────── */
-.imp{padding:8mm 26mm 0;}
+.imp{padding:0 7mm 0;}
 .imp h2{border:0;font-size:12.4pt;margin:0 0 6mm;color:var(--brown);padding:0;
  letter-spacing:.01em;}
 .imp h2:before{content:'';display:block;width:16mm;height:.9pt;background:var(--gold);
  margin:0 0 3mm;}
-.imp .attr{border-right:.9pt solid var(--gold);padding:4mm 6mm;background:var(--paper2);
- margin:0 0 7mm;font-size:9.6pt;line-height:1.8;}
+.imp .attr{border-right:.9pt solid var(--gold);padding:3.4mm 6mm 4.4mm;background:var(--paper2);
+ margin:0 0 5.5mm;font-size:9.2pt;line-height:1.74;}
 .imp .attr .lat{display:block;font-size:7pt;margin-top:3mm;letter-spacing:.1em;
  text-transform:none;color:var(--bronze);line-height:1.6;}
 .imp .status{border-top:.9pt solid var(--burg);border-bottom:.4pt solid var(--hair);
- padding:3.4mm 0 3.8mm;font-size:9.4pt;color:#4A3226;margin:0 0 7mm;line-height:1.8;}
+ padding:3mm 0 3.4mm;font-size:9pt;color:#4A3226;margin:0 0 5.5mm;line-height:1.74;}
 .toc{font-size:10pt;}
 .toc div{display:flex;justify-content:space-between;align-items:baseline;
- border-bottom:.35pt solid var(--hair);padding:1.7mm 0;}
+ border-bottom:.35pt solid var(--hair);padding:1.45mm 0;}
 .toc .t{color:var(--ink);} .toc .p{color:var(--mute);font-family:'EB Garamond',Georgia,serif;
  font-size:8pt;letter-spacing:.08em;}
-.toc .pt{font-family:'Noto Kufi Arabic',sans-serif;font-size:7.6pt;color:var(--gold);
+.toc .pt{font-family:'Reem Kufi',sans-serif;font-size:7.6pt;color:var(--gold);
  letter-spacing:.1em;margin:5mm 0 1.2mm;border-bottom:.7pt solid var(--gold);
  padding-bottom:1.5mm;}
 /* ── part opener ────────────────────────────────────────────────── */
-.opener{page-break-before:always;height:240mm;display:flex;flex-direction:column;
- justify-content:center;padding:0 26mm;position:relative;}
+.opener{page-break-before:always;height:235mm;display:flex;flex-direction:column;
+ justify-content:center;padding:0 7mm;position:relative;}
 .opener:before{content:'';position:absolute;right:0;top:34mm;bottom:34mm;width:1.6pt;
  background:var(--gold);}
-.opener .pn{font-family:'EB Garamond',Georgia,serif;font-size:8pt;letter-spacing:.34em;
+.opener .pn{font-family:'EB Garamond',Georgia,serif;font-size:8pt;letter-spacing:.15em;
  color:var(--gold);direction:ltr;margin:0 0 7mm;text-transform:uppercase;}
-.opener h2{font-size:30pt;color:var(--brown);border:0;margin:0 0 4mm;padding:0;
- line-height:1.3;}
+.opener h2{font-size:27pt;color:var(--brown);border:0;margin:0 0 4.5mm;padding:0;
+ line-height:1.42;}
 .opener .ar2{font-size:14.5pt;color:var(--bronze);margin:0 0 7mm;}
-.opener .en3{font-family:'EB Garamond',Georgia,serif;font-size:8pt;letter-spacing:.22em;
+.opener .en3{font-family:'EB Garamond',Georgia,serif;font-size:8pt;letter-spacing:.11em;
  color:var(--mute);direction:ltr;margin:0 0 12mm;text-transform:uppercase;}
 .opener p{font-size:11.6pt;color:#3F2E20;max-width:126mm;line-height:2.02;}
 .opener.p1:before{background:var(--gold);} .opener.p2:before{background:var(--bronze);}
@@ -563,7 +678,7 @@ p{margin:0 0 4.8mm;}
  color:var(--brown);line-height:1;margin-bottom:1.5mm;}
 .opener .stat span{font-size:8pt;color:var(--mute);}
 /* ── headings ───────────────────────────────────────────────────── */
-h2{font-size:16pt;color:var(--brown);margin:0 0 6mm;padding:0 0 3mm;
+h2{font-size:15pt;color:var(--brown);margin:0 0 6mm;padding:0 0 3.4mm;line-height:1.45;
  border-bottom:.5pt solid var(--line);position:relative;page-break-after:avoid;}
 h2:after{content:'';position:absolute;bottom:-.5pt;right:0;width:22mm;height:1.4pt;
  background:var(--gold);}
@@ -578,7 +693,7 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .jsec:nth-child(2){border-color:#A7854A;} .jsec:nth-child(3){border-color:var(--bronze);}
 .jsec:nth-child(4){border-color:var(--burg);}
 .jsec .nm{font-size:9.6pt;color:var(--brown);font-weight:700;font-family:'Amiri',serif;}
-.jsec .en4{font-family:'EB Garamond',Georgia,serif;font-size:6.2pt;letter-spacing:.22em;
+.jsec .en4{font-family:'EB Garamond',Georgia,serif;font-size:6.8pt;letter-spacing:.075em;
  color:var(--mute);direction:ltr;margin-bottom:2.5mm;text-transform:uppercase;}
 .jsec .cells{display:flex;gap:1.2mm;}
 .jsec .c{flex:1;background:var(--paper2);border-top:.35pt solid var(--hair);
@@ -586,11 +701,11 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
  color:var(--brown);}
 .jsec .c.gt{background:var(--brown);color:var(--champ);border-top-color:var(--brown);}
 .jsec .gl{font-size:6pt;color:var(--champ);margin-top:1.4mm;line-height:1.35;
- font-family:'Noto Kufi Arabic',sans-serif;letter-spacing:.02em;}
+ font-family:'Reem Kufi',sans-serif;letter-spacing:.02em;}
 /* ── the forms legend ───────────────────────────────────────────── */
 .forms{width:100%;border-collapse:collapse;font-size:9.6pt;margin:0 0 6mm;}
 .forms thead th{border-top:1pt solid var(--brown);border-bottom:.4pt solid var(--line);
- padding:2.4mm 3mm;font-family:'Noto Kufi Arabic',sans-serif;font-size:7.4pt;
+ padding:2.4mm 3mm;font-family:'Reem Kufi',sans-serif;font-size:7.4pt;
  color:var(--bronze);font-weight:400;letter-spacing:.07em;text-align:right;}
 .forms td{border-bottom:.35pt solid var(--hair);padding:2.9mm 3mm;text-align:right;
  vertical-align:top;line-height:1.65;}
@@ -604,7 +719,7 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
  vertical-align:top;line-height:1.66;border-bottom:.35pt solid var(--hair);}
 .glance thead th,.nav thead th{border-top:1pt solid var(--brown);
  border-bottom:.5pt solid var(--brown);background:transparent;
- font-family:'Noto Kufi Arabic',sans-serif;font-size:7.2pt;color:var(--bronze);
+ font-family:'Reem Kufi',sans-serif;font-size:7.2pt;color:var(--bronze);
  font-weight:400;letter-spacing:.07em;}
 .nav thead th{text-align:center;}
 .glance tbody tr:last-child td,.nav tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
@@ -644,20 +759,21 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .cpgate{margin-right:auto;align-self:center;font-family:'Amiri',serif;font-size:9.6pt;
  color:var(--burg);border-top:.9pt solid var(--burg);border-bottom:.35pt solid var(--line);
  padding:1.8mm 0 1.8mm;min-width:34mm;text-align:center;}
-.cphifz{border-right:.9pt solid var(--gold);padding:2.6mm 5mm;background:var(--paper2);
+.cphifz{border-right:.9pt solid var(--gold);padding:2.6mm 5mm 3.8mm;background:var(--paper2);
  font-size:10pt;margin:0 0 6mm;}
 /* ── the class card — editorial architecture, not a widget ──────── */
 .ccard{margin:0 0 8mm;page-break-inside:avoid;}
+.pg,.cpage{padding-bottom:6mm;}
 .ccrow{display:flex;page-break-inside:avoid;border-top:1.4pt solid var(--gold);
  border-bottom:.5pt solid var(--line);padding:5mm 0 4.5mm;margin:0 0 5mm;}
-.ccbig{flex:1;text-align:center;padding:0 5mm;border-left:.35pt solid var(--hair);}
+.ccbig{flex:1;overflow:hidden;text-align:center;padding:0 5mm;border-left:.35pt solid var(--hair);}
 .ccbig:last-child{border-left:0;}
 .ccbig b{display:block;font-family:'Amiri',serif;font-size:30pt;line-height:.96;
  color:var(--brown);font-weight:700;margin-bottom:2.6mm;}
 .ccbig.alt b{color:var(--bronze);}
 .ccbig span{display:block;font-size:8.4pt;color:#5A4A38;line-height:1.4;}
 .ccbig i{display:block;font-family:'EB Garamond',Georgia,serif;font-style:normal;
- font-size:6pt;letter-spacing:.18em;color:#B0A18C;text-transform:uppercase;
+ font-size:6pt;letter-spacing:.09em;color:#B0A18C;text-transform:uppercase;
  direction:ltr;margin-top:1.6mm;white-space:nowrap;}
 .ccprog{display:flex;gap:7mm;margin:0 0 5mm;}
 .ccp{flex:1;border-top:.9pt solid var(--gold);padding-top:2.6mm;}
@@ -672,11 +788,11 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
  color:#4A3B2C;line-height:2.05;}
 .ccfoot b{color:var(--brown);}
 .ccfoot .lb{display:inline-block;width:17mm;color:var(--mute);font-size:7.2pt;
- font-family:'Noto Kufi Arabic',sans-serif;letter-spacing:.06em;}
+ font-family:'Reem Kufi',sans-serif;letter-spacing:.06em;}
 .ccmeth{font-size:7.8pt;color:var(--mute);line-height:1.78;margin:3.5mm 0 0;
  border-top:.35pt solid var(--hair);padding-top:2.6mm;}
 /* ── academic tables — rules above and below, none between ──────── */
-.alh{font-size:12.6pt;color:var(--brown);margin:0 0 4.5mm;padding:0 0 2.5mm;
+.alh{font-size:11.8pt;color:var(--brown);margin:0 0 4.5mm;padding:0 0 2.8mm;line-height:1.45;
  border-bottom:.5pt solid var(--line);position:relative;}
 .alh:after{content:'';position:absolute;bottom:-.5pt;right:0;width:22mm;height:1.4pt;
  background:var(--gold);}
@@ -687,14 +803,31 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .alt.p4 h4{border-color:#A08F79;}
 .atab{width:100%;border-collapse:collapse;font-size:9pt;}
 .atab thead th{background:transparent;color:var(--bronze);
- font-family:'Noto Kufi Arabic',sans-serif;font-size:7.2pt;font-weight:400;
+ font-family:'Reem Kufi',sans-serif;font-size:7.2pt;font-weight:400;
  letter-spacing:.07em;padding:2.2mm 2.4mm;text-align:right;
  border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);}
 .atab tbody th{text-align:right;font-family:'Amiri',serif;font-weight:700;
  color:var(--brown);width:22%;padding:2.4mm;border-bottom:.3pt solid var(--hair);}
 .atab td{padding:2.4mm;border-bottom:.3pt solid var(--hair);color:#3F3225;
  vertical-align:top;line-height:1.6;}
-.atab tbody tr:nth-child(even) th,.atab tbody tr:nth-child(even) td{background:#FBF7EF;}
+.atab tbody tr:nth-child(even) th,.atab tbody tr:nth-child(even) td{background:#F8F2E6;}
+/* the three table voices: brown for allocation, blue for navigation,
+   cream for reference. Header treatment carries the distinction. */
+.alt.p1 .atab thead th{background:var(--panel);color:var(--champ);border-top-color:var(--panel);}
+.alt.p2 .atab thead th{background:#4A3624;color:#F0E3CC;border-top-color:#4A3624;}
+.alt.p3 .atab thead th{background:var(--blue);color:#DCE4F2;border-top-color:var(--blue);}
+.alt.p4 .atab thead th{background:#5E5445;color:#EFE9DE;border-top-color:#5E5445;}
+.alt.p3 .atab tbody tr:nth-child(even) th,
+.alt.p3 .atab tbody tr:nth-child(even) td{background:var(--bluetint);}
+.nav thead th{background:var(--blue);color:#DCE4F2;border-top-color:var(--blue);
+ border-bottom-color:var(--blue);}
+.nav tbody tr:nth-child(even) td,.nav tbody tr:nth-child(even) th{background:var(--bluetint);}
+.glance thead th{background:var(--panel);color:var(--champ);border-top-color:var(--panel);
+ border-bottom-color:var(--panel);}
+.glance tbody tr:nth-child(even) td,.glance tbody tr:nth-child(even) th{background:#F8F2E6;}
+.books tbody tr:nth-child(even) th,.books tbody tr:nth-child(even) td{background:#FAF5EA;}
+.txt tbody tr:nth-child(even) td{background:#F8F2E6;}
+.rota thead th{background:var(--blue);color:#DCE4F2;border-top-color:var(--blue);}
 .atab tbody tr:last-child th,.atab tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
 .atab td.c{text-align:center;}
 .atab td b{font-family:'Amiri',serif;font-size:10.4pt;color:var(--brown);}
@@ -706,7 +839,7 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .rota th,.rota td{padding:2.2mm 2.4mm;text-align:center;
  border-bottom:.3pt solid var(--hair);}
 .rota thead th{border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);
- color:var(--bronze);font-family:'Noto Kufi Arabic',sans-serif;font-size:7.2pt;
+ color:var(--bronze);font-family:'Reem Kufi',sans-serif;font-size:7.2pt;
  font-weight:400;letter-spacing:.07em;}
 .rota tbody th{color:var(--brown);font-family:'Amiri',serif;font-weight:700;}
 .rota tbody tr:last-child th,.rota tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
@@ -738,10 +871,117 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
  padding:4mm 0 4mm;}
 .keyrow span{display:flex;align-items:center;gap:2.2mm;}
 .keyrow i{width:2.8mm;height:2.8mm;display:block;}
-.cdr{font-family:'Noto Kufi Arabic',sans-serif;font-size:6.6pt;letter-spacing:.05em;
+.cdr{font-family:'Reem Kufi',sans-serif;font-size:6.6pt;letter-spacing:.05em;
  color:var(--burg);border-bottom:.4pt solid #DEBFB6;padding-bottom:.3mm;
  white-space:nowrap;direction:rtl;}
 
+
+/* ═══ EXECUTIVE OPENING ════════════════════════════════════════════ */
+.xpg{page-break-before:always;page-break-after:always;padding-bottom:4mm;}
+.xpg.brk{page-break-before:always;page-break-after:always;}
+.xmast{text-align:center;border-top:2.2pt solid var(--gold);
+ border-bottom:.5pt solid var(--line);padding:5mm 0 4.5mm;margin:0 0 5mm;
+ background:linear-gradient(180deg,var(--paper2) 0%,var(--paper) 100%);}
+.xlat{font-family:'EB Garamond',Georgia,serif;font-size:8.4pt;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--bronze);direction:ltr;margin:0 0 2.5mm;}
+.xmast h1{font-size:19pt;color:var(--brown);margin:0 0 3.4mm;line-height:1.45;}
+.xdiv{display:flex;align-items:center;justify-content:center;margin:0 0 4mm;}
+.xdiv:before,.xdiv:after{content:'';width:24mm;height:.4pt;background:var(--line);}
+.xdiv i{width:2.4mm;height:2.4mm;background:var(--gold);transform:rotate(45deg);
+ margin:0 3mm;display:block;}
+.xdept{font-size:13pt;color:var(--blue);font-weight:600;
+ margin:0 0 2.2mm;line-height:1.5;}
+.xlat2{font-family:'EB Garamond',Georgia,serif;font-size:8.6pt;letter-spacing:.1em;
+ text-transform:uppercase;color:#6E7FA0;direction:ltr;margin:0 0 5mm;}
+.xhb{display:inline-block;font-size:9pt;color:var(--brown);
+ border-top:.9pt solid var(--gold);border-bottom:.9pt solid var(--gold);
+ padding:1.8mm 7mm;letter-spacing:.02em;}
+.xlead{font-size:9.8pt;line-height:1.8;color:#3F2E20;margin:0 0 4.5mm;text-align:justify;}
+.xgrid{display:flex;gap:3.5mm;margin:0 0 5.5mm;page-break-inside:avoid;}
+.xp{flex:1;overflow:hidden;border:.35pt solid var(--line);background:var(--ivory);padding:3.6mm 3.4mm 4.4mm;
+ position:relative;}
+.xp:before{content:'';position:absolute;top:0;right:0;left:0;height:1.8pt;background:var(--gold);}
+.xp.p2{background:#F7F0E3;} .xp.p2:before{background:var(--bronze);}
+.xp.p3{background:var(--bluetint);border-color:#D6DCE8;} .xp.p3:before{background:var(--blue);}
+.xpn{font-family:'EB Garamond',Georgia,serif;font-size:15pt;color:var(--gold);
+ direction:ltr;line-height:1;margin:0 0 2mm;}
+.xp.p3 .xpn{color:var(--blue2);}
+.xp h3{margin:0 0 1.2mm;font-size:12pt;color:var(--brown);}
+.xpe{font-family:'EB Garamond',Georgia,serif;font-size:6.6pt;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--mute);direction:ltr;margin:0 0 3mm;}
+.xpstat{display:flex;gap:5mm;font-size:8pt;color:#6B5C48;margin:0 0 2.5mm;
+ border-top:.35pt solid var(--hair);border-bottom:.35pt solid var(--hair);padding:2mm 0;}
+.xpstat b{font-family:'Amiri',serif;font-size:12.5pt;color:var(--brown);margin-left:1.2mm;}
+.xp p{margin:0;font-size:8.2pt;line-height:1.62;color:#4A3B2C;}
+.xsec{page-break-inside:avoid;}
+.xsec h4{font-size:11pt;color:var(--brown);margin:0 0 3.5mm;padding-bottom:2mm;
+ border-bottom:.5pt solid var(--line);position:relative;}
+.xsec h4:after{content:'';position:absolute;bottom:-.5pt;right:0;width:18mm;height:1.4pt;
+ background:var(--gold);}
+.xsrow{display:flex;gap:3mm;page-break-inside:avoid;}
+.xs{flex:1;overflow:hidden;border:.35pt solid var(--line);padding:3mm 3mm 4mm;background:var(--ivory);}
+.xs.s2{background:#F8F1E4;} .xs.s3{background:#F5EDDE;} .xs.s4{background:#F2E8D6;}
+.xsn{font-family:'Amiri',serif;font-size:14pt;color:var(--gold);font-weight:700;
+ line-height:1;margin:0 0 2mm;}
+.xs b{display:block;font-size:10pt;color:var(--brown);margin:0 0 .8mm;}
+.xs i{display:block;font-family:'EB Garamond',Georgia,serif;font-style:normal;font-size:6.2pt;
+ letter-spacing:.09em;text-transform:uppercase;color:var(--mute);direction:ltr;margin:0 0 2mm;}
+.xs span{display:block;font-size:7.8pt;color:#5A4A38;line-height:1.5;margin:0 0 1.8mm;}
+.xs u{display:block;text-decoration:none;font-size:7.6pt;color:var(--burg);
+ border-top:.35pt solid var(--hair);padding-top:1.8mm;}
+.xnote{margin:4mm 0 0;page-break-inside:avoid;font-size:8.2pt;color:var(--mute);border-top:.35pt solid var(--hair);
+ padding-top:3mm;line-height:1.75;}
+/* subject register */
+.xreg{margin:0 0 5mm;page-break-inside:avoid;}
+.xreg h4{font-size:10.6pt;color:var(--brown);margin:0 0 2.4mm;padding-bottom:1.8mm;
+ border-bottom:.9pt solid var(--gold);display:flex;align-items:baseline;}
+.xreg.p2 h4{border-color:var(--bronze);} .xreg.p3 h4{border-color:var(--blue);}
+.xreg h4 em{margin-right:auto;font-style:normal;font-size:7.6pt;color:var(--mute);}
+.rnum{font-family:'EB Garamond',Georgia,serif;font-size:9pt;color:var(--gold);
+ direction:ltr;margin-left:3mm;}
+.xreg.p3 .rnum{color:var(--blue2);}
+.xrt{width:100%;border-collapse:collapse;font-size:8.6pt;}
+.xrt thead th{font-family:'Reem Kufi',sans-serif;font-size:6.8pt;font-weight:400;
+ letter-spacing:.06em;color:var(--bronze);padding:1.6mm 2.2mm;text-align:right;
+ border-bottom:.4pt solid var(--line);}
+.xrt tbody th{text-align:right;font-family:'Amiri',serif;font-weight:700;color:var(--brown);
+ width:34%;padding:1.7mm 2.2mm;border-bottom:.3pt solid var(--hair);}
+.xrt td{padding:1.7mm 2.2mm;border-bottom:.3pt solid var(--hair);color:#4A3B2C;}
+.xrt td.c{text-align:center;font-family:'Amiri',serif;color:var(--brown);}
+.xrt tbody tr:nth-child(even) th,.xrt tbody tr:nth-child(even) td{background:#F9F4E9;}
+.xreg.p3 .xrt tbody tr:nth-child(even) th,
+.xreg.p3 .xrt tbody tr:nth-child(even) td{background:var(--bluetint);}
+/* the journey map */
+.xmap{width:100%;border-collapse:collapse;font-size:7.8pt;}
+.xmap thead th{background:var(--panel);color:var(--champ);font-family:'Amiri',serif;
+ font-size:9pt;padding:2mm 0;text-align:center;width:5.6%;}
+.xmap thead th.gt{background:var(--gold);color:var(--esp);font-weight:700;}
+.xmap thead th.ms{background:var(--panel);text-align:right;width:26%;padding-right:2.4mm;
+ font-size:7.4pt;font-family:'Reem Kufi',sans-serif;font-weight:400;}
+.xmap th.ms{text-align:right;font-family:'Amiri',serif;font-weight:700;color:var(--brown);
+ padding:1.5mm 2.4mm 1.5mm 0;font-size:8.4pt;border-bottom:.3pt solid var(--hair);}
+.xmap td{border-bottom:.3pt solid var(--hair);border-left:.3pt solid #F2EADB;height:5mm;}
+.xmap td.m0{background:#F6F2E9;}
+.xmap td.ind{background:var(--brown);} .xmap td.trm{background:#A7854A;}
+.xmap td.mrg{background:#8A6B45;} .xmap td.emb{background:var(--gold2);}
+.xmap td.unt{background:#D8BE8B;} .xmap td.rot{background:#DFCBA6;}
+.xmap td.str{background:#EFE2C8;}
+.xmap td.mq{background:#EFD6CF;color:var(--burg);text-align:center;font-size:7pt;}
+.xmap tr.mh td{background:var(--cream);color:var(--brown);font-family:'Amiri',serif;
+ font-weight:700;font-size:9pt;padding:2mm 2.4mm;border-top:.9pt solid var(--gold);
+ border-bottom:.4pt solid var(--line);text-align:right;}
+.xmap tr.mh.p2 td{background:#F3E9D8;border-top-color:var(--bronze);}
+.xmap tr.mh.p3 td{background:var(--bluepale);border-top-color:var(--blue);color:var(--blue);}
+.xmap tr.mh.p4 td{background:#F1EEE7;border-top-color:#A08F79;}
+.mapkey{display:flex;flex-wrap:wrap;gap:2.4mm 6mm;font-size:8.2pt;margin:5mm 0 0;
+ border-top:.9pt solid var(--gold);padding-top:3.5mm;}
+.mapkey span{display:flex;align-items:center;gap:2mm;}
+.mapkey i{width:3.4mm;height:3.4mm;display:block;font-style:normal;}
+.mapkey i.ind{background:var(--brown);} .mapkey i.trm{background:#A7854A;}
+.mapkey i.mrg{background:#8A6B45;} .mapkey i.emb{background:var(--gold2);}
+.mapkey i.unt{background:#D8BE8B;} .mapkey i.str{background:#EFE2C8;}
+.mapkey i.mqk{background:#EFD6CF;color:var(--burg);text-align:center;font-size:6.4pt;
+ line-height:3.4mm;} .mapkey i.g0{background:#F6F2E9;}
 /* ═══ SHRS SURFACE & ORNAMENT SYSTEM ═══════════════════════════════
    Six paper tones, one gold, one deep anchor. Every surface carries a
    different class of information — tone is meaning, not decoration.
@@ -749,7 +989,12 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
    registration mark, divider centre and corner. Nothing else is added.
    ════════════════════════════════════════════════════════════════ */
 body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
- --panel:#332314;}
+ --panel:#332314;
+ /* Supporting institutional colours, ruled in by the Director General.
+    Royal Blue anchors academic navigation; it never replaces the coffee/gold
+    identity and never fills a page. */
+ --blue:#082A66;--blue2:#14407F;--bluepale:#EAEEF5;--bluetint:#F4F6FA;
+ --jade:#2E5B4E;}
 /* the lozenge — the one ornament in the system */
 .loz{display:inline-block;width:2.2mm;height:2.2mm;background:var(--gold);
  transform:rotate(45deg);vertical-align:middle;margin:0 2.4mm;}
@@ -768,7 +1013,7 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
  font-weight:700;min-width:22mm;text-align:center;
  border-left:.5pt solid rgba(196,161,91,.45);padding-left:7mm;}
 .cpband .cpt{flex:1;}
-.cpband .cpt h2{border:0;padding:0;margin:0;font-size:22pt;color:#FFFCF6;line-height:1.25;}
+.cpband .cpt h2{border:0;padding:0;margin:0;font-size:19pt;color:#FFFCF6;line-height:1.4;}
 .cpband .cpt h2:after{display:none;}
 .cpband .cpsec{font-size:9.4pt;color:#BFAB8B;margin-top:1.8mm;}
 .cpband .cpsec .en{color:#9B876A;}
@@ -776,11 +1021,11 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
  font-size:10pt;color:var(--champ);border:.5pt solid rgba(196,161,91,.55);
  padding:2.4mm 5mm;min-width:36mm;background:rgba(0,0,0,.16);}
 .cpgate em{display:block;font-family:'EB Garamond',Georgia,serif;font-style:normal;
- font-size:6pt;letter-spacing:.24em;text-transform:uppercase;color:#9B876A;
+ font-size:6.6pt;letter-spacing:.08em;text-transform:uppercase;color:#9B876A;
  margin-bottom:1mm;direction:ltr;}
 /* ── the metric family: one dominant, three graded ───────────────── */
 .ccrow{display:flex;gap:3mm;border:0;padding:0;margin:0 0 6mm;}
-.ccbig{flex:1;text-align:center;padding:5mm 4mm 4.5mm;border:.35pt solid var(--line);
+.ccbig{flex:1;overflow:hidden;text-align:center;padding:5mm 4mm 5.6mm;border:.35pt solid var(--line);
  position:relative;}
 .ccbig:before{content:'';position:absolute;top:0;right:0;left:0;height:1.4pt;
  background:var(--gold);}
@@ -798,11 +1043,11 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
  color:var(--brown);font-weight:700;margin-bottom:2.8mm;}
 .ccbig span{display:block;font-size:8.4pt;color:#4A3B2C;line-height:1.4;}
 .ccbig i{display:block;font-family:'EB Garamond',Georgia,serif;font-style:normal;
- font-size:5.9pt;letter-spacing:.18em;color:#A8967C;text-transform:uppercase;
+ font-size:6.5pt;letter-spacing:.075em;color:#A8967C;text-transform:uppercase;
  direction:ltr;margin-top:1.8mm;white-space:nowrap;}
 /* ── the three programmes as academic divisions ──────────────────── */
 .ccprog{display:flex;gap:3mm;margin:0 0 5mm;}
-.ccp{flex:1;position:relative;padding:4mm 4mm 3.4mm 4mm;border:.35pt solid var(--line);
+.ccp{flex:1;overflow:hidden;position:relative;padding:4mm 4mm 4.8mm 4mm;border:.35pt solid var(--line);
  background:var(--ivory);}
 .ccp:before{content:'';position:absolute;top:0;right:0;left:0;height:1.6pt;
  background:var(--gold);}
@@ -820,10 +1065,10 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
 .ccn b{font-family:'Amiri',serif;font-size:14pt;color:var(--brown);margin-left:1.4mm;
  font-weight:700;}
 .ccfoot{border-top:.35pt solid var(--hair);border-bottom:.35pt solid var(--hair);
- padding:3.2mm 0;font-size:8.8pt;color:#4A3B2C;line-height:2.05;background:var(--paper2);
+ padding:3.2mm 0 4.4mm;font-size:8.8pt;color:#4A3B2C;line-height:2.05;background:var(--paper2);
  padding-right:4mm;padding-left:4mm;}
 /* ── section openings: four academic stages ──────────────────────── */
-.secop{margin:0 0 7mm;page-break-inside:avoid;border:.35pt solid var(--line);
+.secop{margin:0 0 9mm;page-break-inside:avoid;overflow:hidden;border:.35pt solid var(--line);
  background:var(--ivory);}
 .secop.s1{background:var(--ivory);} .secop.s2{background:#F8F1E4;}
 .secop.s3{background:#F5EDDE;} .secop.s4{background:#F2E8D6;}
@@ -832,22 +1077,22 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
 .son{font-family:'Amiri',serif;font-size:26pt;color:var(--champ);line-height:1;
  font-weight:700;min-width:13mm;text-align:center;
  border-left:.5pt solid rgba(196,161,91,.42);padding-left:6mm;}
-.sot{flex:1;} .sot h3{margin:0;font-size:16pt;color:#FFFCF6;}
-.soe{font-size:6.4pt;letter-spacing:.24em;color:#9B876A;margin-top:1.4mm;}
+.sot{flex:1;} .sot h3{margin:0;font-size:14.5pt;color:#FFFCF6;line-height:1.4;}
+.soe{font-size:7pt;letter-spacing:.08em;color:#9B876A;margin-top:1.4mm;}
 .socells{display:flex;gap:1.6mm;}
 .socells i{width:8mm;height:8mm;line-height:8mm;text-align:center;font-style:normal;
  font-family:'Amiri',serif;font-size:11pt;color:#E4D6BC;
  border:.5pt solid rgba(196,161,91,.4);}
 .socells i.gt{background:var(--gold);color:var(--esp);border-color:var(--gold);
  font-weight:700;}
-.sob2{padding:4.5mm 6mm 3.5mm;}
+.sob2{padding:4.5mm 6mm 5.5mm;}
 .soc{color:var(--bronze);font-size:10.6pt;margin:0 0 2.4mm;font-weight:700;
  font-family:'Amiri',serif;}
 .sod{margin:0;font-size:10pt;line-height:1.9;}
 /* ── programme openers: a division, not a heading ────────────────── */
 .opener{background:transparent;}
-.opener.p1,.opener.p2,.opener.p3,.opener.p4{padding:0 26mm;}
-.opener .pmark{position:absolute;top:30mm;right:26mm;font-family:'EB Garamond',Georgia,serif;
+.opener.p1,.opener.p2,.opener.p3,.opener.p4{padding:0 7mm;}
+.opener .pmark{position:absolute;top:30mm;right:7mm;font-family:'EB Garamond',Georgia,serif;
  font-size:74pt;color:rgba(59,42,29,.055);direction:ltr;line-height:1;}
 .opener .ornrow{display:flex;align-items:center;margin:0 0 9mm;}
 .opener .ornrow:before{content:'';flex:0 0 22mm;height:1.4pt;background:var(--gold);}
@@ -879,7 +1124,7 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
 .span{font-size:7.2pt;color:var(--mute);white-space:nowrap;}
 .span b{font-family:'Amiri',serif;color:var(--bronze);font-size:9.4pt;margin-right:2mm;}
 .card dl{margin:0;display:grid;grid-template-columns:16% 84%;gap:.8mm 0;font-size:9pt;}
-.card dt{color:var(--mute);font-size:7.2pt;font-family:'Noto Kufi Arabic',sans-serif;
+.card dt{color:var(--mute);font-size:7.2pt;font-family:'Reem Kufi',sans-serif;
  letter-spacing:.05em;padding-top:.9mm;}
 .card dd{margin:0;line-height:1.6;}
 .card dd.warn{color:var(--burg);}
@@ -887,7 +1132,7 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
 .txt{width:100%;border-collapse:collapse;font-size:9.2pt;}
 .txt th,.txt td{border-bottom:.3pt solid var(--hair);padding:2.4mm 2.6mm;text-align:right;}
 .txt thead th{border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);
- font-family:'Noto Kufi Arabic',sans-serif;font-size:7.2pt;color:var(--bronze);
+ font-family:'Reem Kufi',sans-serif;font-size:7.2pt;color:var(--bronze);
  font-weight:400;letter-spacing:.07em;}
 .txt tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
 .txt .gr{font-family:'Amiri',serif;color:var(--brown);white-space:nowrap;width:12%;
@@ -906,7 +1151,7 @@ body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
 .open th,.open td{border-bottom:.3pt solid var(--hair);padding:2.8mm 2.6mm;
  text-align:right;vertical-align:top;line-height:1.7;}
 .open thead th{border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);
- font-size:7.2pt;color:var(--bronze);font-family:'Noto Kufi Arabic',sans-serif;
+ font-size:7.2pt;color:var(--bronze);font-family:'Reem Kufi',sans-serif;
  font-weight:400;letter-spacing:.07em;}
 .open tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
 .open .w{width:31%;color:var(--brown);font-weight:700;}
@@ -973,6 +1218,11 @@ def build():
     for t in ['مواضعُ المتون','قواعدُ لازمة · وما هو موقوف']:
         w(f'<div><span class="t">{t}</span><span class="p">—</span></div>')
     w('</div></div>')
+
+    # ═══ THE EXECUTIVE OPENING ═══
+    w(exec_overview())
+    w(exec_register())
+    w(exec_map())
 
     # ═══ PART I ═══
     w('<div class="opener"><div class="pn">PART ONE</div>'
@@ -1202,6 +1452,12 @@ def build():
 
 if __name__ == '__main__':
     doc = build()
+    i, j = doc.index('<div class="cover">'), doc.index('<div class="imp">')
+    head = doc[:doc.index('<body>') + 6]
+    cover = head + doc[i:j] + '</body></html>'
+    body = head + doc[j:]
+    open(os.path.join(H, 'HANDBOOK-cover.html'), 'w', encoding='utf-8').write(cover)
+    open(os.path.join(H, 'HANDBOOK-body.html'), 'w', encoding='utf-8').write(body)
     p = os.path.join(H, 'SHRS-CURRICULUM-HANDBOOK.html')
     open(p, 'w', encoding='utf-8').write(doc)
     print(f'written — {len(doc)//1024} KB · {len(PROG_OF)} subjects · '
