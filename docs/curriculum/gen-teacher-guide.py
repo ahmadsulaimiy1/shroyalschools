@@ -250,24 +250,26 @@ def class_card(g):
     t = tally(g)
     sec = next(x for x in SECTIONS if g in x[3])
     o = ['<div class="ccard"><div class="ccrow">']
-    o.append(f'<div class="ccbig"><b>{ar(t["areas"])}</b><span>مجالًا في المنهج</span>'
-             '<i>Curriculum areas</i></div>')
-    o.append(f'<div class="ccbig"><b>{ar(t["ceil"])}</b><span>حصّةً في الأسبوع</span>'
-             '<i>Weekly periods</i></div>')
-    o.append(f'<div class="ccbig"><b>{ar(t["own"])}</b><span>بحصّةٍ خاصّة</span>'
-             '<i>Own slot</i></div>')
-    o.append(f'<div class="ccbig alt"><b>{ar(t["inhost"])}</b><span>داخل مضيفٍ مسمّى</span>'
-             '<i>Within a host</i></div>')
+    o.append(f'<div class="ccbig s1"><em></em><b>{ar(t["areas"])}</b>'
+             '<span>مجالًا في المنهج</span><i>Curriculum areas</i></div>')
+    o.append(f'<div class="ccbig s2"><b>{ar(t["ceil"])}</b>'
+             '<span>حصّةً في الأسبوع</span><i>Weekly periods</i></div>')
+    o.append(f'<div class="ccbig s3"><b>{ar(t["own"])}</b>'
+             '<span>بحصّةٍ خاصّة</span><i>Own slot</i></div>')
+    o.append(f'<div class="ccbig s4"><b>{ar(t["inhost"])}</b>'
+             '<span>داخل مضيفٍ مسمّى</span><i>Within a host</i></div>')
     o.append('</div><div class="ccprog">')
     for key, pn, pt, pen, cls, num, blurb in PROGS:
         a, sl = t['prog'][key]
         if not a:
             continue
-        o.append(f'<div class="ccp {cls}"><h6>{e(pt)}</h6>'
+        o.append(f'<div class="ccp {cls}"><span class="rn">{num}</span>'
+                 f'<h6>{e(pt)}</h6>'
                  f'<div class="ccn"><span><b>{ar(a)}</b> مجالًا</span>'
                  f'<span><b>{ar(sl)}</b> حصّة</span></div></div>')
     if t['shared']:
-        o.append(f'<div class="ccp shared"><h6>خانات فصلية مشتركة</h6>'
+        o.append(f'<div class="ccp shared"><span class="rn">&#9671;</span>'
+                 '<h6>خانات فصلية مشتركة</h6>'
                  f'<div class="ccn"><span><b>{ar(t["shared"])}</b> حصّة</span>'
                  '<span>تتناوبها مقرَّرات الفصول</span></div></div>')
     o.append('</div>')
@@ -389,12 +391,12 @@ def class_full(g):
     """A full page for one class. The definitive answer to: what do I teach?"""
     sec = next(x for x in SECTIONS if g in x[3])
     gate = next((n for x, n in GATES if x == g), None)
-    o = [f'<div class="cpage"><div class="cph"><div class="cpn">{ar(g)}</div>'
+    o = [f'<div class="cpage"><div class="cpband"><div class="cpn">{ar(g)}</div>'
          f'<div class="cpt"><h2>الصف {CLS[g]}</h2>'
          f'<div class="cpsec">{sec[0]} <span class="en">&middot; GRADE {g}</span></div></div>']
     if gate:
-        o.append(f'<div class="cpgate">{e(gate)}</div>')
-    o.append('</div>')
+        o.append(f'<div class="cpgate"><em>بوابة</em>{e(gate)}</div>')
+    o.append('<span class="cnr tl"></span><span class="cnr tr"></span></div>')
     if g in SHEET_HIFZ:
         o.append(f'<div class="cphifz">المحفوظ هذا العام — <b>{SHEET_HIFZ[g]}</b></div>')
     o.append(class_card(g))
@@ -739,6 +741,119 @@ h6{font-size:7.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.09em;}
 .cdr{font-family:'Noto Kufi Arabic',sans-serif;font-size:6.6pt;letter-spacing:.05em;
  color:var(--burg);border-bottom:.4pt solid #DEBFB6;padding-bottom:.3mm;
  white-space:nowrap;direction:rtl;}
+
+/* ═══ SHRS SURFACE & ORNAMENT SYSTEM ═══════════════════════════════
+   Six paper tones, one gold, one deep anchor. Every surface carries a
+   different class of information — tone is meaning, not decoration.
+   The ornament is a single form: the rotated lozenge (المِعيَن), used as
+   registration mark, divider centre and corner. Nothing else is added.
+   ════════════════════════════════════════════════════════════════ */
+body{--ivory:#FAF4E9;--cream:#F3E7D2;--parch:#EBDDC2;--pcoffee:#E2D0B2;
+ --panel:#332314;}
+/* the lozenge — the one ornament in the system */
+.loz{display:inline-block;width:2.2mm;height:2.2mm;background:var(--gold);
+ transform:rotate(45deg);vertical-align:middle;margin:0 2.4mm;}
+.divider{display:flex;align-items:center;gap:0;margin:7mm 0;}
+.divider:before,.divider:after{content:'';flex:1;height:.4pt;background:var(--line);}
+.divider i{width:2.6mm;height:2.6mm;background:var(--gold);transform:rotate(45deg);
+ margin:0 3mm;display:block;}
+.cnr{position:absolute;width:4.2mm;height:4.2mm;}
+.cnr.tl{top:0;left:0;border-top:.9pt solid var(--gold2);border-left:.9pt solid var(--gold2);}
+.cnr.tr{top:0;right:0;border-top:.9pt solid var(--gold2);border-right:.9pt solid var(--gold2);}
+/* ── class page: a composed band, not a rule ─────────────────────── */
+.cpband{position:relative;background:var(--panel);color:#F3E8D6;
+ display:flex;align-items:center;gap:7mm;padding:6.5mm 7mm;margin:0 0 7mm;
+ border-top:2pt solid var(--gold);}
+.cpband .cpn{font-family:'Amiri',serif;font-size:42pt;line-height:1;color:var(--champ);
+ font-weight:700;min-width:22mm;text-align:center;
+ border-left:.5pt solid rgba(196,161,91,.45);padding-left:7mm;}
+.cpband .cpt{flex:1;}
+.cpband .cpt h2{border:0;padding:0;margin:0;font-size:22pt;color:#FFFCF6;line-height:1.25;}
+.cpband .cpt h2:after{display:none;}
+.cpband .cpsec{font-size:9.4pt;color:#BFAB8B;margin-top:1.8mm;}
+.cpband .cpsec .en{color:#9B876A;}
+.cpgate{margin-right:auto;align-self:center;text-align:center;font-family:'Amiri',serif;
+ font-size:10pt;color:var(--champ);border:.5pt solid rgba(196,161,91,.55);
+ padding:2.4mm 5mm;min-width:36mm;background:rgba(0,0,0,.16);}
+.cpgate em{display:block;font-family:'EB Garamond',Georgia,serif;font-style:normal;
+ font-size:6pt;letter-spacing:.24em;text-transform:uppercase;color:#9B876A;
+ margin-bottom:1mm;direction:ltr;}
+/* ── the metric family: one dominant, three graded ───────────────── */
+.ccrow{display:flex;gap:3mm;border:0;padding:0;margin:0 0 6mm;}
+.ccbig{flex:1;text-align:center;padding:5mm 4mm 4.5mm;border:.35pt solid var(--line);
+ position:relative;}
+.ccbig:before{content:'';position:absolute;top:0;right:0;left:0;height:1.4pt;
+ background:var(--gold);}
+.ccbig.s1{background:var(--panel);border-color:var(--panel);flex:1.18;}
+.ccbig.s1:before{background:var(--champ);height:2pt;}
+.ccbig.s1 b{color:var(--champ);font-size:34pt;}
+.ccbig.s1 span{color:#E4D6BC;} .ccbig.s1 i{color:#9B876A;}
+.ccbig.s1 em{position:absolute;top:3.4mm;left:3.4mm;width:2.2mm;height:2.2mm;
+ background:var(--gold2);transform:rotate(45deg);}
+.ccbig.s2{background:var(--cream);border-color:#DFCBA6;}
+.ccbig.s3{background:var(--ivory);}
+.ccbig.s4{background:var(--parch);border-color:#DCC9A6;}
+.ccbig.s4 b{color:var(--bronze);}
+.ccbig b{display:block;font-family:'Amiri',serif;font-size:29pt;line-height:.98;
+ color:var(--brown);font-weight:700;margin-bottom:2.8mm;}
+.ccbig span{display:block;font-size:8.4pt;color:#4A3B2C;line-height:1.4;}
+.ccbig i{display:block;font-family:'EB Garamond',Georgia,serif;font-style:normal;
+ font-size:5.9pt;letter-spacing:.18em;color:#A8967C;text-transform:uppercase;
+ direction:ltr;margin-top:1.8mm;white-space:nowrap;}
+/* ── the three programmes as academic divisions ──────────────────── */
+.ccprog{display:flex;gap:3mm;margin:0 0 5mm;}
+.ccp{flex:1;position:relative;padding:4mm 4mm 3.4mm 4mm;border:.35pt solid var(--line);
+ background:var(--ivory);}
+.ccp:before{content:'';position:absolute;top:0;right:0;left:0;height:1.6pt;
+ background:var(--gold);}
+.ccp.p2{background:#F6EFE2;border-color:#DDCDAF;}
+.ccp.p2:before{background:var(--bronze);}
+.ccp.p3{background:#F7EDE9;border-color:#E2CDC6;}
+.ccp.p3:before{background:var(--burg);}
+.ccp.p4{background:#F4F1EA;} .ccp.p4:before{background:#A08F79;}
+.ccp.shared{background:var(--paper2);} .ccp.shared:before{background:var(--line);}
+.ccp .rn{position:absolute;top:3mm;left:4mm;font-family:'EB Garamond',Georgia,serif;
+ font-size:12pt;color:rgba(59,42,29,.19);direction:ltr;line-height:1;}
+.ccp h6{margin:0 0 2.4mm;font-size:9.4pt;color:var(--brown);font-family:'Amiri',serif;
+ font-weight:700;letter-spacing:0;}
+.ccn{display:flex;gap:6mm;font-size:8.2pt;color:#6B5C48;}
+.ccn b{font-family:'Amiri',serif;font-size:14pt;color:var(--brown);margin-left:1.4mm;
+ font-weight:700;}
+.ccfoot{border-top:.35pt solid var(--hair);border-bottom:.35pt solid var(--hair);
+ padding:3.2mm 0;font-size:8.8pt;color:#4A3B2C;line-height:2.05;background:var(--paper2);
+ padding-right:4mm;padding-left:4mm;}
+/* ── section openings: four academic stages ──────────────────────── */
+.secop{margin:0 0 7mm;page-break-inside:avoid;border:.35pt solid var(--line);
+ background:var(--ivory);}
+.secop.s1{background:var(--ivory);} .secop.s2{background:#F8F1E4;}
+.secop.s3{background:#F5EDDE;} .secop.s4{background:#F2E8D6;}
+.sob{display:flex;align-items:center;gap:6mm;background:var(--panel);color:#F3E8D6;
+ padding:4.5mm 6mm;border-top:1.8pt solid var(--gold);}
+.son{font-family:'Amiri',serif;font-size:26pt;color:var(--champ);line-height:1;
+ font-weight:700;min-width:13mm;text-align:center;
+ border-left:.5pt solid rgba(196,161,91,.42);padding-left:6mm;}
+.sot{flex:1;} .sot h3{margin:0;font-size:16pt;color:#FFFCF6;}
+.soe{font-size:6.4pt;letter-spacing:.24em;color:#9B876A;margin-top:1.4mm;}
+.socells{display:flex;gap:1.6mm;}
+.socells i{width:8mm;height:8mm;line-height:8mm;text-align:center;font-style:normal;
+ font-family:'Amiri',serif;font-size:11pt;color:#E4D6BC;
+ border:.5pt solid rgba(196,161,91,.4);}
+.socells i.gt{background:var(--gold);color:var(--esp);border-color:var(--gold);
+ font-weight:700;}
+.sob2{padding:4.5mm 6mm 3.5mm;}
+.soc{color:var(--bronze);font-size:10.6pt;margin:0 0 2.4mm;font-weight:700;
+ font-family:'Amiri',serif;}
+.sod{margin:0;font-size:10pt;line-height:1.9;}
+/* ── programme openers: a division, not a heading ────────────────── */
+.opener{background:transparent;}
+.opener.p1,.opener.p2,.opener.p3,.opener.p4{padding:0 26mm;}
+.opener .pmark{position:absolute;top:30mm;right:26mm;font-family:'EB Garamond',Georgia,serif;
+ font-size:74pt;color:rgba(59,42,29,.055);direction:ltr;line-height:1;}
+.opener .ornrow{display:flex;align-items:center;margin:0 0 9mm;}
+.opener .ornrow:before{content:'';flex:0 0 22mm;height:1.4pt;background:var(--gold);}
+.opener .ornrow i{width:2.6mm;height:2.6mm;background:var(--gold);transform:rotate(45deg);
+ margin:0 3mm;display:block;}
+.opener .ornrow:after{content:'';flex:1;height:.4pt;background:var(--line);}
 /* ── lifeline & subject cards ───────────────────────────────────── */
 .ll{display:flex;gap:1mm;margin:2mm 0 2.4mm;}
 .ll i{flex:1;height:4.6mm;display:block;}
@@ -919,12 +1034,15 @@ def build():
       '«مدمج» و«مضمّن» فرقٌ في درجة الطالب لا في العبارة.</p>')
 
     w('<h2 style="margin-top:9mm">الأقسامُ الأربعة</h2>')
-    for name, en, char, gs, desc in SECTIONS:
-        w(f'<div class="cls" style="page-break-inside:avoid"><div class="clsh">'
-          f'<h3>{name}</h3><span class="cn">{ar(gs[0])}–{ar(gs[-1])}</span>'
-          f'<span class="csec en">{en}</span></div>'
-          f'<p style="color:#6B4A2E;font-size:10.4pt;margin-bottom:2mm">{char}</p>'
-          f'<p>{desc}</p></div>')
+    for idx, (name, en, char, gs, desc) in enumerate(SECTIONS, 1):
+        gate_cells = ''.join(
+            f'<i class="{"gt" if any(x==c for x,_ in GATES) else ""}">{ar(c)}</i>' for c in gs)
+        w(f'<div class="secop s{idx}"><div class="sob">'
+          f'<span class="son">{ar(idx)}</span>'
+          f'<div class="sot"><h3>{name}</h3>'
+          f'<div class="soe en">{en} &middot; GRADES {gs[0]}&ndash;{gs[-1]}</div></div>'
+          f'<div class="socells">{gate_cells}</div></div>'
+          f'<div class="sob2"><p class="soc">{char}</p><p class="sod">{desc}</p></div></div>')
     w('</div>')
 
 
@@ -985,9 +1103,12 @@ def build():
         if not subs:
             continue
         ind = len({s for s in subs if any(T[g].get(s, (None,))[0] == 'مستقل' for g in range(1, 13))})
-        w(f'<div class="opener {cls}"><div class="pn">PROGRAMME {num}</div>'
+        w(f'<div class="opener {cls}"><div class="pmark">{num}</div>'
+          f'<div class="pn">PROGRAMME {num}</div>'
           f'<h2>{pt}</h2><div class="ar2">{pn}</div>'
-          f'<div class="en3">{pen}</div><p>{blurb}</p>'
+          f'<div class="en3">{pen}</div>'
+          '<div class="ornrow"><i></i></div>'
+          f'<p>{blurb}</p>'
           f'<div class="stat"><div><b>{ar(len(subs))}</b><span>مادة</span></div>'
           f'<div><b>{ar(ind)}</b><span>تستقلّ بورقة</span></div>'
           f'<div><b>{ar(min(FIRST[s] for s in subs))}–{ar(max(LAST[s] for s in subs))}</b>'
