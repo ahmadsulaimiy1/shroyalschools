@@ -642,6 +642,280 @@ set in the reading voice, above a gold rule, exactly as given.
 
 ---
 
+## X-ter. THE PUBLISHED EDITION IS LOCKED
+
+> **وما ليس في هذا السجل فليس بقرار.** The curriculum register says this of the
+> curriculum. From **14 September 2026** it is true of the **design** as well.
+
+**GACAIS–CURRICULUM v1.0 is closed.** The items below are **locked**. They
+change only by an explicit new ruling from the Director General, written into
+this section with its reason **before** anything is edited — never by a rebuild,
+never by a board's own judgement, never because a later agent thought it could
+do better. A rebuild that quietly loses one of them is the exact failure
+`CLAUDE.md` exists to prevent, and it has already happened once in this project
+to the curriculum. It will not be allowed to happen to the book.
+
+### The locked items
+
+| | Locked |
+|---|---|
+| **D-01** | **Six faces, each with one job.** Amiri = the reading voice and **every vowelled heading**. Reem Kufi = short **unvowelled** institutional lines only. Noto Kufi Arabic = all labels and column heads at 6–7pt. EB Garamond = Latin running prose. Cormorant Garamond = Latin display. Archivo = Latin furniture and data. **No seventh face.** |
+| **D-02** | **Reem Kufi never sets vowelled Arabic.** Its marks crowd the letter. The division is by **content**, not by rank. |
+| **D-03** | **Arabic is never letterspaced.** Tracking a cursive script pulls the joins apart. Tracking lives on Latin small caps only. |
+| **D-04** | **Six colours, each meaning something.** espresso `#2A1C10` = the institution in its own name · gold `#B08E4E` = **foil only, never fill** · green `#0F3F38` = القرآن وعلومه · navy `#082A66` = اللغة وعلومها · oxblood `#5E1B26` = الدراسات الإسلامية · charcoal `#3A342C` = التتويج, neutral **because it is not a fourth programme**. |
+| **D-05** | **Burgundy `#7C1F2E` is for flags only** — a gate, an open matter, an unregistered text. Always a hairline or a word, **never a filled surface**, so it cannot be mistaken for programme three. |
+| **D-06** | **Three ramps that never cross.** Programmes take colour; the four sections take the parchment ramp (ivory → light cream → cream → parchment, deepening with the stage); the six instructional forms take the tonal gold ramp. |
+| **D-07** | **The front board.** Coffee cloth held hard to the **top and right** edges over warm cream, split roughly three to one. Nothing symmetrical about the page centre. **No centred medallion. No rectangular gold border. No centred logo→title→subtitle stack.** These were refused by name. |
+| **D-08** | **The arch.** A two-centred portal arch in gold hairlines, **cropped by the trim** — a fragment, deliberately incomplete. It is architecture, not ornament. |
+| **D-09** | **One ornament.** The house lozenge repeated into a lattice, used as a band — once on the front (178mm), once on the back (79mm). Nothing else is added. |
+| **D-10** | **Gold is always a gradient**, in CSS and in SVG. Flat gold prints as yellow ink. The title's second line is gradient-clipped to the glyphs. |
+| **D-11** | **The title is typography, not a line of text.** «دليلُ المنهج» ivory · «العربيِّ والإسلامي» foil · Amiri 43pt, two deliberate lines. **THE CURRICULUM HANDBOOK** in Cormorant Garamond 18.5pt / 0.2em beneath. |
+| **D-12** | **Front · spine · back are one object.** The cloth continues across the spine and stops at a quarter height; the arch returns **mirrored**; the lattice returns at a **different station**. Brown dominates the front, cream the back. **The back is never blank and never a copy.** |
+| **D-13** | **Arabic spines read top to bottom**, set in a vertical writing mode, never rotated by hand. `SPINE_MM` is a **calculation** from the stock, not a choice, and is an **assumption until the binder confirms it**. |
+| **D-14** | **The Institution's marks are used as given.** The crest is never redrawn, recoloured or replaced; the only permitted alteration is cropping its own wordmark lockup away. Same for the GACAIS emblem. |
+| **D-15** | **No approval is claimed.** «إعدادٌ وإشراف» — never «واعتماد» — followed by «تُرفع إلى مجلس الأمناء لاعتمادها، ولم تُعتمد بعد». PUB-006 Art. 4, **الصدق التقريري**, applied to the book's own cover. |
+| **D-16** | **The running furniture never prints over the text.** `@page{margin:0}` must never return to the stylesheet; it once put the running head across the text on 1478 pages. The boards render at margin 0 in their **own** pass. |
+
+### What was published, and how to prove it is the same file
+
+| | |
+|---|---|
+| edition | **GACAIS–CURRICULUM v1.0** · first edition · September 2026 |
+| commit | the commit that carries this section |
+| pages | **80** — front board · 78 text pages · back board |
+| `SHRS-CURRICULUM-HANDBOOK.pdf` | `95e31319391de8d703f5ba8e332c8f8b72f6efa1353731c1a4e20866bf133d90` |
+| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `33f684abb9b0c6e1425e205f773c84fb23761a98bf6ba1661277b4f27fa16daa` |
+| `assets/shrs-crest.png` | `9050ea9fe7cc4c2c1d6ff8c4a9cb26f488c85bed878032df695d00aca45b4ceb` |
+| `assets/gacais-mark.png` | `9d573297d0998e684789b3be15dc4ecbafd267c0d24de61da4c1a66e41d260ad` |
+
+> **The earlier build of v1.0 (commit `b51d06b`) is withdrawn.** It carried the
+> refused green cover and the «واعتماد» claim. The version number is unchanged
+> because the *edition* is unchanged; the **build** is not, and the hashes above
+> are how the two are told apart. Anyone holding a copy whose hash is not in
+> this table is holding the withdrawn build.
+
+### How to rebuild it
+
+```
+cd docs/curriculum && bash build-handbook.sh
+```
+
+It fetches all six faces, **refuses to run if `verify.py` finds a locked
+curriculum item broken**, renders the two boards at margin 0 and the text block
+at 29/23/19mm, joins them, renders the binder's sheet at its own trim, and
+audits every page for furniture collisions. Nothing about this document is
+produced by hand.
+
+---
+
+## Appendix A. The directions that made this edition
+
+**Why this appendix exists.** Everything above is the *result*. This is the
+*instruction* — the Director General's own words, kept so that the next person
+can see what was actually asked for rather than inferring it from the artefact.
+It is the same discipline as §V: the rule is kept with the failure it prevents.
+
+**On fidelity.** Directions A-4 to A-7 are reproduced **verbatim** from the
+session record. Directions A-1 to A-3 are reconstructed from the same record
+after a context compaction: **the quoted phrases are verbatim; the connecting
+prose is a summary and is marked as such.** Nothing here is invented, and
+nothing is presented as a quotation that is not one. `[PROFESSIONAL INFERENCE]`
+appears nowhere in this appendix, because no part of a direction may be
+inferred.
+
+### A-1 · Typography and colour — final direction *(summary; quoted phrases verbatim)*
+
+Amiri is to remain an important SHRS typeface, but the typography is to be
+**art-directed rather than forced**: *"Do not force Amiri onto every element…
+The important thing is typographic harmony, not uniformity."* Amiri for
+classical and editorial headings; a Kufic or display face for institutional
+display; a contemporary Arabic sans where clarity requires it; a strong
+professional Latin face; serif and sans in combination.
+
+On colour — *"full creative freedom with discipline"*: blue, burgundy, green,
+charcoal, deep navy, muted teal and parchment may be introduced *"wherever they
+genuinely improve the publication… These are examples, not restrictions,"* but
+*"the palette must nevertheless feel like one institution."*
+
+The method: *"Design the handbook around the desired character"* — prestigious,
+elegant, flashy, premium, scholarly, royal, contemporary, professional — *"then
+select the typography, colour, surface, ornament and composition that best
+achieve that character."*
+
+And the standard it is to be judged by:
+
+> *"I would rather see three beautifully chosen typefaces and six perfectly
+> coordinated colours than one font and three colours used mechanically
+> throughout the entire book."*
+>
+> *"Use Amiri where Amiri is beautiful. Use other fonts where another font is
+> better. Use blue where blue makes the page better. Use another colour where
+> another colour is more appropriate. **The final result should look
+> art-directed, not generated from a rigid design formula.**"*
+
+### A-2 · The handbook is to be decorated *(summary; quoted phrases verbatim)*
+
+An earlier correction, still governing: *"DO NOT MAKE THE DESIGN RESTRAINED OR
+PLAIN — I WANT THE HANDBOOK DECORATED… ELEGANT · FLASHY · PREMIUM · RICH ·
+ROYAL · SOPHISTICATED · PROFESSIONAL."* The fault named was that *"the cards
+currently feel like they are simply sitting on a white page. The entire
+composition is too flat."* And: *"THIS IS A DESIGN-FINISHING ISSUE, NOT AN
+INFORMATION-ARCHITECTURE ISSUE. DO NOT REMOVE THE CARDS. DO NOT MAKE THE
+DOCUMENT PLAINER."*
+
+### A-3 · Blue, نور البيان, the furniture, and the front matter *(summary; quoted phrases verbatim)*
+
+*"Yes, use the blue or any other colors as supporting ones. **نور البيان for
+القراءة والتهجي.** Notice the headers and footers as they overlapping severally.
+**The English typographies are too poorly densed.** some rows continuously put
+tables but looking not alternating as premium would have been. There must be
+executive clean summary óf everything subjects, classes, and programmes in the
+first few. in the forward of the book maximum of 1-4 pages clean and
+professional, straightforward."*
+
+### A-4 · Cover — redesign completely *(verbatim)*
+
+> COVER — REDESIGN COMPLETELY
+>
+> The current cover is not the direction I want. It looks like a conventional
+> Islamic educational book cover: large green field, centred geometric emblem,
+> symmetrical gold border, and large centred title. I want something much more
+> stylish, luxurious and contemporary. **Do not simply refine the current cover.
+> Re-art-direct the cover.**
+>
+> **COLOUR DIRECTION.** The cover should primarily explore a sophisticated
+> combination of: **Royal Gold + White/Ivory + Coffee Brown + Warm Cream**, with
+> supporting colours allowed where they genuinely improve the composition.
+> Brown should be substantially present. Gold should be visibly luxurious.
+> White/ivory should create contrast and elegance. Cream can provide warmth.
+> Blue, burgundy, deep green, navy or another colour may be introduced only if
+> it makes the overall cover substantially better. **Do not make green the
+> dominant colour as in the current version.**
+>
+> **THE COVER SHOULD FEEL LIKE:** a luxury Saudi/Gulf academic publication
+> combined with a prestigious royal institution combined with a high-end
+> contemporary Arabic publishing house. It should be stylish enough that the
+> cover immediately looks expensive.
+>
+> **DO NOT USE THE CURRENT COMPOSITION.** Do not repeat: giant central circular
+> geometric logo; large empty green background; conventional double gold
+> rectangular border; centred school logo → title → subtitle stack; generic
+> Islamic geometric medallion; excessive symmetry simply for the sake of
+> symmetry. I want a more sophisticated editorial composition.
+>
+> **EXPLORE A MORE FASHIONABLE COMPOSITION.** Consider a strong brown/ivory base
+> with gold typography and architectural/decorative elements. For example: deep
+> Coffee Brown / warm brown field with an elegant ivory title, metallic-looking
+> Royal Gold typography/details, a sophisticated gold architectural frame or
+> geometric intervention, selective cream panels, small institutional
+> identification, carefully placed SHRS crest, elegant English typography,
+> subtle editorial numbering, premium decorative details. Or a predominantly
+> ivory/cream cover with a strong brown architectural panel and gold typography.
+> Do not force either option. Art-direct the strongest solution.
+>
+> **MAKE THE TITLE A DESIGN ELEMENT.** The Arabic title دليل المنهج العربي
+> والإسلامي should be treated as a major piece of typography. It should not
+> simply sit in the middle of the page like ordinary text. Give it: beautiful
+> scale, sophisticated Arabic typography, deliberate line breaks, excellent
+> spacing, strong relationship with the English title, elegant contrast against
+> the background. Amiri is welcome here, particularly if it produces the elegant
+> classical character we want. But use another Arabic display face if it
+> produces a stronger result.
+>
+> **ENGLISH TITLE.** THE CURRICULUM HANDBOOK should be professionally typeset
+> and properly proportioned. The current English typography is too weak. Use a
+> genuinely sophisticated Latin typeface and carefully control tracking, weight,
+> size, line spacing, capitalization, relationship to Arabic. It should look
+> like an international academic publication.
+>
+> **SHRS IDENTITY.** Clearly establish SULTAN HANAFI ROYAL SCHOOLS / مدارس
+> السلطان حنفي الملكية and قسم الدراسات الإسلامية والعربية / School of Islamic
+> and Arabic Studies in a sophisticated institutional hierarchy. The identity
+> should be visible but should not overpower the book title.
+>
+> **DECORATION — YES, SIGNIFICANTLY.** I want decoration: elegant gold ornament,
+> sophisticated geometric construction, premium framing, beautiful lines,
+> architectural details, layered composition, subtle ornamental patterns, rich
+> colour blocking. But the decoration should look designed specifically for
+> SHRS, not like a generic Islamic pattern downloaded and placed behind the
+> title. Think luxury fashion/editorial art direction, translated into a
+> prestigious Arabic academic publication.
+>
+> **GOLD SHOULD LOOK LIKE GOLD.** The Royal Gold should have enough contrast and
+> presence to communicate luxury. Where technically possible, simulate foil
+> stamping / metallic ink / embossed gold through sophisticated tonal treatment.
+> Do not use cheap glowing gold or Photoshop-style bevel effects.
+>
+> **PHYSICAL BOOK IMPRESSION.** The cover should make the viewer imagine heavy
+> cream stock + dark brown cloth/leather-like cover + gold foil + ivory
+> typography + elegant embossed detail. It should look excellent both as a
+> digital PDF cover and as a printed hardbound institutional handbook.
+>
+> **ONE MORE IMPORTANT POINT.** The cover should not look like an AI-generated
+> Islamic design. Avoid the predictable AI aesthetic: circular Islamic ornament
+> in the middle + symmetrical border + glowing gold + centred typography. I want
+> human art direction: asymmetry where appropriate, controlled proportions,
+> unexpected but elegant placement, sophisticated negative space, excellent
+> typography and a strong editorial concept. Make it fashionable. Make it
+> luxurious. Make it recognisably SHRS. The result should be something I would
+> genuinely be proud to put on the front of a premium institutional book.
+>
+> Do not merely improve the existing green cover. Create a substantially more
+> stylish cover concept.
+
+### A-5 · The supervision *(verbatim)*
+
+> تحت إشراف راجي عفو ربه:
+> أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام
+
+Supplied together with the **SHRS crest** and the **GACAIS emblem** as image
+files. Both marks are stored in `docs/curriculum/assets/`.
+
+### A-6 · Front and back are one system *(verbatim)*
+
+> IMPORTANT — THE BOOK HAS BOTH A FRONT COVER AND A BACK COVER.
+>
+> Do not design only the front cover and treat the back as an afterthought. The
+> front cover + spine + back cover must be conceived as one continuous premium
+> physical book cover system. The front should carry the principal title and
+> institutional identity, while the back should have its own carefully designed
+> composition that visually belongs to the front.
+>
+> Think of the complete object as a hardbound luxury academic publication:
+> FRONT COVER → BACK COVER. The colour palette, gold detailing, decorative
+> geometry, typography, borders, textures and visual language must flow
+> coherently across all three.
+>
+> The back cover must not simply be a blank brown/cream page or a copy of the
+> front. Give it an intentional design, potentially including: SHRS
+> institutional identity; a concise institutional/curriculum statement where
+> appropriate; GACAIS attribution where appropriate; refined decorative
+> elements; subtle continuation of the front-cover geometry; publication/version
+> information; QR or institutional information only if genuinely required;
+> elegant bottom information area. Keep the back equally visually rich but less
+> dominant than the front.
+>
+> If a spine is included in the physical-print specification, design the spine as
+> well and ensure the title/institutional identification is correctly oriented
+> and proportioned.
+>
+> Do not treat the front and back as two unrelated designs. I want the complete
+> cover to look like a professionally art-directed premium hardbound SHRS
+> publication, especially when viewed as a physical wraparound cover.
+> **Front + back = one design system.**
+
+### A-7 · No approval is to be claimed *(verbatim)*
+
+> Don't claim GACAIS approval. Rather, to be Submitted to the Board for
+> approval, say yet to be approved, or so
+
+### A-8 · Lock it *(verbatim)*
+
+> replace the committed gacais-curriculum. commit this and lock, I will need it
+> next time, and all the instructions that made this up
+
+---
+
 ## XI. How this bible is amended
 
 This bible is a **Standard** under Article 12.1 — the bottom tier of the

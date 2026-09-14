@@ -23,6 +23,28 @@
 > هذا السجل فليس بقرار» is true of this corpus. It was never true of the
 > Institution.
 
+> ## قفلُ الإصدار · THE PUBLISHED EDITION IS LOCKED TOO
+>
+> **GACAIS–CURRICULUM v1.0 is closed.** Its design — the six typefaces, the six
+> colours, the three ramps, the cover system of front · spine · back, and the
+> refusal to claim an approval that has not happened — is locked in
+> **`CURRICULUM-EDITORIAL-BIBLE.md` §X-ter** as **D-01 … D-16**, and the
+> Director General's own instructions that produced it are kept verbatim in
+> **Appendix A** of the same file.
+>
+> **Read §X-ter before you touch `gen-teacher-guide.py`, the cover, the
+> palette, the typefaces or `assets/`.** Those items change only by an explicit
+> new ruling, written into §X-ter with its reason *first*. A rebuild that
+> quietly loses one of them is the same failure this file was written against —
+> it has already happened once to the curriculum, and Appendix A exists so it
+> cannot happen to the book.
+>
+> Build it with **`bash build-handbook.sh`**, never by hand. The published
+> hashes are in §X-ter; a copy whose hash is not in that table is the withdrawn
+> build.
+
+---
+
 **`00-LOCKED-DECISIONS.md` is the only source of settled decisions.**
 Read it in full before any change to any curriculum file. Not the other
 documents — they are derived and may be stale. **The register governs.**
