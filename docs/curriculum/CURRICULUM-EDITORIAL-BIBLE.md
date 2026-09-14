@@ -446,6 +446,89 @@ item by item.**
 
 ---
 
+## X-bis. The look of the published handbook — typography and colour
+
+**[CURRENT COUNCIL DIRECTION — Director General, 14 September 2026.]** The
+direction was: *use Amiri as an important SHRS typeface, but art-direct the
+typography rather than forcing one font everywhere*; colour has *full creative
+freedom with discipline*; and *the final result should look art-directed, not
+generated from a rigid design formula.* What follows is how that was carried
+out in `gen-teacher-guide.py`. It governs the handbook. It does not bind
+**Master 03 — the Design and Visual Identity Bible**, which has not been begun
+and which will settle these matters for the Institution as a whole.
+
+### Six faces, each with exactly one job
+
+| Face | Register | Where it works |
+|---|---|---|
+| **Amiri** | the reading voice | body, tables, subject names, numerals, classical titles, **and every vowelled heading** |
+| **Reem Kufi** | the institutional voice | the masthead, the cover's house line, the class band, the section and programme names — short lines that carry no ḥarakāt |
+| **Noto Kufi Arabic** | the clarity voice | every column head, legend, key and micro-label at 6–7pt |
+| **EB Garamond** | Latin running text | the English prose of the imprint |
+| **Cormorant Garamond** | Latin display | the cover title line, roman numerals, the large ghost figures |
+| **Archivo** | Latin furniture | tracked small caps, running head and foot, page and version data |
+
+Three of these are new to the corpus. Two decisions inside that table are the
+substance of it, and both were made against a rendered proof, not by taste:
+
+- **Reem Kufi does not set vowelled Arabic.** It is a display kufi; its marks
+  crowd the letter at heading size. Every `h2`, `h3`, `.alh` and part-opener
+  title was moved back to Amiri, and Reem Kufi kept only the short unvowelled
+  house lines. The division is by **content**, not by rank.
+- **Arabic is no longer letterspaced.** Eight table headers were tracking a
+  cursive script, which pulls the joins apart. Tracking is now zero on every
+  Arabic label and survives only on Latin small caps, where it belongs.
+
+Latin was *"too poorly densed"*. It was set in a text serif at 6–8pt, tracked
+and uppercased — the one job a text serif cannot do. Archivo takes it.
+
+### Six colours, and what each one means
+
+Colour carries meaning in this book; it is never applied for variety.
+
+| | | Role |
+|---|---|---|
+| espresso | `#2A1C10` | the institution speaking in its own name — bands, mastheads, the navigation and at-a-glance tables |
+| gold | `#B08E4E` | **foil only**: hairlines, registration, ornament, the rule above a table. Gold never fills a page |
+| green | `#0F3F38` | **البرنامج الأول · القرآن وعلومه** — and the cover ground, because the book belongs to the Qurʾān before it belongs to anything else |
+| navy | `#082A66` | **البرنامج الثاني · اللغة وعلومها** |
+| oxblood | `#5E1B26` | **البرنامج الثالث · الدراسات الإسلامية** |
+| burgundy | `#7C1F2E` | the same hue one value up, reserved for **flags** — a gate, a matter still before the Council, a text not yet registered. Always a hairline or a word, never a filled surface, so it can never be mistaken for programme three |
+| charcoal | `#3A342C` | **برنامج التتويج** — deliberately neutral, because it is not a fourth programme and must not be allowed to look like one |
+
+Three ramps run underneath, and they never cross:
+
+- **programmes** take the four colours above;
+- **the four sections** (تمهيدي · ابتدائي · إعدادي · ثانوي) take a *parchment*
+  ramp — ivory → light cream → cream → parchment — deepening with the stage, so
+  that stage and programme can never be confused on one page;
+- **the six instructional forms** take a *gold* ramp, tonal throughout, so the
+  journey map's forms do not fight the programme bands above them.
+
+Because the programme colours now run through the openers, the executive
+panels, the subject register, the class cards, the allocation tables and the
+journey map from one set of tokens, a reader can tell which programme a table
+belongs to before reading a word of it.
+
+> **Note on Royal Blue.** `#082A66` is named in the released branding baseline
+> and stands **[COUNCIL DECISION REQUIRED]** — `docs/corpus/RECOVERY-REGISTER.md`
+> §4 row 3g records that it is found nowhere in either repository and is in
+> tension with a documented colour audit. Its use here is **provisional**: it
+> was earlier noted as the colour of academic navigation, and in this handbook
+> navigation moved to espresso and blue became the colour of **اللغة وعلومها**.
+> That reassignment is a design choice made under the 14 September direction,
+> **not a ruling**, and it is reversed by one line if the Council decides
+> otherwise.
+
+### The binding
+
+The cover is symmetrical, double-framed in gold, and ornamented at the centre
+with a **khātam** — two squares set on one circle, inside a ticked ring. Its
+geometry is computed in the generator, not drawn by eye, so the star is true.
+The ground is the green of the first programme. Gold draws; it does not fill.
+
+---
+
 ## XI. How this bible is amended
 
 This bible is a **Standard** under Article 12.1 — the bottom tier of the
