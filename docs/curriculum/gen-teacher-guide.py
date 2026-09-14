@@ -213,6 +213,129 @@ def term_rota(g):
     return ''.join(o)
 
 
+# ── counting, stated once so the numbers can be audited ───────────────────
+def tally(g):
+    """Curriculum areas vs timetabled slots — never conflated."""
+    corner, slots, hosted = D[str(g)]
+    t = {'areas': len(T[g]), 'ceil': C.CEIL[str(g)],
+         'shared': sum(sl[1] for sl in slots), 'prog': {}, 'forms': {}}
+    for key, *_ in PROGS:
+        n_area = sum(1 for v in T[g].values() if v[2] == key)
+        n_slot = sum(x[2] for x in corner if T[g].get(C.clean(x[0]), (None,None,None))[2] == key)
+        t['prog'][key] = (n_area, n_slot)
+    for s2, v in T[g].items():
+        k = v[0] or 'غير مصرَّحة'
+        t['forms'][k] = t['forms'].get(k, 0) + 1
+    t['own'] = sum(1 for v in T[g].values() if v[0] in ('مستقل', 'فصلي'))
+    t['inhost'] = t['areas'] - t['own']
+    return t
+
+
+def slots_of(g, sub):
+    """Weekly حصص for this subject in this class — or None when it holds no slot."""
+    corner, slots, hosted = D[str(g)]
+    for name, prog, n, note in corner:
+        if C.clean(name) == sub:
+            return n, False
+    for lab, cap, terms in slots:
+        for term, nt, name, prog, note in terms:
+            if C.clean(name) == sub:
+                return cap, True
+    return None, False
+
+
+def class_card(g):
+    t = tally(g)
+    sec = next(x for x in SECTIONS if g in x[3])
+    o = ['<div class="ccard"><div class="ccrow">']
+    o.append(f'<div class="ccbig"><b>{ar(t["areas"])}</b><span>مجالًا في المنهج</span></div>')
+    o.append(f'<div class="ccbig"><b>{ar(t["ceil"])}</b><span>حصّةً في الأسبوع</span></div>')
+    o.append(f'<div class="ccbig"><b>{ar(t["own"])}</b><span>بحصّةٍ خاصّة</span></div>')
+    o.append(f'<div class="ccbig alt"><b>{ar(t["inhost"])}</b><span>داخل مضيفٍ مسمّى</span></div>')
+    o.append('</div><div class="ccprog">')
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        a, sl = t['prog'][key]
+        if not a:
+            continue
+        o.append(f'<div class="ccp {cls}"><h6>{e(pt)}</h6>'
+                 f'<div class="ccn"><span><b>{ar(a)}</b> مجالًا</span>'
+                 f'<span><b>{ar(sl)}</b> حصّة</span></div></div>')
+    if t['shared']:
+        o.append(f'<div class="ccp shared"><h6>خانات فصلية مشتركة</h6>'
+                 f'<div class="ccn"><span><b>{ar(t["shared"])}</b> حصّة</span>'
+                 '<span>تتناوبها مقرَّرات الفصول</span></div></div>')
+    o.append('</div>')
+    # forms breakdown + assessment picture
+    fb = ' · '.join(f'{e(FORMLABEL.get(k, k))} <b>{ar(v)}</b>'
+                    for k, v in sorted(t['forms'].items(), key=lambda x: -x[1]))
+    cond = [n for x, n in GATES if x == g]
+    o.append(f'<div class="ccfoot"><div><span class="lb">الصيغ</span> {fb}</div>')
+    o.append(f'<div><span class="lb">التقويم</span> '
+             f'<b>{ar(t["own"])}</b> بورقةٍ مستقلة · '
+             f'<b>{ar(t["inhost"])}</b> يُقوَّم داخل مضيفه'
+             + (f' · <b>شرط</b>: {e(cond[0])}' if cond else '') + '</div>')
+    o.append(f'<div><span class="lb">القسم</span> {sec[0]} — {e(sec[2])}</div>')
+    o.append('</div>')
+    o.append('<p class="ccmeth">طريقةُ العدّ: «المجال» كلُّ اسمٍ يلقاه الصفّ بأيِّ صيغة. '
+             'و«الحصّة الخاصّة» خانةٌ في الجدول. والمضمَّنُ والمدمجُ والمسارُ تُدرَّس بلا خانةٍ '
+             'خاصّة، فلا تُعدّ حصصًا — <b>ولا يعني ذلك أنها أقلُّ إلزامًا</b>. '
+             'والساعةُ القرآنية خارج هذه الخانات تمامًا.</p>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def alloc_tables(g):
+    o = ['<h3 class="alh">ما يُدرَّس في هذا الصف</h3>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        items = [(s2, v) for s2, v in T[g].items() if v[2] == key]
+        if not items:
+            continue
+        rank = {'مستقل': 0, 'فصلي': 1}
+        items.sort(key=lambda x: (rank.get(x[1][0], 2), x[0]))
+        o.append(f'<div class="alt {cls}"><h4>{e(pt)}</h4><table class="atab"><thead><tr>'
+                 '<th>المادة</th><th>الصيغة</th><th>المضيف</th><th>حصص</th><th>التقويم</th>'
+                 '</tr></thead><tbody>')
+        for s2, (f, h, p, note) in items:
+            n, shared = slots_of(g, s2)
+            if s2 == 'حفظ القرآن الكريم':
+                cells = ('مستقل', 'الساعة القرآنية', '<i>خارج الخانات</i>',
+                         'بوابةُ الحفظ — أداءٌ أمام لجنة')
+            elif f is None:
+                cells = ('<span class="cdr">لم تُصرَّح</span>', e(h or '—'), '—',
+                         '<span class="cdr">يُعرَض على المجلس</span>')
+            else:
+                cells = (e(FORMLABEL.get(f, f)),
+                         e(h) if h and f not in ('مستقل', 'فصلي') else '—',
+                         (f'<b>{ar(n)}</b>' + (' <i>مشتركة</i>' if shared else '')) if n else '—',
+                         ASSESS.get(f, '—'))
+            o.append(f'<tr><th>{e(s2)}</th><td>{cells[0]}</td><td>{cells[1]}</td>'
+                     f'<td class="c">{cells[2]}</td><td>{cells[3]}</td></tr>')
+        o.append('</tbody></table></div>')
+    return ''.join(o)
+
+
+def nav_table():
+    o = ['<table class="nav"><thead><tr><th>الصف</th><th>القسم</th>'
+         '<th>مجالات</th><th>حصص</th>'
+         '<th>القرآن</th><th>اللغة</th><th>الإسلامية</th><th>البوابة</th>'
+         '</tr></thead><tbody>']
+    cur = None
+    for g in range(1, 13):
+        t = tally(g)
+        sec = next(x for x in SECTIONS if g in x[3])
+        if sec[0] != cur:
+            cur = sec[0]
+        gate = next((n for x, n in GATES if x == g), '—')
+        o.append(f'<tr><th class="ng">{ar(g)}</th><td class="ns">{sec[0][6:]}</td>'
+                 f'<td class="c"><b>{ar(t["areas"])}</b></td>'
+                 f'<td class="c"><b>{ar(t["ceil"])}</b></td>')
+        for key in ('القرآن', 'اللغة', 'الإسلامية'):
+            a, sl = t['prog'][key]
+            o.append(f'<td class="c">{ar(a)} <span class="sl">/ {ar(sl)}</span></td>')
+        o.append(f'<td class="ngate">{e(gate)}</td></tr>')
+    o.append('</tbody></table>')
+    return ''.join(o)
+
 # ── VIEW 1 · CLASS → WHAT IS TAUGHT ────────────────────────────────────────
 MARK = {'مستقل':('m-ind','مستقل'),'مدمج':('m-mrg','مدمج'),'مضمّن':('m-emb','مضمّن'),
         'وحدة':('m-unt','وحدة'),'دوراني':('m-rot','دوراني'),'مسار':('m-str','مسار'),
@@ -268,30 +391,8 @@ def class_full(g):
     o.append('</div>')
     if g in SHEET_HIFZ:
         o.append(f'<div class="cphifz">المحفوظ هذا العام — <b>{SHEET_HIFZ[g]}</b></div>')
-    o.append('<div class="cpcols">')
-    for key, pn, pt, pen, cls, num, blurb in PROGS:
-        items = sorted([(s, v) for s, v in T[g].items() if v[2] == key])
-        if not items:
-            continue
-        o.append(f'<div class="cpcol {cls}"><h3>{e(pt)}</h3><ul class="slist">')
-        rank = {'مستقل': 0, 'فصلي': 1}
-        for s, (f, h, p, note) in sorted(items, key=lambda x: (rank.get(x[1][0], 2), x[0])):
-            if f is None:
-                o.append(f'<li class="li-q"><i class="mk m-q"></i><span class="sn">{e(s)}</span>'
-                         f'<span class="mt">داخل {e(h or "—")} — <b>يُعرَض على المجلس</b></span></li>')
-                continue
-            cl, lbl = MARK[f]
-            if f == 'مستقل':
-                o.append(f'<li class="li-i"><i class="mk {cl}"></i>'
-                         f'<span class="sn"><b>{e(s)}</b></span></li>')
-            elif f == 'فصلي':
-                o.append(f'<li><i class="mk {cl}"></i><span class="sn"><b>{e(s)}</b></span>'
-                         f'<span class="mt">{lbl} — {e(h)}</span></li>')
-            else:
-                o.append(f'<li><i class="mk {cl}"></i><span class="sn">{e(s)}</span>'
-                         f'<span class="mt">{lbl}{" ← " + e(h) if h else ""}</span></li>')
-        o.append('</ul></div>')
-    o.append('</div>')
+    o.append(class_card(g))
+    o.append(alloc_tables(g))
     o.append(term_rota(g))
     # what to open: the prescribed text for each subject taught this year
     rows = []
@@ -521,6 +622,57 @@ h6{font-size:8.6pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:.04em;font-
  border:.5pt solid var(--line);padding:3mm 4mm;background:#FDFBF7;}
 .keyrow span{display:flex;align-items:center;gap:1.8mm;}
 .keyrow i{width:3mm;height:3mm;display:block;border:.4pt solid rgba(0,0,0,.12);}
+
+/* ── class card + allocation tables ──────────────────────────────── */
+.ccard{border:.6pt solid var(--line);background:#FDFBF7;padding:4mm 5mm 3mm;margin:0 0 5mm;}
+.ccrow{display:flex;gap:4mm;margin:0 0 3.5mm;}
+.ccbig{flex:1;background:#3B2A1D;color:#F7EEDF;padding:3mm 3mm 2.5mm;text-align:center;}
+.ccbig.alt{background:#6B4A2E;}
+.ccbig b{display:block;font-family:'Noto Kufi Arabic',sans-serif;font-size:21pt;line-height:1.05;
+ color:#E9CE8A;}
+.ccbig span{font-size:7.8pt;color:#D9CDBB;}
+.ccprog{display:flex;gap:4mm;margin:0 0 3mm;}
+.ccp{flex:1;border-top:2.2pt solid var(--gold);padding-top:2mm;}
+.ccp.p2{border-color:#6B4A2E;} .ccp.p3{border-color:#7C1F2E;} .ccp.p4{border-color:#A08F79;}
+.ccp.shared{border-color:#DFCBA6;}
+.ccp h6{margin:0 0 1.2mm;font-size:8.4pt;color:var(--brown);}
+.ccn{display:flex;gap:4mm;font-size:8.4pt;color:#8A7A66;}
+.ccn b{font-family:'Noto Kufi Arabic',sans-serif;font-size:11pt;color:var(--brown);
+ margin-left:1mm;}
+.ccfoot{border-top:.5pt solid var(--line);padding-top:2.2mm;font-size:8.6pt;color:#5A4A38;
+ line-height:1.9;}
+.ccfoot b{color:var(--brown);font-family:'Noto Kufi Arabic',sans-serif;}
+.ccfoot .lb{display:inline-block;width:15mm;color:#9A8A76;font-size:7.8pt;
+ font-family:'Noto Kufi Arabic',sans-serif;}
+.ccmeth{font-size:7.8pt;color:#9A8A76;line-height:1.6;margin:2.5mm 0 0;
+ border-top:.4pt dotted #D8C9AE;padding-top:2mm;}
+.alh{font-size:12pt;color:var(--brown);border-bottom:1.2pt solid var(--gold);
+ padding-bottom:2mm;margin:0 0 3.5mm;}
+.alt{margin:0 0 4mm;page-break-inside:avoid;}
+.alt h4{font-size:10pt;color:var(--brown);margin:0 0 1.8mm;padding-right:3mm;
+ border-right:2.4pt solid var(--gold);}
+.alt.p2 h4{border-color:#6B4A2E;} .alt.p3 h4{border-color:#7C1F2E;}
+.alt.p4 h4{border-color:#A08F79;}
+.atab{width:100%;border-collapse:collapse;font-size:8.8pt;}
+.atab thead th{background:#F2E9DA;color:var(--brown);font-family:'Noto Kufi Arabic',sans-serif;
+ font-size:7.6pt;font-weight:400;padding:1.4mm 2mm;text-align:right;
+ border-bottom:.8pt solid var(--brown);}
+.atab tbody th{text-align:right;font-family:'Amiri',serif;font-weight:700;color:var(--brown);
+ width:22%;padding:1.5mm 2mm;border-bottom:.4pt solid #EFE6D5;}
+.atab td{padding:1.5mm 2mm;border-bottom:.4pt solid #EFE6D5;color:#4A3826;vertical-align:top;}
+.atab td.c{text-align:center;}
+.atab td i{color:#9A8A76;font-style:normal;font-size:7.6pt;}
+.nav{width:100%;border-collapse:collapse;font-size:9pt;}
+.nav th,.nav td{border-bottom:.45pt solid var(--line);padding:2mm 2mm;text-align:right;}
+.nav thead th{background:#3B2A1D;color:#F7EEDF;font-family:'Noto Kufi Arabic',sans-serif;
+ font-size:7.8pt;font-weight:400;text-align:center;}
+.nav .ng{font-family:'Noto Kufi Arabic',sans-serif;font-size:13pt;color:var(--brown);
+ text-align:center;width:7%;background:#FBF7F0;}
+.nav .ns{color:#8A7A66;font-size:8.4pt;width:12%;}
+.nav td.c{text-align:center;}
+.nav td b{font-family:'Noto Kufi Arabic',sans-serif;color:var(--brown);}
+.nav .sl{color:#A89880;font-size:7.8pt;}
+.nav .ngate{font-size:8.2pt;color:var(--burg);width:20%;}
 /* ── lifeline ────────────────────────────────────────────────────── */
 .ll{display:flex;gap:.8mm;margin:1.5mm 0 2mm;}
 .ll i{flex:1;height:4.4mm;display:block;border-radius:.4mm;}
@@ -735,10 +887,23 @@ def build():
       '<div><b>٣</b><span>برامج في كل صفحة</span></div>'
       '<div><b>٠</b><span>رمزٍ يحتاج فكًّا</span></div></div></div>')
 
+    w('<div class="pg brk"><h2>لوحةُ التنقّل — الصفوف الاثنا عشر</h2>'
+      '<p class="lead">صفحةُ الملاحة. كلُّ صفٍّ بعددِ مجالاته وحصصه، ونصيبِ كلِّ برنامجٍ منه، '
+      'وبوابتِه إن كانت له. والرقمُ الأول في خانة البرنامج عددُ المجالات، '
+      'والثاني بعد الشَّرطة عددُ الحصص الخاصّة به.</p>')
+    w(nav_table())
+    w('<p class="ccmeth" style="margin-top:4mm">حصصُ الأسبوع ١٣ في الصفوف ١–٦ و١٩ في '
+      '٧–١٢ — وهو عددٌ مقفل. وقد تقلّ جملةُ حصص البرامج الثلاثة عن هذا العدد في الصفوف '
+      'التي فيها <b>خانات فصلية مشتركة</b>، لأنّ الخانة المشتركة تتناوبها مقرَّرات من '
+      'أكثر من برنامج فلا تُنسَب إلى واحدٍ منها. '
+      'وكذلك في <b>الصف الثاني عشر</b>، حيث تأخذ خدماتُ سنة التتويج ثلاثَ حصصٍ '
+      '(WAEC والتحرير الامتحاني) خارج البرامج الثلاثة — وهي مبيَّنةٌ في صفحة الصف. '
+      'وجملةُ ما في كل صف تستوفي العددَ المقفل تمامًا.</p>')
+    w('</div>')
     w('<div class="pg brk"><h2>المنهجُ كلُّه في صفحةٍ واحدة</h2>'
       '<p class="lead">الأسماءُ <b>الغامقة</b> موادُّ لها حصّةٌ خاصّة في الجدول. '
       'والأسماءُ الفاتحة تُدرَّس داخل مادةٍ أخرى مسمّاة — وهي منهجٌ حقيقيّ يُدرَّس '
-      'ويُقوَّم، لا إضافةٌ اختيارية. وتفصيلُ كلِّ صفٍّ في صفحته.</p>')
+      'ويُقوَّم، لا إضافةٌ اختيارية.</p>')
     w(glance_table())
     w('</div>')
 
