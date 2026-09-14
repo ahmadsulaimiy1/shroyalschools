@@ -50,7 +50,7 @@ fc-cache -f >/dev/null 2>&1 || true
 # ── 2 · generate the HTML from the register and the allocation ──────
 python3 "$HERE/verify.py" || {
   echo "!! a locked CURRICULUM item is broken — not building" >&2; exit 1; }
-python3 "$HERE/verify-design.py" || {
+python3 "$HERE/verify-design.py" --source-only || {
   echo "!! a locked DESIGN item is broken — not building" >&2; exit 1; }
 python3 "$HERE/gen-teacher-guide.py"
 

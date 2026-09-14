@@ -255,27 +255,84 @@ def exec_overview():
     return ''.join(o)
 
 
+def gspan(sub):
+    """The classes a subject is actually taught in, in Latin G-notation.
+
+    Contiguous runs are joined; **gaps are shown**. The old register printed
+    FIRST–LAST, which said «١–١٢» for النشيد والمحفوظات — a subject that is
+    not taught in class nine at all. A range that hides a hole is not a range.
+    """
+    gs = [g for g in range(1, 13) if sub in T[g]]
+    runs, a = [], gs[0]
+    for i, g in enumerate(gs):
+        if i + 1 == len(gs) or gs[i + 1] != g + 1:
+            runs.append((a, g))
+            if i + 1 < len(gs):
+                a = gs[i + 1]
+    return ' · '.join(f'G{x}' if x == y else f'G{x}\u2013G{y}' for x, y in runs)
+
+
+# The Board's page reads PROGRAMME → SUBJECT → CLASSES in two columns.
+# Column one carries programmes I and II, column two programme III — so that
+# an RTL reader takes them in order, right column top to bottom, then left.
+ER_EN = {'القرآن': 'Programme I &middot; The Qur&rsquo;\u0101n &amp; its Sciences',
+         'اللغة': 'Programme II &middot; Arabic &amp; its Sciences',
+         'الإسلامية': 'Programme III &middot; Islamic Studies',
+         'التتويج': 'The Crowning Year'}
+
+
+def er_block(key, pt, cls, num):
+    subs = SUBS_OF[key]
+    o = [f'<div class="erp {cls}"><div class="erph">'
+         f'<span class="ern">{num}</span><div class="et">'
+         f'<h3>{e(pt)}</h3><div class="ee">{ER_EN[key]}</div></div>'
+         f'<span class="en5">{ar(len(subs))} مادة</span></div>'
+         '<table class="ert"><tbody>']
+    for sub in subs:
+        o.append(f'<tr><th>{e(sub)}</th><td>{gspan(sub)}</td></tr>')
+    o.append('</tbody></table></div>')
+    return ''.join(o)
+
+
 def exec_register():
-    """Page 2 — the whole subject universe, at a glance."""
-    o = ['<div class="xpg brk"><h2>سجلُّ المواد — المنهجُ كلُّه</h2>'
-         '<p class="lead">أربعٌ وثلاثون مادةً مسمّاة في ثلاثة برامج. '
-         '«المدى» أوّلُ صفٍّ تلقاها فيه وآخرُه؛ و«تستقلّ» أولُ صفٍّ تصير فيه بحصّةٍ '
-         'وكتابٍ وورقةٍ خاصّة.</p>']
-    for key, pn, pt, pen, cls, num, blurb in PROGS:
-        subs = SUBS_OF[key]
-        if not subs: continue
-        o.append(f'<div class="xreg {cls}"><h4><span class="rnum">{num}</span>{e(pt)}'
-                 f'<em>{ar(len(subs))} مادة</em></h4>'
-                 '<table class="xrt"><thead><tr><th>المادة</th><th>المدى</th>'
-                 '<th>تستقلّ</th><th>التقويم</th></tr></thead><tbody>')
-        for sub in subs:
-            gs=[g for g in range(1,13) if sub in T[g]]
-            ind=[g for g in gs if T[g][sub][0]=='مستقل']
-            rng_=f'{ar(FIRST[sub])}–{ar(LAST[sub])}' if FIRST[sub]!=LAST[sub] else ar(FIRST[sub])
-            o.append(f'<tr><th>{e(sub)}</th><td class="c">{rng_}</td>'
-                     f'<td class="c">{ar(min(ind)) if ind else "—"}</td>'
-                     f'<td>{"ورقةٌ مستقلة" if ind else "داخل مضيفه"}</td></tr>')
-        o.append('</tbody></table></div>')
+    """THE EXECUTIVE ACADEMIC SUBJECT REGISTER — one page, for the Board.
+
+    Programme, subject, classes. Nothing else: no حصص, no instructional form,
+    no text, no assessment, no gate. Each of those has its own section later,
+    and repeating them here is what turned the earlier version into a
+    curriculum analytics page instead of an answer to one question.
+    """
+    P = {k: (pt, cls, num) for k, pn, pt, pen, cls, num, blurb in PROGS}
+    o = ['<div class="xpg erpg">',
+         '<div class="erh">',
+         '<div class="el">Executive Academic Subject Register</div>',
+         '<h2>سجلُّ الموادِّ الأكاديميِّ التنفيذي</h2>',
+         '<div class="ed"><i></i></div>',
+         '<div class="ei">مدارسُ السلطان حنفي الملكية &middot; '
+         'دليلُ المنهج العربيِّ والإسلامي</div>',
+         '<div class="ek">Programme &rarr; Subject &rarr; Classes '
+         '&middot; G1&ndash;G12</div>',
+         '</div><div class="ergrid">']
+    o.append('<div class="ercol">')
+    for k in ('القرآن', 'اللغة'):
+        o.append(er_block(k, *P[k]))
+    o.append('</div><div class="ercol">')
+    o.append(er_block('الإسلامية', *P['الإسلامية']))
+    # التتويج is NOT presented as a fourth programme, because it is not one.
+    # Its place in the structure stands before the Council, and the register
+    # says so rather than settling it by drawing it as an equal.
+    tw = SUBS_OF['التتويج']
+    o.append('<div class="ernote"><b>خدمةُ سنة التخرج</b> — ليست برنامجًا رابعًا. '
+             'وهي في الصف الثاني عشر وحده: '
+             + '، '.join(f'{e(x)} ({gspan(x)})' for x in tw) + '.'
+             '<span class="erq">موضعُها في البنية معروضٌ على المجلس '
+             '&mdash; [DECISION REQUIRED]</span></div>')
+    o.append('</div></div>')
+    o.append('<div class="erf"><span class="a">'
+             f'ثلاثةُ برامج &middot; {ar(sum(len(SUBS_OF[k]) for k in P if k != "التتويج"))}'
+             ' مادةً مسمّاة &middot; اثنا عشر صفًّا</span>'
+             '<span class="b">GACAIS&ndash;CURRICULUM v1.0 &middot; '
+             'to be submitted to the Board for approval</span></div>')
     o.append('</div>')
     return ''.join(o)
 
@@ -1565,6 +1622,85 @@ h6{font-size:7.2pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:0;}
 /* ── the wraparound sheet, for the binder ───────────────────────── */
 .wrap{width:434mm;height:297mm;display:flex;position:relative;overflow:hidden;}
 .wrap .cover,.wrap .back{page-break-before:auto;page-break-after:auto;flex:none;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   THE EXECUTIVE ACADEMIC SUBJECT REGISTER · one page, for the Board
+   ───────────────────────────────────────────────────────────────────
+   PROGRAMME → SUBJECT → CLASSES, and nothing else. No حصص, no forms,
+   no texts, no assessment — those have their own sections and are not
+   repeated here. Two columns so that thirty-two subjects can be read
+   at a comfortable size rather than shrunk to claim one page. Each
+   programme keeps its own colour from the house palette, so the three
+   are told apart before a word is read.
+   The class ranges are set in Latin G-notation because that is what a
+   Board reads fastest, and because a gap in a span must be visible:
+   «G1–G8 · G10–G12» is not «G1–G12».
+   ═══════════════════════════════════════════════════════════════════ */
+.erpg{page-break-before:always;page-break-after:always;}
+.erh{text-align:center;margin:0 0 6mm;padding:0 0 4.2mm;
+ border-bottom:.4pt solid var(--line);position:relative;}
+.erh:after{content:'';position:absolute;bottom:-.4pt;right:50%;width:34mm;
+ margin-right:-17mm;height:1.4pt;
+ background-image:linear-gradient(90deg,#7E6029,#F2E2BB 50%,#7E6029);}
+.erh .el{font-family:var(--fu);font-weight:600;font-size:7.2pt;letter-spacing:.26em;
+ text-transform:uppercase;color:var(--bronze);direction:ltr;margin:0 0 2.8mm;
+ padding-left:.26em;}
+.erh h2{font-family:var(--fa);font-weight:700;font-size:19.5pt;color:var(--brown);
+ border:0;padding:0;margin:0 0 2.6mm;line-height:1.35;}
+.erh h2:after{display:none;}
+.erh .ed{display:flex;align-items:center;justify-content:center;margin:0 0 2.8mm;}
+.erh .ed:before,.erh .ed:after{content:'';width:22mm;height:.4pt;background:var(--line);}
+.erh .ed i{width:2.2mm;height:2.2mm;transform:rotate(45deg);margin:0 3mm;display:block;
+ background-image:linear-gradient(135deg,#F2E2BB,#8A6A2E);}
+.erh .ei{font-family:var(--fa);font-weight:700;font-size:11pt;color:var(--bronze);
+ line-height:1.55;margin:0 0 2.2mm;}
+.erh .ek{font-family:var(--fu);font-weight:500;font-size:6.6pt;letter-spacing:.2em;
+ text-transform:uppercase;color:var(--mute);direction:ltr;padding-left:.2em;}
+/* ── the two columns ────────────────────────────────────────────── */
+.ergrid{display:flex;gap:7mm;align-items:flex-start;}
+.ercol{flex:1;min-width:0;}
+.erp{margin:0 0 4.4mm;break-inside:avoid;page-break-inside:avoid;}
+.erph{display:flex;align-items:center;gap:4mm;padding:2.4mm 4mm 2.6mm;
+ border-top:1.6pt solid var(--gold);color:#F4EBD8;}
+.erp.p1 .erph{background:var(--green);} .erp.p2 .erph{background:var(--blue);}
+.erp.p3 .erph{background:var(--ox);}    .erp.p4 .erph{background:var(--char);}
+.erph .ern{font-family:var(--fd);font-weight:700;font-size:15pt;line-height:1;
+ color:var(--champ);direction:ltr;min-width:9mm;text-align:center;
+ border-left:.5pt solid rgba(226,203,150,.42);padding-left:4.4mm;}
+.erph .et{flex:1;}
+.erph h3{font-family:var(--fk);font-weight:600;font-size:10.8pt;color:#FFFAF0;
+ margin:0 0 .8mm;line-height:1.35;}
+.erph .ee{font-family:var(--fu);font-weight:500;font-size:5.5pt;letter-spacing:.1em;
+ white-space:nowrap;
+ text-transform:uppercase;color:rgba(255,250,240,.62);direction:ltr;padding-left:.15em;}
+.erph .en5{font-family:var(--fn);font-size:7.2pt;color:rgba(255,250,240,.72);
+ white-space:nowrap;}
+.ert{width:100%;border-collapse:collapse;}
+.ert th{text-align:right;font-family:var(--fa);font-weight:700;font-size:10pt;
+ color:var(--ink);padding:1.2mm 4mm 1.6mm;line-height:1.26;
+ border-bottom:.3pt solid var(--hair);}
+.ert td{text-align:left;direction:ltr;font-family:var(--fu);font-weight:600;
+ font-size:7.4pt;letter-spacing:.05em;padding:1.2mm 4mm 1.6mm;white-space:nowrap;
+ border-bottom:.3pt solid var(--hair);vertical-align:middle;}
+.erp.p1 .ert td{color:var(--green);} .erp.p2 .ert td{color:var(--blue);}
+.erp.p3 .ert td{color:var(--ox);}    .erp.p4 .ert td{color:var(--char);}
+.erp.p1 tbody tr:nth-child(odd) th,.erp.p1 tbody tr:nth-child(odd) td{background:var(--greentint);}
+.erp.p2 tbody tr:nth-child(odd) th,.erp.p2 tbody tr:nth-child(odd) td{background:var(--bluetint);}
+.erp.p3 tbody tr:nth-child(odd) th,.erp.p3 tbody tr:nth-child(odd) td{background:var(--oxtint);}
+.erp.p4 tbody tr:nth-child(odd) th,.erp.p4 tbody tr:nth-child(odd) td{background:var(--chartint);}
+.erp tbody tr:nth-child(even) th,.erp tbody tr:nth-child(even) td{background:var(--ivory);}
+.ert tbody tr:last-child th,.ert tbody tr:last-child td{border-bottom:.8pt solid var(--gold);}
+.ernote{border-top:.9pt solid var(--char);border-bottom:.3pt solid var(--hair);
+ background:var(--chartint);padding:2.6mm 4mm 3mm;font-family:var(--fa);font-size:8.4pt;
+ color:#4A4236;line-height:1.75;}
+.ernote b{color:var(--char);}
+.ernote .erq{display:block;font-family:var(--fn);font-size:7.2pt;color:var(--burg);
+ margin-top:2mm;}
+.erf{margin-top:4mm;padding-top:3mm;border-top:.4pt solid var(--line);
+ display:flex;align-items:baseline;gap:8mm;}
+.erf .a{flex:1;text-align:right;font-family:var(--fn);font-size:7.2pt;color:var(--mute);}
+.erf .b{flex:none;font-family:var(--fu);font-weight:500;font-size:5.8pt;
+ letter-spacing:.14em;text-transform:uppercase;color:var(--mute);direction:ltr;}
 
 .clsh h3{margin:0;font-size:13pt;}
 .cn{font-family:var(--fa);font-size:21pt;color:var(--gold2);line-height:1;font-weight:700;}

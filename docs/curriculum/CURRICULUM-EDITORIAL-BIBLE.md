@@ -682,9 +682,9 @@ to the curriculum. It will not be allowed to happen to the book.
 |---|---|
 | edition | **GACAIS–CURRICULUM v1.0** · first edition · September 2026 |
 | commit | the commit that carries this section |
-| pages | **80** — front board · 78 text pages · back board |
-| `SHRS-CURRICULUM-HANDBOOK.pdf` | `d982a4bd33690a47307f407e6a87a0d5871b6159ef374984cbea817fe446546b` |
-| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `f329e11d768f7a00a9c60699b19d67151ce23c6e81338c1f56dfcb1f86ce6d39` |
+| pages | **79** — front board · 77 text pages · back board |
+| `SHRS-CURRICULUM-HANDBOOK.pdf` | `959ee5ca5328e7599629c10f45bd68b75d3a0feb7dfae1d6db61976b2a15c0c0` |
+| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `f9e60243bfd937a3412db28ac5aaa64eb6f8abc07c24942567af0a4dec24d84c` |
 | `assets/shrs-crest.png` | `9050ea9fe7cc4c2c1d6ff8c4a9cb26f488c85bed878032df695d00aca45b4ceb` |
 | `assets/gacais-mark.png` | `9d573297d0998e684789b3be15dc4ecbafd267c0d24de61da4c1a66e41d260ad` |
 
@@ -703,6 +703,55 @@ to the curriculum. It will not be allowed to happen to the book.
 > the published file; a hash **mismatch** proves only that it is a different
 > file, which may be an honest rebuild. To tell the withdrawn build apart, look
 > at it — it is green, centred, and its imprint says «واعتماد».
+
+### D-17 · the executive academic subject register
+
+**[CURRENT COUNCIL DIRECTION.]** One page, near the front, answering one
+question: **what are the programmes, what subjects do they contain, and in
+which classes are they taught?** Programme → Subject → Classes, and nothing
+else. No حصص, no instructional form, no text, no assessment, no gate, no
+commentary — each of those has its own section later, and repeating them here
+is what turned the previous version into a curriculum analytics page instead
+of an answer.
+
+Three things about it are locked with the rest:
+
+- **The class ranges show their gaps.** The old register printed FIRST–LAST,
+  which said «١–١٢» for **النشيد والمحفوظات** — a subject not taught in class
+  nine at all. `gspan()` joins contiguous runs and breaks at holes, so it now
+  reads **G1–G8 · G10–G12**. A range that hides a hole is not a range.
+- **التتويج is not drawn as a fourth programme**, because it is not one. It
+  appears as a note, marked **[DECISION REQUIRED]**, because its place in the
+  structure stands before the Council.
+- **The subject universe is the register's, not a convenient list.** See below.
+
+#### The 26-subject list was not used, and why
+
+The directive listing this page's contents named a **26-subject universe**.
+The corpus carries **34**, and the Director General has already ruled on this
+point in terms: *«26 was old — 34 is correct, keep it.»* The same directive
+also says, at §3, *"use the strongest available source authority… the register
+must reflect the curriculum architecture actually supported by the source
+record"*, and forbids renaming, merging or splitting subjects. Those two
+instructions cannot both be followed, and §3 governs — so the page is built
+from the register.
+
+Following the 26-list instead would have **silently dropped eight subjects the
+register carries**, among them:
+
+| Dropped | Why that matters |
+|---|---|
+| **الفرائض** (G11–G12) | ring-fenced by **L-19**, and lost once already |
+| **الإنشاء والتعبير** (G4–G9) | **L-39** — never to be swapped with البحث والخطابة |
+| **قواعد اللغة الوظيفية** (G4–G6) · **فقه اللغة والمعاجم** (G8) | not in the list at all |
+| **خدمة التتويج** · **علم الكلام** (G12) | present in the allocation |
+
+and would have **merged المنطق with علم الكلام** (two subjects in the register,
+one line in the list), **renamed** العروض وعلم القافية → العروض, الخط والإملاء →
+الإملاء, التاريخ والسيرة → التاريخ الإسلامي, and **moved** القراءة والتهجي and
+النشيد والمحفوظات out of اللغة into القرآن. Every one of those is forbidden by
+the directive's own §3. **The conflict is reported, not resolved here** — only
+the Director General can close it.
 
 ### The lock is mechanical
 
@@ -726,6 +775,17 @@ rewritten, which is recorded here because the rewriting is the point:
 | **D-02** | any Reem Kufi rule whose selector *contains* `h2`/`h3` | it flagged `.sot h3`, a short unvowelled section title that is Reem Kufi's proper work. A check that cries wolf gets switched off. Now matched **per comma-separated selector, exactly**. |
 | **D-06** | does *any* of the four families still name the programme's colour? | a tamper that recoloured the class card passed, because the allocation table still matched. Then, matching the bare token, `--blue` passed from inside `--bluetint`. Now **all 30 load-bearing declarations are named** and each must hold. |
 | **D-07** | are `top:0`, `right:0`, `width:154mm` present? | it did not test the asymmetry it exists to protect. Now the cream margin is **measured** and must fall between 42 and 70mm. |
+
+**One defect is reported and not failed.** Isolated Arabic marks — ḥarakāt
+with no base letter under them — print in the last millimetre of the text block
+on fourteen pages. They are inside the safe area and clear of the running foot,
+and the cause is in Chromium's paged rendering, not in this stylesheet: the
+count does not move when the fonts, the padding or the page contents change.
+The lock **counts them against a recorded baseline of 29 and fails only if the
+number grows**, for the same reason `verify.py` reports contradictions instead
+of fixing them — failing the build on a defect nobody can currently fix would
+only teach the next person to switch the check off. It is an open item, not a
+clean bill.
 
 **And on its first honest run the lock caught three live defects** that the
 manual sweep had missed: `.card dt`, `.txt thead th` and `.open thead th` were
