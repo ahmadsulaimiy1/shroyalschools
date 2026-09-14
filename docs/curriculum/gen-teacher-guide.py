@@ -641,6 +641,12 @@ p{margin:0 0 4.8mm;}
  letter-spacing:.01em;}
 .imp h2:before{content:'';display:block;width:16mm;height:.9pt;background:var(--gold);
  margin:0 0 3mm;}
+.xver{display:flex;align-items:baseline;gap:5mm;border-top:1.4pt solid var(--gold);
+ border-bottom:.35pt solid var(--line);padding:3mm 0 3.4mm;margin:0 0 5.5mm;}
+.xver .vid{font-family:'EB Garamond',Georgia,serif;font-size:9.4pt;letter-spacing:.1em;
+ color:var(--brown);direction:ltr;}
+.xver .vd{font-size:9pt;color:var(--bronze);}
+.xver .vs{margin-right:auto;font-size:8.4pt;color:var(--burg);}
 .imp .attr{border-right:.9pt solid var(--gold);padding:3.4mm 6mm 4.4mm;background:var(--paper2);
  margin:0 0 5.5mm;font-size:9.2pt;line-height:1.74;}
 .imp .attr .lat{display:block;font-size:7pt;margin-top:3mm;letter-spacing:.1em;
@@ -1187,11 +1193,15 @@ def build():
       '<div class="en2">THE CURRICULUM HANDBOOK</div>'
       '<div class="sub">البرامجُ الثلاثة، وأقسامُها الأربعة، '
       'وتدرُّجُ موادِّها في اثني عشر صفًّا</div></div>'
-      '<div class="foot"><div class="l1">إصدارُ العمل · سبتمبر ٢٠٢٦</div>'
-      '<div class="l2">WORKING EDITION &middot; NOT YET RATIFIED BY COUNCIL</div></div></div>')
+      '<div class="foot"><div class="l1">الإصدار الأول · سبتمبر ٢٠٢٦</div>'
+      '<div class="l2">GACAIS&ndash;CURRICULUM v1.0 &middot; '
+      'WORKING EDITION &middot; NOT YET RATIFIED BY COUNCIL</div></div></div>')
 
     # ═══ IMPRINT ═══
     w('<div class="imp"><h2>عن هذا الإصدار</h2>')
+    w('<div class="xver"><span class="vid">GACAIS&ndash;CURRICULUM v1.0</span>'
+      '<span class="vd">الإصدار الأول · ١٤ سبتمبر ٢٠٢٦</span>'
+      '<span class="vs">وثيقةُ عملٍ — لم يعتمدها المجلس بعد</span></div>')
     w('<div class="attr">إعدادٌ وإشرافٌ واعتماد:<br>'
       '<b>الهيئة الأكاديمية العالمية للدراسات العربية والإسلامية والدعوة والمناهج والبحوث</b>'
       '<div class="lat">Prepared, Supervised, and Approved by the Global Academic Council '
