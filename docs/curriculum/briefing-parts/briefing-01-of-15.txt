@@ -1,0 +1,156 @@
+SHRS CURRICULUM BRIEFING — PART 1 OF 15
+
+I am sending one document in 15 parts because it is too long for a single
+message. DO NOT REPLY, SUMMARISE OR COMMENT until I send the part marked
+"PART 15 OF 15". Just acknowledge with the word OK and nothing else.
+When you receive part 15, confirm you have all 15 and then wait for my
+question.
+============================================================================
+
+================================================================================
+SULTAN HANAFI ROYAL SCHOOLS (SHRS) / GACAIS
+COMPLETE CURRICULUM BRIEFING - EVERYTHING THAT HAS BEEN SETTLED
+================================================================================
+
+READ THIS FIRST - WHAT THIS DOCUMENT IS AND HOW TO USE IT
+--------------------------------------------------------------------------------
+
+This is a complete, self-contained briefing on the curriculum of Sultan Hanafi
+Royal Schools, a supplementary Islamic and Arabic school operating in the
+Yoruba-speaking region of Nigeria (Ilorin / Ibadan). It is written to be handed
+to another AI assistant, or to a human who has never seen this work before, so
+that they can continue it without having to rediscover anything.
+
+The curriculum is a single coherent twelve-year system. It is NOT twelve
+separate year plans stitched together. Every decision below interacts with the
+others, which is why the decisions are numbered and locked.
+
+THE SINGLE MOST IMPORTANT THING TO UNDERSTAND
+--------------------------------------------------------------------------------
+
+This project has one recurring failure mode, and it destroyed months of work
+before it was diagnosed. The failure is this:
+
+    Each document was rebuilt from whatever happened to be in front of the
+    person rebuilding it. Every time that happened, decisions that had been
+    settled earlier but did not appear in THAT PARTICULAR FILE were silently
+    dropped. The Chairman then had to restate them from memory.
+
+These were never disagreements. They were losses. The same rulings were made
+three and four times over.
+
+The remedy is a single file, docs/curriculum/00-LOCKED-DECISIONS.md, called
+"the register". It holds 35 numbered rulings, L-01 through L-35. Its governing
+rule, in the original Arabic, is:
+
+    لا يُغيَّر بند مقفل إلا بقرار صريح جديد من رئيس المدارس.
+    لا يُغيَّر بالنسيان، ولا بإعادة البناء، ولا باجتهاد لجنة.
+    وما ليس في هذا السجل فليس بقرار.
+
+    "A locked item is changed only by an explicit new ruling from the Director
+    General. Not by forgetting. Not by rebuilding a document. Not by a
+    committee's own judgement. And what is not in this register is not a
+    decision."
+
+If you work on this curriculum, THREE RULES BIND YOU:
+
+  1. A locked item changes only by an explicit new ruling from the Director
+     General. A board may refer a locked item back for reconsideration; it may
+     not overrule one.
+
+  2. If a change you are about to make would break a locked item, STOP. Do not
+     make the change and explain afterwards. Raise it first.
+
+  3. A new ruling is written into the register FIRST, in the change log, with
+     its reason - and only then implemented in the other documents.
+
+WORKING LANGUAGE
+--------------------------------------------------------------------------------
+
+Subject names, text titles and instructional forms are written IN ARABIC. This
+was an explicit instruction from the Chairman. English may gloss a rule;
+it may never replace a name. "العروض وعلم القافية" is not "prosody". "البحث
+والخطابة" is not "research and oratory". The reason given was direct: English
+cannot do justice to Arabic. Keep the Arabic names throughout.
+
+Throughout this briefing, Arabic names appear as they must be used. English
+follows only as explanation.
+
+================================================================================
+PART 1 - THE CONSTITUTIONAL STRUCTURE
+================================================================================
+
+1.1  TWELVE CLASSES, NO MORE AND NO FEWER
+--------------------------------------------------------------------------------
+
+The school runs exactly twelve classes. There is no kindergarten (روضة) and no
+stage before class one. An earlier version of the plan assumed a kindergarten
+existed and built the Qur'an memorisation target on thirteen funded years; when
+the kindergarten was abolished, the target was not recalculated. That error is
+described in Part 9.
+
+1.2  FOUR SECTIONS
+--------------------------------------------------------------------------------
+
+    القسم التمهيدي   - classes 1-2   (Primary 1-2)
+        Theme: التهيئة وفك الحرف - preparation and unlocking the letter
+        Exit gate: بوابة القراءة (the reading gate) in class 1
+
+    القسم الابتدائي  - classes 3-6   (Primary 3-6)
+        Theme: القراءة فالطلاقة فالجسر إلى عربية العلم
+               reading, then fluency, then the bridge to the Arabic of
+               scholarship
+        Exit gates: بوابة الطلاقة (3) · الشهادة الابتدائية (5) · بوابة الجسر (6)
+
+    القسم الإعدادي   - classes 7-9   (JSS 1-3)
+        Theme: العلوم الشرعية بأسمائها والنحو على متونه
+               the sharʿī sciences under their own names, and grammar on its
+               classical matns
+        Exit gate: الشهادة الإعدادية (9), with an external examiner
+
+    القسم الثانوي    - classes 10-12 (SS 1-3)
+        Theme: علوم الآلة والمتون الكبرى ثم سنة التتويج
+               the instrumental sciences and the major matns, then the
+               capstone year
+        Exit gates: الثانوية القرآنية (11) · شهادة التخرج (12)
+
+1.3  THREE PROGRAMMES
+--------------------------------------------------------------------------------
+
+    البرنامج الأول   ·  القرآن وعلومه          (the Qur'an and its sciences)
+    البرنامج الثاني  ·  اللغة وعلومها          (language and its sciences)
+    البرنامج الثالث  ·  الدراسات الإسلامية      (Islamic studies)
+
+NOTE CAREFULLY: Programme Two is اللغة وعلومها. It is NOT "اللغة العربية
+وعلومها". This was corrected explicitly and has been wrong in drafts before.
+
+The binding rule:
+
+    كل مادة في كل صف تقع تحت واحد من البرامج الثلاثة، ولا تقع خارجها.
+    "Every subject, in every class, falls under one of the three programmes -
+    and none falls outside them."
+
+There is one presentational exception at class 12: WAEC and التحرير الامتحاني
+are grouped under a heading called خدمة سنة التتويج (capstone-year service).
+They remain accountable to the three-programme rule; the heading is an
+administrative grouping for the certificate year, not a fourth programme.
+
+================================================================================
+PART 2 - TIME: THE OPERATING WEEK AND THE ANNUAL LEDGER
+================================================================================
+
+2.1  THE WEEK AS ACTUALLY OPERATED
+--------------------------------------------------------------------------------
+
+    Monday    14:00 - 18:00
+    Tuesday   14:00 - 18:00
+    Wednesday 14:00 - 18:00
+    Thursday  NO SCHOOL (لا دوام)
+    Friday    NO SCHOOL (لا دوام)
+    Saturday  09:00 - 15:00
+    Sunday    09:00 - 15:00
+
+This is a supplementary school. Children attend other schooling on Thursday and
+Friday. The week is short and every minute is contested - which is why the
+arithmetic below is treated as a constitutional matter and not an
+administrative one.

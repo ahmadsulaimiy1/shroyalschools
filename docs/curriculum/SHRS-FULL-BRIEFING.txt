@@ -1,0 +1,2053 @@
+================================================================================
+SULTAN HANAFI ROYAL SCHOOLS (SHRS) / GACAIS
+COMPLETE CURRICULUM BRIEFING - EVERYTHING THAT HAS BEEN SETTLED
+================================================================================
+
+READ THIS FIRST - WHAT THIS DOCUMENT IS AND HOW TO USE IT
+--------------------------------------------------------------------------------
+
+This is a complete, self-contained briefing on the curriculum of Sultan Hanafi
+Royal Schools, a supplementary Islamic and Arabic school operating in the
+Yoruba-speaking region of Nigeria (Ilorin / Ibadan). It is written to be handed
+to another AI assistant, or to a human who has never seen this work before, so
+that they can continue it without having to rediscover anything.
+
+The curriculum is a single coherent twelve-year system. It is NOT twelve
+separate year plans stitched together. Every decision below interacts with the
+others, which is why the decisions are numbered and locked.
+
+THE SINGLE MOST IMPORTANT THING TO UNDERSTAND
+--------------------------------------------------------------------------------
+
+This project has one recurring failure mode, and it destroyed months of work
+before it was diagnosed. The failure is this:
+
+    Each document was rebuilt from whatever happened to be in front of the
+    person rebuilding it. Every time that happened, decisions that had been
+    settled earlier but did not appear in THAT PARTICULAR FILE were silently
+    dropped. The Chairman then had to restate them from memory.
+
+These were never disagreements. They were losses. The same rulings were made
+three and four times over.
+
+The remedy is a single file, docs/curriculum/00-LOCKED-DECISIONS.md, called
+"the register". It holds 35 numbered rulings, L-01 through L-35. Its governing
+rule, in the original Arabic, is:
+
+    لا يُغيَّر بند مقفل إلا بقرار صريح جديد من رئيس المدارس.
+    لا يُغيَّر بالنسيان، ولا بإعادة البناء، ولا باجتهاد لجنة.
+    وما ليس في هذا السجل فليس بقرار.
+
+    "A locked item is changed only by an explicit new ruling from the Director
+    General. Not by forgetting. Not by rebuilding a document. Not by a
+    committee's own judgement. And what is not in this register is not a
+    decision."
+
+If you work on this curriculum, THREE RULES BIND YOU:
+
+  1. A locked item changes only by an explicit new ruling from the Director
+     General. A board may refer a locked item back for reconsideration; it may
+     not overrule one.
+
+  2. If a change you are about to make would break a locked item, STOP. Do not
+     make the change and explain afterwards. Raise it first.
+
+  3. A new ruling is written into the register FIRST, in the change log, with
+     its reason - and only then implemented in the other documents.
+
+WORKING LANGUAGE
+--------------------------------------------------------------------------------
+
+Subject names, text titles and instructional forms are written IN ARABIC. This
+was an explicit instruction from the Chairman. English may gloss a rule;
+it may never replace a name. "العروض وعلم القافية" is not "prosody". "البحث
+والخطابة" is not "research and oratory". The reason given was direct: English
+cannot do justice to Arabic. Keep the Arabic names throughout.
+
+Throughout this briefing, Arabic names appear as they must be used. English
+follows only as explanation.
+
+================================================================================
+PART 1 - THE CONSTITUTIONAL STRUCTURE
+================================================================================
+
+1.1  TWELVE CLASSES, NO MORE AND NO FEWER
+--------------------------------------------------------------------------------
+
+The school runs exactly twelve classes. There is no kindergarten (روضة) and no
+stage before class one. An earlier version of the plan assumed a kindergarten
+existed and built the Qur'an memorisation target on thirteen funded years; when
+the kindergarten was abolished, the target was not recalculated. That error is
+described in Part 9.
+
+1.2  FOUR SECTIONS
+--------------------------------------------------------------------------------
+
+    القسم التمهيدي   - classes 1-2   (Primary 1-2)
+        Theme: التهيئة وفك الحرف - preparation and unlocking the letter
+        Exit gate: بوابة القراءة (the reading gate) in class 1
+
+    القسم الابتدائي  - classes 3-6   (Primary 3-6)
+        Theme: القراءة فالطلاقة فالجسر إلى عربية العلم
+               reading, then fluency, then the bridge to the Arabic of
+               scholarship
+        Exit gates: بوابة الطلاقة (3) · الشهادة الابتدائية (5) · بوابة الجسر (6)
+
+    القسم الإعدادي   - classes 7-9   (JSS 1-3)
+        Theme: العلوم الشرعية بأسمائها والنحو على متونه
+               the sharʿī sciences under their own names, and grammar on its
+               classical matns
+        Exit gate: الشهادة الإعدادية (9), with an external examiner
+
+    القسم الثانوي    - classes 10-12 (SS 1-3)
+        Theme: علوم الآلة والمتون الكبرى ثم سنة التتويج
+               the instrumental sciences and the major matns, then the
+               capstone year
+        Exit gates: الثانوية القرآنية (11) · شهادة التخرج (12)
+
+1.3  THREE PROGRAMMES
+--------------------------------------------------------------------------------
+
+    البرنامج الأول   ·  القرآن وعلومه          (the Qur'an and its sciences)
+    البرنامج الثاني  ·  اللغة وعلومها          (language and its sciences)
+    البرنامج الثالث  ·  الدراسات الإسلامية      (Islamic studies)
+
+NOTE CAREFULLY: Programme Two is اللغة وعلومها. It is NOT "اللغة العربية
+وعلومها". This was corrected explicitly and has been wrong in drafts before.
+
+The binding rule:
+
+    كل مادة في كل صف تقع تحت واحد من البرامج الثلاثة، ولا تقع خارجها.
+    "Every subject, in every class, falls under one of the three programmes -
+    and none falls outside them."
+
+There is one presentational exception at class 12: WAEC and التحرير الامتحاني
+are grouped under a heading called خدمة سنة التتويج (capstone-year service).
+They remain accountable to the three-programme rule; the heading is an
+administrative grouping for the certificate year, not a fourth programme.
+
+================================================================================
+PART 2 - TIME: THE OPERATING WEEK AND THE ANNUAL LEDGER
+================================================================================
+
+2.1  THE WEEK AS ACTUALLY OPERATED
+--------------------------------------------------------------------------------
+
+    Monday    14:00 - 18:00
+    Tuesday   14:00 - 18:00
+    Wednesday 14:00 - 18:00
+    Thursday  NO SCHOOL (لا دوام)
+    Friday    NO SCHOOL (لا دوام)
+    Saturday  09:00 - 15:00
+    Sunday    09:00 - 15:00
+
+This is a supplementary school. Children attend other schooling on Thursday and
+Friday. The week is short and every minute is contested - which is why the
+arithmetic below is treated as a constitutional matter and not an
+administrative one.
+
+2.2  THE UNITS
+--------------------------------------------------------------------------------
+
+    حصة (lesson slot)     = 40 minutes
+    فصل (term)            = 13 weeks
+    سنة (year)            = 39 weeks, in three terms
+    Weekly slots, classes 1-6   = 13
+    Weekly slots, classes 7-12  = 19
+
+2.3  THE PROTECTED QUR'ANIC HOUR - الساعة القرآنية
+--------------------------------------------------------------------------------
+
+A protected daily hour for memorisation and revision sits OUTSIDE the 13 or 19
+weekly slots entirely. It is 290 minutes a week in classes 1-6 and 340 minutes
+a week in classes 7-12.
+
+    الساعة القرآنية محمية - لا تُقتطع لأي مادة في أي صف
+    "The Qur'anic hour is protected - it is not drawn upon for any subject in
+    any class."
+
+No subject may take minutes from it. This has been violated in drafts by
+quietly hosting subjects inside it; see Part 9, error 12.
+
+2.4  THE ANNUAL LEDGER
+--------------------------------------------------------------------------------
+
+    Classes 1-6:   13 slots x 39 weeks x 40 min = 338h subject time
+                   + 188h30m Qur'anic hour
+                   = 526h30m per year
+
+    Classes 7-12:  19 slots x 39 weeks x 40 min = 494h subject time
+                   + 221h Qur'anic hour
+                   = 715h per year
+
+    THE WHOLE TWELVE-YEAR JOURNEY:  7,449 hours
+
+A rule of method applies here and must be respected: never round silently, and
+always separate ANALYTICAL DEMAND (how much time a subject needs) from
+OPERATIONAL ALLOCATION (how much time it is actually given). A timetable period
+is an operational decision; it is not the unit of curriculum design.
+
+An earlier ledger claimed 754 hours per year and a 19h20m week. That was wrong:
+100 minutes had been booked as مراجعة (revision) when 60 of those minutes were
+actually wuḍūʾ and dismissal. The corrected figures - 18h20m per week and 715
+hours per year - are the ones above.
+
+================================================================================
+PART 3 - THE VOCABULARY OF INSTRUCTIONAL FORM
+================================================================================
+
+This vocabulary is closed. These six forms and no others may be used to describe
+how a subject is delivered. Inventing a seventh form is a breach of L-08.
+
+    مستقل   INDEPENDENT
+            Holds its own timetable slot. Has its own book. Has its own exam
+            paper. Enters the average. Appears in Section A of the transcript.
+
+    مدمج    MERGED
+            Shares a slot with ONE named partner subject. Has no book of its
+            own - it lives inside the partner's book. It gets a NAMED SECTION on
+            the partner's paper with a 40% floor, so it cannot be quietly
+            dropped. Enters the average, aggregated.
+
+    مضمّن   EMBEDDED
+            Taught inside a NAMED HOST subject. No slot, no book, no separate
+            paper. Assessed inside the host. Still appears in Section A through
+            its host.
+
+    وحدة    UNIT
+            A named, separately examined block that never holds a slot of its
+            own. Consumes its HOST's minutes. Appears in Section B of the
+            transcript as an achievement rating. Does NOT enter the average.
+
+    مسار    STRAND
+            A thread inside a book (used for the four strands inside كتاب
+            الدراسات الإسلامية in the lower classes). No slot, no book, no
+            mark. Appears only as a descriptive appendix - متقن / نامٍ / مبتدئ -
+            with NO NUMBER attached.
+
+    دوراني  ROTATING
+            A slot that cycles between courses. Reserved vocabulary; used
+            sparingly.
+
+    شرط     CONDITION
+            Not an instructional form but an assessment category. A شرط NEVER
+            CARRIES A MARK. It appears in Section C of the transcript as met or
+            not met. خدمة التتويج and the WAEC sitting requirement are شروط.
+
+THE GOVERNING PRINCIPLE (L-07):  لا اسمَ بلا دقيقة
+    "No name without a minute."
+    No subject may appear on any list unless it has either timetabled lessons
+    or a NAMED HOST. A subject with neither is a fiction. This rule exists
+    because a subject (WAEC) once gated the leaving certificate while having
+    zero timetabled minutes anywhere in the school, and a "38/38 subjects
+    accounted for" check still came out balanced because the claimant had never
+    been entered into the ledger at all.
+
+ASSESSMENT FOLLOWS FORM MECHANICALLY. The instructional form determines the
+assessment consequence with no discretion:
+
+    form      paper?                    book?           average?   transcript
+    -------------------------------------------------------------------------
+    مستقل     yes                       yes             yes        Section A
+    مدمج      named section, 40% floor   partner's book  yes        Section A
+    مضمّن     no                        no              via host   Section A
+    وحدة      achievement rating         no              no         Section B
+    مسار      no                        no              no         descriptive
+    شرط       NEVER CARRIES A MARK       -               no         Section C
+
+================================================================================
+PART 4 - THE THIRTY-NINE LOCKED DECISIONS, IN FULL
+================================================================================
+
+Each is given in the original Arabic exactly as it stands in the register,
+followed by an explanation of what it means and why it exists. These are the
+constitution. Do not paraphrase them away.
+
+CHAPTER ONE - PRINCIPLES
+
+L-01  ١٢ صفًّا — لا أكثر ولا أقل. لا روضة ولا مرحلة قبلها
+      Twelve classes, no more and no fewer. No kindergarten and no stage before
+      it. Any plan that assumes thirteen or more funded years is invalid.
+
+L-02  ٤ أقسام: التمهيدي (١–٢) · الابتدائي (٣–٦) · الإعدادي (٧–٩) · الثانوي (١٠–١٢)
+      Four sections, with those exact class ranges. This was forgotten once in
+      a rebuild and had to be restated angrily.
+
+L-03  ٣ برامج: القرآن وعلومه · اللغة وعلومها · الدراسات الإسلامية
+      Three programmes. Note again: اللغة وعلومها, not اللغة العربية وعلومها.
+
+L-04  كل مادة تحت واحد من البرامج الثلاثة، ولا واحدة خارجها
+      Every subject under one of the three programmes; none outside.
+
+L-05  في التمهيدي والابتدائي كل شيء مدمج أو مضمّن. لا يُثقَل الطفل بالكتب
+      In التمهيدي and الابتدائي (classes 1-6) EVERYTHING is merged or embedded.
+      The child is not burdened with books. This is why classes 1-6 carry only
+      three books despite meeting twelve or thirteen named sciences.
+
+L-06  الحد الأدنى ثلاثة كتب — كتاب لكل برنامج — والمصحف. والمصحف أصلٌ لا كتابَ تعليم
+      Minimum THREE books - one per programme - plus the muṣḥaf. The muṣḥaf is
+      a source, not a teaching book, and is never counted as Programme One's
+      book. This was originally "two books", which left Programme One with no
+      book at all in the lower classes. The Chairman caught it: if
+      there are three programmes, there must be at least three books.
+
+L-07  لا اسمَ بلا دقيقة — لا مادة بلا حصص ولا مضيف مسمّى
+      No name without a minute. See Part 3.
+
+L-08  الصيغ وحدها: مستقل · مدمج · مضمّن · وحدة · دوراني · مسار
+      Those forms and no others.
+
+L-09  الحمل يرتفع مع الصف
+      The load rises with the class. Note: this governs PROGRAMME LOAD overall.
+      It does NOT mean an individual subject can never be demoted. An earlier
+      draft invented a "monotonic status" rule - once a subject rose it could
+      never fall - and this was explicitly withdrawn. The Chairman said
+      plainly that it is not compulsory to teach every subject every term.
+
+L-10  صف التخرج يحمل الأكثر — ولا يُخفَّض بقرار لجنة
+      The graduating class carries the MOST. A board once reduced class 12's
+      load on its own judgement and had to be reversed. Class 12 currently
+      carries 27 sciences and 14 books - more than any other class.
+
+L-11  لا يلزم أن تُدرَّس كل مادة كل فصل — مقررات فصلية كالجامعة
+      Not every subject must be taught every term. Term courses, like a
+      university. This is a central design idea; see Part 6.
+
+L-12  يجوز أن تنقطع المادة ثم تعود — بشرط أن تعود أعلى، لا تكرارًا
+      A subject may pause and return - provided it returns HIGHER, not as
+      repetition.
+
+L-13  مواد الأساس لا تنقطع: النحو · اللغة العربية · الفقه · العقيدة · الحديث · التفسير
+      The cornerstones never pause. These six run as independent full-year
+      subjects continuously from class 7 to class 12.
+
+L-14  البلاغة: ستة فصول كاملة
+      Balāghah gets six full terms. It currently has NINE, so this floor is
+      comfortably exceeded.
+
+L-15  العروض وعلم القافية: لا يُدرَّس في فصل واحد
+      Prosody and rhyme are NOT taught in a single term. The Chairman
+      was explicit: three or four terms, not one.
+
+L-16  النقد والآداب: مادة لها وزنها — لا وحدة صغيرة
+      Criticism and literature is a subject with real weight, not a small unit.
+
+L-17  الصرف: حاضر في كل صف متقدم
+      Morphology is present in EVERY advanced class - 7 through 12, without
+      exception.
+
+L-18  الخطابة والتواصل أولوية — ومعها الترجمة إلى اليوربا
+      Oratory and communication are a priority, and with them translation into
+      YORUBA. Yoruba is the mother tongue of the students. The graduate must be
+      able to render his research and his khuṭbah back into Yoruba. This has
+      been silently dropped from drafts before.
+
+L-19  الفرائض: باب مُصان بورقة وسطر مستقلين
+      Inheritance law is a ring-fenced chapter with its own paper and its own
+      line on the certificate.
+
+L-20  الساعة القرآنية محمية — لا تُقتطع لأي مادة في أي صف
+      The Qur'anic hour is protected in all twelve classes.
+
+L-21  مذهب أهل السنة، بلا التزام مذهب واحد
+      Ahl al-Sunnah, with NO exclusive commitment to a single school of law.
+
+L-22  يجوز أن يختلف الإطار من باب إلى باب
+      The declared frame may differ from topic to topic. See Part 8.
+
+L-23  الرواية: حفص عن عاصم · المصحف: مطبعة الملك فهد
+      The riwāyah is Ḥafṣ ʿan ʿĀṣim; the muṣḥaf is the King Fahd printing.
+
+L-24  الأسبوع: الإثنين–الأربعاء ٢–٦ مساءً · الخميس والجمعة لا دوام · السبت والأحد ٩–٣
+      The operating week as in Part 2.
+
+L-25  الحصة ٤٠ د · الفصل ١٣ أسبوعًا · السنة ٣٩ أسبوعًا في ثلاثة فصول
+      The units as in Part 2.
+
+L-26  لا يُختلق دليل مفقود
+      A missing document is never invented. If evidence is absent, say it is
+      absent.
+
+L-27  لا يُخلط المستردّ بقرار المجلس الحالي
+      Recovered material is never mixed with a current ruling. Each is labelled.
+
+L-28  لا يُقدَّم الاستنتاج على أنه نصٌّ مستردّ
+      An inference is never presented as recovered text.
+
+L-29  لا تُستنبط العقيدة ولا المذهب من قوائم الكتب
+      Neither creed nor school of law is inferred from a booklist. If a draft
+      proposes classical texts, that does not establish the school's
+      orientation. Only an explicit ruling does.
+
+L-30  لكل مادة في كل برنامج نصٌّ مقرَّر أو مادة مصدر. ولا مادة بلا مصدر
+      Every subject in every programme has a prescribed text or a named source
+      material. No subject without a source. When this check was first run it
+      FAILED on thirteen subjects - including التربية الإسلامية itself, the
+      first book a child ever holds. Chapter Four of the register is the
+      remedy.
+
+L-31  عدّ الكتب بقاعدة واحدة معلنة
+      Books are counted by one declared rule, not by hand:
+        - كتاب القرآن وعلومه counts as 1 in every class, all twelve years
+        - one book for every independent FULL-YEAR subject
+        - all term courses share ONE volume: كراسة المقررات الفصلية
+        - مدمج and مضمّن carry NO book
+        - التجويد carries no separate book; its matn is bound inside
+          كتاب القرآن وعلومه
+        - the muṣḥaf is a source and is never counted
+      This rule exists because the book counts had drifted between documents -
+      the same class showing 9 books in one file and 11 in another - purely
+      because each had been tallied separately by hand.
+
+L-32  التجويد مادة مستقلة من الرابع إلى الحادي عشر — حصةٌ ومتنٌ وورقة.
+      لا يُضمَّن في الساعة القرآنية في الصفوف المتقدمة
+      Tajwīd is an INDEPENDENT subject from class 4 to class 11: its own weekly
+      lesson, its own matn, its own paper. It is NOT folded into the Qur'anic
+      hour in the advanced classes. The hour is for ḥifẓ and murājaʿah. See
+      Part 7.
+
+L-33  الرسم العثماني وفرش رواية حفص بابان داخل منهج التجويد في التاسع —
+      لا مادتان ولا مقرران. والرواية وصفُ المصحف لا مادةَ تُدرَّس
+      ʿUthmānī orthography and the farsh of Ḥafṣ are CHAPTERS inside the class-9
+      tajwīd syllabus - not subjects and not courses. The riwāyah is a
+      description of the muṣḥaf we read from (L-23), not a subject on a
+      timetable.
+
+L-34  لا يُقدَّم علمٌ على آلته. ولا تُفتَح البلاغة قبل تمام النحو الأساس —
+      فأولُ موضعها العاشر، بعد ختم قطر الندى في التاسع
+      NO SCIENCE BEFORE ITS INSTRUMENT. Balāghah is not opened before
+      foundational naḥw is complete - its first place is class 10, after Qaṭr
+      al-Nadā closes in class 9. See Part 5.
+
+L-35  ترتيب البلاغة: المعاني ← البيان ← البديع. لأن المعاني نحوٌ مطبَّق، والبيان قائم عليه
+      The order within balāghah is maʿānī, then bayān, then badīʿ - because
+      maʿānī is applied grammar and bayān rests upon it. This is the order of
+      the Talkhīṣ and the Miftāḥ. Our draft had inverted the first two.
+
+L-36  لا تفسير قبل الصف الخامس. أولُ موضع التفسير الخامس، ولا يُلقَّن في الأول إلى الرابع
+      NO TAFSĪR BEFORE CLASS FIVE. Tafsīr had been taught from class one,
+      embedded in the Qurʾānic hour, the meaning given alongside each sabaq.
+      But in classes one to four the child is unlocking the letter and working
+      toward fluency - بوابة القراءة at one, بوابة الطلاقة at three. Giving him
+      the meaning before he can read the words is a science before its
+      instrument, the same fault L-34 names. The chapter's own rule already
+      said tafsīr follows what is memorised; it should follow it from the point
+      the child reads. First place: CLASS FIVE, alongside الشهادة الابتدائية.
+      It held no slot in classes 1-4, so the timetable was unaffected.
+
+L-37  العربية آلةُ العلوم كلِّها. ففي الإعدادي لا ينزل برنامج اللغة عن الدراسات
+      الإسلامية. وفي الثانوي على ألّا تنزل اللغة عن الثلث
+      ARABIC IS THE INSTRUMENT OF EVERY SHARʿĪ SCIENCE. The language had been
+      collapsing at the bridge: 61.5% of the week in class 6, 31.6% in class 7,
+      while Islamic studies took 52.6% - its highest share anywhere in the
+      school. Giving the sciences more time than the instrument they depend on
+      is the fault of L-34 at the level of the programme. In Ideadi, the section
+      that BUILDS the instrument, the language programme does not fall below
+      Islamic studies. In Thanawi the instrument is USED on the major matns, so
+      the sharʿī share may rise - against a floor of one third.
+      (This rule was first written to cover Thanawi too; measurement showed
+      classes 11 and 12 failing it, and the RULE was narrowed rather than the
+      curriculum bent to it.)
+
+L-38  اللغة العربية ليست النحو. الإنشاء والتعبير مادةُ اللغة الحية في الابتدائي
+      والإعدادي، ثم تنضج بحثًا وخطابةً في الثانوي
+      THE LANGUAGE IS NOT ITS GRAMMAR. In class 8 the instrumental sciences held
+      15 lesson-terms against 6 for the living language. And the communication
+      subject was absent from classes 7, 8 and 9 entirely, with الترجمة absent
+      before class 10 - while L-18 makes both a priority. The living language
+      now runs unbroken from class 4 to class 12, with الترجمة إلى اليوربا
+      embedded in it from class 7.
+          LIVING LANGUAGE   اللغة العربية (مطالعة · محادثة · استيعاب · نصوص) ·
+                            الإنشاء والتعبير / البحث والخطابة · النشيد
+                            والمحفوظات · النقد والآداب · الترجمة
+          INSTRUMENTS       النحو · الصرف · العروض وعلم القافية ·
+                            فقه اللغة والمعاجم
+
+L-39  لا يُقحَم اسمُ مرحلةٍ في غيرها. البحث عملُ الثانوي لا الإعدادي
+      A STAGE'S NAME IS NOT IMPORTED INTO ANOTHER STAGE. البحث is the work of
+      Thanawi. A boy of thirteen composes and expresses; he does not referee
+      research. The ladder:
+          classes 4-6    الإنشاء والتعبير  embedded in اللغة العربية
+          class 7        الإنشاء والتعبير  التعبير الشفوي والكتابي · الوصف والسرد
+          class 8        الإنشاء والتعبير  الإنشاء الموجَّه · الرسالة والتقرير
+          class 9        الإنشاء والتعبير  الإنشاء الحر والإلقاء · الخطبة القصيرة
+          classes 10-12  البحث والخطابة   البحث المحكّم · الخطبة · المناظرة
+      The instrumental sciences at Ideadi are النحو والصرف, and they are not the
+      living language and do not stand in for it.
+
+================================================================================
+PART 5 - TARTĪB AL-ʿULŪM: NO SCIENCE BEFORE ITS INSTRUMENT (L-34, L-35)
+================================================================================
+
+This is a doctrine, not a scheduling convenience. Stated in the register:
+
+    العلمُ الذي يقوم على غيره لا يُفتَح قبل تمام ما يقوم عليه.
+    وهذا ليس ترتيبًا تنظيميًّا يُتسامح فيه، بل شرطُ فهمٍ: من لقي «التقديم والتأخير»
+    مصطلحًا بلاغيًّا قبل أن يعرفه إعرابًا، حفظ الاسم ولم يفهم المسمَّى.
+
+    "A science that stands on another is not opened before the one it stands on
+    is complete. This is not an organisational nicety to be relaxed; it is a
+    condition of understanding. Whoever meets 'fronting and postponement' as a
+    rhetorical term before knowing it as iʿrāb has memorised the name and not
+    understood the thing named."
+
+THE LADDER:
+
+    SCIENCE              ITS INSTRUMENT          WHERE THE INSTRUMENT SITS
+    -----------------------------------------------------------------------
+    البلاغة              النحو الأساس            الآجرومية 7 · قطر الندى 8-9
+      -> first place: CLASS 10, after Qaṭr al-Nadā closes
+
+    علم البيان           علم المعاني             class 10
+      -> first place: class 11
+
+    علم البديع           البيان والمعاني         classes 10-11
+      -> first place: class 12
+
+    أصول الفقه           الفقه                   from class 7
+      -> embedded practically 8-9, then a subject from class 10
+
+    مصطلح الحديث         الحديث النبوي           from class 7
+      -> first place: class 9
+
+    العروض               السماع والرواية         from class 1
+      -> first place: class 9
+
+    النقد والآداب        الطلاقة والذوق          بوابة الجسر, class 6
+      -> first place: CLASS 9 - taste before terminology
+
+    المنطق               النضج والعقيدة          classes 7-11
+      -> first place: class 12
+
+    التفسير              القراءة والطلاقة        بوابة القراءة 1 · بوابة الطلاقة 3
+      -> first place: CLASS 5, alongside الشهادة الابتدائية (L-36)
+
+    البحث والخطابة       الإنشاء والتعبير        classes 4-9
+      -> first place: CLASS 10 (L-39)
+
+    every sharʿī science  اللغة العربية          from class 1, hardest at Ideadi
+      -> and therefore the language does not fall below them at Ideadi (L-37)
+
+WHAT PRECEDES BALĀGHAH IN CLASS 9 IS النقد والآداب - chosen texts read, tasted
+and memorised from, WITH NO RHETORICAL TERMINOLOGY AT ALL. The taste first; then
+class 10 gives the student a name for what he had been finding and could not
+name.
+
+This correction removed balāghah from class 9 term 1 (where it had been
+opening while Qaṭr al-Nadā was still unfinished that same year) and moved
+النقد والآداب into the vacated term.
+
+================================================================================
+PART 6 - THE COMPLETE SUBJECT REGISTER: 34 SUBJECTS
+================================================================================
+
+Legend for the grid below:
+    HOUR = inside the protected Qur'anic hour, outside the slot ledger
+    IND  = مستقل, independent, full year, own slot / book / paper
+    TERM = مستقل as a TERM COURSE, occupying a shared term-slot
+    MERG = مدمج, merged with one named partner
+    EMBD = مضمّن, embedded in a named host
+    UNIT = وحدة, examined block with no slot of its own
+    STRD = مسار, a strand inside كتاب الدراسات الإسلامية (no mark)
+    .    = not taught at that class
+
+SUBJECT COUNT BY PROGRAMME
+    PROGRAMME ONE - القرآن وعلومه                         4
+    PROGRAMME TWO - اللغة وعلومها                        14
+    PROGRAMME THREE - الدراسات الإسلامية                 14
+    CAPSTONE SERVICE - خدمة سنة التتويج                   2
+    TOTAL                                                34
+
+
+PROGRAMME ONE - القرآن وعلومه - 4 subjects
+    SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
+    ------------------------------------------------------------------------------
+    حفظ القرآن الكريم         HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR
+    التجويد                   EMBD EMBD EMBD  IND  IND  IND  IND  IND  IND  IND  IND EMBD
+    التفسير                      .    .    .    . EMBD EMBD  IND  IND  IND  IND  IND  IND
+    أصول التفسير                 .    .    .    .    .    .    .    .    .    . TERM EMBD
+
+
+PROGRAMME TWO - اللغة وعلومها - 14 subjects
+    SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
+    ------------------------------------------------------------------------------
+    اللغة العربية              IND  IND  IND  IND  IND  IND  IND  IND  IND  IND  IND  IND
+    النشيد والمحفوظات         EMBD EMBD EMBD EMBD EMBD EMBD EMBD EMBD    . EMBD EMBD EMBD
+    الخط والإملاء             MERG MERG MERG MERG MERG MERG    .    .    .    .    .    .
+    القراءة والتهجي           MERG MERG MERG    .    .    .    .    .    .    .    .    .
+    الإنشاء والتعبير             .    .    . EMBD EMBD EMBD  IND  IND  IND    .    .    .
+    قواعد اللغة الوظيفية         .    .    . MERG MERG MERG    .    .    .    .    .    .
+    النحو                        .    .    .    .    .    .  IND  IND  IND  IND  IND  IND
+    الصرف                        .    .    .    .    .    . MERG  IND  IND TERM EMBD EMBD
+    الترجمة                      .    .    .    .    .    . EMBD EMBD EMBD EMBD EMBD EMBD
+    فقه اللغة والمعاجم           .    .    .    .    .    .    . EMBD    .    .    .    .
+    النقد والآداب                .    .    .    .    .    .    .    . TERM TERM EMBD TERM
+    العروض وعلم القافية          .    .    .    .    .    .    .    . TERM EMBD EMBD TERM
+    البلاغة                      .    .    .    .    .    .    .    .    .  IND  IND  IND
+    البحث والخطابة               .    .    .    .    .    .    .    .    .  IND  IND  IND
+
+
+PROGRAMME THREE - الدراسات الإسلامية - 14 subjects
+    SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
+    ------------------------------------------------------------------------------
+    الفقه                     STRD STRD STRD STRD STRD STRD  IND  IND  IND  IND  IND  IND
+    الحديث النبوي             STRD STRD STRD STRD STRD STRD  IND  IND  IND  IND  IND  IND
+    التوحيد                   STRD STRD STRD STRD STRD STRD EMBD EMBD EMBD EMBD EMBD EMBD
+    التربية الإسلامية          IND  IND  IND  IND  IND  IND MERG MERG    .    .    .    .
+    السيرة النبوية            STRD STRD STRD STRD STRD    .    .    .    .    .    .    .
+    التاريخ والسيرة              .    .    .    .    . MERG  IND  IND  IND TERM EMBD EMBD
+    العقيدة                      .    .    .    .    .    .  IND  IND  IND  IND  IND  IND
+    أصول الفقه                   .    .    .    .    .    .    . EMBD EMBD  IND  IND  IND
+    مصطلح الحديث                 .    .    .    .    .    .    .    . TERM EMBD EMBD EMBD
+    الفرائض                      .    .    .    .    .    .    .    .    .    . TERM TERM
+    خدمة التتويج                 .    .    .    .    .    .    .    .    .    .    .  IND
+    الدراسات الحديثة             .    .    .    .    .    .    .    .    .    .    . TERM
+    علم الكلام                   .    .    .    .    .    .    .    .    .    .    . TERM
+    المنطق                       .    .    .    .    .    .    .    .    .    .    . TERM
+
+
+CAPSTONE SERVICE - خدمة سنة التتويج - 2 subjects
+    SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
+    ------------------------------------------------------------------------------
+    WAEC                         .    .    .    .    .    .    .    .    .    .    .  IND
+    التحرير الامتحاني            .    .    .    .    .    .    .    .    .    .    .  IND
+
+
+SUBJECTS PER CLASS (named sciences the student actually meets):
+
+    class      1    2    3    4    5    6    7    8    9   10   11   12
+    count     11   11   11   12   13   13   15   17   17   19   21   27
+    slots     13   13   13   13   13   13   19   19   19   19   19   19
+    books      3    3    3    3    3    3    9   10   11   11   11   14
+    lang%     69   69   69   54   54   62   42   42   44   44   37   33
+
+The load rises and the graduating class carries the most, as L-09 and L-10
+require. The book floor of three holds through the whole of the lower school.
+The lang% row is the language programme's share of the week: it does not fall
+below Islamic studies at Ideadi (L-37), and does not fall below a third at
+Thanawi.
+
+WHAT IS *NOT* A SUBJECT - do not re-add these, they have been removed twice:
+
+    الرسم العثماني        A chapter inside the class-9 tajwīd syllabus. (L-33)
+    رواية حفص عن عاصم     A description of the muṣḥaf we read from. (L-23)
+    علوم القرآن           Not a standalone course; its topics are distributed.
+    المصحف                A source. Never counted among books or subjects.
+
+AND DO NOT SWAP THESE TWO - they are different subjects for different stages:
+
+    الإنشاء والتعبير      classes 4-9.  Composition and expression.
+    البحث والخطابة        classes 10-12. Refereed research, khuṭbah, munāẓarah.
+
+================================================================================
+PART 6B - CLASS BY CLASS, IN FULL DETAIL
+================================================================================
+
+Every class, every subject, its form, its duration, its weekly slots, its annual
+hours and its syllabus note. This is the operational heart of the curriculum.
+The Arabic syllabus notes are the actual prescribed content.
+
+--- CLASS 1 · الصف الأول · Primary 1 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 9 slots | year hours: 234h
+        note: كتاب واحد يضم: القراءة والتهجي · الخط والإملاء · النشيد والمحفوظات
+    - القراءة والتهجي
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — وبوابته تُقوَّم على حدة
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — ملف أعمال
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: كتاب واحد يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 2 · الصف الثاني · Primary 2 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 9 slots | year hours: 234h
+        note: كتاب واحد يضم: القراءة والتهجي · الخط والإملاء · النشيد والمحفوظات
+    - القراءة والتهجي
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — وبوابته تُقوَّم على حدة
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — ملف أعمال
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: كتاب واحد يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 3 · الصف الثالث · Primary 3 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — تصحيح المخارج والصفات سماعًا وتلقينًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (4 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 9 slots | year hours: 234h
+        note: كتاب واحد يضم: القراءة والتهجي · الخط والإملاء · النشيد والمحفوظات
+    - القراءة والتهجي
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — وبوابته تُقوَّم على حدة
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — ملف أعمال
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: كتاب واحد يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 4 · الصف الرابع · Primary 4 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (2 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **تحفة الأطفال** — حصة مستقلة داخل كتاب القرآن وعلومه
+
+  PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 7 slots | year hours: 182h
+        note: يضم: قواعد اللغة الوظيفية · الخط والإملاء · الإنشاء · النشيد
+    - قواعد اللغة الوظيفية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — القاعدة تُلمس في النص
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج
+    - الإنشاء والتعبير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — التعبير الشفوي والكتابي · الوصف والسرد
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 5 slots | year hours: 130h
+        note: يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 5 · الصف الخامس · Primary 5 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **تحفة الأطفال** تمامًا
+    - التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن
+
+  PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 7 slots | year hours: 182h
+        note: يضم: قواعد اللغة الوظيفية · الخط والإملاء · الإنشاء · النشيد
+    - قواعد اللغة الوظيفية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — القاعدة تُلمس في النص
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج
+    - الإنشاء والتعبير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — التعبير الشفوي والكتابي · الوصف والسرد
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (1 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 5 slots | year hours: 130h
+        note: يضم المسارات الأربعة
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي · السيرة النبوية
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 6 · الصف السادس · Primary 6 -------------------
+    13 lesson-slots per week | 3 books + the muṣḥaf | 338h of subject time + 188h30m Qurʾānic hour = 526h30m in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 290min/wk | year hours: 188h30m
+        note: outside the slot ledger; never drawn upon by any subject
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **المقدمة الجزرية** — مدخل
+    - التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن
+
+  PROGRAMME TWO  - اللغة وعلومها  (5 subjects)
+    - كتاب اللغة وعلومها — اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 8 slots | year hours: 208h
+        note: يضم: قواعد اللغة الوظيفية (وبوابة الجسر) · الخط والإملاء · الإنشاء · النشيد
+    - قواعد اللغة الوظيفية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج — **يحمل بوابة الجسر بلجنة ثلاثية**
+    - الخط والإملاء
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مدمج
+    - الإنشاء والتعبير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — التعبير الكتابي · التلخيص والوصف
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن
+
+  PROGRAMME THREE - الدراسات الإسلامية  (2 subjects)
+    - كتاب الدراسات الإسلامية — التربية الإسلامية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: يضم المسارات الخمسة، ومنه المقدمة الأخضرية
+    - التاريخ والسيرة
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside التربية الإسلامية :: مدمج
+
+  STRANDS inside كتاب الدراسات الإسلامية (no book, no mark, descriptive only): التوحيد · الفقه · الحديث النبوي
+
+  Slot arithmetic: 13 allocated / 13 available. Balanced.
+
+--- CLASS 7 · الصف السابع · JSS 1 -----------------------
+    19 lesson-slots per week | 9 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: جزء عم منهجيًّا
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الجزرية** — المخارج والصفات
+
+  PROGRAMME TWO  - اللغة وعلومها  (6 subjects)
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 4 slots | year hours: 104h
+        note: **المطالعة الموسعة والمحادثة والاستيعاب والنصوص** — يضم النشيد والمحفوظات
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
+        note: الآجرومية — **مع الصرف في كتاب واحد**
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **التعبير الشفوي والكتابي** · الوصف والسرد والمحادثة
+    - الصرف
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside النحو :: مدمج — الميزان والمشتقات
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — ملحة الإعراب
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد النص القصير إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (6 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الأخضرية تمامًا
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: متن الأدلة + الأصول الثلاثة
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الأربعون + زيادات ابن رجب
+    - التاريخ والسيرة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: -
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: مضمّن — باب مسمّى
+    - التربية الإسلامية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مدمج — قسم مسمّى: السلوك والآداب والتزكية · **الأدب المفرد** · أرضية ٤٠٪
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 8 · الصف الثامن · JSS 2 -----------------------
+    19 lesson-slots per week | 10 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: آيات الأحكام + أصول التفسير مضمّنًا
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الجزرية** — الأحكام
+
+  PROGRAMME TWO  - اللغة وعلومها  (7 subjects)
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 3 slots | year hours: 78h
+        note: قطر الندى
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **المطالعة والنصوص والاستيعاب والمحادثة**
+    - الصرف
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: لامية الأفعال + دورة المعاجم
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإنشاء الموجَّه** · الرسالة والتقرير والتلخيص
+    - فقه اللغة والمعاجم
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الصرف :: دورة ٣ أسابيع
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside اللغة العربية :: مضمّن — قناة المتون
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد الرسالة والتقرير إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (7 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الرسالة + أبو شجاع مقارنًا
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: لمعة الاعتقاد + القواعد الأربع
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: عمدة الأحكام
+    - التاريخ والسيرة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: -
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: 
+    - أصول الفقه
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الفقه :: التأصيل العملي
+    - التربية الإسلامية
+        form: MERGED (مدمج) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مدمج — قسم مسمّى: السلوك والآداب والتزكية · **الأدب المفرد** · أرضية ٤٠٪
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 9 · الصف التاسع · JSS 3 -----------------------
+    19 lesson-slots per week | 11 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الإسرائيليات
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الجزرية** تمامًا · الوقف والابتدا · **فرش رواية حفص** · **الرسم العثماني**
+
+  PROGRAMME TWO  - اللغة وعلومها  (7 subjects)
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: قطر الندى تمامًا
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **المطالعة الناقدة والمحادثة والاستيعاب**
+    - الإنشاء والتعبير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإنشاء الحر والإلقاء** · المقالة القصيرة والخطبة القصيرة أمام الصف
+    - الصرف
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: المعتل والإعلال
+    - النقد والآداب
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: نصوص مختارة تُذاق ويُحفَظ منها — **بلا اصطلاح بلاغي**. تهيئةٌ للبلاغة في العاشر
+    - العروض وعلم القافية
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: البحور المشهورة بالسمع — تدريب أذن
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الإنشاء والتعبير :: مضمّن — رد الخطبة إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (7 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: عمدة الفقه مقارنًا
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الطحاوية — الإلهيات
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: عمدة + الأدب المفرد
+    - التاريخ والسيرة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الأندلس وغرب أفريقيا
+    - مصطلح الحديث
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: البيقونية محفوظة
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: 
+    - أصول الفقه
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الفقه :: 
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة فصلية [2 slots/wk]: ف١ النقد والآداب >> ف٢ العروض وعلم القافية >> ف٣ مصطلح الحديث
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 10 · الصف العاشر · SS 1 ------------------------
+    19 lesson-slots per week | 11 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (3 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: يفارق المحفوظ
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإتقان** — التطبيق على المصحف كاملًا
+
+  PROGRAMME TWO  - اللغة وعلومها  (9 subjects)
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: المطالعة الموسعة والمحادثة والمناظرة
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: ألفية ابن مالك
+    - البلاغة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **علم المعاني** — الإسناد والمسند والتقديم والتأخير والحذف · ومعه العروض مدمجًا في ف٢+ف٣
+    - البحث والخطابة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: منهج البحث والخطابة وأدب الحوار
+    - النقد والآداب
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: النصوص الجاهلية والإسلامية
+    - الصرف
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: لامية الأفعال تمامًا والتصريف التطبيقي
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside كل مادة بمتنها :: قناة المتون
+    - العروض وعلم القافية
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البلاغة :: ف٢+ف٣ — التقطيع والبحور
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: رد المقال إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (7 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: مختصر القدوري + المرشد المعين وثيقةً
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: أم البراهين والواسطية معًا
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: بلوغ المرام والموطأ — ومعه مصطلح الحديث مدمجًا
+    - أصول الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الورقات — النصف الأول
+    - التاريخ والسيرة
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: الإسلام في نيجيريا — الشيخ آدم الإلوري
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: باب مسمّى
+    - مصطلح الحديث
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: نخبة الفكر
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة فصلية [2 slots/wk]: ف١ التاريخ والسيرة >> ف٢ النقد والآداب >> ف٣ الصرف
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 11 · الصف الحادي عشر · SS 2 ------------------------
+    19 lesson-slots per week | 11 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (4 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: آيات الأحكام والبياني
+    - التجويد
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **الإقراء والتصحيح** — استعدادًا للجنة الثانوية القرآنية
+    - أصول التفسير
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: مقدمة ابن تيمية
+
+  PROGRAMME TWO  - اللغة وعلومها  (9 subjects)
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: المهارات الأربع العليا
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الألفية — ومعه الصرف مدمجًا
+    - البلاغة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **علم البيان** — التشبيه والمجاز والكناية · ومعه النقد والآداب والعروض مدمجَين
+    - البحث والخطابة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: إعداد البحث المحكّم والخطبة
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside كل مادة بمتنها :: 
+    - الصرف
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside النحو :: أبنية ومعتل تطبيقًا
+    - النقد والآداب
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البلاغة :: النقد التطبيقي
+    - العروض وعلم القافية
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البلاغة :: الزحافات والعلل
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: المصطلح الشرعي
+
+  PROGRAMME THREE - الدراسات الإسلامية  (8 subjects)
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: بداية المجتهد وإحياء السنة
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الاعتصام وكتاب التوحيد وحدةً — ومعه كتاب الفِرَق والتاريخ
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: بلوغ المرام والشمائل — ومعه مصطلح الحديث مدمجًا
+    - أصول الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الورقات تمامًا ونظم الورقات
+    - الفرائض
+        form: INDEPENDENT | duration: term course ف١+ف٢ | weekly: 2 slots | year hours: 34h40m
+        note: متن الرحبية · ٥٢ حصة · ورقة وسطر مستقلان
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: 
+    - مصطلح الحديث
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: نزهة النظر وتخريج
+    - التاريخ والسيرة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: كتاب الفِرَق ومكانة علماء غرب أفريقيا
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة مكثفة [2 slots/wk]: ف١+ف٢ الفرائض >> ف٣ أصول التفسير
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+--- CLASS 12 · الصف الثاني عشر · SS 3 ------------------------
+    19 lesson-slots per week | 14 books + the muṣḥaf | 494h of subject time + 221h Qurʾānic hour = 715h in the year
+
+  PROGRAMME ONE  - القرآن وعلومه  (4 subjects)
+    - حفظ القرآن الكريم
+        form: INDEPENDENT | duration: protected hour | weekly: 340min/wk | year hours: 221h
+        note: outside the slot ledger; never drawn upon by any subject
+    - التفسير
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: سورة بعمقها
+    - أصول التفسير
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside التفسير :: تطبيق منهجي
+    - التجويد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الساعة القرآنية :: مضمّن — العلم تمّ عند الحادي عشر؛ هنا صيانةٌ وتدقيق
+
+  PROGRAMME TWO  - اللغة وعلومها  (9 subjects)
+    - البحث والخطابة
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: **البحث ١٥٠٠ كلمة · الخطبة عشر دقائق · المناظرة بأدب الخلاف**
+    - اللغة العربية
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: لغة البحث والمناقشة
+    - النحو
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الألفية تمامًا + أصول النحو + **الصرف مدمجًا**
+    - البلاغة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: **علم البديع ومدخل الإعجاز**
+    - النقد والآداب
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: الأدب الأندلسي والأفريقي
+    - العروض وعلم القافية
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: علم القافية — الوحدة الختامية
+    - النشيد والمحفوظات
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside كل مادة بمتنها :: 
+    - الصرف
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside النحو :: مراجعة تطبيقية
+    - الترجمة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: رد البحث والخطبة إلى اليوربا
+
+  PROGRAMME THREE - الدراسات الإسلامية  (12 subjects)
+    - خدمة التتويج
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: إشراف — شرط الشهادة
+    - الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: بداية المجتهد تمامًا
+    - العقيدة
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الطحاوية تمامًا
+    - الحديث النبوي
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: البخاري ومسلم + جامع العلوم والحكم
+    - أصول الفقه
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: المقاصد + القواعد + مجلة الأحكام
+    - الفرائض التطبيقية
+        form: INDEPENDENT | duration: term course ف١ | weekly: 2 slots | year hours: 17h20m
+        note: التركات · محكمة الاستئناف الشرعية · قانون الزواج · إدي-إيجي وأوري-أوجوري
+    - الدراسات الحديثة
+        form: INDEPENDENT | duration: term course ف٢ | weekly: 2 slots | year hours: 17h20m
+        note: النوازل وفقه التعايش
+    - علم الكلام
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: دراسةٌ عنه لا له
+    - المنطق
+        form: INDEPENDENT | duration: term course ف٣ | weekly: 2 slots | year hours: 17h20m
+        note: التصورات والتصديقات
+    - التوحيد
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside العقيدة :: 
+    - مصطلح الحديث
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside الحديث النبوي :: مقدمات الكتب الستة
+    - التاريخ والسيرة
+        form: EMBEDDED (مضمّن) | duration: - | weekly: - | year hours: -
+        note: inside البحث والخطابة :: مادة البحث المحكّم
+
+  CAPSTONE SERVICE - خدمة سنة التتويج  (2 subjects)
+    - WAEC
+        form: INDEPENDENT | duration: full year | weekly: 2 slots | year hours: 52h
+        note: الدراسات الإسلامية · العربية
+    - التحرير الامتحاني
+        form: INDEPENDENT | duration: full year | weekly: 1 slots | year hours: 26h
+        note: الجزء الثاني — خارج WAEC
+
+  TERM-COURSE SLOTS (one weekly slot carrying different courses across the year):
+    خانة فصلية (أ) [2 slots/wk]: ف١ الفرائض التطبيقية >> ف٢ الدراسات الحديثة >> ف٣ علم الكلام
+    خانة فصلية (ب) [2 slots/wk]: ف١ النقد والآداب >> ف٢ العروض وعلم القافية >> ف٣ المنطق
+
+  Slot arithmetic: 19 allocated / 19 available. Balanced.
+
+================================================================================
+PART 7 - TAJWĪD ACROSS THE TWELVE CLASSES (L-32, L-33)
+================================================================================
+
+This was one of the four errors the Chairman personally corrected. The
+principle:
+
+    الساعة القرآنية للحفظ والمراجعة. والتجويد علمٌ له حصته ومتنه وورقته.
+    "The Qur'anic hour is for memorisation and revision. Tajwīd is a science
+    with its own lesson, its own matn and its own paper."
+
+Folding the science into the memorisation hour in the advanced classes left a
+discipline that has a matn and no lesson. The Qur'anic sciences board had
+already ruled that tajwīd should be independent - and that ruling was mislaid
+during a rebuild.
+
+    CLASS      FORM          SLOTS   MATN AND SYLLABUS
+    ---------------------------------------------------------------------------
+    1-3        مضمّن         -       No matn. Correction of makhārij and ṣifāt
+                                     by ear and by talqīn only.
+    4          مستقل         1       تحفة الأطفال والغلمان
+    5          مستقل         1       تحفة الأطفال, completed
+    6          مستقل         1       المقدمة الجزرية - introduction
+    7          مستقل         1       الجزرية - المخارج والصفات
+    8          مستقل         1       الجزرية - الأحكام
+    9          مستقل         1       الجزرية completed · الوقف والابتدا ·
+                                     فرش رواية حفص · الرسم العثماني
+    10         مستقل         1       الإتقان - application across the whole
+                                     muṣḥaf
+    11         مستقل         1       الإقراء والتصحيح - preparation for the
+                                     الثانوية القرآنية committee
+    12         مضمّن         -       No matn. The science completed at class 11;
+                                     here it is maintenance and checking only.
+
+    INDEPENDENT IN EIGHT CLASSES (4-11) = 208 HOURS.
+
+The two bolded items at class 9 - فرش رواية حفص and الرسم العثماني - are
+CHAPTERS OF THIS SYLLABUS. They are not courses and must never be re-entered as
+subjects.
+
+Tajwīd's matn is bound INSIDE كتاب القرآن وعلومه, which is why making it
+independent did not break the three-book floor in classes 4-6.
+
+FUNDING: the weekly slots for tajwīd were taken one at a time from اللغة
+العربية (classes 4,5,6), التربية الإسلامية (7,8), النحو (9), البحث والخطابة
+(10) and أصول الفقه (11). Every class still balances exactly.
+
+================================================================================
+PART 8 - THE TERM-COURSE ARCHITECTURE (L-11, L-12)
+================================================================================
+
+This is one of the defining features of the design and it came directly from the
+Chairman:
+
+    "It is not necessary that you compress the subject into the advanced
+    classes... some may be learned maybe even for just a term, like a course.
+    Knowledge of inheritance to just be learned maybe for a term, first term of
+    SS 2... like university courses. Sometimes some may drop and return."
+
+MECHANISM: a خانة فصلية (term-slot) is ONE weekly slot that carries THREE
+DIFFERENT COURSES across the three terms of a year. The slot is counted ONCE in
+the weekly ledger, not three times. (An early version counted it once per
+course, which produced a class 9 carrying 23 slots against a ceiling of 19.)
+
+All term courses in a class share ONE bound volume, كراسة المقررات الفصلية,
+counted as a single book under L-31.
+
+THE TERM SLOTS AS THEY NOW STAND:
+
+    CLASS 9  - خانة فصلية [2 slots/week]
+        term 1  النقد والآداب     chosen texts, tasted, no rhetorical
+                                  terminology - preparing for balāghah
+        term 2  العروض وعلم القافية   the famous metres by EAR - ear training
+        term 3  مصطلح الحديث      البيقونية, memorised
+
+    CLASS 10 - خانة فصلية [1 slot/week]
+        term 1  التاريخ والسيرة   الإسلام في نيجيريا - الشيخ آدم الإلوري
+        term 2  النقد والآداب     pre-Islamic and Islamic texts
+        term 3  الصرف             لامية الأفعال completed, applied taṣrīf
+
+    CLASS 11 - خانة مكثفة [2 slots/week]  (an INTENSIVE slot)
+        terms 1+2  الفرائض        متن الرحبية · 52 lessons · its own paper and
+                                  its own certificate line (L-19)
+        term 3     أصول التفسير   مقدمة ابن تيمية
+
+    CLASS 12 - خانة فصلية (أ) [1 slot/week]
+        term 1  الفرائض التطبيقية  estates · the Sharīʿah Court of Appeal ·
+                                   the Marriage Act · إدي-إيجي and أوري-أوجوري
+        term 2  الدراسات الحديثة   النوازل and the fiqh of coexistence
+        term 3  علم الكلام         studied ABOUT, not studied FOR
+
+    CLASS 12 - خانة فصلية (ب) [1 slot/week]
+        term 1  النقد والآداب      Andalusian and African literature
+        term 2  العروض وعلم القافية  علم القافية - the closing unit
+        term 3  المنطق             التصورات والتصديقات
+
+WHY THIS MATTERS: the term-course architecture is what removed the pressure
+that had earlier produced indiscriminate MERGING of subjects. Before it existed,
+the only way to fit a subject into a full timetable was to merge it into another
+subject, which destroyed its identity. Term courses let a subject appear
+properly, with its own paper, for a defined stretch.
+
+================================================================================
+PART 9 - MADHHAB POLICY AND THE NON-EXCLUSIVITY TEST
+================================================================================
+
+THE RULING (L-21, L-22): the school is أهل السنة with NO exclusive commitment to
+one school of law, and the declared frame MAY DIFFER FROM TOPIC TO TOPIC.
+
+A core text is a DECLARED TEACHING FRAME (إطار تعليمي مُعلَن), never an
+affiliation (انتساب). And no single school frames every science. The ladder as
+actually built runs:
+
+    فروع الفقه        مالكي declared (المقدمة الأخضرية, الرسالة, بداية المجتهد)
+    أصول الفقه        شافعي declared (الورقات, نظم الورقات)
+    الفرائض           شافعي declared (متن الرحبية)
+    مصطلح الحديث      شافعي declared (نخبة الفكر, نزهة النظر)
+    أول متون الحديث   حنبلي (عمدة الأحكام, جامع العلوم والحكم)
+    أول متون العقيدة  حنبلي (لمعة الاعتقاد)
+    عمود العقيدة      حنفي المؤلف (العقيدة الطحاوية - the widest thing the
+                      people of the Sunnah agreed upon)
+    البدعة            مالكي deliberately (الاعتصام للشاطبي)
+    الصوت الحنفي      الطحاوي, شرح معاني الآثار
+    النظير الإقليمي   عثمان بن فودي, إحياء السنة - West African
+
+CRITICAL RULE (L-29): DO NOT INFER THE SCHOOL'S CREED OR MADHHAB FROM THE
+BOOKLIST. The texts above are proposed by drafting work. They do not establish
+orientation. Only an explicit ruling does.
+
+مِعيار عدم الحصر - THE NON-EXCLUSIVITY CONFORMITY TEST
+--------------------------------------------------------------------------------
+A mechanical test, so that "no exclusive madhhab" is auditable rather than
+aspirational. All five must hold:
+
+    1. Every course DECLARES its frame explicitly in its documents.
+    2. A BOUND REGISTER of the reasons for disagreement (سجل مدارك الخلاف) is
+       maintained.
+    3. All four schools appear TWICE OR MORE in the distribution, and NO SINGLE
+       SCHOOL exceeds 50%.
+    4. A comparative-disagreement question is worth 16% OF EVERY FIQH PAPER
+       from class 10 onward, AND an answer given in a single madhhab may not
+       score more than HALF the marks on it.
+    5. The external reviewer is NOT from the frame school.
+
+TEXTS EXPLICITLY REJECTED AS MATNS (these decisions are locked):
+    متن البناء في الصرف    rejected - outside the recovered scope of ṣarf (7-11)
+                           and its attribution is not verified
+    ملحة الإعراب           NOT taught as a matn - it is memorisation repertoire
+    مختصر خليل             rejected as a matn - for familiarity only
+    كشف الشبهات            for the TEACHER only, at every class - never a
+                           student text
+    نواقض الإسلام          taught AFTER the موانع (impediments), never before
+    كتاب التوحيد           a limited unit, NOT a pillar
+    جوهرة التوحيد          read as a DOCUMENT, not taught as doctrine
+
+================================================================================
+PART 10 - ASSESSMENT, THE SCALE, THE TRANSCRIPT AND THE GATES
+================================================================================
+
+10.1  THE DOCTRINE
+--------------------------------------------------------------------------------
+Instructional form determines assessment consequence MECHANICALLY. There is no
+discretion. The table is in Part 3. The one rule that must never bend:
+
+    الشرط لا يحمل درجة أبدًا  -  "A condition never carries a mark."
+
+10.2  THE THREE-SECTION TRANSCRIPT
+--------------------------------------------------------------------------------
+    SECTION A   Graded subjects. Enter the average. مستقل، مدمج، مضمّن.
+    SECTION B   Units (وحدات). Achievement ratings. Do NOT enter the average.
+    SECTION C   Conditions (شروط). Met / not met. NO MARKS EVER.
+
+    Plus, for classes 1-2 only: a DESCRIPTIVE APPENDIX reading متقن / نامٍ /
+    مبتدئ, with NO NUMBER. A small child gets one mark in Section A and a
+    description - not a spread of numbers.
+
+10.3  THE SCALE
+--------------------------------------------------------------------------------
+    امتياز    80 and above    (excellence)
+    جدارة     70              (merit)
+    إجادة     60              (proficiency)
+    مقبول     50              (pass)
+    الشهادة الإعدادية requires 55 or above.
+
+10.4  THE GATES
+--------------------------------------------------------------------------------
+    بوابة القراءة          class 1    the reading gate - decoding the letter
+    بوابة الطلاقة          class 3    fluency
+    الشهادة الابتدائية     class 5    primary certificate
+    بوابة الجسر            class 6    THE BRIDGE GATE - crossing from everyday
+                                      Arabic into the Arabic of scholarship.
+                                      Carried by قواعد اللغة الوظيفية and
+                                      assessed by a three-person committee.
+    الشهادة الإعدادية      class 9    with an EXTERNAL examiner. Requires 55+.
+    الثانوية القرآنية      class 11   TWELVE JUZʾ MEMORISED TO A CERTIFIED
+                                      STANDARD (متقنة), with FIFTEEN JUZʾ as
+                                      مرتبة الامتياز (the grade of excellence).
+                                      See the note below.
+    شهادة التخرج           class 12   the ten competencies + the viva
+                                      (المناقشة) + PROOF OF SITTING WAEC
+
+10.5  THE QUR'AN TARGET - WHY TWELVE AND NOT FIFTEEN
+--------------------------------------------------------------------------------
+This is important and must not be quietly reverted. The original target was
+FIFTEEN JUZʾ. That target was calculated on THIRTEEN funded years, including a
+kindergarten (روضة). Two things then changed and the target was never
+recalculated:
+
+    - the kindergarten was abolished (L-01), removing funded years
+    - the gate moved to class 11, removing another
+
+The honest recalculation gives TWELVE JUZʾ MEMORISED TO A CERTIFIED STANDARD as
+the certified requirement, with FIFTEEN retained as مرتبة الامتياز. A school
+that certifies fifteen on twelve years of funding is certifying something it
+did not fund. There is also an optional مسار الحفاظ (ḥuffāẓ track) from class 4
+for those capable of more, sealed by a full khatmah before an EXTERNAL
+committee of shaykhs.
+
+================================================================================
+PART 11 - THE PRESCRIBED TEXTS
+================================================================================
+
+Every subject has a named source (L-30). Where the school authors its own
+material it is ADOPTED EXACTLY AS A MATN IS and enters the teacher's pack - it
+is not left to the individual teacher's judgement. What is not yet written is
+recorded as A DEBT OWED BY THE SCHOOL, never as a gap in the curriculum.
+
+11.1  PROGRAMME ONE - القرآن وعلومه
+--------------------------------------------------------------------------------
+    المصحف - مطبعة الملك فهد، رواية حفص عن عاصم    classes 1-12   the source;
+                                                    nothing else is read from
+    كتاب القرآن وعلومه (school-authored)           1-12   the sabaq and manzil
+                                                    ledger, performance record,
+                                                    consolidation plan. THIS IS
+                                                    PROGRAMME ONE'S BOOK.
+    مسار الحفاظ (optional, school-authored)        4-12
+
+    TAJWĪD:
+    تحفة الأطفال والغلمان - الجمزوري               4-5    prescribed matn,
+                                                          memorised
+    فتح الأقفال شرح تحفة الأطفال - الجمزوري        4-5    author's own
+                                                          commentary, teacher
+    المقدمة الجزرية - ابن الجزري                   6-9    the larger matn,
+                                                          memorised in stages
+    هداية القاري - عبد الفتاح المرصفي              6-12   teacher reference
+    الملخص المفيد في علم التجويد - محمد أحمد معبد  6-9    student reference
+    ورقة الإتقان والإقراء (school-authored)        10-11
+
+    TAFSĪR:
+    المختصر في تفسير القرآن الكريم - مركز تفسير    5-6    TEACHER material for
+                                                          the general meaning
+                                                          inside the sabaq.
+                                                          NO MATN IN THE
+                                                          CHILD'S HAND. AND
+                                                          NOTHING BEFORE CLASS
+                                                          FIVE (L-36).
+    التفسير الميسر - مجمع الملك فهد                7-9    student text; matches
+                                                          the prescribed page
+    تيسير الكريم الرحمن (السعدي)                   10-12  the base text -
+                                                          contemporary, non-
+                                                          madhhabī
+    تفسير القرآن العظيم - ابن كثير (selections)    10-12  the model of tafsīr
+                                                          bi-l-maʾthūr
+    الجامع لأحكام القرآن - القرطبي                 11-12  MĀLIKĪ, DECLARED -
+                                                          for آيات الأحكام
+    جامع البيان - الطبري                           11-12  teacher reference
+
+    LOCKED RULE ON TAFSĪR:
+      NO TAFSĪR BEFORE CLASS FIVE (L-36)
+      classes 5-9   التفسير يتبع المحفوظ - tafsīr FOLLOWS what is memorised
+      classes 10-12 يفارق المحفوظ - it PARTS from what is memorised, because
+                    the graduate must read tafsīr of what he has not memorised
+
+    أصول التفسير وعلوم القرآن:
+    مباحث في علوم القرآن - مناع القطان             9      TEACHER material.
+                                                          NO MATN AT CLASS 9,
+                                                          DELIBERATELY.
+    مقدمة في أصول التفسير - ابن تيمية              11-12  the prescribed matn
+
+11.2  PROGRAMME TWO - اللغة وعلومها
+--------------------------------------------------------------------------------
+    المقدمة الآجرومية - ابن آجروم                  7      first naḥw matn
+    قطر الندى وبل الصدى - ابن هشام                 8-9    second naḥw matn
+    ألفية ابن مالك (prescribed sections)           10-12  the highest naḥw matn
+    شرح ابن عقيل - ابن عقيل                        10-12  teacher reference
+    النحو الواضح - الجارم وأمين                    5-7    exercise bank
+    جامع الدروس العربية - الغلاييني                8-12   reference
+    لامية الأفعال - ابن مالك                       8-10   the ṣarf matn
+    شرح بحرق على لامية الأفعال - بحرق الحضرمي      8-10   teacher reference
+    البلاغة الواضحة - الجارم وأمين                 9-10   base balāghah text
+    الجوهر المكنون - الأخضري                       11-12  the balāghah manẓūmah
+    جواهر البلاغة - الهاشمي                        12     reference
+    دلائل الإعجاز - الجرجاني (selections)          12     entry to iʿjāz
+    ملحة الإعراب - الحريري                         7-8    MEMORISATION ONLY -
+                                                          NOT A TEACHING MATN
+    ديوان الشافعي · لامية ابن الوردي ·
+      تائية الإلبيري                               6-12   the memorisation
+                                                          channel
+    مفتاح البيان (school materials)                1-3    unlocking the letter -
+                                                          33 weeks with its own
+                                                          gates
+    كراسة النسخ والرقعة (school) +
+      قواعد الإملاء - عبد السلام هارون             1-6    الخط والإملاء
+    مواد استقرائية (school-authored)               4-6    قواعد اللغة الوظيفية.
+                                                          THE RULE IS TOUCHED
+                                                          IN THE TEXT. NO MATN,
+                                                          DELIBERATELY.
+    دليل الإنشاء والخطابة (school) +
+      جواهر الأدب - أحمد الهاشمي (10-12)           4-12   البحث والخطابة
+    دورة المعاجم (school-authored)                 8      فقه اللغة والمعاجم -
+                                                          root extraction;
+                                                          لسان العرب and
+                                                          القاموس المحيط for
+                                                          drill
+
+11.3  PROGRAMME THREE - الدراسات الإسلامية
+--------------------------------------------------------------------------------
+    FIQH (frame: MĀLIKĪ, DECLARED; comparison from class 8):
+    المقدمة الأخضرية - الأخضري                  6-7    THE FRAME MATN, with an
+                                                       evidence sheet for every
+                                                       chapter                 [مالكي]
+    متن الغاية والتقريب - أبو شجاع              8      first comparative peer   [شافعي]
+    الرسالة - ابن أبي زيد القيرواني             8-9    base matn                [مالكي]
+    عمدة الفقه - ابن قدامة                      9      comparative peer         [حنبلي]
+    مختصر القدوري - القدوري                     10     comparative peer         [حنفي]
+    المرشد المعين - ابن عاشر                    10     READ AS A DOCUMENT - its
+                                                       three threads are named  [مالكي/أشعري/جنيدي]
+    إحياء السنة وإخماد البدعة - عثمان بن فودي   11     the REGIONAL peer        [West African]
+    بداية المجتهد - ابن رشد                     11-12  THE COMPARATIVE MATN,
+                                                       built on the REASONS for
+                                                       disagreement             [comparative]
+    الفقه الإسلامي وأدلته - وهبة الزحيلي        10-12  teacher pillar
+    مختصر خليل - خليل بن إسحاق                  12     REJECTED AS A MATN - for
+                                                       familiarity only         [مالكي]
+
+    UṢŪL AL-FIQH:
+    الورقات - إمام الحرمين الجويني              10-11  THE BASE MATN            [شافعي]
+    نظم الورقات - العمريطي                      11     memorised                [شافعي]
+    علم أصول الفقه - عبد الوهاب خلاف            10-12  teacher pillar           [non-madhhabī]
+    الوجيز في أصول الفقه - عبد الكريم زيدان     11-12  student reference        [comparative]
+    الأصول من علم الأصول - ابن عثيمين           10-12  TEACHER ONLY             [حنبلي]
+    مقاصد الشريعة - ابن عاشور                   12     the maqāṣid pillar       [مالكي]
+    الموافقات - الشاطبي (prepared extracts)     12     EXTRACTS ONLY            [مالكي]
+    شرح القواعد الفقهية - أحمد الزرقا           12     the qawāʿid unit         [حنفي]
+    مجلة الأحكام العدلية 1-99                   12     fiqh written as law      [حنفي]
+
+    ʿAQĪDAH (the pillar: الطحاوية):
+    متن الأدلة (school-authored)                7      THE TEXTS THEMSELVES,
+                                                       MEMORISED - not a
+                                                       madhhabī poem   [DELIBERATELY NO SCHOOL]
+    الأصول الثلاثة - محمد بن عبد الوهاب         7      matn - attributed to its
+                                                       author OPENLY            [نجدي]
+    القواعد الأربع - محمد بن عبد الوهاب         8      embedded                 [نجدي]
+    لمعة الاعتقاد - ابن قدامة                   8      matn - DECLARED ḤANBALĪ  [حنبلي]
+    العقيدة الطحاوية - الطحاوي                  9, 12  THE PILLAR - the widest
+                                                       thing ahl al-sunnah
+                                                       agreed upon              [author ḥanafī]
+    أم البراهين (السنوسية) - السنوسي            10     a comparative peer that
+                                                       is STUDIED               [أشعري]
+    العقيدة الواسطية - ابن تيمية                10     matn - DECLARED ATHARĪ   [أثري]
+    نواقض الإسلام - محمد بن عبد الوهاب          10     AFTER the موانع, never
+                                                       before                   [نجدي]
+    الاعتصام - الشاطبي (extracts)               11     BIDʿAH FROM A MĀLIKĪ,
+                                                       DELIBERATELY             [مالكي]
+    كتاب التوحيد - محمد بن عبد الوهاب           11     A LIMITED UNIT, NOT A
+                                                       PILLAR                   [نجدي]
+    القول السديد - السعدي                       11     teacher reference        [moderate نجدي]
+    كشف الشبهات - محمد بن عبد الوهاب            -      TEACHER ONLY, ALL CLASSES [نجدي]
+    كتاب الفِرَق (school-authored)              11-12  القادرية · التيجانية ·
+                                                       إزالة · نصر الله -
+                                                       DESCRIBED IN THE WORDS
+                                                       OF THEIR OWN PEOPLE      [descriptive]
+
+    ḤADĪTH AND ITS TERMINOLOGY:
+    الأربعون النووية - النووي                   7      matn                     [شافعي]
+    زيادات ابن رجب - ابن رجب                    7      completing the fifty     [حنبلي]
+    عمدة الأحكام - عبد الغني المقدسي            8-9    first fiqhī matn         [حنبلي]
+    الأدب المفرد - البخاري (selections)         9      the ethics thread
+    الموطأ - مالك بن أنس (selected books)       10     عمل أهل المدينة AS A
+                                                       SOURCE                   [مالكي]
+    بلوغ المرام - ابن حجر                       10-11  the higher fiqhī matn    [شافعي]
+    الشمائل المحمدية - الترمذي                  11     a term unit
+    صحيح البخاري ومسلم (selected books)         12     working in the sources
+    جامع العلوم والحكم - ابن رجب                12     the capstone on the fifty [حنبلي]
+    شرح معاني الآثار - الطحاوي                  11-12  THE ḤANAFĪ VOICE IN
+                                                       ḤADĪTH                   [حنفي]
+    البيقونية - البيقوني                        9      first muṣṭalaḥ matn,
+                                                       memorised
+    نخبة الفكر ونزهة النظر - ابن حجر            10-11  the muṣṭalaḥ matn        [شافعي]
+    الرفع والتكميل - اللكنوي                    11-12  reference - ON EXCESS IN
+                                                       CRITICISM                [حنفي]
+
+    SĪRAH, HISTORY, FARĀʾIḌ, LOGIC:
+    الرحيق المختوم - صفي الرحمن المباركفوري     5-8    the sīrah text
+    نسيم الصبا في أخبار الإسلام وعلماء بلاد
+      يوربا - الشيخ آدم عبد الله الإلوري        9      THE SCHOLARS OF HIS OWN
+                                                       LAND
+    الإسلام في نيجيريا وعثمان بن فوديو الفلاني
+      - الإلوري                                 10     local history
+    إنفاق الميسور في تاريخ بلاد التكرور
+      - محمد بلّو                               11     reference
+    متن الرحبية - الرحبي                        11     THE FARĀʾIḌ MATN,
+                                                       MEMORISED - SHĀFIʿĪ
+                                                       DECLARED
+    شرح سبط المارديني - سبط المارديني           11     teacher reference -
+                                                       EDITION TO BE VERIFIED
+    السلم المنورق - الأخضري                     12     the logic matn
+
+    SCHOOL-AUTHORED MATERIALS (these were the thirteen subjects that the L-30
+    check found had NO SOURCE AT ALL - including التربية الإسلامية itself, the
+    very first book a child holds):
+    كتاب الدراسات الإسلامية (school)            1-8    TERBIYAH - carries the
+                                                       four strands; and from
+                                                       it المقدمة الأخضرية at
+                                                       class 6
+    كراسة التركات النيجيرية (school)            12     estates left unnamed ·
+                                                       the Sharīʿah Court of
+                                                       Appeal · the Marriage
+                                                       Act · إدي-إيجي and
+                                                       أوري-أوجوري. ITS LEGAL
+                                                       CONTENT IS TO BE REVIEWED
+                                                       BY A NIGERIAN LAWYER.
+    كراسة النوازل (school) + فقه النوازل
+      - محمد الجيزاني (teacher)                 12     الدراسات الحديثة
+    علم الكلام sources                          12     الإبانة - الأشعري
+                                                       (extract) · مقالات
+                                                       الإسلاميين - الأشعري ·
+                                                       كتاب التوحيد - الماتريدي
+                                                       (extract) · إلجام العوام
+                                                       - الغزالي · تحريم النظر
+                                                       في كتب الكلام - ابن قدامة
+                                                       · درء التعارض - ابن تيمية
+                                                       (its introduction) ·
+                                                       جوهرة التوحيد - اللقاني
+                                                       (READ AS A DOCUMENT)
+    دليل المشروع وملفه (school)                 12     خدمة التتويج - proposal ·
+                                                       permissions · log ·
+                                                       impact · beneficiary
+                                                       testimony. NOT A
+                                                       KNOWLEDGE SUBJECT - IT IS
+                                                       SUPERVISION.
+    كراسة التحرير (school)                      12     التحرير الامتحاني -
+                                                       reading the rubric ·
+                                                       timing · command words ·
+                                                       structure
+
+================================================================================
+PART 12 - ERRORS ALREADY MADE AND CORRECTED - DO NOT REPEAT THESE
+================================================================================
+
+This section exists so that the next person does not spend weeks rediscovering
+what has already been settled. Every item below actually happened.
+
+12.1  STRUCTURAL AND ARITHMETIC ERRORS
+--------------------------------------------------------------------------------
+ 1. A whole recovered document (SHRS-ACD-2026-007, Part 4, sections 4.1-4.4)
+    containing a complete timetable and ledger was MISSED, and version 1 of the
+    ledger was built on invented scenarios instead. Always read the recovered
+    corpus completely before building.
+
+ 2. A "monotonic status" rule was INVENTED - once a subject rose in status it
+    could never be demoted. This was never ruled and was withdrawn. It is not
+    compulsory to teach every subject every term.
+
+ 3. All eleven sharʿī sciences were made STRANDS at classes 1-6, including the
+    instrumental sciences (أصول الفقه، مصطلح الحديث، المنطق). A child of six
+    does not have a strand of uṣūl al-fiqh. Corrected to four legitimate
+    strands: التوحيد، الفقه، الحديث، السيرة.
+
+ 4. A shared term-slot was counted ONCE PER COURSE instead of once per slot,
+    producing a class 9 carrying 23 slots against a ceiling of 19.
+
+ 5. The MUṢḤAF was counted as Programme One's book, which left the lower
+    classes with books for only two of three programmes. The muṣḥaf is a
+    source. كتاب القرآن وعلومه was created to be Programme One's actual book.
+
+ 6. WAEC had ZERO TIMETABLED MINUTES at class 12 while gating the leaving
+    certificate - and a "38/38 subjects accounted for" check still balanced,
+    because a mandatory claimant had never been entered into the ledger at all.
+    This is the origin of L-07.
+
+ 7. A timetable was built on allocation matrix v2 while the matrix in force was
+    v3 - two internally verified documents specifying different weeks.
+
+ 8. Asymmetric مدمج notation (السيرة I / التاريخ ●) was recording a HOST-GUEST
+    relation, not a merge - so a ruling to merge sīrah with history had never
+    actually been implemented despite appearing to be.
+
+ 9. FOUR SUBJECTS WERE SILENTLY DROPPED during an unrelated balāghah rebuild:
+    أصول التفسير · التاريخ والسيرة · الترجمة · مصطلح الحديث. The Director
+    General noticed. This is the single most characteristic failure of this
+    project.
+
+10. The L-30 check FAILED on its first run: thirteen subjects had no source at
+    all, including التربية الإسلامية - the first book a child ever holds.
+
+11. The three-programme structure was forgotten, and then the four sections
+    were forgotten, in successive rebuilds.
+
+12. The Qur'anic sciences board's ruling that تجويد be مستقل at classes 4-11
+    was OVERRIDDEN in a rebuild, folding the science back into the memorisation
+    hour. This is now L-32.
+
+13. الرسم العثماني was carried as an independent course and رواية حفص as
+    another. Neither is a course. This is now L-33.
+
+14. البلاغة was opened in class 9 term 1 while قطر الندى was still unfinished
+    that same year - teaching a science before its instrument. And within
+    balāghah the order was بيان then معاني, which is inverted. These are now
+    L-34 and L-35.
+
+15. التفسير was taught from class one, embedded in the Qurʾānic hour, to
+    children still unlocking the letter. Meaning before reading is a science
+    before its instrument. It now begins at class five. This is now L-36.
+
+16. The language collapsed at the bridge — 61.5% of the week in class 6, 31.6%
+    in class 7, Islamic studies at 52.6%. البحث والخطابة, the priority subject,
+    was absent from classes 7-9 entirely and الترجمة from every class before 10.
+    This is now L-37 and L-38.
+
+17. البحث والخطابة was put into Ideadi as the fix for the above — which was the
+    same fault one layer over: a subject before its stage. A boy of thirteen
+    composes; he does not referee research. And the same error had been sitting
+    unnoticed at classes 4-6, where the label read البحث والخطابة while the
+    content beneath it already read «الإنشاء والتعبير» — right content, imported
+    name. This is now L-39.
+
+18. Book counts drifted between documents - the same class showing 9 in one
+    file and 11 in another - purely because each file was tallied by hand. This
+    is now L-31.
+
+19. A Primary 6 regression during the tajwīd fix pushed that class to FOUR
+    books by splitting قواعد اللغة الوظيفية out as its own entry. It folds back
+    into the language book carrying بوابة الجسر.
+
+20. The annual ledger claimed 754 hours where 100 minutes had been booked as
+    مراجعة when 60 of those minutes were wuḍūʾ and dismissal. Corrected to 715.
+
+21. The Qur'an target of fifteen juzʾ was calculated on thirteen funded years
+    including a kindergarten that was later abolished, and was never
+    recalculated.
+
+12.2  METHOD ERRORS THE DIRECTOR GENERAL CORRECTED DIRECTLY
+--------------------------------------------------------------------------------
+    - Executing instructions blindly instead of organising scholars to reason
+      about them. The instruction was explicit: "think like scholars, organise
+      scholars to do that for you... don't just carry out my instruction
+      blindfoldedly."
+    - Producing English subject names. Arabic is required.
+    - Rebuilding documents from whatever was in front of the rebuilder.
+    - Presenting a mathematically balanced solution as though balance alone
+      made it a curriculum solution. It does not.
+
+12.3  A NOTE ON WHAT THE RECOVERED DOCUMENTS ALREADY CONTAINED
+--------------------------------------------------------------------------------
+SHRS-ACD-2026-007 Part 1 had ALREADY diagnosed and remedied three load problems
+that this project then rediscovered from scratch:
+    - class 9 overloaded  -> remedy: دمج السيرة بالتاريخ
+    - class 12 too light  -> remedy: برمجة خدمة التتويج
+    - the class 7 jump    -> remedy: تمهيد الفصل الأول
+Read the corpus before designing. The answer may already be in it.
+
+Note also: the certified distribution register named at section 3.2 of
+SHRS-ACD-2026-007 IS STILL MISSING from the corpus. The current subject
+architecture is a reconstruction of it, and that fact must be stated wherever
+the architecture is presented as authoritative. Do not claim it as recovered.
+
+================================================================================
+PART 13 - HOW THE LOCK IS ENFORCED MECHANICALLY
+================================================================================
+
+A register that only a reader checks is how every previous decision was lost.
+So the register is now enforced by a script.
+
+    RUN:  cd docs/curriculum && python3 verify.py
+
+It checks the allocation data against the register and EXITS NON-ZERO if any
+locked item is broken. A non-zero exit means the document is not ready and is
+not published.
+
+THIRTY OF THE THIRTY-NINE ITEMS ARE CHECKED MECHANICALLY:
+
+    L-01/02   twelve classes in four sections
+    L-03/04   every subject under one of the three programmes
+    L-05      lower classes: everything merged or embedded
+    L-06/31   three books minimum, one per programme, classes 1-6
+    L-07      no name without a lesson or a named host
+    L-09      the load rises with the class
+    L-10      the graduating class carries the most
+    L-11      every term slot carries exactly three terms
+    L-13      the cornerstones never pause
+    L-14      balāghah carries six full terms or more
+    L-15      prosody is never taught in a single term
+    L-16      criticism and literature keeps its weight
+    L-17      ṣarf is present in every advanced class
+    L-18      translation into Yoruba is carried, not dropped
+    L-19      farāʾiḍ is ring-fenced
+    L-20      the Qur'anic hour untouched
+    L-24/25   every class balances its weekly lessons
+    L-30      every subject has a named source
+    L-32      tajwīd independent in classes 4-11
+    L-33      rasm ʿUthmānī / riwāyat Ḥafṣ never counted as courses
+    L-34      no science opened before its instrument
+    L-35      balāghah runs maʿānī -> bayān -> badīʿ
+    L-36      no tafsīr before class five
+    L-37      Arabic >= Islamic studies at Ideadi; >= one third at Thanawi
+    L-38      the living language unbroken 4-12, الترجمة 7-12
+    L-39      الإنشاء والتعبير 4-9, البحث والخطابة 10-12, never swapped
+
+NINE ITEMS CANNOT BE CHECKED BY A SCRIPT, and the script says so explicitly on
+every run rather than pretending otherwise:
+
+    L-08  the closed vocabulary of instructional forms
+    L-12  a subject returning HIGHER rather than repeating
+    L-21  ahl al-sunnah without exclusive madhhab
+    L-22  the frame may differ from topic to topic
+    L-23  the riwāyah and the muṣḥaf
+    L-26  a missing document is never invented
+    L-27  recovered material never mixed with a current ruling
+    L-28  an inference never presented as recovered text
+    L-29  creed and madhhab never inferred from a booklist
+
+The script closes with:
+
+    والتسعةُ الباقية تُقرأ ولا تُفحَص — فلا يُقال «تمّ التحقق» حتى تُقرأ.
+    "The remaining nine are read, not checked - so it is not said that
+    verification is complete until they have been read."
+
+A GREEN RUN IS NOT A VERIFICATION UNTIL A PERSON HAS READ THOSE NINE.
+
+The verifier has been TESTED AGAINST REGRESSIONS THAT ACTUALLY OCCURRED - the
+Primary 6 fourth book, الترجمة silently dropped, tajwīd folded back into the
+hour, الرسم العثماني re-added as a course, and balāghah opened at class 9. In
+each case the relevant checks fail and the script exits 1. A check that cannot
+fail is not a lock.
+
+================================================================================
+PART 14 - GENERATED VS HAND-WRITTEN DOCUMENTS
+================================================================================
+
+THE SINGLE SOURCE OF ALLOCATION DATA:
+    docs/curriculum/allocation-v11.json
+
+Its structure, per class:  [cornerstones, term_slots, hosted]
+    cornerstones = [subject, programme, weekly_slots, syllabus_note]
+    term_slots   = [label, slots_per_week,
+                      [[term, n_terms, subject, programme, note], ...]]
+    hosted       = [subject, programme, host, note]
+
+GENERATED FILES - NEVER HAND-EDIT THESE:
+    docs/curriculum/CLASS-BOOK.md          <- generate-class-book.py
+    docs/curriculum/SUBJECT-REGISTER.md    <- generate-subject-register.py
+
+Both reproduce byte-for-byte from the JSON. Hand-editing them is precisely what
+let the counts drift apart between documents. If you need to change the
+curriculum, CHANGE THE JSON AND REGENERATE.
+
+AUTHORITATIVE, HAND-MAINTAINED:
+    docs/curriculum/00-LOCKED-DECISIONS.md   THE REGISTER. The only source of
+                                             settled decisions.
+    docs/curriculum/CLAUDE.md                enforces the lock; loaded
+                                             automatically at session start
+    docs/curriculum/verify.py                the mechanical check
+
+ASSESSMENT INSTRUMENTS (hand-written, ~3,350 lines):
+    docs/curriculum/assessment/ASSESSMENT-POLICY.md
+    docs/curriculum/assessment/SPEC-GRID-G9-fiqh-usul.md
+    docs/curriculum/assessment/SPECIMEN-G9-fiqh-usul.md
+    docs/curriculum/assessment/QURAN-GATE-PROTOCOL.md
+    docs/curriculum/assessment/PRIMARY-STRAND-DESCRIPTORS.md
+
+DERIVED AND SUPERSEDED - roughly twenty-five further markdown files in
+docs/curriculum/ record earlier stages of the work. EVERY ONE OF THEM CARRIES A
+BANNER reading:
+
+    ⚠ وثيقة مشتقة — لا تُعتمد للأرقام
+    "A derived document - do not rely on it for figures."
+
+Ten of them additionally carry a banner naming the tajwīd and rasm errors
+specifically. DO NOT TAKE FIGURES FROM ANY OF THEM. They are kept as a record
+of how the work moved, not as sources.
+
+There is also a published bilingual instrument summarising everything, kept
+current with the register.
+
+================================================================================
+PART 15 - WHAT IS STILL OPEN
+================================================================================
+
+These are known and deliberately recorded as debts, not hidden as gaps:
+
+ 1. The school must actually AUTHOR its own materials - كتاب القرآن وعلومه،
+    كتاب الدراسات الإسلامية، مفتاح البيان، متن الأدلة، كتاب الفِرَق، كراسة
+    التركات النيجيرية، كراسة النوازل، دليل المشروع، كراسة التحرير، ورقة الإتقان
+    والإقراء، كراسة النسخ والرقعة، دليل الإنشاء والخطابة، دورة المعاجم. Each is
+    a DEBT OWED BY THE SCHOOL, and each is adopted exactly as a matn once
+    written.
+
+ 2. كراسة التركات النيجيرية contains Nigerian legal content (the Sharīʿah Court
+    of Appeal, the Marriage Act, إدي-إيجي and أوري-أوجوري customary practice)
+    and MUST BE REVIEWED BY A NIGERIAN LAWYER before use.
+
+ 3. The edition of شرح سبط المارديني is to be verified.
+
+ 4. The certified distribution register at section 3.2 of SHRS-ACD-2026-007 is
+    still missing from the corpus. The architecture reconstructs it and must
+    say so.
+
+ 5. Assessment instruments exist for class 9 fiqh/uṣūl as a worked specimen.
+    The remaining papers, spec grids and specimens have not been written.
+
+ 6. The nine non-mechanical locked items (Part 13) require a scholar's reading
+    before any publication is called verified.
+
+================================================================================
+PART 16 - IF YOU ARE AN AI PICKING THIS UP
+================================================================================
+
+Do these things, in this order:
+
+ 1. READ docs/curriculum/00-LOCKED-DECISIONS.md IN FULL, before touching
+    anything. Not the other documents - they are derived and may be stale.
+
+ 2. RUN python3 docs/curriculum/verify.py and confirm it is green, so you know
+    the state you inherited.
+
+ 3. Do NOT rebuild a document from whatever is in front of you. That is the
+    documented failure mode of this entire project and it has cost months.
+
+ 4. Do NOT hand-edit CLASS-BOOK.md or SUBJECT-REGISTER.md. Change the JSON and
+    regenerate.
+
+ 5. Write subject names and text titles IN ARABIC.
+
+ 6. If a change would break a locked item, STOP AND ASK. Do not make the change
+    and explain afterwards.
+
+ 7. If you are given a new ruling, write it into the register FIRST - in the
+    change log, with its reason - and only then implement it.
+
+ 8. Do not present a mathematically balanced solution as though balance made it
+    correct. A mathematical solution is not automatically a curriculum
+    solution. Ask what a child of that age actually meets, what book is in his
+    hand, and which science he needs before this one.
+
+ 9. Do not infer the school's creed or madhhab from any booklist.
+
+10. When you report, be exact. Say what you verified and how. Say what you did
+    not verify. The Chairman has caught every unearned claim so far.
+
+================================================================================
+END OF BRIEFING
+================================================================================

@@ -1,0 +1,135 @@
+SHRS CURRICULUM BRIEFING — PART 4 OF 15  (continued — reply only "OK")
+============================================================================
+
+
+L-37  العربية آلةُ العلوم كلِّها. ففي الإعدادي لا ينزل برنامج اللغة عن الدراسات
+      الإسلامية. وفي الثانوي على ألّا تنزل اللغة عن الثلث
+      ARABIC IS THE INSTRUMENT OF EVERY SHARʿĪ SCIENCE. The language had been
+      collapsing at the bridge: 61.5% of the week in class 6, 31.6% in class 7,
+      while Islamic studies took 52.6% - its highest share anywhere in the
+      school. Giving the sciences more time than the instrument they depend on
+      is the fault of L-34 at the level of the programme. In Ideadi, the section
+      that BUILDS the instrument, the language programme does not fall below
+      Islamic studies. In Thanawi the instrument is USED on the major matns, so
+      the sharʿī share may rise - against a floor of one third.
+      (This rule was first written to cover Thanawi too; measurement showed
+      classes 11 and 12 failing it, and the RULE was narrowed rather than the
+      curriculum bent to it.)
+
+L-38  اللغة العربية ليست النحو. الإنشاء والتعبير مادةُ اللغة الحية في الابتدائي
+      والإعدادي، ثم تنضج بحثًا وخطابةً في الثانوي
+      THE LANGUAGE IS NOT ITS GRAMMAR. In class 8 the instrumental sciences held
+      15 lesson-terms against 6 for the living language. And the communication
+      subject was absent from classes 7, 8 and 9 entirely, with الترجمة absent
+      before class 10 - while L-18 makes both a priority. The living language
+      now runs unbroken from class 4 to class 12, with الترجمة إلى اليوربا
+      embedded in it from class 7.
+          LIVING LANGUAGE   اللغة العربية (مطالعة · محادثة · استيعاب · نصوص) ·
+                            الإنشاء والتعبير / البحث والخطابة · النشيد
+                            والمحفوظات · النقد والآداب · الترجمة
+          INSTRUMENTS       النحو · الصرف · العروض وعلم القافية ·
+                            فقه اللغة والمعاجم
+
+L-39  لا يُقحَم اسمُ مرحلةٍ في غيرها. البحث عملُ الثانوي لا الإعدادي
+      A STAGE'S NAME IS NOT IMPORTED INTO ANOTHER STAGE. البحث is the work of
+      Thanawi. A boy of thirteen composes and expresses; he does not referee
+      research. The ladder:
+          classes 4-6    الإنشاء والتعبير  embedded in اللغة العربية
+          class 7        الإنشاء والتعبير  التعبير الشفوي والكتابي · الوصف والسرد
+          class 8        الإنشاء والتعبير  الإنشاء الموجَّه · الرسالة والتقرير
+          class 9        الإنشاء والتعبير  الإنشاء الحر والإلقاء · الخطبة القصيرة
+          classes 10-12  البحث والخطابة   البحث المحكّم · الخطبة · المناظرة
+      The instrumental sciences at Ideadi are النحو والصرف, and they are not the
+      living language and do not stand in for it.
+
+================================================================================
+PART 5 - TARTĪB AL-ʿULŪM: NO SCIENCE BEFORE ITS INSTRUMENT (L-34, L-35)
+================================================================================
+
+This is a doctrine, not a scheduling convenience. Stated in the register:
+
+    العلمُ الذي يقوم على غيره لا يُفتَح قبل تمام ما يقوم عليه.
+    وهذا ليس ترتيبًا تنظيميًّا يُتسامح فيه، بل شرطُ فهمٍ: من لقي «التقديم والتأخير»
+    مصطلحًا بلاغيًّا قبل أن يعرفه إعرابًا، حفظ الاسم ولم يفهم المسمَّى.
+
+    "A science that stands on another is not opened before the one it stands on
+    is complete. This is not an organisational nicety to be relaxed; it is a
+    condition of understanding. Whoever meets 'fronting and postponement' as a
+    rhetorical term before knowing it as iʿrāb has memorised the name and not
+    understood the thing named."
+
+THE LADDER:
+
+    SCIENCE              ITS INSTRUMENT          WHERE THE INSTRUMENT SITS
+    -----------------------------------------------------------------------
+    البلاغة              النحو الأساس            الآجرومية 7 · قطر الندى 8-9
+      -> first place: CLASS 10, after Qaṭr al-Nadā closes
+
+    علم البيان           علم المعاني             class 10
+      -> first place: class 11
+
+    علم البديع           البيان والمعاني         classes 10-11
+      -> first place: class 12
+
+    أصول الفقه           الفقه                   from class 7
+      -> embedded practically 8-9, then a subject from class 10
+
+    مصطلح الحديث         الحديث النبوي           from class 7
+      -> first place: class 9
+
+    العروض               السماع والرواية         from class 1
+      -> first place: class 9
+
+    النقد والآداب        الطلاقة والذوق          بوابة الجسر, class 6
+      -> first place: CLASS 9 - taste before terminology
+
+    المنطق               النضج والعقيدة          classes 7-11
+      -> first place: class 12
+
+    التفسير              القراءة والطلاقة        بوابة القراءة 1 · بوابة الطلاقة 3
+      -> first place: CLASS 5, alongside الشهادة الابتدائية (L-36)
+
+    البحث والخطابة       الإنشاء والتعبير        classes 4-9
+      -> first place: CLASS 10 (L-39)
+
+    every sharʿī science  اللغة العربية          from class 1, hardest at Ideadi
+      -> and therefore the language does not fall below them at Ideadi (L-37)
+
+WHAT PRECEDES BALĀGHAH IN CLASS 9 IS النقد والآداب - chosen texts read, tasted
+and memorised from, WITH NO RHETORICAL TERMINOLOGY AT ALL. The taste first; then
+class 10 gives the student a name for what he had been finding and could not
+name.
+
+This correction removed balāghah from class 9 term 1 (where it had been
+opening while Qaṭr al-Nadā was still unfinished that same year) and moved
+النقد والآداب into the vacated term.
+
+================================================================================
+PART 6 - THE COMPLETE SUBJECT REGISTER: 34 SUBJECTS
+================================================================================
+
+Legend for the grid below:
+    HOUR = inside the protected Qur'anic hour, outside the slot ledger
+    IND  = مستقل, independent, full year, own slot / book / paper
+    TERM = مستقل as a TERM COURSE, occupying a shared term-slot
+    MERG = مدمج, merged with one named partner
+    EMBD = مضمّن, embedded in a named host
+    UNIT = وحدة, examined block with no slot of its own
+    STRD = مسار, a strand inside كتاب الدراسات الإسلامية (no mark)
+    .    = not taught at that class
+
+SUBJECT COUNT BY PROGRAMME
+    PROGRAMME ONE - القرآن وعلومه                         4
+    PROGRAMME TWO - اللغة وعلومها                        14
+    PROGRAMME THREE - الدراسات الإسلامية                 14
+    CAPSTONE SERVICE - خدمة سنة التتويج                   2
+    TOTAL                                                34
+
+
+PROGRAMME ONE - القرآن وعلومه - 4 subjects
+    SUBJECT                    1    2    3    4    5    6    7    8    9   10   11   12
+    ------------------------------------------------------------------------------
+    حفظ القرآن الكريم         HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR HOUR
+    التجويد                   EMBD EMBD EMBD  IND  IND  IND  IND  IND  IND  IND  IND EMBD
+    التفسير                      .    .    .    . EMBD EMBD  IND  IND  IND  IND  IND  IND
+    أصول التفسير                 .    .    .    .    .    .    .    .    .    . TERM EMBD

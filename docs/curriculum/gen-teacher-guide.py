@@ -1,0 +1,2121 @@
+# -*- coding: utf-8 -*-
+"""Generate the SHRS Curriculum Handbook (HTML → PDF) from allocation-v11.json.
+
+An INSTITUTIONAL PRESENTATION of the curriculum as it currently stands — for
+teachers, management, the Board and parents. It is a communication document:
+it settles nothing, creates no policy, and ratifies nothing. Every fact traces
+to allocation-v11.json or 00-LOCKED-DECISIONS.md. Where the allocation carries
+no declared form, the handbook SAYS SO rather than guessing.
+
+Never hand-edit the output. Change the source and regenerate.
+"""
+import os, io, html, base64
+import curriculum_data as C
+from curriculum_data import D
+
+H = os.path.dirname(os.path.abspath(__file__))
+AR = '٠١٢٣٤٥٦٧٨٩'
+ar = lambda n: ''.join(AR[int(c)] for c in str(n))
+e = html.escape
+
+CLS = {1:'الأول',2:'الثاني',3:'الثالث',4:'الرابع',5:'الخامس',6:'السادس',7:'السابع',
+       8:'الثامن',9:'التاسع',10:'العاشر',11:'الحادي عشر',12:'الثاني عشر'}
+
+SECTIONS = [
+ ('القسم التمهيدي','FOUNDATION','التهيئة وفكُّ الحرف',[1,2],
+  'يتعلّم الطفلُ أن يقرأ. ولا علمَ مستقلًّا في هذين الصفّين إلا اللغةُ والتربيةُ الإسلامية '
+  'والتجويدُ تلقينًا؛ وكلُّ ما سواها مسارٌ داخل كتابه، يُدرَّس ولا يُفرَد. '
+  'والمرادُ أن تُبنى الآلةُ قبل أن يُحمَّل عليها.'),
+ ('القسم الابتدائي','PRIMARY','من القراءة إلى الطلاقة، ثم الجسر',[3,4,5,6],
+  'تنضج القراءةُ طلاقةً، وتُلمَس القاعدةُ في النصّ قبل أن تُسمَّى باصطلاحها. '
+  'يدخل <b>التفسير</b> في الخامس — ولا يُقدَّم عليه — ويستقلّ <b>التجويد</b> من الرابع بمتنه. '
+  'وينتهي القسمُ بعبور الطفل من عربيّة الطفولة إلى عربيّة العلم.'),
+ ('القسم الإعدادي','INTERMEDIATE','العلومُ بأسمائها، والنحوُ على متونه',[7,8,9],
+  'تنفصل العلومُ وتُسمّى: النحوُ والصرفُ والفقهُ والعقيدةُ والحديثُ والتفسير. '
+  'واللغةُ آلةُ كلِّ علمٍ منها، فلا ينزل نصيبُها عن الدراسات الإسلامية. '
+  'ويُختَم النحوُ الأساس في التاسع، فيُفتَح ما بُني عليه بعده.'),
+ ('القسم الثانوي','SENIOR','علومُ الآلة والمتونُ الكبرى، ثم سنةُ التتويج',[10,11,12],
+  'تُفتَح <b>البلاغة</b> في العاشر — بعد تمام النحو لا قبله — وتجري المعاني ثم البيان ثم البديع. '
+  'وينضج الإنشاءُ بحثًا وخطابةً ومناظرة. والثاني عشر سنةُ تتويجٍ لا سنةُ أوراقٍ جديدة.')]
+
+GATES = [(1,'بوابة القراءة'),(3,'بوابة الطلاقة'),(5,'الشهادة الابتدائية'),
+         (6,'بوابة الجسر'),(9,'الشهادة الإعدادية'),(11,'الثانوية القرآنية'),
+         (12,'شهادة التخرج')]
+
+PROGS = [('القرآن','البرنامج الأول','القرآن وعلومه','PROGRAMME ONE · THE QURʾĀN AND ITS SCIENCES','p1','I',
+          'القرآنُ أصلُ الرحلة لا مادةٌ فيها. يجري حفظُه في ساعةٍ يومية محميّة خارج الجدول، '
+          'ويقوم على خدمته ثلاثةُ علوم: التجويدُ ليُقام اللفظ، والتفسيرُ ليُفهم المعنى، '
+          'وأصولُ التفسير لتُضبط طريقةُ الفهم.'),
+         ('اللغة','البرنامج الثاني','اللغة وعلومها','PROGRAMME TWO · ARABIC AND ITS SCIENCES','p2','II',
+          'العربيّةُ آلةُ كلِّ علمٍ شرعيّ، وليست واحدًا منها. ولذلك تبدأ قبل غيرها وتنتهي بعده. '
+          'وهي في هذا المنهج لسانٌ حيٌّ يُتكلَّم ويُكتَب ويُخطَب به، لا قواعدَ تُحفظ وحدها.'),
+         ('الإسلامية','البرنامج الثالث','الدراسات الإسلامية','PROGRAMME THREE · ISLAMIC STUDIES','p3','III',
+          'برنامجُ <b>قسم الدراسات الإسلامية والعربية</b> — School of Islamic and Arabic Studies — '
+          'بمدارس السلطان حنفي الملكية. '
+          'يبدأ مساراتٍ أربعةً داخل كتابٍ واحدٍ يناسب الطفل، ثم تنفصل علومًا مسمّاةً حين ينضج، '
+          'ثم تُفتَح على المتون الكبرى والخلاف بأدبه في الثانوي.'),
+         ('التتويج','برنامج التتويج','خدمة سنة التخرج','THE CROWNING YEAR','p4','IV',
+          'ليس برنامجًا تعليميًّا رابعًا، بل خدماتُ سنةِ التخرّج: مراجعةُ WAEC، والتحريرُ '
+          'الامتحاني، ومشروعُ الخدمة. وموضعُه في البنية معروضٌ على المجلس.')]
+
+FORMLABEL = {'مستقل':'مستقل','مدمج':'مدمج','مضمّن':'مضمّن','وحدة':'وحدة',
+             'دوراني':'دوراني','مسار':'مسار','فصلي':'مقرر فصلي'}
+ASSESS = {'مستقل':'ورقةٌ مستقلة · يدخل المعدل',
+          'مدمج':'قسمٌ مسمّى في ورقة الشريك · أرضية ٤٠٪',
+          'مضمّن':'لا ورقةَ له · يُقوَّم داخل المضيف',
+          'وحدة':'تقديرُ إنجاز · لا يدخل المعدل',
+          'دوراني':'ملفٌّ وسجلُّ مشاركة',
+          'مسار':'ملحقٌ وصفيّ بلا رقم',
+          'فصلي':'يُقوَّم في فصله'}
+
+# From the Chairman's own working sheet (Book1.xlsx). Only these two
+# classes carry a memorisation range there; no other class is given one.
+SHEET_HIFZ = {1:'سورة الناس ← سورة التكاثر', 2:'سورة القارعة ← سورة العلق'}
+
+
+def treatment(g):
+    corner, slots, hosted = D[str(g)]
+    out = {}
+    for name, prog, n, note in corner:
+        out[C.clean(name)] = ('مستقل', None, prog, note)
+    for lab, cap, terms in slots:
+        for term, nt, name, prog, note in terms:
+            out[C.clean(name)] = ('فصلي', term, prog, note)
+    for name, prog, host, note in hosted:
+        f = next((ff for ff in C.FORMS if note.strip().startswith(ff)), None)
+        d = note
+        if f:
+            d = note[len(f):].lstrip(' —·-').strip()
+        out[C.clean(name)] = (f, C.clean(host), prog, d)
+    if g <= 6:
+        for s in C.STRANDS[g]:
+            out.setdefault(s, ('مسار', 'كتاب الدراسات الإسلامية', 'الإسلامية', ''))
+    out['حفظ القرآن الكريم'] = ('مستقل', 'الساعة القرآنية', 'القرآن',
+                                SHEET_HIFZ.get(g, ''))
+    return out
+
+
+T = {g: treatment(g) for g in range(1, 13)}
+PROG_OF, FIRST, LAST = {}, {}, {}
+for g in range(1, 13):
+    for s, (f, h, p, n) in T[g].items():
+        PROG_OF[s] = p
+        FIRST.setdefault(s, g)
+        LAST[s] = g
+
+SUBS_OF = {k: [s for s in sorted(PROG_OF, key=lambda x: (FIRST[x], -len([g for g in range(1,13) if x in T[g]]), x))
+               if PROG_OF[s] == k] for k, *_ in PROGS}
+
+CLASSOF = {'مستقل':'ind','مدمج':'mrg','مضمّن':'emb','وحدة':'unt','دوراني':'rot',
+           'مسار':'str','فصلي':'trm'}
+
+
+def lifeline(s):
+    """A 12-grade band, read as a timeline rather than a grid."""
+    o = ['<div class="ll">']
+    for g in range(1, 13):
+        v = T[g].get(s)
+        if not v:
+            o.append('<i class="b0"></i>')
+            continue
+        f = v[0]
+        if f is None:
+            o.append('<i class="bq" title="صيغة غير مصرَّحة">؟</i>')
+        else:
+            o.append(f'<i class="b {CLASSOF.get(f,"emb")}"></i>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def phases(s):
+    gs = [g for g in range(1, 13) if s in T[g]]
+    ph = []
+    for g in gs:
+        f = T[g][s][0]
+        h = T[g][s][1]
+        lbl = FORMLABEL.get(f) if f else 'غير مصرَّحة'
+        key = (lbl, h if f not in ('مستقل', 'فصلي') else None)
+        if ph and ph[-1][0] == key:
+            ph[-1][2] = g
+        else:
+            ph.append([key, g, g])
+    out = []
+    for (lbl, h), a, b in ph:
+        rng = ar(a) if a == b else f'{ar(a)}–{ar(b)}'
+        host = f' <span class="hh">← {e(h)}</span>' if h else ''
+        cls = 'ph-warn' if lbl == 'غير مصرَّحة' else ''
+        out.append(f'<span class="ph {cls}"><b>{rng}</b> {e(lbl)}{host}</span>')
+    return ' '.join(out)
+
+
+def subject_card(s):
+    gs = [g for g in range(1, 13) if s in T[g]]
+    src = C.src(s, LAST[s])
+    unsourced = 'RED' in src or 'لا مصدر' in src
+    if unsourced:
+        src = 'لا نصَّ مسجَّلًا بعد'
+    indep = [g for g in gs if T[g][s][0] == 'مستقل']
+    frm = [T[g][s][0] for g in gs]
+    asses = ASSESS['مستقل'] if indep else ASSESS.get(
+        next((f for f in frm if f), 'مضمّن'), 'يُقوَّم داخل المضيف')
+    if indep and len(indep) < len(gs):
+        asses = f'ورقةٌ مستقلة من الصف <b>{ar(min(indep))}</b> — وقبله داخل مضيفه'
+    gate = C.SGATE.get(s, '')
+    unres = [g for g in gs if T[g][s][0] is None]
+    # the most substantive note the allocation carries for this subject
+    note = ''
+    for g in reversed(gs):
+        n = (T[g][s][3] or '').strip()
+        if len(n) > len(note):
+            note = n
+    note = note.replace('**', '')
+    o = [f'<div class="card"><div class="ct"><h4>{e(s)}</h4>'
+         f'<span class="span">الصفوف {ar(FIRST[s])}–{ar(LAST[s])}'
+         f'<b>{ar(len(gs))}</b></span></div>']
+    o.append(lifeline(s))
+    o.append(f'<div class="phs">{phases(s)}</div>')
+    o.append('<dl>')
+    o.append(f'<dt>التقويم</dt><dd>{asses}</dd>')
+    o.append(f'<dt>النصّ</dt><dd>{"<i>"+e(src)+"</i>" if unsourced else src}'
+             f'{" <span class=cdr>يُعرَض على المجلس</span>" if unsourced else ""}</dd>')
+    if gate:
+        o.append(f'<dt>البوابة</dt><dd>{gate}</dd>')
+    if note:
+        o.append(f'<dt>المحتوى</dt><dd>{e(note)}</dd>')
+    if unres:
+        o.append('<dt>موقوف</dt><dd class="warn">صيغتُه غير مصرَّحة في '
+                 f'{"، ".join(ar(x) for x in unres)} — والفرقُ بين «مدمج» و«مضمّن» '
+                 'فرقٌ في درجة الطالب <span class="cdr">يُعرَض على المجلس</span></dd>')
+    o.append('</dl></div>')
+    return ''.join(o)
+
+
+def term_rota(g):
+    """The only genuinely term-level data the allocation carries."""
+    slots = D[str(g)][1]
+    if not slots:
+        return ''
+    o = ['<div class="rota"><h6>المقرَّرات الفصلية — تتبدّل بالفصل</h6><table><thead><tr>'
+         '<th>الخانة</th><th>الفصل الأول</th><th>الفصل الثاني</th><th>الفصل الثالث</th>'
+         '</tr></thead><tbody>']
+    for lab, cap, terms in slots:
+        cells = {}
+        for term, nt, name, prog, note in terms:
+            for t in term.replace('ف', '').split('+'):
+                t = t.strip()
+                if t.isdigit():
+                    cells[int(t)] = C.clean(name)
+            if nt > 1 and '+' not in term:
+                pass
+        o.append(f'<tr><th>{e(lab)}</th>')
+        for t in (1, 2, 3):
+            o.append(f'<td>{e(cells.get(t,"—"))}</td>')
+        o.append('</tr>')
+    o.append('</tbody></table></div>')
+    return ''.join(o)
+
+
+# ── THE EXECUTIVE OPENING · four pages, before anything else ──────────────
+def exec_overview():
+    """Page 1 — what this institution teaches, stated once."""
+    o = ['<div class="xpg"><div class="xmast">'
+         '<div class="xlat">Sultan Hanafi Royal Schools</div>'
+         '<h1>مدارس السلطان حنفي الملكية</h1>'
+         '<div class="xdiv"><i></i></div>'
+         '<div class="xdept">قسم الدراسات الإسلامية والعربية</div>'
+         '<div class="xlat2">School of Islamic and Arabic Studies</div>'
+         '<div class="xhb">دليلُ المنهج · THE CURRICULUM HANDBOOK</div>'
+         '</div>']
+    o.append('<p class="xlead">منهجٌ واحدٌ يمتدُّ اثني عشر صفًّا، تجري فيه '
+             '<b>ثلاثةُ برامجَ متوازية</b> لا متعاقبة، في <b>أربعة أقسامٍ</b> يسلّم كلٌّ منها '
+             'إلى الذي بعده بعبورٍ مسمًّى. والمادةُ الواحدة لا تُدرَّس على صورةٍ واحدة طولَ '
+             'الرحلة: تبدأ خيطًا داخل كتاب، ثم تُضمَّن في مضيفٍ مسمّى، ثم تستقلّ بحصّتها '
+             'وكتابها وورقتها حين ينضج صاحبُها لها.</p>')
+    o.append('<div class="xgrid">')
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        subs = SUBS_OF[key]
+        ind = len({x for x in subs if any(T[g].get(x,(None,))[0]=='مستقل' for g in range(1,13))})
+        o.append(f'<div class="xp {cls}"><div class="xpn">{num}</div>'
+                 f'<h3>{e(pt)}</h3><div class="xpe">{e(pen.split("·")[1].strip())}</div>'
+                 f'<div class="xpstat"><span><b>{ar(len(subs))}</b> مادة</span>'
+                 f'<span><b>{ar(ind)}</b> تستقلّ بورقة</span></div>'
+                 f'<p>{blurb.split(".")[0]}.</p></div>')
+    o.append('</div>')
+    o.append('<div class="xsec"><h4>الأقسامُ الأربعة</h4><div class="xsrow">')
+    for idx,(name, en, char, gs, desc) in enumerate(SECTIONS,1):
+        gates = [n for x,n in GATES if x in gs]
+        o.append(f'<div class="xs s{idx}"><div class="xsn">{ar(gs[0])}–{ar(gs[-1])}</div>'
+                 f'<b>{name}</b><i>{en}</i>'
+                 f'<u>{e(" · ".join(gates)) if gates else "لا بوابة"}</u></div>')
+    o.append('</div></div>')
+    o.append('<p class="xnote">وثيقةُ عملٍ للعرض — لا تُنشئ قرارًا ولا تعتمد منهجًا. '
+             'وما كان موقوفًا على المجلس فهو مُعلَّمٌ في موضعه. '
+             'والمُدَدُ الزمنية لم تُعتمد بعدُ فلا تَرِد هنا.</p>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def gspan(sub):
+    """The classes a subject is actually taught in, in Latin G-notation.
+
+    Contiguous runs are joined; **gaps are shown**. The old register printed
+    FIRST–LAST, which said «١–١٢» for النشيد والمحفوظات — a subject that is
+    not taught in class nine at all. A range that hides a hole is not a range.
+    """
+    gs = [g for g in range(1, 13) if sub in T[g]]
+    runs, a = [], gs[0]
+    for i, g in enumerate(gs):
+        if i + 1 == len(gs) or gs[i + 1] != g + 1:
+            runs.append((a, g))
+            if i + 1 < len(gs):
+                a = gs[i + 1]
+    return ' · '.join(f'G{x}' if x == y else f'G{x}\u2013G{y}' for x, y in runs)
+
+
+# The Board's page reads PROGRAMME → SUBJECT → CLASSES in two columns.
+# Column one carries programmes I and II, column two programme III — so that
+# an RTL reader takes them in order, right column top to bottom, then left.
+ER_EN = {'القرآن': 'Programme I &middot; The Qur&rsquo;\u0101n &amp; its Sciences',
+         'اللغة': 'Programme II &middot; Arabic &amp; its Sciences',
+         'الإسلامية': 'Programme III &middot; Islamic Studies',
+         'التتويج': 'The Crowning Year'}
+
+
+def er_block(key, pt, cls, num):
+    subs = SUBS_OF[key]
+    o = [f'<div class="erp {cls}"><div class="erph">'
+         f'<span class="ern">{num}</span><div class="et">'
+         f'<h3>{e(pt)}</h3><div class="ee">{ER_EN[key]}</div></div>'
+         f'<span class="en5">{ar(len(subs))} مادة</span></div>'
+         '<table class="ert"><tbody>']
+    for sub in subs:
+        o.append(f'<tr><th>{e(sub)}</th><td>{gspan(sub)}</td></tr>')
+    o.append('</tbody></table></div>')
+    return ''.join(o)
+
+
+def exec_register():
+    """THE EXECUTIVE ACADEMIC SUBJECT REGISTER — one page, for the Board.
+
+    Programme, subject, classes. Nothing else: no حصص, no instructional form,
+    no text, no assessment, no gate. Each of those has its own section later,
+    and repeating them here is what turned the earlier version into a
+    curriculum analytics page instead of an answer to one question.
+    """
+    P = {k: (pt, cls, num) for k, pn, pt, pen, cls, num, blurb in PROGS}
+    o = ['<div class="xpg erpg">',
+         '<div class="erh">',
+         '<div class="el">Executive Academic Subject Register</div>',
+         '<h2>سجلُّ الموادِّ الأكاديميِّ التنفيذي</h2>',
+         '<div class="ed"><i></i></div>',
+         '<div class="ei">مدارسُ السلطان حنفي الملكية &middot; '
+         'دليلُ المنهج العربيِّ والإسلامي</div>',
+         '<div class="ek">Programme &rarr; Subject &rarr; Classes '
+         '&middot; G1&ndash;G12</div>',
+         '</div><div class="ergrid">']
+    o.append('<div class="ercol">')
+    for k in ('القرآن', 'اللغة'):
+        o.append(er_block(k, *P[k]))
+    o.append('</div><div class="ercol">')
+    o.append(er_block('الإسلامية', *P['الإسلامية']))
+    # التتويج is NOT presented as a fourth programme, because it is not one.
+    # Its place in the structure stands before the Council, and the register
+    # says so rather than settling it by drawing it as an equal.
+    tw = SUBS_OF['التتويج']
+    o.append('<div class="ernote"><b>خدمةُ سنة التخرج</b> — ليست برنامجًا رابعًا. '
+             'وهي في الصف الثاني عشر وحده: '
+             + '، '.join(f'{e(x)} ({gspan(x)})' for x in tw) + '.'
+             '<span class="erq">موضعُها في البنية معروضٌ على المجلس '
+             '&mdash; [DECISION REQUIRED]</span></div>')
+    o.append('</div></div>')
+    o.append('<div class="erf"><span class="a">'
+             f'ثلاثةُ برامج &middot; {ar(sum(len(SUBS_OF[k]) for k in P if k != "التتويج"))}'
+             ' مادةً مسمّاة &middot; اثنا عشر صفًّا</span>'
+             '<span class="b">GACAIS&ndash;CURRICULUM v1.0 &middot; '
+             'to be submitted to the Board for approval</span></div>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def exec_map():
+    """Page 3 — the twelve-year journey, in one grid."""
+    o = ['<div class="xpg brk"><h2>خريطةُ الرحلة — اثنا عشر صفًّا</h2>'
+         '<p class="lead">أين تبدأ كلُّ مادةٍ، وأين تتغيّر صيغتُها، وأين تنتهي. '
+         'والعمودُ المظلَّل صفٌّ فيه بوابة.</p>']
+    o.append('<table class="xmap"><thead><tr><th class="ms">المادة</th>')
+    for g in range(1,13):
+        gt = any(x==g for x,_ in GATES)
+        o.append(f'<th class="{"gt" if gt else ""}">{ar(g)}</th>')
+    o.append('</tr></thead><tbody>')
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        subs=SUBS_OF[key]
+        if not subs: continue
+        o.append(f'<tr class="mh {cls}"><td colspan="13">'
+                 f'<span class="rnum">{num}</span>{e(pt)}</td></tr>')
+        for sub in subs:
+            o.append(f'<tr><th class="ms">{e(sub)}</th>')
+            for g in range(1,13):
+                v=T[g].get(sub)
+                if not v: o.append('<td class="m0"></td>'); continue
+                f=v[0]
+                if f is None: o.append('<td class="mq">؟</td>')
+                else: o.append(f'<td class="m {CLASSOF.get(f,"emb")}"></td>')
+            o.append('</tr>')
+    o.append('</tbody></table>')
+    o.append('<div class="mapkey">'
+             '<span><i class="ind"></i> مستقل — حصّة وكتاب وورقة</span>'
+             '<span><i class="trm"></i> مقرر فصلي</span>'
+             '<span><i class="mrg"></i> مدمج</span>'
+             '<span><i class="emb"></i> مضمّن</span>'
+             '<span><i class="unt"></i> وحدة</span>'
+             '<span><i class="str"></i> مسار</span>'
+             '<span><i class="mqk">؟</i> لم تُصرَّح — يُعرَض على المجلس</span>'
+             '<span><i class="g0"></i> لا يُدرَّس</span></div>')
+    o.append('</div>')
+    return ''.join(o)
+
+# ── counting, stated once so the numbers can be audited ───────────────────
+def tally(g):
+    """Curriculum areas vs timetabled slots — never conflated."""
+    corner, slots, hosted = D[str(g)]
+    t = {'areas': len(T[g]), 'ceil': C.CEIL[str(g)],
+         'shared': sum(sl[1] for sl in slots), 'prog': {}, 'forms': {}}
+    for key, *_ in PROGS:
+        n_area = sum(1 for v in T[g].values() if v[2] == key)
+        n_slot = sum(x[2] for x in corner if T[g].get(C.clean(x[0]), (None,None,None))[2] == key)
+        t['prog'][key] = (n_area, n_slot)
+    for s2, v in T[g].items():
+        k = v[0] or 'غير مصرَّحة'
+        t['forms'][k] = t['forms'].get(k, 0) + 1
+    t['own'] = sum(1 for v in T[g].values() if v[0] in ('مستقل', 'فصلي'))
+    t['inhost'] = t['areas'] - t['own']
+    return t
+
+
+def slots_of(g, sub):
+    """Weekly حصص for this subject in this class — or None when it holds no slot."""
+    corner, slots, hosted = D[str(g)]
+    for name, prog, n, note in corner:
+        if C.clean(name) == sub:
+            return n, False
+    for lab, cap, terms in slots:
+        for term, nt, name, prog, note in terms:
+            if C.clean(name) == sub:
+                return cap, True
+    return None, False
+
+
+def class_card(g):
+    t = tally(g)
+    sec = next(x for x in SECTIONS if g in x[3])
+    o = ['<div class="ccard"><div class="ccrow">']
+    o.append(f'<div class="ccbig s1"><em></em><b>{ar(t["areas"])}</b>'
+             '<span>مجالًا في المنهج</span><i>Curriculum areas</i></div>')
+    o.append(f'<div class="ccbig s2"><b>{ar(t["ceil"])}</b>'
+             '<span>حصّةً في الأسبوع</span><i>Weekly periods</i></div>')
+    o.append(f'<div class="ccbig s3"><b>{ar(t["own"])}</b>'
+             '<span>بحصّةٍ خاصّة</span><i>Own slot</i></div>')
+    o.append(f'<div class="ccbig s4"><b>{ar(t["inhost"])}</b>'
+             '<span>داخل مضيفٍ مسمّى</span><i>Within a host</i></div>')
+    o.append('</div><div class="ccprog">')
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        a, sl = t['prog'][key]
+        if not a:
+            continue
+        o.append(f'<div class="ccp {cls}"><span class="rn">{num}</span>'
+                 f'<h6>{e(pt)}</h6>'
+                 f'<div class="ccn"><span><b>{ar(a)}</b> مجالًا</span>'
+                 f'<span><b>{ar(sl)}</b> حصّة</span></div></div>')
+    if t['shared']:
+        o.append(f'<div class="ccp shared"><span class="rn">&#9671;</span>'
+                 '<h6>خانات فصلية مشتركة</h6>'
+                 f'<div class="ccn"><span><b>{ar(t["shared"])}</b> حصّة</span>'
+                 '<span>تتناوبها مقرَّرات الفصول</span></div></div>')
+    o.append('</div>')
+    # forms breakdown + assessment picture
+    fb = ' · '.join(f'{e(FORMLABEL.get(k, k))} <b>{ar(v)}</b>'
+                    for k, v in sorted(t['forms'].items(), key=lambda x: -x[1]))
+    cond = [n for x, n in GATES if x == g]
+    o.append(f'<div class="ccfoot"><div><span class="lb">الصيغ</span> {fb}</div>')
+    o.append(f'<div><span class="lb">التقويم</span> '
+             f'<b>{ar(t["own"])}</b> بورقةٍ مستقلة · '
+             f'<b>{ar(t["inhost"])}</b> يُقوَّم داخل مضيفه'
+             + (f' · <b>شرط</b>: {e(cond[0])}' if cond else '') + '</div>')
+    o.append(f'<div><span class="lb">القسم</span> {sec[0]} — {e(sec[2])}</div>')
+    o.append('</div>')
+    o.append('<p class="ccmeth">طريقةُ العدّ: «المجال» كلُّ اسمٍ يلقاه الصفّ بأيِّ صيغة. '
+             'و«الحصّة الخاصّة» خانةٌ في الجدول. والمضمَّنُ والمدمجُ والمسارُ تُدرَّس بلا خانةٍ '
+             'خاصّة، فلا تُعدّ حصصًا — <b>ولا يعني ذلك أنها أقلُّ إلزامًا</b>. '
+             'والساعةُ القرآنية خارج هذه الخانات تمامًا.</p>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def alloc_tables(g):
+    o = ['<h3 class="alh">ما يُدرَّس في هذا الصف</h3>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        items = [(s2, v) for s2, v in T[g].items() if v[2] == key]
+        if not items:
+            continue
+        rank = {'مستقل': 0, 'فصلي': 1}
+        items.sort(key=lambda x: (rank.get(x[1][0], 2), x[0]))
+        o.append(f'<div class="alt {cls}"><h4>{e(pt)}</h4><table class="atab"><thead><tr>'
+                 '<th>المادة</th><th>الصيغة</th><th>المضيف</th><th>حصص</th><th>التقويم</th>'
+                 '</tr></thead><tbody>')
+        for s2, (f, h, p, note) in items:
+            n, shared = slots_of(g, s2)
+            if s2 == 'حفظ القرآن الكريم':
+                cells = ('مستقل', 'الساعة القرآنية', '<i>خارج الخانات</i>',
+                         'بوابةُ الحفظ — أداءٌ أمام لجنة')
+            elif f is None:
+                cells = ('<span class="cdr">لم تُصرَّح</span>', e(h or '—'), '—',
+                         '<span class="cdr">يُعرَض على المجلس</span>')
+            else:
+                cells = (e(FORMLABEL.get(f, f)),
+                         e(h) if h and f not in ('مستقل', 'فصلي') else '—',
+                         (f'<b>{ar(n)}</b>' + (' <i>مشتركة</i>' if shared else '')) if n else '—',
+                         ASSESS.get(f, '—'))
+            o.append(f'<tr><th>{e(s2)}</th><td>{cells[0]}</td><td>{cells[1]}</td>'
+                     f'<td class="c">{cells[2]}</td><td>{cells[3]}</td></tr>')
+        o.append('</tbody></table></div>')
+    return ''.join(o)
+
+
+def nav_table():
+    o = ['<table class="nav"><thead><tr><th>الصف</th><th>القسم</th>'
+         '<th>مجالات</th><th>حصص</th>'
+         '<th>القرآن</th><th>اللغة</th><th>الإسلامية</th><th>البوابة</th>'
+         '</tr></thead><tbody>']
+    cur = None
+    for g in range(1, 13):
+        t = tally(g)
+        sec = next(x for x in SECTIONS if g in x[3])
+        if sec[0] != cur:
+            cur = sec[0]
+        gate = next((n for x, n in GATES if x == g), '—')
+        o.append(f'<tr><th class="ng">{ar(g)}</th><td class="ns">{sec[0][6:]}</td>'
+                 f'<td class="c"><b>{ar(t["areas"])}</b></td>'
+                 f'<td class="c"><b>{ar(t["ceil"])}</b></td>')
+        for key in ('القرآن', 'اللغة', 'الإسلامية'):
+            a, sl = t['prog'][key]
+            o.append(f'<td class="c">{ar(a)} <span class="sl">/ {ar(sl)}</span></td>')
+        o.append(f'<td class="ngate">{e(gate)}</td></tr>')
+    o.append('</tbody></table>')
+    return ''.join(o)
+
+# ── VIEW 1 · CLASS → WHAT IS TAUGHT ────────────────────────────────────────
+MARK = {'مستقل':('m-ind','مستقل'),'مدمج':('m-mrg','مدمج'),'مضمّن':('m-emb','مضمّن'),
+        'وحدة':('m-unt','وحدة'),'دوراني':('m-rot','دوراني'),'مسار':('m-str','مسار'),
+        'فصلي':('m-trm','مقرر فصلي')}
+
+
+def glance_row(g):
+    """One line per class: the subject NAMES only. The ten-second view."""
+    o = [f'<tr><th class="gcell"><b>{ar(g)}</b><span>{CLS[g]}</span></th>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        items = [(s, v) for s, v in T[g].items() if v[2] == key]
+        if not items:
+            o.append('<td class="gl-none">—</td>'); continue
+        ind = [s for s, v in sorted(items) if v[0] in ('مستقل', 'فصلي')]
+        oth = [s for s, v in sorted(items) if v[0] not in ('مستقل', 'فصلي')]
+        bits = ' · '.join(f'<b>{e(x)}</b>' for x in ind)
+        if oth:
+            bits += ('<span class="gl-o">' + (' · ' if ind else '')
+                     + ' · '.join(e(x) for x in oth) + '</span>')
+        o.append(f'<td>{bits}</td>')
+    extra = [s for s, v in T[g].items() if v[2] == 'التتويج']
+    o.append(f'<td class="gl-x">{" · ".join(e(x) for x in sorted(extra)) if extra else "—"}</td>')
+    o.append('</tr>')
+    return ''.join(o)
+
+
+def glance_table():
+    o = ['<table class="glance"><thead><tr><th class="gcell">الصف</th>']
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        o.append(f'<th>{e(pt)}</th>')
+    o.append('<th class="gl-x">سنة التتويج</th></tr></thead><tbody>')
+    cur = None
+    for g in range(1, 13):
+        sec = next(x for x in SECTIONS if g in x[3])
+        if sec[0] != cur:
+            cur = sec[0]
+            o.append(f'<tr class="gsec"><td colspan="5">{cur}'
+                     f'<span> — الصفوف {ar(sec[3][0])}–{ar(sec[3][-1])}</span></td></tr>')
+        o.append(glance_row(g))
+    o.append('</tbody></table>')
+    return ''.join(o)
+
+
+def class_full(g):
+    """A full page for one class. The definitive answer to: what do I teach?"""
+    sec = next(x for x in SECTIONS if g in x[3])
+    gate = next((n for x, n in GATES if x == g), None)
+    o = [f'<div class="cpage"><div class="cpband"><div class="cpn">{ar(g)}</div>'
+         f'<div class="cpt"><h2>الصف {CLS[g]}</h2>'
+         f'<div class="cpsec">{sec[0]} <span class="en">&middot; GRADE {g}</span></div></div>']
+    if gate:
+        o.append(f'<div class="cpgate"><em>بوابة</em>{e(gate)}</div>')
+    o.append('<span class="cnr tl"></span><span class="cnr tr"></span></div>')
+    if g in SHEET_HIFZ:
+        o.append(f'<div class="cphifz">المحفوظ هذا العام — <b>{SHEET_HIFZ[g]}</b></div>')
+    o.append(class_card(g))
+    o.append(alloc_tables(g))
+    o.append(term_rota(g))
+    # what to open: the prescribed text for each subject taught this year
+    rows = []
+    for sub in sorted(T[g], key=lambda x: (T[g][x][0] not in ('مستقل', 'فصلي'), x)):
+        t = C.src(sub, g)
+        if 'RED' in t or 'لا مصدر' in t:
+            rows.append((sub, '<i class="nosrc">لا نصَّ مسجَّلًا بعد</i>')); continue
+        t = t.replace('**', '').strip()
+        if t.startswith('—') or not t:
+            continue
+        rows.append((sub, e(t)))
+    if rows:
+        o.append('<div class="books"><h3>نصوصُ هذا الصف — ما يُفتَح في الحصّة</h3><table>')
+        for sub, t in rows:
+            o.append(f'<tr><th>{e(sub)}</th><td>{t}</td></tr>')
+        o.append('</table></div>')
+    n_ind = sum(1 for s, v in T[g].items() if v[0] in ('مستقل', 'فصلي'))
+    o.append(f'<div class="cpfoot">يلقى طالبُ هذا الصف <b>{ar(len(T[g]))}</b> مادةً مسمّاة، '
+             f'منها <b>{ar(n_ind)}</b> بحصّةٍ خاصّة، وسائرُها داخل مضيفٍ مسمًّى.</div>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def class_page(g):
+    sec = next(s for s in SECTIONS if g in s[3])
+    o = [f'<div class="cls"><div class="clsh"><h3>الصف {CLS[g]}</h3>'
+         f'<span class="cn">{ar(g)}</span>'
+         f'<span class="csec">{sec[0]}</span></div>']
+    gate = next((n for x, n in GATES if x == g), None)
+    if gate:
+        o.append(f'<p class="gate">بوابةُ هذا الصف: <b>{e(gate)}</b></p>')
+    if g in SHEET_HIFZ:
+        o.append(f'<p class="hifz">المحفوظ: <b>{SHEET_HIFZ[g]}</b></p>')
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        items = [(s, v) for s, v in T[g].items() if v[2] == key]
+        if not items:
+            continue
+        ind = sorted([s for s, v in items if v[0] == 'مستقل'])
+        trm = sorted([s for s, v in items if v[0] == 'فصلي'])
+        oth = sorted([(s, v) for s, v in items if v[0] not in ('مستقل', 'فصلي')])
+        o.append(f'<div class="cp {cls}"><h6>{e(pt)}</h6>')
+        if ind:
+            o.append('<p class="ind">' + ' · '.join(f'<b>{e(s)}</b>' for s in ind) + '</p>')
+        if trm:
+            o.append('<p class="trm">مقرَّرات فصلية: ' + '، '.join(e(s) for s in trm) + '</p>')
+        if oth:
+            bits = []
+            for s, v in oth:
+                f, h = v[0], v[1]
+                if f is None:
+                    bits.append(f'{e(s)} <span class="q">؟ ← {e(h or "—")}</span>')
+                else:
+                    bits.append(f'{e(s)} <span class="hh">{e(FORMLABEL.get(f,f))}'
+                                f'{" ← "+e(h) if h else ""}</span>')
+            o.append('<p class="oth">' + '، '.join(bits) + '</p>')
+        o.append('</div>')
+    o.append(term_rota(g))
+    o.append('</div>')
+    return ''.join(o)
+
+
+TEXTS = []
+for sub, entries in C.SRC.items():
+    for lo, hi, t in entries:
+        for b in C.named_books(t):
+            kind = ('متن محفوظ' if 'محفوظ' in t else
+                    'مرجع المعلّم' if 'للمعلم' in t else
+                    'مواد المدرسة' if '(المدرسة)' in t else 'متن تدريس')
+            TEXTS.append((lo, hi, b, sub, kind))
+TEXTS.sort(key=lambda x: (x[0], x[1], x[3]))
+
+
+# ── the institution's own marks ─────────────────────────────────────
+# The crest and the GACAIS emblem are the Institution's, supplied by the
+# Chairman. They are used as given: the crest's own wordmark
+# lockup is cropped away so the artwork can sit beside typeset lines,
+# and nothing else about either mark is altered. Both are inlined as
+# data URIs so the published HTML remains one self-contained file.
+def _mark(name):
+    fp = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets', name)
+    with open(fp, 'rb') as f:
+        return 'data:image/png;base64,' + base64.b64encode(f.read()).decode('ascii')
+CREST  = _mark('shrs-crest.png')
+GACAIS = _mark('gacais-mark.png')
+
+
+# ── the physical book ───────────────────────────────────────────────
+# The spine width is CALCULATED, not chosen: 80 printed pages is 40 leaves;
+# on 120 gsm uncoated cream (≈0.15 mm a leaf) the text block is ≈6 mm; two
+# 2.5 mm boards and the endpapers bring it to ≈12 mm, and 14 mm is taken so
+# the spine type has air. **This is an assumption until the binder confirms
+# the stock.** Change SPINE_MM and the wraparound sheet resizes itself.
+SPINE_MM = 14
+PAGE_MM = 210
+WRAP_MM = PAGE_MM * 2 + SPINE_MM          # 434 mm, trim size, no bleed added
+
+# The statement on the back board. Every clause of it is already in this
+# document — it is a précis of the programme openers, not a new claim.
+STATEMENT = (
+    'منهجٌ واحدٌ في اثني عشر صفًّا، تجري موادُّه في ثلاثة برامجَ متعاقبة، '
+    'في أربعة أقسامٍ يسلِّم كلٌّ منها إلى الذي بعده. '
+    'القرآنُ أصلُ الرحلة لا مادةً فيها، والعربيّةُ آلةُ كلِّ علمٍ شرعيّ فتبدأ قبل '
+    'غيرها وتنتهي بعده، والدراساتُ الإسلامية تُفتَح على المتون الكبرى حين ينضج الطالب.')
+
+
+# ── the two drawings of the cover system ────────────────────────────
+# Both take an id suffix, because the wraparound sheet carries the front
+# and the back in ONE document and duplicate gradient ids would collide.
+FOIL = ('<stop offset="0" stop-color="#7E6029"/><stop offset=".17" stop-color="#D6BA80"/>'
+        '<stop offset=".31" stop-color="#F2E2BB"/><stop offset=".47" stop-color="#AD8B4B"/>'
+        '<stop offset=".62" stop-color="#8A6A2E"/><stop offset=".78" stop-color="#E6CC93"/>'
+        '<stop offset=".9" stop-color="#C09A54"/><stop offset="1" stop-color="#7E6029"/>')
+
+
+def arch_svg(k, cls='arch'):
+    """The two-centred arch — the portal form, cropped by the trim."""
+    return (f'<svg class="{cls}" viewBox="0 0 168 210" xmlns="http://www.w3.org/2000/svg" '
+            f'fill="none" stroke="url(#ag{k})" preserveAspectRatio="none">'
+            f'<defs><linearGradient id="ag{k}" x1="0" y1="0" x2="1" y2=".4">'
+            '<stop offset="0" stop-color="#6E5322"/><stop offset=".3" stop-color="#E0C489"/>'
+            '<stop offset=".55" stop-color="#9C7C3F"/><stop offset=".8" stop-color="#EDD7A4"/>'
+            '<stop offset="1" stop-color="#7E6029"/></linearGradient></defs>'
+            '<path d="M6,172 L6,96 A96,96 0 0,1 84,20 A96,96 0 0,1 162,96 L162,172" '
+            'stroke-width="1.1"/>'
+            '<path d="M15,152 L15,99 A88,88 0 0,1 84,31 A88,88 0 0,1 153,99 L153,152" '
+            'stroke-width=".4"/>'
+            '<path d="M84,20 L84,44" stroke-width=".4" opacity=".5"/>'
+            f'<g fill="url(#ag{k})" stroke="none">'
+            '<rect x="-3.2" y="-3.2" width="6.4" height="6.4" '
+            'transform="translate(84,31) rotate(45)"/>'
+            '<rect x="-2" y="-2" width="4" height="4" transform="translate(6,96) rotate(45)"/>'
+            '<rect x="-2" y="-2" width="4" height="4" transform="translate(162,96) rotate(45)"/>'
+            '</g></svg>')
+
+
+def lat_svg(k):
+    """The house lozenge repeated into a tooled band."""
+    return (f'<svg class="lat" viewBox="0 0 630 30" xmlns="http://www.w3.org/2000/svg" '
+            f'preserveAspectRatio="none"><defs><linearGradient id="lg{k}" x1="0" y1="0" '
+            f'x2="1" y2=".35">{FOIL}</linearGradient></defs>'
+            f'<pattern id="px{k}" patternUnits="userSpaceOnUse" width="26" height="30">'
+            f'<path d="M0,15 L13,2.5 L26,15 L13,27.5 Z" fill="none" stroke="url(#lg{k})" '
+            'stroke-width="1"/>'
+            f'<path d="M13,2.5 L13,0 M13,27.5 L13,30" stroke="url(#lg{k})" stroke-width=".6"/>'
+            f'<rect x="-1.7" y="-1.7" width="3.4" height="3.4" fill="url(#lg{k})" '
+            'transform="translate(13,15) rotate(45)"/></pattern>'
+            f'<rect x="0" y="0" width="630" height="30" fill="url(#px{k})"/></svg>')
+
+
+CSS = """
+/* ═══════════════════════════════════════════════════════════════════
+   SHRS CURRICULUM HANDBOOK · type & page system
+   Baseline unit 4.8mm. Arabic leads; Latin supports quietly.
+   Gold behaves as foil: hairlines and registration, never fill.
+   ═══════════════════════════════════════════════════════════════════ */
+@page{size:A4;}   /* margins come from the renderer, so the furniture owns them */
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+/* ═══════════════════════════════════════════════════════════════════
+   THE SHRS PALETTE · six institutional colours, one foil, one paper family
+   ───────────────────────────────────────────────────────────────────
+   Colour carries meaning here; it is never applied for variety.
+     espresso   القهوة   the voice of the institution itself — bands,
+                         openers, the masthead, anything the school says
+                         in its own name.
+     gold       الذهب    foil only: hairlines, registration, ornament,
+                         the rule above a table. Gold never fills a page.
+     green      الأخضر   البرنامج الأول · القرآن وعلومه — and the cover
+                         ground, because the book belongs to the Qurʾān
+                         before it belongs to anything else.
+     navy       الأزرق   البرنامج الثاني · اللغة وعلومها — the instrument
+                         of every science, and the Royal Blue of the house.
+     oxblood    العنّابي  البرنامج الثالث · الدراسات الإسلامية.
+     burgundy            the same hue one value up, reserved for FLAGS —
+                         a gate, a matter still before the Council, a text
+                         not yet registered. Always a hairline or a word,
+                         never a filled surface, so it cannot be mistaken
+                         for programme three.
+     charcoal   الفحمي   برنامج التتويج — deliberately neutral, because it
+                         is not a fourth programme and must not look like one.
+   The four sections (تمهيدي · ابتدائي · إعدادي · ثانوي) are NOT coloured.
+   They ride a parchment ramp — ivory → cream → parchment → coffee-paper —
+   so that stage and programme can never be confused on the same page.
+   ═══════════════════════════════════════════════════════════════════ */
+body{
+ --ink:#241A11;--brown:#3B2A1D;--esp:#1A1008;--bronze:#6B4A2E;
+ --gold:#B08E4E;--gold2:#C6A15B;--champ:#E4C98A;--gold3:#8E6F38;
+ --panel:#2A1C10;--panel2:#3A2818;
+ --paper:#FDFBF6;--paper2:#FAF5EB;--ivory:#FAF4E9;--cream:#F3E7D2;
+ --parch:#EBDDC2;--ramp2:#F7EFE0;
+ --line:#E0D2B8;--hair:#EDE3D1;--mute:#9A8A76;
+ --green:#0F3F38;--green2:#1C5B50;--greenpale:#DDE9E4;--greentint:#EAF2EE;
+ --blue:#082A66;--blue2:#16417E;--bluepale:#E2E9F3;--bluetint:#EDF2F9;
+ --ox:#5E1B26;--ox2:#7E2634;--oxpale:#EFDEDD;--oxtint:#F8EDEB;
+ --burg:#7C1F2E;
+ --char:#3A342C;--char2:#574E41;--charpale:#E9E6DE;--chartint:#F3F1EA;
+ /* ── the six faces, each with exactly one job ──────────────────────
+    Arabic speaks in three registers; Latin supports in two Garamond
+    optical sizes and one grotesque for furniture. Nothing is used
+    outside its register. */
+ --fa:'Amiri',serif;                       /* the reading voice        */
+ --fk:'Reem Kufi',sans-serif;              /* the institutional voice  */
+ --fn:'Noto Kufi Arabic',sans-serif;       /* the clarity voice, small */
+ --fl:'EB Garamond',Georgia,serif;         /* Latin running text       */
+ --fd:'Cormorant Garamond',Georgia,serif;  /* Latin display            */
+ --fu:'Archivo','Helvetica Neue',sans-serif;/* Latin furniture & data  */
+}
+
+body{font-family:var(--fa);font-size:10.6pt;line-height:1.78;
+ color:#241A11;background:#FDFBF6;direction:rtl;
+ -webkit-font-feature-settings:"liga" 1,"calt" 1;}
+/* ── Latin is a quiet supporting voice, never a competitor ──────── */
+.en,.lat{direction:ltr;font-family:var(--fu);
+ font-weight:600;letter-spacing:.075em;text-transform:uppercase;
+ font-size:6.9pt;line-height:1.56;color:#6D5C46;word-spacing:.02em;}
+.enx{direction:ltr;font-family:var(--fl);font-weight:400;
+ letter-spacing:.012em;text-transform:none;font-size:9pt;line-height:1.62;
+ color:#4A3B2C;}
+.kufi{font-family:var(--fk);font-weight:500;}
+/* Two Arabic voices, deliberately divided:
+   Amiri  — the reading voice: body, tables, numerals, subject names.
+   Reem Kufi — the institutional voice: mastheads, part and section titles,
+               programme names, grade titles, small labels. Never body text. */
+h1,h2,h3,h4{font-family:var(--fa);font-weight:700;letter-spacing:0;}
+/* institutional display — Reem Kufi, tracked open, never below 11pt */
+.xmast h1,.xdept,.opener .ar2,.sot h3,.cpband .cpt h2,
+.secop .sot h3{font-family:var(--fk);font-weight:600;letter-spacing:0;}
+.xmast h1{font-weight:700;} .cpband .cpt h2{font-weight:600;}
+/* vowelled headings stay in the reading voice, where the marks sit true */
+h2,h3,.alh,.opener h2,.xsec h4{font-family:var(--fa);font-weight:700;letter-spacing:0;}
+h5{font-family:var(--fk);font-weight:400;}
+h6{font-family:var(--fn);font-weight:400;letter-spacing:0;}
+p{margin:0 0 4.8mm;}
+.g{color:var(--mute);}
+.pg{padding:0;}
+.pg>h2:first-child{padding-top:0;}
+.brk{page-break-before:always;}
+.pg.brk{padding-top:0;}
+/* ═══════════════════════════════════════════════════════════════════
+   THE BINDING · brown cloth, gold foil, ivory type
+   ───────────────────────────────────────────────────────────────────
+   The composition is editorial, not devotional: a coffee-brown panel
+   held hard to the top and right edges over a warm cream ground, split
+   roughly three to one, with an architectural fragment — a two-centred
+   arch, cropped by the trim — drawn across it in gold hairlines. The
+   arch is the decoration; there is no medallion and no rectangular
+   border. The gold is a gradient in every instance, because flat gold
+   reads as yellow ink and a gradient reads as foil catching light.
+   The one ornament of the house, the lozenge, is repeated into a
+   lattice and used once, as a band across the whole width, where the
+   panel meets the cream. Nothing on this cover is symmetrical about
+   the page centre.
+   ═══════════════════════════════════════════════════════════════════ */
+.cover{height:297mm;width:210mm;padding:0;page-break-after:always;
+ position:relative;overflow:hidden;color:#3B2A1D;
+ background:#F2E7D3;
+ background-image:linear-gradient(160deg,#F7EFE0 0%,#F1E5D0 52%,#E9DAC0 100%);}
+/* ── the cloth panel ────────────────────────────────────────────── */
+.cover .panel{position:absolute;top:0;right:0;width:154mm;height:186mm;
+ box-shadow:-1.6mm 0 4mm rgba(64,43,22,.16);
+ background:#2C1E11;
+ background-image:
+  repeating-linear-gradient(90deg,rgba(255,247,230,.030) 0 .32mm,transparent .32mm .64mm),
+  repeating-linear-gradient(0deg,rgba(0,0,0,.13) 0 .32mm,transparent .32mm .64mm),
+  linear-gradient(152deg,#3A2817 0%,#2C1E11 46%,#1E1208 100%);
+ overflow:hidden;}
+/* an L of light, not a border: the two edges the cloth actually turns on */
+.cover .panel:after{content:'';position:absolute;left:0;top:0;bottom:0;width:.7pt;
+ background:linear-gradient(180deg,rgba(214,186,128,.15),rgba(240,222,178,.8) 46%,
+  rgba(214,186,128,.2));}
+.cover .pedge{position:absolute;top:186mm;right:0;width:154mm;height:.7pt;
+ background:linear-gradient(90deg,rgba(214,186,128,.12),rgba(240,222,178,.7) 62%,
+  rgba(214,186,128,.25));z-index:4;}
+.cover .arch{position:absolute;top:46mm;right:-34mm;width:168mm;height:196mm;
+ opacity:.30;}
+/* ── what is set on the cloth ───────────────────────────────────── */
+.cover .pc{position:absolute;top:0;right:0;width:154mm;height:186mm;
+ padding:23mm 24mm 0 20mm;z-index:3;}
+/* crest and typeset name on one line — a lockup, not a stack */
+.cover .lock{display:flex;align-items:center;gap:6.5mm;}
+.cover .lock img{width:31mm;height:auto;display:block;flex:none;}
+.cover .lock .ln{flex:1;text-align:right;padding-left:6.5mm;
+ border-left:.5pt solid rgba(214,186,128,.34);}
+/* the supervision, set where a title page has always set it */
+.cover .sup{position:absolute;right:24mm;left:20mm;bottom:13mm;text-align:right;
+ border-top:.4pt solid rgba(214,186,128,.28);padding-top:4.2mm;}
+.cover .sup i{display:block;font-family:var(--fn);font-style:normal;font-size:7.2pt;
+ color:#A3937A;margin:0 0 2.2mm;}
+.cover .sup b{display:block;font-family:var(--fa);font-weight:700;font-size:11.6pt;
+ color:#EEE1C9;line-height:1.55;}
+.cover .hrule{width:20mm;height:1.5pt;margin:3.4mm 0 0;
+ background-image:linear-gradient(90deg,#F2E2BB,#AD8B4B 55%,#7E6029);}
+.cover .house{font-family:var(--fk);font-weight:600;font-size:11.8pt;
+ color:#F6EEDD;line-height:1.55;margin:0 0 2.2mm;}
+.cover .houseL{display:inline-block;font-family:var(--fu);font-weight:600;font-size:6.8pt;
+ letter-spacing:.28em;text-transform:uppercase;direction:ltr;text-align:right;
+ margin:0 0 0;padding-left:.28em;
+ background-image:linear-gradient(92deg,#C09A54,#F2E2BB 42%,#A98A4C);
+ -webkit-background-clip:text;background-clip:text;color:transparent;}
+/* the title, set as a piece of typography and not as a line of text */
+.cover .title{position:absolute;right:24mm;left:20mm;top:82mm;}
+.cover .t1{font-family:var(--fa);font-weight:700;font-size:43pt;line-height:1.28;
+ color:#FCF5E7;margin:0 0 1mm;
+ text-shadow:0 .5pt 0 rgba(0,0,0,.55),0 -.3pt 0 rgba(255,248,232,.10);}
+.cover .t2{display:inline-block;font-family:var(--fa);font-weight:700;font-size:43pt;line-height:1.34;
+ margin:0 0 7mm;
+ background-image:linear-gradient(96deg,#7E6029 0%,#D6BA80 16%,#F4E5C0 29%,
+  #AD8B4B 45%,#8A6A2E 57%,#EBD39C 73%,#C09A54 87%,#7E6029 100%);
+ -webkit-background-clip:text;background-clip:text;color:transparent;}
+.cover .tsep{display:flex;align-items:center;margin:0 0 6mm;}
+.cover .tsep:before{content:'';width:26mm;height:1pt;
+ background-image:linear-gradient(90deg,#F2E2BB,#8A6A2E);}
+.cover .tsep i{width:2.1mm;height:2.1mm;margin:0 3mm;transform:rotate(45deg);
+ display:block;background-image:linear-gradient(135deg,#F2E2BB,#8A6A2E);}
+.cover .tsep:after{content:'';flex:1;height:.35pt;background:rgba(214,186,128,.34);}
+.cover .dept{font-family:var(--fn);font-size:8.8pt;color:#CDBB9B;line-height:1.75;
+ margin:0 0 1.6mm;}
+.cover .deptL{font-family:var(--fu);font-weight:500;font-size:6.2pt;
+ letter-spacing:.2em;text-transform:uppercase;color:#93805F;direction:ltr;
+ text-align:right;padding-left:.2em;}
+/* ── the lattice band, the one ornament, used once ──────────────── */
+.cover .band{position:absolute;top:178mm;left:0;width:210mm;height:8mm;z-index:5;
+ background:#2A1A0C;
+ background-image:linear-gradient(180deg,#33200F,#22140880 58%,#1B1006);
+ border-top:1.1pt solid rgba(230,208,156,.72);
+ border-bottom:.5pt solid rgba(230,208,156,.42);}
+.cover .band .lat{position:absolute;inset:0;width:100%;height:100%;opacity:.85;}
+/* ── the cream register ─────────────────────────────────────────── */
+.cover .lower{position:absolute;top:201mm;right:24mm;left:20mm;text-align:right;}
+.cover .lrule{width:34mm;height:1.4pt;margin:0 0 5mm;margin-right:0;
+ background-image:linear-gradient(90deg,#7E6029,#AD8B4B 40%,#F2E2BB);}
+.cover .titleL{font-family:var(--fd);font-weight:700;font-size:18.5pt;
+ letter-spacing:.2em;text-transform:uppercase;color:#2E1E0C;direction:ltr;
+ text-align:right;line-height:1.36;margin:0 0 5.4mm;padding-left:.2em;}
+.cover .sub{font-family:var(--fa);font-size:11.2pt;color:#5C452E;line-height:1.92;
+ margin:0;}
+/* ── the left margin: editorial marks, set vertically ───────────── */
+.cover .mark{position:absolute;top:25mm;left:20mm;width:26mm;z-index:6;}
+.cover .mark .mr{width:11mm;height:1.2pt;margin:0 0 3.4mm;
+ background-image:linear-gradient(90deg,#7E6029,#E2C68C);}
+.cover .mark .mn{font-family:var(--fd);font-weight:700;font-size:26pt;line-height:1;
+ margin:0 0 2.4mm;direction:ltr;color:#A8863F;}
+.cover .mark .ml{font-family:var(--fu);font-weight:600;font-size:5.5pt;
+ letter-spacing:.2em;text-transform:uppercase;color:#8E7A5C;direction:ltr;
+ line-height:1.7;padding-left:.2em;}
+.cover .vlabel{position:absolute;left:21.5mm;bottom:126mm;z-index:6;
+ writing-mode:vertical-rl;transform:rotate(180deg);
+ font-family:var(--fu);font-weight:600;font-size:6pt;letter-spacing:.3em;
+ text-transform:uppercase;color:#93805F;direction:ltr;}
+/* ── the foot ───────────────────────────────────────────────────── */
+.cover .foot{position:absolute;left:20mm;right:24mm;bottom:16mm;
+ border-top:.4pt solid rgba(120,95,58,.4);padding-top:4.6mm;
+ display:flex;align-items:flex-end;gap:10mm;}
+.cover .foot .im{flex:1;display:flex;align-items:center;gap:5.4mm;}
+.cover .foot .im .tx{flex:1;text-align:right;}
+.cover .foot .gb{flex:none;background:#0C1527;padding:2.4mm 3mm;
+ border:.4pt solid rgba(214,186,128,.42);}
+.cover .foot .gb img{width:10.5mm;height:auto;display:block;}
+.cover .foot .pub{font-family:var(--fk);font-weight:600;font-size:9pt;color:#3B2A1D;
+ line-height:1.7;margin:0 0 1.6mm;}
+.cover .foot .pubL{font-family:var(--fu);font-weight:500;font-size:5.9pt;
+ letter-spacing:.12em;text-transform:uppercase;color:#8A7558;direction:ltr;
+ text-align:right;line-height:1.66;padding-left:.12em;}
+.cover .foot .ed{direction:ltr;text-align:left;padding-bottom:.4mm;}
+.cover .foot .ed b{display:block;font-family:var(--fa);font-weight:700;font-size:9.4pt;
+ color:#6B4A2E;direction:rtl;margin:0 0 1.4mm;}
+.cover .foot .ed span{display:block;font-family:var(--fu);font-weight:500;font-size:5.6pt;
+ letter-spacing:.15em;text-transform:uppercase;color:#9C8767;line-height:1.7;}
+/* ── imprint ────────────────────────────────────────────────────── */
+.imp{padding:0 7mm 0;}
+.imp h2{border:0;font-size:12.4pt;margin:0 0 6mm;color:var(--brown);padding:0;
+ letter-spacing:.01em;}
+.imp h2:before{content:'';display:block;width:16mm;height:.9pt;background:var(--gold);
+ margin:0 0 3mm;}
+.xver{display:flex;align-items:baseline;gap:5mm;border-top:1.4pt solid var(--gold);
+ border-bottom:.35pt solid var(--line);padding:3mm 0 3.4mm;margin:0 0 5.5mm;}
+.xver .vid{font-family:var(--fu);font-size:9.4pt;letter-spacing:.1em;
+ color:var(--brown);direction:ltr;}
+.xver .vd{font-size:9pt;color:var(--bronze);}
+.xver .vs{margin-right:auto;font-size:8.4pt;color:var(--burg);}
+.imp .attr{border-right:.9pt solid var(--gold);padding:3.4mm 6mm 4.4mm;background:var(--paper2);
+ margin:0 0 5.5mm;font-size:9.2pt;line-height:1.74;}
+.imp .attr .pend{margin-top:3.4mm;padding-top:2.8mm;font-family:var(--fa);
+ border-top:.4pt solid var(--line);font-size:9pt;color:var(--burg);
+ letter-spacing:0;line-height:1.7;}
+.imp .attr .pend span{display:block;font-family:var(--fu);font-weight:500;
+ font-size:6.4pt;letter-spacing:.09em;text-transform:uppercase;color:#8A6A62;
+ direction:ltr;margin-top:1.6mm;}
+.imp .attr .lat{display:block;font-size:7pt;margin-top:3mm;letter-spacing:.1em;
+ text-transform:none;color:var(--bronze);line-height:1.6;}
+.sups{border-top:1.3pt solid var(--gold);border-bottom:.35pt solid var(--line);
+ padding:3.2mm 0 3.6mm;margin:0 0 5.5mm;}
+.sups i{display:block;font-family:var(--fn);font-style:normal;font-size:7.6pt;
+ color:var(--mute);margin:0 0 1.8mm;}
+.sups b{display:block;font-family:var(--fa);font-weight:700;font-size:11pt;
+ color:var(--brown);line-height:1.55;}
+.imp .status{border-top:.9pt solid var(--burg);border-bottom:.4pt solid var(--hair);
+ padding:3mm 0 3.4mm;font-size:9pt;color:#4A3226;margin:0 0 5.5mm;line-height:1.74;}
+.toc{font-size:10pt;}
+.toc div{display:flex;justify-content:space-between;align-items:baseline;
+ border-bottom:.35pt solid var(--hair);padding:1.45mm 0;}
+.toc .t{color:var(--ink);} .toc .p{color:var(--mute);font-family:var(--fu);
+ font-size:8pt;letter-spacing:.08em;}
+.toc .pt{font-family:var(--fn);font-size:7.4pt;color:var(--gold3);
+ letter-spacing:0;margin:5mm 0 1.2mm;border-bottom:.7pt solid var(--gold);
+ padding-bottom:1.5mm;}
+/* ── part opener ────────────────────────────────────────────────── */
+.opener{page-break-before:always;height:235mm;display:flex;flex-direction:column;
+ justify-content:center;padding:0 7mm;position:relative;}
+.opener:before{content:'';position:absolute;right:0;top:34mm;bottom:34mm;width:1.6pt;
+ background:var(--gold);}
+.opener .pn{font-family:var(--fu);font-size:8pt;letter-spacing:.15em;
+ color:var(--gold);direction:ltr;margin:0 0 7mm;text-transform:uppercase;}
+.opener h2{font-size:27pt;color:var(--brown);border:0;margin:0 0 4.5mm;padding:0;
+ line-height:1.42;}
+.opener .ar2{font-size:14.5pt;color:var(--bronze);margin:0 0 7mm;}
+.opener .en3{font-family:var(--fu);font-size:8pt;letter-spacing:.11em;
+ color:var(--mute);direction:ltr;margin:0 0 12mm;text-transform:uppercase;}
+.opener p{font-size:11.6pt;color:#3F2E20;max-width:126mm;line-height:2.02;}
+.opener.p1:before{background:var(--green);} .opener.p2:before{background:var(--blue);}
+.opener.p3:before{background:var(--ox);} .opener.p4:before{background:var(--char);}
+.opener.p1 h2{color:var(--green);} .opener.p2 h2{color:var(--blue);}
+.opener.p3 h2{color:var(--ox);} .opener.p4 h2{color:var(--char);}
+.opener.p1 .ar2{color:var(--green2);} .opener.p2 .ar2{color:var(--blue2);}
+.opener.p3 .ar2{color:var(--ox2);} .opener.p4 .ar2{color:var(--char2);}
+.opener .stat{margin-top:14mm;display:flex;gap:0;border-top:.5pt solid var(--line);
+ padding-top:6mm;}
+.opener .stat>div{padding-left:12mm;margin-left:12mm;border-left:.35pt solid var(--hair);}
+.opener .stat>div:last-child{border-left:0;}
+.opener .stat b{display:block;font-family:var(--fa);font-size:23pt;
+ color:var(--brown);line-height:1;margin-bottom:1.5mm;}
+.opener .stat span{font-size:8pt;color:var(--mute);}
+/* ── headings ───────────────────────────────────────────────────── */
+h2{font-size:15pt;color:var(--brown);margin:0 0 6mm;padding:0 0 3.4mm;line-height:1.45;
+ border-bottom:.5pt solid var(--line);position:relative;page-break-after:avoid;}
+h2:after{content:'';position:absolute;bottom:-.5pt;right:0;width:22mm;height:1.4pt;
+ background:var(--gold);}
+h3{font-size:12.6pt;color:var(--brown);margin:9mm 0 3.5mm;page-break-after:avoid;}
+h5{font-size:10.4pt;color:var(--brown);margin:6mm 0 2mm;}
+h6{font-size:7.2pt;color:var(--bronze);margin:0 0 2mm;letter-spacing:0;}
+.lead{font-size:11pt;color:#3F2E20;line-height:1.98;margin-bottom:7mm;}
+/* ── journey band ───────────────────────────────────────────────── */
+.journey{margin:0 0 9mm;}
+.jrow{display:flex;gap:2mm;}
+.jsec{flex:1;border-top:1.4pt solid var(--gold);padding-top:2.5mm;}
+.jsec:nth-child(2){border-color:#9C7B41;} .jsec:nth-child(3){border-color:var(--bronze);}
+.jsec:nth-child(4){border-color:var(--panel);}
+.jsec .nm{font-size:9.6pt;color:var(--brown);font-weight:700;font-family:var(--fa);}
+.jsec .en4{font-family:var(--fu);font-size:6.8pt;letter-spacing:.075em;
+ color:var(--mute);direction:ltr;margin-bottom:2.5mm;text-transform:uppercase;}
+.jsec .cells{display:flex;gap:1.2mm;}
+.jsec .c{flex:1;background:var(--paper2);border-top:.35pt solid var(--hair);
+ text-align:center;padding:2.6mm 0 2mm;font-family:var(--fa);font-size:11pt;
+ color:var(--brown);}
+.jsec .c.gt{background:var(--brown);color:var(--champ);border-top-color:var(--brown);}
+.jsec .gl{font-size:5.9pt;color:var(--champ);margin-top:1.4mm;line-height:1.4;
+ font-family:var(--fn);letter-spacing:0;}
+/* ── the forms legend ───────────────────────────────────────────── */
+.forms{width:100%;border-collapse:collapse;font-size:9.6pt;margin:0 0 6mm;}
+.forms thead th{border-top:1pt solid var(--brown);border-bottom:.4pt solid var(--line);
+ padding:2.4mm 3mm;font-family:var(--fn);font-size:7pt;
+ color:var(--bronze);font-weight:400;letter-spacing:0;text-align:right;}
+.forms td{border-bottom:.35pt solid var(--hair);padding:2.9mm 3mm;text-align:right;
+ vertical-align:top;line-height:1.65;}
+.forms tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.forms .k{width:20%;font-weight:700;color:var(--brown);white-space:nowrap;}
+.forms .sw{display:inline-block;width:3mm;height:3mm;margin-left:2.4mm;
+ vertical-align:-.3mm;}
+/* ── glance + navigation ────────────────────────────────────────── */
+.glance,.nav{width:100%;border-collapse:collapse;font-size:8.8pt;}
+.glance th,.glance td,.nav th,.nav td{padding:2.7mm 2.6mm;text-align:right;
+ vertical-align:top;line-height:1.66;border-bottom:.35pt solid var(--hair);}
+.glance thead th,.nav thead th{border-top:1pt solid var(--brown);
+ border-bottom:.5pt solid var(--brown);background:transparent;
+ font-family:var(--fn);font-size:7pt;color:var(--bronze);
+ font-weight:400;letter-spacing:0;}
+.nav thead th{text-align:center;}
+.glance tbody tr:last-child td,.nav tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.glance .gcell{width:9%;text-align:center;white-space:nowrap;}
+.glance .gcell b{display:block;font-family:var(--fa);font-size:15pt;
+ color:var(--brown);line-height:1.05;}
+.glance .gcell span{font-size:6.8pt;color:var(--mute);}
+.glance td b{color:var(--brown);}
+.glance .gl-o{color:var(--mute);}
+.glance .gl-x{width:11%;color:var(--mute);font-size:8pt;}
+.glance .gl-none{color:#CBBFA9;}
+.glance tr.gsec td{background:transparent;border-bottom:.4pt solid var(--gold);
+ border-top:.4pt solid var(--gold);color:var(--brown);font-family:var(--fa);
+ font-weight:700;font-size:9.4pt;padding:2.4mm 2.6mm;}
+.glance tr.gsec span{color:var(--mute);font-weight:400;font-size:7.6pt;}
+.nav .ng{font-family:var(--fa);font-size:15pt;color:var(--brown);
+ text-align:center;width:7%;font-weight:700;}
+.nav .ns{color:var(--mute);font-size:8.2pt;width:12%;}
+.nav td.c{text-align:center;}
+.nav td b{font-family:var(--fa);color:var(--brown);font-size:10.4pt;}
+.nav .sl{color:#A89880;font-size:7.6pt;}
+.nav .ngate{font-size:8pt;color:var(--burg);width:19%;}
+/* ── class page ─────────────────────────────────────────────────── */
+.cpage{page-break-before:always;padding:0 0 9mm;}
+.cph{display:flex;align-items:center;gap:7mm;padding-bottom:4.5mm;margin:0 0 7mm;
+ border-bottom:.5pt solid var(--line);position:relative;}
+.cph:after{content:'';position:absolute;bottom:-.5pt;right:0;width:30mm;height:1.4pt;
+ background:var(--gold);}
+.cpn{font-family:var(--fa);font-size:40pt;line-height:1;color:var(--gold2);
+ font-weight:700;min-width:20mm;text-align:center;
+ border-left:.35pt solid var(--hair);padding-left:6mm;}
+.cpt{flex:1;}
+.cpt h2{border:0;padding:0;margin:0;font-size:21pt;line-height:1.25;}
+.cpt h2:after{display:none;}
+.cpsec{font-size:9.4pt;color:var(--mute);margin-top:1.6mm;}
+.cpsec .en{display:inline;margin-right:2mm;}
+.cpgate{margin-right:auto;align-self:center;font-family:var(--fa);font-size:9.6pt;
+ color:var(--burg);border-top:.9pt solid var(--burg);border-bottom:.35pt solid var(--line);
+ padding:1.8mm 0 1.8mm;min-width:34mm;text-align:center;}
+.cphifz{border-right:.9pt solid var(--gold);padding:2.6mm 5mm 3.8mm;background:var(--paper2);
+ font-size:10pt;margin:0 0 6mm;}
+/* ── the class card — editorial architecture, not a widget ──────── */
+.ccard{margin:0 0 8mm;page-break-inside:avoid;}
+.pg,.cpage{padding-bottom:6mm;}
+.ccrow{display:flex;page-break-inside:avoid;border-top:1.4pt solid var(--gold);
+ border-bottom:.5pt solid var(--line);padding:5mm 0 4.5mm;margin:0 0 5mm;}
+.ccbig{flex:1;overflow:hidden;text-align:center;padding:0 5mm;border-left:.35pt solid var(--hair);}
+.ccbig:last-child{border-left:0;}
+.ccbig b{display:block;font-family:var(--fa);font-size:30pt;line-height:.96;
+ color:var(--brown);font-weight:700;margin-bottom:2.6mm;}
+.ccbig.alt b{color:var(--bronze);}
+.ccbig span{display:block;font-size:8.4pt;color:#5A4A38;line-height:1.4;}
+.ccbig i{display:block;font-family:var(--fu);font-style:normal;
+ font-size:6pt;letter-spacing:.09em;color:#B0A18C;text-transform:uppercase;
+ direction:ltr;margin-top:1.6mm;white-space:nowrap;}
+.ccprog{display:flex;gap:7mm;margin:0 0 5mm;}
+.ccp{flex:1;border-top:.9pt solid var(--gold);padding-top:2.6mm;}
+.ccp.p2{border-color:var(--bronze);} .ccp.p3{border-color:var(--burg);}
+.ccp.p4{border-color:#A08F79;} .ccp.shared{border-color:var(--hair);}
+.ccp h6{margin:0 0 2mm;font-size:8pt;color:var(--brown);font-family:var(--fa);
+ font-weight:700;letter-spacing:0;}
+.ccn{display:flex;gap:6mm;font-size:8.2pt;color:var(--mute);}
+.ccn b{font-family:var(--fa);font-size:13pt;color:var(--brown);
+ margin-left:1.4mm;font-weight:700;}
+.ccfoot{border-top:.35pt solid var(--hair);padding-top:3mm;font-size:8.8pt;
+ color:#4A3B2C;line-height:2.05;}
+.ccfoot b{color:var(--brown);}
+.ccfoot .lb{display:inline-block;width:17mm;color:var(--mute);font-size:6.9pt;
+ font-family:var(--fn);letter-spacing:0;}
+.ccmeth{font-size:7.8pt;color:var(--mute);line-height:1.78;margin:3.5mm 0 0;
+ border-top:.35pt solid var(--hair);padding-top:2.6mm;}
+/* ── academic tables — rules above and below, none between ──────── */
+.alh{font-size:11.8pt;color:var(--brown);margin:0 0 4.5mm;padding:0 0 2.8mm;line-height:1.45;
+ border-bottom:.5pt solid var(--line);position:relative;}
+.alh:after{content:'';position:absolute;bottom:-.5pt;right:0;width:22mm;height:1.4pt;
+ background:var(--gold);}
+.alt{margin:0 0 6mm;page-break-inside:avoid;overflow:hidden;}
+.alt h4{font-size:10.4pt;color:var(--brown);margin:0 0 2.4mm;padding-right:3.4mm;
+ border-right:1.6pt solid var(--gold);line-height:1.35;}
+.alt.p1 h4{border-color:var(--green);color:var(--green);}
+.alt.p2 h4{border-color:var(--blue);color:var(--blue);}
+.alt.p3 h4{border-color:var(--ox);color:var(--ox);}
+.alt.p4 h4{border-color:var(--char);color:var(--char);}
+.atab{width:100%;border-collapse:collapse;font-size:9pt;}
+/* a header must never print alone at a page foot */
+.atab thead,.books thead,.txt thead,.xrt thead,.rota thead,.open thead,
+.glance thead,.nav thead,.xmap thead{break-after:avoid;page-break-after:avoid;}
+.atab tr,.books tr,.txt tr,.xrt tr,.rota tr,.open tr,.glance tr,.nav tr,.xmap tr{
+ break-inside:avoid;page-break-inside:avoid;}
+.alt h4,.books h3,.rota h6,.xreg h4{break-after:avoid;page-break-after:avoid;}
+.atab thead th{background:transparent;color:var(--bronze);
+ font-family:var(--fn);font-size:7pt;font-weight:400;
+ letter-spacing:0;padding:2.4mm 2.4mm;text-align:right;
+ border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);}
+.atab tbody th{text-align:right;font-family:var(--fa);font-weight:700;
+ color:var(--brown);width:22%;padding:2.4mm 2.4mm 3.4mm;border-bottom:.3pt solid var(--hair);}
+.atab td{padding:2.4mm 2.4mm 3.4mm;border-bottom:.3pt solid var(--hair);color:#3F3225;
+ vertical-align:top;line-height:1.6;}
+.atab tbody tr:nth-child(even) th,.atab tbody tr:nth-child(even) td{background:#F8F2E6;}
+/* the three table voices: brown for allocation, blue for navigation,
+   cream for reference. Header treatment carries the distinction. */
+.alt.p1 .atab thead th{background:var(--green);color:#D9E7E1;border-top-color:var(--green);}
+.alt.p2 .atab thead th{background:var(--blue);color:#DCE4F2;border-top-color:var(--blue);}
+.alt.p3 .atab thead th{background:var(--ox);color:#F0DBDA;border-top-color:var(--ox);}
+.alt.p4 .atab thead th{background:var(--char);color:#EAE6DE;border-top-color:var(--char);}
+.alt.p1 .atab tbody tr:nth-child(even) th,
+.alt.p1 .atab tbody tr:nth-child(even) td{background:var(--greentint);}
+.alt.p2 .atab tbody tr:nth-child(even) th,
+.alt.p2 .atab tbody tr:nth-child(even) td{background:var(--bluetint);}
+.alt.p3 .atab tbody tr:nth-child(even) th,
+.alt.p3 .atab tbody tr:nth-child(even) td{background:var(--oxtint);}
+.alt.p4 .atab tbody tr:nth-child(even) th,
+.alt.p4 .atab tbody tr:nth-child(even) td{background:var(--chartint);}
+.nav thead th{background:var(--panel);color:var(--champ);border-top-color:var(--panel);
+ border-bottom-color:var(--panel);}
+.nav tbody tr:nth-child(even) td,.nav tbody tr:nth-child(even) th{background:var(--ivory);}
+.glance thead th{background:var(--panel);color:var(--champ);border-top-color:var(--panel);
+ border-bottom-color:var(--panel);}
+.glance tbody tr:nth-child(even) td,.glance tbody tr:nth-child(even) th{background:#F8F2E6;}
+.books tbody tr:nth-child(even) th,.books tbody tr:nth-child(even) td{background:#FAF5EA;}
+.txt tbody tr:nth-child(even) td{background:#F8F2E6;}
+.rota thead th{background:var(--panel2);color:var(--champ);border-top-color:var(--panel2);}
+.rota tbody tr:nth-child(even) th,.rota tbody tr:nth-child(even) td{background:var(--ivory);}
+.atab tbody tr:last-child th,.atab tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.atab td.c{text-align:center;}
+.atab td b{font-family:var(--fa);font-size:10.4pt;color:var(--brown);}
+.atab td i{color:var(--mute);font-style:normal;font-size:7.4pt;}
+.rota{margin-top:5mm;page-break-inside:avoid;}
+.rota h6{font-family:var(--fa);font-weight:700;font-size:9.4pt;color:var(--brown);
+ letter-spacing:0;margin-bottom:2.4mm;}
+.rota table{width:100%;border-collapse:collapse;font-size:8.8pt;}
+.rota th,.rota td{padding:2.2mm 2.4mm;text-align:center;
+ border-bottom:.3pt solid var(--hair);}
+.rota thead th{border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);
+ color:var(--bronze);font-family:var(--fn);font-size:7pt;
+ font-weight:400;letter-spacing:0;}
+.rota tbody th{color:var(--brown);font-family:var(--fa);font-weight:700;}
+.rota tbody tr:last-child th,.rota tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.books{margin-top:6mm;page-break-inside:auto;overflow:hidden;}
+.books h3{margin:0 0 2.8mm;font-size:10.6pt;color:var(--brown);padding-bottom:2mm;
+ border-bottom:.9pt solid var(--gold);}
+.books table{width:100%;border-collapse:collapse;font-size:8.8pt;}
+.books tr{page-break-inside:avoid;}
+.books th{width:21%;text-align:right;vertical-align:top;padding:2mm 3.4mm 2mm 0;
+ color:var(--bronze);font-family:var(--fa);font-weight:700;
+ border-bottom:.3pt solid var(--hair);}
+.books td{padding:2mm 0;color:#3F3225;border-bottom:.3pt solid var(--hair);
+ line-height:1.62;}
+.books tr:last-child th,.books tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.books .nosrc{color:var(--burg);font-style:normal;}
+.cpfoot{margin-top:5mm;border-top:.35pt solid var(--hair);padding-top:3mm;
+ font-size:8.8pt;color:var(--mute);}
+.cpfoot b{color:var(--brown);font-family:var(--fa);font-size:10pt;}
+/* ── marks & flags ──────────────────────────────────────────────── */
+.slist{list-style:none;margin:0;padding:0;}
+.slist li{position:relative;padding-right:5.6mm;margin:0 0 2.4mm;font-size:9.8pt;}
+.slist .mk{position:absolute;right:0;top:1.8mm;width:2.6mm;height:2.6mm;display:block;}
+.mk.m-ind{background:var(--brown);} .mk.m-trm{background:#A7854A;}
+.mk.m-mrg{background:#8A6B45;} .mk.m-emb{background:var(--gold2);}
+.mk.m-unt{background:#D8BE8B;} .mk.m-rot{background:#DFCBA6;}
+.mk.m-str{background:#EFE2C8;} .mk.m-q{background:#EFD6CF;}
+.keyrow{display:flex;flex-wrap:wrap;gap:2.6mm 7mm;font-size:8.2pt;font-family:var(--fn);margin:0 0 6mm;
+ border-top:.9pt solid var(--gold);border-bottom:.35pt solid var(--hair);
+ padding:4mm 0 4mm;}
+.keyrow span{display:flex;align-items:center;gap:2.2mm;}
+.keyrow i{width:2.8mm;height:2.8mm;display:block;}
+.cdr{font-family:var(--fn);font-size:6.4pt;letter-spacing:0;
+ color:var(--burg);border-bottom:.4pt solid #DEBFB6;padding-bottom:.3mm;
+ white-space:nowrap;direction:rtl;}
+
+
+/* ═══ EXECUTIVE OPENING ════════════════════════════════════════════ */
+.xpg{page-break-before:always;page-break-after:always;padding-bottom:4mm;}
+.xpg.brk{page-break-before:always;page-break-after:always;}
+.xmast{text-align:center;border-top:2.2pt solid var(--gold);
+ border-bottom:.5pt solid var(--line);padding:5mm 0 4.5mm;margin:0 0 5mm;
+ background:linear-gradient(180deg,var(--paper2) 0%,var(--paper) 100%);}
+.xlat{font-family:var(--fu);font-size:8.4pt;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--bronze);direction:ltr;margin:0 0 2.5mm;}
+.xmast h1{font-size:19pt;color:var(--brown);margin:0 0 3.4mm;line-height:1.45;}
+.xdiv{display:flex;align-items:center;justify-content:center;margin:0 0 4mm;}
+.xdiv:before,.xdiv:after{content:'';width:24mm;height:.4pt;background:var(--line);}
+.xdiv i{width:2.4mm;height:2.4mm;background:var(--gold);transform:rotate(45deg);
+ margin:0 3mm;display:block;}
+.xdept{font-size:13pt;color:var(--brown);font-weight:600;
+ margin:0 0 2.2mm;line-height:1.5;}
+.xlat2{font-family:var(--fu);font-size:7.4pt;font-weight:600;letter-spacing:.085em;
+ text-transform:uppercase;color:var(--bronze);direction:ltr;margin:0 0 5mm;}
+.xhb{display:inline-block;font-size:9pt;color:var(--brown);
+ border-top:.9pt solid var(--gold);border-bottom:.9pt solid var(--gold);
+ padding:1.8mm 7mm;letter-spacing:.02em;}
+.xlead{font-size:9.8pt;line-height:1.8;color:#3F2E20;margin:0 0 4.5mm;text-align:justify;}
+.xgrid{display:flex;gap:3.5mm;margin:0 0 5.5mm;page-break-inside:avoid;}
+.xp{flex:1;overflow:hidden;border:.35pt solid var(--line);background:var(--ivory);padding:3.6mm 3.4mm 4.4mm;
+ position:relative;}
+.xp:before{content:'';position:absolute;top:0;right:0;left:0;height:1.8pt;background:var(--gold);}
+.xp.p1{background:var(--greentint);border-color:#D6E2DB;} .xp.p1:before{background:var(--green);}
+.xp.p2{background:var(--bluetint);border-color:#D6DCE8;} .xp.p2:before{background:var(--blue);}
+.xp.p3{background:var(--oxtint);border-color:#E5D3D1;} .xp.p3:before{background:var(--ox);}
+.xp.p1 h3{color:var(--green);} .xp.p2 h3{color:var(--blue);} .xp.p3 h3{color:var(--ox);}
+.xpn{font-family:var(--fd);font-size:15pt;color:var(--gold);
+ direction:ltr;line-height:1;margin:0 0 2mm;}
+.xp.p1 .xpn{color:var(--green2);} .xp.p2 .xpn{color:var(--blue2);}
+.xp.p3 .xpn{color:var(--ox2);}
+.xp h3{margin:0 0 1.2mm;font-size:12pt;color:var(--brown);}
+.xpe{font-family:var(--fu);font-size:6.6pt;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--mute);direction:ltr;margin:0 0 3mm;}
+.xpstat{display:flex;gap:5mm;font-size:8pt;color:#6B5C48;margin:0 0 2.5mm;
+ border-top:.35pt solid var(--hair);border-bottom:.35pt solid var(--hair);padding:2mm 0;}
+.xpstat b{font-family:var(--fa);font-size:12.5pt;color:var(--brown);margin-left:1.2mm;}
+.xp p{margin:0;font-size:8.2pt;line-height:1.62;color:#4A3B2C;}
+.xsec{page-break-inside:avoid;}
+.xsec h4{font-size:11pt;color:var(--brown);margin:0 0 3.5mm;padding-bottom:2mm;
+ border-bottom:.5pt solid var(--line);position:relative;}
+.xsec h4:after{content:'';position:absolute;bottom:-.5pt;right:0;width:18mm;height:1.4pt;
+ background:var(--gold);}
+.xsrow{display:flex;gap:3mm;page-break-inside:avoid;}
+.xs{flex:1;overflow:hidden;border:.35pt solid var(--line);padding:3mm 3mm 4mm;background:var(--ivory);}
+.xs.s2{background:var(--ramp2);} .xs.s3{background:var(--cream);}
+.xs.s4{background:var(--parch);border-color:#DCC9A6;}
+.xsn{font-family:var(--fa);font-size:14pt;color:var(--gold);font-weight:700;
+ line-height:1;margin:0 0 2mm;}
+.xs b{display:block;font-size:10pt;color:var(--brown);margin:0 0 .8mm;}
+.xs i{display:block;font-family:var(--fu);font-style:normal;font-size:6.2pt;
+ letter-spacing:.09em;text-transform:uppercase;color:var(--mute);direction:ltr;margin:0 0 2mm;}
+.xs span{display:block;font-size:7.8pt;color:#5A4A38;line-height:1.5;margin:0 0 1.8mm;}
+.xs u{display:block;text-decoration:none;font-size:7.6pt;color:var(--burg);
+ border-top:.35pt solid var(--hair);padding-top:1.8mm;}
+.xnote{margin:4mm 0 0;page-break-inside:avoid;font-size:8.2pt;color:var(--mute);border-top:.35pt solid var(--hair);
+ padding-top:3mm;line-height:1.75;}
+/* subject register */
+.xreg{margin:0 0 5mm;page-break-inside:avoid;overflow:hidden;}
+.xreg h4{font-size:10.6pt;color:var(--brown);margin:0 0 2.4mm;padding-bottom:1.8mm;
+ border-bottom:.9pt solid var(--gold);display:flex;align-items:baseline;}
+.xreg.p1 h4{border-color:var(--green);color:var(--green);}
+.xreg.p2 h4{border-color:var(--blue);color:var(--blue);}
+.xreg.p3 h4{border-color:var(--ox);color:var(--ox);}
+.xreg h4 em{margin-right:auto;font-style:normal;font-size:7.6pt;color:var(--mute);}
+.rnum{font-family:var(--fd);font-size:9pt;color:var(--gold);
+ direction:ltr;margin-left:3mm;}
+.xreg.p1 .rnum{color:var(--green2);} .xreg.p2 .rnum{color:var(--blue2);}
+.xreg.p3 .rnum{color:var(--ox2);}
+.xrt{width:100%;border-collapse:collapse;font-size:8.6pt;}
+.xrt thead th{font-family:var(--fn);font-size:6.6pt;font-weight:400;
+ letter-spacing:0;color:var(--bronze);padding:1.6mm 2.2mm;text-align:right;
+ border-bottom:.4pt solid var(--line);}
+.xrt tbody th{text-align:right;font-family:var(--fa);font-weight:700;color:var(--brown);
+ width:34%;padding:1.7mm 2.2mm;border-bottom:.3pt solid var(--hair);}
+.xrt td{padding:1.7mm 2.2mm;border-bottom:.3pt solid var(--hair);color:#4A3B2C;}
+.xrt td.c{text-align:center;font-family:var(--fa);color:var(--brown);}
+.xrt tbody tr:nth-child(even) th,.xrt tbody tr:nth-child(even) td{background:#F9F4E9;}
+.xreg.p1 .xrt tbody tr:nth-child(even) th,
+.xreg.p1 .xrt tbody tr:nth-child(even) td{background:var(--greentint);}
+.xreg.p2 .xrt tbody tr:nth-child(even) th,
+.xreg.p2 .xrt tbody tr:nth-child(even) td{background:var(--bluetint);}
+.xreg.p3 .xrt tbody tr:nth-child(even) th,
+.xreg.p3 .xrt tbody tr:nth-child(even) td{background:var(--oxtint);}
+/* the journey map */
+.xmap{width:100%;border-collapse:collapse;font-size:7.8pt;}
+.xmap thead th{background:var(--panel);color:var(--champ);font-family:var(--fa);
+ font-size:9pt;padding:2mm 0;text-align:center;width:5.6%;}
+.xmap thead th.gt{background:var(--gold);color:var(--esp);font-weight:700;}
+.xmap thead th.ms{background:var(--panel);text-align:right;width:26%;padding-right:2.4mm;
+ font-size:7pt;font-family:var(--fn);font-weight:400;}
+.xmap th.ms{text-align:right;font-family:var(--fa);font-weight:700;color:var(--brown);
+ padding:1.5mm 2.4mm 1.5mm 0;font-size:8.4pt;border-bottom:.3pt solid var(--hair);}
+.xmap td{border-bottom:.3pt solid var(--hair);border-left:.3pt solid #F2EADB;height:5mm;}
+.xmap td.m0{background:#F6F2E9;}
+.xmap td.ind{background:var(--brown);} .xmap td.trm{background:#A7854A;}
+.xmap td.mrg{background:#8A6B45;} .xmap td.emb{background:var(--gold2);}
+.xmap td.unt{background:#D8BE8B;} .xmap td.rot{background:#DFCBA6;}
+.xmap td.str{background:#EFE2C8;}
+.xmap td.mq{background:#EFD6CF;color:var(--burg);text-align:center;font-size:7pt;}
+.xmap tr.mh td{background:var(--cream);color:var(--brown);font-family:var(--fa);
+ font-weight:700;font-size:9pt;padding:2mm 2.4mm;border-top:.9pt solid var(--gold);
+ border-bottom:.4pt solid var(--line);text-align:right;}
+.xmap tr.mh.p1 td{background:var(--greenpale);border-top-color:var(--green);color:var(--green);}
+.xmap tr.mh.p2 td{background:var(--bluepale);border-top-color:var(--blue);color:var(--blue);}
+.xmap tr.mh.p3 td{background:var(--oxpale);border-top-color:var(--ox);color:var(--ox);}
+.xmap tr.mh.p4 td{background:var(--charpale);border-top-color:var(--char);color:var(--char);}
+.mapkey{display:flex;flex-wrap:wrap;gap:2.4mm 6mm;font-size:8pt;font-family:var(--fn);margin:5mm 0 0;
+ border-top:.9pt solid var(--gold);padding-top:3.5mm;}
+.mapkey span{display:flex;align-items:center;gap:2mm;}
+.mapkey i{width:3.4mm;height:3.4mm;display:block;font-style:normal;}
+.mapkey i.ind{background:var(--brown);} .mapkey i.trm{background:#A7854A;}
+.mapkey i.mrg{background:#8A6B45;} .mapkey i.emb{background:var(--gold2);}
+.mapkey i.unt{background:#D8BE8B;} .mapkey i.str{background:#EFE2C8;}
+.mapkey i.mqk{background:#EFD6CF;color:var(--burg);text-align:center;font-size:6.4pt;
+ line-height:3.4mm;} .mapkey i.g0{background:#F6F2E9;}
+
+/* ═══ SHRS SURFACE & ORNAMENT SYSTEM ═══════════════════════════════
+   Six paper tones, one gold, one deep anchor. Every surface carries a
+   different class of information — tone is meaning, not decoration.
+   The ornament is a single form: the rotated lozenge (المِعيَن), used as
+   registration mark, divider centre and corner. Nothing else is added.
+   ════════════════════════════════════════════════════════════════ */
+
+/* the lozenge — the one ornament in the system */
+.loz{display:inline-block;width:2.2mm;height:2.2mm;background:var(--gold);
+ transform:rotate(45deg);vertical-align:middle;margin:0 2.4mm;}
+.divider{display:flex;align-items:center;gap:0;margin:7mm 0;}
+.divider:before,.divider:after{content:'';flex:1;height:.4pt;background:var(--line);}
+.divider i{width:2.6mm;height:2.6mm;background:var(--gold);transform:rotate(45deg);
+ margin:0 3mm;display:block;}
+.cnr{position:absolute;width:4.2mm;height:4.2mm;}
+.cnr.tl{top:0;left:0;border-top:.9pt solid var(--gold2);border-left:.9pt solid var(--gold2);}
+.cnr.tr{top:0;right:0;border-top:.9pt solid var(--gold2);border-right:.9pt solid var(--gold2);}
+/* ── class page: a composed band, not a rule ─────────────────────── */
+.cpband{position:relative;background:var(--panel);color:#F3E8D6;
+ display:flex;align-items:center;gap:7mm;padding:6.5mm 7mm;margin:0 0 7mm;
+ border-top:2pt solid var(--gold);}
+.cpband .cpn{font-family:var(--fa);font-size:42pt;line-height:1;color:var(--champ);
+ font-weight:700;min-width:22mm;text-align:center;
+ border-left:.5pt solid rgba(196,161,91,.45);padding-left:7mm;}
+.cpband .cpt{flex:1;}
+.cpband .cpt h2{border:0;padding:0;margin:0;font-size:19pt;color:#FFFCF6;line-height:1.4;}
+.cpband .cpt h2:after{display:none;}
+.cpband .cpsec{font-size:9.4pt;color:#BFAB8B;margin-top:1.8mm;}
+.cpband .cpsec .en{color:#9B876A;}
+.cpgate{margin-right:auto;align-self:center;text-align:center;font-family:var(--fa);
+ font-size:10pt;color:var(--champ);border:.5pt solid rgba(196,161,91,.55);
+ padding:2.4mm 5mm;min-width:36mm;background:rgba(0,0,0,.16);}
+.cpgate em{display:block;font-family:var(--fu);font-style:normal;
+ font-size:6.6pt;letter-spacing:.08em;text-transform:uppercase;color:#9B876A;
+ margin-bottom:1mm;direction:ltr;}
+/* ── the metric family: one dominant, three graded ───────────────── */
+.ccrow{display:flex;gap:3mm;border:0;padding:0;margin:0 0 6mm;}
+.ccbig{flex:1;overflow:hidden;text-align:center;padding:5mm 4mm 5.6mm;border:.35pt solid var(--line);
+ position:relative;}
+.ccbig:before{content:'';position:absolute;top:0;right:0;left:0;height:1.4pt;
+ background:var(--gold);}
+.ccbig.s1{background:var(--panel);border-color:var(--panel);flex:1.18;}
+.ccbig.s1:before{background:var(--champ);height:2pt;}
+.ccbig.s1 b{color:var(--champ);font-size:34pt;}
+.ccbig.s1 span{color:#E4D6BC;} .ccbig.s1 i{color:#9B876A;}
+.ccbig.s1 em{position:absolute;top:3.4mm;left:3.4mm;width:2.2mm;height:2.2mm;
+ background:var(--gold2);transform:rotate(45deg);}
+.ccbig.s2{background:var(--cream);border-color:#DFCBA6;}
+.ccbig.s3{background:var(--ramp2);border-color:#E4D7BC;}
+.ccbig.s4{background:var(--parch);border-color:#DCC9A6;}
+.ccbig.s4 b{color:var(--bronze);}
+.ccbig b{display:block;font-family:var(--fa);font-size:29pt;line-height:.98;
+ color:var(--brown);font-weight:700;margin-bottom:2.8mm;}
+.ccbig span{display:block;font-size:8.4pt;color:#4A3B2C;line-height:1.4;}
+.ccbig i{display:block;font-family:var(--fu);font-style:normal;
+ font-size:6.5pt;letter-spacing:.075em;color:#A8967C;text-transform:uppercase;
+ direction:ltr;margin-top:1.8mm;white-space:nowrap;}
+/* ── the three programmes as academic divisions ──────────────────── */
+.ccprog{display:flex;gap:3mm;margin:0 0 5mm;}
+.ccp{flex:1;overflow:hidden;position:relative;padding:4mm 4mm 4.8mm 4mm;border:.35pt solid var(--line);
+ background:var(--ivory);}
+.ccp:before{content:'';position:absolute;top:0;right:0;left:0;height:1.6pt;
+ background:var(--gold);}
+.ccp.p1{background:var(--greentint);border-color:#D6E2DB;}
+.ccp.p1:before{background:var(--green);}
+.ccp.p1 h6{color:var(--green);}
+.ccp.p2{background:var(--bluetint);border-color:#D6DCE8;}
+.ccp.p2:before{background:var(--blue);}
+.ccp.p2 h6{color:var(--blue);}
+.ccp.p3{background:var(--oxtint);border-color:#E5D3D1;}
+.ccp.p3:before{background:var(--ox);}
+.ccp.p3 h6{color:var(--ox);}
+.ccp.p4{background:var(--chartint);border-color:#DFDBD1;}
+.ccp.p4:before{background:var(--char);} .ccp.p4 h6{color:var(--char);}
+.ccp.shared{background:var(--paper2);} .ccp.shared:before{background:var(--line);}
+.ccp .rn{position:absolute;top:3mm;left:4mm;font-family:var(--fd);
+ font-size:12pt;color:rgba(59,42,29,.19);direction:ltr;line-height:1;}
+.ccp h6{margin:0 0 2.4mm;font-size:9.4pt;color:var(--brown);font-family:var(--fa);
+ font-weight:700;letter-spacing:0;}
+.ccn{display:flex;gap:6mm;font-size:8.2pt;color:#6B5C48;}
+.ccn b{font-family:var(--fa);font-size:14pt;color:var(--brown);margin-left:1.4mm;
+ font-weight:700;}
+.ccfoot{border-top:.35pt solid var(--hair);border-bottom:.35pt solid var(--hair);
+ padding:3.2mm 0 4.4mm;font-size:8.8pt;color:#4A3B2C;line-height:2.05;background:var(--paper2);
+ padding-right:4mm;padding-left:4mm;}
+/* ── section openings: four academic stages ──────────────────────── */
+.secop{margin:0 0 9mm;page-break-inside:avoid;overflow:hidden;border:.35pt solid var(--line);
+ background:var(--ivory);}
+.secop.s1{background:var(--ivory);} .secop.s2{background:var(--ramp2);}
+.secop.s3{background:var(--cream);} .secop.s4{background:var(--parch);}
+.sob{display:flex;align-items:center;gap:6mm;background:var(--panel);color:#F3E8D6;
+ padding:4.5mm 6mm;border-top:1.8pt solid var(--gold);}
+.son{font-family:var(--fa);font-size:26pt;color:var(--champ);line-height:1;
+ font-weight:700;min-width:13mm;text-align:center;
+ border-left:.5pt solid rgba(196,161,91,.42);padding-left:6mm;}
+.sot{flex:1;} .sot h3{margin:0;font-size:14.5pt;color:#FFFCF6;line-height:1.4;}
+.soe{font-size:7pt;letter-spacing:.08em;color:#9B876A;margin-top:1.4mm;}
+.socells{display:flex;gap:1.6mm;}
+.socells i{width:8mm;height:8mm;line-height:8mm;text-align:center;font-style:normal;
+ font-family:var(--fa);font-size:11pt;color:#E4D6BC;
+ border:.5pt solid rgba(196,161,91,.4);}
+.socells i.gt{background:var(--gold);color:var(--esp);border-color:var(--gold);
+ font-weight:700;}
+.sob2{padding:4.5mm 6mm 5.5mm;}
+.soc{color:var(--bronze);font-size:10.6pt;margin:0 0 2.4mm;font-weight:700;
+ font-family:var(--fa);}
+.sod{margin:0;font-size:10pt;line-height:1.9;}
+/* ── programme openers: a division, not a heading ────────────────── */
+.opener{background:transparent;}
+.opener.p1,.opener.p2,.opener.p3,.opener.p4{padding:0 7mm;}
+.opener .pmark{position:absolute;top:30mm;right:7mm;font-family:var(--fd);
+ font-size:74pt;color:rgba(59,42,29,.055);direction:ltr;line-height:1;}
+.opener .ornrow{display:flex;align-items:center;margin:0 0 9mm;}
+.opener .ornrow:before{content:'';flex:0 0 22mm;height:1.4pt;background:var(--gold);}
+.opener .ornrow i{width:2.6mm;height:2.6mm;background:var(--gold);transform:rotate(45deg);
+ margin:0 3mm;display:block;}
+.opener .ornrow:after{content:'';flex:1;height:.4pt;background:var(--line);}
+/* ── lifeline & subject cards ───────────────────────────────────── */
+.ll{display:flex;gap:1mm;margin:2mm 0 2.4mm;}
+.ll i{flex:1;height:4.6mm;display:block;}
+.ll .b0{background:#F3EFE6;}
+.ll .ind{background:var(--brown);} .ll .trm{background:#A7854A;}
+.ll .mrg{background:#8A6B45;} .ll .emb{background:var(--gold2);}
+.ll .unt{background:#D8BE8B;} .ll .rot{background:#DFCBA6;}
+.ll .str{background:#EFE2C8;}
+.ll .bq{background:#EFD6CF;color:var(--burg);font-size:6.6pt;text-align:center;
+ line-height:4.6mm;font-style:normal;font-family:var(--fa);}
+.phs{font-size:8.2pt;color:#5A4A38;margin:0 0 2.4mm;line-height:2;}
+.ph{border-bottom:.35pt solid var(--hair);padding:0 1.4mm .6mm;white-space:nowrap;}
+.ph b{color:var(--brown);font-family:var(--fa);font-size:8.4pt;}
+.ph.ph-warn{border-bottom-color:#DEBFB6;color:var(--burg);}
+.hh{color:var(--mute);}
+.cards{column-count:2;column-gap:9mm;}
+.card{break-inside:avoid;page-break-inside:avoid;border-top:.9pt solid var(--brown);
+ padding:2.8mm 0 4mm;margin:0 0 5mm;}
+.p1 .card{border-color:var(--gold);} .p2 .card{border-color:var(--bronze);}
+.p3 .card{border-color:var(--burg);} .p4 .card{border-color:#A08F79;}
+.ct{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.6mm;}
+.ct h4{font-size:11.4pt;color:var(--brown);margin:0;}
+.span{font-size:7.2pt;color:var(--mute);white-space:nowrap;}
+.span b{font-family:var(--fa);color:var(--bronze);font-size:9.4pt;margin-right:2mm;}
+.card dl{margin:0;display:grid;grid-template-columns:16% 84%;gap:.8mm 0;font-size:9pt;}
+.card dt{color:var(--mute);font-size:7pt;font-family:var(--fn);
+ letter-spacing:0;padding-top:.9mm;}
+.card dd{margin:0;line-height:1.6;}
+.card dd.warn{color:var(--burg);}
+/* ── texts, rules, open items ───────────────────────────────────── */
+.txt{width:100%;border-collapse:collapse;font-size:9.2pt;}
+.txt th,.txt td{border-bottom:.3pt solid var(--hair);padding:2.4mm 2.6mm;text-align:right;}
+.txt thead th{border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);
+ font-family:var(--fn);font-size:7pt;color:var(--bronze);
+ font-weight:400;letter-spacing:0;}
+.txt tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.txt .gr{font-family:var(--fa);color:var(--brown);white-space:nowrap;width:12%;
+ font-weight:700;}
+.txt .kd{color:var(--mute);font-size:8pt;width:17%;}
+.txt tr.sec td{border-top:.4pt solid var(--gold);border-bottom:.4pt solid var(--gold);
+ background:transparent;font-family:var(--fa);font-weight:700;font-size:9.4pt;
+ color:var(--brown);padding:2.4mm 2.6mm;}
+.rules{margin:0;padding:0;list-style:none;counter-reset:r;}
+.rules li{counter-increment:r;position:relative;padding-right:12mm;margin:0 0 5.4mm;
+ font-size:10.2pt;page-break-inside:avoid;line-height:1.85;}
+.rules li:before{content:counter(r);position:absolute;right:0;top:-.6mm;
+ font-family:var(--fa);font-size:15pt;color:var(--gold2);font-weight:700;}
+.rules b{color:var(--brown);}
+.open{width:100%;border-collapse:collapse;font-size:9.4pt;margin-top:4mm;}
+.open th,.open td{border-bottom:.3pt solid var(--hair);padding:2.8mm 2.6mm;
+ text-align:right;vertical-align:top;line-height:1.7;}
+.open thead th{border-top:.9pt solid var(--brown);border-bottom:.4pt solid var(--line);
+ font-size:7pt;color:var(--bronze);font-family:var(--fn);
+ font-weight:400;letter-spacing:0;}
+.open tbody tr:last-child td{border-bottom:.8pt solid var(--brown);}
+.open .w{width:31%;color:var(--brown);font-weight:700;}
+.colo{margin-top:11mm;border-top:.9pt solid var(--gold);padding-top:4.5mm;
+ font-size:8.4pt;color:var(--mute);line-height:1.85;}
+.cls{border-top:.9pt solid var(--brown);padding:3.4mm 0 4.5mm;margin:0 0 6mm;
+ page-break-inside:avoid;}
+.clsh{display:flex;align-items:baseline;gap:5mm;margin:0 0 3mm;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   THE BACK BOARD AND THE SPINE · one object with the front
+   ───────────────────────────────────────────────────────────────────
+   The front is brown over cream; the back inverts it — cream over a
+   quarter-height band of the same cloth, so the brown runs unbroken
+   across the spine and then stops. The arch returns mirrored, so its
+   crop falls on the other edge of the sheet. The lattice band returns
+   at a different station. Nothing is copied; everything rhymes.
+   Laid flat, an Arabic book reads FRONT · SPINE · BACK from the left.
+   ═══════════════════════════════════════════════════════════════════ */
+.back{height:297mm;width:210mm;padding:0;page-break-before:always;
+ position:relative;overflow:hidden;color:#3B2A1D;
+ background:#F2E7D3;
+ background-image:linear-gradient(200deg,#F7EFE0 0%,#F1E5D0 54%,#E9DAC0 100%);}
+.back .bpanel{position:absolute;top:0;left:0;width:210mm;height:84mm;
+ background:#2C1E11;overflow:hidden;box-shadow:0 1.4mm 4mm rgba(64,43,22,.15);
+ background-image:
+  repeating-linear-gradient(90deg,rgba(255,247,230,.030) 0 .32mm,transparent .32mm .64mm),
+  repeating-linear-gradient(0deg,rgba(0,0,0,.13) 0 .32mm,transparent .32mm .64mm),
+  linear-gradient(152deg,#3A2817 0%,#2C1E11 52%,#1E1208 100%);}
+.back .barch{position:absolute;top:-14mm;left:-30mm;width:168mm;height:196mm;
+ opacity:.24;transform:scaleX(-1);}
+.back .bedge{position:absolute;top:84mm;left:0;width:210mm;height:.7pt;z-index:4;
+ background:linear-gradient(90deg,rgba(240,222,178,.7),rgba(214,186,128,.18));}
+.back .bpc{position:absolute;top:0;left:0;width:210mm;height:84mm;
+ padding:17mm 22mm 0 22mm;z-index:3;}
+.back .block{display:flex;align-items:center;gap:5.5mm;margin:0 0 5mm;}
+.back .block img{width:20mm;height:auto;display:block;flex:none;}
+.back .block .ln{flex:1;text-align:right;padding-left:5.5mm;
+ border-left:.5pt solid rgba(214,186,128,.32);}
+.back .house{font-family:var(--fk);font-weight:600;font-size:10.4pt;color:#F4EBD8;
+ line-height:1.5;margin:0 0 1.8mm;}
+.back .houseL{display:inline-block;font-family:var(--fu);font-weight:600;font-size:6.1pt;
+ letter-spacing:.24em;text-transform:uppercase;color:#C2A36A;direction:ltr;
+ padding-left:.24em;}
+.back .bt{font-family:var(--fa);font-weight:700;font-size:15pt;color:#FBF3E3;
+ line-height:1.5;margin:0 0 1.6mm;}
+.back .btL{display:inline-block;font-family:var(--fd);font-weight:600;font-size:9.6pt;
+ letter-spacing:.22em;text-transform:uppercase;color:#C2A36A;direction:ltr;
+ padding-left:.22em;}
+.back .bband{position:absolute;top:79mm;left:0;width:210mm;height:8mm;z-index:5;
+ background:#2A1A0C;
+ background-image:linear-gradient(180deg,#33200F,#22140880 58%,#1B1006);
+ border-top:1.1pt solid rgba(230,208,156,.72);
+ border-bottom:.5pt solid rgba(230,208,156,.42);}
+.back .bband .lat{position:absolute;inset:0;width:100%;height:100%;opacity:.85;}
+/* ── the cream register of the back board ───────────────────────── */
+.back .blower{position:absolute;top:110mm;right:22mm;left:22mm;text-align:right;}
+/* the composition closes on the same rule-and-lozenge the front opens with */
+.back .bclose{display:flex;align-items:center;margin:9mm 0 0;}
+.back .bclose:before{content:'';flex:1;height:.35pt;background:rgba(120,95,58,.26);}
+.back .bclose i{width:2.1mm;height:2.1mm;margin:0 3.4mm;transform:rotate(45deg);
+ display:block;background-image:linear-gradient(135deg,#E2C68C,#8A6A2E);}
+.back .bclose:after{content:'';width:26mm;height:1pt;
+ background-image:linear-gradient(90deg,#7E6029,#E2C68C);}
+.back .bsec{margin:5mm 0 0;font-family:var(--fn);font-size:7.4pt;color:#8A7658;
+ line-height:1.9;}
+.back .bstate{font-family:var(--fa);font-size:11.2pt;color:#3F2E1E;line-height:2.02;
+ margin:0 0 5mm;}
+.back .bstateL{font-family:var(--fl);font-size:8.4pt;color:#6B5941;line-height:1.68;
+ direction:ltr;text-align:left;margin:0 0 7.5mm;
+ border-top:.4pt solid rgba(120,95,58,.3);padding-top:3.6mm;}
+.back .figs{display:flex;gap:0;margin:0 0 7.5mm;}
+.back .fg{flex:1;text-align:center;padding:0 3mm;
+ border-left:.35pt solid rgba(120,95,58,.26);}
+.back .fg:last-child{border-left:0;}
+.back .fg b{display:block;font-family:var(--fa);font-weight:700;font-size:25pt;
+ line-height:1;color:#8A6A2E;margin:0 0 2.2mm;}
+.back .fg span{display:block;font-family:var(--fn);font-size:7.6pt;color:#7A684F;}
+.back .bstatus{border-top:1.3pt solid var(--gold);border-bottom:.35pt solid rgba(120,95,58,.3);
+ padding:3.4mm 0 4mm;margin:0 0 7mm;font-family:var(--fa);font-size:9.4pt;
+ color:#4A3826;line-height:1.82;}
+.back .bstatus b{color:#6E1D2B;}
+.back .bstatus span{display:block;font-family:var(--fu);font-weight:500;font-size:6.2pt;
+ letter-spacing:.09em;text-transform:uppercase;color:#8A6A62;direction:ltr;
+ text-align:left;margin-top:2.4mm;line-height:1.7;}
+.back .bgac{display:flex;align-items:center;gap:5.4mm;}
+.back .bgac .gb{flex:none;background:#0C1527;padding:2.4mm 3mm;
+ border:.4pt solid rgba(214,186,128,.42);}
+.back .bgac .gb img{width:10.5mm;height:auto;display:block;}
+.back .bgac .tx{flex:1;text-align:right;}
+.back .bgac .pub{font-family:var(--fa);font-size:9pt;color:#3B2A1D;line-height:1.72;
+ margin:0 0 1.6mm;}
+.back .bgac .pubL{font-family:var(--fu);font-weight:500;font-size:5.9pt;
+ letter-spacing:.1em;text-transform:uppercase;color:#8A7558;direction:ltr;
+ text-align:right;line-height:1.66;padding-left:.1em;}
+.back .bfoot{position:absolute;left:22mm;right:22mm;bottom:18mm;
+ border-top:.4pt solid rgba(120,95,58,.36);padding-top:3.6mm;
+ display:flex;align-items:baseline;gap:8mm;}
+.back .bfoot .l{flex:none;font-family:var(--fu);font-weight:500;font-size:5.6pt;
+ letter-spacing:.15em;text-transform:uppercase;color:#9C8767;direction:ltr;}
+.back .bfoot .r{flex:1;text-align:right;font-family:var(--fn);font-size:7.2pt;
+ color:#7A684F;}
+/* ── the spine ──────────────────────────────────────────────────── */
+.bspine{width:14mm;height:297mm;position:relative;overflow:hidden;flex:none;
+ background:#2C1E11;
+ background-image:
+  repeating-linear-gradient(0deg,rgba(255,247,230,.030) 0 .32mm,transparent .32mm .64mm),
+  linear-gradient(90deg,#1A1008 0%,#33240F 26%,#2C1E11 74%,#1A1008 100%);}
+.bspine:before,.bspine:after{content:'';position:absolute;top:9mm;bottom:9mm;width:.45pt;
+ background:linear-gradient(180deg,rgba(214,186,128,.12),rgba(240,222,178,.62) 46%,
+  rgba(214,186,128,.14));}
+.bspine:before{left:2.6mm;} .bspine:after{right:2.6mm;}
+.bspine .stop{position:absolute;top:13mm;left:0;right:0;text-align:center;
+ font-family:var(--fu);font-weight:600;font-size:5.2pt;letter-spacing:.16em;
+ color:#B79A63;direction:ltr;writing-mode:vertical-rl;height:22mm;
+ display:flex;align-items:center;justify-content:center;}
+.bspine .sp{position:absolute;top:44mm;bottom:34mm;left:0;right:0;
+ writing-mode:vertical-rl;text-align:center;
+ display:flex;align-items:center;justify-content:center;}
+.bspine .s1{font-family:var(--fa);font-weight:700;font-size:12.6pt;color:#FCF5E7;}
+.bspine .s2{font-family:var(--fk);font-weight:600;font-size:7.2pt;color:#C0A886;
+ margin-right:3mm;}
+.bspine .sfoot{position:absolute;bottom:9mm;left:0;right:0;text-align:center;}
+.bspine .sfoot img{width:9.4mm;height:auto;margin:0 auto;display:block;}
+/* ── the wraparound sheet, for the binder ───────────────────────── */
+.wrap{width:434mm;height:297mm;display:flex;position:relative;overflow:hidden;}
+.wrap .cover,.wrap .back{page-break-before:auto;page-break-after:auto;flex:none;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   THE EXECUTIVE ACADEMIC SUBJECT REGISTER · one page, for the Board
+   ───────────────────────────────────────────────────────────────────
+   PROGRAMME → SUBJECT → CLASSES, and nothing else. No حصص, no forms,
+   no texts, no assessment — those have their own sections and are not
+   repeated here. Two columns so that thirty-two subjects can be read
+   at a comfortable size rather than shrunk to claim one page. Each
+   programme keeps its own colour from the house palette, so the three
+   are told apart before a word is read.
+   The class ranges are set in Latin G-notation because that is what a
+   Board reads fastest, and because a gap in a span must be visible:
+   «G1–G8 · G10–G12» is not «G1–G12».
+   ═══════════════════════════════════════════════════════════════════ */
+.erpg{page-break-before:always;page-break-after:always;}
+.erh{text-align:center;margin:0 0 6mm;padding:0 0 4.2mm;
+ border-bottom:.4pt solid var(--line);position:relative;}
+.erh:after{content:'';position:absolute;bottom:-.4pt;right:50%;width:34mm;
+ margin-right:-17mm;height:1.4pt;
+ background-image:linear-gradient(90deg,#7E6029,#F2E2BB 50%,#7E6029);}
+.erh .el{font-family:var(--fu);font-weight:600;font-size:7.2pt;letter-spacing:.26em;
+ text-transform:uppercase;color:var(--bronze);direction:ltr;margin:0 0 2.8mm;
+ padding-left:.26em;}
+.erh h2{font-family:var(--fa);font-weight:700;font-size:19.5pt;color:var(--brown);
+ border:0;padding:0;margin:0 0 2.6mm;line-height:1.35;}
+.erh h2:after{display:none;}
+.erh .ed{display:flex;align-items:center;justify-content:center;margin:0 0 2.8mm;}
+.erh .ed:before,.erh .ed:after{content:'';width:22mm;height:.4pt;background:var(--line);}
+.erh .ed i{width:2.2mm;height:2.2mm;transform:rotate(45deg);margin:0 3mm;display:block;
+ background-image:linear-gradient(135deg,#F2E2BB,#8A6A2E);}
+.erh .ei{font-family:var(--fa);font-weight:700;font-size:11pt;color:var(--bronze);
+ line-height:1.55;margin:0 0 2.2mm;}
+.erh .ek{font-family:var(--fu);font-weight:500;font-size:6.6pt;letter-spacing:.2em;
+ text-transform:uppercase;color:var(--mute);direction:ltr;padding-left:.2em;}
+/* ── the two columns ────────────────────────────────────────────── */
+.ergrid{display:flex;gap:7mm;align-items:flex-start;}
+.ercol{flex:1;min-width:0;}
+.erp{margin:0 0 4.4mm;break-inside:avoid;page-break-inside:avoid;}
+.erph{display:flex;align-items:center;gap:4mm;padding:2.4mm 4mm 2.6mm;
+ border-top:1.6pt solid var(--gold);color:#F4EBD8;}
+.erp.p1 .erph{background:var(--green);} .erp.p2 .erph{background:var(--blue);}
+.erp.p3 .erph{background:var(--ox);}    .erp.p4 .erph{background:var(--char);}
+.erph .ern{font-family:var(--fd);font-weight:700;font-size:15pt;line-height:1;
+ color:var(--champ);direction:ltr;min-width:9mm;text-align:center;
+ border-left:.5pt solid rgba(226,203,150,.42);padding-left:4.4mm;}
+.erph .et{flex:1;}
+.erph h3{font-family:var(--fk);font-weight:600;font-size:10.8pt;color:#FFFAF0;
+ margin:0 0 .8mm;line-height:1.35;}
+.erph .ee{font-family:var(--fu);font-weight:500;font-size:5.5pt;letter-spacing:.1em;
+ white-space:nowrap;
+ text-transform:uppercase;color:rgba(255,250,240,.62);direction:ltr;padding-left:.15em;}
+.erph .en5{font-family:var(--fn);font-size:7.2pt;color:rgba(255,250,240,.72);
+ white-space:nowrap;}
+.ert{width:100%;border-collapse:collapse;}
+.ert th{text-align:right;font-family:var(--fa);font-weight:700;font-size:10pt;
+ color:var(--ink);padding:1.2mm 4mm 1.6mm;line-height:1.26;
+ border-bottom:.3pt solid var(--hair);}
+.ert td{text-align:left;direction:ltr;font-family:var(--fu);font-weight:600;
+ font-size:7.4pt;letter-spacing:.05em;padding:1.2mm 4mm 1.6mm;white-space:nowrap;
+ border-bottom:.3pt solid var(--hair);vertical-align:middle;}
+.erp.p1 .ert td{color:var(--green);} .erp.p2 .ert td{color:var(--blue);}
+.erp.p3 .ert td{color:var(--ox);}    .erp.p4 .ert td{color:var(--char);}
+.erp.p1 tbody tr:nth-child(odd) th,.erp.p1 tbody tr:nth-child(odd) td{background:var(--greentint);}
+.erp.p2 tbody tr:nth-child(odd) th,.erp.p2 tbody tr:nth-child(odd) td{background:var(--bluetint);}
+.erp.p3 tbody tr:nth-child(odd) th,.erp.p3 tbody tr:nth-child(odd) td{background:var(--oxtint);}
+.erp.p4 tbody tr:nth-child(odd) th,.erp.p4 tbody tr:nth-child(odd) td{background:var(--chartint);}
+.erp tbody tr:nth-child(even) th,.erp tbody tr:nth-child(even) td{background:var(--ivory);}
+.ert tbody tr:last-child th,.ert tbody tr:last-child td{border-bottom:.8pt solid var(--gold);}
+.ernote{border-top:.9pt solid var(--char);border-bottom:.3pt solid var(--hair);
+ background:var(--chartint);padding:2.6mm 4mm 3mm;font-family:var(--fa);font-size:8.4pt;
+ color:#4A4236;line-height:1.75;}
+.ernote b{color:var(--char);}
+.ernote .erq{display:block;font-family:var(--fn);font-size:7.2pt;color:var(--burg);
+ margin-top:2mm;}
+.erf{margin-top:4mm;padding-top:3mm;border-top:.4pt solid var(--line);
+ display:flex;align-items:baseline;gap:8mm;}
+.erf .a{flex:1;text-align:right;font-family:var(--fn);font-size:7.2pt;color:var(--mute);}
+.erf .b{flex:none;font-family:var(--fu);font-weight:500;font-size:5.8pt;
+ letter-spacing:.14em;text-transform:uppercase;color:var(--mute);direction:ltr;}
+
+.clsh h3{margin:0;font-size:13pt;}
+.cn{font-family:var(--fa);font-size:21pt;color:var(--gold2);line-height:1;font-weight:700;}
+.csec{margin-right:auto;font-size:8.4pt;color:var(--mute);}
+"""
+
+
+
+def front_cover():
+    """The front board: coffee cloth held to the top and right edges over
+    warm cream, a cropped portal arch drawn on it in gold, and the title
+    set half in ivory and half in foil."""
+    return ('<div class="cover">'
+      '<div class="panel">' + arch_svg('f') + '</div>'
+      '<div class="pedge"></div>'
+      '<div class="pc">'
+      '<div class="lock">'
+      f'<img class="crest" src="{CREST}" alt="">'
+      '<div class="ln"><div class="house">مدارسُ السلطان حنفي الملكية</div>'
+      '<div class="houseL">Sultan Hanafi Royal Schools</div>'
+      '<div class="hrule"></div></div></div>'
+      '<div class="title">'
+      '<div class="t1">دليلُ المنهج</div>'
+      '<div class="t2">العربيِّ والإسلامي</div>'
+      '<div class="tsep"><i></i></div>'
+      '<div class="dept">قسمُ الدراسات الإسلامية والعربية</div>'
+      '<div class="deptL">School of Islamic and Arabic Studies</div>'
+      '</div>'
+      '<div class="sup"><i>تحت إشراف راجي عفو ربه</i>'
+      '<b>أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام</b></div>'
+      '</div>'
+      '<div class="band">' + lat_svg('f') + '</div>'
+      '<div class="mark"><div class="mr"></div><div class="mn">01</div>'
+      '<div class="ml">First edition<br>MMXXVI</div></div>'
+      '<div class="vlabel">Sultan Hanafi Royal Schools &middot; '
+      'School of Islamic and Arabic Studies</div>'
+      '<div class="lower"><div class="lrule"></div>'
+      '<div class="titleL">The Curriculum<br>Handbook</div>'
+      '<div class="sub">البرامجُ الثلاثة، وأقسامُها الأربعة،<br>'
+      'وتدرُّجُ موادِّها في اثني عشر صفًّا</div></div>'
+      '<div class="foot"><div class="im"><div class="tx">'
+      '<div class="pub">الهيئةُ الأكاديمية العالمية للدراسات العربية<br>'
+      'والإسلامية والدعوة والمناهج والبحوث</div>'
+      '<div class="pubL">Global Academic Council for Arabic and Islamic Studies,<br>'
+      'Da&rsquo;wah, Curriculum and Research</div></div>'
+      f'<div class="gb"><img src="{GACAIS}" alt=""></div></div>'
+      '<div class="ed"><b>الإصدارُ الأول · سبتمبر ٢٠٢٦</b>'
+      '<span>GACAIS&ndash;CURRICULUM v1.0</span>'
+      '<span>Working edition &middot; not yet ratified</span></div></div>'
+      '</div>')
+
+
+def back_cover():
+    """The back board. It is the same object as the front, turned over: the
+    cloth continues across the spine but stops at a quarter of the height,
+    the arch is mirrored so its crop falls on the other edge, and the lattice
+    band returns at a different station. Cream dominates here, brown there."""
+    figs = [(ar(3), 'برامج'), (ar(4), 'أقسام'),
+            (ar(len(PROG_OF)), 'مادة'), (ar(12), 'صفًّا')]
+    o = ['<div class="back">',
+         '<div class="bpanel">', arch_svg('b', 'barch'), '</div>',
+         '<div class="bedge"></div>',
+         '<div class="bpc">',
+         '<div class="block">',
+         f'<img class="crest" src="{CREST}" alt="">',
+         '<div class="ln"><div class="house">مدارسُ السلطان حنفي الملكية</div>',
+         '<div class="houseL">Sultan Hanafi Royal Schools</div></div></div>',
+         '<div class="bt">دليلُ المنهج العربيِّ والإسلامي</div>',
+         '<div class="btL">The Curriculum Handbook</div>',
+         '</div>',
+         '<div class="bband">', lat_svg('b'), '</div>',
+         '<div class="blower">',
+         '<div class="bstate">', e(STATEMENT), '</div>',
+         '<div class="bstateL">One curriculum across twelve classes, in three '
+         'programmes and four sections. This handbook sets out what is taught in '
+         'each class, from which text, and under which form of instruction.</div>',
+         '<div class="figs">']
+    for n, lab in figs:
+        o.append(f'<div class="fg"><b>{n}</b><span>{lab}</span></div>')
+    o.append('</div>')
+    o.append('<div class="bstatus">وثيقةُ عملٍ للعرض والتواصل — لا تُنشئ قرارًا ولا '
+             'تعتمد منهجًا. <b>تُرفع إلى مجلس الأمناء لاعتمادها، ولم تُعتمد بعد.</b>'
+             '<span>A working document for presentation. To be submitted to the '
+             'Board of Trustees for approval &mdash; not yet approved.</span></div>')
+    o.append('<div class="bgac">'
+             f'<div class="gb"><img src="{GACAIS}" alt=""></div>'
+             '<div class="tx"><div class="pub">إعدادٌ وإشراف — الهيئةُ الأكاديمية '
+             'العالمية للدراسات العربية والإسلامية والدعوة والمناهج والبحوث</div>'
+             '<div class="pubL">Prepared and supervised by the Global Academic Council '
+             'for Arabic and Islamic Studies, Da&rsquo;wah, Curriculum and Research</div>'
+             '</div></div>')
+    o.append('<div class="bclose"><i></i></div>')
+    o.append('<div class="bsec">الأقسامُ الأربعة — '
+             'التمهيديُّ ١–٢ · الابتدائيُّ ٣–٦ · الإعداديُّ ٧–٩ · الثانويُّ ١٠–١٢</div>')
+    o.append('</div>')
+    o.append('<div class="bfoot"><span class="l">GACAIS&ndash;CURRICULUM v1.0 '
+             '&middot; first edition &middot; September 2026</span>'
+             '<span class="r">مدارسُ السلطان حنفي الملكية · قسمُ الدراسات الإسلامية والعربية'
+             '</span></div>')
+    o.append('</div>')
+    return ''.join(o)
+
+
+def spine_panel():
+    """The spine. Arabic spines read top to bottom, so the type is set in a
+    vertical writing mode rather than rotated by hand. The width is a
+    CALCULATION, not a choice — see SPINE_MM."""
+    return ('<div class="bspine">'
+            '<div class="stop">GACAIS</div>'
+            '<div class="sp"><span class="s1">دليلُ المنهج العربيِّ والإسلامي</span>'
+            '<span class="s2">مدارسُ السلطان حنفي الملكية</span></div>'
+            f'<div class="sfoot"><img src="{CREST}" alt=""></div></div>')
+
+def build():
+    o = io.StringIO(); w = o.write
+    w('<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">'
+      '<title>مدارس السلطان حنفي الملكية — دليل المنهج العربي والإسلامي</title>'
+      f'<style>{CSS}</style></head><body>')
+
+    # ═══ COVER ═══
+    w(front_cover())
+
+    # ═══ IMPRINT ═══
+    w('<div class="imp"><h2>عن هذا الإصدار</h2>')
+    w('<div class="xver"><span class="vid">GACAIS&ndash;CURRICULUM v1.0</span>'
+      '<span class="vd">الإصدار الأول · ١٤ سبتمبر ٢٠٢٦</span>'
+      '<span class="vs">وثيقةُ عملٍ — لم يعتمدها المجلس بعد</span></div>')
+    w('<div class="attr">إعدادٌ وإشراف:<br>'
+      '<b>الهيئة الأكاديمية العالمية للدراسات العربية والإسلامية والدعوة والمناهج والبحوث</b>'
+      '<div class="lat">Prepared and supervised by the Global Academic Council '
+      'for Arabic and Islamic Studies, Da\'wah, Curriculum and Research (GACAIS)</div>'
+      '<div class="lat pend">تُرفع إلى مجلس الأمناء لاعتمادها &mdash; ولم تُعتمد بعد.<br>'
+      '<span>To be submitted to the Board of Trustees for approval &mdash; '
+      'not yet approved.</span></div></div>')
+    w('<div class="sups"><i>تحت إشراف راجي عفو ربه</i>'
+      '<b>أبي عبد الله أحمد بن إبراهيم عبد السلام آل السلام</b></div>')
+    w('<div class="status"><b>وثيقةُ عملٍ للعرض والتواصل — لا للتقرير.</b><br>'
+      'تنقل هذه النشرةُ ترتيبَ المنهج كما هو قائمٌ اليوم، ليقرأه المعلّمُ والإدارةُ '
+      'ومجلسُ الأمناء ووليُّ الأمر على صورةٍ واحدة. '
+      '<b>وهي لا تُنشئ قرارًا، ولا تعتمد منهجًا، ولا تحسم مسألةً معروضة.</b> '
+      'وما كان منها موقوفًا على المجلس فهو مُعلَّمٌ في موضعه بنصِّه، ولم يُملأ فراغُه باجتهاد. '
+      'والأعدادُ والمُدَدُ الزمنية لم تُعتمد بعدُ، فلا تَرِد هنا أصلًا.</div>')
+    w('<h2>المحتويات</h2><div class="toc">')
+    toc = [('الباب الأول','بنيةُ المنهج',[('الرحلة في اثني عشر صفًّا',''),
+            ('كيف تُقرأ صيغُ التدريس',''),('الأقسام الأربعة','')])]
+    w('<div class="pt">الباب الأول · بنيةُ المنهج</div>')
+    for t in ['الرحلةُ في اثني عشر صفًّا','كيف تُقرأ هذه الوثيقة — الصيغُ الستّ',
+              'الأقسامُ الأربعة']:
+        w(f'<div><span class="t">{t}</span><span class="p">—</span></div>')
+    w('<div class="pt">الباب الثاني · ما يُدرَّس في كل صف — المنظرُ الأول</div>')
+    w('<div><span class="t"><b>المنهجُ كلُّه في صفحة واحدة</b> — الصفوف ١–١٢</span>'
+      '<span class="p">جدول</span></div>')
+    w('<div><span class="t">لوحةُ التنقّل — الصفوف الاثنا عشر</span>'
+      '<span class="p">جدول</span></div>')
+    w('<div><span class="t">صفحةُ كلِّ صفٍّ على حدة — من الأول إلى الثاني عشر</span>'
+      f'<span class="p">{ar(12)} صفحة</span></div>')
+    w('<div class="pt">الأبواب الثالث والرابع والخامس · رحلةُ كلِّ مادة</div>')
+    for key, pn, pt, pen, cls, num, blurb in PROGS[:3]:
+        w(f'<div><span class="t">{pt} — بطاقاتُ المواد</span>'
+          f'<span class="p">{ar(len(SUBS_OF[key]))} مادة</span></div>')
+    w('<div class="pt">الأبواب الختامية</div>')
+    for t in ['مواضعُ المتون','قواعدُ لازمة · وما هو موقوف']:
+        w(f'<div><span class="t">{t}</span><span class="p">—</span></div>')
+    w('</div></div>')
+
+    # ═══ THE EXECUTIVE OPENING ═══
+    w(exec_overview())
+    w(exec_register())
+    w(exec_map())
+
+    # ═══ PART I ═══
+    w('<div class="opener"><div class="pn">PART ONE</div>'
+      '<h2>بنيةُ المنهج</h2><div class="ar2">الرحلةُ والأقسامُ والبرامج</div>'
+      '<div class="en3">THE ACADEMIC ARCHITECTURE</div>'
+      '<p>اثنا عشر صفًّا، في أربعة أقسام، تجري فيها ثلاثةُ برامجَ متوازية لا متعاقبة. '
+      'والمادةُ الواحدة لا تُدرَّس على صورةٍ واحدة طولَ الرحلة: تبدأ خيطًا داخل كتاب، '
+      'ثم تُضمَّن في مضيفٍ مسمّى، ثم تستقلّ بحصّتها وكتابها وورقتها حين ينضج صاحبُها لها.</p>'
+      f'<div class="stat"><div><b>{ar(12)}</b><span>صفًّا</span></div>'
+      f'<div><b>{ar(4)}</b><span>أقسام</span></div>'
+      f'<div><b>{ar(3)}</b><span>برامج</span></div>'
+      f'<div><b>{ar(len(PROG_OF))}</b><span>مادة مسمّاة</span></div>'
+      f'<div><b>{ar(7)}</b><span>بوابات</span></div></div></div>')
+
+    w('<div class="pg brk"><h2>الرحلةُ في اثني عشر صفًّا</h2>'
+      '<p class="lead">كلُّ قسمٍ يسلّم إلى الذي بعده بعبورٍ مسمًّى. والصفُّ المظلَّل بوابةٌ '
+      'يُختبَر عندها ما بُني قبلها.</p><div class="journey"><div class="jrow">')
+    for name, en, char, gs, desc in SECTIONS:
+        w(f'<div class="jsec"><div class="nm">{name}</div><div class="en4">{en}</div>'
+          '<div class="cells">')
+        for g in gs:
+            gt = next((n for x, n in GATES if x == g), None)
+            w(f'<div class="c{" gt" if gt else ""}">{ar(g)}'
+              f'{f"<div class=gl>{e(gt)}</div>" if gt else ""}</div>')
+        w('</div></div>')
+    w('</div></div>')
+
+    w('<h2>كيف تُقرأ هذه الوثيقة</h2>'
+      '<p class="lead">اسمُ المادة لا يعني حصّةً مستقلّة. <b>الصيغةُ</b> هي التي تقول '
+      'كيف تُدرَّس وكيف تُقوَّم. وهي ستٌّ لا سابعَ لها، ومعها «الشرط» وهو أثرُ تقويمٍ '
+      'لا صورةُ تدريس.</p>'
+      '<table class="forms"><thead><tr><th class="k">الصيغة</th><th>في الحصّة</th>'
+      '<th>في الشهادة</th></tr></thead><tbody>'
+      '<tr><td class="k"><span class="sw" style="background:#3B2A1D"></span>مستقل</td>'
+      '<td>حصّةٌ خاصة، وكتابٌ، ومعلّمٌ مسؤول عنه</td><td>ورقةٌ مستقلة · يدخل المعدّل</td></tr>'
+      '<tr><td class="k"><span class="sw" style="background:#8A6B45"></span>مدمج</td>'
+      '<td>علمان يُدرَّسان في كتلةٍ واحدة قصدًا، لا اختصارًا</td>'
+      '<td>قسمٌ مسمّى في ورقة الشريك · أرضية ٤٠٪</td></tr>'
+      '<tr><td class="k"><span class="sw" style="background:#C6A15B"></span>مضمّن</td>'
+      '<td>يُدرَّس داخل حصص مضيفٍ <b>مسمّى</b>، بلا كلفةٍ في الجدول</td>'
+      '<td>لا ورقةَ له وحده · يُقوَّم داخل مضيفه</td></tr>'
+      '<tr><td class="k"><span class="sw" style="background:#D8BE8B"></span>وحدة</td>'
+      '<td>كتلةٌ مغلقة، محدودةُ الطول، لها مبتدأٌ ومنتهى</td>'
+      '<td>تقديرُ إنجاز · لا يدخل المعدّل</td></tr>'
+      '<tr><td class="k"><span class="sw" style="background:#DFCBA6"></span>دوراني</td>'
+      '<td>يجري على نوبةٍ، فلا يلقاه كلُّ صفٍّ في الفصل نفسه</td>'
+      '<td>ملفٌّ وسجلُّ مشاركة — ولا ورقةَ له</td></tr>'
+      '<tr><td class="k"><span class="sw" style="background:#EFE2C8"></span>مسار</td>'
+      '<td>خيطٌ داخل كتابٍ جامع، يُدرَّس ولا يُفرَد</td>'
+      '<td>ملحقٌ وصفيّ بلا رقم</td></tr>'
+      '<tr><td class="k"><span class="sw" style="background:#B08E4E"></span>مقرر فصلي</td>'
+      '<td>يشغل خانةً فصلًا واحدًا ثم يسلّمها لغيره</td><td>يُقوَّم في فصله</td></tr>'
+      '<tr><td class="k">شرط</td><td>ليس صورةَ تدريسٍ أصلًا</td>'
+      '<td><b>لا يحمل درجةً أبدًا</b> · يُستوفى أو لا يُستوفى</td></tr>'
+      '</tbody></table>'
+      '<p class="g" style="font-size:9pt">وحيثما ورد في هذه الوثيقة '
+      '<span class="q">؟</span> فمعناه أنّ المادة تُدرَّس داخل المضيف المذكور، '
+      'ولكنّ صيغتَها لم تُصرَّح بعدُ في البيانات — ولم نفترضها، لأنّ الفرق بين '
+      '«مدمج» و«مضمّن» فرقٌ في درجة الطالب لا في العبارة.</p>')
+
+    w('<h2 style="margin-top:9mm">الأقسامُ الأربعة</h2>')
+    for idx, (name, en, char, gs, desc) in enumerate(SECTIONS, 1):
+        gate_cells = ''.join(
+            f'<i class="{"gt" if any(x==c for x,_ in GATES) else ""}">{ar(c)}</i>' for c in gs)
+        w(f'<div class="secop s{idx}"><div class="sob">'
+          f'<span class="son">{ar(idx)}</span>'
+          f'<div class="sot"><h3>{name}</h3>'
+          f'<div class="soe en">{en} &middot; GRADES {gs[0]}&ndash;{gs[-1]}</div></div>'
+          f'<div class="socells">{gate_cells}</div></div>'
+          f'<div class="sob2"><p class="soc">{char}</p><p class="sod">{desc}</p></div></div>')
+    w('</div>')
+
+
+    # ═══ PART TWO · VIEW 1 — CLASS → WHAT IS TAUGHT ═══
+    w('<div class="opener"><div class="pn">PART TWO</div>'
+      '<h2>ما يُدرَّس في كل صف</h2><div class="ar2">المنظرُ الأول، وأسرعُ جواب</div>'
+      '<div class="en3">WHAT IS TAUGHT IN EACH CLASS</div>'
+      '<p>هذا البابُ يجيب سؤالًا واحدًا في ثوانٍ: <b>ماذا أُدرِّس في صفّي؟</b> '
+      'جدولٌ جامعٌ يضع المنهجَ كلَّه في صفحةٍ واحدة، ثم صفحةٌ كاملةٌ لكلِّ صفٍّ على حدة. '
+      'ومن أراد رحلةَ مادةٍ بعينها عبر الصفوف فبابُها بعدَ هذا.</p>'
+      '<div class="stat"><div><b>١٢</b><span>صفحة صف</span></div>'
+      '<div><b>٣</b><span>برامج في كل صفحة</span></div>'
+      '<div><b>٠</b><span>رمزٍ يحتاج فكًّا</span></div></div></div>')
+
+    w('<div class="pg brk"><h2>لوحةُ التنقّل — الصفوف الاثنا عشر</h2>'
+      '<p class="lead">صفحةُ الملاحة. كلُّ صفٍّ بعددِ مجالاته وحصصه، ونصيبِ كلِّ برنامجٍ منه، '
+      'وبوابتِه إن كانت له. والرقمُ الأول في خانة البرنامج عددُ المجالات، '
+      'والثاني بعد الشَّرطة عددُ الحصص الخاصّة به.</p>')
+    w(nav_table())
+    w('<p class="ccmeth" style="margin-top:4mm">حصصُ الأسبوع ١٣ في الصفوف ١–٦ و١٩ في '
+      '٧–١٢ — وهو عددٌ مقفل. وقد تقلّ جملةُ حصص البرامج الثلاثة عن هذا العدد في الصفوف '
+      'التي فيها <b>خانات فصلية مشتركة</b>، لأنّ الخانة المشتركة تتناوبها مقرَّرات من '
+      'أكثر من برنامج فلا تُنسَب إلى واحدٍ منها. '
+      'وكذلك في <b>الصف الثاني عشر</b>، حيث تأخذ خدماتُ سنة التتويج ثلاثَ حصصٍ '
+      '(WAEC والتحرير الامتحاني) خارج البرامج الثلاثة — وهي مبيَّنةٌ في صفحة الصف. '
+      'وجملةُ ما في كل صف تستوفي العددَ المقفل تمامًا.</p>')
+    w('</div>')
+    w('<div class="pg brk"><h2>المنهجُ كلُّه في صفحةٍ واحدة</h2>'
+      '<p class="lead">الأسماءُ <b>الغامقة</b> موادُّ لها حصّةٌ خاصّة في الجدول. '
+      'والأسماءُ الفاتحة تُدرَّس داخل مادةٍ أخرى مسمّاة — وهي منهجٌ حقيقيّ يُدرَّس '
+      'ويُقوَّم، لا إضافةٌ اختيارية.</p>')
+    w(glance_table())
+    w('</div>')
+
+    w('<div class="pg brk"><h2>صفحةُ الصف — كيف تُقرأ</h2>'
+      '<p class="lead">كلُّ صفٍّ في صفحةٍ واحدة، وبرامجُه الثلاثة في ثلاثة أعمدة. '
+      'وأمام كلِّ مادةٍ مربّعٌ صغير يقول كيف تُدرَّس:</p>'
+      '<div class="keyrow">'
+      '<span><i class="m-ind"></i> <b>مستقلّ</b> — حصّة وكتاب وورقة</span>'
+      '<span><i class="m-trm"></i> مقرَّر فصليّ — فصلٌ واحد</span>'
+      '<span><i class="m-mrg"></i> مدمج — في ورقة الشريك</span>'
+      '<span><i class="m-emb"></i> مضمّن — داخل مضيفه</span>'
+      '<span><i class="m-unt"></i> وحدة</span>'
+      '<span><i class="m-rot"></i> دوراني</span>'
+      '<span><i class="m-str"></i> مسار — خيطٌ في كتاب</span>'
+      '<span><i class="m-q"></i> لم تُصرَّح صيغتُه — يُعرَض على المجلس</span>'
+      '</div>'
+      '<p class="g" style="font-size:9.2pt">والمادةُ التي لا تظهر في صفحة صفٍّ '
+      '<b>لا تُدرَّس فيه</b>. وما ظهر بمربّعٍ فاتحٍ ومعه «← اسمُ مادة» فهو يُدرَّس '
+      'داخل حصص تلك المادة، ومعلّمُها مسؤولٌ عنه.</p></div>')
+
+    for g in range(1, 13):
+        w(class_full(g))
+
+    # ═══ PROGRAMME PARTS ═══
+    for key, pn, pt, pen, cls, num, blurb in PROGS:
+        subs = SUBS_OF[key]
+        if not subs:
+            continue
+        ind = len({s for s in subs if any(T[g].get(s, (None,))[0] == 'مستقل' for g in range(1, 13))})
+        w(f'<div class="opener {cls}"><div class="pmark">{num}</div>'
+          f'<div class="pn">PROGRAMME {num}</div>'
+          f'<h2>{pt}</h2><div class="ar2">{pn}</div>'
+          f'<div class="en3">{pen}</div>'
+          '<div class="ornrow"><i></i></div>'
+          f'<p>{blurb}</p>'
+          f'<div class="stat"><div><b>{ar(len(subs))}</b><span>مادة</span></div>'
+          f'<div><b>{ar(ind)}</b><span>تستقلّ بورقة</span></div>'
+          f'<div><b>{ar(min(FIRST[s] for s in subs))}–{ar(max(LAST[s] for s in subs))}</b>'
+          '<span>مدى الصفوف</span></div></div></div>')
+        w(f'<div class="pg brk {cls}"><h2>{e(pt)} — رحلةُ كلِّ مادة</h2>'
+          '<p class="lead">البابُ الثاني أجاب: «ماذا أُدرِّس في صفّي؟» '
+          'وهذا يجيب عكسَه: <b>«أُدرِّس هذه المادة — فأين تقع في الرحلة؟»</b> '
+          'كلُّ شريطٍ رحلةُ مادةٍ من أول صفٍّ تلقاه فيه إلى آخره، '
+          'وتغيُّرُ اللون تغيُّرٌ في صيغة التدريس لا في المادة.</p>'
+          '<div class="cards">')
+        for s in subs:
+            w(subject_card(s))
+        w('</div></div>')
+
+    # ═══ TEXTS ═══
+    w('<div class="opener"><div class="pn">PART SIX</div>'
+      '<h2>مواضعُ المتون</h2><div class="ar2">أين يقع كلُّ كتاب</div>'
+      '<div class="en3">THE CLASSICAL TEXT PROGRESSION</div>'
+      '<p>المتونُ مرتَّبةٌ بأول صفٍّ تُفتَح فيه. وكلُّ موضعٍ هنا مأخوذٌ من السجل بنصّه؛ '
+      'وما لم يُسجَّل موضعُه فليس هنا، ولا يُوضَع بالاجتهاد.</p></div>')
+    w('<div class="pg brk"><h2>مواضعُ المتون</h2><table class="txt"><thead><tr>'
+      '<th class="gr">الصفوف</th><th>المتن</th><th>المادة</th><th class="kd">وجهُ استعماله</th>'
+      '</tr></thead><tbody>')
+    cur = None
+    for lo, hi, b, sub, kind in TEXTS:
+        sec = next((s for s in SECTIONS if lo in s[3]), None)
+        if sec and sec[0] != cur:
+            cur = sec[0]
+            w(f'<tr class="sec"><td colspan="4">{cur} — الصفوف {ar(sec[3][0])}–{ar(sec[3][-1])}</td></tr>')
+        rng = ar(lo) if lo == hi else f'{ar(lo)}–{ar(hi)}'
+        w(f'<tr><td class="gr">{rng}</td><td><b>{e(b)}</b></td><td>{e(sub)}</td>'
+          f'<td class="kd">{e(kind)}</td></tr>')
+    w('</tbody></table></div>')
+
+    # ═══ NOTES ═══
+    unres = sum(1 for g in range(1, 13) for s, v in T[g].items() if v[0] is None)
+    w('<div class="opener"><div class="pn">PART SEVEN</div>'
+      '<h2>قواعدُ لازمة</h2><div class="ar2">وما هو موقوفٌ على المجلس</div>'
+      '<div class="en3">NOTES FOR TEACHERS · AND WHAT REMAINS OPEN</div>'
+      '<p>سبعُ قواعدَ يحتاجها من يُدرِّس بهذا المنهج، ثم بيانٌ صريحٌ بما لم يُفصَل فيه بعد. '
+      'وإعلانُ الموقوف أنفعُ من إخفائه، لأنّ المعلّمَ الذي لا يعرف حدودَ المقرَّر '
+      'يملأ الفراغَ باجتهاده.</p></div>')
+    w('<div class="pg brk"><h2>قواعدُ لازمة للمعلّم</h2><ol class="rules">'
+      '<li><b>لا تُنشئ مادةً ولا تُلغِها.</b> ما في هذه الخريطة هو المقرَّر. '
+      'ومن رأى فيها خطأً رفعه إلى القسم، ولم يُصلحه في صفِّه وحده.</li>'
+      '<li><b>المضمَّنُ منهجٌ حقيقيّ.</b> أن يكون بلا ورقةٍ مستقلّة لا يعني أن يُترَك؛ '
+      'بل إهمالُه أخفى من إهمال المستقلّ وأشدُّ، لأنه لا يظهر في نتيجة.</li>'
+      '<li><b>لا مضيفَ مُختلَق.</b> إن قيل إنّ مادةً تُدرَّس داخل أخرى، وليس للمضيف '
+      'اسمٌ في جدولك، فارفع الأمرَ ولا تفترض مضيفًا — فالمادةُ حينئذٍ تتبخّر بلا أثر.</li>'
+      '<li><b>صيغةُ التدريس ليست أثرَ التقويم.</b> راجع جدولَ الصيغ في الباب الأول '
+      'قبل أن تضع درجةً أو تمنعها.</li>'
+      '<li><b>المتنُ لا يُنشئ مذهبًا.</b> وجودُ كتابٍ في القائمة لا يعني أنّ المدرسة '
+      'تبنّت مذهبَ مؤلِّفه. الأطرُ المذهبية مُعلَنةٌ بنصِّها في مواضعها، '
+      'ولا تُستنبَط من قوائم الكتب.</li>'
+      '<li><b>ما كان موقوفًا فلا يُقدَّم تامًّا.</b> ما حمل في هذه الوثيقة '
+      '<span class="cdr">يُعرَض على المجلس</span> فهو معروضٌ لم يُفصَل فيه، '
+      'ولا يُبنى عليه تدريسٌ ولا امتحان.</li>'
+      '<li><b>لا مُدَدَ هنا.</b> عددُ الحصص ومقاديرُ الدقائق لم تُعتمد بعد، '
+      'وحُذفت من هذه الوثيقة عمدًا. فلا يُقدَّر منها شيء.</li>'
+      '</ol>')
+    w('<h2 style="margin-top:9mm">ما هو موقوفٌ اليوم</h2>'
+      '<p class="lead">يُعلَن هنا كاملًا، لأنّ وثيقةً تُخفي فراغَها تُورِث المعلّمَ '
+      'اجتهادًا في غير موضعه.</p>'
+      '<table class="open"><thead><tr><th class="w">الموضع</th><th>الحال</th></tr></thead><tbody>'
+      f'<tr><td class="w">صيغةُ {ar(unres)} مدخلًا مستضافًا</td>'
+      '<td>تُدرَّس داخل مضيفٍ معلوم، وصيغتُها غير مصرَّحة. والفرقُ بين «مدمج» و«مضمّن» '
+      'فرقٌ في درجة الطالب — فرُفع ولم يُفترَض</td></tr>'
+      '<tr><td class="w">الترجمة · الصفوف ٧–١٢</td>'
+      '<td>لا نصَّ مسجَّلًا لها، <b>واللغةُ الهدفُ غيرُ مسمّاة</b> — وقد يكون النقلُ إلى '
+      'الإنجليزية أو الهوسا أو الأردية أو اليوربا</td></tr>'
+      '<tr><td class="w">أحكامُ عدم اجتياز البوابات</td>'
+      '<td>البواباتُ سبعٌ، ولم يُكتب بعدُ ما يقع بالطالب عند عدم الاجتياز</td></tr>'
+      '<tr><td class="w">الكفاياتُ العشر</td>'
+      '<td>شرطُ شهادة التخرّج. والعاشرةُ وحدَها لها نصٌّ مسجَّل</td></tr>'
+      '<tr><td class="w">كتابُ البرنامج الثاني في ٤–٦</td>'
+      '<td>معتمَدٌ في التوزيع، ولا مدخلَ له في أبواب النصوص</td></tr>'
+      '<tr><td class="w">عددُ الحصص والمُدَد</td>'
+      '<td>لم تُعتمد — وحُذفت من هذه الوثيقة عمدًا</td></tr>'
+      '</tbody></table>')
+    w('</div>')
+
+    # ═══ BACK BOARD ═══ the last page of the book, and the other half
+    # of the cover system
+    w(back_cover())
+
+    w('</body></html>')
+    return o.getvalue()
+
+
+if __name__ == '__main__':
+    doc = build()
+    head = doc[:doc.index('<body>') + 6]
+    i = doc.index('<div class="cover">')
+    j = doc.index('<div class="imp">')
+    k = doc.index('<div class="back">')
+    tail = '</body></html>'
+    front, back = doc[i:j], doc[k:doc.rindex('</body>')]
+    open(os.path.join(H, 'HANDBOOK-cover.html'), 'w', encoding='utf-8').write(head + front + tail)
+    open(os.path.join(H, 'HANDBOOK-back.html'), 'w', encoding='utf-8').write(head + back + tail)
+    open(os.path.join(H, 'HANDBOOK-body.html'), 'w', encoding='utf-8').write(head + doc[j:k] + tail)
+    # the binder's sheet: laid flat, an Arabic book reads FRONT · SPINE · BACK
+    # from the left, so in an RTL flex row the children go back, spine, front.
+    # the sheet is not A4, and the main stylesheet says @page{size:A4}, so the
+    # wraparound document restates its own trim before anything is laid out
+    wsz = (f'<style>@page{{size:{WRAP_MM}mm 297mm;margin:0;}}'
+           f'html,body{{width:{WRAP_MM}mm;height:297mm;}}</style>')
+    wrap = (head.replace('</head>', wsz + '</head>') + '<div class="wrap">'
+            + back + spine_panel() + front + '</div>' + tail)
+    open(os.path.join(H, 'HANDBOOK-wrap.html'), 'w', encoding='utf-8').write(wrap)
+    p = os.path.join(H, 'SHRS-CURRICULUM-HANDBOOK.html')
+    open(p, 'w', encoding='utf-8').write(doc)
+    print(f'written — {len(doc)//1024} KB · {len(PROG_OF)} subjects · '
+          f'{sum(1 for g in range(1,13) for s,v in T[g].items() if v[0] is None)} unresolved')
