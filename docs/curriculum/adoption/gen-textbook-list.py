@@ -29,26 +29,47 @@ DIV = {'BASIC': ('مدارس السلطان حنفي للحضانة والابت
        'COLLEGE': ('كلية السلطان حنفي الملكية',
                    'Sultan Hanafi Royal College')}
 SHORT = {'BASIC': 'الحضانة والابتدائية', 'COLLEGE': 'الكلية الملكية'}
+SHORTL = {'BASIC': 'Nursery &amp; Primary', 'COLLEGE': 'Royal College'}
+# English navigation runs on the SHRS class number, which is what the
+# Registrar's own systems count in: «الصف الثالث الابتدائي» is Grade 5.
+GRADE = lambda g: f'Grade {g}'
 
 # Titles whose author or edition should be confirmed with the supplier before
 # the order is placed. Marked with a dagger; no discussion in the document.
 CHECK = {'متن الحائية', 'أعباد المسيح', 'مقرر الأستاذ'}
 
-# ── one house form for every name ──────────────────────────────────
-# The two lists honour some authors and not others — «الشيخ أحمد بن إبراهيم
-# السليمي» in one and «أحمد بن إبراهيم السليمي» in the other, «د. أيمن رشدي
-# سويد» beside «ابن الوردي». A purchase order cannot be inconsistent about
-# it, and it cannot award a rank it has no way of confirming. So honorifics
-# and eulogies are removed throughout — الشيخ، الإمام، د.، رحمه الله — and
-# kunyas and nisbas, which are part of a name, are kept.
-STRIP = ('الشيخ ', 'الإمام ', 'د. ', ' رحمه الله')
+# ── one form per person, and it is the source's own ────────────────
+# The two lists honour the same man twice over and not at all elsewhere:
+# «الشيخ أحمد بن إبراهيم السليمي» in one, «أحمد بن إبراهيم السليمي» in the
+# other. The rule here is narrow and it invents nothing: **the fullest form
+# the Director General supplied for a person is the form used everywhere he
+# appears.** Titles are kept because the source gives them; none is added to
+# a name that never carried one. Only the eulogy «رحمه الله» is dropped — it
+# is a supplication, not part of an author's name on an order form, and it
+# appears exactly once.
+TITLES = ('الشيخ ', 'الإمام ', 'الأستاذ ', 'د. ')
+
+
+def person_key(name):
+    """Two spellings of one man collapse to one key."""
+    k = name
+    for t in TITLES:
+        k = k.replace(t, '')
+    k = k.replace(' رحمه الله', '')
+    k = FIX.get(' '.join(k.split()).strip(' ،'), ' '.join(k.split()).strip(' ،'))
+    return k
+
+
+# One spelling for one man: «عبد الرحمن بن محمد…» in the first list,
+# «عبد الرحمن محمد…» in the second. The fuller form wins.
+FIX = {'عبد الرحمن محمد بن الصغير الأخضري': 'عبد الرحمن بن محمد بن الصغير الأخضري'}
 
 # Where one list names an author and the other leaves the same book blank,
-# the name is carried across. That is the Director General's own data made
-# consistent, not information brought in from outside.
+# the name is carried across. The Director General's own data, made
+# consistent — nothing brought in from outside.
 FILL = {
     'زاد المسلم الصغير': 'عبد الشكور معلم عبد الفارح',
-    'دروس اللغة العربية': 'ف. عبد الرحيم',
+    'دروس اللغة العربية': 'د. ف. عبد الرحيم',
     'القراءة الراشدة': 'أبو الحسن الندوي',
     'خلاصة نور اليقين': 'عمر عبد الجبار',
     'تائية أبي إسحاق الإلبيري': 'أبو إسحاق الإلبيري',
@@ -57,18 +78,44 @@ FILL = {
     'مقرر الأستاذ': '—',
     'القرآن الكريم': '—',
 }
-# One spelling for one man: «عبد الرحمن بن محمد…» in the first list,
-# «عبد الرحمن محمد…» in the second. The fuller form is used in both.
-FIX = {'عبد الرحمن محمد بن الصغير الأخضري': 'عبد الرحمن بن محمد بن الصغير الأخضري'}
+
+HOUSE = {}          # person_key → the fullest supplied form; built at import
 
 
-# One title for one book. «نور البيان» and «نور البيان في ترتيل القرآن» are
-# the same work; and the College writes «مقرر وزارة التعليم السعودية» where
-# the Basic list names the subject, which a bookseller cannot act on. Both are
-# settled from the Director General's own wording, using the subject column.
+def _learn():
+    for d, head, g, copies in CLASSES:
+        for supplied, book, _ in SUBMISSION[(d, g)]:
+            _, _, au = book.partition('—')
+            au = VOL_TAIL.sub('', au.strip()).strip()
+            if not au or VOL_ONLY.match(au):
+                continue
+            au = au.replace(' رحمه الله', '')
+            au = FIX.get(au, au)
+            k = person_key(au)
+            if len(au) > len(HOUSE.get(k, '')):
+                HOUSE[k] = au
+    for v in FILL.values():
+        if v != '—':
+            HOUSE.setdefault(person_key(v), v)
+
+
+def house(name):
+    name = FIX.get(name, name).replace(' رحمه الله', '')
+    return HOUSE.get(person_key(name), name) or '—'
+
+
+VOL_ONLY = re.compile(r'^(?:ج\s*[١٢٣٤]|الجزء\s+\S+)$')
+VOL_TAIL = re.compile(r'[،,]\s*(ج\s*[١٢٣٤]|الجزء\s+\S+)\s*$')
+_learn()
+
+
+# ── one form per title, too ────────────────────────────────────────
+# «نور البيان» and «نور البيان في ترتيل القرآن» are the same work. The
+# College writes «مقرر وزارة التعليم السعودية» where the Basic list names
+# the subject, and a bookseller cannot act on the first form. And a volume
+# is «ج١» throughout, not «ج١» here and «الجزء الأول» there for one book.
+# All three are settled from the Director General's own wording.
 TITLE = {'نور البيان': 'نور البيان في ترتيل القرآن'}
-# and one form for the volume: «ج١» throughout, not «ج١» here and
-# «الجزء الأول» there for the very same book.
 VOLN = {'الجزء الأول': 'ج١', 'الجزء الثاني': 'ج٢',
         'الجزء الثالث': 'ج٣', 'الجزء الرابع': 'ج٤'}
 MINISTRY = {'الفقه': 'مقرر الفقه', 'التوحيد': 'مقرر التوحيد', 'التعبير': 'مقرر التعبير'}
@@ -87,26 +134,15 @@ def house_title(title, supplied):
     return title
 
 
-def house(name):
-    for h in STRIP:
-        name = name.replace(h, '')
-    name = ' '.join(name.split()).strip(' ،')
-    return FIX.get(name, name) or '—'
-
-
-VOL_ONLY = re.compile(r'^(?:ج\s*[١٢٣٤]|الجزء\s+\S+)$')
-VOL_TAIL = re.compile(r'[،,]\s*(ج\s*[١٢٣٤]|الجزء\s+\S+)\s*$')
-
-
 def split_book(line):
     """Title and author, as supplied. The volume travels with the title,
     which is how a bookseller reads a line; nothing else is moved."""
     title, sep, author = line.partition('—')
     title, author = title.strip(), author.strip()
     if not sep:
-        return title, FILL.get(title, '—')
+        return title, house(FILL.get(title, '—'))
     if VOL_ONLY.match(author):                  # «… — ج٢» : a volume, not an author
-        return f'{title} — {author}', FILL.get(title, '—')
+        return f'{title} — {author}', house(FILL.get(title, '—'))
     m = VOL_TAIL.search(author)                 # «… — خالد يوسف، ج١»
     if m:
         return f'{title} — {m.group(1)}', house(VOL_TAIL.sub('', author).strip())
@@ -182,33 +218,71 @@ body{--ink:#241709;--brown:#3B2A1D;--bronze:#6B4A2E;--gold:#B08E4E;--champ:#E8D2
 .sch .l{font-family:var(--fu);font-weight:600;font-size:6.8pt;letter-spacing:.22em;
  text-transform:uppercase;color:#C9AC74;direction:ltr;padding-left:.22em;}
 /* ── class block ────────────────────────────────────────────────── */
-.cls{margin:0 0 5mm;page-break-inside:avoid;}
-.clh{display:flex;align-items:center;gap:5mm;background:var(--cream);
- border-top:1.6pt solid var(--gold);padding:2.1mm 4mm 2.3mm;margin:0;}
-.clh h3{font-family:var(--fa);font-weight:700;font-size:13.4pt;color:var(--brown);
- margin:0;line-height:1.3;}
-.clh .cp{margin-right:auto;font-family:var(--fa);font-weight:700;font-size:11pt;
- color:#FFF7E8;background:var(--panel2);padding:1.1mm 4.6mm;white-space:nowrap;}
-.clh .cp em{font-family:var(--fn);font-style:normal;font-size:6.8pt;color:#C9AC74;
- margin-left:3.4mm;}
+/* The class band is the strongest thing on the page after the school,
+   because it is the first question the Registrar asks. Each division
+   carries its own accent so the two orders are never confused. */
+.cls{margin:0 0 4.4mm;page-break-inside:avoid;}
+.clh{display:flex;align-items:center;gap:6mm;background:var(--panel);
+ background-image:linear-gradient(140deg,#3B2818 0%,#2A1C10 60%,#1E1309 100%);
+ color:#FBF4E4;padding:2.4mm 5mm 2.6mm;margin:0;position:relative;}
+.clh:before{content:'';position:absolute;top:0;right:0;left:0;height:1.8pt;}
+.cls.d1 .clh:before{background-image:linear-gradient(90deg,#0E2F63,#3D67B8 50%,#0E2F63);}
+.cls.d2 .clh:before{background-image:linear-gradient(90deg,#5E1B26,#A8474F 50%,#5E1B26);}
+.clh h3{font-family:var(--fa);font-weight:700;font-size:14pt;color:#FFFCF4;
+ margin:0 0 1mm;line-height:1.24;}
+.clh .en{font-family:var(--fu);font-weight:600;font-size:6.2pt;letter-spacing:.16em;
+ text-transform:uppercase;color:#BFA678;direction:ltr;padding-left:.16em;}
+.clh .t{flex:1;}
+.clh .cp{flex:none;text-align:center;min-width:25mm;padding:1.2mm 4mm 1.4mm;
+ border:.5pt solid rgba(226,203,150,.5);background:rgba(0,0,0,.22);}
+.clh .cp b{display:block;font-family:var(--fa);font-weight:700;font-size:15.5pt;
+ line-height:1;color:var(--champ);}
+.clh .cp em{display:block;font-family:var(--fn);font-style:normal;font-size:6pt;
+ color:#B79A63;margin-top:1.4mm;}
 table{width:100%;border-collapse:collapse;font-size:9.6pt;}
-thead th{font-family:var(--fn);font-size:6.9pt;font-weight:400;color:var(--champ);
- background:var(--panel);padding:1.5mm 4mm;text-align:right;}
-thead th:last-child{text-align:center;}
-tbody th{text-align:right;font-family:var(--fa);font-weight:700;color:var(--brown);
- width:18%;padding:1.35mm 4mm 1.65mm;border-bottom:.3pt solid var(--hair);
- vertical-align:top;}
-td{padding:1.35mm 4mm 1.65mm;border-bottom:.3pt solid var(--hair);vertical-align:top;
- color:#33261A;line-height:1.45;}
-td.bk{width:41%;} td.au{width:29%;color:#5E4830;font-size:9.2pt;}
-td.cp{width:12%;text-align:center;font-family:var(--fa);font-weight:700;
- font-size:12pt;color:var(--brown);background:#FBF6EB;}
+thead th{font-family:var(--fn);font-size:6.4pt;font-weight:400;color:var(--bronze);
+ background:var(--cream);padding:1.1mm 4mm 1.3mm;text-align:right;
+ border-bottom:.5pt solid var(--line);}
+thead th.q{text-align:center;}
+tbody th{text-align:right;font-family:var(--fa);font-weight:400;color:#6A5740;
+ font-size:9pt;width:16%;padding:1.1mm 4mm 1.3mm;
+ border-bottom:.3pt solid var(--hair);vertical-align:middle;}
+td{padding:1.1mm 4mm 1.3mm;border-bottom:.3pt solid var(--hair);vertical-align:middle;
+ line-height:1.34;}
+td.bk{width:41%;font-family:var(--fa);font-weight:700;font-size:10.2pt;
+ color:var(--ink);}
+td.au{width:27%;color:#7A664C;font-size:8.6pt;}
+td.q{width:16%;text-align:center;font-family:var(--fa);font-weight:700;
+ font-size:12.4pt;color:#FFF6E4;}
+.cls.d1 td.q{background:#12315F;} .cls.d2 td.q{background:#5E1B26;}
 tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:var(--ivory);}
-tbody tr:nth-child(even) td.cp{background:#F2E7D0;}
-tbody tr:last-child th,tbody tr:last-child td{border-bottom:1.1pt solid var(--gold);}
+.cls.d1 tbody tr:nth-child(even) td.q{background:#0D2851;}
+.cls.d2 tbody tr:nth-child(even) td.q{background:#4E141E;}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:1.2pt solid var(--gold);}
 tr,thead{break-inside:avoid;page-break-inside:avoid;}
 thead{break-after:avoid;page-break-after:avoid;}
 sup{color:var(--burg);font-size:7.2pt;}
+/* English is the second voice everywhere a heading or label appears:
+   same convention on every table head, every class band, every summary
+   row. It never translates a title or an author's name. */
+thead th i{display:block;font-family:var(--fu);font-style:normal;font-weight:600;
+ font-size:5.6pt;letter-spacing:.14em;text-transform:uppercase;color:#9C8768;
+ direction:ltr;text-align:right;margin-top:.8mm;padding-left:.14em;}
+thead th.q i{text-align:center;}
+.clh .en b{font-family:var(--fu);font-weight:700;color:#E2C68C;letter-spacing:.14em;}
+.clh .cp em i{display:block;font-family:var(--fu);font-style:normal;font-weight:600;
+ font-size:5.2pt;letter-spacing:.14em;text-transform:uppercase;color:#8E7650;
+ direction:ltr;margin-top:.5mm;padding-left:.14em;}
+.sum tbody th i{display:block;font-family:var(--fu);font-style:normal;font-weight:600;
+ font-size:5.8pt;letter-spacing:.14em;text-transform:uppercase;color:#9C8768;
+ direction:ltr;text-align:right;margin-top:.6mm;padding-left:.14em;}
+.sum tbody tr.hd th i{color:#BFA678;font-size:6.2pt;margin-top:1mm;}
+.foot span{display:block;font-family:var(--fu);font-weight:500;font-size:6.4pt;
+ letter-spacing:.1em;text-transform:uppercase;color:#A8947A;direction:ltr;
+ margin-top:1.4mm;padding-left:.1em;}
+.sig i{display:block;font-family:var(--fu);font-style:normal;font-weight:600;
+ font-size:6pt;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);
+ direction:ltr;margin:0 0 1.6mm;padding-left:.16em;}
 /* ── summary ────────────────────────────────────────────────────── */
 .sum{page-break-before:always;padding-top:4mm;}
 .sum h2{font-family:var(--fa);font-weight:700;font-size:19pt;color:var(--brown);
@@ -259,11 +333,17 @@ def build():
         for d, head, g, copies in CLASSES:
             if d != div:
                 continue
-            w('<div class="cls"><div class="clh">'
-              f'<h3>{e(head)}</h3>'
-              f'<span class="cp"><em>النسخ</em>{ar(copies)}</span></div>'
-              '<table><thead><tr><th>المادة</th><th>الكتاب</th>'
-              '<th>المؤلف / الجهة</th><th>النسخ</th></tr></thead><tbody>')
+            w(f'<div class="cls {"d1" if div == "BASIC" else "d2"}"><div class="clh">'
+              f'<div class="t"><h3>{e(head)}</h3>'
+              f'<div class="en"><b>{GRADE(g)}</b> &middot; {SHORTL[div]} &middot; '
+              f'{copies} copies per listed title</div></div>'
+              f'<div class="cp"><b>{ar(copies)}</b>'
+              '<em>الكمية لكل عنوان<i>Qty per title</i></em></div></div>'
+              '<table><thead><tr>'
+              '<th>المادة<i>Subject</i></th>'
+              '<th>الكتاب<i>Book</i></th>'
+              '<th>المؤلف / الجهة<i>Author / Publisher</i></th>'
+              '<th class="q">الكمية<i>Quantity</i></th></tr></thead><tbody>')
             for supplied, book, _ in SUBMISSION[(d, g)]:
                 title, author = split_book(book)
                 # «مقرر الأستاذ» also begins with «مقرر» and is not a ministry
@@ -276,7 +356,7 @@ def build():
                 if any(k in title for k in CHECK):
                     mark, flagged = '<sup>†</sup>', True
                 w(f'<tr><th>{e(supplied)}</th><td class="bk">{e(title)}{mark}</td>'
-                  f'<td class="au">{e(author)}</td><td class="cp">{ar(copies)}</td></tr>')
+                  f'<td class="au">{e(author)}</td><td class="q">{ar(copies)}</td></tr>')
             w('</tbody></table></div>')
 
     # ── summary ─────────────────────────────────────────────────────
@@ -284,25 +364,33 @@ def build():
     # multiplied titles by copies and printed a grand total; that number was
     # invented by the document and is not what anyone orders against.
     w('<div class="sum"><h2>ملخَّصُ القائمة</h2>'
-      '<div class="l">Summary</div>'
-      '<table><thead><tr><th>الصف</th>'
-      '<th class="n">عدد العناوين</th><th class="n">النسخ</th></tr></thead><tbody>')
+      '<div class="l">Summary of the List</div>'
+      '<table><thead><tr><th>الصف<i>Class</i></th>'
+      '<th class="n">عدد العناوين<i>Titles</i></th>'
+      '<th class="n">الكمية لكل عنوان<i>Qty per title</i></th></tr></thead><tbody>')
     for div in ('BASIC', 'COLLEGE'):
-        w(f'<tr class="hd"><th colspan="3">{e(DIV[div][0])}</th></tr>')
+        w(f'<tr class="hd"><th colspan="3">{e(DIV[div][0])}'
+          f'<i>{DIV[div][1]}</i></th></tr>')
         for d, head, g, copies in CLASSES:
             if d != div:
                 continue
-            w(f'<tr><th>{e(head)}</th>'
+            w(f'<tr><th>{e(head)}<i>{GRADE(g)}</i></th>'
               f'<td class="n">{ar(len(SUBMISSION[(d, g)]))}</td>'
               f'<td class="n">{ar(copies)}</td></tr>')
     w('</tbody></table>')
 
     if flagged:
         w('<div class="foot">† بعضُ بيانات المؤلف أو الطبعة تحتاج إلى مراجعةٍ '
-          'نهائيةٍ مع المورِّد قبل الشراء.</div>')
-    w('<div class="sig"><div><b>الإدارة الأكاديمية</b>التوقيع / التاريخ</div>'
-      '<div><b>مكتب المسجِّل</b>التوقيع / التاريخ</div>'
-      '<div><b>المدير العام</b>التوقيع / التاريخ</div></div>')
+          'نهائيةٍ مع المورِّد قبل الشراء.'
+          '<span>Some author or edition details to be confirmed with the '
+          'supplier before purchase.</span></div>')
+    w('<div class="sig">'
+      '<div><b>الإدارة الأكاديمية</b><i>Academic Administration</i>'
+      'التوقيع / التاريخ &middot; Signature / Date</div>'
+      '<div><b>مكتب المسجِّل</b><i>Registrar&rsquo;s Office</i>'
+      'التوقيع / التاريخ &middot; Signature / Date</div>'
+      '<div><b>المدير العام</b><i>Director General</i>'
+      'التوقيع / التاريخ &middot; Signature / Date</div></div>')
     w('</div></body></html>')
     return ''.join(o)
 
