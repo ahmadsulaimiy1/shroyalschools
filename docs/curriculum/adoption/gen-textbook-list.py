@@ -195,31 +195,22 @@ def build():
                   f'<td class="au">{e(author)}</td><td class="cp">{ar(copies)}</td></tr>')
             w('</tbody></table></div>')
 
-    # ── procurement summary ─────────────────────────────────────────
-    w('<div class="sum"><h2>ملخَّصُ احتياجات الكتب</h2>'
-      '<div class="l">Procurement Summary</div>'
+    # ── summary ─────────────────────────────────────────────────────
+    # Copies are stated per class, exactly as supplied. An earlier version
+    # multiplied titles by copies and printed a grand total; that number was
+    # invented by the document and is not what anyone orders against.
+    w('<div class="sum"><h2>ملخَّصُ القائمة</h2>'
+      '<div class="l">Summary</div>'
       '<table><thead><tr><th>المدرسة</th><th>الصف</th>'
-      '<th class="n">عدد العناوين</th><th class="n">النسخ لكل عنوان</th>'
-      '<th class="n">إجمالي النسخ</th></tr></thead><tbody>')
-    grand = 0
+      '<th class="n">عدد العناوين</th><th class="n">النسخ</th></tr></thead><tbody>')
     for div in ('BASIC', 'COLLEGE'):
-        sub = 0
         for d, head, g, copies in CLASSES:
             if d != div:
                 continue
-            n = len(SUBMISSION[(d, g)])
-            tot = n * copies
-            sub += tot
-            w(f'<tr><th>{e(SHORT[div])}</th>'
-              f'<td>{e(head)}</td><td class="n">{ar(n)}</td>'
-              f'<td class="n">{ar(copies)}</td><td class="n">{ar(tot)}</td></tr>')
-        grand += sub
-        w(f'<tr class="tot"><th colspan="4">مجموعُ {e(DIV[div][0])}</th>'
-          f'<td class="n">{ar(sub)}</td></tr>')
+            w(f'<tr><th>{e(SHORT[div])}</th><td>{e(head)}</td>'
+              f'<td class="n">{ar(len(SUBMISSION[(d, g)]))}</td>'
+              f'<td class="n">{ar(copies)}</td></tr>')
     w('</tbody></table>')
-    w(f'<div class="grand"><span class="k">إجماليُّ النسخ المطلوبة</span>'
-      f'<span class="v">{ar(grand)}</span>'
-      '<span class="e">Total copies required</span></div>')
 
     if flagged:
         w('<div class="foot">† بعضُ بيانات المؤلف أو الطبعة تحتاج إلى مراجعةٍ '
