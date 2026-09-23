@@ -164,8 +164,14 @@ CSS = """
    ═══════════════════════════════════════════════════════════════════ */
 @page{size:A4;}
 *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+/* Coffee is the institution's ground, not the whole document. Each division
+   carries its own colour so the two orders can never be confused and the
+   page has some blood in it: royal blue for the Nursery & Primary, a true
+   crimson for the Royal College. Gold is the constant across both. */
 body{--ink:#241709;--brown:#3B2A1D;--bronze:#6B4A2E;--gold:#B08E4E;--champ:#E8D2A2;
- --panel:#2A1C10;--panel2:#3A2818;--paper:#FAF4E7;--ivory:#F5ECDA;--cream:#EFE3CB;
+ --panel:#2A1C10;--panel2:#3A2818;
+ --nav:#0E2F63;--nav2:#16417E;--navpale:#E2EAF6;--navtint:#F1F5FB;
+ --red:#8C1D26;--red2:#A82730;--redpale:#F6E2E1;--redtint:#FCF2F0;--paper:#FAF4E7;--ivory:#F5ECDA;--cream:#EFE3CB;
  --line:#DCC9A8;--hair:#E9DCC2;--mute:#9A8768;--burg:#7C1F2E;
  --fa:'Amiri',serif;--fk:'Reem Kufi',sans-serif;--fn:'Noto Kufi Arabic',sans-serif;
  --fd:'Cormorant Garamond',Georgia,serif;--fu:'Archivo','Helvetica Neue',sans-serif;
@@ -197,20 +203,26 @@ body{--ink:#241709;--brown:#3B2A1D;--bronze:#6B4A2E;--gold:#B08E4E;--champ:#E8D2
 .cov .en{font-family:var(--fd);font-weight:700;font-size:16.5pt;letter-spacing:.26em;
  text-transform:uppercase;color:#5C3F22;direction:ltr;margin:0 0 11mm;
  padding-left:.26em;}
-.cov .ses{font-size:13.4pt;color:#FFF7E8;background:var(--panel);
- border-top:1.6pt solid var(--gold);padding:3mm 14mm;margin:0 0 11mm;}
+.cov .ses{font-size:13.4pt;color:#FFF3E2;background:var(--red);
+ background-image:linear-gradient(140deg,#A3242E,#8C1D26 60%,#6E1520);
+ border-top:1.8pt solid var(--gold);border-bottom:.6pt solid rgba(232,210,162,.55);
+ padding:3mm 14mm;margin:0 0 11mm;}
 .cov .to{font-size:11pt;color:var(--bronze);line-height:1.9;}
 .cov .to span{display:block;font-family:var(--fu);font-weight:500;font-size:6.8pt;
  letter-spacing:.22em;text-transform:uppercase;color:var(--mute);direction:ltr;
  margin-top:2.4mm;padding-left:.22em;}
 /* ── school divider ─────────────────────────────────────────────── */
-.sch{page-break-before:always;background:var(--panel);color:#F6EEDD;
+.sch{page-break-before:always;color:#FBF4E6;background:var(--panel);
  background-image:linear-gradient(140deg,#3A2818 0%,#2A1C10 55%,#1C1108 100%);
  padding:5.4mm 8mm 5.8mm;border-top:2.4pt solid var(--gold);margin:0 0 6mm;
  display:flex;align-items:center;gap:7mm;position:relative;}
 .sch:after{content:'';position:absolute;left:0;right:0;bottom:0;height:.8pt;
  background-image:linear-gradient(90deg,rgba(176,142,78,.2),#E8D2A2 50%,
  rgba(176,142,78,.2));}
+.sch.d1{background:var(--nav);
+ background-image:linear-gradient(140deg,#1B4E96 0%,#0E2F63 56%,#071B3C 100%);}
+.sch.d2{background:var(--red);
+ background-image:linear-gradient(140deg,#B22E38 0%,#8C1D26 56%,#571016 100%);}
 .sch img{width:19mm;height:auto;display:block;flex:none;}
 .sch .t{flex:1;border-right:.5pt solid rgba(232,210,162,.42);padding-right:7mm;}
 .sch h2{font-family:var(--fk);font-weight:600;font-size:15pt;color:#FFFAF0;
@@ -222,12 +234,14 @@ body{--ink:#241709;--brown:#3B2A1D;--bronze:#6B4A2E;--gold:#B08E4E;--champ:#E8D2
    because it is the first question the Registrar asks. Each division
    carries its own accent so the two orders are never confused. */
 .cls{margin:0 0 4.4mm;page-break-inside:avoid;}
-.clh{display:flex;align-items:center;gap:6mm;background:var(--panel);
- background-image:linear-gradient(140deg,#3B2818 0%,#2A1C10 60%,#1E1309 100%);
- color:#FBF4E4;padding:2.4mm 5mm 2.6mm;margin:0;position:relative;}
-.clh:before{content:'';position:absolute;top:0;right:0;left:0;height:1.8pt;}
-.cls.d1 .clh:before{background-image:linear-gradient(90deg,#0E2F63,#3D67B8 50%,#0E2F63);}
-.cls.d2 .clh:before{background-image:linear-gradient(90deg,#5E1B26,#A8474F 50%,#5E1B26);}
+.clh{display:flex;align-items:center;gap:6mm;color:#FBF4E4;
+ padding:2.4mm 5mm 2.6mm;margin:0;position:relative;}
+.cls.d1 .clh{background:var(--nav);
+ background-image:linear-gradient(140deg,#1A4A90 0%,#0E2F63 60%,#0A2350 100%);}
+.cls.d2 .clh{background:var(--red);
+ background-image:linear-gradient(140deg,#A3242E 0%,#8C1D26 60%,#6E1520 100%);}
+.clh:before{content:'';position:absolute;top:0;right:0;left:0;height:1.8pt;
+ background-image:linear-gradient(90deg,#7E6029,#F2E2BB 50%,#7E6029);}
 .clh h3{font-family:var(--fa);font-weight:700;font-size:14pt;color:#FFFCF4;
  margin:0 0 1mm;line-height:1.24;}
 .clh .en{font-family:var(--fu);font-weight:600;font-size:6.2pt;letter-spacing:.16em;
@@ -240,9 +254,10 @@ body{--ink:#241709;--brown:#3B2A1D;--bronze:#6B4A2E;--gold:#B08E4E;--champ:#E8D2
 .clh .cp em{display:block;font-family:var(--fn);font-style:normal;font-size:6pt;
  color:#B79A63;margin-top:1.4mm;}
 table{width:100%;border-collapse:collapse;font-size:9.6pt;}
-thead th{font-family:var(--fn);font-size:6.4pt;font-weight:400;color:var(--bronze);
- background:var(--cream);padding:1.1mm 4mm 1.3mm;text-align:right;
- border-bottom:.5pt solid var(--line);}
+thead th{font-family:var(--fn);font-size:6.4pt;font-weight:400;padding:1.1mm 4mm 1.3mm;
+ text-align:right;border-bottom:.5pt solid var(--line);}
+.cls.d1 thead th{background:var(--navpale);color:#2E4A78;border-bottom-color:#C9D6EA;}
+.cls.d2 thead th{background:var(--redpale);color:#79313A;border-bottom-color:#E6C9C7;}
 thead th.q{text-align:center;}
 tbody th{text-align:right;font-family:var(--fa);font-weight:400;color:#6A5740;
  font-size:9pt;width:16%;padding:1.1mm 4mm 1.3mm;
@@ -254,10 +269,12 @@ td.bk{width:41%;font-family:var(--fa);font-weight:700;font-size:10.2pt;
 td.au{width:27%;color:#7A664C;font-size:8.6pt;}
 td.q{width:16%;text-align:center;font-family:var(--fa);font-weight:700;
  font-size:12.4pt;color:#FFF6E4;}
-.cls.d1 td.q{background:#12315F;} .cls.d2 td.q{background:#5E1B26;}
+.cls.d1 td.q{background:var(--nav);} .cls.d2 td.q{background:var(--red);}
 tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:var(--ivory);}
-.cls.d1 tbody tr:nth-child(even) td.q{background:#0D2851;}
-.cls.d2 tbody tr:nth-child(even) td.q{background:#4E141E;}
+.cls.d1 tbody tr:nth-child(even) th,.cls.d1 tbody tr:nth-child(even) td{background:var(--navtint);}
+.cls.d2 tbody tr:nth-child(even) th,.cls.d2 tbody tr:nth-child(even) td{background:var(--redtint);}
+.cls.d1 tbody tr:nth-child(even) td.q{background:#0A2350;}
+.cls.d2 tbody tr:nth-child(even) td.q{background:#6E1520;}
 tbody tr:last-child th,tbody tr:last-child td{border-bottom:1.2pt solid var(--gold);}
 tr,thead{break-inside:avoid;page-break-inside:avoid;}
 thead{break-after:avoid;page-break-after:avoid;}
@@ -266,7 +283,7 @@ sup{color:var(--burg);font-size:7.2pt;}
    same convention on every table head, every class band, every summary
    row. It never translates a title or an author's name. */
 thead th i{display:block;font-family:var(--fu);font-style:normal;font-weight:600;
- font-size:5.6pt;letter-spacing:.14em;text-transform:uppercase;color:#9C8768;
+ font-size:5.6pt;letter-spacing:.14em;text-transform:uppercase;opacity:.72;
  direction:ltr;text-align:right;margin-top:.8mm;padding-left:.14em;}
 thead th.q i{text-align:center;}
 .clh .en b{font-family:var(--fu);font-weight:700;color:#E2C68C;letter-spacing:.14em;}
@@ -292,9 +309,12 @@ thead th.q i{text-align:center;}
  padding-left:.26em;}
 .sum td.n,.sum th.n{text-align:center;font-family:var(--fa);font-weight:700;
  color:var(--brown);}
-.sum tbody tr.hd th{background:var(--panel2);color:var(--champ);
- font-family:var(--fk);font-weight:600;font-size:10.4pt;padding:2.6mm 4mm;
- border-bottom:0;}
+.sum tbody tr.hd th{color:var(--champ);font-family:var(--fk);font-weight:600;
+ font-size:10.4pt;padding:2.6mm 4mm;border-bottom:0;background:var(--panel2);}
+.sum tbody tr.hd.d1 th{background:var(--nav);
+ background-image:linear-gradient(140deg,#1A4A90,#0E2F63 60%,#0A2350);}
+.sum tbody tr.hd.d2 th{background:var(--red);
+ background-image:linear-gradient(140deg,#A3242E,#8C1D26 60%,#6E1520);}
 .foot{margin-top:7mm;border-top:.4pt solid var(--line);padding-top:3.4mm;
  font-size:8.8pt;color:var(--mute);line-height:1.75;}
 .sig{display:flex;gap:11mm;margin-top:11mm;}
@@ -328,7 +348,8 @@ def build():
     flagged = False
     for div in ('BASIC', 'COLLEGE'):
         ar_name, en_name = DIV[div]
-        w(f'<div class="sch"><img src="{C}" alt=""><div class="t">'
+        w(f'<div class="sch {"d1" if div == "BASIC" else "d2"}">'
+          f'<img src="{C}" alt=""><div class="t">'
           f'<h2>{e(ar_name)}</h2><div class="l">{en_name}</div></div></div>')
         for d, head, g, copies in CLASSES:
             if d != div:
@@ -369,7 +390,7 @@ def build():
       '<th class="n">عدد العناوين<i>Titles</i></th>'
       '<th class="n">الكمية لكل عنوان<i>Qty per title</i></th></tr></thead><tbody>')
     for div in ('BASIC', 'COLLEGE'):
-        w(f'<tr class="hd"><th colspan="3">{e(DIV[div][0])}'
+        w(f'<tr class="hd {"d1" if div == "BASIC" else "d2"}"><th colspan="3">{e(DIV[div][0])}'
           f'<i>{DIV[div][1]}</i></th></tr>')
         for d, head, g, copies in CLASSES:
             if d != div:
