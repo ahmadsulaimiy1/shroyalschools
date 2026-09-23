@@ -31,7 +31,7 @@ ASSESS_ONLY = ('شرط',)
 PROGRAMMES = ('القرآن', 'اللغة', 'الإسلامية')
 # التتويج is present in the data as a fourth programme. L-03 fixes three and
 # L-04 admits no subject outside them. This is NOT resolved here — verify.py
-# reports it as a contradiction awaiting the Director General's ruling.
+# reports it as a contradiction awaiting the Chairman's ruling.
 PROG_IN_DATA = PROGRAMMES + ('التتويج',)
 
 
@@ -91,7 +91,7 @@ SRC = {
  'اللغة العربية': [rng(1, 3, '**مفتاح البيان** (مواد المدرسة) — ٣٣ أسبوعًا ببواباته'),
                    rng(4, 6, 'كتاب اللغة وعلومها (المدرسة) · **النحو الواضح** — الجارم وأمين *(تدريبات)*'),
                    rng(7, 12, '**جامع الدروس العربية** — الغلاييني *(مرجع)* · مواد المدرسة')],
- # Director General's ruling, 14 Sep 2026: القراءة والتهجي has its own matn.
+ # Chairman's ruling, 14 Sep 2026: القراءة والتهجي has its own matn.
  'القراءة والتهجي': [rng(1, 3, '**نور البيان** — المتن المعتمد لفكِّ الحرف والتهجّي (المدرسة)')],
  'الخط والإملاء': [rng(1, 6, '**كراسة النسخ والرقعة** (المدرسة) · **قواعد الإملاء** — عبد السلام هارون')],
  'قواعد اللغة الوظيفية': [rng(4, 6, '**مواد استقرائية** (المدرسة) — القاعدة تُلمس في النص. *لا متن، عمدًا* · تدريبات من النحو الواضح')],
@@ -165,7 +165,7 @@ SRC = {
 # General can close, and the generated documents say so in place of a source.
 UNSOURCED = {
  'الترجمة': (7, 12,
-    'لا نصَّ لها في السجل — و**اللغةُ الهدفُ غيرُ مسمّاة بقرار المدير العام** '
+    'لا نصَّ لها في السجل — و**اللغةُ الهدفُ غيرُ مسمّاة بقرار رئيس المدارس** '
     '(قد تكون الإنجليزية أو الهوسا أو الأردية أو اليوربا). '
     'وL-18 وL-38 ما زالا يكتبان «إلى اليوربا» فيحتاجان تحريرًا'),
  'اللغة العربية · كتاب البرنامج الثاني': (4, 6,

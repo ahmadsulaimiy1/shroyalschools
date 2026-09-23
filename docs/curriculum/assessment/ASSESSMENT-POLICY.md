@@ -577,7 +577,7 @@ cheat is the only kind worth holding.
 | **أ · مخالفة إجرائية** | materials in the room, talking, overrunning, wrong seat | warning recorded; mark unaffected unless advantage gained |
 | **ب · غش** | copying, communicating, unauthorised notes, phone | **that paper voided**; re-sit at next sitting; recorded |
 | **ج · انتحال** | presenting another's work as one's own in the research paper, khutbah or service report | **whole component voided**; re-submission; **مناقشة التخرج deferred one cycle** |
-| **د · تزوير** | forged evidence, falsified service documentation, impersonation, altered scripts | **whole sitting voided**; barred one cycle; **referred to the Director General** |
+| **د · تزوير** | forged evidence, falsified service documentation, impersonation, altered scripts | **whole sitting voided**; barred one cycle; **referred to the Chairman** |
 | **هـ · مخالفة موظف** | teaching a paper's contents, altering marks, coaching in a live gate | removal from all assessment duties; disciplinary referral; **affected instrument re-run for the whole cohort** |
 
 ## 10.2 Process
@@ -685,8 +685,8 @@ before the sitting. `QURAN-GATE-PROTOCOL.md` §8.4.
 | Research paper + referee reports | **5 years** | Graduation Council | plagiarism and challenge |
 | Strand annexes and primary report cards | **3 years** | School office | continuity of teaching judgement |
 | Access arrangement files | **duration + 3 years** | Examinations Officer, confidential | |
-| Malpractice files | **7 years** | Director General's office, confidential | |
-| Certificate register (all issued certificates) | **permanently** | Director General's office | verification for life |
+| Malpractice files | **7 years** | Chairman's office, confidential | |
+| Certificate register (all issued certificates) | **permanently** | Chairman's office | verification for life |
 
 **Handling.** Scripts and recordings are confidential. A candidate (or a parent of a
 minor) may **inspect** the candidate's own script in the presence of an officer; no
@@ -707,7 +707,7 @@ Recorded, not concealed:
    acquisition = 12.7 juz) **without lowering what the certificate asserts**: twelve
    are certified متقنة rather than fifteen asserted and unfunded. Operationalised in
    `QURAN-GATE-PROTOCOL.md` Part 5.
-2. **G12 load.** The Director General's ruling stands. This policy's Part 3 ceiling of
+2. **G12 load.** The Chairman's ruling stands. This policy's Part 3 ceiling of
    four internal G12 papers is built for the certification year the corpus describes;
    if the ruling changes, Part 3 is amended.
 3. ~~**WAEC's zero timetabled minutes** while being a certificate condition.~~

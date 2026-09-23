@@ -68,7 +68,7 @@ ASSESS = {'مستقل':'ورقةٌ مستقلة · يدخل المعدل',
           'مسار':'ملحقٌ وصفيّ بلا رقم',
           'فصلي':'يُقوَّم في فصله'}
 
-# From the Director General's own working sheet (Book1.xlsx). Only these two
+# From the Chairman's own working sheet (Book1.xlsx). Only these two
 # classes carry a memorisation range there; no other class is given one.
 SHEET_HIFZ = {1:'سورة الناس ← سورة التكاثر', 2:'سورة القارعة ← سورة العلق'}
 
@@ -634,7 +634,7 @@ TEXTS.sort(key=lambda x: (x[0], x[1], x[3]))
 
 # ── the institution's own marks ─────────────────────────────────────
 # The crest and the GACAIS emblem are the Institution's, supplied by the
-# Director General. They are used as given: the crest's own wordmark
+# Chairman. They are used as given: the crest's own wordmark
 # lockup is cropped away so the artwork can sit beside typeset lines,
 # and nothing else about either mark is altered. Both are inlined as
 # data URIs so the published HTML remains one self-contained file.

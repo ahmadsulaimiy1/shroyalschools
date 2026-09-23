@@ -34,7 +34,7 @@ before it was diagnosed. The failure is this:
     Each document was rebuilt from whatever happened to be in front of the
     person rebuilding it. Every time that happened, decisions that had been
     settled earlier but did not appear in THAT PARTICULAR FILE were silently
-    dropped. The Director General then had to restate them from memory.
+    dropped. The Chairman then had to restate them from memory.
 
 These were never disagreements. They were losses. The same rulings were made
 three and four times over.
@@ -43,7 +43,7 @@ The remedy is a single file, docs/curriculum/00-LOCKED-DECISIONS.md, called
 "the register". It holds 35 numbered rulings, L-01 through L-35. Its governing
 rule, in the original Arabic, is:
 
-    لا يُغيَّر بند مقفل إلا بقرار صريح جديد من المدير العام.
+    لا يُغيَّر بند مقفل إلا بقرار صريح جديد من رئيس المدارس.
     لا يُغيَّر بالنسيان، ولا بإعادة البناء، ولا باجتهاد لجنة.
     وما ليس في هذا السجل فليس بقرار.
 
@@ -68,7 +68,7 @@ WORKING LANGUAGE
 --------------------------------------------------------------------------------
 
 Subject names, text titles and instructional forms are written IN ARABIC. This
-was an explicit instruction from the Director General. English may gloss a rule;
+was an explicit instruction from the Chairman. English may gloss a rule;
 it may never replace a name. "العروض وعلم القافية" is not "prosody". "البحث
 والخطابة" is not "research and oratory". The reason given was direct: English
 cannot do justice to Arabic. Keep the Arabic names throughout.

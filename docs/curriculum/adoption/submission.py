@@ -3,7 +3,7 @@
 
 Two things live here and they are kept apart on purpose:
 
-  SUBMISSION  the two lists exactly as the Director General sent them.
+  SUBMISSION  the two lists exactly as the Chairman sent them.
               Titles, authors, volume numbers and subject labels are
               transcribed VERBATIM, including the places where the two
               lists disagree with each other. Nothing is silently corrected.

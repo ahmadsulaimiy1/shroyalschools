@@ -7,7 +7,7 @@
 
 ## اثنا عشر صفًّا · ثلاثة فصول لكل صف · ثلاثة برامج
 
-**Two corrections made on the Director General's ruling:**
+**Two corrections made on the Chairman's ruling:**
 
 | | كان | صار |
 |---|---|---|

@@ -10,7 +10,7 @@ Every document in this project was at some point rebuilt from whatever was in
 front of the rebuilder, and each time, decisions settled earlier but absent from
 THAT file were silently dropped. Four subjects vanished this way once. Do not
 rebuild from context. The rule is:
-    "لا يُغيَّر بند مقفل إلا بقرار صريح جديد من المدير العام. وما ليس في هذا السجل فليس بقرار."
+    "لا يُغيَّر بند مقفل إلا بقرار صريح جديد من رئيس المدارس. وما ليس في هذا السجل فليس بقرار."
     A locked item changes only by explicit new ruling. What is not in the
     register is not a decision.
 

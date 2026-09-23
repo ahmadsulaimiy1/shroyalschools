@@ -124,7 +124,7 @@ Layer A holds Programme 3 deliberately whole at G1–G2; Layer B fragments it.
 **Both are preserved; the contradiction is named.** `[RED]` **CR-08.** The lens
 records that the earlier direction «do not invent fragmentation» points one way
 and the 26-subject universe the other, and that this is a decision for the
-Director General, not an arithmetic reconciliation.
+Chairman, not an arithmetic reconciliation.
 
 ### L4 · Curriculum science
 
@@ -299,7 +299,7 @@ No 36-minute and no 51-minute period is created.
 | Residual risk | the institution never answers L5 | a reduced week engineered without the روضة behind it may fail بوابة القراءة |
 
 **The Council does not rule.** Both options are defensible and the choice is
-constitutional, not arithmetic. It is put to the Director General as **CR-04**,
+constitutional, not arithmetic. It is put to the Chairman as **CR-04**,
 and the Council states plainly that **Option 1 is the arithmetically
 comfortable answer and L5 is the reason to distrust that comfort.**
 

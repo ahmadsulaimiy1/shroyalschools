@@ -126,7 +126,7 @@ fifteen-year-old eleven months from a Qur'anic gate is not. The recovered
 
 ## 4. Q3 — G12: the Board overrules the rising-load direction, at G12 only
 
-**To the Director General, in the Board's own terms:** the ruling that load
+**To the Chairman, in the Board's own terms:** the ruling that load
 rises with the grade is **upheld from G1 to G11** — it rises **4 → 12 taught
 blocks, monotonically, without exception.** It is overruled **at the twelfth
 grade alone**, because the institution's own record contradicts it in four

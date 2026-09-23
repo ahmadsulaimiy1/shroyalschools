@@ -695,8 +695,8 @@ are its only evidence:
 | بيان المحفوظ, signed by teacher and candidate | **5 years** | Panel |
 | Lot registers (what was drawn, for whom, by whom) | **5 years** | Panel |
 | Examiner qualification and standardisation records | **5 years** | Board |
-| **Panel register naming the chair's سند** | **permanently** | Director General |
-| **Certificate register** | **permanently** | Director General |
+| **Panel register naming the chair's سند** | **permanently** | Chairman |
+| **Certificate register** | **permanently** | Chairman |
 | Articulation baselines and access files | **duration + 3 years**, confidential | Examinations Officer |
 
 **Evidence under appeal is frozen** and is not destroyed on schedule until the appeal
@@ -707,7 +707,7 @@ closes, however long that takes.
 # PART 11 — THE ANNUAL REPORT OF THE PANEL
 
 After each cycle the chair reports **in writing** to the Assessment Board and the
-Director General:
+Chairman:
 
 1. candidates heard, met, not met, deferred, re-sat — **and the same for each re-sit**;
 2. **the error profile of the cohort by code** — which of ج١–ج٦ and خ١–خ٧ actually

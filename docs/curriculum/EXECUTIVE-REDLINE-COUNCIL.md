@@ -6,7 +6,7 @@
 
 ## SHRS · GACAIS · permanent constitutional review body
 
-`[CURRENT COUNCIL DIRECTION]` — established by the Director General.
+`[CURRENT COUNCIL DIRECTION]` — established by the Chairman.
 
 ---
 
@@ -78,7 +78,7 @@ constitutional architecture issue stands at RED or BLACK.
 | Label | Meaning |
 |---|---|
 | `[RECOVERED]` | Quoted from a real corpus document, with locator |
-| `[CURRENT COUNCIL DIRECTION]` | Instructed by the Director General or Council |
+| `[CURRENT COUNCIL DIRECTION]` | Instructed by the Chairman or Council |
 | `[CALCULATED FROM RECOVERED DATA]` | Arithmetic on recovered figures, shown checking |
 | `[PROFESSIONAL INFERENCE]` | Reasoned judgement, not sourced |
 | `[NEW ENGINEERING DECISION]` | Created by this project, owned as such |

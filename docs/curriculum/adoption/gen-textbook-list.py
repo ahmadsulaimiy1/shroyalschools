@@ -42,7 +42,7 @@ CHECK = {'متن الحائية', 'أعباد المسيح', 'مقرر الأس�
 # The two lists honour the same man twice over and not at all elsewhere:
 # «الشيخ أحمد بن إبراهيم السليمي» in one, «أحمد بن إبراهيم السليمي» in the
 # other. The rule here is narrow and it invents nothing: **the fullest form
-# the Director General supplied for a person is the form used everywhere he
+# the Chairman supplied for a person is the form used everywhere he
 # appears.** Titles are kept because the source gives them; none is added to
 # a name that never carried one. Only the eulogy «رحمه الله» is dropped — it
 # is a supplication, not part of an author's name on an order form, and it
@@ -65,7 +65,7 @@ def person_key(name):
 FIX = {'عبد الرحمن محمد بن الصغير الأخضري': 'عبد الرحمن بن محمد بن الصغير الأخضري'}
 
 # Where one list names an author and the other leaves the same book blank,
-# the name is carried across. The Director General's own data, made
+# the name is carried across. The Chairman's own data, made
 # consistent — nothing brought in from outside.
 FILL = {
     'زاد المسلم الصغير': 'عبد الشكور معلم عبد الفارح',
@@ -114,7 +114,7 @@ _learn()
 # College writes «مقرر وزارة التعليم السعودية» where the Basic list names
 # the subject, and a bookseller cannot act on the first form. And a volume
 # is «ج١» throughout, not «ج١» here and «الجزء الأول» there for one book.
-# All three are settled from the Director General's own wording.
+# All three are settled from the Chairman's own wording.
 TITLE = {'نور البيان': 'نور البيان في ترتيل القرآن'}
 VOLN = {'الجزء الأول': 'ج١', 'الجزء الثاني': 'ج٢',
         'الجزء الثالث': 'ج٣', 'الجزء الرابع': 'ج٤'}
@@ -410,7 +410,7 @@ def build():
       'التوقيع / التاريخ &middot; Signature / Date</div>'
       '<div><b>مكتب المسجِّل</b><i>Registrar&rsquo;s Office</i>'
       'التوقيع / التاريخ &middot; Signature / Date</div>'
-      '<div><b>المدير العام</b><i>Director General</i>'
+      '<div><b>رئيس المدارس</b><i>Chairman &middot; Head of Schools</i>'
       'التوقيع / التاريخ &middot; Signature / Date</div></div>')
     w('</div></body></html>')
     return ''.join(o)

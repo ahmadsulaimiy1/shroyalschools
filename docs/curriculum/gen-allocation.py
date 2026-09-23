@@ -244,7 +244,7 @@ if UNRESOLVED:
         rec=REC.get((sub,cl(host)),'**[يحتاج قرارًا صريحًا]**')
         bw(f'> | {NAMES[int(g)][0]} | **{esc(sub)}** | {esc(cl(host))} | '
            f'{esc(note) if note else "*(فارغ)*"} | {esc(rec)} |\n')
-    bw('>\n> **ما هو مطلوب:** قرارٌ صريح من المدير العام بصيغة كل مدخل، ثم يُدوَّن في السجل،\n')
+    bw('>\n> **ما هو مطلوب:** قرارٌ صريح من رئيس المدارس بصيغة كل مدخل، ثم يُدوَّن في السجل،\n')
     bw('> ثم يُحدَّث `allocation-v11.json` بحيث تبدأ كل ملاحظة بصيغتها المقفلة، ويعاد التوليد.\n')
     bw('\n')
     # ── second finding: the memorisation channel is absent at G9 ────────────

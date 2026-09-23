@@ -15,7 +15,7 @@ the recovered 19-حصة ledger of ACD-007 §4.4. No subject was cut to make it f
 
 ## 1. P2-01-k — RULED
 
-`[CURRENT COUNCIL DIRECTION]` — Director General:
+`[CURRENT COUNCIL DIRECTION]` — Chairman:
 
 > **The madhhab is the madhhab of Ahl al-Sunnah. The institution binds itself
 > to no single school — not Ḥanafī, Mālikī, Shāfiʿī, Ḥanbalī nor Ashʿarī — and
@@ -59,7 +59,7 @@ cycle — would force periods down to 30 minutes at G11–G12, which cannot carr
 
 **Rule 2 — few subjects × many contacts early; many subjects × few contacts late.**
 
-This is the Director General's rising-load principle expressed in time: the
+This is the Chairman's rising-load principle expressed in time: the
 total is constant at 19 حصص, and what changes is how it is divided.
 
 | | G1 | G6 | G12 |
@@ -430,7 +430,7 @@ in each week; a subject with 1 is taught in أ or ب only. The Qur'an hour, ʿA�
 alternate**, so the day's shape never changes for staff or pupils.
 
 `[NEW ENGINEERING DECISION]` The fortnightly cycle is not in the recovered
-corpus. It is introduced to carry the Director General's rising-load ruling
+corpus. It is introduced to carry the Chairman's rising-load ruling
 without breaking the recovered حصة or the operating week, and is recorded as a
 new decision rather than presented as recovered.
 
@@ -441,7 +441,7 @@ new decision rather than presented as recovered.
 | Ref | Item | Status |
 |---|---|---|
 | **P2-02** | سجل التوزيع المصادق — the certified distribution register named in §3.2 | **missing from the corpus.** This document is a reconstruction of it and should be reconciled against the original if it is ever recovered |
-| **CR-02** | ʿAṣr 20 or 30 minutes; assembly 10 or 15 | §4.2 figures used throughout. Worth 1 h 10 m a week if the Director General's figures are preferred |
+| **CR-02** | ʿAṣr 20 or 30 minutes; assembly 10 or 15 | §4.2 figures used throughout. Worth 1 h 10 m a week if the Chairman's figures are preferred |
 | **Superseded** | §4.4's 546-hour capstone year; Part 1's «الثاني عشر خفيف»; §3.2 ranges ending at ١١ | minuted in the matrix v2, §5 |
 
 Nothing else is open. The architecture is complete from subject universe through

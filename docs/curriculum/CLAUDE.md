@@ -29,7 +29,7 @@
 > colours, the three ramps, the cover system of front · spine · back, and the
 > refusal to claim an approval that has not happened — is locked in
 > **`CURRICULUM-EDITORIAL-BIBLE.md` §X-ter** as **D-01 … D-18**, and the
-> Director General's own instructions that produced it are kept verbatim in
+> Chairman's own instructions that produced it are kept verbatim in
 > **Appendix A** of the same file.
 >
 > **Read §X-ter before you touch `gen-teacher-guide.py`, the cover, the
@@ -62,7 +62,7 @@ a board's own judgement. A board may refer a locked item back; it may not
 overrule one.
 
 **2 · If a change would break a locked item, stop.** Do not make the change and
-explain afterwards. Bring the locked item to the Director General and ask,
+explain afterwards. Bring the locked item to the Chairman and ask,
 before editing.
 
 **3 · A new ruling is written into the register FIRST**, in the change log with
@@ -77,7 +77,7 @@ its reason, and only then implemented in the derived documents.
 
 Every document in this directory was at some point rebuilt from whatever was in
 front of it. Each time, decisions settled earlier that did not happen to appear
-in *that file* were silently dropped, and the Director General had to restate
+in *that file* were silently dropped, and the Chairman had to restate
 them. It happened to:
 
 - the **three-programme** structure and the **four sections**
@@ -170,7 +170,7 @@ two places, it belongs in that module, not in both.
 A breach fails the run. A **contradiction** is different: the data clashes with a
 locked item, or a load-bearing figure was never declared by anyone. The script
 prints these under `تناقضاتٌ تُرفَع ولا تُصلَح هنا` and **does not fix them**,
-because fixing them would be deciding them. They go to the Director General,
+because fixing them would be deciding them. They go to the Chairman,
 item by item. A green exit with contradictions listed is **not** clearance to
 publish, and the script says so on its last line.
 

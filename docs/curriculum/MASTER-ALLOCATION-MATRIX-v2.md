@@ -7,7 +7,7 @@
 
 ## 28 subjects × G1–G12 · rulings applied · load rising with the grade
 
-**Governing principle** `[CURRENT COUNCIL DIRECTION]` — *Director General:*
+**Governing principle** `[CURRENT COUNCIL DIRECTION]` — *Chairman:*
 > **The more advanced the class, the more subjects and the more workload.**
 > **The graduating class carries as many subjects as possible.**
 
@@ -188,8 +188,8 @@ kept and the prescribed bridge is a binding requirement on G7 Term 1.
 | Subject renamed **البحث والخطابة**, G10–G12, owning the 1,500-word refereed paper; composition is a strand in Arabic G3–G9 | **d = D3** | §3.2 «بحث محكم ١٥٠٠ كلمة» |
 | Subject renamed **الخط والإملاء** | d, same defect class | §3.2 compound name restored; «يد نسخية مضبوطة» regains an owner |
 | **خدمة التتويج** admitted at G12 | **d = D3** | §3.2 register + Part 7 competency 10 |
-| **G12 carries the maximum load** — 26 subjects, 23 independent | **i = B** | Director General, this sitting |
-| **No subject is demoted once it has risen** | rising-load principle | Director General, this sitting |
+| **G12 carries the maximum load** — 26 subjects, 23 independent | **i = B** | Chairman, this sitting |
+| **No subject is demoted once it has risen** | rising-load principle | Chairman, this sitting |
 | **اللغة العربية runs to G12** | rising-load principle | §3.2 — its outcome «متحدث وكاتب أكاديمي» is a *graduation* outcome |
 | **السيرة integrates with التاريخ at G9** | RR-01 | Part 1 «دمج السيرة بالتاريخ» |
 

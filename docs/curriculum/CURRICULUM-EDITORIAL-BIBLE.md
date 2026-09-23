@@ -21,7 +21,7 @@ way that could have been predicted from a standard and was not.
 Every loss followed one pattern. A document was rebuilt from whatever happened
 to be in front of whoever was rebuilding it. Decisions settled weeks earlier
 that did not appear *in that particular file* were silently dropped, and the
-Director General had to restate them from memory. Nobody disagreed with the
+Chairman had to restate them from memory. Nobody disagreed with the
 lost decisions. Nobody argued them down. They simply were not written anywhere
 that the next rebuild would look.
 
@@ -34,7 +34,7 @@ gets argued with:**
 
 | What was lost | How it came back |
 |---|---|
-| The three-programme structure and the four sections | Restated by the Director General |
+| The three-programme structure and the four sections | Restated by the Chairman |
 | Two books, then three — one per programme, lower classes | Restated twice; L-06 corrected |
 | Class 12 carrying the most | A board overruled it and had to be reversed |
 | أصول التفسير · التاريخ والسيرة · الترجمة · مصطلح الحديث | Dropped from the matrix during an unrelated rebuild |
@@ -62,7 +62,7 @@ rule in this bible descends from one of them.
 beautifully and cannot be timetabled has failed. Prose that cannot be turned
 into a slot, a book, a teacher and a mark is decoration.
 
-**It is read by people who were not in the room.** The Director General will
+**It is read by people who were not in the room.** The Chairman will
 not be present when a scheme of work is written in class 8 in three years.
 Everything the corpus means must be *on the page*, not in the memory of whoever
 ruled it.
@@ -116,7 +116,7 @@ derivation." That was wrong, and is corrected here.**
 
 ### Who actually approves a curriculum decision
 
-The Director General's rulings are the **source** of this work and the reason
+The Chairman's rulings are the **source** of this work and the reason
 it is coherent. They are not, by themselves, its constitutional route to force.
 The Charter routes it:
 
@@ -138,7 +138,7 @@ The Charter routes it:
    work of an ad-hoc panel, and the route by which they become binding runs
    through the Academic Council, not through this directory.
 
-2. **The ʿaqīdah findings are not the Director General's alone to settle.**
+2. **The ʿaqīdah findings are not the Chairman's alone to settle.**
    Reviewer R-06 raised seven red findings on العقيدة والتوحيد وعلم الكلام,
    including the framing of «كتاب الفِرَق» and whether Ashʿarī doctrine is
    declared as the ʿaqīdah frame. Under Article 80D that is Shariah Council
@@ -337,7 +337,7 @@ never replace a name. «العروض وعلم القافية» is not "prosody".
 is not "research and oratory". A translated subject name is a different subject
 by the time it reaches a scheme of work.
 
-**The target language of الترجمة is not fixed.** Ruled by the Director General,
+**The target language of الترجمة is not fixed.** Ruled by the Chairman,
 14 September 2026: it may be English, Hausa, Urdu or Yoruba. The subject is the
 skill of carrying meaning into the tongue of the listener, taught by its
 principles; the section chooses its tongue. *(L-18 and L-38 still read «إلى
@@ -415,7 +415,7 @@ breaking the thing it guards and confirming the run fails.
 
 The brand bible carries this section and so does this one, for the same reason.
 Each item below is a real gap. **None may be filled by inference, by a
-reviewer, or by a script.** They are the Director General's to close.
+reviewer, or by a script.** They are the Chairman's to close.
 
 | Gap | Why it matters |
 |---|---|
@@ -448,7 +448,7 @@ item by item.**
 
 ## X-bis. The look of the published handbook — typography and colour
 
-**[CURRENT COUNCIL DIRECTION — Director General, 14 September 2026.]** The
+**[CURRENT COUNCIL DIRECTION — Chairman, 14 September 2026.]** The
 direction was: *use Amiri as an important SHRS typeface, but art-direct the
 typography rather than forcing one font everywhere*; colour has *full creative
 freedom with discipline*; and *the final result should look art-directed, not
@@ -522,7 +522,7 @@ belongs to before reading a word of it.
 
 ### The binding
 
-**[CURRENT COUNCIL DIRECTION — Director General.]** A first cover was built
+**[CURRENT COUNCIL DIRECTION — Chairman.]** A first cover was built
 green, centred, double-framed and medallioned. It was refused in those terms:
 *"do not repeat the giant central circular geometric logo, the large empty
 green background, the conventional double gold rectangular border, the centred
@@ -602,7 +602,7 @@ wraparound sheet is built in that order.
 ### The Institution's own marks
 
 The **SHRS crest** and the **GACAIS emblem** are the Institution's, supplied by
-the Director General, and are used **as given** — the released branding
+the Chairman, and are used **as given** — the released branding
 baseline forbids replacing the existing crest, and nothing here invents one.
 The only alteration is that the crest's own wordmark lockup is cropped away so
 the artwork can sit beside typeset lines; the crest artwork itself is untouched.
@@ -648,7 +648,7 @@ set in the reading voice, above a gold rule, exactly as given.
 > curriculum. From **14 September 2026** it is true of the **design** as well.
 
 **GACAIS–CURRICULUM v1.0 is closed.** The items below are **locked**. They
-change only by an explicit new ruling from the Director General, written into
+change only by an explicit new ruling from the Chairman, written into
 this section with its reason **before** anything is edited — never by a rebuild,
 never by a board's own judgement, never because a later agent thought it could
 do better. A rebuild that quietly loses one of them is the exact failure
@@ -683,8 +683,8 @@ to the curriculum. It will not be allowed to happen to the book.
 | edition | **GACAIS–CURRICULUM v1.0** · first edition · September 2026 |
 | commit | the commit that carries this section |
 | pages | **79** — front board · 77 text pages · back board |
-| `SHRS-CURRICULUM-HANDBOOK.pdf` | `4a285b2a13be28b42770e2eb12967d4ee2e332c0d277aa396a1fd2e06a117bb8` |
-| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `d8d6ad4721127fa62446622b140caee580fa712c2d7ab2e07e1d7e8b690ec589` |
+| `SHRS-CURRICULUM-HANDBOOK.pdf` | `598dbdcee9712673d4f13a9e8d045f9b63317dc092deb5d67663695673810bfd` |
+| `SHRS-CURRICULUM-COVER-WRAP.pdf` | `afd970479357e0449e117fcd7896a655be3f8a1c75d67e7d3f9f6b900acf5b57` |
 | `assets/shrs-crest.png` | `9050ea9fe7cc4c2c1d6ff8c4a9cb26f488c85bed878032df695d00aca45b4ceb` |
 | `assets/gacais-mark.png` | `9d573297d0998e684789b3be15dc4ecbafd267c0d24de61da4c1a66e41d260ad` |
 
@@ -728,7 +728,7 @@ Three things about it are locked with the rest:
 #### The 26-subject list was not used, and why
 
 The directive listing this page's contents named a **26-subject universe**.
-The corpus carries **34**, and the Director General has already ruled on this
+The corpus carries **34**, and the Chairman has already ruled on this
 point in terms: *«26 was old — 34 is correct, keep it.»* The same directive
 also says, at §3, *"use the strongest available source authority… the register
 must reflect the curriculum architecture actually supported by the source
@@ -752,7 +752,7 @@ one line in the list), **renamed** العروض وعلم القافية → ال
 النشيد والمحفوظات out of اللغة into القرآن. Every one of those is forbidden by
 the directive's own §3.
 
-> **RULED, Director General:** *«34 is correct — keep the register as built.»*
+> **RULED, Chairman:** *«34 is correct — keep the register as built.»*
 > The conflict is **closed**. The twenty-six-subject list is superseded and is
 > not to be reintroduced by a later rebuild, a later directive quoting it, or a
 > board's own judgement. It changes only by a new express ruling written here
@@ -827,7 +827,7 @@ produced by hand.
 ## Appendix A. The directions that made this edition
 
 **Why this appendix exists.** Everything above is the *result*. This is the
-*instruction* — the Director General's own words, kept so that the next person
+*instruction* — the Chairman's own words, kept so that the next person
 can see what was actually asked for rather than inferring it from the artefact.
 It is the same discipline as §V: the rule is kept with the failure it prevents.
 
@@ -1039,7 +1039,7 @@ Institution's hierarchy, alongside the register it describes. It states
 discipline; it confers no authority, and it is void to the extent it ever
 conflicts with a Policy, Regulation, Statute, the Charter or the Constitution.
 It changes the way the register changes — by an explicit ruling from the
-Director General, written down with its reason, and never by a rebuild.
+Chairman, written down with its reason, and never by a rebuild.
 
 When a rule here is found to have failed — as L-20's protection did, as
 Chapter Five's arithmetic did — **the failure is added to §V with the rule**,

@@ -25,7 +25,7 @@ before it was diagnosed. The failure is this:
     Each document was rebuilt from whatever happened to be in front of the
     person rebuilding it. Every time that happened, decisions that had been
     settled earlier but did not appear in THAT PARTICULAR FILE were silently
-    dropped. The Director General then had to restate them from memory.
+    dropped. The Chairman then had to restate them from memory.
 
 These were never disagreements. They were losses. The same rulings were made
 three and four times over.
@@ -34,7 +34,7 @@ The remedy is a single file, docs/curriculum/00-LOCKED-DECISIONS.md, called
 "the register". It holds 35 numbered rulings, L-01 through L-35. Its governing
 rule, in the original Arabic, is:
 
-    لا يُغيَّر بند مقفل إلا بقرار صريح جديد من المدير العام.
+    لا يُغيَّر بند مقفل إلا بقرار صريح جديد من رئيس المدارس.
     لا يُغيَّر بالنسيان، ولا بإعادة البناء، ولا باجتهاد لجنة.
     وما ليس في هذا السجل فليس بقرار.
 
@@ -59,7 +59,7 @@ WORKING LANGUAGE
 --------------------------------------------------------------------------------
 
 Subject names, text titles and instructional forms are written IN ARABIC. This
-was an explicit instruction from the Director General. English may gloss a rule;
+was an explicit instruction from the Chairman. English may gloss a rule;
 it may never replace a name. "العروض وعلم القافية" is not "prosody". "البحث
 والخطابة" is not "research and oratory". The reason given was direct: English
 cannot do justice to Arabic. Keep the Arabic names throughout.
@@ -288,7 +288,7 @@ L-06  الحد الأدنى ثلاثة كتب — كتاب لكل برنامج �
       Minimum THREE books - one per programme - plus the muṣḥaf. The muṣḥaf is
       a source, not a teaching book, and is never counted as Programme One's
       book. This was originally "two books", which left Programme One with no
-      book at all in the lower classes. The Director General caught it: if
+      book at all in the lower classes. The Chairman caught it: if
       there are three programmes, there must be at least three books.
 
 L-07  لا اسمَ بلا دقيقة — لا مادة بلا حصص ولا مضيف مسمّى
@@ -301,7 +301,7 @@ L-09  الحمل يرتفع مع الصف
       The load rises with the class. Note: this governs PROGRAMME LOAD overall.
       It does NOT mean an individual subject can never be demoted. An earlier
       draft invented a "monotonic status" rule - once a subject rose it could
-      never fall - and this was explicitly withdrawn. The Director General said
+      never fall - and this was explicitly withdrawn. The Chairman said
       plainly that it is not compulsory to teach every subject every term.
 
 L-10  صف التخرج يحمل الأكثر — ولا يُخفَّض بقرار لجنة
@@ -326,7 +326,7 @@ L-14  البلاغة: ستة فصول كاملة
       comfortably exceeded.
 
 L-15  العروض وعلم القافية: لا يُدرَّس في فصل واحد
-      Prosody and rhyme are NOT taught in a single term. The Director General
+      Prosody and rhyme are NOT taught in a single term. The Chairman
       was explicit: three or four terms, not one.
 
 L-16  النقد والآداب: مادة لها وزنها — لا وحدة صغيرة
@@ -1302,7 +1302,7 @@ The Arabic syllabus notes are the actual prescribed content.
 PART 7 - TAJWĪD ACROSS THE TWELVE CLASSES (L-32, L-33)
 ================================================================================
 
-This was one of the four errors the Director General personally corrected. The
+This was one of the four errors the Chairman personally corrected. The
 principle:
 
     الساعة القرآنية للحفظ والمراجعة. والتجويد علمٌ له حصته ومتنه وورقته.
@@ -1350,7 +1350,7 @@ PART 8 - THE TERM-COURSE ARCHITECTURE (L-11, L-12)
 ================================================================================
 
 This is one of the defining features of the design and it came directly from the
-Director General:
+Chairman:
 
     "It is not necessary that you compress the subject into the advanced
     classes... some may be learned maybe even for just a term, like a course.
@@ -2046,7 +2046,7 @@ Do these things, in this order:
  9. Do not infer the school's creed or madhhab from any booklist.
 
 10. When you report, be exact. Say what you verified and how. Say what you did
-    not verify. The Director General has caught every unearned claim so far.
+    not verify. The Chairman has caught every unearned claim so far.
 
 ================================================================================
 END OF BRIEFING

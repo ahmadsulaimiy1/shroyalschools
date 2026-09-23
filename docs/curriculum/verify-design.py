@@ -240,7 +240,7 @@ else:
     NOTE.append('the PDF was not built, so the board check did not run')
 
 # ── D-18 · the executive register drops nothing ─────────────────────
-# Ruled by the Director General: «34 is correct — keep the register as built.»
+# Ruled by the Chairman: «34 is correct — keep the register as built.»
 # A directive had named a 26-subject universe; building from it would have
 # dropped الفرائض (ring-fenced by L-19, and lost once already), الإنشاء
 # والتعبير (L-39), قواعد اللغة الوظيفية, فقه اللغة والمعاجم, خدمة التتويج and

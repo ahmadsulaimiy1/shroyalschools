@@ -121,7 +121,7 @@ for s in CORNERS:
     if gaps: bad.append((s, gaps))
 check('L-13', not bad, f'مواد الأساس لا تنقطع من السابع — {bad or "6/6"}')
 
-# ── L-14/15/16/17 · the subjects the Director General weighted by hand ────
+# ── L-14/15/16/17 · the subjects the Chairman weighted by hand ────
 def terms(subject):
     n = 0
     for g in GRADES:
@@ -170,7 +170,7 @@ drops = [(i + 1, sci[i - 1], sci[i]) for i in range(1, 12) if sci[i] < sci[i - 1
 check('L-09', not drops, f'الحمل يرتفع مع الصف — {drops or sci}')
 
 # ── L-18 · translation is carried, not dropped ──────────────────────────
-# The target language is NOT fixed: the Director General has ruled it may be
+# The target language is NOT fixed: the Chairman has ruled it may be
 # English, Hausa, Urdu or Yoruba. This checks the subject is present, and says
 # nothing about which tongue — the register's own wording still needs editing.
 check('L-18', grades_present('الترجمة'),
@@ -334,7 +334,7 @@ if contradictions:
     print('── تناقضاتٌ تُرفَع ولا تُصلَح هنا ' + '─'*34)
     for line in contradictions: print(line)
     print('  هذه ليست أخطاءَ برمجة. كلُّ واحدٍ منها يصطدم ببندٍ مقفل أو برقمٍ لم '
-          'يُعلنه أحد،\n  فلا يُغيَّر إلا بقرار صريح من المدير العام.')
+          'يُعلنه أحد،\n  فلا يُغيَّر إلا بقرار صريح من رئيس المدارس.')
     print()
 print(f'مفحوص آليًّا: {len(COVERED)} بندًا من ٣٩.')
 print(f'لا يفحصه إلا قارئ ({len(BY_HAND)} بندًا): ' + ' · '.join(sorted(BY_HAND)))

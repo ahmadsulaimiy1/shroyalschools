@@ -429,7 +429,7 @@ authentic Sunnah, or the Institution's adopted Islamic methodology under Art.
 > **Consequence for work already done.** Reviewer R-06's seven red findings on
 > العقيدة والتوحيد وعلم الكلام — including the framing of «كتاب الفِرَق» and
 > whether Ashʿarī doctrine is declared as the ʿaqīdah frame — fall inside this
-> remit. **They are not the Director General's alone to settle.**
+> remit. **They are not the Chairman's alone to settle.**
 
 ## 3.6 Academic committees and the Academic Committee
 
@@ -583,7 +583,7 @@ no version event did not happen.**
 
 | Event | Date | Authority | What changed |
 |---|---|---|---|
-| **AD-01** | 2026-09-14 | Director General, for the Council | Consolidation of the absorbed PUB-004/005 material into the three-master architecture; five binding rules; audit chain established |
+| **AD-01** | 2026-09-14 | Chairman, for the Council | Consolidation of the absorbed PUB-004/005 material into the three-master architecture; five binding rules; audit chain established |
 | **v1.0** | 2026-09-14 | — | This document created under AD-01 |
 
 ---
@@ -630,7 +630,7 @@ and PUB-006 Art. 4]**
 
 ## 8.2 The source artifacts are permanent
 
-**[CURRENT COUNCIL DIRECTION — Director General, 14 September 2026]**
+**[CURRENT COUNCIL DIRECTION — Chairman, 14 September 2026]**
 
 `docs/corpus/source/` is **never deleted, never edited, never superseded — even
 after its substance is fully consolidated into these Masters.** A consolidated

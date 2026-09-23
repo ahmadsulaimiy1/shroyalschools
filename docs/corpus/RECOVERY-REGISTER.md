@@ -70,7 +70,7 @@ and the Design Covenant.** They are real, they are prior, and PUB-006 ruled them
 **absorbed**, not abandoned: their academic and technical rulings remain in
 force, and PUB-006 governs only where they conflict.
 
-So the historical ancestors the Director General remembers **exist as substance
+So the historical ancestors the Chairman remembers **exist as substance
 inside a document we now hold.** They are **[RECOVERED — absorbed]**. The
 standalone PDFs of PUB-004 and PUB-005 are **[UNVERIFIED]** — not found, and
 not needed to recover their rulings, though they would settle any conflict.
@@ -144,7 +144,7 @@ wording is **«إعداد وإشراف واعتماد»**, not authorship. **[RE
 
 ## 4 · The historical branding baseline, clause by clause
 
-The Director General's released baseline, checked against every accessible
+The Chairman's released baseline, checked against every accessible
 source. **Three items do not survive contact with the evidence and are marked.**
 
 | # | Baseline clause | Tag | Evidence |
@@ -263,7 +263,7 @@ document of the corpus.
 
 | Item | Tag |
 |---|---|
-| **ACD-008 · ACD-009** — the Arabic curriculum framework and its detailed G2 exemplar, the declared **standard ground** for what a detailed curriculum must look like | **[UNVERIFIED — high priority]** — named and ruled in PUB-006, never uploaded. **Ask the Director General whether the files exist.** |
+| **ACD-008 · ACD-009** — the Arabic curriculum framework and its detailed G2 exemplar, the declared **standard ground** for what a detailed curriculum must look like | **[UNVERIFIED — high priority]** — named and ruled in PUB-006, never uploaded. **Ask the Chairman whether the files exist.** |
 | **PUB-004 / PUB-005** as standalone PDFs | **[UNVERIFIED]** — substance recovered through absorption; the originals would settle any conflict |
 | **TXT-001** كتاب البيان التجريبي | **[UNVERIFIED]** — ruled frozen |
 | **Royal Blue `#082A66`** | **[COUNCIL DECISION REQUIRED]** — see §4 row 3g |
@@ -274,7 +274,7 @@ document of the corpus.
 
 ## 9 · ACD-008 and ACD-009 — the recovery search, and its result
 
-**Ordered by the Director General, 14 September 2026, before any master document
+**Ordered by the Chairman, 14 September 2026, before any master document
 is written. Result: UNRECOVERED. They are not reconstructed.**
 
 ### What was searched
@@ -328,14 +328,14 @@ known.
 Any future document claiming to be "the standard ground" is a new document under
 a new ID, never a restoration of ACD-008.
 
-**Tag: [UNRECOVERED] — highest recovery priority.** Only the Director General can
+**Tag: [UNRECOVERED] — highest recovery priority.** Only the Chairman can
 close it, by supplying the files.
 
 ---
 
 ## 10 · The consolidation of PUB-006 — architectural decision AD-01
 
-**Recorded 14 September 2026. Authorised by the Director General on behalf of
+**Recorded 14 September 2026. Authorised by the Chairman on behalf of
 the Council.** This is the version event the consolidation requires, so the
 chain is auditable.
 
@@ -381,7 +381,7 @@ chain is auditable.
    deleted, never edited, never superseded — **even after its substance is fully
    consolidated.** A consolidated master is a reorganisation of the ruling; the
    PDF remains the evidence that the ruling was made. This is now a standing rule
-   of the corpus, adopted on the Director General's own direction after the four
+   of the corpus, adopted on the Chairman's own direction after the four
    founding files were found to have survived only by accident.
 
 ### The audit chain
@@ -394,7 +394,7 @@ original document  →  absorbed ruling  →  consolidated master  →  current 
    PUB-004/005          PUB-006 §x           Master 0n §y          v1.0, AD-01
 ```
 
-Worked, for the two the Director General asked about:
+Worked, for the two the Chairman asked about:
 
 | Original | Absorbed ruling | Consolidated into | Version event |
 |---|---|---|---|
@@ -416,3 +416,23 @@ Worked, for the two the Director General asked about:
 *First recover → then consolidate → then identify genuine gaps → then develop.*
 *Step one is closed: §9 records the recovery search, §10 records AD-01.*
 *Master 01 proceeds. Masters 02 and 03 do not begin until it is adopted.*
+
+---
+
+## §11 · The title «المدير العام» in the recovered text
+
+The Chairman has ruled that the office is **Chairman / Head of Schools —
+رئيس المدارس**, and every project-authored document has been corrected.
+
+**The two recovered transcriptions have NOT been corrected**, and must not be:
+
+- `docs/corpus/text/SHRS-PUB-2026-006-الكتاب-التحريري-الأعلى.txt`
+- `docs/corpus/text/SHRS-ACD-2026-010-إطار-منهج-القرآن-الكريم.txt`
+
+They record what those founding documents actually say. Editing them would
+make the evidence agree with the present by destroying what it witnessed —
+which is the one thing a recovery register exists to prevent. If the founding
+documents are themselves to be amended, that is an amendment with its own
+instrument and its own date, not a search-and-replace.
+
+**[CURRENT COUNCIL DIRECTION]** for the title · **[RECOVERED]** for the text.

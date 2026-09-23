@@ -168,7 +168,7 @@ community scholar in this environment.
 
 ---
 
-## Unresolved — put to the Director General, not decided here
+## Unresolved — put to the Chairman, not decided here
 
 **1. The booklists contradict the madhhab ruling.** الفقه is monolithically Mālikī
 (الأخضري، الرسالة، مختصر خليل، ابن عاشر); العقيدة is monolithically Najdi. The ban
